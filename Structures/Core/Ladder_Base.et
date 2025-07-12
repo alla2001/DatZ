@@ -1,0 +1,8 @@
+GenericEntity {
+ ID "50D6C55BB04A2F5B"
+ components {
+  NavmeshCustomLinkComponent "{5864FBEBC033681B}" {
+   Enabled 0
+  }
+ }
+}

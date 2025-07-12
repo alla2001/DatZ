@@ -1,0 +1,215 @@
+MetaFileClass {
+ Name "{32E92CE47CCDF328}Assets/Characters/Untitled.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{6559378BE617EE42}" {
+     SourceMaterial "Basebody_01_Male_Arms"
+     AssignedMaterial "{BD9DFA0F61C079D9}Assets/Characters/Data/Basebody_01_Male_Arms.emat"
+    }
+    MaterialAssignClass "{6559378BE617EE52}" {
+     SourceMaterial "Basebody_01_Male_Arms_wound"
+     AssignedMaterial "{95973C05887EE1E0}Assets/Characters/Data/Basebody_01_Male_Arms_wound.emat"
+    }
+    MaterialAssignClass "{6559378BE617EE51}" {
+     SourceMaterial "Basebody_01_Male_Body"
+     AssignedMaterial "{0A89AFE765379A90}Assets/Characters/Data/Basebody_01_Male_Body.emat"
+    }
+    MaterialAssignClass "{6559378BE617EE2D}" {
+     SourceMaterial "Basebody_01_Male_Body_wound"
+     AssignedMaterial "{95DA69DFF2A7007D}Assets/Characters/Data/Basebody_01_Male_Body_wound.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Basebody_ArmUpper_L {
+    }
+    MeshParam Basebody_ArmUpper_L_wound {
+    }
+    MeshParam Basebody_ArmUpper_R {
+    }
+    MeshParam Basebody_ArmUpper_R_wound {
+    }
+    MeshParam Basebody_Arm_L {
+    }
+    MeshParam Basebody_Arm_L_wound {
+    }
+    MeshParam Basebody_Arm_R {
+    }
+    MeshParam Basebody_Arm_R_wound {
+    }
+    MeshParam Basebody_CalfLower_L {
+    }
+    MeshParam Basebody_CalfLower_L_wound {
+    }
+    MeshParam Basebody_CalfLower_R {
+    }
+    MeshParam Basebody_CalfLower_R_wound {
+    }
+    MeshParam Basebody_Calf_L {
+    }
+    MeshParam Basebody_Calf_L_wound {
+    }
+    MeshParam Basebody_Calf_R {
+    }
+    MeshParam Basebody_Calf_R_wound {
+    }
+    MeshParam Basebody_Foot_L {
+    }
+    MeshParam Basebody_Foot_L_wound {
+    }
+    MeshParam Basebody_Foot_R {
+    }
+    MeshParam Basebody_Foot_R_wound {
+    }
+    MeshParam Basebody_Groin {
+    }
+    MeshParam Basebody_Groin_wound {
+    }
+    MeshParam Basebody_Hand_L {
+    }
+    MeshParam Basebody_Hand_L_wound {
+    }
+    MeshParam Basebody_Hand_R {
+    }
+    MeshParam Basebody_Hand_R_wound {
+    }
+    MeshParam Basebody_Leg_L {
+    }
+    MeshParam Basebody_Leg_L_wound {
+    }
+    MeshParam Basebody_Leg_R {
+    }
+    MeshParam Basebody_Leg_R_wound {
+    }
+    MeshParam Basebody_Torso {
+    }
+    MeshParam Basebody_Torso_wound {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCS_Arm_L {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Arm_R {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Calf_L {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Calf_R {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Neck {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Thigh_L {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCS_Thigh_R {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Belly {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Chest {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Foot_L {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Foot_R {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Hand_L {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Hand_R {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UCX_Head {
+     SurfaceProperties {
+      "{72958F2BB57C5BBC}flesh_DA94EA1EF2914EB8.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

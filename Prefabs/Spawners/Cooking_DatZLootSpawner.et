@@ -1,0 +1,6 @@
+DatZLootSpawner : "{089B1185A949B872}Prefabs/Spawners/Farm_DatZLootSpawner.et" {
+ ID "652494182D8BD838"
+ coords 0.004 0.669 -0.001
+ lootTable "{71A61DD370162A5D}Configs/CookingLootTable.conf"
+ ignoreOverrides 1
+}

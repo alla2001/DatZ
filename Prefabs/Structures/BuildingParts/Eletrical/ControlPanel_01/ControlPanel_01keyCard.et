@@ -1,0 +1,8 @@
+GenericEntity : "{C0B432254088B2D4}Prefabs/Structures/BuildingParts/Eletrical/ControlPanel_01/ControlPanel_01_base.et" {
+ ID "5111E74D4E7A8DB6"
+ components {
+  SCR_DestructionMultiPhaseComponent "{58F896B4CD371A8B}" {
+   Enabled 0
+  }
+ }
+}

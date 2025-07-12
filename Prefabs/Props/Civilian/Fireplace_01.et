@@ -1,0 +1,83 @@
+GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  EPF_PersistenceComponent "{654EABB64400F01A}" {
+   m_pSaveData EPF_ItemSaveDataClass "{654EABB65AEF5EEE}" {
+    m_aComponents {
+     EPF_FirePlaceManagerComponentSaveDataClass "{654EABB65DE56D07}" {
+     }
+     EPF_BaseInventoryStorageComponentSaveDataClass "{65550BCD3EF55C3F}" {
+     }
+    }
+   }
+  }
+  FirePlaceStorageComponent "{654AA35725AE7CE2}" {
+   Attributes SCR_ItemAttributeCollection "{654AA35738C086E2}" {
+    ItemDisplayName UIInfo "{654AA3573A4CED8F}" {
+     Name "Fire Place"
+     Description "Fire Place"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654AA3573DD5DCA9}" {
+     Weight 6
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{654AA357358EC3C2}" {
+      CameraPreset Top
+      CameraDistanceToItem 1.6
+      ItemRenderRotation -45 0 0
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_2x2
+    m_SlotType SLOT_LOOT_STORAGE
+    m_bDraggable 0
+    m_bStackable 0
+    m_bRefundable 0
+   }
+   SaveInLoadout 0
+   UseVirtualInventoryReplication 0
+   m_fMaxWeight 25
+   potPlacementInfo PointInfo "{658CB24F5CD4AC7C}" {
+    Offset -0.003 0.1376 0.0334
+   }
+  }
+  SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+   m_eInitialLightState OFF
+  }
+  ActionsManagerComponent "{5876E7F5CCE95371}" {
+   ActionContexts {
+    UserActionContext "{5876E7F2C05CD349}" {
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_LightFireplaceUserAction "{5876E7F23A0C8FAD}" {
+     VisibilityRange 1.6
+     Duration 5
+    }
+    DestroyFireAction "{658C76A0BE7E3ADC}" {
+     ParentContextList {
+      "fireplace"
+     }
+     UIInfo UIInfo "{658C76A0B0619E67}" {
+      Name "Destroy Fire"
+      Description "Destroy Fire"
+     }
+     ActionTitle "Destroy Fire"
+     Duration 4
+     "Sort Priority" 2
+    }
+    SCR_OpenStorageAction "{6582A0335001B922}" {
+     ParentContextList {
+      "fireplace"
+     }
+     UIInfo UIInfo "{6582A033555D04BF}" {
+      Name "Open Fire"
+     }
+     ActionTitle "Open Fire"
+     "Sort Priority" 1
+    }
+   }
+  }
+ }
+}

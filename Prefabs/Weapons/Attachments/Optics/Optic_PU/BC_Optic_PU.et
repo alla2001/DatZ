@@ -1,0 +1,10 @@
+GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Optic_ARTII_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{5D0CC83435B55853}" {
+    Offset 0 0 -0.0673
+   }
+  }
+ }
+}

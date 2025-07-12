@@ -1,0 +1,45 @@
+GenericEntity : "{0845FCD5D1E53541}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_01_Base.et" {
+ ID "51F66EC33748B84D"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Crafted Gauze"
+     Description "#AR-Item_Gauze_01_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.05
+     SizeSetupStrategy Volume
+     ItemVolume 150
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6098B9508619B4D0}" {
+      FOV 30
+      LodModel 0
+     }
+    }
+   }
+  }
+  MeshObject "{51F66EC3C5BC700D}" {
+   Object "{9EF00D573FC5604A}Assets/Items/Medicine/Gauze_01/Gauze_01_packed.xob"
+   Materials {
+    MaterialAssignClass "{652A8D6E7A1B8F91}" {
+     SourceMaterial "Color_palette"
+     AssignedMaterial "{F428D271E313B16C}Common/Materials/ColorPalette/Color_palette_01_AZURE_05_S2_R2.emat"
+    }
+    MaterialAssignClass "{652A8D6E7A1B8FED}" {
+     SourceMaterial "Gauze_01_packed"
+     AssignedMaterial "{8F1FD306120D1082}Assets/Items/Rags/Data/MI_Cloth_01.emat"
+    }
+   }
+  }
+  SCR_ConsumableItemComponent "{5943631460899505}" {
+   m_ConsumableEffect SCR_ConsumableBandage "{594363147CC4C6BE}" {
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+   }
+   m_bAlternativeModelOnAction 0
+  }
+ }
+ coords 0.898 0 0
+}

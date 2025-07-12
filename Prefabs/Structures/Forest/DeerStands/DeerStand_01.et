@@ -1,0 +1,15 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  $grp DatZLootSpawner : "{089B1185A949B872}Prefabs/Spawners/Farm_DatZLootSpawner.et" {
+   {
+    ID "655EB4F24832D926"
+    coords 0.29 4.995 -0.218
+   }
+   {
+    ID "655EB4F24832D942"
+    coords -0.519 4.797 0.299
+   }
+  }
+ }
+}

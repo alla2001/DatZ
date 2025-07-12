@@ -1,0 +1,8 @@
+GenericEntity : "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et" {
+ ID "6528B295A5FA4C19"
+ components {
+  DatZReplaceDeployableEntityComponent "{6528E4E8D968CD9A}" {
+   m_sReplacementPrefab "{DE0F233CBC3C2F77}Prefabs/Tebt.et"
+  }
+ }
+}

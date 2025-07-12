@@ -1,0 +1,52 @@
+GenericEntity {
+ ID "65A13CC8F0997C07"
+ coords 139.435 1.218 166.502
+ {
+  $grp DestructibleEntity : "{8D3271FC9A995658}Prefabs/PlacedPlank.et" {
+   PlacedPlank_65A13CC86F277134 {
+    ID "65A13CA809E646E1"
+    components {
+     Hierarchy "{65A13CA824961556}" {
+     }
+    }
+    coords 0.07 -0.049 0.001
+    angleX -12.185
+    angleY 89.421
+    angleZ -90.024
+   }
+   PlacedPlank_65A13CC86F277134 {
+    ID "65A13CA817D6EF2A"
+    components {
+     Hierarchy "{65A13CA824961556}" {
+     }
+    }
+    coords 0.027 -0.362 0.02
+    angleX -3.233
+    angleY -90.586
+    angleZ 90.024
+   }
+   PlacedPlank_65A13CC86F277134 {
+    ID "65A13CA81C5FC6B6"
+    components {
+     Hierarchy "{65A13CA824961556}" {
+     }
+    }
+    coords 0.036 0.411 0.022
+    angleX 9.11
+    angleY -90.581
+    angleZ 90.024
+   }
+   PlacedPlank_65A13CC86F277134 {
+    ID "65A13CC8F0997C01"
+    components {
+     Hierarchy "{65A13CA824961556}" {
+     }
+    }
+    coords 0.029 0.19 0.001
+    angleX 8.743
+    angleY 89.412
+    angleZ -90.024
+   }
+  }
+ }
+}

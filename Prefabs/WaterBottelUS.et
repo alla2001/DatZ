@@ -1,0 +1,124 @@
+GenericEntity : "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" {
+ ID "6526C36F3AE9DD61"
+ components {
+  EPF_PersistenceComponent "{6526C36F316A492C}" {
+   m_pSaveData EPF_ItemSaveDataClass "{6526C36F316A4951}" {
+   }
+  }
+  FluidContainerComponent "{6542BE1472BB8E6F}" {
+   m_fMaxCapacity 25
+  }
+  InventoryItemComponent "{6526C36F316A4F5D}" {
+   Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+    }
+    CustomAttributes {
+     SCR_AlternativeModel "{6526C36F316A4FE6}" {
+      m_sAlternativeModel "{7518A788C4ED1927}Assets/Food/Apple/Apple.xob"
+     }
+     SCR_ItemOfInterestAttribute "{6526C36F316A4FFC}" {
+      m_InterestType FOOD
+     }
+     ItemActionAnimAttributes "{6526C36F316A4FF7}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     CharacterModifierAttributes "{6526C36F316A4FCA}" {
+      SpeedLimit 4
+      ADSSpeedLimit 4
+      SpeedLimitItemPrimaryAction 4
+      SpeedLimitHighready 4
+     }
+     PreviewRenderAttributes "{6526C36F316A4F96}" {
+      FOV 45
+     }
+     SCR_SelectionMenuPreviewAttributes "{6526C36F316A4F6E}" {
+      m_bShowMedicalColor 1
+     }
+    }
+   }
+  }
+  MeshObject "{6526C36F316A4EFB}" {
+   Object "{F61AEFBD2EEC81F3}Assets/Garbage/Assets/Bottle.xob"
+  }
+  RigidBody "{6526C36F316A4ECE}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{6526C36F316A4E96}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableFood "{6526C36F316A4EBD}" {
+    m_bDeleteOnUse 0
+    m_fApplyToSelfDuration 5
+    m_fApplyToOtherDuration 3
+    regenFoodValue 35
+    isWater 1
+    timesCanBeEating 999999999
+   }
+  }
+  SCR_SoundDataComponent "{6526C36F316A4E49}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7C}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7A}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E71}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E48}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{6526C36F316A4E01}" {
+   ActionContexts {
+    UserActionContext "{6526C36F316A4E21}" {
+     ContextName "default"
+     Position PointInfo "{6526C36F316A4E27}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6526C36F316A4E00}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6526C36F316A4E04}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{6526C36F316A4DFC}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{6526C36F316A4DE9}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve +{
+     }
+    }
+    GamepadTriggerEffect "{6526C36F316A4DE3}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve +{
+     }
+    }
+   }
+  }
+  RplComponent "{6526C36F316A4DF2}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+ }
+}

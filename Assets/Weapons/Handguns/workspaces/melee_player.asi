@@ -1,0 +1,247 @@
+AnimSetInstanceSource "{5D8AE7A659E3AF6A}" {
+ Template "{18F60A9C02AA456B}Assets/Weapons/Handguns/workspaces/PM.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Reload.Erc.Fire" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Fire" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.FireLast" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.FireLast" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle" {
+   Resource "{9ABEB9C16F7E3AF4}anims/IdleMelee.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle" {
+   Resource "{89A4E5128DCBBF0A}Assets/Weapons/Handguns/PM/anims/anm/p_PM_Idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertMag" {
+   Resource "{09B751128EA54C3A}Assets/Weapons/Handguns/PM/anims/anm/p_pst_erc_PM_insert_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMag" {
+   Resource "{C2D32EE648D37E50}Assets/Weapons/Handguns/PM/anims/anm/p_pst_erc_PM_remove_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertMag" {
+   Resource "{AE5CE29C6D4F5DBD}Assets/Weapons/Handguns/PM/anims/anm/p_pst_pne_PM_insert_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMag" {
+   Resource "{65389D68AB396FD7}Assets/Weapons/Handguns/PM/anims/anm/p_pst_pne_PM_remove_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBolt" {
+   Resource "{D9E48FAC45E9B0FD}Assets/Weapons/Handguns/PM/anims/anm/p_pst_erc_PM_reloadAction_Closed_uncocked.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.ReloadActionBolt" {
+   Resource "{913FF5310A58F00E}Assets/Weapons/Handguns/PM/anims/anm/p_pst_pne_PM_reloadAction_Closed_cocked.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.ReloadActionSlideRelease" {
+   Resource "{041E473985C848CD}Assets/Weapons/Handguns/PM/anims/anm/p_pst_erc_PM_reloadAction_Open.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.ReloadActionSlideRelease" {
+   Resource "{D71CF4B34F78B692}Assets/Weapons/Handguns/PM/anims/anm/p_pst_pne_PM_reloadAction_Open.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
+   Resource "{6CE932BF79DAD3FC}Assets/Weapons/Handguns/PM/anims/anm/p_PM_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_in" {
+   Resource "{F5598E64F65549AF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_finger_trigger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_in" {
+   Resource "{F5598E64F65549AF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_finger_trigger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_out" {
+   Resource "{50A5E5D7AAC49042}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_finger_trigger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_out" {
+   Resource "{50A5E5D7AAC49042}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_finger_trigger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle_finger" {
+   Resource "{9ABEB9C16F7E3AF4}anims/IdleMelee.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle_finger" {
+   Resource "{28F0FC440ED1A026}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Safety" {
+   Resource "{E027285F363B1C40}Assets/Weapons/Handguns/PM/anims/anm/p_PM_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Safety" {
+   Resource "{E027285F363B1C40}Assets/Weapons/Handguns/PM/anims/anm/p_PM_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Cocked" {
+   Resource "{9FA0E9D3EB325E05}Assets/Weapons/Handguns/PM/anims/anm/p_PM_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Cocked" {
+   Resource "{9FA0E9D3EB325E05}Assets/Weapons/Handguns/PM/anims/anm/p_PM_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
+   Resource "{DDCA59515FB28762}Assets/Weapons/Handguns/PM/anims/anm/p_PM_erc_modes_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Off" {
+   Resource "{DDCA59515FB28762}Assets/Weapons/Handguns/PM/anims/anm/p_PM_erc_modes_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_On" {
+   Resource "{78BC4C13D8D7B4D1}Assets/Weapons/Handguns/PM/anims/anm/p_PM_erc_modes_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_On" {
+   Resource "{78BC4C13D8D7B4D1}Assets/Weapons/Handguns/PM/anims/anm/p_PM_erc_modes_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.IKOffset" {
+   Resource "{C8117282A95A4C00}Assets/Weapons/Handguns/PM/anims/anm/p_PM_offset.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.IKOffset" {
+   Resource "{C8117282A95A4C00}Assets/Weapons/Handguns/PM/anims/anm/p_PM_offset.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionIn" {
+   Resource "{829CA04220D2B6C7}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionOut" {
+   Resource "{99AE921729FA70C3}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionLoop" {
+   Resource "{C52AF5346A716BB7}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionIn" {
+   Resource "{5155CB33FC269A05}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionOut" {
+   Resource "{DD165EDD2057397B}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionLoop" {
+   Resource "{EED05B6D23161E47}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionIn" {
+   Resource "{D3C678F99D502826}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionOut" {
+   Resource "{3DBEB2AB78030390}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionLoop" {
+   Resource "{A6B93B1FC1B1AB7B}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionIn" {
+   Resource "{829CA04220D2B6C7}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionLoop" {
+   Resource "{C52AF5346A716BB7}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionOut" {
+   Resource "{99AE921729FA70C3}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.Left2Right" {
+   Resource "{D233CA579D67FD7F}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.Left2Right" {
+   Resource "{D233CA579D67FD7F}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionIn" {
+   Resource "{EB5F23533D80B34E}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionIn" {
+   Resource "{EB5F23533D80B34E}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionLoop" {
+   Resource "{A426E4B608956DFB}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionLoop" {
+   Resource "{A426E4B608956DFB}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionOut" {
+   Resource "{9CC45D81053F3C1F}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionOut" {
+   Resource "{9CC45D81053F3C1F}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.Right2Left" {
+   Resource "{522A6055839F1F98}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.Right2Left" {
+   Resource "{522A6055839F1F98}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_cro_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionIn" {
+   Resource "{5155CB33FC269A05}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionLoop" {
+   Resource "{EED05B6D23161E47}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionOut" {
+   Resource "{DD165EDD2057397B}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.Left2Right" {
+   Resource "{736AE0B91F731680}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.Left2Right" {
+   Resource "{736AE0B91F731680}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionIn" {
+   Resource "{AFE7EF99342DFAF6}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionIn" {
+   Resource "{AFE7EF99342DFAF6}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionLoop" {
+   Resource "{C785A2B6A898142E}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionLoop" {
+   Resource "{C785A2B6A898142E}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionOut" {
+   Resource "{B73EF3D84C5849EF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionOut" {
+   Resource "{B73EF3D84C5849EF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.Right2Left" {
+   Resource "{F3734ABB018BF467}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.Right2Left" {
+   Resource "{F3734ABB018BF467}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_erc_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionIn" {
+   Resource "{D3C678F99D502826}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionLoop" {
+   Resource "{A6B93B1FC1B1AB7B}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionOut" {
+   Resource "{3DBEB2AB78030390}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.Left2Right" {
+   Resource "{2D2F871963AB626D}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.Left2Right" {
+   Resource "{2D2F871963AB626D}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionIn" {
+   Resource "{4F4F03EF6C79C01D}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionIn" {
+   Resource "{4F4F03EF6C79C01D}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionLoop" {
+   Resource "{E6861ECBF9C4D0BF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionLoop" {
+   Resource "{E6861ECBF9C4D0BF}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionOut" {
+   Resource "{FF5793AAAEFFFCD3}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionOut" {
+   Resource "{FF5793AAAEFFFCD3}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.Right2Left" {
+   Resource "{AD362D1B7D53808A}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.Right2Left" {
+   Resource "{AD362D1B7D53808A}Assets/Weapons/Handguns/PM/anims/anm/p_pst_PM_weapon_inspection_pne_right_to_left_ras.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{59EAF1483300AB9D}" {
+ }
+}

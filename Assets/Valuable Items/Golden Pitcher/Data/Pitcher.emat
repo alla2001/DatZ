@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.703 0.613 0.443 1
+ DiffuseIBL 0.661 0.366 0.366 1
+ RoughnessScale 0.415
+ MetalnessScale 5
+ BCRMap "{3BF8C740A2C7F127}Assets/Valuable Items/Golden Pitcher/Data/Pitcher_baseColor.edds"
+ NMOMap "{8B5E40FB51FB8D5B}Assets/Valuable Items/Golden Pitcher/Data/Pitcher_normal.edds"
+}

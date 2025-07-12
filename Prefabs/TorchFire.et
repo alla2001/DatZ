@@ -1,0 +1,5 @@
+ParticleEffectEntity {
+ ID "654ED77AF610FD06"
+ coords 3072.616 12.082 2874.196
+ EffectPath "{D99D52D157A6658F}Particles/Enviroment/Torch_medium_normal.ptc"
+}

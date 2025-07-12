@@ -1,0 +1,83 @@
+GenericEntity : "{533AC2E8A0F5272A}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5111E74D4E7A8DB6"
+ components {
+  SignalsManagerComponent "{658CA4A8CAC99EE9}" {
+  }
+  SoundComponent "{658CA4A8FD5AD93B}" {
+   Filenames {
+    "{ADF9249D6654328B}Sounds/Compositions/Misc/Campfire/Compositions_Campfire.acp"
+   }
+   DistanceManagement 0
+   IncludeInactive 1
+  }
+  FirePlaceStorageComponent "{658CA4A867A79DDB}" {
+   Attributes SCR_ItemAttributeCollection "{658CA4A8707763C4}" {
+    ItemDisplayName UIInfo "{658CA4A872094274}" {
+     Name "Fire Stove"
+     Description "Fire Stove"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{658CA4A84B29406B}" {
+     Weight 6
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{658CA4A845BE6607}" {
+      CameraPreset Top
+      CameraDistanceToItem 1.2
+      CameraOffset 0 1 0
+      ItemRenderRotation -65 0 0
+      FOV 60
+      AspectRatio 1
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_3x3
+    m_SlotType SLOT_LOOT_STORAGE
+    m_bDraggable 0
+    m_bStackable 0
+    m_bRefundable 0
+   }
+   SaveInLoadout 0
+   UseVirtualInventoryReplication 0
+   m_fMaxWeight 35
+   potPlacementInfo PointInfo "{658CB24EAD41A152}" {
+    Offset -0.0137 0.9306 0.6293
+   }
+  }
+  SCR_FireplaceComponent "{658CA4A83F4A6074}" {
+   m_fLV 1
+   m_vParticleOffset 0 -0.5 0.65
+   m_eInitialLightState OFF
+  }
+  ActionsManagerComponent "{658CA4A8C4ED1031}" {
+   ActionContexts {
+    UserActionContext "{658CA4A8C7D8A7A5}" {
+     ContextName "fireplace"
+     Position PointInfo "{658CA4A8BED8000F}" {
+      Offset -0.0119 0.7311 0.8473
+     }
+     Radius 0.5
+     Height 0
+    }
+   }
+   additionalActions {
+    SCR_LightFireplaceUserAction "{658CA4A8DFE1CD23}" {
+     ParentContextList {
+      "fireplace"
+     }
+     VisibilityRange 1.6
+     Duration 5
+    }
+    SCR_OpenStorageAction "{658CA4A8A842AE93}" {
+     ParentContextList {
+      "fireplace"
+     }
+     UIInfo UIInfo "{6582A033555D04BF}" {
+      Name "Open Fire"
+     }
+     ActionTitle "Open Fire"
+     "Sort Priority" 1
+    }
+   }
+  }
+ }
+}

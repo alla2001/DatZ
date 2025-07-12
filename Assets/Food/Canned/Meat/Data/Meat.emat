@@ -1,0 +1,9 @@
+MatPBRBasic {
+ Color 0.434 0.434 0.434 1
+ SpecularMul 0.7
+ RoughnessScale 1.18
+ MetalnessScale 1.46
+ BCRMap "{B98C34A74A590AF8}Assets/Food/Canned/Meat/Data/Meat_BaseColor.edds"
+ NormalPower 1.232
+ NMOMap "{06033438B87FD23C}Assets/Food/Canned/Meat/Data/Meat_Normal.edds"
+}

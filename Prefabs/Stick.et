@@ -1,0 +1,195 @@
+GenericEntity {
+ ID "654AA34AD9D97428"
+ components {
+  CraftingItem "{654AA37BBA479C78}" {
+  }
+  EPF_PersistenceComponent "{654AA34A73216372}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{654AA34A73216376}" {
+   }
+  }
+  FireFuelComponent "{654AA34A7321634E}" {
+   fuelValue 8
+  }
+  MeshObject "{654AA34A732162E5}" {
+   Object "{02E3D217F1BA3350}Assets/Crafting/Sticks/Stick.xob"
+  }
+  RigidBody "{654AA34A732162F8}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_PlaceableInventoryItemComponent "{654AA34A732162EE}" {
+   Attributes SCR_ItemAttributeCollection "{654AA34A73216210}" {
+    ItemDisplayName SCR_InventoryUIInfo "{654AA34A7321630C}" {
+     Name "Stick"
+     Description "Stick"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{654AA34A7321630E}" {
+       Name "Fuel For Fire"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+       m_bHideInArsenal 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654AA34A73216301}" {
+     Weight 0.8
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 100
+     DimensionScaler 0.1
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{655B19015A82D2C0}" {
+     IkSettings {
+      ItemIKSettings "{59E4E696CE54F34A}" {
+       InAds 0
+       OutAds 0
+       MovementSpeedRange 0 1
+       IkSettingsStand 6
+       IkSettingsCrouch 6
+       IkSettingsProne 6
+      }
+     }
+     AnimationInstance "{AF06D3F738A50403}anims/workspaces/player/player_main_heavy.asi"
+     AnimationIKPose "{5EF679CCFE1123FD}Assets/Weapons/Explosives/Mine_M15AT/anims/p_mine_ik.anm"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{654AA34A73216218}" {
+      CameraDistanceToItem 0.4
+      FOV 30
+      AspectRatio 1
+     }
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_ANY
+   }
+  }
+  SCR_PlaceableItemComponent "{655B19003B09F32C}" {
+   m_eIgnoredPhysicsLayers 289931264
+   m_eMeasurementMethod FROM_ORIGIN
+   m_fMaxPlacementDistance 1
+   m_ePlacementType XYZ
+  }
+  SCR_SoundDataComponent "{654AA34A732162B8}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{654AA34A732162AB}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{654AA34A732162A4}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{654AA34A732162A1}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{654AA34A732162BB}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{654AA34A7321657F}" {
+   ActionContexts {
+    UserActionContext "{654AA34A73216298}" {
+     ContextName "default"
+     Position PointInfo "{654AA34A7321629A}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{654AA34A73216560}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654AA34A73216563}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    CraftUserAction "{654AA37631585CB8}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654AA37631585F70}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED77810B40908}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED77810B408B1}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED77813253A70}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778132539B3}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED77814EC01FF}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED77814EC013A}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED77815ACA142}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED77815ACA083}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED7781558D57F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED7781558D4B9}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED77812727BE1}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED77812727B20}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED7781120E1FA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED7781120E12E}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+   }
+  }
+  RplComponent "{654AA34A7321652F}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{654AA34A73216526}" {
+  }
+ }
+ coords 3069.323 11.75 2877.217
+}

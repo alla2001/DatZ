@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D505E03480D4606F}Prefabs/Structures/Walls/Concrete/ConcreteRetainingWall_01/ConcreteRetainingWall_01_4m_90.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

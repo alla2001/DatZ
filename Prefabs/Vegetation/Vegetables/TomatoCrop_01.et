@@ -1,0 +1,10 @@
+Tree : "{D7163D1B571F4C0C}Prefabs/Vegetation/Core/Bush_Base.et" {
+ ID "2272273384468550"
+ {
+  DatZLootSpawner : "{A9F28FAE8F5CB008}Prefabs/Spawners/Tomato_DatZLootSpawner.et" {
+   ID "6556823565FFC8D8"
+   coords -0.044 0.367 -0.08
+   lootTable "{EB45EADF25F8CAE8}Configs/TomatoLootTable.conf"
+  }
+ }
+}

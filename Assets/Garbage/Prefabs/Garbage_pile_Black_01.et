@@ -1,0 +1,29 @@
+GenericEntity : "{2EC0E9B75831D5CC}Assets/Bodies/human/Military/Soldier_Fallen/Laying_on_back/Deadbody_laying_on_back.et" {
+ ID "60C45044F3F5C0B7"
+ components {
+  RigidBody "{60C450470F1AEC2B}" {
+   ResponseIndex "SmallDestructible"
+  }
+  SCR_DestructionMultiPhaseComponent "{654674CA3B7EAA46}" {
+   "Additional hit zones" {
+    HitZone hit {
+     HZDefault 1
+     DamageReduction 0
+     DamageThreshold 0
+     "Kinetic multiplier" 0.1
+     "Explosive multiplier" 90
+    }
+   }
+   m_DestroySpawnObjects {
+    SCR_PrefabSpawnable "{654674CA9F291844}" {
+     m_Prefabs {
+      "{333120E9D9F761CA}Assets/Garbage/Prefabs/Garbage_pile_Black_03.et"
+     }
+    }
+   }
+   m_eMaterialSoundType BREAK_TENT
+  }
+ }
+ coords -7.88 23.165 0.958
+ angleY -23.085
+}

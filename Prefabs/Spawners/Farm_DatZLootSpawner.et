@@ -1,0 +1,10 @@
+DatZLootSpawner {
+ ID "652494182D8BD838"
+ components {
+  Hierarchy "{65330A949E11B133}" {
+  }
+ }
+ coords 0.29 4.995 -0.218
+ spawnRadius 100
+ lootTable "{416671DC683FEF01}Configs/CivilianFarmLootTable.conf"
+}

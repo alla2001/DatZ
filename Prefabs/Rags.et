@@ -1,0 +1,176 @@
+GameEntity {
+ ID "6528FADC3CAC784A"
+ components {
+  CraftingItem "{654ED778ED73FADA}" {
+  }
+  EPF_PersistenceComponent "{6528FADC6B30118E}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6528FADC6B301191}" {
+   }
+  }
+  FireFuelComponent "{6551636C8155E833}" {
+   fuelValue 3
+  }
+  InventoryItemComponent "{6528FADC6B3006E9}" {
+   Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
+    ItemDisplayName UIInfo "{6528FADC6B30065C}" {
+     Name "Rags"
+     Description "Rags that can be used for crafting"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
+     Weight 0.2
+     SizeSetupStrategy Volume
+     ItemDimensions 15 15 15
+     ItemVolume 150
+     DimensionScaler 0.35
+     ActivePhysicalSimulation None
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528FADC6B3006A4}" {
+      CameraPreset Top
+      CameraOrbitAngles 38 0 0
+      CameraDistanceToItem 2
+      FOV 10
+      AspectRatio 1
+      IsDynamicObject 1
+      PreviewWornModel 1
+      PreviewModel "{6F223F9465D881DF}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01.xob"
+     }
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+  }
+  MeshObject "{6528FADC6B301681}" {
+   Object "{83FCC9DAFF36CC88}Assets/Items/Rags/Rags.xob"
+   LODFactors {
+    1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6528FADC6B3016DB}" {
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6528FADC6B3007D1}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528FADC6B3007BF}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6528FADC6B3007A8}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6528FADC6B3007AE}" {
+     m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  ActionsManagerComponent "{6528FADC6B307B5C}" {
+   ActionContexts {
+    UserActionContext "{6528FADC6B3004BA}" {
+     ContextName "default"
+     Position PointInfo "{6528FADC6B300496}" {
+      Offset 0 0.05 0
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6528FADC6B3004FD}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6528FADC6B3004DF}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    SCR_DatZTransformeBaseAction "{652E7EC49BC45946}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{652E7EC49D65B971}" {
+      Name "Craft Bandage"
+      Description "Craft Bandage"
+     }
+     ActionTitle "Craft Bandage"
+     Duration 3
+     prefab "{EAE970533A9FE23D}Prefabs/Items/Medicine/FieldDressing_01/CraftedGauze_01.et"
+    }
+    CraftUserAction "{654ED778E2155431}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED77814EC013A}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778FE93A22A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778FE93A1B5}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778FFC48758}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778FFC4868C}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778F0813494}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778F08134DD}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778F022313F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778F0223167}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778F1C8985B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778F1C88781}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+    CraftUserAction "{654ED778F15D1633}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED778F15D1665}" {
+      Name "Craft Shit"
+     }
+     Duration 1
+    }
+   }
+  }
+  RplComponent "{6528FADC6B307B77}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6528FADC6B307B7C}" {
+  }
+ }
+ coords 1556.61 32.767 2161.966
+}

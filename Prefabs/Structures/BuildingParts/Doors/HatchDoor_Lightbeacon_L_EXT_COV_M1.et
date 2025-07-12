@@ -1,0 +1,8 @@
+GenericEntity : "{F1793FE006FDF888}Structures/BuildingParts/Doors/Door_Base.et" {
+ ID "0000000000000001"
+ components {
+  DoorComponent "{221C667A9F7D4B69}" {
+   AngleRange -90
+  }
+ }
+}

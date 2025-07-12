@@ -1,0 +1,12 @@
+Grass : "{D616E1308B9B93EE}Assets/Clutter/Procedural/cp_grass_02.emat" {
+ SatMapLerp 0.868
+ SpecularMul 0.4
+ RoughnessScale 2.06
+ AOScale 0.7
+ Height 0.5
+ HeightRandomOffset 0.61
+ Edge 0.54
+ EdgeRandomOffset 0.18
+ Overlap 0.05
+ GlobalLayerAngleStart 101.74
+}

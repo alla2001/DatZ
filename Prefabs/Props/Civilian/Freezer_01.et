@@ -1,0 +1,14 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{5272C3A13072A22D}Assets/Props/Civilian/Freezer_01/Dst/Freezer_01_dst_01.xob"
+  }
+ }
+ {
+  DatZLootSpawner : "{254BEF11C085ED93}Prefabs/Spawners/Food_DatZLootSpawner.et" {
+   ID "654F1A5149D2B1CF"
+   coords -0.043 0.699 0.018
+  }
+ }
+}

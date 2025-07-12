@@ -1,0 +1,8 @@
+GenericEntity : "{F1793FE006FDF888}Structures/BuildingParts/Doors/Door_Base.et" {
+ ID "58F8B0482E7227D1"
+ components {
+  DoorLockComponent "{6535264E2006100D}" {
+   m_bCannotLock 1
+  }
+ }
+}

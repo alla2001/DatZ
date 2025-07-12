@@ -1,0 +1,15 @@
+SCR_PlayerController : "{6E2BB64764E3BE9B}Prefabs/Characters/Core/DefaultPlayerController.et" {
+ ID "1A9BA6BEFA06E3B1"
+ components {
+  ADM_PlayerShopManagerComponent "{655D05D605AF3656}" {
+  }
+  SCR_HUDManagerComponent "{2FDC275D9EBCDB8B}" {
+   InfoDisplays {
+    HungerThirstHUD "{654739DC7DE2FDB5}" {
+     m_LayoutPath "{04FE4DCD86884F9C}UI/layouts/HUD/MetabolisemMain.layout"
+     m_eLayer HIGH
+    }
+   }
+  }
+ }
+}

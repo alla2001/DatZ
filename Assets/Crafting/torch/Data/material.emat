@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AlphaTest 0.085
+ AlphaMul 1.07
+ BCRMap "{11AA0B978864988B}Assets/Crafting/torch/Data/material_baseColor.edds"
+ OpacityMap "{11AA0B978864988B}Assets/Crafting/torch/Data/material_baseColor.edds"
+}

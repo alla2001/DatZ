@@ -1,0 +1,4 @@
+MatPBRBasic : "{5041BBB1EEB8867B}Assets/Weapons/Rifles/Data/m40a1.emat" {
+ RoughnessScale 2.361
+ MetalnessScale 0.75
+}

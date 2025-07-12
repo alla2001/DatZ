@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0.431 0.367 0.34 1
+ SurfaceProperties "{DA94EA1EF2914EB7}Common/Materials/Game/flesh.gamemat"
+ RoughnessScale 0.8
+ BCRMap "{D9A34ED5B996B207}Assets/Items/Food/Data/0c017076-0f7f-4fd1-b507-eec6fbfa35c2.edds"
+ NMOMap "{90553284BFA300A7}Assets/Items/Food/Data/MeatLeg_01_N.edds"
+}

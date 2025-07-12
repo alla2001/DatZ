@@ -1,0 +1,150 @@
+GenericEntity : "{B8B5C6925FE2EF66}Prefabs/Weapons/Rifles/L85/Rifle_L85_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{4170FDBE30487D0C}Assets/Weapons/Rifles/L85/Receiver_RIS.xob"
+  }
+  ProcAnimComponent "{6560915317EB6631}" {
+   Parameters {
+    ProcAnimParams "{6560915317EB661F}" {
+     ResourceName "{D829D69CF4000344}Assets/Weapons/Rifles/m27iar/anims/M27_flipsight_actions.pap"
+    }
+   }
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222CB07CFF6712A}" {
+     Name "#WCS-Weapon_L85A2_Name"
+     Description "#WCS-Weapon_L85A2_Description"
+    }
+    CustomAttributes {
+     AimingModifierAttributes "{566C7D15A071B88E}" {
+      DeploymentPoints {
+       PivotPointInfoItem "{5A8ABE3D0B1123A8}" {
+        "Point info" DeploymentPointInfo dp {
+         Offset 0 0.0631 0.2219
+        }
+        StabilizationPoints {
+         DeploymentPointInfo bipod_pos {
+          PivotID "bipod_pos"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{6294B0225CFBE9BE}" {
+     Enabled 0
+     AttachmentSlot InventoryStorageSlot "{6294B0225666CE1F}" {
+     }
+    }
+    AttachmentSlotComponent "{6294B0433B7672A5}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Enabled 1
+      Prefab "{9A38D51A710C28C9}Prefabs/Weapons/Attachments/Handguards/Handguard_L85/Handguard_L85A2_base.et"
+     }
+    }
+    AttachmentSlotComponent "{6560915317EB66C5}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot Top_RIS {
+      PivotID "slot_hand_guard"
+      Offset 0 0.0287 0.0696
+      InspectionWidgetOffset 0 0.1205 0.0804
+      m_fMaximumPositiveSlideOffset 0.05
+      m_fMaximumNegativeSlideOffset -0.05
+     }
+     AttachmentType AttachmentRIS1913Short "{6560915317EB66C1}" {
+     }
+     ShowInInspection 1
+    }
+    AttachmentSlotComponent "{6560915317EB66CA}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot RIS {
+      PivotID "slot_hand_guard"
+      Offset 0.0284 -0.023 0.0628
+      Angles 0 0 90
+      InspectionWidgetOffset 0.0352 0.0614 0.0665
+      m_fMaximumPositiveSlideOffset 0.05
+      m_fMaximumNegativeSlideOffset -0.05
+     }
+     AttachmentType AttachmentRIS1913Short "{6560915317EB66C7}" {
+     }
+     ShowInInspection 1
+    }
+    AttachmentSlotComponent "{6560915317EB66DA}" {
+     AttachmentSlot InventoryStorageSlot Foregrip {
+      PivotID "slot_foregrip"
+      InspectionWidgetOffset 0 0.0113 0.1439
+     }
+     AttachmentType WCS_L85_GripPod "{6560915317EB66D7}" {
+     }
+     ShowInInspection 1
+    }
+    AttachmentSlotComponent "{6560915317EB66DE}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot Left_RIS {
+      PivotID "slot_hand_guard"
+      Offset -0.027 -0.023 0.0628
+      Angles 0 0 270
+      InspectionWidgetOffset -0.0352 0.0614 0.0665
+      m_fMaximumPositiveSlideOffset 0.05
+      m_fMaximumNegativeSlideOffset -0.05
+     }
+     AttachmentType AttachmentRIS1913Short "{6560915317EB66DD}" {
+     }
+     ShowInInspection 1
+    }
+    AttachmentSlotComponent "{6560915317EB66F6}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot "{62B8248C20127D7F}" {
+      PivotID "slot_optic"
+      ChildPivotID "snap_weapon"
+      InspectionWidgetOffset 0 0.1434 -0.0839
+      m_fMaximumPositiveSlideOffset 0.06
+      m_fMaximumNegativeSlideOffset -0.13
+     }
+     AttachmentType AttachmentOpticsRIS1913 "{6560915317EB66CC}" {
+     }
+     ShowInInspection 1
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{62F8FA64704367CE}" {
+       AttachmentSlot InventoryStorageSlot MuzzleDevice {
+        Enabled 1
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 0
+      m_sCaliber "#AR-AmmunitionID_556x45mm"
+     }
+     BUTSTOCK_TRANSFORMATION DeploymentPointInfo "{6294B012C9FF8E32}" {
+      Offset 0 0.0697 -0.3192
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "#WCS-Weapon_L85A2_Name"
+    Description "#WCS-Weapon_L85A2_Description"
+   }
+  }
+  ActionsManagerComponent "{A29AE67FF4D82B0F}" {
+   ActionContexts {
+    UserActionContext "{5956E32BAAADE657}" {
+     Position PointInfo "{5956E329E6B11261}" {
+      PivotID "slot_foregrip"
+     }
+    }
+    UserActionContext "{6560915317EB66A1}" {
+     ContextName "optic"
+     Position PointInfo "{6560915317EB668F}" {
+      PivotID "slot_optic"
+     }
+     Radius 0.075
+     Height 0
+    }
+   }
+  }
+ }
+}

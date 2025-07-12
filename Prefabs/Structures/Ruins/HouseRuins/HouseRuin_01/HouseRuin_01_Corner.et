@@ -1,0 +1,4 @@
+SCR_DestructibleBuildingEntity : "{E5D402DBD76EB0E0}Prefabs/Structures/Ruins/HouseRuins/HouseRuin_01/HouseRuin_01_base.et" {
+ ID "523E7B2CDF693898"
+ ignoreLoot 1
+}

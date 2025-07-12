@@ -1,0 +1,43 @@
+GenericEntity : "{533AC2E8A0F5272A}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5272E317A914F6DB"
+ components {
+  ActionsManagerComponent "{652B59929F3AF2C1}" {
+   ActionContexts {
+    UserActionContext "{652B599280B898CE}" {
+     UIInfo UIInfo "{652B599147F1D58D}" {
+      Name "default"
+     }
+     ContextName "default"
+     Position PointInfo "{652B59914B4D9814}" {
+      Offset 0.3945 0.6301 0
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    DrinkUserAction "{652B59928647EC35}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{652B599137494CE2}" {
+      Name "Drink"
+      Description "Drink"
+     }
+     ActionTitle "Drink"
+     Duration 6
+    }
+    FillUserAction "{6543647C1D71C8EF}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6543647C1D71C8A6}" {
+      Name "Fill Container"
+      Description ""
+     }
+     ActionTitle "Fill Container"
+     Duration 6
+    }
+   }
+  }
+ }
+}

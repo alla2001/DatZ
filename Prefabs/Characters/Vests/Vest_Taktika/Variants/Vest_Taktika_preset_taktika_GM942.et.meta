@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{88AFEE9B371088BA}Prefabs/Characters/Vests/Vest_Taktika/Variants/Vest_Taktika_preset_taktika_GM942.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,49 @@
+MetaFileClass {
+ Name "{7518A788C4ED1927}Assets/Food/Apple/Apple.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6524F3C2A745810F}" {
+     SourceMaterial "apple01_lr"
+     AssignedMaterial "{DD8FFB40CA807492}Assets/Food/Apple/Data/apple01_lr.emat"
+    }
+   }
+   MeshParams {
+    MeshParam apple01_lr {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{78B12E5F774CDA69}Common/Materials/Game/Core/vegetation_base.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{6524F3C2A77D3ACC}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{6524F3C2A77ECD35}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{6524F3C2A77ECE5C}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{6524F3C2A77ED1A9}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{6524F3C2A77ED04E}" : "{F62AA8E7B8EA9D26}configs/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{6524F3C2A77ED393}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

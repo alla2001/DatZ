@@ -1,0 +1,168 @@
+GenericEntity {
+ ID "655AE17EF5DEBD0A"
+ components {
+  CookableItemComponent "{655AE17E0F907D72}" {
+   m_fCookTimePerfect 90
+   m_fCookTimeBurnt 130
+   cookedPrefab "{675A13E97FF39D06}Prefabs/Cooking/Previews/Cooked.et"
+   burntPrefab "{B7AA2EB7142F1B55}Prefabs/Cooking/Previews/Burnt.et"
+   cookedMaterial "{A5D4252A5C241DF3}Assets/Items/Food/Data/MeatLeg_01Cooked.emat"
+   burntMaterial "{D1D8489C851AA7AB}Assets/Items/Food/Data/MeatLeg_01Burnt.emat"
+  }
+  EPF_PersistenceComponent "{655AE17E0F906B7E}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{655AE17E0F907D37}" {
+    m_aComponents {
+     EPF_CookableManagerComponentSaveDataClass "{655AE17E0F907D38}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{655AE17E0F906AAB}" {
+   Attributes SCR_ItemAttributeCollection "{655AE17E0F906AA3}" {
+    ItemDisplayName SCR_InventoryUIInfo "{655AE17E0F906B80}" {
+     Name "Beaf Steak"
+     Description "Beaf Steak"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{655AE17E0F906BB5}" {
+       Name "Eating this will regenerate some of your food"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{655AE17E0F906BCD}" {
+     Weight 0.8
+     SizeSetupStrategy Scaler
+     ItemDimensions 0.2 0.05 0.05
+     ItemVolume 10
+     DimensionScaler 0.25
+     RestingUP Up
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{655AE17E0F906A29}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{655AE17E0F906A2B}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{655AE17E0F906A3D}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     PreviewRenderAttributes "{655AE17E0F906A7E}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.2
+      ItemRenderRotation 30 0 0
+      FOV 45
+      AspectRatio 1
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{655AE17E0F90AF64}" {
+   Object "{D381C4346170D623}Assets/Food/meat/Untitled.xob"
+   Materials {
+    MaterialAssignClass "{655AE17EF808DBAE}" {
+     SourceMaterial "Rib"
+     AssignedMaterial "{F5C0ECB4EE5657C9}Assets/Food/meat/Data/RibBurnt.emat"
+    }
+   }
+  }
+  ParametricMaterialInstanceComponent "{655AE17E0F90AF7E}" {
+  }
+  RigidBody "{655AE17E0F90AF42}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{655AE17E0F90AFF9}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableFood "{655AE17E0F90AF94}" {
+    m_bDeleteOnUse 0
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+    regenFoodValue 12
+   }
+  }
+  SCR_SoundDataComponent "{655AE17E0F90AE28}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{655AE17E0F90AFDA}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{655AE17E0F90AE26}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{655AE17E0F90AE22}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{655AE17E0F90AE2C}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{655AE17E0F90AE74}" {
+   ActionContexts {
+    UserActionContext "{655AE17E0F90AE13}" {
+     ContextName "default"
+     Position PointInfo "{655AE17E0F90AE08}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{655AE17E0F90AE76}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{655AE17E0F90AE77}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{655AE17E0F90AE5C}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{655AE17E0F90AE48}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{655AE17E0F90AE5E}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{655AE17E0F90AEA0}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{655AE17E0F90AEA9}" {
+  }
+ }
+ coords 9697.801 12.313 1529.834
+}

@@ -1,0 +1,37 @@
+MetaFileClass {
+ Name "{753042F29AB2AF12}Assets/Valuable Items/Golden Pitcher/Golden Pitcher.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{655D0CC88A107609}" {
+     SourceMaterial "Pitcher"
+     AssignedMaterial "{071BE5F51588962F}Assets/Valuable Items/Golden Pitcher/Data/Pitcher.emat"
+    }
+   }
+   MeshParams {
+    MeshParam PitcherLow {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{536BF67B2052B869}material/metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

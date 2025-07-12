@@ -1,0 +1,34 @@
+GenericEntity : "{1641CA45B15C83E8}Prefabs/Apple.et" {
+ ID "65257C67881936F4"
+ components {
+  InventoryItemComponent "{65257C67B0BF0AAD}" {
+   Attributes SCR_ItemAttributeCollection "{65257C67B0BF0AA5}" {
+    ItemDisplayName SCR_InventoryUIInfo "{65257C67B0BF099F}" {
+     Name "Banana"
+     Description "Banana you can eat"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{65257C67B0BF09B7}" {
+     DimensionScaler 0.35
+     RestingUP Up
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{65257C67B0BF0A3E}" {
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65257C67B0BF0AF9}" {
+      CameraPreset Right
+      ItemRenderRotation 45 0 0
+      FOV 30
+     }
+    }
+   }
+  }
+  MeshObject "{65257C67B0BF0AB8}" {
+   Object "{EEB8BA9A94DE9878}Assets/Food/Banane/Banana.xob"
+  }
+  SCR_ConsumableItemComponent "{65257C67B0BF0B73}" {
+   m_ConsumableEffect SCR_ConsumableFood "{65257C67B0BF0B72}" {
+    regenFoodValue 13
+   }
+  }
+ }
+}

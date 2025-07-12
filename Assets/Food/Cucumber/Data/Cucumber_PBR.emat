@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{6B62CD1834895A83}Assets/Food/Cucumber/Data/Cucumber_PBR_baseColor.edds"
+ NMOMap "{4C2936FE7D0F20C1}Assets/Food/Cucumber/Data/Cucumber_PBR_normal.edds"
+}

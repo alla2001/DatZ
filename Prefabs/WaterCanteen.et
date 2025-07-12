@@ -1,0 +1,171 @@
+GenericEntity {
+ ID "6526C36F3AE9DD61"
+ components {
+  EPF_PersistenceComponent "{6526C36F316A492C}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6526C36F316A4951}" {
+    m_aComponents {
+     EPF_FluidContainerManagerComponentSaveDataClass "{6548D618C404A7A8}" {
+     }
+    }
+   }
+  }
+  FluidContainerComponent "{6542BE1472BB8E6F}" {
+  }
+  InventoryItemComponent "{6526C36F316A4F5D}" {
+   Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6526C36F316A488F}" {
+     Name "Canteen"
+     Description "Canteen That can hold water"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{6526C36F316A48BA}" {
+       Name "You can drink this if it has water"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+       m_bHideInArsenal 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     Weight 0.5
+     SizeSetupStrategy Volume
+     ItemDimensions 0.06 0.3 0.06
+     ItemVolume 250
+     DimensionScaler 0.5
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{6526C36F316A481B}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{6526C36F316A4844}" {
+       AnimGraph "{1553A4F82FEE9FF6}Assets/Items/Food/Workspaces/Drink.agr"
+       AnimInstance "{316B937615C156BE}Assets/Items/Food/Workspaces/Drink_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation 90 20 0
+     HandAdditiveTranslation 0.06 0 0.13
+    }
+    CustomAttributes {
+     SCR_AlternativeModel "{6526C36F316A4FE6}" {
+      m_sAlternativeModel "{7518A788C4ED1927}Assets/Food/Apple/Apple.xob"
+     }
+     SCR_ItemOfInterestAttribute "{6526C36F316A4FFC}" {
+      m_InterestType FOOD
+     }
+     ItemActionAnimAttributes "{6526C36F316A4FF7}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     CharacterModifierAttributes "{6526C36F316A4FCA}" {
+      SpeedLimit 4
+      ADSSpeedLimit 4
+      SpeedLimitItemPrimaryAction 4
+      SpeedLimitHighready 4
+     }
+     PreviewRenderAttributes "{6526C36F316A4F96}" {
+      CameraDistanceToItem 0.4
+      FOV 30
+      AspectRatio 1
+     }
+     SCR_SelectionMenuPreviewAttributes "{6526C36F316A4F6E}" {
+      m_bShowMedicalColor 1
+     }
+    }
+    CommonItemType "FOOD"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6526C36F316A4EFB}" {
+   Object "{43C3228D56519502}Assets/Items/Equipment/Canteens/Canteen_Soviet/Canteen_Soviet_01.xob"
+  }
+  RigidBody "{6526C36F316A4ECE}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{6526C36F316A4E96}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableFood "{6526C36F316A4EBD}" {
+    m_bDeleteOnUse 0
+    m_fApplyToSelfDuration 5
+    m_fApplyToOtherDuration 3
+    regenFoodValue 35
+    isWater 1
+    timesCanBeEating 999999999
+   }
+  }
+  SCR_SoundDataComponent "{6526C36F316A4E49}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7C}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7A}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E71}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E48}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{6526C36F316A4E01}" {
+   ActionContexts {
+    UserActionContext "{6526C36F316A4E21}" {
+     ContextName "default"
+     Position PointInfo "{6526C36F316A4E27}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6526C36F316A4E00}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6526C36F316A4E04}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{6526C36F316A4DFC}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{6526C36F316A4DE9}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{6526C36F316A4DE3}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{6526C36F316A4DF2}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6526C36F316A4DCA}" {
+  }
+ }
+ coords 138.091 1 170.828
+}

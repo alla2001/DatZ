@@ -1,0 +1,5214 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 26637
+   name "Signal Spatiality"
+   tl -709.238 -908.957
+   res "{A801B27A708153A6}Sounds/_SharedData/Signals/Character/Character_Spatiality.sig"
+   inputsport {
+    1 3
+   }
+   outputsport {
+    9
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{A801B27A708153A6}Sounds/_SharedData/Signals/Character/Character_Spatiality.sig"
+  }
+  SignalClass {
+   id 30733
+   name "animSelector"
+   tl -1783.643 -607.5
+   res "{63CE53388AF9EF01}Sounds/_SharedData/Signals/OneSignal/animSelector.sig"
+   inputsport {
+    3
+   }
+   outputsport {
+    4
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    10
+   }
+   path "{63CE53388AF9EF01}Sounds/_SharedData/Signals/OneSignal/animSelector.sig"
+  }
+  SignalClass {
+   id 89101
+   name "Signal 87"
+   tl -896 -720
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   inputsport {
+    1 23 52 56
+   }
+   outputsport {
+    5 37
+   }
+   inputvalues {
+    0 0 1000 400
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 10000 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+  SignalClass {
+   id 154637
+   name "Signal Reverb"
+   tl 42.727 152.606
+   res "{90D469F083C44823}Sounds/_SharedData/Signals/Reverb/Reverb_Character.sig"
+   inputsport {
+    1 35 40 112 136 147
+   }
+   outputsport {
+    34 39 105 106 107 110
+   }
+   inputvalues {
+    0 1 1 15627 0 16000
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    100 1 1 16000 1 16000
+   }
+   path "{90D469F083C44823}Sounds/_SharedData/Signals/Reverb/Reverb_Character.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 4105
+   name "SOUND_CHAR_ITEM_FIELDDRESSING"
+   comment "Sounds for bandaging"
+   version 5
+   tl -540.766 -463.66
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 19474
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -11
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+  }
+  SoundClass {
+   id 5129
+   name "SOUND_CHAR_ITEM_MORPHINEINJECTOR"
+   comment "Sounds for morphine injection"
+   version 5
+   tl -540.766 402.174
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 7186
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -11
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+  }
+  SoundClass {
+   id 35849
+   name "SOUND_CHAR_ITEM_SALINEBAG"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -540.766 945.365
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 34834
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -11
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+  }
+  SoundClass {
+   id 47113
+   name "SOUND_CHAR_ITEM_TOURNIQUET"
+   comment "Sounds for using a tourniquet"
+   version 5
+   tl -540.766 1871.198
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 48146
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -11
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+  }
+  SoundClass {
+   id 62473
+   name "SOUND_CHAR_BUILD_SHOVEL_IN_HARD"
+   version 5
+   tl -541.766 3553
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 75794
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 71689
+   name "SOUND_CHAR_SHOVEL_EQUIP"
+   version 5
+   tl -541.766 3969
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 61458
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 1000
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 72713
+   name "SOUND_CHAR_BUILD_SHOVEL_IN_NORMAL"
+   version 5
+   tl -545 3057
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 76818
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 77833
+   name "SOUND_CHAR_BUILD_SHOVEL_OUT_NORMAL"
+   version 5
+   tl -541.766 3281
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 59410
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 78857
+   name "SOUND_CHAR_BUILD_SHOVEL_OUT_FAST"
+   version 5
+   tl -541.766 3777
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 80914
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 90121
+   name "SOUND_CHAR_JERRYCAN_REFUELING_IN"
+   version 5
+   tl -528 4272
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 91154
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 93193
+   name "SOUND_CHAR_JERRYCAN_REFUELING_OUT"
+   version 5
+   tl -528 4496
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 95250
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 100361
+   name "SOUND_CHAR_MEDIC_KIT_EQUIP"
+   version 5
+   tl -528 5088
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 101394
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 1000
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 105481
+   name "SOUND_CHAR_REARM_KIT_EQUIP"
+   version 5
+   tl -528 5968
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 107538
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 1000
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 111625
+   name "SOUND_CHAR_JERRYCAN_EQUIP"
+   version 5
+   tl -528 4672
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 112658
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 1000
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 116745
+   name "SOUND_CHAR_JERRYCAN_CROUCH_PLACE"
+   version 5
+   tl -528 4864
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 117778
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 2500
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 122889
+   name "SOUND_CHAR_REARM_KIT_GRAB_MAG"
+   version 5
+   tl -528 6640
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 121874
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   eventNoRepeatTimeMSec 1000
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 124937
+   name "SOUND_CHAR_MEDIC_KIT_PREPARE"
+   version 5
+   tl -528 5264
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 123922
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 126985
+   name "SOUND_CHAR_MEDIC_KIT_PLACE"
+   version 5
+   tl -528 5424
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 129042
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 132105
+   name "SOUND_CHAR_MEDIC_KIT_GRABITEM"
+   version 5
+   tl -528 5584
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 131090
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 135177
+   name "SOUND_CHAR_MEDIC_KIT_AWAY"
+   version 5
+   tl -528 5744
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 134162
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 138249
+   name "SOUND_CHAR_REARM_KIT_AWAY"
+   version 5
+   tl -528 6432
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 146450
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 142345
+   name "SOUND_CHAR_REARM_KIT_PLACE"
+   version 5
+   tl -528 6288
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 140306
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 147465
+   name "SOUND_CHAR_REARM_KIT_PREPARE"
+   version 5
+   tl -528 6144
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 137234
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   outState 3083
+   outStatePort 79879
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 157705
+   name "SOUND_EAT"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -559.13 7030.294
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 156690
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -9
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "Head"
+  }
+  SoundClass {
+   id 167945
+   name "SOUND_DRINK"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -498.397 7300.983
+   ctl 0 -21
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 166930
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -9
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "Head"
+  }
+  SoundClass {
+   id 168969
+   name "SOUND_DRINKWELL"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -484.68 7537.63
+   ctl 52.592 -2027.597
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 170002
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -18
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "Head"
+  }
+  SoundClass {
+   id 172041
+   name "SOUND_VOMITING"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -498.673 7733.033
+   ctl 52.592 -2027.597
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 174098
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -15
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "Head"
+  }
+  SoundClass {
+   id 177161
+   name "SOUND_BUSH"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -464.152 7989.249
+   ctl 52.592 -2027.597
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 175122
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -18
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 179209
+   name "SOUND_BLOW"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -445.326 8250.443
+   ctl 52.592 -2027.597
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 180242
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -18
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "LeftHand"
+  }
+  SoundClass {
+   id 182281
+   name "SOUND_BREATH"
+   comment "Sounds for using a saline bag"
+   version 5
+   tl -430.706 8388.267
+   ctl 52.592 -2027.597
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 183314
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -18
+   outState 3083
+   outStatePort 12295
+   transformation Bone
+   boneName "LeftHand"
+  }
+ }
+ selectors {
+  SelectorClass {
+   id 12294
+   name "Selector 580"
+   version 5
+   tl -1783.643 426.471
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 30733
+       port 4
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 90881578
+     links {
+      ConnectionClass connection {
+       id 9220
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 978810541
+     links {
+      ConnectionClass connection {
+       id 15364
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1586205042
+     links {
+      ConnectionClass connection {
+       id 17412
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1832134928
+     links {
+      ConnectionClass connection {
+       id 6148
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass LoosenCap {
+     max 1
+    }
+    PortClass RemoveCap {
+     min 1
+     max 2
+    }
+    PortClass Inject {
+     min 2
+     max 3
+    }
+    PortClass Remove {
+     min 3
+     max 4
+    }
+   }
+  }
+  SelectorClass {
+   id 13318
+   name "Selector 465"
+   version 5
+   tl -1783.643 -442.826
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 30733
+       port 4
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 150493328
+     links {
+      ConnectionClass connection {
+       id 20484
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 926002792
+     links {
+      ConnectionClass connection {
+       id 14340
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1600618747
+     links {
+      ConnectionClass connection {
+       id 18436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1600773987
+     links {
+      ConnectionClass connection {
+       id 8196
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1601176633
+     links {
+      ConnectionClass connection {
+       id 21508
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1963552608
+     links {
+      ConnectionClass connection {
+       id 11268
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass FieldDressingDown {
+     max 1
+     default 1
+    }
+    PortClass FieldDressingUp {
+     min 1
+     max 2
+    }
+    PortClass FieldDressingFasten {
+     min 2
+     max 3
+    }
+    PortClass FieldDressingOpen {
+     min 3
+     max 4
+    }
+    PortClass FieldDressingGrab {
+     min 4
+     max 5
+    }
+    PortClass FieldDressingFastenWeak {
+     min 5
+     max 6
+    }
+   }
+  }
+  SelectorClass {
+   id 37894
+   name "Selector 37"
+   version 5
+   tl -1783.643 1017.857
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 30733
+       port 4
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 160729932
+     links {
+      ConnectionClass connection {
+       id 41988
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 342834659
+     links {
+      ConnectionClass connection {
+       id 45060
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 349276034
+     links {
+      ConnectionClass connection {
+       id 40964
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 363201940
+     links {
+      ConnectionClass connection {
+       id 39940
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 978810541
+     links {
+      ConnectionClass connection {
+       id 36868
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1050259149
+     links {
+      ConnectionClass connection {
+       id 44036
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2017107518
+     links {
+      ConnectionClass connection {
+       id 43012
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Inject {
+     max 1
+    }
+    PortClass PlaceOnShoulder {
+     min 1
+     max 2
+    }
+    PortClass PlaceAdhesive {
+     min 2
+     max 3
+    }
+    PortClass Screw {
+     min 3
+     max 4
+    }
+    PortClass RipOffTube {
+     min 4
+     max 5
+    }
+    PortClass AttachTube {
+     min 5
+     max 6
+    }
+    PortClass ScrewEnd {
+     min 6
+     max 7
+    }
+   }
+  }
+  SelectorClass {
+   id 49158
+   name "Selector 38"
+   version 5
+   tl -1783.643 1882.357
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 30733
+       port 4
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 3756116
+     links {
+      ConnectionClass connection {
+       id 46084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 97592160
+     links {
+      ConnectionClass connection {
+       id 51204
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 327988656
+     links {
+      ConnectionClass connection {
+       id 52228
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 854963944
+     links {
+      ConnectionClass connection {
+       id 56324
+       port 65
+      }
+      ConnectionClass connection {
+       id 53252
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1410928480
+     links {
+      ConnectionClass connection {
+       id 54276
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1581661304
+     links {
+      ConnectionClass connection {
+       id 53252
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1586205042
+     links {
+      ConnectionClass connection {
+       id 57348
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Grab {
+     max 1
+    }
+    PortClass GrabLight {
+     min 1
+     max 2
+    }
+    PortClass Stretch_Long {
+     min 2
+     max 3
+    }
+    PortClass Finish_Short {
+     min 3
+     max 4
+    }
+    PortClass Stretch_Short {
+     min 4
+     max 5
+    }
+    PortClass Finish_Long {
+     min 5
+     max 6
+    }
+    PortClass Remove {
+     min 6
+     max 7
+    }
+   }
+  }
+ }
+ mixers {
+  MixerClass {
+   id 3083
+   name "OutputState"
+   version 4
+   tl 42.727 352
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 12295
+     links {
+      ConnectionClass connection {
+       id 4105
+       port 65
+      }
+      ConnectionClass connection {
+       id 5129
+       port 65
+      }
+      ConnectionClass connection {
+       id 35849
+       port 65
+      }
+      ConnectionClass connection {
+       id 47113
+       port 65
+      }
+      ConnectionClass connection {
+       id 157705
+       port 65
+      }
+      ConnectionClass connection {
+       id 167945
+       port 65
+      }
+      ConnectionClass connection {
+       id 168969
+       port 65
+      }
+      ConnectionClass connection {
+       id 172041
+       port 65
+      }
+      ConnectionClass connection {
+       id 177161
+       port 65
+      }
+      ConnectionClass connection {
+       id 179209
+       port 65
+      }
+      ConnectionClass connection {
+       id 182281
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 72713
+       port 65
+      }
+      ConnectionClass connection {
+       id 77833
+       port 65
+      }
+      ConnectionClass connection {
+       id 62473
+       port 65
+      }
+      ConnectionClass connection {
+       id 78857
+       port 65
+      }
+      ConnectionClass connection {
+       id 71689
+       port 65
+      }
+      ConnectionClass connection {
+       id 90121
+       port 65
+      }
+      ConnectionClass connection {
+       id 93193
+       port 65
+      }
+      ConnectionClass connection {
+       id 100361
+       port 65
+      }
+      ConnectionClass connection {
+       id 105481
+       port 65
+      }
+      ConnectionClass connection {
+       id 111625
+       port 65
+      }
+      ConnectionClass connection {
+       id 116745
+       port 65
+      }
+      ConnectionClass connection {
+       id 122889
+       port 65
+      }
+      ConnectionClass connection {
+       id 124937
+       port 65
+      }
+      ConnectionClass connection {
+       id 126985
+       port 65
+      }
+      ConnectionClass connection {
+       id 132105
+       port 65
+      }
+      ConnectionClass connection {
+       id 135177
+       port 65
+      }
+      ConnectionClass connection {
+       id 147465
+       port 65
+      }
+      ConnectionClass connection {
+       id 142345
+       port 65
+      }
+      ConnectionClass connection {
+       id 138249
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 300039
+     links {
+      ConnectionClass connection {
+       id 152605
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 301063
+     links {
+      ConnectionClass connection {
+       id 153629
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 302087
+     links {
+      ConnectionClass connection {
+       id 151581
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    939540496 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 16396
+   name "OffSets"
+   version 5
+   tl -2447.015 158.118
+   "Constant values" {
+    IOPConstantsValueClass "80ms" {
+     Key "80ms"
+     Value 80
+     Port 1
+    }
+    IOPConstantsValueClass "180ms" {
+     Key "180ms"
+     Value 180
+     Port 2
+    }
+   }
+  }
+  ConstantClass {
+   id 81932
+   name "Constant 33"
+   version 5
+   tl -1633 3425
+   "Constant values" {
+    IOPConstantsValueClass DebrisPreSilence {
+     Key "DebrisPreSilence"
+     Value 100
+     Port 3
+    }
+    IOPConstantsValueClass Debris2PreSilence {
+     Key "Debris2PreSilence"
+     Value 350
+     Port 4
+    }
+    IOPConstantsValueClass Debris3PreSilence {
+     Key "Debris3PreSilence"
+     Value 200
+     Port 5
+    }
+    IOPConstantsValueClass ShovelFastOutOffset {
+     Key "ShovelFastOutOffset"
+     Value 300
+     Port 6
+    }
+    IOPConstantsValueClass GrabSilence {
+     Key "GrabSilence"
+     Value 100
+     Port 7
+    }
+   }
+  }
+  ConstantClass {
+   id 102412
+   name "Constant 100"
+   version 5
+   tl -1344 5088
+   "Constant values" {
+    IOPConstantsValueClass MedicKitOffset {
+     Key "MedicKitOffset"
+     Value 152.6
+     Port 1
+    }
+    IOPConstantsValueClass MedicKitPreSilence {
+     Key "MedicKitPreSilence"
+     Value 25
+     Port 2
+    }
+    IOPConstantsValueClass OffsetAway {
+     Key "OffsetAway"
+     Value 400
+     Port 3
+    }
+   }
+  }
+  ConstantClass {
+   id 106508
+   name "Constant 100"
+   version 5
+   tl -1296 6000
+   "Constant values" {
+    IOPConstantsValueClass RearmKit {
+     Key "RearmKit"
+     Value 255.3
+     Port 1
+    }
+    IOPConstantsValueClass MedicKitPreSilence {
+     Key "MedicKitPreSilence"
+     Value 25
+     Port 2
+    }
+   }
+  }
+  ConstantClass {
+   id 113676
+   name "Constant 100"
+   version 5
+   tl -1328 4640
+   "Constant values" {
+    IOPConstantsValueClass MedicKitOffset {
+     Key "MedicKitOffset"
+     Value 900
+     Port 1
+    }
+    IOPConstantsValueClass MedicKitPreSilence {
+     Key "MedicKitPreSilence"
+     Value 50
+     Port 2
+    }
+    IOPConstantsValueClass Place_Offset {
+     Key "Place_Offset"
+     Value 1200
+     Port 3
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 7186
+   name "MorphineInjector Shader"
+   version 5
+   tl -724.238 402.174
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 12294
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 19474
+   name "FieldDressing Shader"
+   version 5
+   tl -724.238 -463.66
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 13318
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 34834
+   name "Salinebag Shader"
+   version 5
+   tl -724.238 945.365
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 37894
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 48146
+   name "Tourniquet Shader"
+   version 5
+   tl -720 1872
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 49158
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 59410
+   name "SOUND_CHAR_BUILD_SHOVEL_OUT_NORMAL"
+   version 5
+   tl -721 3281
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 66564
+       port 65
+      }
+      ConnectionClass connection {
+       id 73732
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 61458
+   name "SOUND_CHAR_EQUIP_SHOVEL"
+   version 5
+   tl -721 3969
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 86020
+       port 65
+      }
+      ConnectionClass connection {
+       id 87044
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 75794
+   name "SOUND_CHAR_BUILD_SHOVEL_IN_HARD"
+   version 5
+   tl -721 3553
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 97299
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 63492
+       port 65
+      }
+      ConnectionClass connection {
+       id 64516
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 76818
+   name "SOUND_CHAR_BUILD_SHOVEL_IN_NORMAL"
+   version 5
+   tl -721 3057
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 67603
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 69636
+       port 65
+      }
+      ConnectionClass connection {
+       id 68612
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 80914
+   name "SOUND_CHAR_BUILD_SHOVEL_OUT_FAST"
+   version 5
+   tl -721 3777
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 70660
+       port 65
+      }
+      ConnectionClass connection {
+       id 83972
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 91154
+   name "SOUND_CHAR_JERRYCAN_REFUELING_IN"
+   version 5
+   tl -720 4272
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 92164
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 95250
+   name "SOUND_CHAR_JERRYCAN_REFUELING_OUT"
+   version 5
+   tl -720 4496
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 94212
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 101394
+   name "SOUND_CHAR_MEDIC_KIT_EQUIP"
+   version 5
+   tl -720 5088
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 99332
+       port 65
+      }
+      ConnectionClass connection {
+       id 87044
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 107538
+   name "SOUND_CHAR_REARM_KIT_EQUIP"
+   version 5
+   tl -720 5968
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 103428
+       port 65
+      }
+      ConnectionClass connection {
+       id 87044
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 112658
+   name "SOUND_CHAR_JERRYCAN_EQUIP"
+   version 5
+   tl -721.429 4688
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 67603
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 109572
+       port 65
+      }
+      ConnectionClass connection {
+       id 87044
+       port 65
+      }
+      ConnectionClass connection {
+       id 114692
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 117778
+   name "SOUND_CHAR_JERRYCAN_EQUIP"
+   version 5
+   tl -720 4864
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 67603
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 115716
+       port 65
+      }
+      ConnectionClass connection {
+       id 118788
+       port 65
+      }
+      ConnectionClass connection {
+       id 119812
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 121874
+   name "SOUND_CHAR_REARM_KIT_GRAB_MAG"
+   version 5
+   tl -720 6640
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 120836
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 123922
+   name "SOUND_CHAR_MEDIC_KIT_PREPARE"
+   version 5
+   tl -720 5264
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 125956
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 129042
+   name "SOUND_CHAR_MEDIC_KIT_PLACE"
+   version 5
+   tl -720 5424
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 128004
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 131090
+   name "SOUND_CHAR_MEDIC_KIT_GRABITEM"
+   version 5
+   tl -720 5584
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 130052
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 134162
+   name "SOUND_CHAR_MEDIC_KIT_AWAY"
+   version 5
+   tl -720 5744
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 133124
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 137234
+   name "SOUND_CHAR_REARM_KIT_PREPARE"
+   version 5
+   tl -720 6144
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 139268
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 140306
+   name "SOUND_CHAR_REARM_KIT_PLACE"
+   version 5
+   tl -720 6288
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 145412
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 146450
+   name "SOUND_CHAR_REARM_KIT_AWAY"
+   version 5
+   tl -720 6432
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 82963
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 79893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 141316
+       port 65
+      }
+      ConnectionClass connection {
+       id 148484
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 156690
+   name "Salinebag Shader"
+   version 5
+   tl -761.863 7024.324
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 164868
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 166930
+   name "Salinebag Shader"
+   version 5
+   tl -862.556 7314.41
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 165892
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 170002
+   name "Salinebag Shader"
+   version 5
+   tl -838.568 7551.017
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 171012
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 174098
+   name "Salinebag Shader"
+   version 5
+   tl -825.546 7763.588
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 173060
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 175122
+   name "Salinebag Shader"
+   version 5
+   tl -768.651 8000.77
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 176132
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 180242
+   name "Salinebag Shader"
+   version 5
+   tl -734.024 8227.893
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 178180
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass {
+   id 183314
+   name "Salinebag Shader"
+   version 5
+   tl -715.404 8432.714
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 25628
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 28693
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 181252
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf" {
+   id 10259
+   version 5
+   tl -709.238 -730.126
+   parent "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf"
+  }
+  AmplitudeClass : "{9F8145144171C64B}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-40LUFS_to_-35LUFS.conf" {
+   id 67603
+   version 5
+   tl -721 2849
+   parent "{9F8145144171C64B}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-40LUFS_to_-35LUFS.conf"
+  }
+  AmplitudeClass : "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-40LUFS.conf" {
+   id 82963
+   version 5
+   tl -721 2913
+   parent "{F1CC7B4D741028C3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-40LUFS.conf"
+  }
+  AmplitudeClass : "{2D5607FF1ED3F5D3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-35LUFS_to_-30LUFS.conf" {
+   id 97299
+   comment ""
+   version 5
+   tl -721 3489
+   parent "{2D5607FF1ED3F5D3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-35LUFS_to_-30LUFS.conf"
+  }
+ }
+ frequency {
+  FrequencyClass : "{9CEA92EF9F8D78EF}Sounds/_SharedData/Configs/Frequency/Character/Frequency_Character_Foley.conf" {
+   id 28693
+   version 5
+   tl -750.238 -654.496
+   parent "{9CEA92EF9F8D78EF}Sounds/_SharedData/Configs/Frequency/Character/Frequency_Character_Foley.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 89101
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+  }
+  FrequencyClass : "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf" {
+   id 79893
+   version 5
+   tl -721 2977
+   parent "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 89101
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 6148
+   name "0 Morph LoosenCap"
+   version 7
+   tl -2273.636 422.007
+   Volume -14
+   "Volume variance" 0.5
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7521D240655BA930}Sounds/Items/Medicine/MorphineInjector/Samples/Items_MorphineInjector_LoosenCap.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 8196
+   name "4 Fielddressing grab"
+   version 7
+   tl -2273.636 14.674
+   Volume -13
+   Pitch 13
+   "Pitch variance" 3
+   "Termination Fade Out" 150
+   "Fade in time" 200
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{8BAA0371B9168C62}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{12B4BAE8A4F1BDF2}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{65BED26050535282}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6279283136D5E841}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{157340B9C2770731}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8C6DF920DF9036A1}Sounds/Character/Movement/Generic_Movements/Samples/Handgrabs/Character_Handgrabs_Cloth_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 9220
+   name "1 Morph RemoveCap"
+   version 7
+   tl -2276.969 529.007
+   Volume -14
+   "Volume variance" 0.5
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E8478BA44A053265}Sounds/Items/Medicine/MorphineInjector/Samples/Items_MorphineInjector_RemoveCap.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 11268
+   name "1 FieldDressing Up"
+   version 7
+   tl -2273.636 -311.993
+   Volume -17
+   "Volume variance" 0.5
+   "Pitch variance" 0.4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5F7CDBF67845308F}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Up_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C662626F65A2011F}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Up_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1680AE79100EE6F}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Up_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B6AFF0B6F78654AC}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Up_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 14340
+   name "2 FieldDressing Fasten"
+   version 7
+   tl -2273.636 -205.604
+   Volume -5
+   "Volume variance" 0.5
+   "Pitch variance" 0.4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{55D6176BC8C62A35}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CCC8AEF2D5211BA5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BBC2C67A2183F4D5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BC053C2B47054E16}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 15364
+   name "2 Morph Inject"
+   version 7
+   tl -2273.636 632.765
+   Volume -11
+   "Volume variance" 0.5
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{13882987A2DD745C}Sounds/Items/Medicine/MorphineInjector/Samples/Items_MorphineInjector_Inject.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 17412
+   name "3 Morph Remove"
+   version 7
+   tl -2273.636 738.118
+   Volume -11
+   "Volume variance" 0.5
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{B0120D2FB87511C9}Sounds/Items/Medicine/MorphineInjector/Samples/Items_MorphineInjector_Remove.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 18436
+   name "0 FieldDressing Down"
+   version 7
+   tl -2273.636 -413.243
+   Volume -20
+   "Volume variance" 0.5
+   "Pitch variance" 0.4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{6E9B9147F8352445}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Down_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F78528DEE5D215D5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Down_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{808F40561170FAA5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Down_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8748BA0777F64066}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Down_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 20484
+   name "5  Fasten Weak"
+   version 7
+   tl -2273.636 112.174
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 16396
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -8
+   "Volume variance" 0.5
+   Pitch -4
+   "Pitch variance" 0.4
+   "Fade in time" 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{55D6176BC8C62A35}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CCC8AEF2D5211BA5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BBC2C67A2183F4D5}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BC053C2B47054E16}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Fasten_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 21508
+   name "3 FieldDressing Open"
+   version 7
+   tl -2273.636 -94.077
+   Volume -1
+   "Volume variance" 0.4
+   "Pitch variance" 0.3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E33871B2E282F6E3}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Open_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7A26C82BFF65C773}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Open_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0D2CA0A30BC72803}Sounds/Items/Medicine/FieldDressing/Samples/Items_FieldDressing_Open_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 36868
+   name "0 Inject"
+   version 7
+   tl -2273.636 1035
+   Volume -18
+   "Volume variance" 0.5
+   Pitch -1
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{13882987A2DD745C}Sounds/Items/Medicine/MorphineInjector/Samples/Items_MorphineInjector_Inject.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 39940
+   name "1 PlaceOnShoulder"
+   version 7
+   tl -2273.636 1140
+   Volume -15
+   "Volume variance" 0.5
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{05C857B80CDD9E96}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_PlaceOnShoulder_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9CD6EE21113AAF06}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_PlaceOnShoulder_02.wav"
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 40964
+   name "2 PlaceAdhesive"
+   version 7
+   tl -2273.636 1241.111
+   Volume -13
+   "Volume variance" 0.5
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D40C7C2645D6480D}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_PlaceAdhesive_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4D12C5BF5831799D}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_PlaceAdhesive_02.wav"
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 41988
+   name "3 Screw"
+   version 7
+   tl -2273.636 1344.546
+   Volume -24
+   "Volume variance" 0.5
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{19795ED4E432C181}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_Screw_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8067E74DF9D5F011}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_Screw_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F76D8FC50D771F61}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_Screw_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 43012
+   name "4 RipOffTube"
+   version 7
+   tl -2273.636 1445.556
+   Volume -17
+   "Volume variance" 0.5
+   "Pitch variance" 0.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{600279F0E21D18F1}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_RipOffTube.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 44036
+   name "5 AttachTube"
+   version 7
+   tl -2273.636 1552.222
+   Volume -17
+   "Volume variance" 0.5
+   "Pitch variance" 0.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{378EC20707480B9F}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_AttachTube.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 45060
+   name "6 ScrewEnd"
+   version 7
+   tl -2273.636 1660
+   Volume -17
+   "Volume variance" 0.5
+   Pitch 1
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{53948FB337F2678A}Sounds/Items/Medicine/SalineBag/Samples/Items_SalineBag_ScrewEnd.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 46084
+   name "0 Grab"
+   version 7
+   tl -2273.636 1903.611
+   Volume -16
+   "Volume variance" 1
+   Pitch 7
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7A4669D147D7D266}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E358D0485A30E3F6}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9452B8C0AE920C86}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{93954291C814B645}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E49F2A193CB65935}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7D819380215168A5}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 51204
+   name "1 Grab Light"
+   version 7
+   tl -2273.636 2008
+   Volume -24
+   "Volume variance" 1
+   Pitch 3
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7A4669D147D7D266}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E358D0485A30E3F6}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9452B8C0AE920C86}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{93954291C814B645}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E49F2A193CB65935}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7D819380215168A5}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 52228
+   name "2 Stretch Long"
+   version 7
+   tl -2273.636 2115
+   Volume -21
+   "Volume variance" 1
+   Pitch 0.5
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A3DCAFAFD8A24316}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3AC21636C5457286}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4DC87EBE31E79DF6}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A0F84EF57612735}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 53252
+   name "3 Finish Short"
+   version 7
+   tl -2273.636 2218.75
+   Volume -13
+   "Volume variance" 1
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{FD694FC37F084235}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Finish_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6477F65A62EF73A5}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Finish_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{137D9ED2964D9CD5}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Finish_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{14BA6483F0CB2616}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Finish_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 54276
+   name "4 Stretch Short"
+   version 7
+   tl -2273.636 2321.222
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 16396
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -18
+   "Volume variance" 1
+   Pitch 1.5
+   "Pitch variance" 2
+   "Fade in time" 20
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A3DCAFAFD8A24316}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3AC21636C5457286}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4DC87EBE31E79DF6}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A0F84EF57612735}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 56324
+   name "5 Finish_Long Layer"
+   version 7
+   tl -2273.636 2445.555
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 16396
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -21
+   "Volume variance" 1
+   Pitch -7
+   "Pitch variance" 1
+   "Fade in time" 90
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A3DCAFAFD8A24316}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{3AC21636C5457286}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4DC87EBE31E79DF6}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{4A0F84EF57612735}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Stretch_Long_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 57348
+   name "6 Remove"
+   version 7
+   tl -2273.636 2574.546
+   Volume -25
+   "Volume variance" 3.5
+   Pitch 0.5
+   "Pitch variance" 3
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9C9C3A2B80D16808}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Remove_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{058283B29D365998}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Remove_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7288EB3A6994B6E8}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Remove_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{754F116B0F120C2B}Sounds/Items/Medicine/Tourniquet/Samples/Items_Tourniquet_Remove_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 63492
+   name "Shovel In Hard"
+   version 7
+   tl -1137 3473
+   "Pitch variance" 0.5
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0C638A8A5EB2B75A}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{957D3313435586CA}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E2775B9BB7F769BA}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E5B0A1CAD171D379}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{92BAC94225D33C09}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0BA470DB38340D99}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Hard_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 64516
+   name "Debris"
+   version 7
+   tl -1137 3553
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -13
+   Pitch 2.7
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E1276D65862E72C8}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7839D4FC9BC94358}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F33BC746F6BAC28}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{08F4462509ED16EB}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 66564
+   name "Shovel Out"
+   version 7
+   tl -1137 3281
+   Volume -7
+   "Pitch variance" 0.5
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7B4D1A38E7DA530E}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E253A3A1FA3D629E}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9559CB290E9F8DEE}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{929E31786819372D}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E59459F09CBBD85D}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 68612
+   name "Debris"
+   version 7
+   tl -1137 3057
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -13
+   Pitch 4.8
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E1276D65862E72C8}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7839D4FC9BC94358}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F33BC746F6BAC28}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{08F4462509ED16EB}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 69636
+   name "Shovel In Normal"
+   version 7
+   tl -1137 2977
+   Volume -4
+   "Pitch variance" 0.5
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{BC83DC58B7C29445}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{259D65C1AA25A5D5}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{52970D495E874AA5}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5550F7183801F066}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{225A9F90CCA31F16}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BB442609D1442E86}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_In_Normal_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 70660
+   name "Shovel Out"
+   version 7
+   tl -1137 3777
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 6
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -4.5
+   Pitch -2
+   "Pitch variance" 0.5
+   Resampler FIR_4
+   "Fade in time" 25
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7B4D1A38E7DA530E}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E253A3A1FA3D629E}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9559CB290E9F8DEE}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{929E31786819372D}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E59459F09CBBD85D}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Out_Normal_05.wav"
+     Index 4
+    }
+   }
+  }
+  BankLocalClass {
+   id 73732
+   name "Debris"
+   version 7
+   tl -1137 3361
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 4
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -13.15
+   Pitch 8.88
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E1276D65862E72C8}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7839D4FC9BC94358}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F33BC746F6BAC28}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{08F4462509ED16EB}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 83972
+   name "Debris"
+   version 7
+   tl -1137 3857
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 6
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 5
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   Volume -14.5
+   Pitch 6.78
+   "Pitch variance" 1
+   Resampler FIR_4
+   "Fade in time" 25
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E1276D65862E72C8}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7839D4FC9BC94358}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0F33BC746F6BAC28}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{08F4462509ED16EB}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Debris_Generic_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 86020
+   name "Shovel Add"
+   version 7
+   tl -1137 4033
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 81932
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -15
+   "Pitch variance" 0.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9D4D2030994DDA79}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Grab_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{045399A984AAEBE9}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Grab_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7359F12170080499}Sounds/Items/Equipment/Shovel/Samples/Items_Shovel_Grab_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 87044
+   name "Handgrab"
+   version 7
+   tl -1137 3969
+   Volume -25.5
+   Pitch 4.5
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7A4669D147D7D266}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E358D0485A30E3F6}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{9452B8C0AE920C86}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{93954291C814B645}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{E49F2A193CB65935}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7D819380215168A5}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Generic_06.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 92164
+   name "Refueling"
+   version 7
+   tl -1136 4256
+   Volume -16
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{32A1EF190B75BA99}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABBF568016928B09}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCB53E08E2306479}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 94212
+   name "Refueling"
+   version 7
+   tl -1136 4496
+   Volume -10
+   Pitch -2
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{9527FBED258EA8E5}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_Out_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0C39427438699975}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_Out_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7B332AFCCCCB7605}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_Out_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 99332
+   name "MedicKit"
+   version 7
+   tl -1120 5088
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 102412
+       port 1
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 102412
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   Volume -15
+   Pitch -1.38
+   "Pitch variance" 1
+   "Fade in time" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{3D9A4336D32003C7}Sounds/Items/_SharedData/PickUp/Samples/Suppl_MedicKit/Items_PickUp_MedicKit_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A484FAAFCEC73257}Sounds/Items/_SharedData/PickUp/Samples/Suppl_MedicKit/Items_PickUp_MedicKit_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D38E92273A65DD27}Sounds/Items/_SharedData/PickUp/Samples/Suppl_MedicKit/Items_PickUp_MedicKit_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 103428
+   name "RearmKit"
+   version 7
+   tl -1104 5984
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 106508
+       port 1
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 106508
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   Volume -15
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{15BF488095E2F6AC}Sounds/Items/_SharedData/PickUp/Samples/Suppl_RearmKit/Items_PickUp_RearmKit_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8CA1F1198805C73C}Sounds/Items/_SharedData/PickUp/Samples/Suppl_RearmKit/Items_PickUp_RearmKit_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FBAB99917CA7284C}Sounds/Items/_SharedData/PickUp/Samples/Suppl_RearmKit/Items_PickUp_RearmKit_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 109572
+   name "Refueling"
+   version 7
+   tl -1136 4608
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 113676
+       port 1
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 113676
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   Volume -20.1
+   "Pitch variance" 0.6
+   "Fade in time" 50
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{32A1EF190B75BA99}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABBF568016928B09}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCB53E08E2306479}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 114692
+   name "Grab Metal Low"
+   version 7
+   tl -1136 4704
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 113676
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -20
+   Pitch -10.8
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5F90BD67E19E4E3B}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{289AD5EF153CA14B}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_04.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{585747368718F4F8}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_02.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 115716
+   name "Item Layer"
+   version 7
+   tl -1136 4864
+   Volume -18
+   "Volume variance" 1
+   "Pitch variance" 1
+   "Terminate Loop" 0
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{6511C7AE3E6BB521}Sounds/Items/_SharedData/Drop/Samples/Suppl_RefuelingKit/Items_Drop_RefuelingKit_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{FC0F7E37238C84B1}Sounds/Items/_SharedData/Drop/Samples/Suppl_RefuelingKit/Items_Drop_RefuelingKit_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{8B0516BFD72E6BC1}Sounds/Items/_SharedData/Drop/Samples/Suppl_RefuelingKit/Items_Drop_RefuelingKit_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 118788
+   name "Refueling"
+   version 7
+   tl -1136 4928
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 113676
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -19.2
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{32A1EF190B75BA99}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{ABBF568016928B09}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DCB53E08E2306479}Sounds/Items/SuppliesSupport/Jerrycan/Samples/Items_Refuel_RefuelingKit_In_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 119812
+   name "Grab Metal Low"
+   version 7
+   tl -1136 4800
+   Volume -22
+   Pitch -10.8
+   "Pitch variance" 1
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5F90BD67E19E4E3B}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_05.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{289AD5EF153CA14B}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_04.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{585747368718F4F8}Sounds/Character/Movement/Climbing/Samples/Climbing_HandGrab_Metal_02.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 120836
+   name "GetRifleMag"
+   version 7
+   tl -1104 6656
+   ctl 0 -21
+   Volume -16.533
+   "Volume variance" 1
+   Pitch -1.86
+   "Pitch variance" 0.7
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CB06819963302C23}Sounds/Character/Movement/Generic_Movements/Samples/HideGetMag/Character_GetMag_Rifle_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{521838007ED71DB3}Sounds/Character/Movement/Generic_Movements/Samples/HideGetMag/Character_GetMag_Rifle_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{251250888A75F2C3}Sounds/Character/Movement/Generic_Movements/Samples/HideGetMag/Character_GetMag_Rifle_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{22D5AAD9ECF34800}Sounds/Character/Movement/Generic_Movements/Samples/HideGetMag/Character_GetMag_Rifle_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 125956
+   name "Prepare"
+   version 7
+   tl -1120 5262.571
+   Volume -13.137
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{E4D5D63E28142A74}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Prepare_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{7DCB6FA735F31BE4}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Prepare_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{0AC1072FC151F494}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Prepare_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 128004
+   name "Place"
+   version 7
+   tl -1120 5424
+   Volume -16
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CD9FCF2E926E85C1}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Place_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{548176B78F89B451}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Place_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{238B1E3F7B2B5B21}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Place_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 130052
+   name "GrabItem"
+   version 7
+   tl -1120 5584
+   Volume -22.372
+   Pitch 1
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{6F5B15A74EBC294A}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_GrabItem_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F645AC3E535B18DA}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_GrabItem_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{814FC4B6A7F9F7AA}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_GrabItem_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 133124
+   name "Away"
+   version 7
+   tl -1120 5744
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 102412
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -13
+   "Pitch variance" 1
+   "Fade in time" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{7DCB6FA735F31BE4}Sounds/Items/SuppliesSupport/MedicalKit/Samples/Items_MedicalKit_Prepare_02.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 139268
+   name "Prepare"
+   version 7
+   tl -1104 6144
+   Volume -13
+   "Pitch variance" 0.7
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{C5398BEA30F971D0}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Prepare_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5C2732732D1E4040}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Prepare_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2B2D5AFBD9BCAF30}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Prepare_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 141316
+   name "Away"
+   version 7
+   tl -1104 6416
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 102412
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -13
+   "Pitch variance" 1
+   "Fade in time" 100
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5C2732732D1E4040}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Prepare_02.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 145412
+   name "Place"
+   version 7
+   tl -1104 6288
+   Volume -16
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5CA72EBC02895D27}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C5B997251F6E6CB7}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B2B3FFADEBCC83C7}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 148484
+   name "PlaceSweetener"
+   version 7
+   tl -1104 6480
+   Volume -9
+   "Fade in function" SCurve
+   "Fade in time" 250
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5CA72EBC02895D27}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C5B997251F6E6CB7}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B2B3FFADEBCC83C7}Sounds/Items/SuppliesSupport/RearmKit/Samples/Items_RearmKit_Place_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 164868
+   name "Eating"
+   version 7
+   tl -1095.976 7038.098
+   Volume 5
+   "Volume variance" 0.5
+   "Pitch variance" 3
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1AE7A8B5DFDA42F5}Assets/Audio/person-eating-216440.wav"
+     Probability 50
+    }
+    AudioBankSampleClass Sample {
+     Filename "{638B2A273A3CF92F}Assets/Audio/person-eating-2.wav"
+     Probability 50
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 165892
+   name "Drinking"
+   version 7
+   tl -1196.669 7328.185
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 3
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{5787559105980C55}Assets/Audio/drinking-water_thirsty-104822.wav"
+     Probability 50
+    }
+    AudioBankSampleClass Sample {
+     Filename "{451996843810E7B2}Assets/Audio/drinking-water_thirsty-102.wav"
+     Probability 50
+     Index 1
+    }
+   }
+  }
+  BankLocalClass {
+   id 171012
+   name "Drinking Well"
+   version 7
+   tl -1190.149 7615.986
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 2
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CC71D6336E3E0F6A}Assets/Audio/drinking-water-7173.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 173060
+   name "Vomiting"
+   version 7
+   tl -1209.943 7836.661
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 0.3
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{4086B939EC4C442D}Assets/Audio/vomit-101863.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 176132
+   name "Collecting Bush"
+   version 7
+   tl -1214.015 8007.785
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 0.3
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{19317EC8D22E37D7}Assets/Audio/bush-weed-grass-cut-prune-move-70396.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 178180
+   name "BLOW"
+   version 7
+   tl -1236.315 8230.638
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 1
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{6EE476A77A625887}Assets/Audio/Blow.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 181252
+   name "BREATH"
+   version 7
+   tl -1217.695 8435.46
+   Volume 7
+   "Volume variance" 0.5
+   "Pitch variance" 1
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{F4EA4628E5452D19}Assets/Audio/Breath.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass : "{E7A5A6AD7326FC7B}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal.conf" {
+   id 25628
+   version 5
+   tl -709.238 -808.365
+   parent "{E7A5A6AD7326FC7B}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 26637
+       port 9
+      }
+     }
+    }
+   }
+   pi + {
+    0
+   }
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 151581
+   name "AuxOut Rev Large"
+   version 5
+   tl 654.221 2599.847
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5129
+       port 5
+      }
+      ConnectionClass connection {
+       id 4105
+       port 5
+      }
+      ConnectionClass connection {
+       id 35849
+       port 5
+      }
+      ConnectionClass connection {
+       id 47113
+       port 5
+      }
+      ConnectionClass connection {
+       id 72713
+       port 5
+      }
+      ConnectionClass connection {
+       id 77833
+       port 5
+      }
+      ConnectionClass connection {
+       id 62473
+       port 5
+      }
+      ConnectionClass connection {
+       id 78857
+       port 5
+      }
+      ConnectionClass connection {
+       id 71689
+       port 5
+      }
+      ConnectionClass connection {
+       id 90121
+       port 5
+      }
+      ConnectionClass connection {
+       id 93193
+       port 5
+      }
+      ConnectionClass connection {
+       id 100361
+       port 5
+      }
+      ConnectionClass connection {
+       id 105481
+       port 5
+      }
+      ConnectionClass connection {
+       id 111625
+       port 5
+      }
+      ConnectionClass connection {
+       id 116745
+       port 5
+      }
+      ConnectionClass connection {
+       id 122889
+       port 5
+      }
+      ConnectionClass connection {
+       id 124937
+       port 5
+      }
+      ConnectionClass connection {
+       id 126985
+       port 5
+      }
+      ConnectionClass connection {
+       id 132105
+       port 5
+      }
+      ConnectionClass connection {
+       id 135177
+       port 5
+      }
+      ConnectionClass connection {
+       id 147465
+       port 5
+      }
+      ConnectionClass connection {
+       id 142345
+       port 5
+      }
+      ConnectionClass connection {
+       id 138249
+       port 5
+      }
+      ConnectionClass connection {
+       id 157705
+       port 5
+      }
+      ConnectionClass connection {
+       id 167945
+       port 5
+      }
+      ConnectionClass connection {
+       id 168969
+       port 5
+      }
+      ConnectionClass connection {
+       id 172041
+       port 5
+      }
+      ConnectionClass connection {
+       id 177161
+       port 5
+      }
+      ConnectionClass connection {
+       id 182281
+       port 5
+      }
+      ConnectionClass connection {
+       id 179209
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 110
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 302087
+  }
+  AuxOutClass {
+   id 152605
+   name "AuxOut Rev Small"
+   version 5
+   tl 415.928 1001.3
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5129
+       port 5
+      }
+      ConnectionClass connection {
+       id 4105
+       port 5
+      }
+      ConnectionClass connection {
+       id 35849
+       port 5
+      }
+      ConnectionClass connection {
+       id 47113
+       port 5
+      }
+      ConnectionClass connection {
+       id 72713
+       port 5
+      }
+      ConnectionClass connection {
+       id 77833
+       port 5
+      }
+      ConnectionClass connection {
+       id 62473
+       port 5
+      }
+      ConnectionClass connection {
+       id 78857
+       port 5
+      }
+      ConnectionClass connection {
+       id 71689
+       port 5
+      }
+      ConnectionClass connection {
+       id 90121
+       port 5
+      }
+      ConnectionClass connection {
+       id 93193
+       port 5
+      }
+      ConnectionClass connection {
+       id 100361
+       port 5
+      }
+      ConnectionClass connection {
+       id 105481
+       port 5
+      }
+      ConnectionClass connection {
+       id 111625
+       port 5
+      }
+      ConnectionClass connection {
+       id 116745
+       port 5
+      }
+      ConnectionClass connection {
+       id 122889
+       port 5
+      }
+      ConnectionClass connection {
+       id 124937
+       port 5
+      }
+      ConnectionClass connection {
+       id 126985
+       port 5
+      }
+      ConnectionClass connection {
+       id 132105
+       port 5
+      }
+      ConnectionClass connection {
+       id 135177
+       port 5
+      }
+      ConnectionClass connection {
+       id 147465
+       port 5
+      }
+      ConnectionClass connection {
+       id 142345
+       port 5
+      }
+      ConnectionClass connection {
+       id 138249
+       port 5
+      }
+      ConnectionClass connection {
+       id 157705
+       port 5
+      }
+      ConnectionClass connection {
+       id 167945
+       port 5
+      }
+      ConnectionClass connection {
+       id 168969
+       port 5
+      }
+      ConnectionClass connection {
+       id 172041
+       port 5
+      }
+      ConnectionClass connection {
+       id 177161
+       port 5
+      }
+      ConnectionClass connection {
+       id 182281
+       port 5
+      }
+      ConnectionClass connection {
+       id 179209
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 107
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 300039
+  }
+  AuxOutClass {
+   id 153629
+   name "AuxOut Rev Medium"
+   version 5
+   tl 626.776 1771.555
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5129
+       port 5
+      }
+      ConnectionClass connection {
+       id 4105
+       port 5
+      }
+      ConnectionClass connection {
+       id 35849
+       port 5
+      }
+      ConnectionClass connection {
+       id 47113
+       port 5
+      }
+      ConnectionClass connection {
+       id 72713
+       port 5
+      }
+      ConnectionClass connection {
+       id 77833
+       port 5
+      }
+      ConnectionClass connection {
+       id 62473
+       port 5
+      }
+      ConnectionClass connection {
+       id 78857
+       port 5
+      }
+      ConnectionClass connection {
+       id 71689
+       port 5
+      }
+      ConnectionClass connection {
+       id 90121
+       port 5
+      }
+      ConnectionClass connection {
+       id 93193
+       port 5
+      }
+      ConnectionClass connection {
+       id 100361
+       port 5
+      }
+      ConnectionClass connection {
+       id 105481
+       port 5
+      }
+      ConnectionClass connection {
+       id 111625
+       port 5
+      }
+      ConnectionClass connection {
+       id 116745
+       port 5
+      }
+      ConnectionClass connection {
+       id 122889
+       port 5
+      }
+      ConnectionClass connection {
+       id 124937
+       port 5
+      }
+      ConnectionClass connection {
+       id 126985
+       port 5
+      }
+      ConnectionClass connection {
+       id 132105
+       port 5
+      }
+      ConnectionClass connection {
+       id 135177
+       port 5
+      }
+      ConnectionClass connection {
+       id 147465
+       port 5
+      }
+      ConnectionClass connection {
+       id 142345
+       port 5
+      }
+      ConnectionClass connection {
+       id 138249
+       port 5
+      }
+      ConnectionClass connection {
+       id 157705
+       port 5
+      }
+      ConnectionClass connection {
+       id 167945
+       port 5
+      }
+      ConnectionClass connection {
+       id 168969
+       port 5
+      }
+      ConnectionClass connection {
+       id 172041
+       port 5
+      }
+      ConnectionClass connection {
+       id 177161
+       port 5
+      }
+      ConnectionClass connection {
+       id 179209
+       port 5
+      }
+      ConnectionClass connection {
+       id 182281
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 106
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 154637
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 301063
+  }
+ }
+ groups {
+  GroupClass {
+   id 50179
+   name "Using Tourniquet"
+   children {
+    46084 47113 49158 48146 51204 52228 53252 55308 54276 56324 57348
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 23555
+   name "Using Morphine Pen"
+   children {
+    5129 12294 17412 9220 15364 6148 7186
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 31747
+   name "Base Configs"
+   children {
+    26637 28693 25628 24595 10259
+   }
+   parent -1
+   Color 0.157 0.275 0.624 0.35
+  }
+  GroupClass {
+   id 33795
+   name "Bandaging"
+   children {
+    8196 4105 14340 20484 13318 21508 11268 19474 18436
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 38915
+   name "Using Saline Bag"
+   children {
+    37894 35849 34834 36868 39940 40964 41988 43012 44036 45060
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 84995
+   name "Using Shovel"
+   children {
+    69636 80914 81932 73732 59410 74756 75794 70660 63492 72713 67603 78857 77833 68612 66564 71689 62473 97299 79893 64516 82963 83972 61458 76818 88071 86020 87044
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 96259
+   name "Refueling Kit"
+   children {
+    91154 95250 93193 92164 94212 90121 114692 112658 111625 109572 113676 115716 117778 116745 118788 119812 123926
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 108547
+   name "Medical Kit"
+   children {
+    100361 99332 101394 102412 125956 132105 126985 123922 130052 128004 124937 131090 129042 135177 133124 134162
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 149507
+   name "Rearm Kit"
+   children {
+    147465 146450 141316 137234 139268 138249 142345 145412 140306 148484 106508 103428 105481 107538 120836 121874 122889
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+ }
+ version 1
+ listenerWindowModel "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+}

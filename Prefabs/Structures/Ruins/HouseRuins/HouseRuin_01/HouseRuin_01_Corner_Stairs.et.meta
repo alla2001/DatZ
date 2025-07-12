@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{22759E6CD7F7BFF8}Prefabs/Structures/Ruins/HouseRuins/HouseRuin_01/HouseRuin_01_Corner_Stairs.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

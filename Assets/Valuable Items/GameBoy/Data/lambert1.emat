@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0.283 0.283 0.283 1
+ RoughnessScale 0.928
+ MetalnessScale 0.393
+ BCRMap "{F1DEACD57DB07E49}Assets/Valuable Items/GameBoy/Data/lambert1_baseColor.edds"
+ NMOMap "{D98DFB1157D429CB}Assets/Valuable Items/GameBoy/Data/lambert1_normal.edds"
+}

@@ -1,0 +1,20 @@
+Particle {
+ AlbedoMap "{874E2808FAAD7802}Particles/_Textures/Smoke_Exhaust_Anim_BCA.edds"
+ Diffuse 1 1 1 1
+ Emissive 0 0 0 0
+ ReceiveShadow 1
+ ReceiveProbesLighting 1
+ ReceiveLights 1
+ AlphaMul 0.2
+ TileU 8
+ TileV 4
+ SphereSizeMultiplier 0.4
+ VertexNormalPower 1
+ NormalMapPower 1
+ NormalStretching 0.15
+ Backlight 0.3
+ BacklightStretching 0
+ Softness 2
+ DepthScale 1
+ CameraBlendFar 2
+}

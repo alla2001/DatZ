@@ -1,0 +1,79 @@
+GenericEntity {
+ ID "65352649326978AB"
+ components {
+  SignalsManagerComponent "{6535264972A4F6C2}" {
+  }
+  SoundComponent "{6535264972A4F69F}" {
+   Filenames {
+    "{CEB036D3FA90F3C3}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_ATMine_Generic.acp" "{A7B672B164032EE4}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_ATMine_Generic.acp" "{E48C74B8F314BEB9}Sounds/Weapons/Explosives/Mine_M15AT/Weapons_Explosives_M15AT_Handling.acp" "{764506B0AF57183F}Sounds/Weapons/Explosives/_SharedData/Weapons_Explosives_ATMine_Generic_Placement.acp"
+   }
+   DistanceManagement 0
+  }
+  MeshObject "{6535264972A4F87D}" {
+   Object "{FF35BE9795BA3797}system/wbdata/Gizmo3D/sphere.xob"
+   Materials {
+    MaterialAssignClass "{653AC28B51454891}" {
+     SourceMaterial "system/wbdata/gizmo3D/gizmo3D"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+   LODFactors {
+    1
+   }
+   PixelSizeScale 3
+  }
+  RigidBody "{6535264972A4F82B}" {
+   LinearSleepingThreashold 0.5
+   AngularSleepingThreashold 0.5
+   ResponseIndex "MediumDestructible"
+   Geometries {
+    PhysicsSphereGeometry test {
+     LayerPreset "InteractionFireGeo"
+     Mass 1
+     Radius 0.2
+    }
+   }
+   Static 1
+  }
+  SCR_DestructionDamageManagerComponent "{6535264972A4F8AF}" {
+   "Additional hit zones" {
+    SCR_HitZone Main {
+     ColliderNames {
+      "test"
+     }
+     HZDefault 1
+     MaxHealth 100
+     DamageThreshold 7
+     "Melee multiplier" 25
+     "Kinetic multiplier" 6
+     "Fragmentation multiplier" 0.006
+     "Explosive multiplier" 0.15
+    }
+   }
+   m_iMinimumBurningState 1
+  }
+  SCR_MineWeaponComponent "{6535264972A4FA57}" {
+   AllowedRaise "Only lowered"
+   UIInfo GrenadeUIInfo "{6535264972A4FA6C}" {
+    Name "#AR-Weapon_M15_Name"
+    Description "#AR-Weapon_M15_Description"
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{6535264972A4FB8B}" {
+     m_sOutline "mine-default-wide"
+     m_bProgressBar 0
+    }
+    m_sAmmoType "#AR-AmmoType_M15"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags HE
+   }
+   WeaponSlotType "primary"
+   BeActiveWhenDropped 1
+   BeActiveWhenInitWithoutParent 1
+  }
+  RplComponent "{6535264972A4FD57}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6535264972A4FD50}" {
+  }
+ }
+}

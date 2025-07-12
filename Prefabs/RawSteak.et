@@ -1,0 +1,43 @@
+GenericEntity : "{1641CA45B15C83E8}Prefabs/Apple.et" {
+ ID "65257C67881936F4"
+ components {
+  CookableItemComponent "{655AE17DFC466A6D}" {
+   m_fCookTimePerfect 90
+   m_fCookTimeBurnt 130
+   cookedPrefab "{2ED4F56CE46BF2EA}Prefabs/Cooking/Previews/CookedStake.et"
+   burntPrefab "{B0487CA2DB7B6123}Prefabs/Cooking/Previews/BurntStake.et"
+   cookedMaterial "{38399AFB3F5598F2}Assets/Food/meat/Data/RibCooked.emat"
+   burntMaterial "{F5C0ECB4EE5657C9}Assets/Food/meat/Data/RibBurnt.emat"
+  }
+  InventoryItemComponent "{65257C67B0BF0AAD}" {
+   Attributes SCR_ItemAttributeCollection "{65257C67B0BF0AA5}" {
+    ItemDisplayName SCR_InventoryUIInfo "{65257C67B0BF099F}" {
+     Name "Beaf Steak"
+     Description "Beaf Steak"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{65257C67B0BF09B7}" {
+     Weight 0.8
+     ItemDimensions 0.2 0.05 0.05
+     ItemVolume 250
+     DimensionScaler 0.35
+     RestingUP Up
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65257C67B0BF0AF9}" {
+      CameraDistanceToItem 0.2
+      ItemRenderRotation 30 0 0
+      FOV 45
+     }
+    }
+   }
+  }
+  MeshObject "{65257C67B0BF0AB8}" {
+   Object "{D381C4346170D623}Assets/Food/meat/Untitled.xob"
+  }
+  SCR_ConsumableItemComponent "{65257C67B0BF0B73}" {
+   m_ConsumableEffect SCR_ConsumableFood "{65257C67B0BF0B72}" {
+    regenFoodValue 12
+   }
+  }
+ }
+}

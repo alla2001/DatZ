@@ -1,0 +1,194 @@
+GenericEntity {
+ ID "654EABBFA23951C7"
+ components {
+  EPF_PersistenceComponent "{654EABBD2DE2D37F}" {
+   m_pSaveData EPF_ItemSaveDataClass "{654EABBD2DE2D09F}" {
+    m_aComponents {
+     EPF_FluidContainerManagerComponentSaveDataClass "{654EABB27A429EC7}" {
+     }
+    }
+   }
+  }
+  FluidContainerComponent "{654EABBD2DE2D377}" {
+   m_fMaxCapacity 200
+  }
+  InventoryItemComponent "{654EABBD2DE2D28C}" {
+   Attributes SCR_ItemAttributeCollection "{654EABBD2DE2D2BF}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{654EABBD2DE2D388}" {
+     Name "Water Bucket"
+     Description "Water Bucket"
+     Icon ""
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654EABBD2DE2D26B}" {
+     Weight 4
+     SizeSetupStrategy Volume
+     ItemDimensions 0.5 1 0.5
+     ItemVolume 200000
+     DimensionScaler 0.5
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{654EABBD2DE2D249}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{654EABBD2DE2D24B}" {
+       AnimGraph "{7448534CC9BB5495}Assets/Items/Fuel/workspaces/Jerrycan.agr"
+       AnimInstance "{DB71459BEC12E8B1}Assets/Items/Fuel/workspaces/Jerrycan_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     AllowInspection 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{654EABBD2DE2D256}" {
+      CameraOrbitAngles 0 15 15
+      CameraDistanceToItem 1
+      ItemRenderRotation 0 -90 0
+      LodModel 1
+     }
+     CharacterModifierAttributes "{654EABBD2DE2D2CA}" {
+      StanceLimits 0.025 1
+      SpeedLimit 2
+      ADSSpeedLimit 1.7
+      SpeedLimitItemPrimaryAction 0
+      SpeedLimitHighready 1.7
+      CanBeEquippedInVehicle 0
+      AllowJumping 0
+     }
+    }
+    m_Size SLOT_2x2
+    m_eQuickSlotSize SLOT_1x1
+    m_SlotType SLOT_GADGETS_STORAGE
+   }
+  }
+  MeshObject "{654EABBD2DE2D3EF}" {
+   Object "{8D4E2E836BBABBDD}Assets/Props/Civilian/Bucket_01/Bucket_01.xob"
+  }
+  RigidBody "{654EABBD2DE2D3E5}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_FuelManagerComponent "{654EABBD2DE2D562}" {
+   Enabled 0
+   FuelNodes {
+    SCR_FuelNode "{654EABBD2DE2D564}" {
+     FuelType Other
+     MaxFuel 20
+     FuelCapPosition PointInfo "{654EABBD2DE2D569}" {
+      Offset 0.0352 0.4697 -0.1526
+     }
+     m_fInitialFuelTankState 5
+     m_MaxFlowCapacityOut MANUAL
+     m_iFuelLeakSpeed 1
+     m_eFuelNodeType 15
+    }
+   }
+  }
+  SCR_FuelSupportStationComponent "{654EABBD2DE2D5CC}" {
+   Enabled 0
+   m_sOnUseSoundEffectFile "{9DD9C6279F4489B4}Sounds/SupportStations/SupportStations_Vehicles.acp"
+   m_sOnUseSoundEffectEventName "SOUND_VEHICLE_REFUEL_DONE"
+   m_sOnUpdateSoundEffectEventName "SOUND_VEHICLE_REFUEL"
+   m_fRange -1
+   m_bIgnoreSelf 1
+   m_BackupMaxFlowCapacity MANUAL
+   m_EmptyInvalidReason FUEL_CANISTER_EMPTY
+  }
+  SCR_SoundDataComponent "{654EABBD2DE2D5B2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{654EABBD2DE2D5D2}" {
+     m_sSoundProject "{E566304399CE084C}Sounds/Items/_SharedData/PickUp/Items_PickUp_Refueling_Kit.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{654EABBD2DE2D5A0}" {
+     m_sSoundProject "{E566304399CE084C}Sounds/Items/_SharedData/PickUp/Items_PickUp_Refueling_Kit.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{654EABBD2DE2D5B6}" {
+     m_sSoundProject "{157FD27548B36E28}Sounds/Items/_SharedData/Drop/Items_Drop_RefuelingKit.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  SCR_SupportStationGadgetComponent "{654EABBD2DE2D589}" {
+   m_eAnimVariable ADRIANOV
+   m_aSupportStationTypes {
+    200
+   }
+  }
+  ActionsManagerComponent "{654EABBD2DE2BD33}" {
+   ActionContexts {
+    UserActionContext "{654EABBD2DE2D471}" {
+     ContextName "default"
+     Position PointInfo "{654EABBD2DE2D464}" {
+      Offset 0 0.225 0
+     }
+     Radius 0.4
+    }
+    UserActionContext "{654EABBD2DE2BD66}" {
+     ContextName "fuelcap"
+     Position PointInfo "{654EABBD2DE2D449}" {
+      Offset 0.0352 0.4697 -0.1526
+     }
+     Radius 0.4
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{654EABBD2DE2BD01}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654EABBD2DE2BD7C}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    DrinkUserAction "{654EABB06D4E8B08}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654EABB179024687}" {
+      Name "Drink"
+      Description "Drink"
+     }
+     ActionTitle "Drink"
+     Duration 6
+    }
+    FillUserAction "{654EABB06F2FFFDB}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654EABB17105C472}" {
+      Name "Fill Container"
+      Description "Fill Container"
+     }
+     ActionTitle "Fill Container"
+     Duration 1
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{654EABBD2DE2BE6C}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{654EABBD2DE2BDB7}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{654EABBD2DE2BE6A}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{654EABBD2DE2BE7B}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{654EABBD2DE2BE00}" {
+  }
+ }
+ coords 3067.378 11.76 2880.278
+}

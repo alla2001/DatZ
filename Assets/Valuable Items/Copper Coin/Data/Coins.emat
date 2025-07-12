@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.386 0.386 0.386 1
+ RoughnessScale 0.426
+ MetalnessScale 5
+ BCRMap "{62D621FA1D63E37B}Assets/Valuable Items/Copper Coin/Data/Coins_baseColor.edds"
+ NormalPower 0.585
+ NMOMap "{A51D4EB67F971669}Assets/Valuable Items/Copper Coin/Data/Coins_normal.edds"
+}

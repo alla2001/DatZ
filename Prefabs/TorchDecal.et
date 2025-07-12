@@ -1,0 +1,19 @@
+GenericEntity {
+ ID "654ED7677A1336FA"
+ components {
+  MeshObject "{654ED766C113A113}" {
+   Object "{6EDEB250D3393944}Assets/Crafting/torch/FireTorch.xob"
+   Materials {
+    MaterialAssignClass "{654ED766A672D679}" {
+     SourceMaterial "Rope"
+     AssignedMaterial "{80E5A903A03307C5}Assets/Props/Civilian/Fireplace_01/Data/FirePlace_EMdecal_01.emat"
+    }
+    MaterialAssignClass "{654ED766A672D66B}" {
+     SourceMaterial "material"
+     AssignedMaterial "{80E5A903A03307C5}Assets/Props/Civilian/Fireplace_01/Data/FirePlace_EMdecal_01.emat"
+    }
+   }
+  }
+ }
+ coords 3072.728 12.021 2874.568
+}

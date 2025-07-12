@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{CDCD0C447E0CCC5E}Assets/Valuable Items/SSD/Untitled.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Offset 0 0.01 0
+   Rotate 180 90 0
+   MaterialAssigns {
+    MaterialAssignClass "{655D0CCB07951E69}" {
+     SourceMaterial "SSD_2"
+     AssignedMaterial "{857517BB9E52B0EE}Assets/Valuable Items/SSD/Data/SSD_2.emat"
+    }
+   }
+   MeshParams {
+    MeshParam SSD {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{6A7CBD6BBCFC5148}Common/Materials/Game/Plastic/plastic_6mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

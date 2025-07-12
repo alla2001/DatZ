@@ -1,0 +1,19 @@
+BehaviorTree {
+ Name "AI/AIAgents/Chicken.bt"
+ Nodes {
+  RootNode Root {
+   Name "Root"
+   EditorPos -50 -45
+   Nodes {
+    Selector Selector {
+     Name "Selector"
+     EditorPos -240 82
+    }
+   }
+  }
+  AITaskMoveToWaypoint "Move To Waypoint" {
+   Name "Move To Waypoint"
+   EditorPos -255 355
+  }
+ }
+}

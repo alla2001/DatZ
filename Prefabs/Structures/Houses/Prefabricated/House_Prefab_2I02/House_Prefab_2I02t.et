@@ -1,0 +1,330 @@
+SCR_DestructibleBuildingEntity : "{07465627D9BD8A0A}Prefabs/Structures/Houses/Prefabricated/House_Prefab_2I02/House_Prefab_2I02t_base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GenericEntity {
+   ID "5B0F0274BA85DEC2"
+   {
+    GenericEntity {
+     ID "5B0F0274B7671229"
+     coords -2.218 0.031 -0.67
+     angleY 145.033
+    }
+    GenericEntity {
+     ID "5B0F0274B7671239"
+     coords 2.893 0.003 4.527
+     angleY -57.365
+    }
+    GenericEntity {
+     ID "5B0F0274B76712D9"
+     coords 2.384 3.764 1.026
+     angleZ 73.31
+    }
+    GenericEntity {
+     ID "5B0F0274B76712EF"
+     coords -0.524 0.275 -4.934
+     angleX 78.552
+     angleY -78
+    }
+    GenericEntity {
+     ID "5B0F0274B767135D"
+     coords -1.108 0.003 6.808
+     angleY -3.818
+    }
+    GenericEntity {
+     ID "5B0F0274B7671482"
+     coords -2.321 0.046 -0.26
+    }
+    GenericEntity {
+     ID "5B0F0274B767148E"
+     coords 2.455 2.989 5.523
+     angleY 145.147
+    }
+    GenericEntity {
+     ID "5B0F0274B76714C4"
+     coords -3.02 2.989 2.212
+     angleY 165.165
+    }
+    GenericEntity {
+     ID "5B0F0274B76714FB"
+     coords 3.52 4.11 2.204
+     angleX -11.853
+     angleY -0.257
+     angleZ -178.75
+    }
+    GenericEntity {
+     ID "5B0F0274B7671658"
+     coords 1.894 2.989 0.856
+     angleZ 25.076
+    }
+    GenericEntity {
+     ID "5B0F0274B76716A1"
+     coords -1.943 0.003 -4.077
+     angleY -56.981
+    }
+    GenericEntity {
+     ID "5B0F0274B76716CE"
+     coords -1.025 2.803 3.787
+     angleX -33.619
+    }
+    GenericEntity {
+     ID "5B0F0274B76716D3"
+     coords -4.388 0.011 -2.896
+    }
+    GenericEntity {
+     ID "5B0F0274B7671738"
+     components {
+      MeshObject "{5872F0EB7FA40561}" {
+       Enabled 0
+      }
+     }
+    }
+    GenericEntity {
+     ID "5B0F0274B7671743"
+     coords -2.662 0.137 4.672
+     angleZ 13.194
+    }
+    GenericEntity {
+     ID "5B0F0274B767174E"
+     coords -3.365 0.333 2.18
+     angleY 100
+     angleZ -87.544
+    }
+    GenericEntity {
+     ID "5B0F0274B7671764"
+     coords -2.683 0.003 -2.586
+     angleY 43.642
+    }
+    GenericEntity {
+     ID "5B0F0274B7671795"
+     coords 2.256 0.161 3.634
+     angleX 81.225
+     angleY 90
+    }
+    GenericEntity {
+     ID "5B0F0274B76717A6"
+     coords -0.198 3.891 4.101
+     angleZ -22.181
+    }
+    GenericEntity {
+     ID "5B0F0274B76717EB"
+     coords -2.215 4.058 2.05
+     angleX 13.881
+     angleY -0.683
+    }
+    GenericEntity {
+     ID "5B0F0274B76717FF"
+     coords 3.725 0.316 -5.372
+     angleY 2
+     angleZ -102.056
+    }
+    GenericEntity {
+     ID "5B0F0274B7671D82"
+     coords -2.694 0.211 -2.908
+     angleX -59.319
+     angleY -115.475
+     angleZ -43.072
+     {
+      GenericEntity {
+       ID "5B0F0274B7671D85"
+       coords 0.41 0.573 0.56
+       angleX 19.294
+       angleY -177.506
+      }
+     }
+    }
+    GenericEntity {
+     ID "5B0F0274B767A868"
+     coords 2.331 2.989 4.777
+     angleY -77.597
+    }
+    GenericEntity {
+     ID "5B0F0274B767A898"
+     coords 0.754 0.003 5.599
+    }
+    GenericEntity {
+     ID "5B0F0274B767A8E8"
+     coords -4.379 0.04 6.419
+     angleX -15.02
+     angleY 18
+    }
+    GenericEntity {
+     ID "5B0F0274B767AE15"
+     coords 1.065 0.299 5.876
+     angleX -86.744
+     angleY 54
+    }
+    GenericEntity {
+     ID "5B0F0274B767AEF0"
+     coords 0.643 3.135 4.325
+     angleX -85.535
+     angleY -90
+     angleZ 27.835
+    }
+    GenericEntity {
+     ID "5B0F0274B767AF3B"
+     coords -0.695 0.194 -3.055
+     angleX -89.382
+     angleY -25
+    }
+    GenericEntity {
+     ID "5B0F0274B767AF4C"
+     coords -3.622 2.989 5.051
+     angleY 128.681
+    }
+    GenericEntity {
+     ID "5B0F0274B767AF98"
+     coords -2.44 1.785 0.532
+     angleX 21.583
+     angleY 180
+     angleZ -50.612
+    }
+    GenericEntity {
+     ID "5B0F0274B767AFAC"
+     coords -3.888 0.269 0.017
+     angleZ 55.794
+    }
+    GenericEntity {
+     ID "5B0F0274B767AFD1"
+     coords 2.588 2.989 1.033
+     angleY -2.146
+    }
+    GenericEntity {
+     ID "5B0F0274B767AFF6"
+     components {
+      MeshObject "{5872F0EB7FA40561}" {
+       Enabled 0
+      }
+     }
+    }
+    GenericEntity {
+     ID "5B0F0274B767AFFA"
+     components {
+      MeshObject "{5872F0EB7FA40561}" {
+       Enabled 0
+      }
+     }
+    }
+    GenericEntity {
+     ID "5B0F0274B767D528"
+     coords -3.638 0.003 4.728
+     angleY 53.06
+    }
+    GenericEntity {
+     ID "5B0F0274B767D534"
+     coords 1.4 0.745 -3.477
+     angleX 0.37
+     angleY 29.617
+     angleZ 89.349
+    }
+   }
+  }
+  $grp DecalEntity : "{32D707B931FD52FE}Prefabs/Decals/Blood/BloodStain_Wall_01.et" {
+   {
+    ID "6534AA6CDE69E929"
+    coords -2.479 0.77 0.526
+    angleX 0.057
+    scale 0.8
+   }
+   {
+    ID "6534AA6CDE69E9E3"
+    coords -0.1 3.057 6.541
+    angleX -90
+    angleY 0
+    angleZ -0
+    scale 0.8
+   }
+  }
+  $grp DecalEntity : "{3BD66CDD309673DB}Prefabs/Decals/Blood/BloodStain_Drops_01.et" {
+   {
+    ID "6534AA6CA3FB0618"
+    coords -0.537 -0.389 8.359
+    angleX -68.515
+    angleY -180
+    angleZ 180
+    scale 2
+   }
+   {
+    ID "6534AA6CDE69E930"
+    coords -0.816 0.011 3.927
+    angleX -90
+    angleY -0
+    angleZ -0
+    scale 2
+   }
+   {
+    ID "6534AA6CDE69E9DF"
+    coords 0.252 2.997 1.555
+    angleX -90
+    angleY 180
+    angleZ 159.933
+    scale 2
+   }
+  }
+  $grp DecalEntity : "{71979372AFE909E5}Prefabs/Decals/Blood/BloodStain_Large_01.et" {
+   {
+    ID "6534AA6C33C895A5"
+    coords 3.261 2.997 5.811
+    angleX -90
+    scale 1.5
+   }
+   {
+    ID "6534AA6CDE69E9A3"
+    coords -2.334 0.136 -0.422
+    angleX -90
+    scale 1.5
+   }
+   {
+    ID "6534AA6CDE69E9CE"
+    coords -1.591 3.059 5.54
+    angleX -90
+    scale 1.5
+   }
+  }
+  $grp DecalEntity : "{CCE57C4C9C0E5009}Prefabs/Decals/Blood/BloodStain_Small_01.et" {
+   {
+    ID "6534AA6CA3FB0633"
+    coords -1.145 -0.217 8.029
+    angleX -51.564
+    angleY 180
+    angleZ -180
+    scale 0.8
+   }
+   {
+    ID "6534AA6CDE69E900"
+    coords -0.692 0.011 5.497
+    angleX -90
+    angleY -0
+    angleZ -0
+    scale 0.8
+   }
+   {
+    ID "6534AA6CDE69E911"
+    coords 0.321 3.041 6.58
+    angleX -90
+    angleY -0
+    angleZ -0
+    scale 0.8
+   }
+   {
+    ID "6534AA6CDE69E95E"
+    coords -0.089 2.997 2.704
+    angleX -90
+    angleY -0
+    angleZ -0
+    scale 0.8
+   }
+   {
+    ID "6534AA6CDE69E9D1"
+    coords 2.322 2.997 2.766
+    angleX -90
+    angleY -0
+    angleZ -0
+    scale 0.8
+   }
+  }
+  SCR_DestructibleBuildingEntity : "{E50AA3C83633B05A}Prefabs/Structures/Industrial/Houses/Workshop_02/Workshop_02_ruined.et" {
+   ID "6534AA6CDE69E697"
+   coords 407.009 0 0
+  }
+ }
+}

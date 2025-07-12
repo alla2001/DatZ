@@ -1,0 +1,1628 @@
+GenericEntity Backpack_ALICE_Medium_6596E1DFAC9E876F : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
+ coords 174.063 1 166.348
+}
+GameEntity Rags_6596E1DFD96F6ECC : "{0892B183E7F9DF08}Prefabs/Rags.et" {
+ components {
+  InventoryItemComponent "{6528FADC6B3006E9}" {
+   Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
+     ItemVolume 150
+    }
+   }
+  }
+ }
+ coords 169.814 1 165.773
+}
+$grp DatZLootSpawner : "{089B1185A949B872}Prefabs/Spawners/Farm_DatZLootSpawner.et" {
+ {
+  coords 144.116 1 184.72
+ }
+ {
+  coords 145.79 1 184.933
+ }
+ {
+  coords 147.401 1 184.974
+ }
+ {
+  coords 149.177 1 185.042
+ }
+ {
+  coords 151.662 1 184.98
+ }
+ {
+  coords 151.644 1 186.696
+ }
+ {
+  coords 149.374 1 186.607
+ }
+ {
+  coords 147.69 1 186.583
+ }
+ {
+  coords 146.206 1 186.64
+ }
+ {
+  coords 143.942 1 186.607
+ }
+ {
+  coords 143.986 1 187.961
+ }
+ {
+  coords 145.862 1 188.204
+ }
+ {
+  coords 147.554 1 188.139
+ }
+ {
+  coords 149.157 1 188.206
+ }
+ {
+  coords 151.375 1 188.173
+ }
+ {
+  coords 151.424 1 189.257
+ }
+ {
+  coords 149.344 1 189.29
+ }
+ {
+  coords 147.662 1 189.285
+ }
+ {
+  coords 145.109 1 189.289
+ }
+ {
+  coords 143.215 1 189.197
+ }
+ {
+  coords 141.904 1 189.175
+ }
+ {
+  coords 142.339 1 190.564
+ }
+ {
+  coords 144.127 1 190.722
+ }
+ {
+  coords 146.44 1 190.613
+ }
+ {
+  coords 148.354 1 190.701
+ }
+ {
+  coords 150.071 1 190.656
+ }
+ {
+  coords 112.841 1 189.261
+ }
+ {
+  coords 116.194 1 189.832
+ }
+ {
+  coords 119.538 1 191.662
+ }
+ {
+  coords 117.98 1 194.684
+ }
+ {
+  coords 114.649 1 193.101
+ }
+ {
+  coords 117.061 1 193.91
+ }
+ {
+  coords 115.388 1 196.076
+ }
+ {
+  coords 106.599 1 201.303
+ }
+ {
+  coords 107.049 1 204.832
+ }
+ {
+  coords 106.767 1 199.777
+ }
+ {
+  coords 98.934 1 200.219
+ }
+ {
+  coords 106.351 1 201.903
+ }
+ {
+  coords 94.776 1 197.315
+ }
+ {
+  coords 97.42 1 203.808
+ }
+ {
+  coords 100.655 1 191.711
+ }
+ {
+  coords 95.445 1 199.884
+ }
+ {
+  coords 107.737 1 202.841
+ }
+ {
+  coords 105.923 1 198.444
+ }
+ {
+  coords 101.601 1 194.284
+ }
+ {
+  coords 103.591 1 202.038
+ }
+ {
+  coords 102.065 1 194.934
+ }
+ {
+  coords 99.143 1 201.56
+ }
+ {
+  coords 99.022 1 196.795
+ }
+ {
+  coords 105.497 1 201.394
+ }
+}
+GameEntity Torch_6596E1DFC440B9A2 : "{0927D05A2A9E9E4E}Prefabs/Torch.et" {
+ coords 172.05 1 163.009
+}
+GenericEntity MilitaryTentUnDeployedNonTan_6596E1DFDB64EDB3 : "{093CB5994CC797B4}Prefabs/MilitaryTentUnDeployedNonTan.et" {
+ coords 168.994 1 160.642
+}
+GenericEntity MilitaryKeyCard_6596E1DFDC7FD015 : "{0CC42C67DA16F637}Prefabs/MilitaryKeyCard.et" {
+ coords 170.43 1 161.396
+}
+GenericEntity MorphineInjection_01_65257C1823FCB39C : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
+ components {
+  SCR_ConsumableItemComponent "{59E68C74C5CEE74F}" {
+   m_ConsumableEffect SCR_ConsumableMorphine "{59E68C74C1F3910E}" {
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+   }
+  }
+ }
+ coords 137.485 1 170.83
+}
+GenericEntity TentTan_6598A52C11651D7A : "{0EF189100B0AE183}Prefabs/TentTan.et" {
+ coords 168.007 1 157.138
+}
+GenericEntity : "{1423D8B69C86DBC5}Prefabs/Base Building/SurvivorTable.et" {
+ coords 126.304 1 168.258
+ {
+  GenericEntity Map_Paper_01_unfolded_table_65A29C329F177953 {
+   ID "65A29C2B457CFE23"
+  }
+  GenericEntity Watch_Vostok_Map_65A29C329F1767B1 {
+   ID "65A29C2B457CFE21"
+  }
+ }
+}
+$grp GenericEntity : "{1641CA45B15C83E8}Prefabs/Apple.et" {
+ Apple_65257C678A51531F {
+  coords 141.199 1 171.941
+ }
+ Apple_65257C678A51531F2 {
+  coords 140.743 1 172.011
+ }
+ Apple_65257C678A51531F3 {
+  coords 141.022 1 171.745
+ }
+ Apple_65257C678A51531F4 {
+  coords 141.141 1 171.843
+ }
+ Apple_65257C678A51531F5 {
+  coords 141.08 1 172.259
+ }
+ Apple_65257C678A51531F6 {
+  coords 140.832 1 172.355
+ }
+ Apple_65257C678A51531F7 {
+  coords 140.965 1 172.09
+ }
+ Apple_65257C678A51531F8 {
+  coords 141.005 1.037 172.094
+ }
+ Apple_65257C678A51531F9 {
+  coords 140.717 1 171.839
+ }
+ Apple_6596E1DFD4959FA8 {
+  coords 171.519 1 161.77
+ }
+}
+$grp GenericEntity : "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" {
+ Knife_6526C37F20F2E807 {
+  coords 141.091 1 169.588
+ }
+ Knife_6526C37F20F2E2 {
+  coords 142.075 1 169.095
+ }
+ Knife_6526C37F20F2E3 {
+  coords 142.407 1 169.592
+ }
+}
+SCR_DestructibleBuildingEntity : "{18B2439FBF6CADFD}Prefabs/Structures/Houses/Farm/FarmHouse_E_1L01/FarmHouse_E_1L01_Wood.et" {
+ coords 102.821 0 151.608
+}
+GenericEntity Cucumber_6596E1DFDE63D515 : "{1FDD5905F1218248}Prefabs/Cucumber.et" {
+ coords 173.08 1 161.759
+}
+GenericEntity Crackers_6596E1DFDEFB21F3 : "{24C43762691FD99A}Prefabs/Crackers.et" {
+ coords 172.056 1 160.642
+}
+$grp GenericEntity : "{2804B71412781D35}Prefabs/Base Building/Barricade.et" {
+ {
+  coords 141.085 1.672 168
+  {
+   DestructibleEntity PlacedPlank_65A13CAFC8098DCB {
+    ID "65A13CC8F0997C01"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB09BB {
+    ID "65A13CA809E646E1"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0BBB {
+    ID "65A13CA81C5FC6B6"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0A44 {
+    ID "65A13CA817D6EF2A"
+   }
+  }
+ }
+ {
+  coords 105.841 3.015 162.817
+  {
+   DestructibleEntity PlacedPlank_65A13CAFC8098DCB2 {
+    ID "65A13CC8F0997C01"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB09BB2 {
+    ID "65A13CA809E646E1"
+   }
+   DestructibleEntity PlacedPlank_65A29C2A490E160D {
+    ID "65A13CA817D6EF2A"
+   }
+   DestructibleEntity PlacedPlank_65A29C2A490E192E {
+    ID "65A13CA81C5FC6B6"
+   }
+  }
+ }
+ {
+  coords 138.607 2.604 149.141
+  {
+   DestructibleEntity PlacedPlank_65A13CAFC8098DCB3 {
+    ID "65A13CC8F0997C01"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB09BB3 {
+    ID "65A13CA809E646E1"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0BBB3 {
+    ID "65A13CA81C5FC6B6"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0A3 {
+    ID "65A13CA817D6EF2A"
+   }
+  }
+ }
+ {
+  coords 129.069 2.012 164.424
+  {
+   DestructibleEntity PlacedPlank_65A13CAFC8098DCB4 {
+    ID "65A13CC8F0997C01"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB09BB4 {
+    ID "65A13CA809E646E1"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0BBB4 {
+    ID "65A13CA81C5FC6B6"
+   }
+   DestructibleEntity PlacedPlank_65A13CA8E0FB0A4 {
+    ID "65A13CA817D6EF2A"
+   }
+  }
+ }
+}
+$grp Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Base.et" {
+ {
+  components {
+   CraftingItem "{65A13CD8DAA8A26E}" {
+   }
+   ActionsManagerComponent "{65A13CDE23CE40BF}" {
+    ActionContexts {
+     UserActionContext "{65A13CDF682D8D38}" {
+      Radius 5
+     }
+    }
+    additionalActions {
+     BarricadeUserAction "{65A13CDFD2F8230B}" {
+      ParentContextList {
+       "Default"
+      }
+      UIInfo UIInfo "{65A13CDF84CA9140}" {
+       Name "Build Window"
+       Description "Build Window"
+      }
+      ActionTitle "Build Window"
+      Duration 5
+      potPlacementInfo PointInfo "{65A13CDB5A1C8D50}" {
+       Offset 0.0375 0 0.5122
+      }
+     }
+    }
+   }
+  }
+  coords 140.307 1.794 166.522
+ }
+ {
+  coords 128.487 1 166.315
+ }
+}
+GenericEntity "Cooking Pot Clean Med_658CB24E243319EF" : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et" {
+ coords 129.535 1 156.32
+}
+SCR_ChimeraCharacter Character_Base_659B15BE3A4DC361 : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+ coords 168.876 1 164.934
+}
+GenericEntity BC_Rifle_M40a1_658B51A454F92186 : "{39255AA37FC5A4B6}Prefabs/Weapons/Rifles/M40A1/BC_Rifle_M40a1.et" {
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{658B51A6EA4E61BD}" {
+     SourceMaterial "m40a1"
+     AssignedMaterial "{5041BBB1EEB8867B}Assets/Weapons/Rifles/Data/m40a1.emat"
+    }
+   }
+  }
+ }
+ coords 129.072 1 158.397
+}
+GenericEntity WaterCanteenUS_6596E1DFC04A5C0C : "{4000304122B0C624}Prefabs/WaterCanteenUS.et" {
+ components {
+  InventoryItemComponent "{6526C36F316A4F5D}" {
+   Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     DimensionScaler 0.5
+    }
+   }
+  }
+ }
+ coords 173.094 1 163.632
+}
+GenericEntity Vest_Bagari_mp117_658C6DE3BF55C970 : "{402406B5207B5B3C}Prefabs/Characters/Vests/Vest_Bagari/Variants/Vest_Bagari_mp117.et" {
+ coords 126.843 1 153.129
+}
+GenericEntity : "{4168CE8C08BC74B1}Prefabs/Structures/BuildingParts/Heating/StoveColumn_01_Base.et" {
+ coords 127.862 1 155.761
+ angleY 30.091
+}
+GenericEntity Backpack_Kolobok_6596E1DFAC284A98 : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
+ coords 173.015 1 168.53
+}
+GenericEntity Backpack_Medical_M5_6596E1DFADCC2FB2 : "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et" {
+ coords 173.818 1 165.008
+}
+GenericEntity Bucket_6596E1DFD2DF6016 : "{519A81A0F1F407E3}Prefabs/Bucket.et" {
+ coords 175.286 1 163.503
+}
+GenericEntity Mushroom_6596E1DFDA67F12F : "{51AF8E30E304375E}Prefabs/Mushroom.et" {
+ coords 169.281 1 164.866
+}
+$grp DatZLootSpawner : "{5A4EAFD33C45C170}Prefabs/Spawners/Mil_DatZLootSpawner.et" {
+ {
+  coords 100.44 1 159.75
+ }
+ {
+  coords 160.068 1 169.689
+ }
+ {
+  coords 158.566 1 169.73
+ }
+ {
+  coords 157.127 1 169.67
+ }
+ {
+  coords 156.056 1 169.592
+ }
+ {
+  coords 155.89 1 168.095
+ }
+ {
+  coords 157.358 1 168.09
+ }
+ {
+  coords 159.08 1 167.932
+ }
+ {
+  coords 160.646 1 167.979
+ }
+ {
+  coords 160.653 1 165.782
+ }
+ {
+  coords 158.768 1 165.707
+ }
+ {
+  coords 157.306 1 165.801
+ }
+ {
+  coords 155.491 1 165.828
+ }
+ {
+  coords 155.286 1 163.77
+ }
+ {
+  coords 156.563 1 163.854
+ }
+ {
+  coords 158.096 1 163.677
+ }
+ {
+  coords 159.973 1 163.648
+ }
+ {
+  coords 162.169 1 162.835
+ }
+ {
+  coords 162.415 1 165.117
+ }
+ {
+  coords 162.493 1 166.716
+ }
+ {
+  coords 162.515 1 168.528
+ }
+ {
+  coords 164.355 1 163.117
+ }
+ {
+  coords 164.425 1 165.686
+ }
+ {
+  coords 164.667 1 167.412
+ }
+ {
+  coords 164.551 1 169.319
+ }
+ {
+  coords 177.574 1 168.117
+ }
+ {
+  coords 172.186 1 169.259
+ }
+ {
+  coords 173.625 1 169.319
+ }
+ {
+  coords 175.127 1 169.278
+ }
+ {
+  coords 170.949 1 167.684
+ }
+ {
+  coords 171.115 1 169.181
+ }
+ {
+  coords 174.139 1 167.521
+ }
+ {
+  coords 172.417 1 167.679
+ }
+ {
+  coords 177.552 1 166.305
+ }
+ {
+  coords 173.155 1 163.266
+ }
+ {
+  coords 177.474 1 164.706
+ }
+ {
+  coords 177.228 1 162.424
+ }
+ {
+  coords 175.032 1 163.237
+ }
+ {
+  coords 171.622 1 163.443
+ }
+ {
+  coords 172.365 1 165.39
+ }
+ {
+  coords 170.55 1 165.417
+ }
+ {
+  coords 175.712 1 165.371
+ }
+ {
+  coords 170.345 1 163.359
+ }
+ {
+  coords 173.827 1 165.296
+ }
+ {
+  coords 175.705 1 167.568
+ }
+ {
+  coords 179.61 1 168.908
+ }
+ {
+  coords 179.726 1 167.001
+ }
+ {
+  coords 179.484 1 165.275
+ }
+ {
+  coords 179.414 1 162.706
+ }
+ {
+  coords 177.987 1 179.601
+ }
+ {
+  coords 172.599 1 180.743
+ }
+ {
+  coords 174.038 1 180.803
+ }
+ {
+  coords 175.54 1 180.762
+ }
+ {
+  coords 171.362 1 179.168
+ }
+ {
+  coords 171.528 1 180.665
+ }
+ {
+  coords 174.552 1 179.005
+ }
+ {
+  coords 172.83 1 179.163
+ }
+ {
+  coords 177.965 1 177.789
+ }
+ {
+  coords 173.568 1 174.75
+ }
+ {
+  coords 177.887 1 176.19
+ }
+ {
+  coords 177.641 1 173.908
+ }
+ {
+  coords 175.445 1 174.721
+ }
+ {
+  coords 172.035 1 174.927
+ }
+ {
+  coords 172.778 1 176.874
+ }
+ {
+  coords 170.963 1 176.901
+ }
+ {
+  coords 176.125 1 176.855
+ }
+ {
+  coords 170.758 1 174.843
+ }
+ {
+  coords 174.24 1 176.78
+ }
+ {
+  coords 176.118 1 179.052
+ }
+ {
+  coords 180.023 1 180.392
+ }
+ {
+  coords 180.139 1 178.485
+ }
+ {
+  coords 179.897 1 176.759
+ }
+ {
+  coords 179.827 1 174.19
+ }
+ {
+  coords 163.609 1 180.911
+ }
+ {
+  coords 158.221 1 182.053
+ }
+ {
+  coords 159.66 1 182.113
+ }
+ {
+  coords 161.162 1 182.072
+ }
+ {
+  coords 156.984 1 180.478
+ }
+ {
+  coords 157.15 1 181.975
+ }
+ {
+  coords 160.174 1 180.315
+ }
+ {
+  coords 158.452 1 180.473
+ }
+ {
+  coords 163.587 1 179.099
+ }
+ {
+  coords 159.19 1 176.06
+ }
+ {
+  coords 163.509 1 177.5
+ }
+ {
+  coords 163.263 1 175.218
+ }
+ {
+  coords 161.067 1 176.031
+ }
+ {
+  coords 157.657 1 176.237
+ }
+ {
+  coords 158.4 1 178.184
+ }
+ {
+  coords 156.585 1 178.211
+ }
+ {
+  coords 161.747 1 178.165
+ }
+ {
+  coords 156.38 1 176.153
+ }
+ {
+  coords 159.862 1 178.09
+ }
+ {
+  coords 161.74 1 180.362
+ }
+ {
+  coords 165.645 1 181.702
+ }
+ {
+  coords 165.761 1 179.795
+ }
+ {
+  coords 165.519 1 178.069
+ }
+ {
+  coords 165.449 1 175.5
+ }
+}
+$grp GenericEntity : "{5DBF2634506AF6B6}Prefabs/WaterBottelUS.et" {
+ WaterBottelUS_6596E1DFC1534DFE {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 170.124 1 167.663
+ }
+ WaterBottelUS_6596E1DFC1534DFE2 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.483 1 167.615
+ }
+ WaterBottelUS_6596E1DFC1534DFE3 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.895 1 168.508
+ }
+ WaterBottelUS_6596E1DFC1534DFE4 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.835 1 168.045
+ }
+ WaterBottelUS_6596E1DFC1534DFE5 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.207 1 168.601
+ }
+ WaterBottelUS_6596E1DFC1534DFE6 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.114 1 167.973
+ }
+ WaterBottelUS_6596E1DFC1534DFE7 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.266 1 167.377
+ }
+ WaterBottelUS_6596E1DFC1534DFE8 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.15 1 167.547
+ }
+ WaterBottelUS_6596E1DFC1534DFE9 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.278 1 168.411
+ }
+ WaterBottelUS_6596E1DFC1534DFE10 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.735 1 167.235
+ }
+ WaterBottelUS_6596E1DFC1534DFE11 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.113 1 167.46
+ }
+ WaterBottelUS_6596E1DFC1534DFE12 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.191 1 166.882
+ }
+ WaterBottelUS_6596E1DFC1534DFE13 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.225 1 166.926
+ }
+ WaterBottelUS_6596E1DFC1534DFE14 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.028 1 167.235
+ }
+ WaterBottelUS_6596E1DFC1534DFE15 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.21 1.3 166.915
+ }
+ WaterBottelUS_6596E1DFC1534DFE16 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.392 1 167.014
+ }
+ WaterBottelUS_6596E1DFC1534DFE17 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.68 1 167.089
+ }
+ WaterBottelUS_6596E1DFC1534DFE18 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.56 1 167.117
+ }
+ WaterBottelUS_6596E1DFC1534DFE19 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.54 1.288 167.127
+ }
+ WaterBottelUS_6596E1DFC1534DFE20 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.744 1 167.597
+ }
+ WaterBottelUS_6596E1DFC1534DFE21 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.752 1.322 167.6
+ }
+ WaterBottelUS_6596E1DFC1534DFE22 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.083 1 167.727
+ }
+ WaterBottelUS_6596E1DFC1534DFE23 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.442 1 167.691
+ }
+ WaterBottelUS_6596E1DFC1534DFE24 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 175.01 1 167.213
+ }
+ WaterBottelUS_6596E1DFC1534DFE25 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 175.154 1 166.826
+ }
+ WaterBottelUS_6596E1DFC1534DFE26 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.756 1 166.632
+ }
+ WaterBottelUS_6596E1DFC1534DFE27 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.15 1 166.748
+ }
+ WaterBottelUS_6596E1DFC1534DFE28 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.711 1 166.873
+ }
+ WaterBottelUS_6596E1DFC1534DFE29 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.021 1 167.448
+ }
+ WaterBottelUS_6596E1DFC1534DFE30 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.301 1 168.077
+ }
+ WaterBottelUS_6596E1DFC1534DFE31 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.955 1 168.261
+ }
+ WaterBottelUS_6596E1DFC1534DFE32 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 175.032 1 167.594
+ }
+ WaterBottelUS_6596E1DFC1534DFE33 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 175.585 1 166.578
+ }
+ WaterBottelUS_6596E1DFC1534DFE34 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.912 1 166.427
+ }
+ WaterBottelUS_6596E1DFC1534DFE35 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.39 1.049 167.06
+ }
+ WaterBottelUS_6596E1DFC1534DFE36 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.344 1 167.572
+ }
+ WaterBottelUS_6596E1DFC1534DFE37 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.655 1 167.504
+ }
+ WaterBottelUS_6596E1DFC1534DFE38 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.837 1 167.247
+ }
+ WaterBottelUS_6596E1DFC1534DFE39 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.805 1 167.983
+ }
+ WaterBottelUS_6596E1DFC1534DFE40 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.238 1 167.586
+ }
+ WaterBottelUS_6596E1DFC1534DFE41 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.966 1 167.582
+ }
+ WaterBottelUS_6596E1DFC1534DFE42 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.353 1 168.01
+ }
+ WaterBottelUS_6596E1DFC1534DFE43 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.038 1 167.303
+ }
+ WaterBottelUS_6596E1DFC1534DFE44 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.802 1.289 167.961
+ }
+ WaterBottelUS_6596E1DFC1534DFE45 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174 1 167.052
+ }
+ WaterBottelUS_6596E1DFC1534DFE46 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.519 1 167.904
+ }
+ WaterBottelUS_6596E1DFC1534DFE47 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.493 1 167.429
+ }
+ WaterBottelUS_6596E1DFC1534DFE48 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.438 1 168.01
+ }
+ WaterBottelUS_6596E1DFC1534DFE49 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.561 1 167.989
+ }
+ WaterBottelUS_6596E1DFC1534DFE50 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 173.811 1 167.51
+ }
+ WaterBottelUS_6596E1DFC1534DFE51 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.263 1 167.018
+ }
+ WaterBottelUS_6596E1DFC1534DFE52 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     }
+    }
+   }
+  }
+  coords 174.462 1 166.881
+ }
+ WaterBottelUS_6596E1DFC1534DFE53 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+      Weight 0.5
+      SizeSetupStrategy Scaler
+      DimensionScaler 0.5
+     }
+    }
+   }
+  }
+  coords 173.589 1 167.256
+ }
+}
+$grp GenericEntity : "{5FA7CC77A33752A5}Prefabs/Stick.et" {
+ Stick_658CB24E209C12FA {
+  coords 129.753 1 156.569
+ }
+ Stick_658CB24E200272AE {
+  coords 129.059 1 156.693
+ }
+ Stick_658CB24E207128C9 {
+  coords 129.402 1 157.111
+ }
+ Stick_6596E1DFD8882CDA {
+  coords 170.331 1 163.479
+ }
+ Stick_65A13CD89592003E {
+  coords 138.855 1 166.314
+ }
+ Stick_65A13CD89592003E2 {
+  coords 138.615 1 151.909
+ }
+ Stick_65A13CD89592003E3 {
+  coords 138.452 1 149.885
+ }
+ Stick_65A13CD89592003E4 {
+  coords 99.491 5.3 169.869
+ }
+ Stick_65A13CD89592003E5 {
+  coords 95.05 3.21 170.009
+ }
+ Stick_65A13CD89592003E6 {
+  coords 95.574 7.39 169.73
+ }
+ Stick_65A13CD89592003E7 {
+  coords 92.181 5.3 183.42
+ }
+ Stick_65A13CD89592003E8 {
+  coords 96.709 5.3 183.33
+ }
+ Stick_65A13CD89592003E9 {
+  coords 99.206 5.3 183.414
+ }
+ Stick_65A13CD89592003E10 {
+  coords 136.739 1.795 145.01
+ }
+ Stick_65A13CD89592003E11 {
+  coords 106.821 1.278 158.445
+ }
+ Stick_65A13CD89592003E12 {
+  coords 106.156 1.278 154.143
+ }
+ Stick_65A13CD89592003E13 {
+  coords 104.988 1.28 143.637
+ }
+ Stick_65A13CD89592003E14 {
+  coords 100.512 1.283 143.554
+ }
+ Stick_65A13CD89592003E15 {
+  coords 94.152 1.281 147.402
+ }
+ Stick_65A13CD89592003E16 {
+  coords 94.546 1.278 146.546
+ }
+ Stick_65A13CD89592003E17 {
+  coords 94.325 4.583 146.291
+ }
+ Stick_65A13CD89592003E18 {
+  coords 106.101 4.586 145.989
+ }
+}
+GenericEntity Tomato_6596E1DFC5683496 : "{700F5B2B56A3467C}Prefabs/Tomato.et" {
+ coords 169.522 1 164.355
+}
+$grp GenericEntity : "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" {
+ WaterCanteen_6526C36F3D40E718 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemAnimationAttributes ItemAnimationAttributes "{6526C36F316A481B}" {
+      HandAdditiveRotation 90 0 0
+      HandAdditiveTranslation 0 0.02 0.14
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{6526C36F316A4F96}" {
+       CameraPreset Front
+      }
+     }
+    }
+   }
+  }
+  coords 138.133 1 170.791
+ }
+ WaterCanteen_6596E1DFC1C5CE59 {
+  components {
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+      DimensionScaler 0.5
+     }
+    }
+   }
+  }
+  coords 172.332 1 164.918
+ }
+}
+GenericEntity RawSteak_6596E1DFD838F293 : "{73BE06A6EFD87247}Prefabs/RawSteak.et" {
+ coords 169.631 1 166.767
+}
+GenericEntity Backpack_Medical_Soviet_6596E1DFAD70EBE2 : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
+ coords 172.683 1 165.067
+}
+GenericEntity Beaf_6596E1DFD3A61B74 : "{7B7F47BFB532CAFA}Prefabs/Beaf.et" {
+ coords 174.582 1 160.713
+}
+$grp GenericEntity : "{7BBDC24E577F3A87}Prefabs/CannedSardeenOpen.et" {
+ CannedSardeenOpen_6596E1DFDD61A213 {
+  coords 170.64 1 163.274
+ }
+ CannedSardeenOpen_6596E1DFDF3A8022 {
+  coords 171.007 1 164.935
+ }
+}
+$grp GenericEntity : "{7DA433D274B8C385}Prefabs/RawMeat.et" {
+ RawMeat_658CB24E27E01783 {
+  coords 130.556 1 156.988
+ }
+ RawMeat_6596E1DFD9D118C8 {
+  coords 171.695 1 168.071
+ }
+ RawMeat_6596E1DFD9D118C2 {
+  coords 171.798 1 166.625
+ }
+ RawMeat_6596E1DFD9D118C3 {
+  coords 172.266 1 166.453
+ }
+ RawMeat_6596E1DFD9D118C4 {
+  coords 172.148 1 165.974
+ }
+ RawMeat_6596E1DFD9D118C5 {
+  coords 171.368 1 166.573
+ }
+ RawMeat_6596E1DFD9D118C6 {
+  coords 171.863 1 167.501
+ }
+ RawMeat_6596E1DFD9D118C7 {
+  coords 171.766 1 165.715
+ }
+ RawMeat_6596E1DFD9D118C9 {
+  coords 171.339 1.11 166.645
+ }
+ RawMeat_6596E1DFD9D118C10 {
+  coords 173.235 1 166.422
+ }
+ RawMeat_6596E1DFD9D118C11 {
+  coords 171.136 1 167.167
+ }
+ RawMeat_6596E1DFD9D118C12 {
+  coords 172.622 1 166.048
+ }
+ RawMeat_6596E1DFD9D118C13 {
+  coords 170.876 1 166.367
+ }
+ RawMeat_6596E1DFD9D118C14 {
+  coords 171.522 1 165.29
+ }
+ RawMeat_6596E1DFD9D118C15 {
+  coords 171.385 1.105 166.584
+ }
+ RawMeat_6596E1DFD9D118C16 {
+  coords 172.451 1 167.045
+ }
+ RawMeat_6596E1DFD9D118C17 {
+  coords 171.632 1 166.035
+ }
+ RawMeat_6596E1DFD9D118C18 {
+  coords 172.188 1.071 166.336
+ }
+ RawMeat_6596E1DFD9D118C19 {
+  coords 171.849 1 166.131
+ }
+ RawMeat_6596E1DFD9D118C20 {
+  coords 171.758 1 166.995
+ }
+ RawMeat_6596E1DFD9D118C21 {
+  coords 171.662 1.136 166.611
+ }
+ RawMeat_6596E1DFD9D118C22 {
+  coords 171.477 1.237 166.537
+ }
+ RawMeat_6596E1DFD9D118C23 {
+  coords 172.407 1.124 166.021
+ }
+ RawMeat_6596E1DFD9D118C24 {
+  components {
+   InventoryItemComponent "{65257C67B0BF0AAD}" {
+    Attributes SCR_ItemAttributeCollection "{65257C67B0BF0AA5}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{65257C67B0BF09B7}" {
+      ItemVolume 750
+     }
+    }
+   }
+  }
+  coords 171.579 1.065 167.419
+ }
+ RawMeat_6596E1DFD9D118C25 {
+  coords 171.692 1.112 166.539
+ }
+ RawMeat_6596E1DFD9D118C26 {
+  coords 172.308 1 166.256
+ }
+}
+GenericEntity MilitaryTentUnDeployed1_6596E1DFDCF6CE3C : "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et" {
+ coords 169.319 1 162.911
+}
+SCR_DestructibleBuildingEntity : "{9064E65F34097C8F}Prefabs/Structures/Commercial/Shops/ShopHouse_E_2l01/ShopHouse_E_2I01t_Base.et" {
+ coords 95.715 0 176.933
+}
+SCR_ChimeraCharacter Character_CIV_Businessman_2_658EE734E7986CD8 : "{A517C72CEF150898}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_2.et" {
+ components {
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   EnableAI 1
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Object "{0F00CA93A5373089}Assets/Chicken/Chicken.xob"
+  }
+  SCR_ExtendedCharacterIdentityComponent "{5AEEA3C8B2AA118B}" {
+   Enabled 0
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Enabled 0
+  }
+ }
+ coords 141.304 1 170.557
+}
+GenericEntity SurvivalDeskSpawner_65A29C322E43122D : "{B794F23E6A75C195}Prefabs/SurvivalDeskSpawner.et" {
+ components {
+  PlaceablePrefabGadget "{65A29C3241D7605F}" {
+   m_ConsumableEffect SCR_ConsumableFood "{65C6F863A5F4B05E}" {
+   }
+   m_fMinClearanceRadius 0.5
+  }
+ }
+ coords 125.449 1 167.607
+}
+GenericEntity CannedMeat_6596E1DFD12B2FD3 : "{BFDBFE2BED29C04A}Prefabs/CannedMeat.et" {
+ components {
+  InventoryItemComponent "{653AC2861386B15D}" {
+   Attributes SCR_ItemAttributeCollection "{653AC2861386B15F}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{653AC2861386AEB8}" {
+     DimensionScaler 0.5
+    }
+   }
+  }
+ }
+ coords 171.457 1 163.761
+}
+GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_B32.et" {
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{658B51A60461E300}" {
+     SourceMaterial "Mosin9130Mat"
+     AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
+    }
+   }
+  }
+ }
+ coords 128.795 1 158.38
+}
+GenericEntity CannedSardeen_6596E1DFD093C834 : "{D34757B015ABD8B3}Prefabs/CannedSardeen.et" {
+ coords 172.371 1 167.226
+}
+GameEntity Fireplace_01_658C76A08312B367 : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 124.689 1 151.743
+}
+GenericEntity Tebt_6598A52C12255011 : "{DE0F233CBC3C2F77}Prefabs/Tebt.et" {
+ coords 171.341 1 153.779
+}
+GenericEntity MRE_6596E1DFDBD94631 : "{E3055CB3AB4817AD}Prefabs/MRE.et" {
+ coords 170.332 1 162.953
+}
+$grp SCR_DestructibleBuildingEntity : "{EC63F328F15AD3AF}Prefabs/Structures/Agriculture/Hayloft/Hayloft_E_01/Hayloft_E_01_metal.et" {
+ {
+  coords 131.274 0 140.639
+ }
+ {
+  coords 129.954 0 91.682
+ }
+ {
+  coords 164.359 0 98.046
+ }
+ {
+  coords 192.506 2.231 132.582
+ }
+}
+$grp GenericEntity : "{EF362B7442A2D5B1}Prefabs/Banane.et" {
+ Banane_6526C37F101C6AF2 {
+  coords 139.911 1.02 172.012
+ }
+ Banane_6526C37F101C6AF3 {
+  coords 139.657 1 171.845
+ }
+ Banane_6526C37F101C6AF4 {
+  coords 139.677 1 172.199
+ }
+ Banane_6526C37F101C6AF5 {
+  components {
+   InventoryItemComponent "{65257C67B0BF0AAD}" {
+    Attributes SCR_ItemAttributeCollection "{65257C67B0BF0AA5}" {
+     CustomAttributes {
+      PreviewRenderAttributes "{65257C67B0BF0AF9}" {
+       CameraDistanceToItem 0.37
+      }
+     }
+    }
+   }
+  }
+  coords 139.867 1 171.688
+ }
+ Banane_6526C37F101C6AF6 {
+  coords 139.393 1 171.588
+ }
+ Banane_6526C37F101C6AF7 {
+  coords 139.954 1 172.316
+ }
+ Banane_6596E1DFD327097C {
+  coords 173.52 1 157.667
+ }
+}
+GameEntity "Optic_EXPS3-2_658CA4ACD69D888A" : "{F016B4DEF5F4DD5D}Prefabs/Weapons/Attachments/Optics/exps/Optic_EXPS3-2.et" {
+ coords 141.435 1 169.46
+}
+GameEntity BC_Optic_Unertl_658C93716DB03B85 : "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et" {
+ coords 129.329 1 158.584
+}
+GenericEntity Backpack_M70_Swiss_6596E1DFAFB3EAC1 : "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et" {
+ coords 174.838 1 165.461
+}
+GenericEntity CannedMeatOpen_6596E1DFD03B2823 : "{FDB364387A23D30E}Prefabs/CannedMeatOpen.et" {
+ coords 175.086 1 167.822
+}

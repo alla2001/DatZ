@@ -1,0 +1,6 @@
+MatPBRCable {
+ Color 0.065 0.065 0.065 1
+ MinSagPerMeter 1.5
+ MaxSagPerMeter 1.5
+ CableThickness 4
+}

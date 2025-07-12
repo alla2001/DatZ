@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4D8EF6E5A0F5E52A}Sounds/Structures/Millitary/Sirens/Structures_Siren_Datz.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

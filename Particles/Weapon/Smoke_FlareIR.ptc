@@ -1,0 +1,39 @@
+EffectDef {
+ Version 2
+ Emitters {
+  EmitterDef smoke_normal_hot {
+   ConeAngle 360 0 20
+   MaxNum 200
+   BirthRate 5
+   Angles 0 -90 90
+   Material "{663213BB0B7875C3}Particles/_Materials/Gas/Smoke_Flare_Cloud_N_01.emat"
+   SizeMultiplier 2
+   SizeRND 1
+   RotMultiplier 30
+   RandomRotDir 1
+   RandomAngle 1
+   Velocity 0
+   VelocityRND 0
+   AirResistance 2
+   AirResistanceRND 3
+   WindInfluence 0.05
+   GravityMultiplyRND -0.2
+   RandomFrame 1
+   Lifetime 5
+   LifetimeRND 0.3
+   Color {
+    0 0.1615 0.3969 0.0457 1 0.0201 0.097 0.0106
+   }
+   Alpha {
+    0 1 0.5769 0.7939 1 0
+   }
+   RotationSpeed {
+    0 1 1 0
+   }
+   Size {
+    0 0.227 1 1
+   }
+   Repeat 1
+  }
+ }
+}

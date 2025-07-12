@@ -1,0 +1,10 @@
+Grass : "{221EA6A88646FB9A}Assets/Clutter/Procedural/cp_grass_03.emat" {
+ NormalPower 1.301
+ SatMapLerp 0.98
+ SatMapBrightness 0.588
+ SpecularMul 0.4
+ RoughnessScale 2.3
+ AOScale 0.7
+ Height 0.5
+ HeightRandomOffset 0.2
+}

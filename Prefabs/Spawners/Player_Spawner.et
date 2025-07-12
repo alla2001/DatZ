@@ -1,0 +1,15 @@
+SCR_SpawnPoint {
+ ID "652074A5178E5F1B"
+ components {
+  RplComponent "{653092389AE13CB0}" {
+  }
+  Hierarchy "{652074A513DDDC77}" {
+  }
+ }
+ coords 7681.057 0.869 6006.091
+ m_fSpawnRadius 10
+ m_sFaction "USSR"
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{652074A513DDDC52}" {
+ }
+}

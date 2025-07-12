@@ -1,0 +1,60 @@
+SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_BaseLoadout.et" {
+ ID "520EC961A090B1EE"
+ components {
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+   WeaponTemplate "{880A80C1FD1AE546}Prefabs/Weapons/Handguns/APS/Handgun_APS.et"
+   HolsteredHidden 0
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{F6F24096665C6279}Prefabs/Characters/HeadGear/Hat_FlatCap_01/Hat_FlatCap_01_darkgrey_Dirty.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{8641D9A55FF7D049}Prefabs/New_Equipment/Jackets/armst_jacket_army_sviter.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{E1EA4FAEDD70A1C1}Prefabs/New_Equipment/Pants/armst_pants_jeans.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00E}" {
+     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     PrefabsToSpawn {
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_USSR.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00C}" {
+     TargetStorage ""
+     PrefabsToSpawn {
+     }
+    }
+    ItemsInitConfigurationItem "{557090130BCD36B7}" {
+     TargetStorage "Pants/armst_pants_jeans.et"
+     PrefabsToSpawn {
+      "{DFC0532A49E17C39}Prefabs/Weapons/Magazines/aps_magazine/Magazine_9x18_APS_20rnd_Ball.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6064820F8177C8C0}" {
+     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     PrefabsToSpawn {
+      "{1641CA45B15C83E8}Prefabs/Apple.et"
+     }
+    }
+   }
+  }
+ }
+}

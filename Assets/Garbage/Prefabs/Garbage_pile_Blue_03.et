@@ -1,0 +1,8 @@
+GenericEntity : "{2EC0E9B75831D5CC}Assets/Bodies/human/Military/Soldier_Fallen/Laying_on_back/Deadbody_laying_on_back.et" {
+ ID "60C45044F3F5C0B7"
+ components {
+  RigidBody "{60C450470F1AEC2B}" {
+   ResponseIndex "SmallDestructible"
+  }
+ }
+}

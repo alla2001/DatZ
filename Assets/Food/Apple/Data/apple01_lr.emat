@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0.373 0.144 0.144 1
+ RoughnessScale 1.236
+ BCRMap "{E7E448CC4017DA8F}Assets/Food/Apple/Textures/Apple_apple01_lr_BaseColor.edds"
+ NormalPower 0
+ NMOMap "{19F8FDF93F16E5F5}Assets/Food/Apple/Textures/RGB Alpha.edds"
+}

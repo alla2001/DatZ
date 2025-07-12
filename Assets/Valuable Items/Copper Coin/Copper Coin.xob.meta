@@ -1,0 +1,38 @@
+MetaFileClass {
+ Name "{683CE38FBC7000DE}Assets/Valuable Items/Copper Coin/Copper Coin.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Scale 1.4 1.4 1.4
+   MaterialAssigns {
+    MaterialAssignClass "{655CEE8047B54471}" {
+     SourceMaterial "Coins"
+     AssignedMaterial "{B00D3B812C6E22F8}Assets/Valuable Items/Copper Coin/Data/Coins.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Coin_Copper {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{536BF67B2052B869}material/metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

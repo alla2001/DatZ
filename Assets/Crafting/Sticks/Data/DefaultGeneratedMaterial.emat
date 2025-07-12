@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0.638 0.638 0.638 1
+ SpecularMul 0.8
+ RoughnessScale 1.758
+ BCRMap "{5A7F5DE5D2E200D9}Assets/Crafting/Sticks/Data/untitled_DefaultMaterial_BaseColor.edds"
+ NMOMap "{40C11D9228EB9264}Assets/Crafting/Sticks/Data/untitled_DefaultMaterial_Normal.edds"
+}

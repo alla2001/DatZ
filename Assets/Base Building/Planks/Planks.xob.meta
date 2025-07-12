@@ -1,0 +1,37 @@
+MetaFileClass {
+ Name "{BED18AAC5B813DB6}Assets/Base Building/Planks/Planks.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{65A13CCFA10FB8C4}" {
+     SourceMaterial "Planks_SHD"
+     AssignedMaterial "{E86B5095716E791F}Assets/Base Building/Planks/Data/Planks_SHD.emat"
+    }
+   }
+   MeshParams {
+    MeshParam plank_01 {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_Collider {
+     LayerPreset "PropFireView"
+     SurfaceProperties {
+      "{86C00C393A493631}Common/Materials/Game/Wood/wood_30mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

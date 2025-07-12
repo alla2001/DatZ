@@ -1,0 +1,14 @@
+GenericEntity {
+ ID "627CE52CCB2692FE"
+ components {
+  DoorLockComponent "{6535264E2006100D}" {
+   m_sLockPrefab "{E02B7FBAB9A8E57C}Prefabs/Lock.et"
+  }
+  NavmeshCustomLinkComponent "{559E7AC91AFA25BA}" {
+   Enabled 0
+  }
+  SCR_AISmartActionComponent "{5890ED6117CBB20D}" {
+   Enabled 0
+  }
+ }
+}

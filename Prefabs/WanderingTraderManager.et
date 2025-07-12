@@ -1,0 +1,10 @@
+DZWanderingTrader {
+ ID "655D515B13EFB750"
+ components {
+  RplComponent "{655D515B566523D4}" {
+   Streamable Disabled
+  }
+ }
+ coords 1363.994 39 2755.774
+ traderPrefab "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et"
+}

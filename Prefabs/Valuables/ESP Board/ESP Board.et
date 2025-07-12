@@ -1,0 +1,140 @@
+GenericEntity {
+ ID "655D0CCAF961C045"
+ components {
+  EPF_PersistenceComponent "{655D0CCA32971F46}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{655D0CCA32971F45}" {
+    m_aComponents {
+     EPF_CookableManagerComponentSaveDataClass "{655D0CCA32971F41}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{655D0CCA32971EFE}" {
+   Attributes SCR_ItemAttributeCollection "{655D0CCA32971EFC}" {
+    ItemDisplayName SCR_InventoryUIInfo "{655D0CCA32971F33}" {
+     Name "ESP Board"
+     Description "ESP Board, Something Electronic"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{655D0CCA32971F3E}" {
+     Weight 0.3
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 100
+     DimensionScaler 1
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{655D0CCA32971EE3}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{655D0CCA32971EE0}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{655D0CCA32971EED}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     PreviewRenderAttributes "{655D0CCA32971EFA}" {
+      CameraPreset Top
+      CameraOrbitAngles -30 30 0
+      CameraDistanceToItem 0.2
+      ItemRenderRotation 0 0 0
+      FOV 37
+      AspectRatio 1
+      LodModel 0
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{655D0CCA32971EC8}" {
+   Object "{872B062CA423BE18}Assets/Valuable Items/ESP Board/Untitled.xob"
+  }
+  RigidBody "{655D0CCA32971ED0}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_GadgetComponent "{655D0CCA32971EDF}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+  }
+  SCR_SoundDataComponent "{655D0CCA32971E90}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{655D0CCA32971EB6}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{655D0CCA32971EBE}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{655D0CCA32971E88}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{655D0CCA32971E91}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{655D0CCA32971E50}" {
+   ActionContexts {
+    UserActionContext "{655D0CCA32971E72}" {
+     ContextName "default"
+     Position PointInfo "{655D0CCA32971E71}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{655D0CCA32971E4E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{655D0CCA32971E4C}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{655D0CCA32971E34}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{655D0CCA32971E28}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{655D0CCA32971E32}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{655D0CCA32971E3F}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{655D0CCA32971E08}" {
+  }
+ }
+ coords 1328.885 40.003 2126.497
+ angleY 177.28
+}

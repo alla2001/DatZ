@@ -1,0 +1,138 @@
+GenericEntity {
+ ID "654B2C3849B502A2"
+ components {
+  CookingContainerStorageComponent "{654B2C3872055522}" {
+   Attributes SCR_ItemAttributeCollection "{654B2C3872055543}" {
+    ItemDisplayName SCR_InventoryUIInfo "{654B2C387205557D}" {
+     Name "Rust Cooking Pot"
+     Description "Cooking Pot Used for Cooking"
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{654B2C387205557F}" {
+       Name "Holds Small Amount oF Food"
+       Icon "{8EB808BFA227C080}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesStored.edds"
+       m_bHideInArsenal 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654B2C387205554E}" {
+     Weight 1
+     DimensionScaler 1
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{65510685F19F18DA}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{654EABBD2DE2D24B}" {
+       AnimGraph "{7448534CC9BB5495}Assets/Items/Fuel/workspaces/Jerrycan.agr"
+       AnimInstance "{DB71459BEC12E8B1}Assets/Items/Fuel/workspaces/Jerrycan_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6551360EDD089542}" {
+      CameraDistanceToItem 0.5
+      FOV 45
+     }
+    }
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+   SaveInLoadout 0
+   UseVirtualInventoryReplication 0
+   m_fMaxWeight 5
+   m_fCookRate 0.4
+  }
+  EPF_PersistenceComponent "{65516369423AC9F7}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6551636958F906D9}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{65550BCD1CA96BB8}" {
+     }
+    }
+   }
+  }
+  MeshObject "{654B2C3872055327}" {
+   Object "{D77A6113A48E1B80}Assets/Props/Civilian/PotOld_01/PotOld_01.xob"
+   LODFactors {
+   }
+  }
+  RigidBody "{654B2C38720553DD}" {
+   Mass 10
+   LinearDamping 0.3
+   AngularDamping 0.3
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{654B2C38720552E7}" {
+   Enabled 0
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 500
+   m_fForceToDamageScale 350
+   m_fDamageThresholdMaximum 40000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{654B2C3872055255}" {
+     m_vOffsetPosition 0 0.3 0
+     m_ModelPrefabs {
+      "{CEA3E9AEBE3C3492}Assets/Props/Debris/Wood/BeamWooden_dbr_01.xob" "{B83F6469D7CA3459}Assets/Props/Debris/Wood/PlankWooden_Big_dbr_01.xob" "{2121DDF0CA2D05C9}Assets/Props/Debris/Wood/PlankWooden_Big_dbr_02.xob" "{68E2A8F815B4FD59}Assets/Props/Debris/Wood/PlankWooden_dbr_01.xob"
+     }
+     m_fMass 1
+     m_eMaterialSoundType WOOD_PLANK_SMALL
+    }
+    SCR_ParticleSpawnable "{654B2C3872055226}" {
+     m_Particle "{C436A8D33CE1AA4E}Particles/Props/Dest_Prop_Wood_Small.ptc"
+    }
+   }
+  }
+  SCR_SoundDataComponent "{654B2C38720552DE}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{654B2C38720552CD}" {
+     m_sSoundProject "{2285D7ED0CE3463E}Sounds/Props/Military/AmmoBoxes/AmmoBox_Small_Wooden/Props_AmmoBox_Small_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_OPEN"
+    }
+    SCR_AudioSourceConfiguration "{654B2C38720552C2}" {
+     m_sSoundProject "{2285D7ED0CE3463E}Sounds/Props/Military/AmmoBoxes/AmmoBox_Small_Wooden/Props_AmmoBox_Small_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+    }
+   }
+  }
+  SCR_SupportStationGadgetComponent "{655106851691C7D4}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+  }
+  ActionsManagerComponent "{654B2C38720555AB}" {
+   ActionContexts {
+    UserActionContext "{654B2C38720555E5}" {
+     ContextName "default"
+     Position PointInfo "{654B2C3872055504}" {
+      Offset 0 0.0769 0
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{654B2C38720555D3}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{654B2C38720555F1}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+    }
+   }
+  }
+  RplComponent "{654B2C38720555BE}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+ }
+ Flags 1027
+ coords 1.68 0 0
+}

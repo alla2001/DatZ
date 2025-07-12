@@ -1,0 +1,17 @@
+MatOcean : "{5BD82BC098CB7A2C}Terrains/Common/Water/Ocean/ocean.emat" {
+ WaterVisibility 37.23
+ HalfLightDistance 100
+ GeometryBlend 1
+ RefractOffset 0.019
+ WindInflMax 5.8
+ WetFloor 0.95
+ Fresnel 0.04
+ GreyModifier 0.12
+ FoamTerrainBlend 1.53
+ FoamMove 0
+ FoamPower 0.43
+ FoamMaskSharpness 0.121
+ OceanScatteringColor 0.116 0.049 0.049 1
+ CoastColor 0.346 0.117 0.117 1
+ ShorePeaksExponent 2.14
+}

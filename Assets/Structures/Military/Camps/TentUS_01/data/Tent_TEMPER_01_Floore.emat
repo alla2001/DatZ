@@ -1,0 +1,13 @@
+MatPBRBasic {
+ Color 1 1 1 1
+ Cull none
+ CastShadow 0
+ ReceiveShadow 0
+ SurfaceProperties "{4B8EF456C8B232CC}system/materials/subsurfaceProfileDefault.emat"
+ AlphaTest 0.341
+ AlphaMul 0.341
+ BlendMode Additive
+ MetalnessScale 0
+ DielectricReflectance 0.02
+ NormalPower 0.762
+}

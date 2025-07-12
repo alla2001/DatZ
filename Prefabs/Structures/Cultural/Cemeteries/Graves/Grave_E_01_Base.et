@@ -1,0 +1,4 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "51F8B1A9F98BE4A1"
+ ignoreLoot 1
+}

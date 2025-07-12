@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{80E5A903A03307C5}Assets/Props/Civilian/Fireplace_01/Data/FirePlace_EMdecal_01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

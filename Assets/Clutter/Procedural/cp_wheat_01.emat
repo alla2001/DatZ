@@ -1,0 +1,5 @@
+Grass : "{508C1835852755D3}Assets/Clutter/Procedural/cp_wheat_01.emat" {
+ SpecularMul 0.4
+ AOScale 0.7
+ Height 0.45
+}

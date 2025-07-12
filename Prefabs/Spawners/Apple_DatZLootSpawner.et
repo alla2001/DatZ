@@ -1,0 +1,11 @@
+DatZLootSpawner {
+ ID "653333581A4E6648"
+ components {
+  Hierarchy "{653333581A4E6625}" {
+  }
+ }
+ coords 1.082 0.115 -0.534
+ spawnRadius 100
+ lootTable "{4E33B5A4ECC09F05}Configs/AppleLootTable.conf"
+ ignoreOverrides 1
+}

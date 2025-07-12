@@ -1,0 +1,9 @@
+MatPBRBasic {
+ Color 0.672 0.672 0.672 1
+ SpecularMul 0.86
+ RoughnessScale 1.54
+ MetalnessScale 2.58
+ BCRMap "{8B8ED796B69A52E2}Assets/Food/Canned/Data/Textures/Fish_baseColor.edds"
+ NormalPower 2.064
+ NMOMap "{B4F981AB1A15014F}Assets/Food/Canned/Data/Textures/Fish_normal.edds"
+}

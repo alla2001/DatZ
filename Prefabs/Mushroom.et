@@ -1,0 +1,37 @@
+GenericEntity : "{1641CA45B15C83E8}Prefabs/Apple.et" {
+ ID "65257C67881936F4"
+ components {
+  InventoryItemComponent "{65257C67B0BF0AAD}" {
+   Attributes SCR_ItemAttributeCollection "{65257C67B0BF0AA5}" {
+    ItemDisplayName SCR_InventoryUIInfo "{65257C67B0BF099F}" {
+     Name "Mushroom"
+     Description "Mushroom you can eat"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{65257C67B0BF09B7}" {
+     ItemVolume 250
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{65257C67B0BF0A3E}" {
+     HandAdditiveRotation 90 0 0
+     HandAdditiveTranslation 0 0 0.1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65257C67B0BF0AF9}" {
+      CameraOrbitAngles 45 0 0
+      CameraDistanceToItem 0.6
+      ItemRenderRotation 0 0 0
+      FOV 30
+     }
+    }
+   }
+  }
+  MeshObject "{65257C67B0BF0AB8}" {
+   Object "{AA8CF7D46DCC2A24}Assets/Food/Mushroom/mushroom.xob"
+  }
+  SCR_ConsumableItemComponent "{65257C67B0BF0B73}" {
+   m_ConsumableEffect SCR_ConsumableFood "{65257C67B0BF0B72}" {
+    regenFoodValue 15
+   }
+  }
+ }
+ coords 15.477 0 0
+}

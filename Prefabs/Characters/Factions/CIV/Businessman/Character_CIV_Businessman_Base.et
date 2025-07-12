@@ -1,0 +1,36 @@
+SCR_ChimeraCharacter : "{9B443DD4C1F6DCAD}Prefabs/Characters/Factions/CIV/Character_CIV_baseLoadout.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DatZMetabolsimHandler "{654739DB958B6A27}" {
+   isZombi 0
+  }
+  ForceWalkAI "{650C98C1B3FC7F36}" {
+   isZombi 0
+  }
+  SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
+   "faction affiliation" "USSR"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{17DBD854BFF6CD8D}Prefabs/Characters/Uniforms/Shirt_Turtleneck_01/Shirt_Turtleneck_01_grey_Dirty.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{537FD11C135757AC}Prefabs/Characters/Uniforms/Pants_Trousers_01/Pants_Trousers_01_DarkGrey_Dirty.et"
+    }
+   }
+  }
+  ZombieOptimizationComponent "{65873BAD03DF367F}" {
+   isZombi 0
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{60DCBCECAC6C6E65}" {
+     PrefabsToSpawn + {
+      "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
+     }
+    }
+   }
+  }
+ }
+}

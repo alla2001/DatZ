@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9F6EFEABF450D3F6}Assets/Structures/Military/Camps/TentUS_01/data/Tent_TEMPER_01_Floore.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,9 @@
+MatPBRBasic {
+ Color 0.468 0.468 0.468 1
+ SpecularMul 0.32
+ RoughnessScale 1.84
+ MetalnessScale 0.32
+ BCRMap "{D1178695860875CD}Assets/Food/Mushroom/Data/Textures/albedo_01.edds"
+ NormalPower 0.176
+ NMOMap "{D8A6E53BD17F60EC}Assets/Food/Mushroom/Data/Textures/normal_04.tga.edds"
+}

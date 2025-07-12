@@ -1,0 +1,14 @@
+GenericWorldEntity {
+ ID "5552C58483BF82C9"
+ {
+  GenericWorldLightEntity {
+   ID "5552C58483A07792"
+   SpecularMul 0.21
+   SunAngularSize 20
+   DirectLightLV 3.3
+   IndirectLightLV 5.757
+   ProbeReflectionEV 3.438
+   ShadowFactor 0.8
+  }
+ }
+}

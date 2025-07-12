@@ -1,0 +1,28 @@
+GenericEntity : "{D34757B015ABD8B3}Prefabs/CannedSardeen.et" {
+ ID "653AC286E96A576B"
+ components {
+  InventoryItemComponent "{653AC2861386B15D}" {
+   Attributes SCR_ItemAttributeCollection "{653AC2861386B15F}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{653AC2861386AEB8}" {
+     ItemVolume 300
+     DimensionScaler 0.35
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{653AC2861386B146}" {
+      CameraOffset 0 0.03 0
+     }
+    }
+   }
+  }
+  MeshObject "{653AC2861386B1E2}" {
+   Object "{A57618B57C29B981}Assets/Food/Canned/Meat/Cannedmeat.xob"
+  }
+  ActionsManagerComponent "{653AC2861386B07D}" {
+   additionalActions {
+    SCR_DatZConditionalTransformeBaseAction "{653AC2861386B065}" {
+     prefab "{FDB364387A23D30E}Prefabs/CannedMeatOpen.et"
+    }
+   }
+  }
+ }
+}

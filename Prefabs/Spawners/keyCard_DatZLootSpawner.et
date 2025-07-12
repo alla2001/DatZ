@@ -1,0 +1,11 @@
+DatZLootSpawner {
+ ID "6558FBA7FBF92354"
+ components {
+  Hierarchy "{6558FBA7FBF9232F}" {
+  }
+ }
+ coords 1.024 0.059 -1.023
+ spawnRadius 100
+ lootTable "{BEF291E3D0C06B02}Configs/keyCardLootTable.conf"
+ ignoreOverrides 1
+}

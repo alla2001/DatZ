@@ -1,0 +1,7 @@
+
+modded class ScriptedBaseInventoryStorageComponent : BaseInventoryStorageComponent
+{
+	
+	
+
+}

@@ -1,0 +1,11 @@
+entity KSVK_RiflePrefab
+{
+    components[] =
+    {
+        WeaponComponent,
+        MeshComponent,
+        FireModeComponent
+    };
+
+    model = "KSVK_Mod/Data/Prefabs/Weapons/ksvk_placeholder.et";
+};

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5CDDDFB2D698DCC3}Prefabs/Structures/Ruins/HouseRuins/HouseRuin_01/HouseRuin_01_WoodPile.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

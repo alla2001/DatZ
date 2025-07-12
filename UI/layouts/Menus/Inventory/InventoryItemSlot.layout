@@ -1,0 +1,46 @@
+SizeLayoutWidgetClass {
+ {
+  OverlayWidgetClass "{613AB59EEB40DCCD}" {
+   Prefab "{613AB59EEB40DCCD}"
+   {
+    ButtonWidgetClass "{60D8C036C6415F2A}" {
+     Prefab "{60D8C036C6415F2A}"
+     {
+      OverlayWidgetClass "{60D8C036C6415F2D}" {
+       Prefab "{60D8C036C6415F2D}"
+       {
+        ScaleWidgetClass "{60D8C036C6415F23}" {
+         Prefab "{60D8C036C6415F23}"
+         {
+          OverlayWidgetClass "{60D8C036C6415F22}" {
+           Prefab "{60D8C036C6415F22}"
+           {
+            ItemPreviewWidgetClass "{60D8C036C6415F24}" {
+             Prefab "{60D8C036C6415F24}"
+             refresh 200
+            }
+           }
+          }
+         }
+        }
+        GridLayoutWidgetClass "{60D8C036C6415F26}" {
+         Prefab "{60D8C036C6415F26}"
+         {
+          SizeLayoutWidgetClass "{60D8C036C6415F3A}" {
+           Prefab "{60D8C036C6415F3A}"
+           Slot GridWidgetSlot "{607E7D528385CFBD}" {
+            Padding 0 4 4 0
+           }
+           WidthOverride 6
+           HeightOverride 36
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

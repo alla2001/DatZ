@@ -1,0 +1,7 @@
+Grass : "{FD083360E177822F}Assets/Clutter/Procedural/cp_grass_03_coastal.emat" {
+ SpecularIBL 0.144 0.144 0.144 1
+ SpecularMul 0.4
+ AOScale 0.7
+ Height 0.5
+ HeightRandomOffset 0.2
+}

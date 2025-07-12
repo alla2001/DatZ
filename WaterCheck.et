@@ -1,0 +1,63 @@
+GenericEntity {
+ ID "65235EE17F8D9656"
+ components {
+  MeshObject "{652355E213453E39}" {
+   Object "{FF35BE9795BA3797}system/wbdata/Gizmo3D/sphere.xob"
+   Materials {
+    MaterialAssignClass "{652B599096A38ED7}" {
+     SourceMaterial "system/wbdata/gizmo3D/gizmo3D"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{652355E213453E2E}" {
+   SimState None
+   ResponseIndex "Normal"
+   ModelGeometry 1
+  }
+  ActionsManagerComponent "{652355E213453F91}" {
+   ActionContexts {
+    UserActionContext "{652355E213453E4B}" {
+     ContextName "default"
+     Position PointInfo "{652355E213453E65}" {
+      Offset 0 -0.0558 -0.019
+     }
+     Radius 0.5
+     Height 0.2
+    }
+   }
+   additionalActions {
+    DrinkUserAction "{652355E2165F6D16}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{652355E219742150}" {
+      Name "Drink"
+     }
+     ActionTitle "Drink"
+     Duration 6
+    }
+    FillUserAction "{6543642C9EA21ECA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6543642C9EA21E87}" {
+      Name "Fill Container"
+     }
+     ActionTitle "Fill Container"
+     Duration 6
+    }
+   }
+  }
+  NwkMovementComponent "{652B3B0E588E4FA9}" {
+  }
+  RplComponent "{652355E213453F87}" {
+   "Rpl State Override" Runtime
+   AutoHierarchy 1
+  }
+  Hierarchy "{652355E213453FFA}" {
+  }
+ }
+ Flags 4194307
+}

@@ -1,0 +1,14 @@
+GenericEntity : "{3FB5275A6505B323}Prefabs/Weapons/Rifles/M14/Rifle_M21_base.et" {
+ ID "5254ACCA959048B9"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5472D21A19B61CDF}" {
+     AttachmentSlot InventoryStorageSlot Scope {
+      Prefab ""
+     }
+    }
+   }
+  }
+ }
+}

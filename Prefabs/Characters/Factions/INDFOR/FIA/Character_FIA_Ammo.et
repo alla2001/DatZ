@@ -1,0 +1,8 @@
+SCR_ChimeraCharacter : "{75FC25863194612A}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AMG.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ForceWalkAI "{650C98C1B3FC7F36}" {
+   isZombi 0
+  }
+ }
+}

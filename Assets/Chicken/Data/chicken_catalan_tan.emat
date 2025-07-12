@@ -1,0 +1,6 @@
+MatPBRBasic {
+ Color 0.631 0.631 0.631 1
+ RoughnessScale 1.458
+ BCRMap "{14D89B38BEF59266}Assets/Chicken/Data/chicken_catalan_tan_baseColor.edds"
+ NMOMap "{35369D685485F6BB}Assets/Chicken/Data/chicken_catalan_tan_normal.edds"
+}

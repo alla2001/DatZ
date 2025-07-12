@@ -1,0 +1,9 @@
+MatSkyColor : "{8E9BEF90CAA7CAEC}Terrains/Common/Sky/SkyBox/SkyColor_Default.emat" {
+ GlobalLayerMode Manual
+ GlobalLayerAngleStart 58.36
+ GlobalLayerContrast 0.48
+ GlobalLayerGlobalAO 0.762
+ GlobalLayerHeightPower 0.389
+ ColorBottom 0.331 0.331 0.331 1
+ IntensityLV 13.6
+}

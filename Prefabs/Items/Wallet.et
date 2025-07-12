@@ -1,0 +1,16 @@
+GenericEntity {
+ ID "5D211A2C0EC40C47"
+ components {
+  InventoryItemComponent "{5D211A2A9FA1BF7C}" {
+   Attributes SCR_ItemAttributeCollection "{5D211A2A9FA1BF7E}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{6546CB40969ABECF}" {
+      CameraDistanceToItem 0.1
+      FOV 35
+     }
+    }
+    m_bStackable 0
+   }
+  }
+ }
+}

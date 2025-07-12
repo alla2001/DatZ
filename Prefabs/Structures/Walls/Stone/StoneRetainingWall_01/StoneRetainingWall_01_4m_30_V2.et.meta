@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A0C0322BE7CDA699}Prefabs/Structures/Walls/Stone/StoneRetainingWall_01/StoneRetainingWall_01_4m_30_V2.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

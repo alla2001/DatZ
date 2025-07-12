@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AlphaTest 0.111
+ AlphaMul 0.786
+ BCRMap "{9EB50B85670EDEE1}Assets/Crafting/torch/Data/Rope_baseColor.edds"
+ OpacityMap "{11AA0B978864988B}Assets/Crafting/torch/Data/material_baseColor.edds"
+ NMOMap "{72D7B3383276C277}Assets/Crafting/torch/Data/Rope_normal.edds"
+}

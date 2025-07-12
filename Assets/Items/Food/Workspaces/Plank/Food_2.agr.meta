@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3F161FA452C904BF}Assets/Items/Food/Workspaces/Eating/Food_2.agr"
+ Configurations {
+  AnimGraphResourceClass PC {
+  }
+  AnimGraphResourceClass XBOX_ONE : PC {
+  }
+  AnimGraphResourceClass XBOX_SERIES : PC {
+  }
+  AnimGraphResourceClass PS4 : PC {
+  }
+  AnimGraphResourceClass PS5 : PC {
+  }
+  AnimGraphResourceClass HEADLESS : PC {
+  }
+ }
+}

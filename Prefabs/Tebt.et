@@ -1,0 +1,111 @@
+GenericEntity {
+ ID "6528B29B73F9F288"
+ components {
+  DatZReplaceDeployableEntityComponent "{6528E4EA4361994A}" {
+   m_sReplacementPrefab "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et"
+  }
+  EPF_PersistenceComponent "{652B59662F267137}" {
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966113B292D}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{652B5966198CCA8F}" {
+     }
+    }
+   }
+  }
+  MeshObject "{6528B2949672F600}" {
+   Object "{AA473E53D483267F}Assets/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.xob"
+   LODFactors {
+   }
+  }
+  RigidBody "{6528B2949672F7AB}" {
+   Mass 10
+   SimState Collision
+   ResponseIndex "TinyDestructible"
+   Geometries {
+    PhysicsBoxGeometry Box {
+    }
+   }
+   Static 1
+  }
+  SCR_SoundDataComponent "{6528B2949672F5E7}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B2949672F5E8}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_OPEN"
+    }
+    SCR_AudioSourceConfiguration "{6528B2949672F5E6}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{6528B2949672CAEB}" {
+   Attributes SCR_ItemAttributeCollection "{6528B2949672CA87}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6528B2949672F541}" {
+     Name "Military Tent"
+     Description "Military Tent used to store items"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B29B112C5F41}" {
+     Weight 6
+     DimensionScaler 2
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B2949672CAB0}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 3
+      CameraOffset 0 -0.5 0
+      FOV 50
+     }
+    }
+    m_Size SLOT_3x3
+    m_SlotType SLOT_ANY
+    m_bDraggable 0
+    m_bStackable 0
+    m_bRefundable 0
+   }
+   Priority 1000
+   SaveInLoadout 0
+   m_fMaxWeight 50
+  }
+  SCR_InventoryStorageManagerComponent "{6528B2949672CADE}" {
+  }
+  ActionsManagerComponent "{6528B2949672C9B7}" {
+   ActionContexts {
+    UserActionContext "{6528B2949672CA3E}" {
+     ContextName "default"
+     Position PointInfo "{6528B2949672CA3C}" {
+      Offset 0 0.7859 0
+     }
+     Radius 1.07
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{6528B2949672CA13}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6528B2949672CA2E}" {
+      Name "#AR-Inventory_OpenArsenalStorage"
+     }
+    }
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4E9D25FFD25}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6528E4E9DB516BBB}" {
+      Name "Dismantel"
+      Description "Dismantel"
+     }
+     ActionTitle "Dismantel"
+     Duration 2
+    }
+   }
+  }
+  RplComponent "{6528B2949672C9AD}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+ }
+ Flags 1027
+ coords 1556.751 32.988 2161.307
+}

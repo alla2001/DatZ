@@ -1,0 +1,38 @@
+Building {
+ ID "5104B6C51D848E98"
+ components {
+  CraftingItem "{65A29C6600F20275}" {
+  }
+  ActionsManagerComponent "{65A29C660D76D6EF}" {
+   ActionContexts {
+    UserActionContext "{65A29C6618D1B836}" {
+     UIInfo UIInfo "{65A29C661AD88CFB}" {
+      Name "Default"
+      Description "Default"
+     }
+     ContextName "Default"
+     Position PointInfo "{65A29C661D492B9C}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    BarricadeUserAction "{65A29C6611375A46}" {
+     ParentContextList {
+      "Default"
+     }
+     UIInfo UIInfo "{65A29C66159C9717}" {
+      Name "Barricade Window"
+      Description "Barricade Window"
+     }
+     ActionTitle "Barricade Window"
+     potPlacementInfo PointInfo "{65A29C66E018853E}" {
+      Offset 0 0 0.2
+     }
+    }
+   }
+  }
+  RplComponent "{65A29C660BC6B656}" {
+  }
+ }
+}

@@ -1,0 +1,7 @@
+GenericEntity {
+ ID "51C4DA20FAD8904E"
+ components {
+  RandomDestroyComponent "{6536C3A74E899703}" {
+  }
+ }
+}

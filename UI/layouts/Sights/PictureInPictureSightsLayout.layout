@@ -1,0 +1,42 @@
+FrameWidgetClass {
+ {
+  RTTextureWidgetClass "{00000000F726CE0B}" {
+   Prefab "{00000000F726CE0B}"
+   {
+    ImageWidgetClass "{658C93770482556B}" {
+     Name "Broken"
+     Slot FrameWidgetSlot "{658C937704825571}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX -980
+      OffsetRight 0
+      SizeY -1050
+      OffsetBottom 0
+     }
+     "Z Order" 1
+     "Is Visible" 0
+     Color 0.8148 0.789 0.7668 1
+     Texture "{55921062B893ACBA}Assets/Textures/BrokenSight.edds"
+     Size 1024 1024
+     "Flip Vertically" 1
+     Saturation 0
+    }
+    RenderTargetWidgetClass "{00000000D1E55A86}" {
+     Prefab "{00000000D1E55A86}"
+     Slot FrameWidgetSlot "{A222E83F772CEDA4}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      PositionY 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+    }
+   }
+  }
+ }
+}

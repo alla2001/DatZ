@@ -1,0 +1,37 @@
+GenericEntity : "{F06BF9FB0A0527AE}Prefabs/Cooking/Cooking Pot Clean Small.et" {
+ ID "654B2C3849B502A2"
+ components {
+  CookingContainerStorageComponent "{654B2C3872055522}" {
+   Attributes SCR_ItemAttributeCollection "{654B2C3872055543}" {
+    ItemDisplayName SCR_InventoryUIInfo "{654B2C387205557D}" {
+     Name "Cooking Pot Medium"
+     Description "Cooking Pot Used for Cooking"
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{654B2C387205557F}" {
+       Name "Holds Medium Amount oF Food"
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654B2C387205554E}" {
+     Weight 5
+     ItemVolume 5000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6551360EDD089542}" {
+      FOV 65
+     }
+     PreviewRenderAttributes "{654B4CCC4223539F}" {
+      CameraDistanceToItem 1
+     }
+    }
+    m_Size SLOT_2x2
+   }
+   m_fMaxWeight 10
+   m_fCookRate 0.75
+  }
+  MeshObject "{654B2C3872055327}" {
+   Object "{58E478CD85383DDF}Assets/Props/Industrial/PotIndustrialSet_01/PotIndustrialSet_01_Medium_pot.xob"
+  }
+ }
+ coords 0.576 0 0
+}

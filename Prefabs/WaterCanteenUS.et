@@ -1,0 +1,8 @@
+GenericEntity : "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" {
+ ID "6526C36F3AE9DD61"
+ components {
+  MeshObject "{6526C36F316A4EFB}" {
+   Object "{96CDF4C0166F696E}Assets/Items/Equipment/Canteens/Canteen_US/Canteen_US_01.xob"
+  }
+ }
+}

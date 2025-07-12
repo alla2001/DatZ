@@ -1,0 +1,100 @@
+ForestGeneratorEntity : "{532AED66429654F6}Prefabs/WEGenerators/Brushland/FG_Brushland_Sorbus_Dense.et" {
+ ID "50DAEB90A9F4F719"
+ Flags 1048579
+ GeneratorType GeneratorType "{65336C8762369AA3}" {
+ }
+ m_aLevels {
+  ForestGeneratorBottomLevel intermediate {
+   m_bGenerate 0
+   m_fDensity 1
+  }
+ }
+ m_aClusters {
+  ForestGeneratorCircleCluster Sorbus {
+   m_bGenerate 0
+  }
+  ForestGeneratorCircleCluster Corylus {
+   m_bGenerate 0
+  }
+  ForestGeneratorCircleCluster Betula {
+   m_bGenerate 0
+  }
+  ForestGeneratorStripCluster Rosa {
+   m_bGenerate 0
+   m_fMaxYOffset 0
+  }
+  ForestGeneratorStripCluster Rubus_Idaeus {
+   m_bGenerate 0
+  }
+  ForestGeneratorCircleCluster Stones {
+   m_aObjects {
+    SmallForestGeneratorClusterObject Stone_01 {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fRandomPitchAngle 5
+     m_fRandomRollAngle 5
+     m_fVerticalOffset 0
+     m_iMaxCount 5
+     m_fMinRadius 8
+     m_fMaxRadius 10
+    }
+    SmallForestGeneratorClusterObject Stone_02 {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fRandomPitchAngle 5
+     m_fRandomRollAngle 5
+     m_fVerticalOffset 0
+     m_iMaxCount 5
+     m_fMinRadius 7
+     m_fMaxRadius 7
+    }
+    SmallForestGeneratorClusterObject Stone_03 {
+     m_fMinScale 1
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fRandomPitchAngle 5
+     m_fRandomRollAngle 5
+     m_fVerticalOffset 0
+     m_iMaxCount 5
+     m_fMinRadius 5
+     m_fMaxRadius 5
+    }
+    SmallForestGeneratorClusterObject Stone_small {
+     m_fMinScale 1
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fRandomPitchAngle 5
+     m_fRandomRollAngle 5
+     m_iMaxCount 1
+     m_fMinRadius 7
+     m_fMaxRadius 7
+    }
+   }
+   m_fMinCDENSHA 0.1
+   m_fMaxCDENSHA 0.1
+  }
+  ForestGeneratorCircleCluster Stones2 {
+   m_aObjects {
+    SmallForestGeneratorClusterObject Stone_01 {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fVerticalOffset 0
+     m_iMaxCount 1
+     m_fMinRadius 5
+    }
+    SmallForestGeneratorClusterObject Stone_02 {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_iMaxCount 1
+     m_fMinRadius 5
+    }
+    SmallForestGeneratorClusterObject Stone_03 {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_fVerticalOffset 0
+     m_iMaxCount 1
+    }
+    SmallForestGeneratorClusterObject Stone_small {
+     m_Prefab "{51AF8E30E304375E}Prefabs/Mushroom.et"
+     m_iMaxCount 1
+     m_fMinRadius 5
+    }
+   }
+   m_fMinCDENSHA 0.1
+   m_fMaxCDENSHA 0.1
+  }
+ }
+}

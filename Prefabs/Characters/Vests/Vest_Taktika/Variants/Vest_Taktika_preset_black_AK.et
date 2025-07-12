@@ -1,0 +1,14 @@
+GenericEntity : "{9C86BA57C1B1BE03}Prefabs/Characters/Vests/Vest_Taktika/Variants/Vest_Taktika_preset_base.et" {
+ ID "60633E89449A0B9A"
+ components {
+  EPF_PersistenceComponent "{658C6DE1DCBABBF1}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{658C6DE1D07C9E95}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{658C6DE1D6C98877}" {
+     }
+    }
+   }
+  }
+ }
+}

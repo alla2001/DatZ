@@ -1,0 +1,10 @@
+MatPBRBasic {
+ Color 0.388 0.268 0.268 1
+ SpecularMul 0.87
+ RoughnessScale 0.382
+ MetalnessScale 0
+ AOScale 0.306
+ BCRMap "{3F43E553606B3F10}Assets/Food/Tomato/Data/DefaultMaterial_baseColor.edds"
+ OpacityMap "{365DFEF4673AF31A}Assets/Food/Tomato/Data/DefaultMaterial_metallicRoughness.edds"
+ NMOMap "{0F65DD001ED70121}Assets/Food/Tomato/Data/DefaultMaterial_normal.edds"
+}

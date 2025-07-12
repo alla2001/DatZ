@@ -1,0 +1,24 @@
+GameEntity {
+ ID "5104869D194C6243"
+ components {
+  EPF_PersistenceComponent "{5A28749C2A2B4AD2}" {
+   m_bStorageRoot 0
+  }
+  ActionsManagerComponent "{5104869D194C6245}" {
+   additionalActions {
+    SCR_DatZTransformeBaseAction "{652E7EC4BFC74C2B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{652E7EC4882192F5}" {
+      Name "Rip to Rags"
+      Description "Rip to Rags"
+     }
+     ActionTitle "Rip to Rags"
+     Duration 3
+     prefab "{0892B183E7F9DF08}Prefabs/Rags.et"
+    }
+   }
+  }
+ }
+}

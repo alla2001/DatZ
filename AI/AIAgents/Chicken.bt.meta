@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{ED6E5C931946637B}AI/AIAgents/Chicken.bt"
+ Configurations {
+  BehaviorTreeResourceClass PC {
+  }
+  BehaviorTreeResourceClass XBOX_ONE : PC {
+  }
+  BehaviorTreeResourceClass XBOX_SERIES : PC {
+  }
+  BehaviorTreeResourceClass PS4 : PC {
+  }
+  BehaviorTreeResourceClass PS5 : PC {
+  }
+  BehaviorTreeResourceClass HEADLESS : PC {
+  }
+ }
+}

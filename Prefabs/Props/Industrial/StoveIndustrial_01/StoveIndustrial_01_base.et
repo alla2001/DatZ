@@ -1,0 +1,9 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  DatZLootSpawner : "{E1F6359BA474BD7B}Prefabs/Spawners/Cooking_DatZLootSpawner.et" {
+   ID "6551637C4BB5407F"
+   coords -0.585 1.009 0.413
+  }
+ }
+}

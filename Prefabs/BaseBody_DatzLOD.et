@@ -1,0 +1,12 @@
+GenericEntity : "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et" {
+ ID "56E4FD8779CD1867"
+ components {
+  MeshObject "{56E4FD8779CD19A7}" {
+   LODFactors {
+    1000 1000 1 5 10
+   }
+   PixelSizeScale 3.38
+  }
+ }
+ coords 56.851 1 125.238
+}

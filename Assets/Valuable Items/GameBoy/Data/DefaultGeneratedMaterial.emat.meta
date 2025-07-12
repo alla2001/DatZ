@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7E3044B4D1314A2B}Assets/Valuable Items/GameBoy/Data/DefaultGeneratedMaterial.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

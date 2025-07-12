@@ -1,0 +1,175 @@
+GenericEntity {
+ ID "653AC286E96A576B"
+ components {
+  EPF_PersistenceComponent "{653AC2861386AEE6}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{653AC2861386AEEA}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{653AC2861386AE10}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{653AC2861386B15D}" {
+   Attributes SCR_ItemAttributeCollection "{653AC2861386B15F}" {
+    ItemDisplayName SCR_InventoryUIInfo "{653AC2861386AEA6}" {
+     Name "Canned Stuff"
+     Description "Canned Stuff (Closed)"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{653AC2861386AEA8}" {
+       Name "Eating this will regenerate some of your food"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{653AC2861386AEB8}" {
+     Weight 0.02
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 180
+     DimensionScaler 0.35
+     RestingUP Up
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{653AC2861386AE9D}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{653AC2861386AE9F}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     SCR_AlternativeModel "{653AC2861386AE93}" {
+      m_sAlternativeModel "{7518A788C4ED1927}Assets/Food/Apple/Apple.xob"
+     }
+     SCR_ItemOfInterestAttribute "{653AC2861386B16B}" {
+      m_InterestType FOOD
+     }
+     ItemActionAnimAttributes "{653AC2861386B17F}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     CharacterModifierAttributes "{653AC2861386B175}" {
+      SpeedLimit 4
+      ADSSpeedLimit 4
+      SpeedLimitItemPrimaryAction 4
+      SpeedLimitHighready 4
+     }
+     PreviewRenderAttributes "{653AC2861386B146}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.4
+      ItemRenderRotation -45 0 0
+      FOV 18
+      AspectRatio 1
+     }
+     SCR_SelectionMenuPreviewAttributes "{653AC2861386B141}" {
+      m_bShowMedicalColor 1
+     }
+    }
+    CommonItemType "FOOD"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{653AC2861386B1E2}" {
+   Object "{AB7D6940290EED03}Assets/Food/Canned/Fish/SarCan.xob"
+  }
+  RigidBody "{653AC2861386B1F8}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{653AC284A99E859C}" {
+   m_eAnimVariable ADRIANOV
+   m_ConsumableEffect SCR_ConsumableFood "{653AC284AC93FCE9}" {
+    isClosed 1
+   }
+  }
+  SCR_SoundDataComponent "{653AC2861386B1D6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{653AC2861386B1C7}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{653AC2861386B1C1}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{653AC2861386B1DA}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{653AC2861386B1D9}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{653AC2861386B07D}" {
+   ActionContexts {
+    UserActionContext "{653AC2861386B1B7}" {
+     ContextName "default"
+     Position PointInfo "{653AC2861386B1B9}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{653AC2861386B19D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{653AC2861386B19C}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    SCR_DatZConditionalTransformeBaseAction "{653AC2861386B065}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{653AC2861386B068}" {
+      Name "Open Can"
+      Description "Open Can"
+     }
+     ActionTitle "Open Can"
+     Duration 3
+     prefab "{7BBDC24E577F3A87}Prefabs/CannedSardeenOpen.et"
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{653AC2861386B05A}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{653AC2861386B042}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{653AC2861386B05C}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{653AC2861386B051}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{653AC2861386B02A}" {
+  }
+ }
+ coords 3168.015 11.505 2783.405
+}

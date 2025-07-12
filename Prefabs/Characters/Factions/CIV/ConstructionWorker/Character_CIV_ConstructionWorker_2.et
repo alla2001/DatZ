@@ -1,0 +1,26 @@
+SCR_ChimeraCharacter : "{1E5D9B21280870AA}Prefabs/Characters/Factions/CIV/ConstructionWorker/Character_CIV_ConstructionWorker_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DatZMetabolsimHandler "{654739DB958B6A27}" {
+   isZombi 0
+  }
+  ForceWalkAI "{650C98C1B3FC7F36}" {
+   isZombi 0
+  }
+  SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
+   "faction affiliation" "USSR"
+  }
+  ZombieOptimizationComponent "{65873BAD03DF367F}" {
+   isZombi 0
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{60DCBCECAC6C6E65}" {
+     PrefabsToSpawn {
+      "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_USSR.et" "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{1641CA45B15C83E8}Prefabs/Apple.et"
+     }
+    }
+   }
+  }
+ }
+}

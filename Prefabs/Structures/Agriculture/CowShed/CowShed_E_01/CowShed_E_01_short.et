@@ -1,0 +1,154 @@
+SCR_DestructibleBuildingEntity : "{07452F959762A7C0}Prefabs/Structures/Agriculture/CowShed/CowShed_E_01/CowShed_E_01_short_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  $grp GenericEntity : "{24DE47095BD6BE7B}Prefabs/Props/Agriculture/Farm/HayBale_01_square_big.et" {
+   {
+    ID "65568220CCD0404D"
+    coords 2.293 3.964 -16.794
+    angleY -126.405
+    scale 0.82
+   }
+   {
+    ID "65568220CCD04050"
+    coords 1.963 0.809 -12.44
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD04385"
+    coords 1.999 2.949 -16.315
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD04389"
+    coords 1.915 2.11 -17.16
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD0439E"
+    coords 1.8 1.139 -17.156
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD043A7"
+    coords 1.956 -0.051 -11.575
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD043A8"
+    coords 2.084 0.851 -13.358
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD043BE"
+    coords 1.944 1.749 -14.708
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD043E0"
+    coords 1.932 1.895 -15.775
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD0D019"
+    coords 2.052 -0.204 -13.76
+    angleY -90
+    scale 0.82
+   }
+   {
+    ID "65568220CCD0D032"
+    coords 2.052 -0.204 -12.815
+    angleY -90
+    scale 0.82
+   }
+  }
+  $grp GenericEntity : "{6B68854FD47B936F}Prefabs/Props/Military/Training/Obstacles/ObstacleBridge_01_platform.et" {
+   {
+    ID "655682203BCB0F8D"
+    coords -1.353 2.461 2.989
+    angleX 0.529
+    angleY 3.999
+    angleZ 0.429
+   }
+   {
+    ID "655682203BCB0FA7"
+    coords -1.379 -0.057 4.956
+   }
+   {
+    ID "655682203BCB0FB9"
+    coords -1.309 -0.057 2.413
+   }
+   {
+    ID "655682203BCB0FF7"
+    coords -1.356 -0.057 7.508
+   }
+  }
+  $grp GenericEntity : "{96A3F39C918787E5}Prefabs/Props/Agriculture/Farm/HayBale_01_square_big_bottom.et" {
+   {
+    ID "65568220CCD0407C"
+    coords 2.052 -0.204 -15.896
+    angleY 90
+    scale 0.82
+    {
+     GenericEntity : "{24DE47095BD6BE7B}Prefabs/Props/Agriculture/Farm/HayBale_01_square_big.et" {
+      ID "65568220CCD0407B"
+      coords 0 1.19 0
+      angleY 0
+     }
+    }
+   }
+   {
+    ID "65568220CCD043F6"
+    coords 2.052 -0.204 -14.815
+    angleY 90
+    scale 0.82
+    {
+     GenericEntity : "{24DE47095BD6BE7B}Prefabs/Props/Agriculture/Farm/HayBale_01_square_big.et" {
+      ID "65568220CCD0BD31"
+      coords 0 1.205 0
+      angleY 180
+     }
+    }
+   }
+   {
+    ID "65568220CCD0BD06"
+    coords 1.952 -0.204 -16.984
+    angleY 90
+    scale 0.82
+    {
+     $grp GenericEntity : "{C959D3CF939EBBB3}Prefabs/Props/Agriculture/Farm/HayBale_01_square_small.et" {
+      {
+       ID "65568220CCD0D0F6"
+       coords -0.143 1.067 0.061
+       angleY -90
+       scale 1.219
+      }
+      {
+       ID "65568220CCD0D0F7"
+       coords -0.143 1.067 -0.596
+       angleY -90
+       scale 1.219
+      }
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{B8576ECF78CDBCD7}Prefabs/Props/Military/Training/Obstacles/ObstacleBridge_01_start.et" {
+   {
+    ID "655682203BCB0F81"
+    coords -1.31 -0.057 11.294
+   }
+   {
+    ID "655682203BCB0FDA"
+    coords -1.436 2.464 6.786
+   }
+  }
+ }
+}

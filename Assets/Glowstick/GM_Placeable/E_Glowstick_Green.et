@@ -1,0 +1,20 @@
+GenericEntity : "{D5C3CF5996B43A27}Prefabs/Props/Civilian/BasketWicker_01.et" {
+ ID "F0DBA538AC2A0552"
+ coords 1.123 -0.141 1.304
+ {
+  LightEntity {
+   ID "654674C1E022F80B"
+   components {
+    Hierarchy "{654674C116EC56AE}" {
+    }
+   }
+   coords 0 0.082 0
+   Color 0.0328 1 0.1363 1
+   LV 3
+   Radius 5
+   NearPlane 0.01
+   DistanceAttenuation 3
+   LensFlareType Disabled
+  }
+ }
+}

@@ -1,0 +1,17 @@
+Particle {
+ Color 1 1 1 1
+ AlbedoMap "{A33C94C2CDE0208E}Particles/_Textures/Cloud_02_BCA.edds"
+ NormalMap "{94ACD68D2987BFA2}Particles/_Textures/Cloud_01_N.edds"
+ Diffuse 0.729 0.729 0.729 1
+ Ambient 0.947 0.947 0.947 1
+ ReceiveShadow 1
+ ReceiveProbesLighting 1
+ ReceiveLights 1
+ AlphaMul 0.498
+ BlendMode Additive_AlphaModulate
+ TileU 2
+ TileV 2
+ SphereSizeMultiplier 0.31
+ Softness 2
+ CameraBlendFar 0.001
+}

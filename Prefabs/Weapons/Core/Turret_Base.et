@@ -1,0 +1,8 @@
+Turret {
+ ID "51ACD0965653D003"
+ components {
+  EPF_PersistenceComponent "{5D46D95CC53F48C8}" {
+   m_bStorageRoot 0
+  }
+ }
+}

@@ -1,0 +1,6 @@
+Grass : "{E8ABEC8EF550CEF6}Assets/Clutter/Procedural/cp_grass_beach.emat" {
+ SpecularMul 0.4
+ AOScale 0.7
+ Height 0.5
+ HeightRandomOffset 0.2
+}

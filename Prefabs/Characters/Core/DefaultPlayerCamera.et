@@ -1,0 +1,19 @@
+PlayerCamera {
+ ID "E6EBA6BFC249F285"
+ components {
+  SCR_DatZPostProcessCameraComponent "{651E866DF64F69DC}" {
+   m_Effects {
+    SCR_CameraPostProcessEffect "{6564B06AD53D0E11}" {
+     m_Type Colors
+     m_iPriority 19
+     m_MaterialPath "{6762C82935EBFD53}UI/Materials/Color.emat"
+    }
+    SCR_CameraPostProcessEffect "{6564B06AAE2FCD9A}" {
+     m_Type ColorGrading
+     m_iPriority 15
+     m_MaterialPath "{B141916CA94571BF}UI/Materials/ColorGrading.emat"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{35F2FD9C1B7F587B}Prefabs/Structures/BuildingParts/Eletrical/ControlPanel_01/ControlPanel_01keyCard.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

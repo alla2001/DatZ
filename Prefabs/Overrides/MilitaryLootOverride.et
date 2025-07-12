@@ -1,0 +1,11 @@
+DatZLootOverride {
+ ID "652AC7BB2B139078"
+ components {
+  RplComponent "{6530FDD8943268DC}" {
+  }
+ }
+ coords 1383.117 37.91 2368.035
+ overrideRadius 100
+ chance 0.8
+ lootTable "{1F91D1C58E06D296}Configs/MilitaryLootTable.conf"
+}

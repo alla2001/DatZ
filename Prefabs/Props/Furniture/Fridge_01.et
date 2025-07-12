@@ -1,0 +1,25 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "6093E737E30F72A1"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{3CB769F84A1F9A73}Assets/Props/Furniture/Fridge_01/dst/Fridge_01_dst_01.xob"
+  }
+ }
+ coords -0.465 0 0.022
+ {
+  $grp DatZLootSpawner : "{254BEF11C085ED93}Prefabs/Spawners/Food_DatZLootSpawner.et" {
+   {
+    ID "654F1A572BA9E6C9"
+    coords 0.327 0.151 0.311
+   }
+   {
+    ID "654F1A572BA9E6D9"
+    coords 0.39 1.483 0.407
+   }
+   {
+    ID "654F1A572BA9E6EB"
+    coords 0.376 1.06 0.501
+   }
+  }
+ }
+}

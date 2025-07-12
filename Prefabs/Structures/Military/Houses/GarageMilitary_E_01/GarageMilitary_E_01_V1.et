@@ -1,0 +1,4 @@
+SCR_DestructibleBuildingEntity : "{1E7AC996BD3B73A7}Prefabs/Structures/Military/Houses/GarageMilitary_E_01/GarageMilitary_E_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ ignoreDestruction 1
+}

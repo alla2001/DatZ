@@ -1,0 +1,540 @@
+GenericEntity {
+ ID "653A99FCAE3263EF"
+ components {
+  SignalsManagerComponent "{653946E2041E54FD}" {
+  }
+  WeaponSoundComponent "{653946E2041E54DF}" {
+   Filenames {
+    "{4B8E12C5E23CA29B}Sounds/Weapons/Handguns/PM/Weapons_Handguns_PM_Shot.acp" "{44CBBB2C398E653B}Sounds/Weapons/Handguns/PM/Weapons_Handguns_PM_Handling.acp" "{8D040E18DFEC29AF}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_HandGun.acp" "{430CD8162D17C2FF}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Pistol.acp" "{D32144A00CA494A6}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Pistol.acp"
+   }
+   DistanceManagement 0
+  }
+  EPF_PersistenceComponent "{653946E2041E54BC}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{653946E2041E54A1}" {
+   }
+  }
+  MeshObject "{653946E2041E548C}" {
+   Object "{4D96206F36757BFF}Assets/Weapons/ShortSword/ShortSword.xob"
+   LODFactors {
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{653946E2041E5481}" {
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_MeleeWeaponProperties "{653946E2041E5496}" {
+   m_fDamage 15
+   m_fRange 1.9
+   m_fIsKnife 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{653946E2041E57C3}" {
+   Attributes SCR_ItemAttributeCollection "{653946E2041E57C2}" {
+    ItemDisplayName WeaponUIInfo "{653946E2041E574C}" {
+     Name "Short Sword"
+     Description "Short Sword, very deadly"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{653946E2041E575F}" {
+     Weight 0.7
+     SizeSetupStrategy Manual
+     ItemVolume 200
+     RestingAdditiveOffsetLS -0.01 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{653946E2041E5707}" {
+     IkSettings {
+      ItemIKSettings "{653946E2041E5723}" {
+       MovementSpeedRange 0 0.01
+       IkSettingsStand 7
+       IkSettingsCrouch 7
+       IkSettingsProne 7
+      }
+      ItemIKSettings "{653946E2041E573C}" {
+       MovementSpeedRange 0.01 2.2
+       IkSettingsStand 7
+       IkSettingsCrouch 7
+       IkSettingsProne 4
+      }
+      ItemIKSettings "{653946E2041E5736}" {
+       MovementSpeedRange 2.2 3
+       IkSettingsStand 4
+       IkSettingsCrouch 4
+       IkSettingsProne 4
+      }
+      ItemIKSettings "{653946E2041E5733}" {
+       Jumping 1
+       IkSettingsStand 6
+      }
+      ItemIKSettings "{653946E2041E570D}" {
+       Lowered 1
+       InAds 0
+       OutAds 0
+      }
+      ItemIKSettings "{653946E2041E5708}" {
+       ProneTurn 1
+       IkSettingsStand 4
+      }
+     }
+     AnimationInstance "{BDA8B53AB35741EE}anims/workspaces/player/player_main_Sword.asi"
+     AnimationIKPose "{E8E2308AB43CB0E6}Assets/Weapons/Handguns/PM/anims/anm/p_PM_ik.anm"
+     HandAdditiveRotation 90 90 90
+     HandAdditiveTranslation 10 0 0
+     AllowInspection 1
+    }
+    CustomAttributes {
+     AimingModifierAttributes "{653946E2041E5714}" {
+      ErectLimitsHorizontal -90 90
+      ErectLimitsVertical -90 90
+      CrouchLimitsHorizontal -90 90
+      CrouchLimitsVertical -90 90
+      ProneLimitsHorizontal -90 90
+      ProneLimitsVertical -90 90
+      LowerGunCollisionDistance 0.05
+     }
+     AttachmentAttributes "{653A99E1C63E9C1D}" {
+      AttachmentType AttachmentBayonetM9 "{653A99E18B81F632}" {
+      }
+     }
+     ItemMovementSwayAttributes "{653946E2041E57E0}" {
+      BobMagnitudeLinear 0.03 -0.01 -0.01
+      BobMagnitudeAngular -6.25 5 0
+      TargetVelocity 3.6
+      TargetVelocitySteepness 3
+      TargetVelocityLimit 3.6
+     }
+     SCR_RecoilCameraShakeParams "{653946E2041E57CF}" {
+      m_fBlendOutTime 0.089
+      m_fMaxVelocity 15
+      m_vTranslationMin 0.004 0.004 0
+      m_vTranslationMax 0.005 0.005 0
+      m_fFOVModifier 0.985
+      m_vRotationImpulseMin 0.005 0.005 3
+      m_vRotationImpulseMax 0.012 0.012 4
+      m_fMinImpulseThreshold 0.01
+      m_fImpulseCrouchMagnitudeModifier 0.7
+      m_fImpulseProneMagnitudeModifier 1
+      m_fCrouchMagnitudeModifier 0.5
+      m_fProneMagnitudeModifier 0.33
+     }
+     PreviewRenderAttributes "{653946E2041E57C5}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 0.3
+      ItemRenderRotation 0 0 90
+      FOV 65
+      AnimationInstance "{B2310BF09F78B065}anims/workspaces/player/player_inventory_pistol.asi"
+     }
+     SCR_WeaponAttachmentBayonetAttributes "{653A99E1D6D4882C}" {
+      AttachmentType AttachmentBayonet "{61967DE895246CF5}" {
+      }
+      m_fDamageModificationFactor 10
+      m_fRangeModificationFactor 1.6
+      m_fPrecisionModificationFactor 0.3
+      m_fExtraObstructionLength 0.2
+     }
+    }
+    CommonItemType "BAYONET"
+    m_SlotType SLOT_WEAPONS_STORAGE
+   }
+   StoragePurpose 32
+  }
+  WeaponComponent "{653946E2041ECAE9}" {
+   components {
+    AttachmentSlotComponent "{653946E2041E5783}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+    SightsComponent "{653946E2041E565D}" {
+     Enabled 0
+     SightsPosition PointInfo "{653946E2041E5662}" {
+      PivotID "eye"
+      Offset 0 0 -0.3
+     }
+     SightsRanges {
+      SightRangeInfo "{653946E2041E5670}" {
+       Range 0 0
+       WeaponPosition PointInfo "{653946E2041E5673}" {
+        Offset 0 -0.0026 0
+        Angles 0.15 0 0
+       }
+      }
+     }
+     SightsPointFront PointInfo "{653946E2041E564A}" {
+      Offset 0 0.0698 0.1072
+     }
+     SightsPointRear PointInfo "{653946E2041E5646}" {
+      Offset 0 0.0707 -0.0237
+     }
+     ADSTime 0.2
+     ZeroingGenerator BaseZeroingGenerator "{653946E2041E565C}" {
+      ZeroRaiseToEye 1
+     }
+     m_iOpticDOFDistanceScale 225
+    }
+    MuzzleComponent "{653946E2041E657A}" {
+     Enabled 0
+     components {
+      CaseEjectingEffectComponent "{653946E2041E561E}" {
+       ParticleEffect "{BFCAD887920029A2}Particles/Weapon/Casing_9x18.ptc"
+       EffectPosition EntitySlotInfo "{513A9384CEFB83CB}" {
+        PivotID "barrel_chamber"
+        Offset 0.007 0.008 -0.03
+        Angles 0 90 0
+       }
+       HasSound 0
+      }
+      CaseEjectingEffectComponent "{653946E2041E5615}" {
+       ParticleEffect "{A42825D4030412A3}Particles/Weapon/Smoke_PM.ptc"
+       EffectPosition EntitySlotInfo "{52C8933887AD233F}" {
+        PivotID "barrel_muzzle"
+       }
+       HasSound 0
+      }
+      SCR_MuzzleEffectComponent "{653946E2041E56E5}" {
+       ParticleEffect "{929E2053B2409DB4}Particles/Weapon/Muzzle_PM.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        PivotID "barrel_muzzle"
+       }
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{653946E2041E56FE}" {
+       PivotID "barrel_muzzle"
+      }
+     }
+     ProjectileSpawnPositions {
+      PointInfo "{653946E2041E56F9}" {
+       PivotID "barrel_chamber"
+      }
+     }
+     ChamberedAmmo 1
+     FireModes {
+      BaseFireMode "{653946E2041E56D9}" {
+       MaxBurst 0
+       MaxSalvo 0
+       RoundsPerMinute 0
+       UIName "Safe"
+       "Gamepad Trigger effect" GamepadTriggerEffect "{653946E2041E56C2}" {
+        Name "Safety"
+        ContextName "Weapon"
+        Priority 20
+        TriggerEffectCurve {
+         0 0 0.444 0 0.556 1
+        }
+       }
+       "Empty Trigger effect" GamepadTriggerEffect "{653946E2041E56DB}" {
+        Name "Safety"
+        ContextName "Weapon"
+        Priority 20
+        TriggerEffectCurve {
+         0 0 0.444 0 0.556 1
+        }
+       }
+      }
+      BaseFireMode "{653946E2041E56D0}" {
+       RoundsPerMinute 500
+       UIName "Single"
+      }
+     }
+     MagazineWell MagazineWellMakarovPM "{653946E2041E56A8}" {
+     }
+     DispersionDiameter 0.4
+     DispersionRange 100
+     WeaponAimModifiers {
+      SwayWeaponAimModifier "{653946E2041E56B2}" {
+       Name "SWAY"
+       "Linear Damping" 0.85 0.5 0.825
+       "Linear Magnitude" 1
+       "Angular Damping" 0.95 0.3 0.4
+       "Angular Magnitude" 1
+       "ADS Multiplier" 0.3
+       "Focus Multiplier" 0.2
+       "Stamina Magnitude Curve" {
+        0 1 0.491 0.961 0.722 0.867 0.828 0.727 0.947 0.518 1 0.087
+       }
+       "Stamina Scale Mins" 0.4 0.5 0
+       "Stamina Scale Maxs" 1.4 1.4 0
+       "Linear Inertia Magnitude" 0.0015 0.02 0
+       "Angular Inertia Magnitude" 5 4 14
+       "Angular Inertia Magnitude ADS" 4 2 12
+       "Linear Inertia Decay Speed" 10
+       "Angular Inertia Decay Speed" 12
+       DamageToSway 2
+      }
+      OnHitAimModifier "{653946E2041E568B}" {
+       IsEnabled 0
+      }
+      ZeroingWeaponAimModifier "{653946E2041E5685}" {
+      }
+      RecoilWeaponAimModifier "{653946E2041E655D}" {
+       LinearData RecoilData "{653946E2041E596F}" {
+        "Curve X" {
+         0 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 1 0.041 1 0.187 0.498 0.499 0.532 0.75 0.5 1 0.5
+        }
+        "Curve Z" {
+         0 1 0.082 0.71 0.211 0.523 0.575 0.5 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" 0.1 -0.02 -0.03
+        "Curve Maxs" 0.1 -0.015 -0.03
+       }
+       AngularData RecoilData "{653946E2041E5961}" {
+        "Curve X" {
+         0 0.5 0.063 0.902 0.142 0.363 0.25 0.55 0.375 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 1 0.024 1 0.137 0.719 0.232 0.515 0.261 0.506 0.291 0.5 1 0.5
+        }
+        "Curve Z" {
+         0.035 0.818 0.085 0.675 0.15 0.55 0.337 0.498 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" 0.1 4.25 -6
+        "Curve Maxs" 0.1 4.5 6
+       }
+       TurnOffsetData RecoilData "{653946E2041E5975}" {
+        "Curve X" {
+         0 1 0.051 0.727 0.121 0.5 0.27 0.5 1 0.5
+        }
+        "Curve Y" {
+         0 0.998 0.052 0.491 0.126 0.525 0.236 0.5 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Curve Magnitudes" 1 1 0
+        "Curve Mins" -3 45 0
+        "Curve Maxs" 3 46.5 0
+        "Base Recoil Scale" 1
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{653946E2041E6574}" {
+      m_MagIndicator SCR_MagazineIndicatorConfiguration "{653946E2041E6577}" {
+       m_sOutline "magazine-beretta_15rnd-outline"
+       m_sBackground "magazine-beretta_15rnd-background"
+       m_sProgress "magazine-beretta_15rnd-fill"
+       m_sProgressAlphaMask "magazine-beretta_15rnd-alpha"
+      }
+     }
+     GamepadEffectContext "Weapon"
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID "slot_magazine"
+      ChildPivotID "snap_weapon"
+      InspectionWidgetOffset 0 -0.0129 -0.0137
+     }
+     MagazineTemplate "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+    }
+    WeaponAnimationComponent "{653946E2041ECAD8}" {
+     AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+     AnimInstance "{9D1FA29C8172197B}Assets/Weapons/Handguns/workspaces/PM_weapon.asi"
+     StartNode "IdleFireSTM"
+     AnimInjection AnimationAttachmentInfo "{653946E2041E651F}" {
+      AnimGraph "{0A046C9C356F9198}Assets/Weapons/Handguns/workspaces/PM.agr"
+      AnimInstance "{7570AB570B144DE3}Assets/Weapons/Handguns/workspaces/melee_player.asi"
+      StartNode "IdleFireSTM"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimVariablesToBind {
+      "WeaponInspectionState" "State"
+     }
+    }
+   }
+   SignalsSourceAccess SignalsSourceAccessClass "{653946E2041ECAE1}" {
+   }
+   isThrowable 1
+   WeaponType Handgun
+   AllowedRaise "Only lowered"
+   obstructionTestCharacterOffset -0.08 -0.05 0
+   obstructionTestAddedLength 0.5
+   signObstrWeaponConstantOffset 0.1 -0.25 -0.05
+   signiObstrWeaponMaxZOffset 0.25
+   obstructionTestBBScale 0.05 0.75 0.05
+   sightsCameraRollScaler -1
+   SoundInt 1010100
+   UIInfo WeaponUIInfo "{653946E2041ECAE6}" {
+    Name "#AR-Weapon_PM_Name"
+    Description "#AR-Weapon_PM_Description"
+    Icon ""
+   }
+   WeaponSlotType "secondary"
+   WeaponOffset 0 0 0
+  }
+  ActionsManagerComponent "{653946E2041F0D5A}" {
+   ActionContexts {
+    UserActionContext "{653946E2041EA5ED}" {
+     ContextName "default"
+     Position PointInfo "{653946E2041ECA05}" {
+      Offset 0 0.02 0
+     }
+     Radius 0.2
+    }
+    UserActionContext "{653946E2041F0CE9}" {
+     UIInfo SCR_ActionContextUIInfo "{653946E2041EA5F9}" {
+     }
+     ContextName "bipod"
+     Position PointInfo "{653946E2041EA5FC}" {
+     }
+     Radius 0
+    }
+    UserActionContext "{653946E2041F0CD8}" {
+     UIInfo SCR_ActionContextUIInfo "{653946E2041F0CE3}" {
+     }
+     ContextName "magazine"
+     Position PointInfo "{653946E2041F0CDF}" {
+      PivotID "slot_magazine"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{653946E2041F0CC9}" {
+     UIInfo SCR_ActionContextUIInfo "{653946E2041F0CD2}" {
+     }
+     ContextName "firemode"
+     Position PointInfo "{653946E2041F0CC8}" {
+      PivotID "w_fire_mode"
+      Angles 0 -90 90
+     }
+     Radius 0.05
+     Omnidirectional 0
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAction "{653946E2041F0CB5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{653946E2041F0CBA}" {
+      Name "#AR-Inventory_Equip"
+     }
+    }
+    SCR_EquipWeaponHolsterAction "{653946E2041F0CA6}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{653946E2041F0CA5}" {
+      Name "#AR-Inventory_EquipHolster"
+     }
+     "Sort Priority" 1
+    }
+    SCR_PickUpItemAction "{653946E2041F0C94}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{653946E2041F0C9A}" {
+      Name "#AR-Inventory_PickUp"
+     }
+     "Sort Priority" 2
+    }
+    SCR_WeaponAction "{653946E2041F0C82}" {
+     ParentContextList {
+      "bipod"
+     }
+     UIInfo SCR_ActionUIInfo "{653946E2041F0C80}" {
+      Name "Bipod"
+      m_sIconName "bipod"
+     }
+     m_WeaponActionType Bipod
+    }
+    SCR_ToggleSafetyUserAction "{653946E2041F0D76}" {
+     ParentContextList {
+      "firemode"
+     }
+     UIInfo SCR_ActionUIInfo "{653946E2041F0D74}" {
+      Name "#AR-Keybind_WeaponSafety"
+      m_sIconName "not-available"
+     }
+    }
+    SCR_DetachMagazineUserAction "{653946E2041F0D6B}" {
+     ParentContextList {
+      "magazine"
+     }
+     UIInfo SCR_ActionUIInfo "{653946E2041F0D6A}" {
+      Name "#AR-UserAction_Detach"
+      m_sIconName "magazine"
+     }
+    }
+    SCR_FireModeSwitchUserAction "{653946E2041F0D58}" {
+     ParentContextList {
+      "firemode"
+     }
+     UIInfo SCR_ActionUIInfo "{653946E2041F0D5F}" {
+      Name "#AR-ControlsHint_NextFireMode"
+      m_sIconName "availability-full"
+     }
+    }
+   }
+  }
+  WeaponGamepadEffectsManagerComponent "{653946E2041F0D13}" {
+   EffectContexts {
+    GamepadEffectContext "{653946E2041F0D41}" {
+     Name "Weapon"
+    }
+   }
+   "Default Chambered Trigger effect" GamepadTriggerEffect "{653946E2041F0D35}" {
+    Name "ChargedMedium"
+    ContextName "Weapon"
+    Priority 20
+    TriggerEffectCurve {
+     0.444 0 0.556 0.375 0.667 0.75 0.778 0
+    }
+   }
+   "Default ADS Trigger effect" GamepadTriggerEffect "{653946E2041F0D2D}" {
+    Name "ADSLight"
+    ContextName "Weapon"
+    Priority 10
+    TriggerType Left
+    TriggerEffectCurve {
+     0.556 0 0.667 0.125 0.778 0 0.889 0.375 1 0.125
+    }
+   }
+   "Default Deployment effect" GamepadTriggerEffect "{653946E2041F0D21}" {
+    Name "Deployed"
+    ContextName "Weapon"
+    Priority 20
+    TriggerType Left
+    TriggerEffectCurve {
+     0 0 0.556 0 0.667 0.125 0.778 0 0.889 0.375 1 0.125
+    }
+   }
+   "Default Empty Fire Trigger effect" GamepadTriggerEffect "{653946E2041F0D19}" {
+    Name "Empty"
+    ContextName "Weapon"
+    Priority 20
+    TriggerEffectCurve {
+     0 0
+    }
+   }
+   "Default Firing Trigger effect" GamepadTriggerEffect "{653946E2041F0D11}" {
+    Name "FireHandgun"
+    ContextName "Weapon"
+    Priority 40
+    "Auto Disable Timeout" 0.071
+    TriggerEffectType Rumble
+    TriggerEffectCurve {
+     0 1
+    }
+    TriggerEffectFrequency 7
+   }
+  }
+  NwkPhysicsMovementComponent "{653946E2041F0D0F}" {
+  }
+  RplComponent "{653946E2041F0DE2}" {
+   "Rpl State Override" None
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{653946E2041F0DD8}" {
+  }
+ }
+ Flags 4194307
+ coords 1558.149 32.864 2163.447
+}

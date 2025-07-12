@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{071BE5F51588962F}Assets/Valuable Items/Golden Pitcher/Data/Pitcher.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

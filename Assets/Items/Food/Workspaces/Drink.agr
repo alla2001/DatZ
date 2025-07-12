@@ -1,0 +1,39 @@
+AnimSrcGraph {
+ AnimSetTemplate "{22E2DED73A4FCB4A}Assets/Items/Medicine/Workspaces/SalineBag.ast"
+ ControlTemplate AnimSrcGCT "{5A4E8AE426A1AA61}" {
+  Variables {
+   AnimSrcGCTVarInt Stance {
+    MaxValue 2
+   }
+   AnimSrcGCTVarInt SeatPositionType {
+    MaxValue 8
+   }
+   AnimSrcGCTVarFloat AimY {
+    MinValue -90
+    MaxValue 90
+   }
+   AnimSrcGCTVarFloat LookX {
+    MaxValue 1
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_HealSelf {
+   }
+   AnimSrcGCTCmd CMD_HealOther {
+   }
+   AnimSrcGCTCmd CMD_Revive {
+   }
+  }
+  GlobalTags {
+   "ITEM"
+   "MEDICAL"
+   "Saline"
+  }
+ }
+ Debug AnimSrcGD "{5A4E8AE426A1B591}" {
+ }
+ GraphFilesResourceNames {
+  "{3A5DBA42B14DF6C6}Assets/Items/Food/Workspaces/Drink.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

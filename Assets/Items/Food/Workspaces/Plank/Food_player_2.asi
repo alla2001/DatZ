@@ -1,0 +1,82 @@
+AnimSetInstanceSource "{5D849CF36952259F}" {
+ Template "{22E2DED73A4FCB4A}Assets/Items/Medicine/Workspaces/SalineBag.ast"
+ Lines {
+  AnimSetInstanceSource_Line "SalineBag.Cro.Idle" {
+   Resource "{53366F3F25131655}anims/EatIdle.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Cro.SalineBag" {
+   Resource "{251E5978382AEB22}anims/Plank.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Erc.SalineBag" {
+   Resource "{251E5978382AEB22}anims/Plank.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Erc.Idle" {
+   Resource "{53366F3F25131655}anims/EatIdle.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Pne.SalineBag" {
+   Resource "{251E5978382AEB22}anims/Plank.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Pne.Idle" {
+   Resource "{ABA88C371ADAAC98}Assets/Items/Medicine/SalineBag_01/anim/anm/p_pne_saline_IKpose.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealing.Driver.SalineBagVehicle" {
+   Resource "{1B8392AA99EE7A8A}anims/Eat.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealing.Passanger.SalineBagVehicle" {
+   Resource "{1B8392AA99EE7A8A}anims/Eat.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Cro.HealingOthersCro" {
+   Resource "{FD7886D3D5D81EC5}Assets/Items/Medicine/SalineBag_01/anim/anm/p_cro_heal_salinebag_cro.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Erc.HealingOthersCro" {
+   Resource "{09A903FB9DB152AD}Assets/Items/Medicine/SalineBag_01/anim/anm/p_cro_heal_salinebag_erc.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Pne.HealingOthersCro" {
+   Resource "{A4877772F0F4F10D}Assets/Items/Medicine/SalineBag_01/anim/anm/p_cro_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Cro.HealingOthersErc" {
+   Resource "{DC229D853428A845}Assets/Items/Medicine/SalineBag_01/anim/anm/p_erc_heal_salinebag_cro.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Erc.HealingOthersErc" {
+   Resource "{28F318AD7C41E42D}Assets/Items/Medicine/SalineBag_01/anim/anm/p_erc_heal_salinebag_erc.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Pne.HealingOthersErc" {
+   Resource "{85DD6C241104478D}Assets/Items/Medicine/SalineBag_01/anim/anm/p_erc_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Cro.HealingOthersProne" {
+   Resource "{7BC92E0BD7C2B9C2}Assets/Items/Medicine/SalineBag_01/anim/anm/p_pne_heal_salinebag_cro.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Erc.HealingOthersProne" {
+   Resource "{8F18AB239FABF5AA}Assets/Items/Medicine/SalineBag_01/anim/anm/p_pne_heal_salinebag_erc.anm"
+  }
+  AnimSetInstanceSource_Line "HealingOthers.Pne.HealingOthersProne" {
+   Resource "{2236DFAAF2EE560A}Assets/Items/Medicine/SalineBag_01/anim/anm/p_pne_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Cro.Revive" {
+   Resource "{A4877772F0F4F10D}Assets/Items/Medicine/SalineBag_01/anim/anm/p_cro_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealingOthers.LeftPatient.SalineBagOthersVehicle" {
+   Resource "{588FB9B1754E9FEE}anims/anm/player/vehicles/Ambulances/anm/p_UAZ_ambulance_doctor_revive_saline_L.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealingOthers.RightPatient.SalineBagOthersVehicle" {
+   Resource "{A98481E50611AA02}anims/anm/player/vehicles/Ambulances/anm/p_UAZ_ambulance_doctor_revive_saline_R.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealing.Driver.Idle" {
+   Resource "{902C70E2C9C9A4E6}Assets/Vehicles/Wheeled/UAZ469/anm/p_UAZ469_saline_bag_hold_pose.anm"
+  }
+  AnimSetInstanceSource_Line "VehicleHealing.Passanger.Idle" {
+   Resource "{902C70E2C9C9A4E6}Assets/Vehicles/Wheeled/UAZ469/anm/p_UAZ469_saline_bag_hold_pose.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Pne.Revive" {
+   Resource "{2236DFAAF2EE560A}Assets/Items/Medicine/SalineBag_01/anim/anm/p_pne_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Erc.Revive" {
+   Resource "{85DD6C241104478D}Assets/Items/Medicine/SalineBag_01/anim/anm/p_erc_heal_salinebag_pne.anm"
+  }
+  AnimSetInstanceSource_Line "SalineBag.Erc.FingerAnim" {
+   Resource "{645993D8C20DEC8B}Assets/Weapons/Grenades/ANM8HC/anims/anm/p_anm8hc_ik.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5A4EBCCAA6241872}" {
+ }
+}

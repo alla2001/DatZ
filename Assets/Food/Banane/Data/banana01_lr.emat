@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.457 0.396 0.209 1
+ SpecularMul 0.81
+ RoughnessScale 2.595
+ BCRMap "{CD42F8DC1D12AD91}Assets/Food/Banane/Data/Textures/quad_DefaultMaterial_BaseColor.edds"
+ NormalPower 0
+ NMOMap "{A578BA65CF5BDA40}Assets/Food/Banane/Data/Textures/RGB Alpha.edds"
+}

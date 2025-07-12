@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{1B8392AA99EE7A8A}anims/Eat.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

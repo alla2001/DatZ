@@ -1,0 +1,12 @@
+GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Optic_ARTII_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{5D0CC83435B55853}" {
+    Offset 0 0 -0.0478
+   }
+   m_sReticleTexture "{CF4636A8141D3DD7}Assets/Textures/Broken_Glass_Effect_Transparent_PNG_Clip_Art_Image.edds"
+   m_sFilterTexture "{CF4636A8141D3DD7}Assets/Textures/Broken_Glass_Effect_Transparent_PNG_Clip_Art_Image.edds"
+  }
+ }
+}

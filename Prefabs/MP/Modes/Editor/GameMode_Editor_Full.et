@@ -1,0 +1,19 @@
+SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
+ ID "56B2B479C6B96951"
+ {
+  ScriptedChatEntity {
+   ID "56E685E9EF952A67"
+   Channels {
+    BaseChatChannel "{559077E72C7027BC}" {
+     "Channel name" ""
+    }
+    FactionChatChannel "{559077E76537C0B4}" {
+     "Channel name" ""
+    }
+    GroupChatChannel "{58729124A5B6D815}" {
+    }
+   }
+   "Default channel" "Local"
+  }
+ }
+}

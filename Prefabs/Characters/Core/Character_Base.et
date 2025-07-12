@@ -1,0 +1,110 @@
+SCR_ChimeraCharacter {
+ ID "0000000000000001"
+ components {
+  BaseSlotComponent "{654ED77B00034D19}" {
+   AttachType EntitySlotInfo Breath {
+    PivotID "Jaw"
+    Offset 0 0.0243 -0.0364
+    Angles 0 180 0
+    Prefab "{942D3EBE8CF90EEC}Prefabs/BreathPT.et"
+   }
+  }
+  BaseSlotComponent "{654ED77BAC8341A2}" {
+   AttachType EntitySlotInfo "{654ED77BA0E068EE}" {
+    PivotID "Jaw"
+    Offset 0 0.0243 -0.0364
+    Angles 0 180 0
+    Enabled 0
+    Prefab "{8B4313B6FEFDF063}Prefabs/Vomit.et"
+   }
+  }
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    PerceptionComponent "{54A2CBC75F06064B}" {
+     ForgetEnemyTime 13
+     ForgetDetectedTime 13
+     SensorsList {
+      EyesSensor "{520EA1D2DB109AAD}" {
+       MaxRange 20
+       FOVNormal 120
+       FOVPeripheral 180
+      }
+      EarsSensor "{520EA1D2DB109AA9}" {
+       MaxRange 123
+      }
+      EyesSensor "{6547739B52200EEB}" {
+       MaxRange 2.5
+       FOVNormal 360
+       FOVPeripheral 360
+       MinIlluminationFactor 0.04
+       RecognitionDetectDecay 0.2
+       RecognitionIdentifyDecay 0.05
+       AngularSizeFactor_a 0.055
+       AngularSizeFactor_b -0.35
+       AngularSizeFactor_c 0.075
+       AngularVelocityFactor_a 1300
+       AngularVelocityFactor_b 5
+      }
+     }
+    }
+   }
+  }
+  DatZMetabolsimHandler "{654739DB958B6A27}" {
+   maxFood 100
+   maxWater 100
+   foodDecayRate 0.5
+   waterDecayRate 0.98
+   starvationDamageRate 0.065
+   dehydrationDamageRate 0.122
+  }
+  EPF_PersistenceComponent "{5A12D8F4DFED6D84}" {
+   m_pSaveData EPF_CharacterSaveDataClass "{5A12D8F4DA8632DC}" {
+    m_aComponents {
+     EPF_MetabolisemManagerComponentSaveDataClass "{655B188B5FBBD85F}" {
+     }
+    }
+   }
+  }
+  ForceWalkAI "{650C98C1B3FC7F36}" {
+   isZombi 1
+  }
+  MeleeBlocking "{659AEA5692F8849F}" {
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   LODFactors {
+    1000 1
+   }
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   StaminaRegainPerS 0.08
+   StaminaDrainRun -0.0055
+   StaminaDrainSprint -0.01
+  }
+  RHS_ThermalSlotManagerComponent "{60D6F4C7C990A7BB}" {
+   Enabled 0
+  }
+  ZombieOptimizationComponent "{65873BAD03DF367F}" {
+   m_fMinOptimizationDistance 100
+   m_fCheckInterval 0.5
+   m_fMovementSpeedMultiplier 0.2
+   m_fMaxTeleportDistance 5
+   m_fMinTeleportDistance 1
+   isZombi 1
+  }
+ }
+ {
+  GenericEntity {
+   ID "654883A20853442D"
+   components {
+    WaterChecker "{654883A20F696018}" {
+     m_sParticleEffect "{F2242A6B1195B711}WaterCheck.et"
+     forwardOffset 1
+    }
+    RplComponent "{654883A207563E0C}" {
+    }
+    Hierarchy "{654883A34E5B0F15}" {
+    }
+   }
+  }
+ }
+}

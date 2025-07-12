@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A94133D363E53FBD}Prefabs/Buildings/Civilian/Apartments/Apartment_12-Storey/Apartment_12-Storey_v1.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

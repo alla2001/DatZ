@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{76983D178FF949E8}Assets/Characters/Basebody/Data/Basebody_01_Male_Body_Asian_wound_BCR.edds"
+ NMOMap "{589DAE785AF1811C}Assets/Characters/Basebody/Data/Basebody_01_Male_Body_wound_NMO.edds"
+}

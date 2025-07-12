@@ -1,0 +1,5 @@
+MatPBRDecal : "{75EEF05125E4BCDA}Assets/Decals/Blood/Alphabets/English_1/C/Blood_C.emat" {
+ Color 0.292 0.292 0.292 1
+ DiffuseIBL 0.156 0.156 0.156 1
+ RoughnessScale 1.692
+}

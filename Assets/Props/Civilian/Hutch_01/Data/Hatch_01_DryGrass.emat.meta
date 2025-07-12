@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{471217CA13DAA67D}Assets/Props/Civilian/Hutch_01/Data/Hatch_01_DryGrass.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

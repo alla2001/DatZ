@@ -1,0 +1,6 @@
+MatPBRBasic : "{E43EA91E6F11BCDA}Assets/Ivy/Assets/Data/Nature_Kit_Ivy.emat" {
+ Sort near
+ SortBias 7
+ AlphaMul 0.939
+ RoughnessScale 2.511
+}

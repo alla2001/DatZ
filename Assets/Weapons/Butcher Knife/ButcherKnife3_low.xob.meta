@@ -1,0 +1,44 @@
+MetaFileClass {
+ Name "{04690E194A03B1C3}Assets/Weapons/Butcher Knife/ButcherKnife3_low.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Scale 0.09 0.09 0.09
+   Offset 0 0.06 0.05
+   Rotate 0 90 70
+   MaterialAssigns {
+    MaterialAssignClass "{65208525FCBB9F44}" {
+     SourceMaterial "TT_checker_2048x2048_UV_GRID"
+     AssignedMaterial "{93632D9DBEDF2ADF}Assets/Weapons/Butcher Knife/Data/TT_checker_2048x2048_UV_GRID.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Blade_low {
+    }
+    MeshParam Handle_low {
+    }
+   }
+   Common TXOCommonClass "{65208525FC80F589}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{65208525FC80CA4F}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{65208525FC80CBC7}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{65208525FC80C8ED}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{65208525FC80C87E}" : "{F62AA8E7B8EA9D26}configs/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{65208525FC80C9BA}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

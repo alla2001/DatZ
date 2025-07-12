@@ -1,0 +1,4 @@
+MatPBRBasic : "{D901F0FB9F17D293}Assets/Characters/HeadGear/Gasmasks/Unix5000/Data/Mask.emat" {
+ Color 0.05 0.05 0.05 1
+ SpecularMul 0.66
+}

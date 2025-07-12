@@ -1,0 +1,46 @@
+GenericEntity : "{F06BF9FB0A0527AE}Prefabs/Cooking/Cooking Pot Clean Small.et" {
+ ID "654B2C3849B502A2"
+ components {
+  CookingContainerStorageComponent "{654B2C3872055522}" {
+   Attributes SCR_ItemAttributeCollection "{654B2C3872055543}" {
+    ItemDisplayName SCR_InventoryUIInfo "{654B2C387205557D}" {
+     Name "Cooking Pot Big"
+     Description "Cooking Pot Used for Cooking"
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{654B2C387205557F}" {
+       Name "Holds Big Amount oF Food"
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654B2C387205554E}" {
+     Weight 5
+     ItemVolume 10000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6551360EDD089542}" {
+      FOV 65
+     }
+     PreviewRenderAttributes "{654B4CCC4223539F}" {
+      CameraDistanceToItem 1.2
+     }
+    }
+    m_Size SLOT_3x3
+   }
+   m_fMaxWeight 15
+   m_fCookRate 0.8
+  }
+  MeshObject "{654B2C3872055327}" {
+   Object "{EDA2F172D497AD43}Assets/Props/Industrial/PotIndustrialSet_01/PotIndustrialSet_01_Big_pot.xob"
+  }
+  ActionsManagerComponent "{654B2C38720555AB}" {
+   ActionContexts {
+    UserActionContext "{654B2C38720555E5}" {
+     Position PointInfo "{654B2C3872055504}" {
+      Offset 0 0.4075 0
+     }
+    }
+   }
+  }
+ }
+ coords 0.005 0 0
+}

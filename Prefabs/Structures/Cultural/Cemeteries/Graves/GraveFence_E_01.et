@@ -1,0 +1,4 @@
+SCR_DestructibleBuildingEntity : "{C7C55A970D892F50}Prefabs/Structures/Cultural/Cemeteries/Graves/GraveFence_E_Base.et" {
+ ID "5272E317AA6C513B"
+ ignoreLoot 1
+}

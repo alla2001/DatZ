@@ -1,0 +1,19 @@
+Tree : "{4C2658053472F98B}Prefabs/Vegetation/Tree/t_malus_domestica/t_malus_domestica_base.et" {
+ ID "27132768B0952045"
+ {
+  $grp DatZLootSpawner : "{E88894B29CB4AFF7}Prefabs/Spawners/Apple_DatZLootSpawner.et" {
+   {
+    ID "655EB1F03C93EE1D"
+    coords 1.082 0.115 -0.534
+   }
+   {
+    ID "655EB1F03C93EE3C"
+    coords 0.224 0.144 0.848
+   }
+   {
+    ID "655EB1F03C93EEEF"
+    coords -1.291 0.153 0.139
+   }
+  }
+ }
+}

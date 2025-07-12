@@ -1,0 +1,14 @@
+MatPBRBasic {
+ Color 0.418 0.418 0.418 1
+ DiffuseIBL 0.332 0.332 0.332 1
+ GlobalLayerMode Manual
+ GlobalLayerDirection 1 0 0
+ GlobalLayerAngleStart 180
+ GlobalLayerAngleEnd 180
+ RoughnessScale 0.68
+ MetalnessScale 1.92
+ GlobalLayerBCRMap "{9A86792573FC7E6A}Assets/_SharedData/GrungeSurface/ST_Dirt_01_BCR.edds"
+ BCRMap "{A021183B94504E72}Assets/Weapons/ShortSword/Data/Textures/LowPoly_DefaultMaterial_BaseColor.edds"
+ NormalPower 1.232
+ NMOMap "{1EB9658C455E59FD}Assets/Weapons/ShortSword/Data/Textures/LowPoly_DefaultMaterial_Normal.edds"
+}

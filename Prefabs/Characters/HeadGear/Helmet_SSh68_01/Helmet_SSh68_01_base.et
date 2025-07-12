@@ -1,0 +1,10 @@
+GameEntity : "{EC0071079B219026}Prefabs/Characters/Core/Headgear_Helmet_Base.et" {
+ ID "50D4E2187B1C4408"
+ components {
+  MeshObject "{5112706CD4157AE0}" {
+   LODFactors {
+    1000 1000 1000 1000
+   }
+  }
+ }
+}

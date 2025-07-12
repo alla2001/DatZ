@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C728E2AA4D44B7A3}anims/ZombieUpper.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

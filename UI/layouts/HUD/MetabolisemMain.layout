@@ -1,0 +1,365 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  FrameWidgetClass "{6538A935E45C13DF}" {
+   Name "staminaUI"
+   Slot FrameWidgetSlot "{6538A935C8E9A859}" {
+    Anchor 0.184 0.954 0.184 0.954
+    PositionX -159.019
+    OffsetLeft -159.019
+    PositionY -8.691
+    OffsetTop -8.691
+    SizeX 317.995
+    OffsetRight -158.976
+    SizeY 16.668
+    OffsetBottom -7.977
+   }
+   {
+    ImageWidgetClass "{6538A935E45C2E8E}" {
+     Name "Image0"
+     Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+      SizeToContent 1
+     }
+     Opacity 0.52
+     Color 0.0212 0.0212 0.0212 0.3375
+     Size 150 5
+    }
+    SliderWidgetClass "{6538A935E45C2E8C}" {
+     Name "StaminaLevel"
+     Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     Opacity 0.54
+     Size 96 10
+     maximum 1
+     current 0.1
+    }
+   }
+  }
+  HorizontalLayoutWidgetClass "{6520EE9780D6C003}" {
+   Name "HorizontalLayout0"
+   Slot FrameWidgetSlot "{6520EE9780D6C065}" {
+    Anchor 1 1 1 1
+    PositionX -827.488
+    OffsetLeft -827.488
+    PositionY -68.458
+    OffsetTop -68.458
+    SizeX 100.037
+    OffsetRight 727.451
+    SizeY -29.468
+    OffsetBottom 97.926
+    SizeToContent 1
+   }
+   "Fill Origin" Center
+   {
+    VerticalLayoutWidgetClass "{652167096B1C73D0}" {
+     Name "Water"
+     Slot LayoutSlot "{652167096B1C7327}" {
+     }
+     {
+      HorizontalLayoutWidgetClass "{65426BED6E614E63}" {
+       Name "HorizontalLayout0"
+       Slot LayoutSlot "{65426BED6E614E4C}" {
+        Padding 0 0 0 10
+        SizeMode Fill
+       }
+       {
+        RichTextWidgetClass "{652167095B64FFD5}" {
+         Name "RichText0"
+         Slot LayoutSlot "{652167095B64FF34}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         Text "HYDRATION"
+         "Font Size" 19
+         "Min Font Size" 13
+        }
+        ImageWidgetClass "{65426BED64AA9BCF}" {
+         Name "Arrow1"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEC93EE2C39}" {
+         Name "Arrow2"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEC9366FCF8}" {
+         Name "Arrow3"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+       }
+      }
+      FrameWidgetClass "{6520EE94B983333D}" {
+       Name "Water"
+       Slot LayoutSlot "{6520EE96C7354378}" {
+        HorizontalAlign 0
+        SizeMode Fill
+       }
+       {
+        ImageWidgetClass "{6520EE94A0E54336}" {
+         Name "Image0"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+          SizeToContent 1
+         }
+         Color 0.0212 0.0212 0.0212 0.3375
+         Size 150 5
+        }
+        SliderWidgetClass "{6520EE94A7F7E28A}" {
+         Name "WaterLevel"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+         }
+         Color 0.0553 0.3019 0.5057 1
+         Size 96 10
+         maximum 1
+         current 0.1
+        }
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{652167092AD5577A}" {
+     Name "Food"
+     Slot LayoutSlot "{652167096B1C7327}" {
+      Padding 25 0 0 0
+     }
+     {
+      HorizontalLayoutWidgetClass "{65427AEF78E43AC3}" {
+       Name "HorizontalLayout0"
+       Slot LayoutSlot "{65426BED6E614E4C}" {
+        Padding 0 0 0 10
+        SizeMode Fill
+       }
+       {
+        RichTextWidgetClass "{65427AEF78E43AC1}" {
+         Name "RichText0"
+         Slot LayoutSlot "{652167095B64FF34}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         Text "ENERGY"
+         "Font Size" 19
+         "Min Font Size" 13
+        }
+        ImageWidgetClass "{65427AEF78E43ACE}" {
+         Name "Arrow1"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEF78E43ACF}" {
+         Name "Arrow2"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEF78E4CB11}" {
+         Name "Arrow3"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         "Is Visible" 0
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+       }
+      }
+      FrameWidgetClass "{652167092AD55776}" {
+       Name "Food"
+       Slot LayoutSlot "{6520EE96C7354378}" {
+        HorizontalAlign 0
+        SizeMode Fill
+       }
+       {
+        ImageWidgetClass "{652167092AD55777}" {
+         Name "Image0"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+          SizeToContent 1
+         }
+         Color 0.0212 0.0212 0.0212 0.3375
+         Size 150 5
+        }
+        SliderWidgetClass "{652167092AD55770}" {
+         Name "FoodLevel"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+         }
+         Color 0.8218 0.2319 0.046 1
+         Size 96 10
+         maximum 1
+         current 0.5
+        }
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{65216709DB08ED00}" {
+     Name "HP"
+     Slot LayoutSlot "{652167096B1C7327}" {
+      Padding 25 0 0 0
+     }
+     {
+      HorizontalLayoutWidgetClass "{65427AEF73499F34}" {
+       Name "HorizontalLayout0"
+       Slot LayoutSlot "{65426BED6E614E4C}" {
+        Padding 0 0 0 10
+        SizeMode Fill
+       }
+       {
+        RichTextWidgetClass "{65427AEF73499F35}" {
+         Name "RichText0"
+         Slot LayoutSlot "{652167095B64FF34}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         Text "HEALTH"
+         "Font Size" 19
+         "Min Font Size" 13
+        }
+        ImageWidgetClass "{65427AEF7349808F}" {
+         Name "HPArrow1"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEF7349808D}" {
+         Name "HPArrow2"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+        ImageWidgetClass "{65427AEF734980F2}" {
+         Name "HPArrow3"
+         Slot LayoutSlot "{65426BED64AA9BAE}" {
+          VerticalAlign 1
+         }
+         Texture "{45AAA018767160BD}UI/Textures/WidgetLibrary/PagingArrow.edds"
+         Size 10 10
+        }
+       }
+      }
+      FrameWidgetClass "{65216709DB08ED03}" {
+       Name "Health"
+       Slot LayoutSlot "{6520EE96C7354378}" {
+        HorizontalAlign 0
+        SizeMode Fill
+       }
+       {
+        ImageWidgetClass "{65216709DB089819}" {
+         Name "Image0"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+          SizeToContent 1
+         }
+         Color 0.0212 0.0212 0.0212 0.3375
+         Size 250 5
+        }
+        SliderWidgetClass "{65216709DB089866}" {
+         Name "HPLevel"
+         Slot FrameWidgetSlot "{6520EE94A0E5431B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+         }
+         Color 0.5099 0.0928 0.0724 1
+         Size 96 96
+         maximum 1
+         current 0.5
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

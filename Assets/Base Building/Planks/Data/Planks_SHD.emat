@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.527 0.527 0.527 1
+ SpecularMul 0.55
+ RoughnessScale 1.093
+ MetalnessScale 0.757
+ BCRMap "{D2F319D1445D0BEB}Assets/Base Building/Planks/Data/Planks_SHD_baseColor.edds"
+ NMOMap "{C1F967945D45DF84}Assets/Base Building/Planks/Data/Planks_SHD_normal.edds"
+}

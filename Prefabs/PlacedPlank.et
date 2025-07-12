@@ -1,0 +1,33 @@
+DestructibleEntity {
+ ID "6586B984445B31DF"
+ components {
+  EPF_PersistenceComponent "{6586B9BF8231DF72}" {
+   m_pSaveData EPF_EntitySaveDataClass "{6586B9BF87C26B4D}" {
+    m_eTranformSaveFlags 7
+   }
+  }
+  MeshObject "{6586B98462293F83}" {
+   Object "{BED18AAC5B813DB6}Assets/Base Building/Planks/Planks.xob"
+  }
+  RigidBody "{6586B998F1B97E1F}" {
+   Layers 180224
+   SimState Simulation
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  RplComponent "{6586B9BF89CCC647}" {
+  }
+ }
+ coords -0.002 -0.503 0.019
+ angleX -3.233
+ angleY -90.586
+ angleZ 90.024
+ MaxHealth 1
+ FirstDestructionPhase SCR_BaseDestructionPhase "{6586B9BEB336C5FB}" {
+  m_sPhaseModel "{BED18AAC5B813DB6}Assets/Base Building/Planks/Planks.xob"
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{6586B9BE80A14F37}" {
+  Threshold 0
+ }
+}

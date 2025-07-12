@@ -1,0 +1,43 @@
+MetaFileClass {
+ Name "{872B062CA423BE18}Assets/Valuable Items/ESP Board/Untitled.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Offset 0 0.006 0
+   Rotate 0 90 0
+   MaterialAssigns {
+    MaterialAssignClass "{655D0CC58EBD2C97}" {
+     SourceMaterial "material"
+     AssignedMaterial "{7D4A0D0738DF5219}Assets/Valuable Items/ESP Board/Data/material.emat"
+    }
+    MaterialAssignClass "{655D0CC58EBD2C72}" {
+     SourceMaterial "ESP_SIDE"
+     AssignedMaterial "{6C4FB07BAB01ACFB}Assets/Valuable Items/ESP Board/Data/ESP_SIDE.emat"
+    }
+   }
+   MeshParams {
+    MeshParam ESP {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{C17486F3DA1510F6}Common/Materials/Game/Plastic/plastic_3mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,38 @@
+MetaFileClass {
+ Name "{DB7D4A5B07E01ADF}Assets/Valuable Items/GameBoy/GameBoy.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Rotate -90 180 0
+   MaterialAssigns {
+    MaterialAssignClass "{655D0CC7C031C56C}" {
+     SourceMaterial "lambert1"
+     AssignedMaterial "{8131044E24461532}Assets/Valuable Items/GameBoy/Data/lambert1.emat"
+    }
+   }
+   MeshParams {
+    MeshParam defaultMaterial {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{E9408C7A0E0C79D0}Common/Materials/Game/Plastic/plastic_10mm_min.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

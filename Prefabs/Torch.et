@@ -1,0 +1,192 @@
+GameEntity {
+ ID "654ED7767C435048"
+ components {
+  BaseSlotComponent "{654ED766973D4C6C}" {
+   AttachType EntitySlotInfo Fire {
+    Offset 0 0.14682 0
+    Angles 0 0 90
+   }
+   EntityPrefab "{B13FA78348DE78D5}Prefabs/TorchDecal.et"
+  }
+  EPF_PersistenceComponent "{654ED7766FACE36E}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{654ED7766FACE08C}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{654ED7766FACE0B5}" {
+     }
+     EPF_FluidContainerManagerComponentSaveDataClass "{654F1A5855BB84B3}" {
+     }
+    }
+   }
+  }
+  FluidContainerComponent "{654F1A5399FC8DD5}" {
+   m_fMaxCapacity 100
+  }
+  InventoryItemComponent "{654ED7766FACE27B}" {
+   Attributes SCR_ItemAttributeCollection "{654ED7766FACE262}" {
+    ItemDisplayName UIInfo "{654ED7766FACE341}" {
+     Name "Fire Torch "
+     Description "Fire Torch can be lit and has limited fuel"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{654ED7766FACE32D}" {
+     Weight 0.45
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 600
+     RestingUP Right
+     RestingAdditiveOffsetLS -0.08 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{654ED7766FACE30D}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{654ED7766FACE30F}" {
+       AnimGraph "{82906ACD75DF8523}Assets/Items/Equipment/workspaces/Flashlight_MX991.agr"
+       AnimInstance "{903E4A0B96B34B8F}Assets/Items/Equipment/workspaces/MX991_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     AllowInspection 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{654ED7766FACE3A2}" {
+      CameraPreset Front
+      CameraOrbitAngles -25 -25 0
+      CameraDistanceToItem 0.6
+      CameraOffset 0 0.01 0
+      FOV 36
+     }
+     SCR_SelectionMenuPreviewAttributes "{654ED7766FACE38B}" {
+      m_fCustomFov 25
+      m_fIconSizeXMultiplier 1.5
+     }
+    }
+    CommonItemType "FLASHLIGHT"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_GADGETS_STORAGE
+   }
+  }
+  MeshObject "{654ED7766FACE2C7}" {
+   Object "{6399F8286C629D49}Assets/Crafting/torch/Torch.xob"
+   Materials {
+    MaterialAssignClass "{654ED7766FACE25C}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{F63304D1BF9EDAF1}Assets/Crafting/Sticks/Data/DefaultGeneratedMaterial.emat"
+    }
+   }
+   LODFactors {
+    1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{654ED7766FACE286}" {
+   LinearDamping 0.05
+   AngularDamping 0.05
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{654ED7766FACE539}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{654ED7766FACE52F}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{654ED7766FACE528}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{654ED7766FACE523}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{654ED7766FACE53C}" {
+     m_sSoundProject "{F97D63191B5E6A28}Sounds/Items/Equipment/Flashlights/Items_FireTorch.acp"
+     m_sSoundEventName "SOUND_FLASHLIGHT_ON"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{654ED7766FACE538}" {
+     m_sSoundProject "{F97D63191B5E6A28}Sounds/Items/Equipment/Flashlights/Items_FireTorch.acp"
+     m_sSoundEventName "SOUND_FLASHLIGHT_OFF"
+     m_eFlags 0
+    }
+   }
+  }
+  SCR_TorchComponent "{654ED7607B22FA8D}" {
+   m_sParticle "{D99D52D157A6658F}Particles/Enviroment/Torch_medium_normal.ptc"
+   m_vParticleOffset 0 0.4 0
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   particles "{D99D52D157A6658F}Particles/Enviroment/Torch_medium_normal.ptc"
+   m_fFuelConsumptionRate 0.21
+  }
+  ActionsManagerComponent "{654ED7766FACE44D}" {
+   ActionContexts {
+    UserActionContext "{654ED7766FACE512}" {
+     ContextName "default"
+     Position PointInfo "{654ED7766FACE514}" {
+     }
+    }
+    UserActionContext "{654ED7766FACE5C7}" {
+     ContextName "lens"
+     Position PointInfo "{654ED7766FACE5E5}" {
+      Offset 0 0.1941 0.0479
+     }
+     Radius 0.1
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{654ED7766FACE5AA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{654ED7766FACE5AF}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    SCR_EquipItemAction "{654ED7766FACE464}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{654ED7766FACE58F}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+     ActionTitle "Equip Item"
+     "Sort Priority" 2
+    }
+    SCR_SwitchFlashlightLensAction "{654ED7766FACE476}" {
+     ParentContextList {
+      "lens"
+     }
+     UIInfo UIInfo "{654ED7766FACE479}" {
+      Name "#AR-UserAction_FlashlightChangeColor"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{654ED7766FACE772}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{654ED7766FACE48C}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{654ED7766FACE775}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{654ED7766FACE754}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{654ED7766FACE72E}" {
+  }
+ }
+ coords 3072.834 11.75 2874.188
+}

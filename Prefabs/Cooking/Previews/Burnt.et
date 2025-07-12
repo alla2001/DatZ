@@ -1,0 +1,15 @@
+GenericEntity : "{7DA433D274B8C385}Prefabs/RawMeat.et" {
+ ID "65257C67881936F4"
+ components {
+  MeshObject "{65257C67B0BF0AB8}" {
+   Materials {
+    MaterialAssignClass "{65550BD607AA42E7}" {
+     SourceMaterial "Common/Materials/Physics/flesh"
+     AssignedMaterial "{D1D8489C851AA7AB}Assets/Items/Food/Data/MeatLeg_01Burnt.emat"
+    }
+   }
+  }
+ }
+ coords 3071.187 11.75 2876.373
+ angleY -103.273
+}

@@ -1,0 +1,7 @@
+Grass : "{88FEC87334161DE1}Assets/Clutter/Procedural/cp_grass_01.emat" {
+ SpecularMul 0.35
+ RoughnessScale 2.62
+ AOScale 0.7
+ Height 0.5
+ HeightRandomOffset 0.21
+}

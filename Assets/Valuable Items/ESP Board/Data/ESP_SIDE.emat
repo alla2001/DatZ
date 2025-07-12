@@ -1,0 +1,4 @@
+MatPBRBasic {
+ Color 0.68 0.68 0.68 1
+ BCRMap "{F80CE6182CA19FDD}Assets/Valuable Items/ESP Board/Data/ESP_SIDE_baseColor.edds"
+}

@@ -1,0 +1,98 @@
+AudioClass {
+ sounds {
+  SoundClass : "{926F3A84BCCF5166}Sounds/_SharedData/Configs/Sound/Items/Sound_Items_Equip.conf" {
+   id 49161
+   name "SOUND_EAT"
+   version 5
+   tl 679.789 -71.756
+   parent "{926F3A84BCCF5166}Sounds/_SharedData/Configs/Sound/Items/Sound_Items_Equip.conf"
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 29700
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB 18
+   outState 50187
+   outStatePort 12295
+  }
+ }
+ mixers {
+  MixerClass {
+   id 50187
+   name "OutputState"
+   version 4
+   tl 1025.588 -98.133
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 12295
+     links {
+      ConnectionClass connection {
+       id 49161
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 300039
+    }
+    ConnectionsClass connections {
+     id 301063
+    }
+    ConnectionsClass connections {
+     id 302087
+    }
+   }
+   pi {
+    939524112 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 29700
+   name "Handgrab Generic"
+   version 7
+   tl 124.194 95.934
+   ins {
+    ConnectionsClass connections {
+     id 5
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -6.5
+   Pitch 4
+   "Pitch variance" 0.6
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1AE7A8B5DFDA42F5}Assets/Audio/person-eating-216440.wav"
+    }
+   }
+  }
+ }
+ groups {
+  GroupClass {
+   id 48131
+   name "Sounds/Items/_SharedData/Equip/Items_Equip_Template.acp"
+   children {
+    49161 50187 51213 52237 53266 54291 55317 56348 57373 58397 59421
+   }
+   parent -1
+   Color 1 0.502 0 0.1
+  }
+ }
+ version 1
+ sourcesLimit 1
+}

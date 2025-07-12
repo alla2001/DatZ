@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0.212 0.212 0.212 1
+ BCRMap "{51CF560130369FAD}Assets/Garbage/Assets/Data/9b22942d-2824-4b61-8385-c934ba2ec666.edds"
+ NMOMap "{7563DE00F25E74A8}Assets/Garbage/Assets/Data/T_Garbage_A01_NMO.edds"
+}

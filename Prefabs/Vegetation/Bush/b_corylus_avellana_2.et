@@ -1,0 +1,38 @@
+Tree : "{D7163D1B571F4C0C}Prefabs/Vegetation/Core/Bush_Base.et" {
+ ID "0F2AA6B42CA78628"
+ components {
+  ActionsManagerComponent "{6553131C39988BB9}" {
+   ActionContexts {
+    UserActionContext "{6553131C3F180F85}" {
+     UIInfo UIInfo "{6553131C7C50B6BD}" {
+      Name "default"
+      Description "default"
+     }
+     ContextName "default"
+     Position PointInfo "{6553131C75D98AAC}" {
+      Offset 0 1.6728 0
+     }
+     Radius 1
+     Height 1
+    }
+   }
+   additionalActions {
+    CollectUserAction "{6553131C3DE7F3DA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6553131C43BA8041}" {
+      Name "Collect Sticks"
+      Description "Collect Sticks"
+     }
+     ActionTitle "Collect Sticks"
+     Duration 4
+     resultItem "{5FA7CC77A33752A5}Prefabs/Stick.et"
+     maxAmount 4
+    }
+   }
+  }
+  RplComponent "{6553131C3AD90091}" {
+  }
+ }
+}

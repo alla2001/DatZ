@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0.462 0.462 0.462 1
+ BCRMap "{A8CBE499E34178F9}Assets/Weapons/Butcher Knife/quad_DefaultMaterial_BaseColor.edds"
+ NMOMap "{E8121A08D0B81B1A}Assets/Weapons/Butcher Knife/RGB Alpha.edds"
+}

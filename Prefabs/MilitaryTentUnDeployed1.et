@@ -1,0 +1,109 @@
+GenericEntity {
+ ID "6528B295A5FA4C19"
+ components {
+  SignalsManagerComponent "{6528B28654791E26}" {
+  }
+  SoundComponent "{6528B28654791E7A}" {
+   Filenames {
+    "{927BE973F8A2D7FA}Sounds/Items/_SharedData/PickUp/Items_PickUp_Cloth.acp" "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp" "{F09D579ED9151789}Sounds/Items/Equipment/Tents/Items_Tent_Deployable_Default.acp"
+   }
+   DistanceManagement 0
+  }
+  DatZReplaceDeployableEntityComponent "{6528E4E8D968CD9A}" {
+   m_sReplacementPrefab "{0EF189100B0AE183}Prefabs/TentTan.et"
+  }
+  EPF_PersistenceComponent "{652B5966E6230ADA}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966E7F51BBE}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{6534AA7CF055C675}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{6528B28654791F2A}" {
+   Attributes SCR_ItemAttributeCollection "{6528B28654791F2E}" {
+    ItemDisplayName UIInfo "{6528B28654791FFC}" {
+     Name "#AR-Item_DeployableTent_Name"
+     Description "#AR-Item_DeployableTent_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B28654791FE4}" {
+     Weight 6
+     SizeSetupStrategy Volume
+     ItemDimensions 1 1 1
+     ItemVolume 500
+     DimensionScaler 0.5
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B28654791FC3}" {
+      CameraPreset Back
+      CameraOrbitAngles 25 -25 180
+      CameraDistanceToItem 5.5
+      FOV 10
+      PreviewModel "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+     }
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_BACKPACK
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6528B28654791E63}" {
+   Object "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+  }
+  RigidBody "{6528B28654791E56}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6528B28654791C71}" {
+   Enabled 0
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B28654791C7C}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C7F}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C76}" {
+     m_sSoundProject "{77EF656D5DAC6FD5}Sounds/Items/_SharedData/Drop/Items_Drop_RespawnKit.acp"
+    }
+   }
+  }
+  ActionsManagerComponent "{6528B28654791DD4}" {
+   ActionContexts {
+    UserActionContext "{6528B28654791C48}" {
+     ContextName "default"
+     Position PointInfo "{6528B28654791C4E}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4ECDE2EC301}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6528E4ECC386F274}" {
+      Name "Deploy"
+      Description "Deploy"
+     }
+     ActionTitle "Deploy"
+     Duration 2
+    }
+    SCR_PickUpItemAction "{6528E4E9FDBEA929}" {
+     UIInfo UIInfo "{6528E4E9FF4A8555}" {
+      Name "Pick Up"
+      Description "Pick Up"
+     }
+     ActionTitle "Pick Up"
+    }
+   }
+  }
+  RplComponent "{6528B28654791DC9}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6528B28654791D3F}" {
+  }
+ }
+ coords 1558.833 32.941 2161.931
+}

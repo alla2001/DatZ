@@ -1,0 +1,8 @@
+GenericEntity : "{D5C3CF5996B43A27}Prefabs/Props/Civilian/BasketWicker_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ModelGeometry 0
+  }
+ }
+}

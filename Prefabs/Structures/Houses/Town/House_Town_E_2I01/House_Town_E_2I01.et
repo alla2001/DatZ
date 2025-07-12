@@ -1,0 +1,250 @@
+SCR_DestructibleBuildingEntity : "{994C40D2DC80C489}Prefabs/Structures/Houses/Town/House_Town_E_2I01/House_Town_E_2I01_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GenericEntity {
+   ID "5B18E68C57B6C911"
+   {
+    GenericEntity {
+     ID "5B18E68C7772C90D"
+     coords 4.577 0.665 1.51
+     angleX -45.099
+     angleY -79.591
+    }
+    GenericEntity {
+     ID "5B18E68C7772C9A2"
+     coords 4.511 4.741 6.449
+     angleX -5.622
+     angleY -44.952
+     angleZ 3.954
+    }
+    GenericEntity {
+     ID "5B18E68C7772CA82"
+     coords 2.547 7.6 -2.235
+     angleY -6.411
+    }
+    GenericEntity {
+     ID "5B18E68C7772CA9F"
+     coords 2.556 7.987 -1.423
+     angleX -0.5
+     angleY -7.35
+     angleZ 90.176
+    }
+    GenericEntity {
+     ID "5B18E68C7772CAC1"
+     coords 2.695 0.2 5.977
+     angleY 135.071
+    }
+    GenericEntity {
+     ID "5B18E68C7772CADF"
+     coords 4.457 0.412 3.232
+     angleZ 83.678
+    }
+    GenericEntity {
+     ID "5B18E68C7772D062"
+     coords -0.111 0.208 5.283
+     angleY -36.483
+    }
+    GenericEntity {
+     ID "5B18E68C7772D204"
+     coords 5.565 4.522 5.24
+     angleX -87.819
+     angleY 90
+     angleZ -180
+    }
+    GenericEntity {
+     ID "5B18E68C7772D35F"
+     coords -4.441 4.3 -4.252
+     angleY -70.11
+    }
+    GenericEntity {
+     ID "5B18E68C7772D501"
+     components {
+      MeshObject "{5872F0EB7FA40561}" {
+       Enabled 0
+      }
+     }
+    }
+    GenericEntity {
+     ID "5B18E68C7772D563"
+     coords -0.502 0.2 4.531
+    }
+    GenericEntity {
+     ID "5B18E68C7772D688"
+     coords 1.135 0.2 0.146
+     angleY 51.369
+    }
+    GenericEntity {
+     ID "5B18E68C7772D7A1"
+     coords 4.426 0.2 2.624
+     angleY -147.017
+    }
+    GenericEntity {
+     ID "5B18E68C7772D7EF"
+     coords 3.709 4.678 -1.201
+     angleX -38.67
+     angleY 90
+    }
+   }
+  }
+  GenericEntity : "{036A2332E131AE05}Prefabs/Props/Military/AmmoBoxes/AmmoBox_762x54_440rnd.et" {
+   ID "6534AA6E67DBD49C"
+   coords -1.731 7.6 2.397
+   angleY -9.894
+  }
+  DecalEntity : "{05668A7DF030B88B}Prefabs/Decals/Logistics/Explosion/Decal_Logistics_RPG_01.et" {
+   ID "6534AA6E67DBD420"
+   coords -3.456 0.2 -3.586
+   angleX -90
+  }
+  GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
+   ID "6534AA6E67DBD705"
+   coords -1.51 7.6 1.206
+   angleY -36.407
+  }
+  GenericEntity : "{0879933F4FDD2C2B}Prefabs/Props/Civilian/SackUniversal_01_Pile.et" {
+   ID "6534AA6E67DBD718"
+   coords -2.986 7.6 -1.978
+   angleY 25.665
+  }
+  $grp DecalEntity : "{1DC3A792132D86CB}Prefabs/Decals/Blood/BloodStain_Large_02.et" {
+   {
+    ID "6534AA6F5A80DEA8"
+    coords -3.325 0.2 -1.619
+    angleX -90
+    scale 1.5
+   }
+   {
+    ID "6534AA6F5A80DED4"
+    coords 4.16 1.098 5.05
+    angleX -90
+    scale 1.5
+   }
+   {
+    ID "6534AA6F5A80DEF4"
+    coords 4.736 0.691 -1.452
+    angleX -90
+    scale 1.5
+   }
+  }
+  GenericEntity : "{34C2F623958FCACE}Prefabs/Props/Civilian/Ashtray_01_Full_clear.et" {
+   ID "6534AA6E67DBD491"
+   coords -1.897 7.6 1.406
+   angleY 0
+  }
+  $grp DecalEntity : "{3BD66CDD309673DB}Prefabs/Decals/Blood/BloodStain_Drops_01.et" {
+   {
+    ID "6534AA6F5A80DEC7"
+    coords 2.22 0.2 0.733
+    angleX -90
+    angleY 152.964
+    angleZ -180
+    scale 2
+   }
+   {
+    ID "6534AA6F5A80DEE6"
+    coords -3.378 0.2 3.878
+    angleX -90
+    scale 2
+   }
+  }
+  DecalEntity : "{4932978A48FA10B0}Prefabs/Decals/Dirt/Decal_Dirt_Patch_05.et" {
+   ID "6534AA6E67DBD4E0"
+   coords -3.781 0.2 -3.987
+   angleX -90
+   angleY 92.238
+   angleZ -180
+   scale 2
+  }
+  GenericEntity : "{5216BDD8E91B9EF5}Prefabs/Props/Civilian/BasketWicker_01_wood.et" {
+   ID "6534AA6E67DBD749"
+   coords -3.524 7.6 2.402
+   angleY 0
+  }
+  GenericEntity : "{6FC9E85153AE41B1}Prefabs/Props/Civilian/WoodKindling_Crate_01.et" {
+   ID "6534AA6E67DBD7C0"
+   coords 1.558 6.39 -7.693
+   angleY 0
+  }
+  GameEntity : "{862432FB57C1C1B3}Prefabs/Props/Civilian/LampKerosene_01/LampKerosene_01_green.et" {
+   ID "6534AA6E67DBD735"
+   coords -3.346 7.6 1.906
+  }
+  GenericEntity : "{88FAE04EF7115814}Prefabs/Props/Civilian/BeerBottle_01_green.et" {
+   ID "6534AA6E67DBD765"
+   coords -1.009 7.6 1.741
+  }
+  GenericEntity : "{8F05D427252644F8}Prefabs/Props/Civilian/Suitcase_01.et" {
+   ID "6534AA6E67DBD7EC"
+   coords -0.906 6.39 -7.218
+   angleY 83.912
+  }
+  GenericEntity : "{8FE6D62204173656}Prefabs/Props/Civilian/BeerBottle_01_group.et" {
+   ID "6534AA6E67DBD774"
+   coords -1.295 7.6 2.147
+  }
+  DecalEntity : "{925553528D276E6D}Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_03.et" {
+   ID "6534AA6E67DBD7A2"
+   coords -3.53 0.2 -5.303
+   angleX -90
+   scale 3
+  }
+  GenericEntity : "{A13BCC98B8C380C7}Prefabs/Compositions/Misc/SubCompositions/Decorations/Crate_Firewood_01.et" {
+   ID "6534AA6E67DBD4A2"
+   coords -2.892 7.6 0.318
+   angleY -38.286
+   scale 1.5
+  }
+  $grp DecalEntity : "{A8F7CB83AA7FE99B}Prefabs/Decals/Dirt/Decal_Dirt_Footprints_02.et" {
+   {
+    ID "6534AA6E67DBD402"
+    coords -3.613 0.2 5.77
+    angleX -90
+    angleY 92.433
+    angleZ -180
+   }
+   {
+    ID "6534AA6E67DBD4F0"
+    coords -3.378 4.3 -4.899
+    angleX -89.972
+    angleY 116.457
+    angleZ -180
+   }
+  }
+  GenericEntity : "{B926F95025B8BA5C}Prefabs/Props/Recreation/Beach/AirMattress_01/AirMattress_01_OrangeBlue.et" {
+   ID "6534AA6E67DBD4B3"
+   coords -2.509 7.6 1.75
+  }
+  GenericEntity : "{BA8BCF7C77F24A56}Prefabs/Props/Civilian/WoodKindling_01.et" {
+   ID "6534AA6E67DBD7FB"
+   coords 2.11 6.39 -7.429
+   angleY 0
+  }
+  DecalEntity : "{CCE57C4C9C0E5009}Prefabs/Decals/Blood/BloodStain_Small_01.et" {
+   ID "6534AA6F5A80DE03"
+   coords -3.823 0.2 0.857
+   angleX -90
+   scale 0.8
+  }
+  GenericEntity : "{DD276F73BF101155}Prefabs/Props/Civilian/Heater_01/Heater_01_orange.et" {
+   ID "6534AA6E67DBD722"
+   coords -4.046 7.6 -0.28
+   angleY 38.773
+  }
+  GenericEntity : "{E3DC93ECBA9EAAB8}Prefabs/Props/Civilian/Coffin_01.et" {
+   ID "6534AA6E67DBD755"
+   coords -5.112 0.2 2.953
+   angleY -166.402
+  }
+  GenericEntity : "{EA8D922E189837C2}Prefabs/Props/Civilian/Suitcase_04_open.et" {
+   ID "6534AA6E67DBD7E2"
+   coords -0.421 6.39 -7.467
+   angleY 28.537
+  }
+  DecalEntity : "{FC56FA6166DEE7B7}Prefabs/Decals/Dirt/Decal_Dirt_Footprints_01.et" {
+   ID "6534AA6E67DBD4EE"
+   coords -3.487 0.2 4.302
+   angleX -90
+   scale 1.5
+  }
+ }
+}

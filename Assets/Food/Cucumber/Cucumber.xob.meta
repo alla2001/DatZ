@@ -1,0 +1,50 @@
+MetaFileClass {
+ Name "{636BA4BE73872D7A}Assets/Food/Cucumber/Cucumber.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Scale 1.2 1.2 1.2
+   MaterialAssigns {
+    MaterialAssignClass "{65588750B070A1CF}" {
+     SourceMaterial "Cucumber_PBR"
+     AssignedMaterial "{2584343F7AB7C4F2}Assets/Food/Cucumber/Data/Cucumber_PBR.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Cucumber {
+    }
+   }
+   GeometryParams {
+    GeometryParam USP_Collider {
+     LayerPreset "InteractionFireGeo"
+     SurfaceProperties {
+      "{9390521CB97A91B5}Common/Materials/Game/Wood/wood_15mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{65588750B0517A23}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{65588750B051C07A}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{65588750B051CC00}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{65588750B051D050}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{65588750B051D24E}" : "{F62AA8E7B8EA9D26}configs/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{65588750B051D490}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

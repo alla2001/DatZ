@@ -1,0 +1,157 @@
+SCR_DestructibleBuildingEntity {
+ ID "6546A03E3867AE90"
+ components {
+  MeshObject "{6546A031DBD86C33}" {
+   Object "{65911B0F8212050E}Assets/Structures/Military/Bunkers/Bunker_01/Bunker_01_1fp.xob"
+   Materials {
+    MaterialAssignClass "{6546A031DBD86D0A}" {
+     SourceMaterial "Bunker_01_1fp_Ext"
+     AssignedMaterial "{C0611E64EA7E9E26}Assets/Structures/Military/Bunkers/Bunker_01/Data/Bunker_01_1fp_Ext.emat"
+    }
+   }
+   LODFactors {
+    20 15 10 1 1
+   }
+   ClutterOccluder 1
+  }
+  RigidBody "{6546A031DBD86CFE}" {
+   ResponseIndex "Normal"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_MapDescriptorComponent "{6546A031DBD86CF6}" {
+   MainType Bunker
+  }
+  WorldSubsceneComponent "{6546A031DBD86CF0}" {
+  }
+  RplComponent "{6546A031DBD86CCB}" {
+   Enabled 1
+  }
+  Hierarchy "{6546A031DBD86CC4}" {
+  }
+ }
+ Flags 525315
+ coords 0 0 0
+ HouseNumber -2
+ SlotBoneMappings {
+  SlotBoneMappingObject "{6546A031DBD86CD3}" {
+   BonePrefix "socket_entry"
+   Prefab "{CAF8666F26CEB7AD}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Narrow.et"
+  }
+  SlotBoneMappingObject "{6546A031DBD86CAF}" {
+   BonePrefix "socket_door_firing_port"
+   Prefab "{C372D0D699FBCDE7}Prefabs/Structures/BuildingParts/Doors/Doorset_Bunker_01_B_SPE_B.et"
+  }
+  SlotBoneMappingObject "{6546A031DBD86CAB}" {
+   BonePrefix "socket_door_ext"
+   Prefab "{34E74485D6158393}Prefabs/Structures/BuildingParts/Doors/Doorset_Bunker_01_A_RIGHT_EXT_B.et"
+  }
+ }
+ ignoreLoot 1
+ ignoreDestruction 1
+ {
+  SCR_SpawnTraderPoint {
+   ID "6546A03E38679333"
+   coords 0.066 0.237 1.928
+   m_AudioIndex 3
+   {
+    GenericEntity : "{C372D0D699FBCDE7}Prefabs/Structures/BuildingParts/Doors/Doorset_Bunker_01_B_SPE_B.et" {
+     ID "6546A03E38679336"
+     components {
+      Hierarchy "{612AE78C85563E26}" {
+       Enabled 1
+       PivotID "socket_door_firing_port_01"
+       AutoTransform 1
+      }
+     }
+     {
+      $grp GenericEntity {
+       {
+        ID "568C8395765C820F"
+        components {
+         DoorComponent "{221C667A9F7D4B69}" {
+          DoorAction SCR_DoorUserAction "{50888D3646A61640}" {
+           VisibilityRange 0
+          }
+         }
+         MeshObject "{6546A03E10534CC8}" {
+          Object "{B91E1DDA90EC3475}Assets/Structures/BuildingsParts/Doors/Door_Bunker_01/Door_Bunker_01_B_LEFT_SPE_COV_B.xob"
+         }
+        }
+        coords -0.146 0 -0.058
+       }
+       {
+        ID "568C8395765C822A"
+        components {
+         DoorComponent "{221C667A9F7D4B69}" {
+          DoorAction SCR_DoorUserAction "{50888D3646A61640}" {
+           VisibilityRange 0
+          }
+         }
+         MeshObject "{6546A03EE6B1212D}" {
+          Object "{EE3BD41254996560}Assets/Structures/BuildingsParts/Doors/Door_Bunker_01/Door_Bunker_01_B_RIGHT_SPE_COV_B.xob"
+         }
+        }
+        coords 0.221 0 -0.05
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity : "{34E74485D6158393}Prefabs/Structures/BuildingParts/Doors/Doorset_Bunker_01_A_RIGHT_EXT_B.et" {
+   ID "6546A03E38679337"
+   components {
+    Hierarchy "{612AE78C85563E26}" {
+     Enabled 1
+     PivotID "socket_door_ext_01"
+     AutoTransform 1
+    }
+   }
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "568C83902CFE34E2"
+     components {
+      DoorComponent "{221C667A9F7D4B69}" {
+       DoorAction SCR_DoorUserAction "{50888D3646A61640}" {
+        VisibilityRange 0
+       }
+      }
+      KeyDoorComponent "{655D09151E374F0C}" {
+       Code 112510
+      }
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{CAF8666F26CEB7AD}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Narrow.et" {
+   {
+    ID "6546A03E3866597D"
+    components {
+     Hierarchy "{5488F0388A297CDE}" {
+      Enabled 1
+      PivotID "socket_entry_02"
+      AutoTransform 1
+     }
+    }
+    coords 0 0 0
+   }
+   {
+    ID "6546A03E38679339"
+    components {
+     Hierarchy "{5488F0388A297CDE}" {
+      Enabled 1
+      PivotID "socket_entry_01"
+      AutoTransform 1
+     }
+    }
+    coords 0 0 0
+   }
+  }
+  EnvironmentProbeEntity : "{D2B91746BDB8F3BD}Prefabs/Structures/Military/Bunkers/Bunker_01/Probe_Bunker_01.et" {
+   ID "6546A03E3866597A"
+   coords 0 1.229 0.82
+  }
+ }
+}

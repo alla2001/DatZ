@@ -1,0 +1,3803 @@
+$grp GameEntity {
+ armst_jacket_gorka_army_656884CFF08B0F29 {
+  coords 644.73 39.119 2684.693
+ }
+ armst_helmet_pasgt_656884CFFB19B8D9 {
+  coords 645.202 39 2684.881
+ }
+ armst_gloves_hard_656884CFE386C657 {
+  coords 644.964 39 2684.316
+ }
+ armst_helmet_seva_army_656884CFFDC0F758 {
+  coords 644.746 39 2684.857
+ }
+ armst_jacket_kzs_656884CFF155C0DA {
+  coords 645.096 39 2685.292
+ }
+ armst_hlmt_altyn_656884CFE73AD13C {
+  coords 645.676 39 2684.413
+ }
+ Base_jacket_656884CFF05D83F3 {
+  coords 643.776 39 2684.107
+ }
+ armst_jacket_army_sviter_656884CFFFE4F06C {
+  coords 644.373 39 2684.651
+ }
+ {
+  coords 642.905 39 2683.686
+ }
+ base_jacket_coat_656884CFECDB4B4E {
+  coords 644.184 39 2683.853
+ }
+ {
+  coords 643.532 39 2683.132
+ }
+ armst_pants_gorka_green_656884CFC98B2E64 {
+  coords 645.232 39 2686.042
+ }
+ armst_pants_soviet_656884CFF62B8BD8 {
+  coords 644.184 39 2685.875
+ }
+ armst_pants_flora_656884CFF501B9E7 {
+  coords 645.539 39 2685.164
+ }
+ armst_pants_djogers_656884CFF451AC58 {
+  coords 645.56 39 2685.67
+ }
+ armst_pants_gorka_darkbrown_656884CFC8FF6428 {
+  coords 644.626 39 2685.698
+ }
+ armst_jacket_soviet_army_656884CFF1DC2F94 {
+  coords 644.36 39 2684.078
+ }
+ armst_pants_gorka_army_656884CFF75DC893 {
+  coords 644.262 39.177 2685.929
+ }
+}
+$grp GenericEntity {
+ BC_Magazine_9x19_M45_36rnd_Ball_654EABB8F75006AD {
+  coords 3056.889 11.888 2889.258
+ }
+ BC_Magazine_71rd_PPSH41_654EABB8C985EE31 {
+  coords 3055.71 11.898 2889.464
+ }
+ BC_Magazine_Ppsh41_35rnd_Stick_654EABB8C9F871C3 {
+  coords 3055.881 11.895 2889.25
+ }
+ BC_Magazine_M1A1_45acp_Thompson_30rnd_Stick_654EABB8CA622097 {
+  coords 3056.312 11.891 2889.029
+ }
+ BC_PPSh41_654EABB85F54DD23 {
+  coords 3056.917 11.914 2890.604
+  angleX -1.786
+  angleY -0.084
+  angleZ 96.394
+ }
+ BC_Magazine_M1928A1_45acp_Thompson_50rnd_Drum_654EABB8CA09BE50 {
+  coords 3056.219 11.888 2888.835
+ }
+ BC_Rifle_Carl_Gustaf_M45_Suppressed_654EABB85CC1F9C7 {
+  coords 3057.864 11.885 2890.107
+  angleX -1.786
+  angleY -0.084
+  angleZ 96.394
+ }
+ BC_Rifle_Thompson_M1A1_654EABB8529552B1 {
+  coords 3059.087 11.854 2889.16
+  angleX -2.676
+  angleY -0.125
+  angleZ 97.287
+ }
+ BC_Rifle_Carl_Gustaf_M45_654EABB85D8F6DA1 {
+  coords 3058.508 11.844 2890.116
+  angleX -2.676
+  angleY -0.125
+  angleZ 97.287
+ }
+ BC_Rifle_Thompson_M1928A1_654EABB8507E101E {
+  coords 3055.917 11.943 2891.18
+  angleX -1.786
+  angleY -0.084
+  angleZ 96.394
+ }
+ Test_654B4CCE2F96BF1D {
+  coords 3067.715 11.736 2881.452
+  angleX -0.894
+  angleY -0.028
+  angleZ 1.79
+ }
+ Backpack_Medical_M5_6558ABB74E1EF999 {
+  components {
+   MeshObject "{6558ABB7424FBC4E}" {
+    Object "{A2F05BCE848CB8E1}Assets/Items/Equipment/Backpacks/Backpack_Medical_M5/Backpack_Medical_M5_item.xob"
+    LODFactors {
+     1
+    }
+    InheritVisibility 1
+   }
+   RigidBody "{6558ABB7424FBC44}" {
+    Mass 5
+    ModelGeometry 1
+   }
+   ActionsManagerComponent "{6558ABB7424FBEAC}" {
+    ActionContexts {
+     UserActionContext "{6558ABB7424FBE7D}" {
+      ContextName "default"
+      Position PointInfo "{6558ABB7424FBF95}" {
+       Offset 0 0.1168 0.1802
+      }
+      Radius 1
+     }
+    }
+    additionalActions {
+     SCR_UseKeyUserAction "{6558ABB7424FBED6}" {
+      ParentContextList {
+       "default"
+      }
+      UIInfo UIInfo "{6558ABB7424FBECD}" {
+       Name "Use Key"
+      }
+      ActionTitle "Use Key"
+      Duration 1
+     }
+    }
+   }
+   RplComponent "{6558ABB7424FBEA1}" {
+    "Rpl State Override" Runtime
+    "Parent Node From Parent Entity" 0
+   }
+   Hierarchy "{6558ABB7424FBEBB}" {
+   }
+  }
+  coords 3174.144 10.899 2816.067
+ }
+ armst_armory_lovkach_army_656884CF07AB6BAA {
+  coords 645.363 39 2682.751
+ }
+ Plank_65854ECB8ADD5FD3 {
+  coords 1175.264 39.01 2294.038
+ }
+ Plank_65854ECB8D2CC236 {
+  coords 1175.734 39.01 2293.81
+ }
+ Plank_65854ECB8EF9A06A {
+  coords 1176.066 39.01 2293.799
+ }
+ Plank_65854ECB8EF9A06A2 {
+  coords 1175.641 39.01 2294.814
+ }
+ Plank_65854ECB8EF9A06A3 {
+  coords 1175.909 39.01 2294.651
+ }
+ Plank_65854ECB8EF9A06A4 {
+  coords 1175.243 39.01 2295.048
+ }
+ Plank_65854ECB8EF9A06A5 {
+  coords 1175.51 39.01 2293.94
+ }
+ Plank_65854ECB8EF9A06A6 {
+  coords 1175.916 39.01 2293.03
+ }
+ Plank_65854ECB8EF9A06A7 {
+  coords 1175.54 39.01 2292.942
+ }
+ armst_itm_aspirine_656884CFABF56DC2 {
+  coords 644.827 39 2687.2
+ }
+ Nails_65854ECBB51A9FE7 {
+  coords 1177.162 39.01 2294.321
+ }
+ armst_itm_food_fish_656884CFC330E764 {
+  coords 645.102 39 2687.07
+ }
+ armst_backpack_seva_army_656884CF13CE418B {
+  coords 645.234 39 2683.538
+ }
+ armst_itm_food_milk_656884CFDCE47D2D {
+  coords 644.921 39 2687.516
+ }
+ armst_boots_soviet_656884CFE88B794E {
+  coords 645.058 39 2683.156
+ }
+ {
+  coords 645.299 39 2689.374
+ }
+ NewBasePlans_65854ECB88B87D39 {
+  coords 1176.895 39.01 2293.649
+ }
+ {
+  coords 644.09 39 2689.309
+ }
+ armst_itm_cigaretes_656884CFAA5EBB6A {
+  coords 644.888 39 2686.943
+ }
+ armst_armory_lovkach_neutral_656884CF19DC474D {
+  coords 644.581 39 2682.449
+ }
+ armst_armory_army_656884CF1E9827E9 {
+  coords 643.518 39 2681.608
+ }
+ armst_backpack_seva_neutral_2_656884CF14951124 {
+  coords 644.687 39 2683.452
+ }
+ {
+  coords 645.76 39 2688.378
+ }
+ armst_armory_seva_neutral_656884CF1A3DB35E {
+  coords 643.555 39 2682.216
+ }
+ {
+  coords 647.031 39 2687.875
+ }
+ BsBoxPlans_65854ECACD5AFAD4 {
+  coords 1178.129 39.01 2293.427
+ }
+ armst_itm_food_mre_656884CCA98CF8E3 {
+  coords 645.139 39 2687.373
+ }
+ {
+  components {
+   MeshObject "{658EE735DF820D20}" {
+    Object "{0F00CA93A5373089}Assets/Chicken/Chicken.xob"
+   }
+   Hierarchy "{658EE7364B5AD48E}" {
+   }
+  }
+  coords 2495.87 147.765 2280.018
+ }
+}
+Vehicle MH47G_Block1 : "{03300A0463827C4B}Prefabs/Vehicles/Helicopters/H47/MH47G_Block2.et" {
+ coords 624.366 39 2669.672
+}
+GenericEntity Backpack_ALICE_Medium_655CEE8694DA0125 : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
+ coords 1329.578 39 2121.489
+}
+$grp GameEntity : "{0892B183E7F9DF08}Prefabs/Rags.et" {
+ Rags_6528FADC3EDFDFC9 {
+  components {
+   EPF_PersistenceComponent "{6528FADC6B30118E}" {
+    m_bStorageRoot 0
+    m_pSaveData EPF_ItemSaveDataClass "{6528FADC6B301191}" {
+    }
+   }
+   FireFuelComponent "{6551636C8155E833}" {
+    fuelValue 5
+   }
+   InventoryItemComponent "{6528FADC6B3006E9}" {
+    Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
+     ItemDisplayName UIInfo "{6528FADC6B30065C}" {
+      Name "Rags"
+      Description "Rags that can be used for crafting"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
+      Weight 0.2
+      SizeSetupStrategy Volume
+      ItemDimensions 15 15 15
+      ItemVolume 10
+      DimensionScaler 0.4
+      ActivePhysicalSimulation None
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{6528FADC6B3006A4}" {
+       CameraPreset Top
+       CameraOrbitAngles 38 0 0
+       CameraDistanceToItem 2
+       FOV 10
+       AspectRatio 1
+       IsDynamicObject 1
+       PreviewWornModel 1
+       PreviewModel "{6F223F9465D881DF}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01.xob"
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOADOUT_STORAGE
+    }
+   }
+   MeshObject "{6528FADC6B301681}" {
+    Object "{83FCC9DAFF36CC88}Assets/Items/Rags/Rags.xob"
+    LODFactors +{
+    }
+    InheritVisibility 1
+   }
+   RigidBody "{6528FADC6B3016DB}" {
+    SimState None
+    ModelGeometry 1
+   }
+   SCR_SoundDataComponent "{6528FADC6B3007D1}" {
+    m_aAudioSourceConfiguration {
+     SCR_AudioSourceConfiguration "{6528FADC6B3007BF}" {
+      m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+      m_sSoundEventName "SOUND_PICK_UP"
+     }
+     SCR_AudioSourceConfiguration "{6528FADC6B3007A8}" {
+      m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+      m_sSoundEventName "SOUND_EQUIP"
+      m_eFlags 0
+     }
+     SCR_AudioSourceConfiguration "{6528FADC6B3007AE}" {
+      m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+      m_sSoundEventName "SOUND_DROP"
+     }
+    }
+   }
+   ActionsManagerComponent "{6528FADC6B307B5C}" {
+    ActionContexts {
+     UserActionContext "{6528FADC6B3004BA}" {
+      ContextName "default"
+      Position PointInfo "{6528FADC6B300496}" {
+       Offset 0 0.05 0
+      }
+      Radius 0.5
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{6528FADC6B3004FD}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{6528FADC6B3004DF}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_DatZTransformeBaseAction "{652E7EC49BC45946}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{652E7EC49D65B971}" {
+       Name "Craft Bandage"
+       Description "Craft Bandage"
+      }
+      ActionTitle "Craft Bandage"
+      Duration 3
+      prefab "{EAE970533A9FE23D}Prefabs/Items/Medicine/FieldDressing_01/CraftedGauze_01.et"
+     }
+     CraftUserAction "{654ED778E2155431}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED77814EC013A}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778FE93A22A}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778FE93A1B5}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778FFC48758}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778FFC4868C}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F0813494}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F08134DD}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F022313F}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F0223167}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F1C8985B}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F1C88781}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F15D1633}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F15D1665}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+    }
+   }
+   RplComponent "{6528FADC6B307B77}" {
+    "Rpl State Override" None
+   }
+  }
+  coords 1556.07 32.724 2162.181
+ }
+ Rags_6528FADC3CA590F3 {
+  components {
+   EPF_PersistenceComponent "{6528FADC6B30118E}" {
+    m_bStorageRoot 0
+    m_pSaveData EPF_ItemSaveDataClass "{6528FADC6B301191}" {
+    }
+   }
+   FireFuelComponent "{6551636C8155E833}" {
+    fuelValue 5
+   }
+   InventoryItemComponent "{6528FADC6B3006E9}" {
+    Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
+     ItemDisplayName UIInfo "{6528FADC6B30065C}" {
+      Name "Rags"
+      Description "Rags that can be used for crafting"
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
+      Weight 0.2
+      SizeSetupStrategy Volume
+      ItemDimensions 15 15 15
+      ItemVolume 10
+      DimensionScaler 0.4
+      ActivePhysicalSimulation None
+     }
+     CustomAttributes {
+      PreviewRenderAttributes "{6528FADC6B3006A4}" {
+       CameraPreset Top
+       CameraOrbitAngles 38 0 0
+       CameraDistanceToItem 2
+       FOV 10
+       AspectRatio 1
+       IsDynamicObject 1
+       PreviewWornModel 1
+       PreviewModel "{6F223F9465D881DF}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01.xob"
+      }
+     }
+     m_Size SLOT_1x1
+     m_SlotType SLOT_LOADOUT_STORAGE
+    }
+   }
+   MeshObject "{6528FADC6B301681}" {
+    Object "{83FCC9DAFF36CC88}Assets/Items/Rags/Rags.xob"
+    LODFactors +{
+    }
+    InheritVisibility 1
+   }
+   RigidBody "{6528FADC6B3016DB}" {
+    SimState None
+    ModelGeometry 1
+   }
+   SCR_SoundDataComponent "{6528FADC6B3007D1}" {
+    m_aAudioSourceConfiguration {
+     SCR_AudioSourceConfiguration "{6528FADC6B3007BF}" {
+      m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+      m_sSoundEventName "SOUND_PICK_UP"
+     }
+     SCR_AudioSourceConfiguration "{6528FADC6B3007A8}" {
+      m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+      m_sSoundEventName "SOUND_EQUIP"
+      m_eFlags 0
+     }
+     SCR_AudioSourceConfiguration "{6528FADC6B3007AE}" {
+      m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+      m_sSoundEventName "SOUND_DROP"
+     }
+    }
+   }
+   ActionsManagerComponent "{6528FADC6B307B5C}" {
+    ActionContexts {
+     UserActionContext "{6528FADC6B3004BA}" {
+      ContextName "default"
+      Position PointInfo "{6528FADC6B300496}" {
+       Offset 0 0.05 0
+      }
+      Radius 0.5
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{6528FADC6B3004FD}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{6528FADC6B3004DF}" {
+       Name "#AR-Inventory_PickUp"
+      }
+     }
+     SCR_DatZTransformeBaseAction "{652E7EC49BC45946}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{652E7EC49D65B971}" {
+       Name "Craft Bandage"
+       Description "Craft Bandage"
+      }
+      ActionTitle "Craft Bandage"
+      Duration 3
+      prefab "{EAE970533A9FE23D}Prefabs/Items/Medicine/FieldDressing_01/CraftedGauze_01.et"
+     }
+     CraftUserAction "{654ED778E2155431}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED77814EC013A}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778FE93A22A}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778FE93A1B5}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778FFC48758}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778FFC4868C}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F0813494}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F08134DD}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F022313F}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F0223167}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F1C8985B}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F1C88781}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+     CraftUserAction "{654ED778F15D1633}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{654ED778F15D1665}" {
+       Name "Craft Shit"
+      }
+      Duration 1
+     }
+    }
+   }
+   RplComponent "{6528FADC6B307B77}" {
+    "Rpl State Override" None
+   }
+  }
+  coords 1556.117 32.756 2163.15
+  angleZ -3.954
+ }
+ Rags_654ED778EBEDE70A {
+  coords 3069.643 11.75 2876.855
+ }
+ Rags_6551636C8A5E415C {
+  coords 3076.865 11.573 2878.494
+ }
+ Rags_6582078B60632A32 {
+  coords 3180.042 17.94 2836.231
+ }
+}
+$grp GameEntity : "{0927D05A2A9E9E4E}Prefabs/Torch.et" {
+ Torch_654ED7767F9A7A14 {
+  components {
+   BaseSlotComponent "{654ED77AF86770E4}" {
+    Enabled 0
+    AttachType EntitySlotInfo "{654ED77AFAA4EFC2}" {
+     Prefab ""
+    }
+    EntityPrefab "{5A03D037E64C3D2C}Prefabs/TorchFire.et"
+   }
+  }
+  coords 3072.951 11.75 2873.406
+ }
+ Torch_655B3A6F3A711897 {
+  coords 2912.268 41.334 2723.352
+ }
+}
+GenericEntity MilitaryTentUnDeployedNonTan_65336C814D5AD088 : "{093CB5994CC797B4}Prefabs/MilitaryTentUnDeployedNonTan.et" {
+ components {
+  SoundComponent "{6528B28654791E7A}" {
+   Filenames +{
+   }
+   DistanceManagement 0
+  }
+  DatZReplaceDeployableEntityComponent "{6528E4E8D968CD9A}" {
+   m_sReplacementPrefab "{DE0F233CBC3C2F77}Prefabs/Tebt.et"
+  }
+  EPF_PersistenceComponent "{652B5966E6230ADA}" {
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966E7F51BBE}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{6534AA7CF055C675}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{6528B28654791F2A}" {
+   Attributes SCR_ItemAttributeCollection "{6528B28654791F2E}" {
+    ItemDisplayName UIInfo "{6528B28654791FFC}" {
+     Name "#AR-Item_DeployableTent_Name"
+     Description "#AR-Item_DeployableTent_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B28654791FE4}" {
+     Weight 6
+     SizeSetupStrategy Volume
+     ItemDimensions 1 1 1
+     ItemVolume 0.60000002
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B28654791FC3}" {
+      CameraPreset Back
+      CameraOrbitAngles 25 -25 180
+      CameraDistanceToItem 5.5
+      FOV 10
+      PreviewModel "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+     }
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_BACKPACK
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6528B28654791E63}" {
+   Materials {
+    MaterialAssignClass "{6528E4EB8DFC3AB5}" {
+     SourceMaterial "CanvasCover_Folded"
+     AssignedMaterial "{4BC8DBE3D5C062D0}Assets/Structures/Military/Camps/Canvas_Cover/Data/CanvasCover_Folded_FIA.emat"
+    }
+   }
+  }
+  RigidBody "{6528B28654791E56}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6528B28654791C71}" {
+   Enabled 0
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B28654791C7C}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C7F}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C76}" {
+     m_sSoundProject "{77EF656D5DAC6FD5}Sounds/Items/_SharedData/Drop/Items_Drop_RespawnKit.acp"
+    }
+   }
+  }
+  ActionsManagerComponent "{6528B28654791DD4}" {
+   ActionContexts {
+    UserActionContext "{6528B28654791C48}" {
+     ContextName "default"
+     Position PointInfo "{6528B28654791C4E}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4ECDE2EC301}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528E4ECC386F274}" {
+      Name "Deploy"
+      Description "Deploy"
+     }
+     ActionTitle "Deploy"
+     Duration 2
+    }
+    SCR_PickUpItemAction "{6528E4E9FDBEA929}" {
+     UIInfo UIInfo "{6528E4E9FF4A8555}" {
+      Name "Pick Up"
+      Description "Pick Up"
+     }
+     ActionTitle "Pick Up"
+    }
+   }
+  }
+  RplComponent "{6528B28654791DC9}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1555.338 32.726 2162.114
+}
+GenericEntity MilitaryKeyCard_6558ABB7C9436ED3 : "{0CC42C67DA16F637}Prefabs/MilitaryKeyCard.et" {
+ coords 3174.12 10.953 2814.375
+ angleX 1.787
+ angleY 179.904
+ angleZ -1.792
+}
+GenericEntity TentTan_65336C814D5AD243 : "{0EF189100B0AE183}Prefabs/TentTan.et" {
+ components {
+  DatZReplaceDeployableEntityComponent "{6528E4EA4361994A}" {
+   m_sReplacementPrefab "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et"
+  }
+  EPF_PersistenceComponent "{652B59662F267137}" {
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966113B292D}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{652B5966198CCA8F}" {
+     }
+    }
+   }
+  }
+  MeshObject "{6528B2949672F600}" {
+   Materials {
+    MaterialAssignClass "{6528E4EBAAB17B91}" {
+     SourceMaterial "TentSmallFIA_01_MLOD"
+     AssignedMaterial "{8094563DFDE04CED}Assets/Structures/Military/Camps/TentSmallFIA_01/Data/TentSmallFIA_01_MLOD_V2.emat"
+    }
+    MaterialAssignClass "{6528E4EBAAB17BEF}" {
+     SourceMaterial "TentSmallFIA_01_US"
+     AssignedMaterial "{5E0E94580DEF6492}Assets/Structures/Military/Camps/TentSmallFIA_01/Data/TentSmallFIA_01_V2.emat"
+    }
+   }
+  }
+  RigidBody "{6528B2949672F7AB}" {
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_SoundDataComponent "{6528B2949672F5E7}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B2949672F5E8}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_OPEN"
+    }
+    SCR_AudioSourceConfiguration "{6528B2949672F5E6}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{6528B2949672CAEB}" {
+   Attributes SCR_ItemAttributeCollection "{6528B2949672CA87}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6528B2949672F541}" {
+     Name "Military Tent"
+     Description "Military Tent used to store items"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B29B112C5F41}" {
+     Weight 6
+     DimensionScaler 2
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B2949672CAB0}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 3
+      CameraOffset 0 -0.5 0
+      FOV 50
+     }
+    }
+    m_Size SLOT_3x3
+    m_SlotType SLOT_ANY
+    m_bDraggable 0
+    m_bStackable 0
+    m_bRefundable 0
+   }
+   Priority 1000
+   SaveInLoadout 0
+   m_fMaxWeight 50
+  }
+  ActionsManagerComponent "{6528B2949672C9B7}" {
+   ActionContexts {
+    UserActionContext "{6528B2949672CA3E}" {
+     ContextName "default"
+     Position PointInfo "{6528B2949672CA3C}" {
+      Offset 0 0.7859 0
+     }
+     Radius 1.07
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{6528B2949672CA13}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528B2949672CA2E}" {
+      Name "#AR-Inventory_OpenArsenalStorage"
+     }
+    }
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4E9D25FFD25}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528E4E9DB516BBB}" {
+      Name "Dismantel"
+      Description "Dismantel"
+     }
+     ActionTitle "Dismantel"
+     Duration 2
+    }
+   }
+  }
+  RplComponent "{6528B2949672C9AD}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1559.342 33.052 2158.636
+ angleZ -3.381
+}
+GenericEntity Handgun_M9_655542AE3BCF50F3 : "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et" {
+ coords 3066.752 11.75 2877.599
+}
+$grp GenericEntity : "{1641CA45B15C83E8}Prefabs/Apple.et" {
+ Apple_6526F01C4A40249E {
+  coords 1559.06 32.958 2165.575
+ }
+ Apple_6546A03943B4EB27 {
+  coords 1326.611 39 2122.37
+ }
+ Apple_6546A039437A9FBA {
+  coords 1327.183 39 2121.985
+ }
+ Apple_6546A039454722FC {
+  coords 1326.424 39 2121.834
+ }
+ Apple_6582078B6C61082D {
+  coords 3180.78 17.94 2837.089
+ }
+}
+GenericEntity Knife_6528B287E6B3AD48 : "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" {
+ coords 1559.072 32.931 2163.782
+}
+GenericEntity : "{1BC300CA46DEDA79}Prefabs/Structures/Signs/Warnings/SignNoEntryBothDir_01_pole.et" {
+ coords 1289.572 39.125 2120.407
+ angleX 0.902
+ angleY 132
+ angleZ 0.232
+}
+GameEntity Jacket_Denim_01_strippedShirt_dirty_6528E4E55D8F4C29 : "{23A15812C40D34C2}Prefabs/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01_strippedShirt_dirty.et" {
+ components {
+  EPF_PersistenceComponent "{5A28749C2A2B4AD2}" {
+   m_bStorageRoot 0
+  }
+  MeshObject "{5104869D194C6262}" {
+   Object "{66AF096B6E4442E5}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01_item.xob"
+  }
+  ParametricMaterialInstanceComponent "{56C6C01F261424B9}" {
+   UserParamTwo 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  RigidBody "{5104869D194C6267}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_ItemOutfitFactionComponent "{6196E41F5B150B2C}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D9664DCC7385}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D9664D441CF3}" {
+      m_AffiliatedFactionKey "CIV"
+      m_iOutfitFactionValue 40
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{5B18D20B7AC00DA6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   components {
+    SCR_EquipmentStorageComponent "{599AAEB0558BA88D}" {
+     Priority 1
+     StoragePurpose 64
+     UseVirtualInventoryReplication 0
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot FlashlightSlot {
+       PivotID "Spine5"
+       Offset -0.1 0.0141 0.1249
+       Enabled 0
+       Prefab "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et"
+       AllowedItemTypes +{
+       }
+       AnimatedMeshRefference "{6F223F9465D881DF}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01.xob"
+      }
+     }
+    }
+   }
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "#AR-Jacket_Denim_Name"
+     Description "#AR-Jacket_Denim_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.8
+     SizeSetupStrategy Manual
+     ItemDimensions 15 15 15
+     ItemVolume 2000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 4.5
+      FOV 10
+      PreviewWornModel 1
+      PreviewModel "{6F223F9465D881DF}Assets/Characters/Uniforms/Jacket_Denim_01/Jacket_Denim_01.xob"
+     }
+    }
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+   Priority 2
+   UseCapacityCoefficient 0
+   CapacityCoefficient 1
+   MaxCumulativeVolume 600
+   MaxItemSize 10 10 10
+   m_fMaxWeight 5
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride +{
+   }
+  }
+  ActionsManagerComponent "{5104869D194C6245}" {
+   ActionContexts {
+    UserActionContext "{5104869D194C624D}" {
+     Position PointInfo "{5104869D194C6273}" {
+      Offset 0 0.05 0
+     }
+    }
+   }
+  }
+  RplComponent "{51F894A9E3AAC8BC}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1557.118 32.806 2162.921
+}
+$grp GenericEntity : "{242C48BF74FBE114}Prefabs/Weapons/Knife_Long.et" {
+ Knife_Long_653A99FCA3520C69 {
+  coords 1558.22 32.87 2163.441
+ }
+ Knife_Long_65426BEF7E9EC1D8 {
+  coords 1557.374 32.92 2160.318
+ }
+}
+SCR_ChimeraCharacter Campaign_US_AI_6538F05309A1883D : "{2619482C6C4202E0}Prefabs/Characters/Campaign/Final/Campaign_US_AI.et" {
+ coords 1114.54 38 2823.579
+}
+GameEntity Suppressor_9mm_m17_656884CF572ADA6A : "{291396770F73A84C}Prefabs/Weapons/Core/Suppressor_9mm_m17.et" {
+ coords 647.604 39.244 2681.529
+}
+GenericEntity : "{2A87032C8B248CFE}PrefabsEditable/Auto/Props/Industrial/E_BenchDrill_01_table.et" {
+ coords 1329.093 39 2126.393
+}
+Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Base.et" {
+ coords 1746.588 41.239 2883.977
+}
+GameEntity : "{2CBB04F9D8839D1D}Prefabs/Fishing_Rod_Tier_1.et" {
+ coords 3213.457 0.802 3012.991
+}
+$grp GenericEntity : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et" {
+ "Cooking Pot Clean Med_65516369438115D3" {
+  components {
+   EPF_PersistenceComponent "{65516369423AC9F7}" {
+    m_bStorageRoot 0
+   }
+  }
+  coords 3071.135 11.736 2878.88
+  angleX -2.681
+  angleY -0.084
+  angleZ 1.792
+ }
+ "Cooking Pot Clean Med_655CEE8604874BDC" {
+  coords 1328.196 39 2121.986
+ }
+}
+Projectile : "{2FBCA0A7CEDDE7B0}Prefabs/Weapons/Ammo/SmallArms/Ammo_762x39_Ball_57N231.et" {
+ coords 1318.772 39 2122.135
+}
+$grp SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+ Character_Base_6538DE9E3E051086 {
+  components {
+   EventHandlerManagerComponent "{530284308E2527DD}" {
+    EventHandlers {
+     BaseEventHandler "{5302843088003484}" {
+      EventName "OnWeaponChanged"
+     }
+     BaseEventHandler "{5302CB86A280126D}" {
+      EventName "OnMuzzleChanged"
+     }
+     BaseEventHandler "{5302CB8699CE0C5C}" {
+      EventName "OnMagazineChanged"
+     }
+     BaseEventHandler "{53047B986210A519}" {
+      EventName "OnAmmoCountChanged"
+     }
+     BaseEventHandler "{5304890B382436DF}" {
+      EventName "OnMagazineCountChanged"
+     }
+     BaseEventHandler "{5304890B3113520D}" {
+      EventName "OnFiremodeChanged"
+     }
+     BaseEventHandler "{5304890B22C5A3DC}" {
+      EventName "OnZeroingChanged"
+     }
+     BaseEventHandler "{5304890B1D193A86}" {
+      EventName "OnADSChanged"
+     }
+     BaseEventHandler "{59388895E3B0CD26}" {
+      EventName "OnWeaponAttachementChanged"
+     }
+     BaseEventHandler "{5952C82EDD8E43E4}" {
+      EventName "OnTurretReload"
+     }
+     BaseEventHandler "{5A5A94D957DB58B7}" {
+      EventName "OnConsciousnessChanged"
+     }
+    }
+   }
+   CharacterSoundComponent "{520EA1D2F659CF84}" {
+    Filenames +{
+    }
+    DistanceManagement 0
+    IncludeInactive 1
+    FoliageCollisionLayer "Foliage"
+   }
+   SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+    Filenames +{
+    }
+    DistanceManagement 0
+    StaminaThresholdMinimum 0.05
+   }
+   SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+    components {
+     SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+      Priority 100
+      StoragePurpose 65
+      InitialStorageSlots {
+       SCR_EquipmentStorageSlot BinocularSlot {
+        PivotID "Spine5"
+        Offset 0 0.12 0.17
+        Angles -85 0 0
+        AllowedItemTypes +{
+        }
+        AffectedByOcluders +{
+        }
+        AnimatedMeshRefference "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+       }
+       SCR_EquipmentStorageSlot WristwatchSlot {
+        PivotID "LeftForeArmTwist"
+        Offset 0.0134 0.1348 -0.0213
+        Angles 2.1809 41.6515 -95.9218
+       }
+      }
+     }
+     SCR_HandSlotStorageComponent "{5EE8F81540A93631}" {
+      Priority -100
+      SaveInLoadout 0
+      InitialStorageSlots {
+       SCR_HandSlotStorageSlot HandSlot {
+       }
+      }
+     }
+     SCR_IdentityItemStorageComponent "{62AD01171918DA85}" {
+      Priority 1000
+      SaveInLoadout 0
+      UseVirtualInventoryReplication 0
+      InitialStorageSlots {
+       SCR_EquipmentStorageSlot IdentityItem {
+        Enabled 0
+        AllowedItemTypes +{
+        }
+       }
+      }
+     }
+     SCR_SalineStorageComponent "{5C82B07DFE223090}" {
+      StoragePurpose 0
+      SaveInLoadout 0
+      UseVirtualInventoryReplication 0
+      InitialStorageSlots {
+       SCR_SalineBagStorageSlot SalineBagSlot {
+        PivotID "RightArm"
+        Offset -0.007 -0.1096 -0.116
+        Angles -90 0 0
+        Enabled 0
+        Prefab "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et"
+        AllowedItemTypes +{
+        }
+        AnimatedMeshRefference "{E6E83E5ED49B9DE5}Assets/Items/Medicine/SalineBag_01/SalineBag_US_01/SalineBag_US_01.xob"
+        m_eHitZoneGroup RIGHTARM
+       }
+      }
+     }
+     SCR_TourniquetStorageComponent "{5A68C9C9DF306618}" {
+      StoragePurpose 0
+      SaveInLoadout 0
+      UseVirtualInventoryReplication 0
+      InitialStorageSlots {
+       SCR_TourniquetStorageSlot TourniquetSlotLA {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup LEFTARM
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotRA {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup RIGHTARM
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotLL {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup LEFTLEG
+       }
+       SCR_TourniquetStorageSlot TourniquetSlotRL {
+        AllowedItemTypes +{
+        }
+        m_eHitZoneGroup RIGHTLEG
+       }
+      }
+     }
+    }
+    Priority 100
+   }
+   SCR_CharacterControllerComponent "{520EA1D2F659CEA5}" {
+    LeftHandPosition EntitySlotInfo "{520EA1D2F659CEAB}" {
+     PivotID "lefthandprop"
+     ChildPivotID "snap_weapon"
+    }
+    RightHandPosition InventoryStorageSlot RightHand {
+     PivotID "RightHandProp"
+     Enabled 0
+     Prefab ""
+    }
+    VehicleRagdollSpeed 27
+    WaterMovementLimits +{
+    }
+    AimingPID 0.4 1 0
+    AimingPIDMaxErrorIntegral 0.15
+    AimingPIDCloseMultiplier 0.1
+    AimingPIDCTargetCloseDistance 1.5
+    LeanSpeed 5
+    HoldInputForRoll 1
+    m_fDrowningDuration 45
+   }
+   BaseSlotComponent "{654ED77B00034D19}" {
+    AttachType EntitySlotInfo Breath {
+     PivotID "Jaw"
+     Offset 0 0.0243 -0.0364
+     Angles 0 180 0
+     Prefab "{942D3EBE8CF90EEC}Prefabs/BreathPT.et"
+    }
+   }
+   BaseSlotComponent "{654ED77BAC8341A2}" {
+    AttachType EntitySlotInfo "{654ED77BA0E068EE}" {
+     PivotID "Jaw"
+     Offset 0 0.0243 -0.0364
+     Angles 0 180 0
+     Enabled 0
+     Prefab "{8B4313B6FEFDF063}Prefabs/Vomit.et"
+    }
+   }
+   CharacterAimingComponent "{520EA1D2F659CE42}" {
+    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CE4B}" {
+     signalsSuffix "Weapon"
+    }
+    LimitsHoriz -80 80
+    LimitsVert -80 80
+    AimingMaxSpeed 0.7 4
+    AimingSpeedControls 1.5 0.75
+    ProneLimitsVertical -40 20
+    AimModifiers {
+     OneHandAimModifier "{588EB4BA84534585}" {
+     }
+    }
+    Shoulder PointInfo "{5A3EED5F66F7AF9A}" {
+     PivotID "RightShoulder"
+    }
+   }
+   CharacterHeadAimingComponent "{520EA1D2F659CF99}" {
+    SignalsSourceAccess SignalsSourceAccessClass "{520EA1D2F659CF9E}" {
+     signalsSuffix "Head"
+    }
+    ProvideAimingType Head
+    LimitsHoriz -360 360
+    LimitsVert -360 360
+    AimingMaxSpeed 10 5
+    AimingSpeedControls 1.5 0.75
+    AimPivot PointInfo "{5990A4DF23E27E7E}" {
+     PivotID "Neck1"
+    }
+    PitchReduction +{
+    }
+   }
+   CharacterWeaponManagerComponent "{5C9CA676383262FD}" {
+    DefaultWeaponIndex 0
+    SlingPosition PointInfo "{548A2344DE7AA0F2}" {
+     PivotID "stomach3"
+     Offset 0 0.0102 0
+     Angles 0 140 -90
+    }
+   }
+   ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+    components {
+     AICharacterAimingComponent "{520EA1D2DB109F0C}" {
+      AimingPID 0.3 0 0
+      UsePID 1
+     }
+     AICharacterMovementComponent "{520EA1D2DB109F01}" {
+      "Max Distance to Path" 10
+     }
+     AIPathfindingComponent "{56349A6F9C02E7A1}" {
+      NavmeshProject "Soldiers"
+      IgnoreFlags 64
+     }
+     PerceptionComponent "{54A2CBC75F06064B}" {
+      ForgetEnemyTime 5
+      ForgetDetectedTime 5
+      SensorsList {
+       EyesSensor "{520EA1D2DB109AAD}" {
+        MaxRange 20
+        FOVNormal 120
+        FOVPeripheral 180
+       }
+       EarsSensor "{520EA1D2DB109AA9}" {
+        MaxRange 123
+       }
+       EyesSensor "{6547739B52200EEB}" {
+        MaxRange 1.6
+        FOVNormal 360
+        FOVPeripheral 360
+        MinIlluminationFactor 0.04
+        RecognitionDetectDecay 0.2
+        RecognitionIdentifyDecay 0.05
+        AngularSizeFactor_a 0.055
+        AngularSizeFactor_b -0.35
+        AngularSizeFactor_c 0.075
+        AngularVelocityFactor_a 1300
+        AngularVelocityFactor_b 5
+       }
+      }
+     }
+    }
+    Agenttemplate "{97393CF9AEC4C80C}622120A5448725E3/AI/BaconZ_SCR_ChimeraAIAgentFullt.et"
+   }
+   ClimbingDataComponent "{5304A49E934A0758}" {
+    CanClimbOver 0
+   }
+   DatZMetabolsimHandler "{654739DB958B6A27}" {
+    maxFood 100
+    maxWater 100
+    foodDecayRate 1.5
+    waterDecayRate 2.4
+    starvationDamageRate 0.1
+    dehydrationDamageRate 0.2
+   }
+   EPF_PersistenceComponent "{5A12D8F4DFED6D84}" {
+    m_bSelfSpawn 0
+    m_pSaveData EPF_CharacterSaveDataClass "{5A12D8F4DA8632DC}" {
+     m_aComponents {
+      EPF_HitZoneContainerComponentSaveDataClass "{5A12D8F4D807DD8A}" {
+      }
+      EPF_CharacterControllerComponentSaveDataClass "{5CFED52E8CB02A22}" {
+      }
+      EPF_BaseInventoryStorageComponentSaveDataClass "{5D22E99D79014EF0}" {
+      }
+      EPF_CharacterInventoryStorageComponentSaveDataClass "{5CFED52E980265CA}" {
+      }
+      EPF_CompartmentAccessComponentSaveDataClass "{5D431C1B88F3D6DD}" {
+      }
+     }
+    }
+   }
+   EquipedWeaponStorageComponent "{520EA1D2DB118C70}" {
+    Priority 100
+    StoragePurpose 2
+   }
+   ForceWalkAI "{650C98C1B3FC7F36}" {
+    maxSpeed 0.3
+    speedVariation 0.5
+    maxPerception 0.05
+    perceptionVariation 0.3
+    m_eSpeed WALK
+   }
+   MeshObject "{520EA1D2F659C81F}" {
+    Object "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+    PixelSizeScale 10
+   }
+   SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+    InfoDisplays {
+     SCR_WeaponInfo "{520EA1D2DB11811A}" {
+      m_LayoutPath "{8170DE93810F928A}UI/layouts/HUD/WeaponInfo/WeaponInfo.layout"
+      m_sContentWidget "m_WeaponInfoPanel"
+      m_aHandlers {
+       SCR_InfoDisplaySlotHandler "{5D44B19866E29216}" {
+        m_bCanUpdate 1
+        m_sSlotName "Slot_WeaponInfo"
+       }
+      }
+      m_eShow 7
+      m_sInterfaceSettingName "m_bShowWeaponInfo"
+     }
+    }
+   }
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" : "{73C708A20F8B22E6}Prefabs/Characters/Core/DamageManager_Character_Base.ct" {
+    "Fall damage min speed" 8.85
+    "Fall damage max speed" 11.2
+   }
+   SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+    StaminaDrainRun -0.008
+    StaminaDrainSprint -0.016
+    EncumbranceMassMax 140
+    EncumbranceDrainMax -0.1
+    BreathNormalFrequency 0.45
+    BreathExhaustedFrequency 1.1
+   }
+   SCR_CharacterVicinityComponent "{529A70D96D401B33}" {
+    DiscoveryRadius 5
+    DiscoveryInterval 1
+   }
+   SCR_CompartmentAccessComponent "{52249C842F1EF1F4}" {
+    CompartmentLayerPreset "CharNoCollide"
+   }
+   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" : "{C32EE6A3FE0F6333}Prefabs/Editor/Components/Characters_SCR_EditableEntityComponent.ct" {
+    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+     m_aAutoLabels {
+      35
+     }
+    }
+   }
+   SCR_ExtendedCharacterIdentityComponent "{5AEEA3C8B2AA118B}" {
+    m_eIdentityType CHARACTER
+    m_ExtendedIdentity SCR_ExtendedCharacterIdentity "{5AEEA3C8BF06C593}" {
+    }
+   }
+   SCR_PreviewEntityComponent "{55EE4A2A78856F12}" {
+    m_PreviewPrefab "{7B2420C8BC72373A}Prefabs/Characters/Core/Character_Base_Preview.et"
+   }
+   SCR_VoNComponent "{520EA1D2F659C856}" {
+    "Speaking Range" 50
+    Filename "{B4C3941EC8B2AD20}Sounds/VON/von.acp"
+   }
+   TagComponent "{5864D980062191CA}" {
+    "Tag categories" 1
+    IsDynamic 1
+   }
+   BaseFlattenGrassComponent "{520EA1D2F659CE26}" {
+    ParametersCollection {
+     FlattenGrassParametersObject "{520EA1D2F659CE2C}" {
+      SideX 0.6
+      ShapeOfGrassFlattening "Ellipse"
+     }
+     FlattenGrassParametersObject "{520EA1D2F659CE28}" {
+      SideX 0.9
+      SideZ 0.7
+      CenterLerp 0.5
+      TimeDown 0.75
+      MaxHeight 1
+      ShapeOfGrassFlattening "Ellipse"
+     }
+     FlattenGrassParametersObject "{520EA1D2F659CE27}" {
+      SideX 2
+      SideZ 0.8
+      Offset 0
+      CenterLerp 0.5
+      TimeDown 0.75
+      MaxHeight 1
+      ShapeOfGrassFlattening "Ellipse"
+     }
+    }
+   }
+   SCR_CharacterPerceivableComponent "{566CCE2397E28600}" {
+    "Additional aim points" {
+     AimPoint "{54D0A72DBE3FF822}" {
+      AimPointPosition PointInfo "{520EA1D2F659C809}" {
+       PivotID "Spine5"
+       Offset 0 0.2 0
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.5
+     }
+     AimPoint "{54D0A72DBE3FF84A}" {
+      AimPointPosition PointInfo "{520EA1D2F659C809}" {
+       PivotID "Head"
+       Offset 0 0.12 0
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.25
+      AimPointType Weak
+     }
+     AimPoint "{5A1EF5F9AB26B70A}" {
+      AimPointPosition PointInfo "{5A1EF5F9A71AA60E}" {
+       PivotID "Hips"
+      }
+      AimpointChecked 1
+      VsibilityChecked 1
+      Dimension 0.4
+      AimPointType Incapacitate
+     }
+    }
+    IlluminationLvPerLight 4
+    UnitType Infantry
+    VisualFactorStance_Prone 0.2
+    VisualFactorStance_Crouch 0.4
+    SoundPowerMaxDb 42
+   }
+   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+    isThrowable 1
+    WeaponType None
+    AttachType InventoryStorageSlot "{416B67397BB4F7EE}" {
+     PivotID "LeftArmVolume"
+     Enabled 0
+    }
+    WeaponSlotType "grenade"
+    WeaponSlotIndex 3
+   }
+   CharacterGrenadeSlotComponent "{5A6CDA0CCF43068E}" {
+    isThrowable 1
+    WeaponType None
+    AttachType InventoryStorageSlot throwable {
+     PivotID "LeftArmVolume"
+     Enabled 0
+    }
+    WeaponSlotType "throwable"
+    WeaponSlotIndex 4
+   }
+   CharacterHandWeaponSlotComponent "{5C9CA35B6F6B604C}" {
+    AttachType InventoryStorageSlot a {
+     Enabled 0
+    }
+    WeaponSlotType "primary"
+    WeaponSlotIndex 3
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+    WeaponType None
+    AttachType InventoryStorageSlot "{0C3DA650B52E120B}" {
+     PivotID "RightShoulderBlade"
+     Offset 0.05 -0.3 0.05
+     Angles 90 90 90
+     Enabled 0
+    }
+    WeaponSlotType "primary"
+    HolsteredIndex 1
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+    WeaponType None
+    AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+     PivotID "LeftShoulderBlade"
+     Offset 0.03 -0.3 -0.05
+     Angles 90 -90 90
+     Enabled 0
+    }
+    WeaponSlotType "primary"
+    WeaponSlotIndex 1
+   }
+   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+    WeaponType None
+    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+     PivotID "leftshoulderblade"
+     Offset 0.1 -0.2 -0.1
+     Angles 90 -90 90
+     Enabled 0
+    }
+    WeaponSlotType "secondary"
+    WeaponSlotIndex 2
+    HolsteredHidden 1
+   }
+   RHS_ThermalSlotManagerComponent "{60D6F4C7C990A7BB}" {
+    Slots {
+     EntitySlotInfo Body {
+      Prefab "{88BA5F3224A6C834}Prefabs/Characters/Thermal/CharacterBasebody_Thermal.et"
+      DisablePhysicsInteraction 1
+      InheritParentSkeleton 1
+     }
+    }
+   }
+   SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+    Identity Identity "{5584CBC6363C648B}" {
+     VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+      Head "{24644218743CDFBD}Prefabs/Characters/Heads/Head_White_09.et"
+      Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+      BodyMeshesConfig MeshConfig "{56E6D9455DF31562}" : "{C7798D607F176107}Configs/Identities/BaseBodyMeshConfig.conf" {
+      }
+     }
+     SoundIdentity SoundIdentity "{56E6D945D8F79290}" {
+      VoiceID 100
+     }
+    }
+   }
+   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+    Slots {
+     LoadoutSlotInfo Hat {
+      AreaType LoadoutHeadCoverArea "{5A68E3333F00B23A}" {
+      }
+     }
+     LoadoutSlotInfo Jacket {
+      AreaType LoadoutJacketArea "{5A68E333332C7F22}" {
+      }
+      MeshesToHide +{
+      }
+     }
+     LoadoutSlotInfo ArmoredVest {
+      DisablePhysicsInteraction 0
+      InheritParentSkeleton 1
+      AreaType LoadoutArmoredVestSlotArea "{5D60D81D741B88ED}" {
+      }
+     }
+     LoadoutSlotInfo Pants {
+      AreaType LoadoutPantsArea "{5A68E33331D80EED}" {
+      }
+      MeshesToHide +{
+      }
+     }
+     LoadoutSlotInfo Boots {
+      AreaType LoadoutBootsArea "{5A68E333351BE638}" {
+      }
+     }
+     LoadoutSlotInfo Back {
+      PivotID "scene_root"
+      AreaType LoadoutBackpackArea "{5A68E3332875E6B7}" {
+      }
+     }
+     LoadoutSlotInfo Vest {
+      AreaType LoadoutVestArea "{5A68E3332ED8203F}" {
+      }
+     }
+     LoadoutSlotInfo HandWear {
+      AreaType LoadoutHandwearSlotArea "{5E38A40DE3C30495}" {
+      }
+     }
+    }
+   }
+   ActionsManagerComponent "{520EA1D2F659CE02}" {
+    ActionContexts {
+     UserActionContext "{520EA1D2F659CE17}" {
+      ContextName "default"
+      Position PointInfo "{520EA1D2F659CE14}" {
+       PivotID "spine3"
+      }
+      Radius 0.4
+     }
+     UserActionContext "{5A26F8E7B44B5FB6}" {
+      ContextName "Head"
+      Position PointInfo "{5A26F8E7C6902D3E}" {
+       PivotID "Head"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E7D24ECC4F}" {
+      ContextName "Chest"
+      Position PointInfo "{5A26F8E7EF55078D}" {
+       PivotID "Spine5"
+       Offset 0 0.2 0
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E3CB279E0C}" {
+      ContextName "LeftLeg"
+      Position PointInfo "{5A26F8E3D249D2D4}" {
+       PivotID "LeftKnee"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E3C4CFD585}" {
+      ContextName "RightLeg"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "RightKnee"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E368562032}" {
+      ContextName "LowerTorso"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "Spine4"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E352327705}" {
+      ContextName "LeftArm"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "LeftForeArmTwist"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+     UserActionContext "{5A26F8E3537DEC6C}" {
+      ContextName "RightArm"
+      Position PointInfo "{5A26F8E3EBC6A345}" {
+       PivotID "RightForeArmTwist"
+      }
+      Radius 0.35
+      LineOfSightCheck 1
+     }
+    }
+    additionalActions {
+     SCR_BandageUserAction "{520EA1D2F659CE03}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{520EA1D2F659CE00}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup HEAD
+      m_eConsumableType BANDAGE
+     }
+     SCR_BandageUserAction "{5A26F8E67741AC1E}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup UPPERTORSO
+      m_eConsumableType BANDAGE
+     }
+     SCR_BandageUserAction "{5A26F8E460F2D5F7}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LEFTLEG
+      m_eConsumableType BANDAGE
+     }
+     SCR_BandageUserAction "{5A26F8E47D6EE240}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup RIGHTLEG
+      m_eConsumableType BANDAGE
+     }
+     SCR_LootDeadBodyAction "{529A9D939CD27B4C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{529A9D9399F23C21}" {
+       Name "#AR-UserAction_Loot"
+      }
+      CanAggregate 1
+      "Sort Priority" 999
+     }
+     SCR_BandageUserAction "{5A26F8E203EF1E0C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LEFTARM
+      m_eConsumableType BANDAGE
+     }
+     SCR_BandageUserAction "{5A26F8E21E230D0D}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup RIGHTARM
+      m_eConsumableType BANDAGE
+     }
+     SCR_BandageUserAction "{5A26F8E218841208}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A26F8E5870EFCC8}" {
+       Name "#AR-BandageAction"
+      }
+      m_eHitZoneGroup LOWERTORSO
+      m_eConsumableType BANDAGE
+     }
+     SCR_MorphineUserAction "{5A5CCAE2AF3D6445}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A5CCAE2BF554957}" {
+       Name "#AR-MorphineInjectionAction"
+      }
+      m_eConsumableType MORPHINE
+     }
+     SCR_SalineBagUserAction "{5A5CCAE248697020}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5A5CCAE25BF08D86}" {
+       Name "#AR-SalineBagAction"
+      }
+      m_eConsumableType SALINE
+     }
+     SCR_TourniquetUserAction "{5C68A05F8836889D}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5C68A05F9AB47F24}" {
+       Name "#AR-TourniquetAction"
+      }
+      m_eHitZoneGroup RIGHTLEG
+      m_eConsumableType TOURNIQUET
+     }
+     SCR_TourniquetUserAction "{5C68FB4586880C5E}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5C68FB4597F6E228}" {
+       Name "#AR-TourniquetAction"
+      }
+      m_eHitZoneGroup LEFTLEG
+      m_eConsumableType TOURNIQUET
+     }
+     SCR_TourniquetUserAction "{5C68FB458180EF70}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5C68FB45A6769C40}" {
+       Name "#AR-TourniquetAction"
+      }
+      m_eHitZoneGroup RIGHTARM
+      m_eConsumableType TOURNIQUET
+     }
+     SCR_TourniquetUserAction "{5C68FB459CB30804}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5C68FB45BC7B6A22}" {
+       Name "#AR-TourniquetAction"
+      }
+      m_eHitZoneGroup LEFTARM
+      m_eConsumableType TOURNIQUET
+     }
+     SCR_InspectCasualtyUserAction "{5D8CD8E6AA772324}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5D8CD8E6B5E1FE92}" {
+       Name "#AR-UserAction_InspectCasualty"
+      }
+      VisibilityRange 2
+      Duration 1
+      CanAggregate 1
+      "Sort Priority" 10
+     }
+     SCR_HealSupportStationAction "{5E14966CF282A3BA}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966C0D73CD5C}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753DC70B41D}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup HEAD
+     }
+     SCR_HealSupportStationAction "{5E14966CF597F6B3}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966C2BD9BCF7}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      "Sort Priority" 100
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753BFBC8180}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup UPPERTORSO
+     }
+     SCR_HealSupportStationAction "{5E14966C08522B0C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966FBECEC4CE}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753B36748F4}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup LEFTLEG
+     }
+     SCR_HealSupportStationAction "{5E14966FAD3FC9A6}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966F3A5303BB}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753B6A34DD3}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup RIGHTLEG
+     }
+     SCR_HealSupportStationAction "{5E14966FAFF46C89}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966F315076CC}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753CA671F34}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup LEFTARM
+     }
+     SCR_HealSupportStationAction "{5E14966FA1ED9E23}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966F3441FED6}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753CD1E45F3}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup RIGHTARM
+     }
+     SCR_HealSupportStationAction "{5E14966FA41B012C}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E14966F4F500868}" {
+       Name "#AR-SupportStation_Heal_ActionName"
+      }
+      Duration -3
+      PerformPerFrame 1
+      m_iGadgetAnimationCommand 2
+      m_DamageIntensityHolder SCR_DamageIntensityHolder "{5E20C753CF985B88}" : "{C9F04678B440BC1E}Configs/HitZones/CharacterDamageIntensityInfo.conf" {
+      }
+      m_eHitZoneGroup LOWERTORSO
+     }
+     SCR_ResupplyOtherSupportStationAction "{5E24ACE2ED47A29E}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E24ACE2E25F92E5}" {
+       Name "#AR-SupportStation_Resupply_HeldWeaponAmmo_Give_ActionName"
+      }
+      Duration -1.55
+      PerformPerFrame 1
+      "Sort Priority" -10
+      m_iGadgetAnimationCommand 1
+      m_ResupplyData SCR_ResupplyHeldWeaponSupportStationData "{5E24AE21B0C56058}" {
+       m_aMuzzleTypes +{
+       }
+       m_bCheckFaction 1
+      }
+      m_iMaxResupplyCount 10
+      m_eNotificationOnUse SUPPORTSTATION_RESUPPLIED_BY_OTHER_AMMO
+     }
+     SCR_ResupplyOtherSupportStationAction "{5E24ACE21F4EA7CF}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E24ACE2E25F92E5}" {
+       Name "#AR-SupportStation_Resupply_HeldWeaponGrenadeLauncher_Give_ActionName"
+      }
+      Duration -1.55
+      PerformPerFrame 1
+      "Sort Priority" -8
+      m_iGadgetAnimationCommand 1
+      m_ResupplyData SCR_ResupplyHeldWeaponSupportStationData "{5E24AE21CFE80E7F}" {
+       m_aMuzzleTypes +{
+       }
+       m_bCheckFaction 1
+      }
+      m_iMaxResupplyCount 15
+      m_eNotificationOnUse SUPPORTSTATION_RESUPPLIED_BY_OTHER_UGL
+     }
+     SCR_ResupplyOtherSupportStationAction "{5E24ACE21075F863}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E24ACE2E25F92E5}" {
+       Name "#AR-SupportStation_Resupply_Grenade_Give_ActionName"
+      }
+      Duration -1.55
+      PerformPerFrame 1
+      "Sort Priority" -6
+      m_iGadgetAnimationCommand 1
+      m_ResupplyData SCR_ResupplyCatalogItemSupportStationData "{5E24AE21D6FAEB38}" {
+       m_eResupplyType GRENADE
+      }
+      m_iMaxResupplyCount 5
+      m_eNotificationOnUse SUPPORTSTATION_RESUPPLIED_BY_OTHER_GRENADE
+     }
+     SCR_ResupplyOtherSupportStationAction "{5E24ACE211BE0BC8}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E24ACE2E25F92E5}" {
+       Name "#AR-SupportStation_Resupply_Bandage_Give_ActionName"
+      }
+      Duration -1.55
+      PerformPerFrame 1
+      "Sort Priority" 110
+      m_iGadgetAnimationCommand 1
+      m_ResupplyData SCR_ResupplyCatalogItemSupportStationData "{5E24AE21E4948DCB}" {
+       m_eResupplyType BANDAGE
+      }
+      m_eSupportStationType RESUPPLY_MEDICAL
+      m_iMaxResupplyCount 4
+      m_eNotificationOnUse SUPPORTSTATION_RESUPPLIED_BY_OTHER_BANDAGE
+     }
+     SCR_ResupplyOtherSupportStationAction "{5E24ACE213258F65}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E24ACE2E25F92E5}" {
+       Name "#AR-SupportStation_Resupply_Morphine_Give_ActionName"
+      }
+      Duration -1.55
+      PerformPerFrame 1
+      "Sort Priority" 111
+      m_iGadgetAnimationCommand 1
+      m_ResupplyData SCR_ResupplyCatalogItemSupportStationData "{5E24AE21F31A8289}" {
+       m_eResupplyType MORPHINE
+      }
+      m_eSupportStationType RESUPPLY_MEDICAL
+      m_iMaxResupplyCount 2
+      m_eNotificationOnUse SUPPORTSTATION_RESUPPLIED_BY_OTHER_MORPHINE
+      m_bPlayerOnly 1
+     }
+     SCR_LoadCasualtySupportStationUserAction "{5E4AB1E0975F4DCD}" {
+      ParentContextList +{
+      }
+      UIInfo UIInfo "{5E4AB1E0AF696747}" {
+       Name "#AR-UserAction_LoadCasualtyInAmbulance"
+      }
+      Duration 2
+      "Sort Priority" 100
+      m_eShownInVehicleState NOT_IN_VEHICLE
+      m_bSameVehicleOnly 0
+      m_sInvalidRangeActionReason "#AR-UserAction_LoadCasualty_NoneInRange"
+      m_bShowSupplyCostOnAction 0
+      m_bDoesGadgetAnimationLoop 0
+     }
+    }
+    AllowCrossHierarchy 1
+   }
+   SCR_CharacterAnimationComponent "{520EA1D2F659C994}" {
+    components {
+     SCR_CharacterCommandHandlerComponent "{520EA1D2F659C99A}" {
+      "Static Layer" 2
+      "Vehicles Layers" 50331648
+      "Ladders Layers" 65536
+      LadderDetectMaxDist 1.7
+      "Body Offset Reference Point" PointInfo "{520EA1D2F659C86E}" {
+       PivotID "RightShoulder"
+       Offset 0 -0.144 -0.04
+      }
+      ObstructionLayers 32
+      MoveSettings ScriptCharacterCommandMoveSettings "{520EA1D2F659C99B}" {
+       MovementFilterMaxChange 16
+       SlopeSlowdownCurve +{
+       }
+       SlopeSpeedupCurve +{
+       }
+       SlopeStaminaPenaltyCurve +{
+       }
+       SlopeStaminaBonusCurve +{
+       }
+       MaxSprintAngle 0.8
+       OnTurnSpeedReducFactor 0.2
+       OnTurnNoReducAngle 1.57
+       BankingAngleCurve +{
+       }
+       AdjustedStanceChangeTime 0.025
+       AdjustedStanceChangeMaxSpeed 4
+       WeaponDeploymentAdjustedStanceChangeTime 0.373
+       AdjustedStanceTraceLength 1
+       AdjustedStanceUpperThreshold 1.4
+       AdjustedStanceLowerThreshold 0.7
+       DetectLadders 0
+       MaxEnterLadderAngle 55
+       MaxLadderTangentAngle 110
+       m_fSpeed_Crouch_Fast_Forward 4
+       m_fSpeed_Crouch_Fast_Strafe 3.5
+       m_fSpeed_Prone_Normal_Forward 0.9
+       m_fSpeed_Prone_Normal_Strafe 0.9
+       m_fSpeed_Prone_Fast_Forward 1.1
+       m_fSpeed_Prone_Fast_Strafe 1
+       SlopeLocomotion 1
+       InnertiaCurve +{
+       }
+       HeadingAdjustmentSpeedReduction +{
+       }
+       OverrideIdleTurnsLimitsInProne 1
+       ProneInitiateTurnMinimalAngleThreshold 40
+       ProneInitiateTurnNonIdleAngleThreshold 45
+       ProneMaxAllowedTurnsAngleOffset 45
+       ClimbingAnimationsThresholds +{
+       }
+      }
+     }
+    }
+    AnimGraph "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+    AnimInstance "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+    StartNode "MasterControl"
+    "Collision bone" "collision"
+    DefaultShapeLayer 524288
+    FreshwaterLayer 4194304
+    LayerPreset "Character"
+    IkPoseBonesBlend +{
+    }
+    UnarmedIkPose "{A1A073C1B48F9AEC}anims/anm/player/death/unarmed/p_hands_death.anm"
+    ColliderStand PhysAgentCollisionShapeItem "{5570AA65EEDB5E11}" {
+     Shape Capsule
+     Size 0.75 1.8 0
+     Offset 0.05 0 0.05
+     StepHeight 0.55
+    }
+    ColliderCrouch PhysAgentCollisionShapeItem "{5570AA654A3EFCC7}" {
+     Shape Capsule
+     Size 0.75 1.4 0
+     Offset 0.175 0 0.175
+     DynamicOffset 0 0 0.25
+     StepHeight 0.4
+    }
+    ColliderProne PhysAgentCollisionShapeItem "{5570AA6572F30FD1}" {
+     Size 0.6 0.4 1.8
+     StepHeight 0.25
+    }
+    ColliderJump PhysAgentCollisionShapeItem "{5584FB07EE429335}" {
+     Shape Capsule
+     Size 0.9 1.8 0
+     Offset 0.05 0 0.15
+     DynamicOffset 0 0 0.35
+     StepHeight 0.65
+    }
+    ColliderSwim PhysAgentCollisionShapeItem "{5570AA64C9BCF4F0}" {
+     Shape Box
+     Size 0.75 1.7 0.75
+     Offset 0 0.1 0
+     StepHeight 1
+    }
+    ColliderLadder PhysAgentCollisionShapeItem "{5570AA64E5170D06}" {
+     Shape Capsule
+     Size 0.4 2 0.4
+     StepHeight 1
+    }
+    ColliderVehicle PhysAgentCollisionShapeItem "{5570AA64926A7260}" {
+     Size 0.4 0.85 0.4
+     StepHeight 0.25
+    }
+    ColliderWeaponDeploymentStand PhysAgentCollisionShapeItem "{5D070C07B67EA8D7}" {
+     Shape Capsule
+     Size 0.75 1.8 0
+     Offset 0.05 0 0.05
+     StepHeight 0.55
+    }
+    ColliderWeaponDeploymentCrouch PhysAgentCollisionShapeItem "{5D070C07B5FB7AFA}" {
+     Shape Capsule
+     Size 0.75 1.4 0
+     Offset 0.05 0 0.05
+     StepHeight 0.4
+    }
+    ColliderWeaponDeploymentProne PhysAgentCollisionShapeItem "{5D070C07BB3E75CF}" {
+     Shape Box
+     Size 0.6 0.4 1.8
+     StepHeight 0.25
+    }
+    RagdollLayer 1024
+    Definition "{55BA23D026D8F0F8}Prefabs/Characters/character.ragdoll"
+    RagdollHipsMaxSpeed 15
+    SpecialHandlingLayer 536870912
+   }
+   SCR_CharacterCameraHandlerComponent "{520EA1D2F659C98D}" {
+    "Camera entity prefab" "{2DF95AB3CCDF4FA5}Prefabs/Characters/Core/DefaultPlayerCamera.et"
+    "CameraSet name" "CharacterCameraSet"
+   }
+   RplComponent "{5238B6A9F3442EE7}" {
+    "Rpl State Override" Runtime
+    "Parent Node From Parent Entity" 0
+   }
+  }
+  coords 1382.172 36.094 2395.589
+ }
+ Character_Base_6538F053B38E86E8 {
+  coords 1158.537 38 2825.705
+ }
+ Character_Base_653D38070D1D0EB2 {
+  coords 1552.043 32.261 2162.077
+ }
+}
+$grp GenericEntity : "{39255AA37FC5A4B6}Prefabs/Weapons/Rifles/M40A1/BC_Rifle_M40a1.et" {
+ BC_Rifle_M40a1_658B3392DF81ABAF {
+  coords 3079.889 20.072 2640.641
+ }
+ BC_Rifle_M40a1_658B51A454F92186 {
+  components {
+   MeshObject "{CFBAA4B701F95D69}" {
+    Materials {
+     MaterialAssignClass "{658B51A6EA4E61BD}" {
+      SourceMaterial "m40a1"
+      AssignedMaterial "{5041BBB1EEB8867B}Assets/Weapons/Rifles/Data/m40a1.emat"
+     }
+    }
+   }
+  }
+  coords 2491.894 147.483 2280.734
+ }
+}
+GameEntity Flashlight_MX991_654F1AAE5929C6C6 : "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et" {
+ coords 3072.885 11.75 2873.06
+}
+GenericEntity : "{3AA5827C4692B8C2}Assets/Garbage/Prefabs/Garbage_pile_Black_01.et" {
+ coords 1284.5 39 2124.587
+}
+GenericEntity : "{3DF27B108A964E1A}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Huge.et" {
+ coords 1321.059 37.154 2351.123
+}
+GenericEntity "Golden Pitcher_655D0CC9E848EE6D" : "{3EF500E391A7A70F}Prefabs/Valuables/Golden Pitcher/Golden Pitcher.et" {
+ coords 1328.866 40.003 2126.355
+ angleY 0
+}
+GenericEntity WaterCanteenUS_6528B2805CB0C855 : "{4000304122B0C624}Prefabs/WaterCanteenUS.et" {
+ components {
+  EPF_PersistenceComponent "{6526C36F316A492C}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6526C36F316A4951}" {
+    m_aComponents {
+     EPF_FluidContainerManagerComponentSaveDataClass "{6548D618C404A7A8}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{6526C36F316A4F5D}" {
+   Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6526C36F316A488F}" {
+     Name "Canteen"
+     Description "Canteen That can hold water"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{6526C36F316A48BA}" {
+       Name "You can drink this if it has water"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+       m_bHideInArsenal 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+     Weight 0.02
+     SizeSetupStrategy Manual
+     ItemDimensions 5 5 5
+     ItemVolume 10
+     DimensionScaler 0.01
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{6526C36F316A481B}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{6526C36F316A4844}" {
+       AnimGraph "{1553A4F82FEE9FF6}Assets/Items/Food/Workspaces/Drink.agr"
+       AnimInstance "{316B937615C156BE}Assets/Items/Food/Workspaces/Drink_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation 90 20 0
+     HandAdditiveTranslation 0.06 0 0.13
+    }
+    CustomAttributes {
+     SCR_AlternativeModel "{6526C36F316A4FE6}" {
+     }
+     SCR_ItemOfInterestAttribute "{6526C36F316A4FFC}" {
+     }
+     ItemActionAnimAttributes "{6526C36F316A4FF7}" {
+     }
+     CharacterModifierAttributes "{6526C36F316A4FCA}" {
+     }
+     PreviewRenderAttributes "{6526C36F316A4F96}" {
+      CameraDistanceToItem 0.4
+      FOV 30
+      AspectRatio 1
+     }
+     SCR_SelectionMenuPreviewAttributes "{6526C36F316A4F6E}" {
+     }
+    }
+    CommonItemType "FOOD"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6526C36F316A4EFB}" {
+   Object "{96CDF4C0166F696E}Assets/Items/Equipment/Canteens/Canteen_US/Canteen_US_01.xob"
+  }
+  SCR_ConsumableItemComponent "{6526C36F316A4E96}" {
+   m_ConsumableEffect SCR_ConsumableFood "{6526C36F316A4EBD}" {
+   }
+  }
+  SCR_SoundDataComponent "{6526C36F316A4E49}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7C}" {
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E7A}" {
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E71}" {
+    }
+    SCR_AudioSourceConfiguration "{6526C36F316A4E48}" {
+    }
+   }
+  }
+  ActionsManagerComponent "{6526C36F316A4E01}" {
+   ActionContexts {
+    UserActionContext "{6526C36F316A4E21}" {
+     Position PointInfo "{6526C36F316A4E27}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6526C36F316A4E00}" {
+     UIInfo UIInfo "{6526C36F316A4E04}" {
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{6526C36F316A4DFC}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{6526C36F316A4DE9}" {
+    }
+    GamepadTriggerEffect "{6526C36F316A4DE3}" {
+    }
+   }
+  }
+  RplComponent "{6526C36F316A4DF2}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1559.198 32.937 2164.32
+}
+GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
+ coords 1318.95 39 2108.178
+ angleY -38.289
+ {
+  GenericEntity {
+   ID "6546A03D1CA73704"
+   coords 1.266 -0.202 1.182
+   angleY 0
+   angleZ -81.571
+  }
+  ParticleEffectEntity {
+   ID "6546A03D2E56DD10"
+   coords -1.326 -0.217 1.558
+  }
+ }
+}
+GenericEntity : "{42A60591986EF418}Prefabs/Structures/BuildingParts/Doors/Door_AircraftShelter_E_01/Door_AircraftShelter_E_01_Side_Left_EXT_COV_B.et" {
+ components {
+  SoundComponent "{6558DD967D2F171A}" {
+   Filenames {
+    "{4D8EF6E5A0F5E52A}Sounds/Structures/Millitary/Sirens/Structures_Siren_Datz.acp"
+   }
+  }
+  KeyDoorComponent "{6558ABB72631F9A3}" {
+   Code 123
+   OpenTime 1
+  }
+ }
+ coords 3170.87 11.101 2812.893
+ angleY -130.052
+}
+SCR_DestructibleEntity : "{42B94F7F26F50200}Prefabs/Structures/Signs/Traffic/VergePost/StoneVergePost_01.et" {
+ coords 1278.438 39.021 2124.038
+ angleX -5.406
+ angleY 146.174
+ angleZ -1.654
+}
+GenericEntity Mine_M15AT_655B3A6F1021B9B0 : "{49FFE8F373F55960}Prefabs/Weapons/Explosives/Mine_M15AT/Mine_M15AT.et" {
+ components {
+  SoundComponent "{5A6B57364EA203C7}" {
+   Enabled 0
+  }
+  BaseTriggerComponent "{59E4E69D8E9B4323}" {
+   Enabled 0
+  }
+  SCR_MineDamageManager "{5A187C4DB2CF86F2}" {
+   Enabled 0
+  }
+  SCR_MineInventoryItemComponent "{59E4E694B93DC656}" {
+   Enabled 0
+  }
+  SCR_PlaceableItemComponent "{5A127CDA1D1B58E6}" {
+   Enabled 0
+  }
+  SCR_PressureTriggerComponent "{59E6BE151DCC9953}" {
+   Enabled 0
+  }
+  SCR_MineAnimationComponent "{5A20C367C4B111CC}" {
+   Enabled 0
+  }
+ }
+ coords 2913.688 41.339 2724.149
+}
+SCR_ChimeraAIAgent : "{4F2D861E537067F8}622120A5448725E3/AI/BaconZ_SCR_ChimeraAIAgentFull.et" {
+ coords 1884.473 55.512 3232.887
+}
+GenericEntity Bucket_654EABBFBFBF3925 : "{519A81A0F1F407E3}Prefabs/Bucket.et" {
+ coords 3067.031 11.765 2880.012
+}
+GenericEntity Mushroom_65336C8181C233C1 : "{51AF8E30E304375E}Prefabs/Mushroom.et" {
+ coords 1558.561 32.888 2164.931
+}
+GameEntity Shirt_CottonShirt_01_base_6528E4E55CD38C87 : "{53AE7F8CBF654D12}Prefabs/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_base.et" {
+ components {
+  EPF_PersistenceComponent "{5A28749C2A2B4AD2}" {
+   m_bStorageRoot 0
+  }
+  MeshObject "{5104869D194C6262}" {
+   Object "{F580E58C97E7D683}Assets/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_item.xob"
+  }
+  ParametricMaterialInstanceComponent "{56C6C01F261424B9}" {
+   UserParamTwo 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  RigidBody "{5104869D194C6267}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_ItemOutfitFactionComponent "{6196E41EC3002E97}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D966288916EF}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D9662809A81E}" {
+      m_AffiliatedFactionKey "CIV"
+      m_iOutfitFactionValue 40
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{5B18D20B7AC00DA6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   components {
+    SCR_EquipmentStorageComponent "{5B04937F3AF19F19}" {
+     Priority 1
+     StoragePurpose 64
+     UseVirtualInventoryReplication 0
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot FlashlightSlot {
+       PivotID "Spine5"
+       Offset -0.1 0 0.125
+       Enabled 0
+       Prefab "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et"
+       AllowedItemTypes +{
+       }
+       AnimatedMeshRefference "{28D4E62696B7C749}Assets/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_tucked.xob"
+      }
+     }
+    }
+   }
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "#AR-Shirt_Name"
+     Description "#AR-Shirt_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.5
+     SizeSetupStrategy Manual
+     ItemDimensions 15 15 15
+     ItemVolume 2000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 4.5
+      FOV 10
+      PreviewWornModel 1
+     }
+    }
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+   Priority 2
+   UseCapacityCoefficient 0
+   CapacityCoefficient 1
+   MaxCumulativeVolume 200
+   MaxItemSize 10 10 10
+   m_fMaxWeight 5
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   AreaType LoadoutJacketArea "{5D83003BD2F73AEE}" {
+   }
+   Slots {
+    LoadoutSlotInfo DummyBelt {
+    }
+   }
+   WornModel "{28D4E62696B7C749}Assets/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_tucked.xob"
+   WornMaterialsOverride +{
+   }
+   ItemModel "{F580E58C97E7D683}Assets/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_item.xob"
+   ItemMaterialsOverride +{
+   }
+   SoundInt 320
+   OverrideMeshesToHide +{
+   }
+   DeflatedModel "{8A8FCD73BB497B19}Assets/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_tucked_deflated.xob"
+  }
+  ActionsManagerComponent "{5104869D194C6245}" {
+   ActionContexts {
+    UserActionContext "{5104869D194C624D}" {
+     Position PointInfo "{5104869D194C6273}" {
+      Offset 0 0.05 0
+     }
+    }
+   }
+  }
+  RplComponent "{51F894A9E3AAC8BC}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1556.827 32.774 2163.75
+}
+GenericEntity BC_Magazine_762x51_M40a1_6588B4DA0EE111FB : "{541E6C7E6AF67A89}Prefabs/Weapons/Magazines/BC_Magazine_762x51_M40a1.et" {
+ coords 2042.035 45.018 2719.044
+}
+$grp DatZLootOverride : "{5497081B1F04961F}Prefabs/Overrides/MilitaryLootOverride.et" {
+ {
+  coords 1382.999 36.306 2374.204
+ }
+ {
+  coords 1304.733 38 2932.901
+ }
+ {
+  coords 1079.279 37.85 2896.446
+ }
+ {
+  coords 1678.041 38.465 3003.689
+ }
+ {
+  coords 1364.886 39 2220.898
+ }
+ {
+  coords 1382.112 9.657 1861.524
+ }
+ {
+  coords 2506.612 148.152 2272.761
+ }
+ {
+  coords 2619.656 102.38 2557.304
+ }
+}
+GameEntity Bayonet_M9_653A99E1B1C1EC59 : "{558117556F3880A8}Prefabs/Weapons/Attachments/Bayonets/Bayonet_M9.et" {
+ components {
+  EPF_PersistenceComponent "{5A28749FA22EC9AC}" {
+   m_pSaveData EPF_ItemSaveDataClass "{5A28749FA0C6FB38}" {
+   }
+  }
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{60A8948019D3F7B6}" {
+    ItemDisplayName UIInfo "{60A8948019D3F7B0}" {
+     Name "#AR-Weapon_M9Bayonet_Name"
+     Description "#AR-Weapon_M9Bayonet_Description"
+    }
+    CustomAttributes {
+     AttachmentAttributes "{61967DD3121C95A3}" {
+      AttachmentType AttachmentBayonetM9 "{61967DE89A1EAA98}" {
+      }
+     }
+     SCR_WeaponAttachmentBayonetAttributes "{61967DD811A4DEE5}" {
+      AttachmentType AttachmentBayonetM9 "{61967DE895246CF5}" {
+      }
+     }
+     PreviewRenderAttributes "{60A8948019D3F7BE}" {
+      CameraPreset Right
+      ItemRenderRotation 0 0 45
+     }
+     SCR_WeaponAttachmentObstructionAttributes "{61B08C8F8182650A}" {
+      AttachmentType AttachmentBayonetM9 "{61B08C8F8889D9AD}" {
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{60A894809670984D}" {
+   Object "{CB4B410E5D99D4CF}Assets/Weapons/Attachments/Bayonets/Bayonet_M9/Bayonet_M9.xob"
+   InheritVisibility 1
+  }
+  ParametricMaterialInstanceComponent "{60EA7E61A4599BCB}" {
+   UserParamTwo 0
+  }
+  SCR_BayonetEffectComponent "{60EC975981FD9093}" {
+   m_aDefaultParticles +{
+   }
+   m_iEffectMagnitude 0
+  }
+  SCR_MeleeWeaponProperties "{653A99FF82C47523}" {
+  }
+  SCR_SoundDataComponent "{5B18D200265FA2CB}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{60AA62D0649DAE5E}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+     m_sSoundEventName "SOUND_UNEQUIP"
+     m_eFlags 0
+    }
+   }
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   ActionContexts {
+    UserActionContext "{5284E0EFF4E818E9}" {
+     UIInfo SCR_ActionContextUIInfo "{609EDE472834DE11}" {
+     }
+     ContextName "user"
+     Position PointInfo "{5284E0EFC526E6F0}" {
+     }
+     Radius 0.1
+    }
+    UserActionContext "{60ECB1E8B72F02DA}" {
+     Position PointInfo "{60ECB1E8B9487FF3}" {
+      Offset 0 0.002 -0.1291
+     }
+    }
+   }
+  }
+  RplComponent "{5284E0EF1E579B75}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+ }
+ coords 1558.881 32.977 2164.133
+}
+ParticleEffectEntity : "{5A03D037E64C3D2C}Prefabs/TorchFire.et" {
+ Flags 2
+ coords 3072.227 12.239 2874
+}
+$grp GenericEntity : "{5DBF2634506AF6B6}Prefabs/WaterBottelUS.et" {
+ WaterBottelUS_654700B53ABE6A56 {
+  coords 3068.814 11.698 2881.884
+  angleX -1.788
+  angleY -0.056
+  angleZ 1.791
+ }
+ WaterBottelUS_6582078B6164838E {
+  coords 3180.403 17.94 2835.889
+ }
+}
+$grp GenericEntity : "{5FA7CC77A33752A5}Prefabs/Stick.et" {
+ Stick_654B0CE2C7317732 {
+  coords 3070.228 11.756 2877.723
+  angleX -71.108
+ }
+ Stick_654B0CE2C7317D79 {
+  coords 3070.154 11.75 2877.334
+ }
+ Stick_654B0CE2C73181DA {
+  coords 3070.199 11.75 2877.537
+  angleY 33.881
+ }
+ Stick_654B0CE2C731841D {
+  coords 3070.306 11.75 2877.127
+  angleY -49.592
+ }
+ Stick_655B3A6EA9623423 {
+  components {
+   SignalsManagerComponent "{655B3A70898A90FD}" {
+   }
+   GadgetPlacerComponent "{655B27605B348775}" {
+   }
+   SCR_ItemPlacementComponent "{655B3A72562D6D6F}" {
+   }
+   SCR_PlaceableInventoryItemComponent "{654AA34A732162EE}" {
+    Attributes SCR_ItemAttributeCollection "{654AA34A73216210}" {
+     ItemAnimationAttributes ItemAnimationAttributes "{655B19015A82D2C0}" {
+      AnimationInstance ""
+      AnimationIKPose ""
+      AnimationAttachments {
+       AnimationAttachmentInfo "{654ED7766FACE30F}" {
+        AnimGraph "{82906ACD75DF8523}Assets/Items/Equipment/workspaces/Flashlight_MX991.agr"
+        AnimInstance "{903E4A0B96B34B8F}Assets/Items/Equipment/workspaces/MX991_player.asi"
+        BindingName "Gadget"
+       }
+      }
+      AllowInspection 1
+     }
+    }
+   }
+   WeaponComponent "{655B3A7081F46F43}" {
+   }
+  }
+  coords 2912.997 41.342 2724.054
+ }
+}
+GenericEntity Tomato_6582078B63E82C25 : "{700F5B2B56A3467C}Prefabs/Tomato.et" {
+ coords 3181.353 17.94 2836.788
+}
+$grp GenericEntity : "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" {
+ WaterCanteen_6526F01C4F92903F {
+  components {
+   EPF_PersistenceComponent "{6526C36F316A492C}" {
+    m_bStorageRoot 0
+    m_pSaveData EPF_ItemSaveDataClass "{6526C36F316A4951}" {
+     m_aComponents {
+      EPF_FluidContainerManagerComponentSaveDataClass "{6548D618C404A7A8}" {
+      }
+     }
+    }
+   }
+   InventoryItemComponent "{6526C36F316A4F5D}" {
+    Attributes SCR_ItemAttributeCollection "{6526C36F316A4F46}" {
+     ItemDisplayName SCR_InventoryUIInfo "{6526C36F316A488F}" {
+      Name "Canteen"
+      Description "Canteen That can hold water"
+      m_aItemHints {
+       SCR_InventoryItemHintUIInfo "{6526C36F316A48BA}" {
+        Name "You can drink this if it has water"
+        Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+        IconSetName "Medical-Arrow_UI kopie"
+        m_cColor 1 1 1 1
+        m_bHideInArsenal 1
+       }
+      }
+     }
+     ItemPhysAttributes ItemPhysicalAttributes "{6526C36F316A4894}" {
+      Weight 0.02
+      SizeSetupStrategy Manual
+      ItemDimensions 5 5 5
+      ItemVolume 10
+      DimensionScaler 0.01
+     }
+     ItemAnimationAttributes ItemAnimationAttributes "{6526C36F316A481B}" {
+      AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+      AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+      AnimationAttachments {
+       AnimationAttachmentInfo "{6526C36F316A4844}" {
+        AnimGraph "{1553A4F82FEE9FF6}Assets/Items/Food/Workspaces/Drink.agr"
+        AnimInstance "{316B937615C156BE}Assets/Items/Food/Workspaces/Drink_player.asi"
+        BindingName "Gadget"
+       }
+      }
+      HandAdditiveRotation 90 20 0
+      HandAdditiveTranslation 0.06 0 0.13
+     }
+     CustomAttributes {
+      SCR_AlternativeModel "{6526C36F316A4FE6}" {
+      }
+      SCR_ItemOfInterestAttribute "{6526C36F316A4FFC}" {
+      }
+      ItemActionAnimAttributes "{6526C36F316A4FF7}" {
+      }
+      CharacterModifierAttributes "{6526C36F316A4FCA}" {
+      }
+      PreviewRenderAttributes "{6526C36F316A4F96}" {
+       CameraDistanceToItem 0.4
+       FOV 30
+       AspectRatio 1
+      }
+      SCR_SelectionMenuPreviewAttributes "{6526C36F316A4F6E}" {
+      }
+     }
+     CommonItemType "FOOD"
+     m_Size SLOT_1x1
+     m_SlotType SLOT_ANY
+     m_bStackable 0
+    }
+   }
+   MeshObject "{6526C36F316A4EFB}" {
+    Object "{43C3228D56519502}Assets/Items/Equipment/Canteens/Canteen_Soviet/Canteen_Soviet_01.xob"
+   }
+   SCR_ConsumableItemComponent "{6526C36F316A4E96}" {
+    m_ConsumableEffect SCR_ConsumableFood "{6526C36F316A4EBD}" {
+    }
+   }
+   SCR_SoundDataComponent "{6526C36F316A4E49}" {
+    m_aAudioSourceConfiguration {
+     SCR_AudioSourceConfiguration "{6526C36F316A4E7C}" {
+     }
+     SCR_AudioSourceConfiguration "{6526C36F316A4E7A}" {
+     }
+     SCR_AudioSourceConfiguration "{6526C36F316A4E71}" {
+     }
+     SCR_AudioSourceConfiguration "{6526C36F316A4E48}" {
+     }
+    }
+   }
+   ActionsManagerComponent "{6526C36F316A4E01}" {
+    ActionContexts {
+     UserActionContext "{6526C36F316A4E21}" {
+      Position PointInfo "{6526C36F316A4E27}" {
+      }
+     }
+    }
+    additionalActions {
+     SCR_PickUpItemAction "{6526C36F316A4E00}" {
+      UIInfo UIInfo "{6526C36F316A4E04}" {
+      }
+     }
+    }
+   }
+   GadgetGamepadEffectsManagerComponent "{6526C36F316A4DFC}" {
+    OwnedEffects {
+     GamepadTriggerEffect "{6526C36F316A4DE9}" {
+     }
+     GamepadTriggerEffect "{6526C36F316A4DE3}" {
+     }
+    }
+   }
+   RplComponent "{6526C36F316A4DF2}" {
+    "Rpl State Override" None
+   }
+  }
+  coords 1558.989 32.921 2164.904
+ }
+ WaterCanteen_6582078B622EAAF4 {
+  coords 3182.083 17.94 2837.259
+ }
+}
+GenericEntity RawSteak_6582078B6F7656CD : "{73BE06A6EFD87247}Prefabs/RawSteak.et" {
+ coords 3181.355 17.94 2837.074
+}
+SCR_ChimeraCharacter Character_CIV_Businessman_Base_658EE7353C6E14C2 : "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et" {
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_IdentityItemStorageComponent "{62AD01171918DA85}" {
+     Enabled 0
+    }
+   }
+  }
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   EnableAI 1
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Materials {
+    MaterialAssignClass "{6595585488B97963}" {
+     SourceMaterial "Basebody_01_Male_Arms"
+     AssignedMaterial "{0466DD96755AFBB7}Common/Materials/Default_Transparent_Road.emat"
+    }
+    MaterialAssignClass "{6595585488B9794B}" {
+     SourceMaterial "Basebody_01_Male_Arms_wound"
+     AssignedMaterial "{0466DD96755AFBB7}Common/Materials/Default_Transparent_Road.emat"
+    }
+    MaterialAssignClass "{6595585488B97947}" {
+     SourceMaterial "Basebody_01_Male_Body"
+     AssignedMaterial "{0466DD96755AFBB7}Common/Materials/Default_Transparent_Road.emat"
+    }
+    MaterialAssignClass "{6595585488B97942}" {
+     SourceMaterial "Basebody_01_Male_Body_wound"
+     AssignedMaterial "{0466DD96755AFBB7}Common/Materials/Default_Transparent_Road.emat"
+    }
+   }
+   LODFactors {
+    1
+   }
+   CastShadow 0
+   CastFarShadow 0
+   PixelSizeFilter 0
+   RainOccluder 0
+   WetnessOccluder 0
+   ReceiveLight 0
+  }
+  SCR_ExtendedCharacterIdentityComponent "{5AEEA3C8B2AA118B}" {
+   Enabled 0
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Override 1
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+    }
+   }
+  }
+ }
+ coords 2494.788 147.561 2280.521
+ {
+  GenericEntity {
+   components {
+    MeshObject "{658EE735DF820D20}" {
+     Object "{0F00CA93A5373089}Assets/Chicken/Chicken.xob"
+    }
+    Hierarchy "{658EE7364B5AD48E}" {
+    }
+   }
+   coords 0 0.015 0
+  }
+ }
+}
+GenericEntity Beaf_65336C818FA96D41 : "{7B7F47BFB532CAFA}Prefabs/Beaf.et" {
+ coords 1558.527 32.885 2164.358
+}
+GenericEntity PlankGadget_6586B98EF590B809 : "{7BC29F5FE66C670F}Prefabs/PlankGadget.et" {
+ coords 2039.033 43.633 2679.023
+}
+$grp GenericEntity : "{7DA433D274B8C385}Prefabs/RawMeat.et" {
+ RawMeat_654C67B825C4FD42 {
+  coords 3072.515 11.694 2878.845
+  angleX -2.681
+  angleY -0.084
+  angleZ 1.792
+ }
+ RawMeat_654C67B825C4FD2 {
+  coords 3072.044 11.75 2877.881
+  angleY -103.273
+ }
+ RawMeat_654C67B825C4FD3 {
+  coords 3072.568 11.729 2878.063
+  angleX 3.19
+  angleY -137.924
+  angleZ 0.47
+ }
+}
+GameEntity : "{805CD927C758616B}Prefabs/Weapons/Attachments/BaconOptics/Optic_RMRM17_Green.et" {
+ coords 648.159 39.499 2681.052
+}
+GenericEntity MilitaryTentUnDeployed1_65336C814D5AD411 : "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et" {
+ components {
+  SoundComponent "{6528B28654791E7A}" {
+   Filenames +{
+   }
+   DistanceManagement 0
+  }
+  DatZReplaceDeployableEntityComponent "{6528E4E8D968CD9A}" {
+   m_sReplacementPrefab "{0EF189100B0AE183}Prefabs/TentTan.et"
+  }
+  EPF_PersistenceComponent "{652B5966E6230ADA}" {
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966E7F51BBE}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{6534AA7CF055C675}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{6528B28654791F2A}" {
+   Attributes SCR_ItemAttributeCollection "{6528B28654791F2E}" {
+    ItemDisplayName UIInfo "{6528B28654791FFC}" {
+     Name "#AR-Item_DeployableTent_Name"
+     Description "#AR-Item_DeployableTent_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B28654791FE4}" {
+     Weight 6
+     SizeSetupStrategy Volume
+     ItemDimensions 1 1 1
+     ItemVolume 0.60000002
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B28654791FC3}" {
+      CameraPreset Back
+      CameraOrbitAngles 25 -25 180
+      CameraDistanceToItem 5.5
+      FOV 10
+      PreviewModel "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+     }
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_BACKPACK
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6528B28654791E63}" {
+   Object "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+  }
+  RigidBody "{6528B28654791E56}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6528B28654791C71}" {
+   Enabled 0
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B28654791C7C}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C7F}" {
+     m_sSoundProject "{4AB5F7FA7BB2CCBF}Sounds/Items/_SharedData/PickUp/Items_PickUp_RespawnKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{6528B28654791C76}" {
+     m_sSoundProject "{77EF656D5DAC6FD5}Sounds/Items/_SharedData/Drop/Items_Drop_RespawnKit.acp"
+    }
+   }
+  }
+  ActionsManagerComponent "{6528B28654791DD4}" {
+   ActionContexts {
+    UserActionContext "{6528B28654791C48}" {
+     ContextName "default"
+     Position PointInfo "{6528B28654791C4E}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4ECDE2EC301}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528E4ECC386F274}" {
+      Name "Deploy"
+      Description "Deploy"
+     }
+     ActionTitle "Deploy"
+     Duration 2
+    }
+    SCR_PickUpItemAction "{6528E4E9FDBEA929}" {
+     UIInfo UIInfo "{6528E4E9FF4A8555}" {
+      Name "Pick Up"
+      Description "Pick Up"
+     }
+     ActionTitle "Pick Up"
+    }
+   }
+  }
+  RplComponent "{6528B28654791DC9}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1554.358 32.747 2158.638
+}
+$grp GenericEntity : "{87097EAA0C8F5E0B}Prefabs/Cooking/Cooking Pot.et" {
+ "Cooking Pot_6551636943811BDF" {
+  coords 3070.768 11.744 2878.412
+  angleX -0.895
+ }
+ "Cooking Pot_655CEE869BCB8C1F" {
+  coords 1328.082 39 2120.941
+ }
+}
+GenericEntity FragGrenade_Base_653A99FFD5982B77 : "{8B55F8686833B12B}Prefabs/Weapons/Core/FragGrenade_Base.et" {
+ coords 1558.953 33.026 2164.6
+}
+DestructibleEntity PlacedPlank_6586B9BEF380C006 : "{8D3271FC9A995658}Prefabs/PlacedPlank.et" {
+ coords 2039.976 44.061 2678.101
+}
+$grp SCR_DestructibleBuildingEntity : "{92F8DAE5E56CA22E}Prefabs/Structures/Cultural/Castles/Castle_01_OuterWall_01.et" {
+ {
+  coords 615.066 6.013 2559.408
+  angleY -12.133
+ }
+ {
+  coords 619.679 6.394 2536.802
+  angleY -12.133
+ }
+ {
+  coords 634.948 5.278 2564.336
+  angleY 79.288
+ }
+ {
+  coords 614.577 6.24 2559.718
+  angleY 79.288
+ }
+}
+$grp GenericEntity : "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et" {
+ Backpack_IIFS_FieldPack_654C82CBCC125941 {
+  coords 3068.909 11.75 2878.095
+ }
+ Backpack_IIFS_FieldPack_654C82CBCC2 {
+  coords 3059.065 11.841 2887.504
+ }
+}
+GenericEntity Handgun_BaconM17_656884CF5F092930 : "{A77F06B892FA378B}Prefabs/Weapons/Handguns/BaconM17/Handgun_BaconM17.et" {
+ coords 647.585 39.317 2680.609
+}
+$grp SCR_DestructibleBuildingEntity : "{AEBA1CB7C2537DA9}Structures/Trader Bunker.et" {
+ {
+  coords 1325.656 0 2137.398
+  angleY 167.613
+  {
+   SCR_SpawnTraderPoint {
+    ID "6546A03E38679333"
+    m_AudioIndex 2
+   }
+  }
+ }
+ {
+  coords 1336.881 0 2120.48
+  angleY -67.849
+  {
+   SCR_SpawnTraderPoint {
+    ID "6546A03E38679333"
+    m_AudioIndex 3
+   }
+  }
+ }
+}
+Projectile : "{B3381A4F2F946923}Prefabs/Weapons/Ammo/BC_Ammo_762x51_M40A1_AP.et" {
+ coords 2041.573 45.022 2719.422
+}
+$grp GenericEntity : "{B66DF252C948EE53}Prefabs/Valuables/Coins/Copper Coin.et" {
+ "Copper Coin_655CEE87D4BBB1EF" {
+  coords 1329.362 39 2123.423
+ }
+ "Copper Coin_655CEE87AE80E718" {
+  coords 1328.802 39 2123.898
+ }
+ "Copper Coin_655CEE87D4BBB1EF2" {
+  coords 1329.37 39 2123.319
+ }
+ "Copper Coin_655CEE87D4BBB1EF3" {
+  coords 1329.365 39 2123.194
+ }
+ "Copper Coin_655CEE87D4BBB1EF4" {
+  coords 1329.385 39.011 2123.057
+ }
+ "Copper Coin_655CEE87D4BBB1EF5" {
+  coords 1329.402 39.011 2122.883
+ }
+ "Copper Coin_655CEE87D4BBB1EF6" {
+  coords 1329.427 39.012 2122.744
+ }
+ "Copper Coin_655CEE87D4BBB1EF7" {
+  coords 1329.467 39 2122.614
+ }
+ "Copper Coin_655CEE87D4BBB1EF8" {
+  coords 1329.487 39 2122.47
+ }
+ "Copper Coin_655CEE87D4BBB1EF9" {
+  coords 1329.519 39 2122.353
+ }
+ "Copper Coin_655CEE87D4BBB1EF10" {
+  coords 1329.551 39 2122.219
+ }
+ "Copper Coin_655CEE87AE24281E" {
+  coords 1329.138 40.003 2126.002
+  angleY 10.689
+ }
+ "Copper Coin_655CEE87AB0107B4" {
+  coords 1329.346 40.003 2126.008
+  angleY 10.689
+ }
+ "Copper Coin_655CEE87AC90909D" {
+  coords 1329.152 40.003 2126.108
+  angleY 10.689
+ }
+ "Copper Coin_655CEE87AC3BE74A" {
+  coords 1329.328 40.003 2126.152
+  angleY 10.689
+ }
+ "Copper Coin_655CEE87ADC70199" {
+  coords 1329.211 40.003 2126.036
+  angleY 10.689
+ }
+}
+GameEntity Uniform_Base_6528E4E5B58EAF61 : "{B89432A8B5F489E5}Prefabs/Characters/Core/Uniform_Base.et" {
+ components {
+  EPF_PersistenceComponent "{5A28749C2A2B4AD2}" {
+   m_bStorageRoot 0
+  }
+  MeshObject "{5104869D194C6262}" {
+   Object "{A4048C2AA75EF832}Common/Models/Default.xob"
+   InheritVisibility 1
+  }
+  ParametricMaterialInstanceComponent "{56C6C01F261424B9}" {
+   UserParamTwo 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  RigidBody "{5104869D194C6267}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{5B18D20B7AC00DA6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{C1AC31AEF1665302}Sounds/Items/_SharedData/PickUp/Items_PickUp_Uniform.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{F62001ED6E9FA253}Sounds/Items/_SharedData/Drop/Items_Drop_Clothes.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "#AR-Uniform_Name"
+     Description "#AR-Uniform_Name"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 0.8
+      FOV 60
+      AspectRatio 1
+      IsDynamicObject 1
+     }
+    }
+    m_Size SLOT_2x2
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   DepthFront 0.015
+  }
+  ActionsManagerComponent "{5104869D194C6245}" {
+   additionalActions {
+    SCR_PickUpItemAction "{52E6EC76FD9968D7}" : "{F39A4E9B190C1846}Prefabs/Characters/Core/Actions/PickUpItemAction.conf" {
+    }
+    SCR_EquipClothAction "{52E6EC76FC5A5DF1}" : "{83B98F1A96591AC6}Prefabs/Characters/Core/Actions/EquipClothAction.conf" {
+     "Sort Priority" -10
+    }
+    SCR_DatZTransformeBaseAction "{652E7EC4BFC74C2B}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{652E7EC4882192F5}" {
+      Name "Rip to Rags"
+      Description "Rip to Rags"
+     }
+     ActionTitle "Rip to Rags"
+     Duration 3
+     prefab "{0892B183E7F9DF08}Prefabs/Rags.et"
+    }
+   }
+  }
+  RplComponent "{51F894A9E3AAC8BC}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1557.035 32.761 2165.496
+}
+GenericEntity Handgun_BaconM17_B_656884CF5C511663 : "{B8ACB25C3E69E3DE}Prefabs/Weapons/Handguns/BaconM17/Handgun_BaconM17_B.et" {
+ coords 647.645 39.467 2681.041
+}
+GenericEntity CannedMeat_65820788180FDA26 : "{BFDBFE2BED29C04A}Prefabs/CannedMeat.et" {
+ coords 3181.391 17.94 2836.009
+}
+$grp GenericEntity : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_B32.et" {
+ BC_Rifle_Mosin_Nagant_B32_658B3392D1D96208 {
+  coords 3080.269 19.982 2641.349
+ }
+ BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 {
+  components {
+   MeshObject "{CFBAA4B701F95D69}" {
+    Materials {
+     MaterialAssignClass "{658B51A60461E300}" {
+      SourceMaterial "Mosin9130Mat"
+      AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
+     }
+    }
+   }
+  }
+  coords 2491.617 147.483 2280.717
+ }
+}
+GenericEntity "Game Boy_655D0CC405BAC2D9" : "{C3B3FE07EA1504C9}Prefabs/Valuables/GameBoy/Game Boy.et" {
+ coords 1328.971 40.004 2126.63
+ angleY 177.28
+}
+$grp GenericEntity : "{C53F5A5C87A34A46}Prefabs/Valuables/Coins/Gold Coin.et" {
+ "Gold Coin_655CEE8634B3CEF1" {
+  coords 1328.053 39.012 2122.99
+ }
+ "Gold Coin_655CEE87D35CB0C7" {
+  coords 1328.884 39 2124.731
+ }
+ "Gold Coin_655CEE87D68F2DD2" {
+  coords 1328.63 39 2124.909
+ }
+ "Gold Coin_655CEE87D61DFA96" {
+  coords 1328.768 39 2124.917
+ }
+ "Gold Coin_655CEE87D7BFB3A9" {
+  coords 1328.746 39 2124.777
+ }
+ "Gold Coin_655CEE87D68F2DD3" {
+  coords 1328.909 39 2125.014
+ }
+ "Gold Coin_655CEE87D68F2DD4" {
+  coords 1329.05 39 2124.888
+ }
+ "Gold Coin_655CEE87D68F2DD5" {
+  coords 1328.822 39 2124.888
+ }
+ "Gold Coin_655CEE87D68F2DD6" {
+  coords 1329.038 40.009 2126.384
+  angleZ -5.521
+ }
+ "Gold Coin_655CEE87D68F2DD7" {
+  coords 1328.965 39 2124.867
+ }
+ "Gold Coin_655CEE87D68F2DD8" {
+  coords 1329.006 40.003 2126.253
+ }
+ "Gold Coin_655CEE87D68F2DD9" {
+  coords 1328.951 39 2125.154
+ }
+ "Gold Coin_655CEE87D68F2DD10" {
+  coords 1329.114 39 2125.061
+ }
+ "Gold Coin_655CEE87D68F2DD11" {
+  coords 1329.068 39 2124.965
+ }
+ "Gold Coin_655CEE87D68F2DD12" {
+  coords 1328.841 39 2125.086
+ }
+ "Gold Coin_655CEE87D68F2DD13" {
+  coords 1329.099 40.003 2126.391
+ }
+ "Gold Coin_655CEE87D68F2DD14" {
+  coords 1329.149 40.003 2126.552
+ }
+ "Gold Coin_655CEE87D68F2DD15" {
+  coords 1329.309 40.013 2126.511
+  angleX -11.884
+ }
+ "Gold Coin_655CEE87D68F2DD16" {
+  coords 1329.151 39 2125.206
+ }
+ "Gold Coin_655CEE87D68F2DD17" {
+  coords 1329.331 40.003 2126.39
+ }
+ "Gold Coin_655CEE87D68F2DD18" {
+  coords 1329.293 40.003 2126.468
+ }
+ "Gold Coin_655CEE87D68F2DD19" {
+  coords 1329.1 39 2125.371
+ }
+ "Gold Coin_655CEE87D68F2DD20" {
+  coords 1329.111 39 2125.095
+ }
+ "Gold Coin_655CEE87D68F2DD21" {
+  coords 1328.932 39 2125.134
+ }
+ "Gold Coin_655CEE87D68F2DD22" {
+  coords 1328.956 39 2125.018
+ }
+ "Gold Coin_655CEE87D68F2DD23" {
+  coords 1329.013 39 2125.082
+ }
+}
+$grp GenericEntity : "{C6A6E576BFDC451F}Prefabs/Cooking/Cooking Pot Clean Big.et" {
+ "Cooking Pot Clean Big_6551636943811C95" {
+  coords 3070.742 11.726 2879.338
+  angleX -2.681
+  angleY -0.084
+  angleZ 1.792
+ }
+ "Cooking Pot Clean Big_655CEE8604ED626B" {
+  coords 1328.498 39.012 2121.503
+ }
+}
+GenericEntity SSD_655D0CCB98D4F80C : "{C7276A7BB327BDCB}Prefabs/Valuables/SSD/SSD.et" {
+ coords 1328.75 40.003 2126.433
+ angleY -34.282
+}
+GenericEntity CannedSardeen_6582078B6D1295F0 : "{D34757B015ABD8B3}Prefabs/CannedSardeen.et" {
+ coords 3181.415 17.94 2837.648
+}
+GenericEntity : "{D6AD6C10D512F6A1}Assets/Garbage/Prefabs/Garbage_pile_Black_02.et" {
+ coords 1288.172 39.01 2127.633
+}
+$grp GenericEntity : "{D6D9E68597E059C5}Prefabs/Valuables/Coins/Silver Coin.et" {
+ "Silver Coin_655CEE87D30500EA" {
+  coords 1329.037 39 2123.439
+ }
+ "Silver Coin_655CEE87D76E35AB" {
+  coords 1329.274 39 2123.426
+ }
+ "Silver Coin_655CEE87A9389AA1" {
+  coords 1329.43 39.011 2123.02
+ }
+ "Silver Coin_655CEE87AA0986F4" {
+  coords 1329.16 39 2123.433
+ }
+ "Silver Coin_655CEE87AA0986F2" {
+  coords 1329.167 39 2123.328
+ }
+ "Silver Coin_655CEE87D30500EA2" {
+  coords 1329.044 39 2123.333
+ }
+ "Silver Coin_655CEE87D76E35AB2" {
+  coords 1329.281 39 2123.32
+ }
+ "Silver Coin_655CEE87AA0986F3" {
+  coords 1329.161 39 2123.203
+ }
+ "Silver Coin_655CEE87D30500EA3" {
+  coords 1329.039 39 2123.209
+ }
+ "Silver Coin_655CEE87D76E35AB3" {
+  coords 1329.275 39 2123.197
+ }
+ "Silver Coin_655CEE87AA0986F5" {
+  coords 1329.183 39 2123.065
+ }
+ "Silver Coin_655CEE87D30500EA4" {
+  coords 1329.06 39 2123.071
+ }
+ "Silver Coin_655CEE87D76E35AB4" {
+  coords 1329.297 39.011 2123.058
+ }
+ "Silver Coin_655CEE87AA0986F6" {
+  coords 1329.2 39.011 2122.892
+ }
+ "Silver Coin_655CEE87D30500EA5" {
+  coords 1329.077 39.012 2122.899
+ }
+ "Silver Coin_655CEE87D76E35AB5" {
+  coords 1329.315 39.011 2122.885
+ }
+ "Silver Coin_655CEE87AA0986F7" {
+  coords 1329.225 39.011 2122.753
+ }
+ "Silver Coin_655CEE87D30500EA6" {
+  coords 1329.102 39.012 2122.759
+ }
+ "Silver Coin_655CEE87D76E35AB6" {
+  coords 1329.34 39.012 2122.745
+ }
+ "Silver Coin_655CEE87AA0986F8" {
+  coords 1329.265 39 2122.623
+ }
+ "Silver Coin_655CEE87D30500EA7" {
+  coords 1329.142 39 2122.63
+ }
+ "Silver Coin_655CEE87D76E35AB7" {
+  coords 1329.379 39 2122.618
+ }
+ "Silver Coin_655CEE87AA0986F9" {
+  coords 1329.285 39 2122.479
+ }
+ "Silver Coin_655CEE87D30500EA8" {
+  coords 1329.162 39 2122.485
+ }
+ "Silver Coin_655CEE87D76E35AB8" {
+  coords 1329.399 39 2122.472
+ }
+ "Silver Coin_655CEE87AA0986F10" {
+  coords 1329.317 39 2122.362
+ }
+ "Silver Coin_655CEE87D30500EA9" {
+  coords 1329.194 39 2122.369
+ }
+ "Silver Coin_655CEE87D76E35AB9" {
+  coords 1329.431 39 2122.355
+ }
+ "Silver Coin_655CEE87AA0986F11" {
+  coords 1329.35 39 2122.229
+ }
+ "Silver Coin_655CEE87D30500EA10" {
+  coords 1329.226 39 2122.234
+ }
+ "Silver Coin_655CEE87D76E35AB10" {
+  coords 1329.463 39 2122.221
+ }
+ "Silver Coin_655CEE87D76E35AB11" {
+  coords 1329.352 40.003 2126.732
+ }
+ "Silver Coin_655CEE87D76E35AB12" {
+  coords 1329.389 40.003 2126.642
+ }
+ "Silver Coin_655CEE87D76E35AB13" {
+  coords 1329.234 40.003 2126.714
+ }
+ "Silver Coin_655CEE87D76E35AB14" {
+  coords 1329.287 40.003 2126.673
+ }
+ "Silver Coin_655CEE87D76E35AB15" {
+  coords 1329.321 40.015 2126.648
+  angleZ 9.499
+ }
+}
+Vehicle S1203_cargo_base1 : "{D7663936ABF75FB1}Prefabs/Vehicles/Wheeled/S1203/S1203_cargo_base.et" {
+ coords 1305.845 39.01 2097.01
+ angleY -38.585
+}
+GameEntity Fireplace_01_654EABB64541E0AB : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+ coords 3073.662 11.746 2876.805
+}
+GenericEntity Tebt_65336C814D5AD4B1 : "{DE0F233CBC3C2F77}Prefabs/Tebt.et" {
+ components {
+  DatZReplaceDeployableEntityComponent "{6528E4EA4361994A}" {
+   m_sReplacementPrefab "{81579EF12ABD1CA3}Prefabs/MilitaryTentUnDeployed1.et"
+  }
+  EPF_PersistenceComponent "{652B59662F267137}" {
+   m_pSaveData EPF_ItemSaveDataClass "{652B5966113B292D}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{652B5966198CCA8F}" {
+     }
+    }
+   }
+  }
+  MeshObject "{6528B2949672F600}" {
+   Object "{AA473E53D483267F}Assets/Structures/Military/Camps/TentSmallFIA_01/TentSmallFIA_01.xob"
+   LODFactors {
+   }
+  }
+  RigidBody "{6528B2949672F7AB}" {
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_SoundDataComponent "{6528B2949672F5E7}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6528B2949672F5E8}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_OPEN"
+    }
+    SCR_AudioSourceConfiguration "{6528B2949672F5E6}" {
+     m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+     m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{6528B2949672CAEB}" {
+   Attributes SCR_ItemAttributeCollection "{6528B2949672CA87}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6528B2949672F541}" {
+     Name "Military Tent"
+     Description "Military Tent used to store items"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6528B29B112C5F41}" {
+     Weight 6
+     DimensionScaler 2
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6528B2949672CAB0}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 3
+      CameraOffset 0 -0.5 0
+      FOV 50
+     }
+    }
+    m_Size SLOT_3x3
+    m_SlotType SLOT_ANY
+    m_bDraggable 0
+    m_bStackable 0
+    m_bRefundable 0
+   }
+   Priority 1000
+   SaveInLoadout 0
+   m_fMaxWeight 50
+  }
+  ActionsManagerComponent "{6528B2949672C9B7}" {
+   ActionContexts {
+    UserActionContext "{6528B2949672CA3E}" {
+     ContextName "default"
+     Position PointInfo "{6528B2949672CA3C}" {
+      Offset 0 0.7859 0
+     }
+     Radius 1.07
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{6528B2949672CA13}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528B2949672CA2E}" {
+      Name "#AR-Inventory_OpenArsenalStorage"
+     }
+    }
+    SCR_DatZDeployInventoryItemBaseAction "{6528E4E9D25FFD25}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{6528E4E9DB516BBB}" {
+      Name "Dismantel"
+      Description "Dismantel"
+     }
+     ActionTitle "Dismantel"
+     Duration 2
+    }
+   }
+  }
+  RplComponent "{6528B2949672C9AD}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1559.226 32.816 2161.936
+ angleZ -1.62
+}
+GenericEntity MRE_652A8D7FAB041740 : "{E3055CB3AB4817AD}Prefabs/MRE.et" {
+ components {
+  EPF_PersistenceComponent "{652B2654B1C25A3C}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{652B2654B1C25A3D}" {
+   }
+  }
+  InventoryItemComponent "{652B2654B1C245F2}" {
+   Attributes SCR_ItemAttributeCollection "{652B2654B1C245F8}" {
+    ItemDisplayName SCR_InventoryUIInfo "{652B2654B1C25A11}" {
+     Name "MRE"
+     Description "MRE you can eat"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{652B2654B1C25A1B}" {
+       Name "Eating this will regenerate some of your food"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{652B2654B1C25A08}" {
+     Weight 0.02
+     SizeSetupStrategy Manual
+     ItemDimensions 5 5 5
+     ItemVolume 10
+     DimensionScaler 0.01
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{652B2654B1C25A75}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{652B2654B1C25A77}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     SCR_AlternativeModel "{652B2654B1C25A71}" {
+      m_sAlternativeModel "{7518A788C4ED1927}Assets/Food/Apple/Apple.xob"
+     }
+     SCR_ItemOfInterestAttribute "{652B2654B1C25A6E}" {
+      m_InterestType FOOD
+     }
+     ItemActionAnimAttributes "{652B2654B1C25A68}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     CharacterModifierAttributes "{652B2654B1C25A62}" {
+      SpeedLimit 4
+      ADSSpeedLimit 4
+      SpeedLimitItemPrimaryAction 4
+      SpeedLimitHighready 4
+     }
+     PreviewRenderAttributes "{652B2654B1C2459D}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.4
+      ItemRenderRotation 45 0 0
+      FOV 30
+      AspectRatio 1
+     }
+     SCR_SelectionMenuPreviewAttributes "{652B2654B1C24599}" {
+      m_bShowMedicalColor 1
+     }
+    }
+    CommonItemType "FOOD"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{652B2654B1C24497}" {
+   Object "{250B64167B3A6475}Assets/Items/Food/MRE_01.xob"
+   LODFactors +{
+   }
+  }
+  RigidBody "{652B2654B1C24490}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{652B2654B1C244CB}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableFood "{652B2654B1C244EB}" {
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+    regenFoodValue 26
+   }
+  }
+  SCR_SoundDataComponent "{652B2654B1C2A96E}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{652B2654B1C244C2}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{652B2654B1C2443E}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{652B2654B1C2443C}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{652B2654B1C24439}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{652B2654B1C2A94B}" {
+   ActionContexts {
+    UserActionContext "{652B2654B1C2A97F}" {
+     ContextName "default"
+     Position PointInfo "{652B2654B1C2A97E}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{652B2654B1C2A94A}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{652B2654B1C2A949}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{652B2654B1C2A95C}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{652B2654B1C2A946}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve +{
+     }
+    }
+    GamepadTriggerEffect "{652B2654B1C2A95B}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve +{
+     }
+    }
+   }
+  }
+  RplComponent "{652B2654B1C2A950}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1558.626 32.894 2163.871
+}
+GenericEntity CraftedGauze_01_652A8D6F8B141AE6 : "{EAE970533A9FE23D}Prefabs/Items/Medicine/FieldDressing_01/CraftedGauze_01.et" {
+ components {
+  EPF_PersistenceComponent "{5A0D2D213B33ECD8}" {
+   m_bStorageRoot 0
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Crafted Gauze"
+     Description "#AR-Item_Gauze_01_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.05
+     SizeSetupStrategy Volume
+     ItemVolume 150
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{551CA1C31648EE8D}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      AllowMovementDuringAction 1
+     }
+     CharacterModifierAttributes "{551CAB06F8C6E1E9}" {
+      SpeedLimitItemPrimaryAction 0.5
+     }
+     SCR_ItemOfInterestAttribute "{554E95CAC60BB241}" {
+      m_InterestType BANDAGE
+     }
+     SCR_SelectionMenuPreviewAttributes "{6098B9532B2B8958}" {
+      m_bShowMedicalColor 1
+     }
+     SCR_AlternativeModel "{6098B95342DA15AE}" {
+      m_sAlternativeModel "{9EF00D573FC5604A}Assets/Items/Medicine/Gauze_01/Gauze_01_packed.xob"
+     }
+     PreviewRenderAttributes "{6098B9508619B4D0}" {
+      FOV 30
+      LodModel 0
+     }
+    }
+   }
+  }
+  MeshObject "{51F66EC3C5BC700D}" {
+   Object "{9EF00D573FC5604A}Assets/Items/Medicine/Gauze_01/Gauze_01_packed.xob"
+   Materials {
+    MaterialAssignClass "{652A8D6E7A1B8F91}" {
+     SourceMaterial "Color_palette"
+     AssignedMaterial "{F428D271E313B16C}Common/Materials/ColorPalette/Color_palette_01_AZURE_05_S2_R2.emat"
+    }
+    MaterialAssignClass "{652A8D6E7A1B8FED}" {
+     SourceMaterial "Gauze_01_packed"
+     AssignedMaterial "{8F1FD306120D1082}Assets/Items/Rags/Data/MI_Cloth_01.emat"
+    }
+   }
+  }
+  RigidBody "{51F66EC3C5BC7033}" {
+   Mass 1
+   LinearDamping 0.5
+   AngularDamping 0.5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{5943631460899505}" {
+   m_ConsumableEffect SCR_ConsumableBandage "{594363147CC4C6BE}" {
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+   }
+   m_bAlternativeModelOnAction 0
+  }
+  SCR_SoundDataComponent "{5B18D20ED0099A17}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   ActionContexts {
+    UserActionContext "{508AC2ABEC97066C}" {
+     ContextName "default"
+     Position PointInfo "{508AC2ABEAC4A0F5}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{51EC842E3A187379}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{51EC842E413D3E1D}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{61E103D57E322BB5}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{61E294244C3DAAFF}" : "{7D39CAE0A72D6C51}Prefabs/Weapons/Core/Configs/TriggerEffects/ADS/TriggerEffect_ADSGadget.conf" {
+    }
+    GamepadTriggerEffect "{61E29424EE08E95B}" : "{F518B28F67EC05AD}Prefabs/Weapons/Core/Configs/TriggerEffects/Charged/TriggerEffect_ChargedGadget.conf" {
+    }
+   }
+  }
+  RplComponent "{508AB59531D748C9}" {
+   "Rpl State Override" None
+  }
+ }
+ coords 1556.154 32.731 2163.638
+}
+$grp GenericEntity : "{EF362B7442A2D5B1}Prefabs/Banane.et" {
+ Banane_6526F01C4E7AD780 {
+  coords 1559.008 32.935 2165.277
+ }
+ Banane_65336C81BBD59721 {
+  coords 1556.125 32.82 2158.119
+ }
+ Banane_6582078B6CF7A6B5 {
+  coords 3180.352 17.94 2836.468
+ }
+}
+$grp GenericEntity : "{F06BF9FB0A0527AE}Prefabs/Cooking/Cooking Pot Clean Small.et" {
+ "Cooking Pot Clean Small_65516369438121F5" {
+  coords 3070.338 11.735 2878.892
+  angleX -0.895
+ }
+ "Cooking Pot Clean Small_655CEE869A33BF29" {
+  coords 1327.749 39.012 2121.643
+ }
+}
+StaticModelEntity : "{F6439F1E758377A9}Prefabs/Compositions/Misc/SubCompositions/Furniture/Cabinet_Radio_US_01.et" {
+ coords 1323.799 39 2125.644
+ angleY 0
+}
+GenericEntity "ESP Board_655D0CCAFB1F29EF" : "{FA3627ED185A8505}Prefabs/Valuables/ESP Board/ESP Board.et" {
+ coords 1328.806 40.003 2126.594
+ angleY -39.664
+}
+GameEntity : "{FCAE754AF76F15C5}Prefabs/Weapons/Attachments/Flashlight_TLR2s.et" {
+ coords 647.525 39.516 2681.954
+}

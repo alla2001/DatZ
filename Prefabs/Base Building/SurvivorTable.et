@@ -1,0 +1,146 @@
+GenericEntity {
+ ID "65A29C2B457C7638"
+ components {
+  MeshObject "{65A29C2B4807C3AC}" {
+   Object "{0D628EB319605081}Assets/Props/Furniture/Table_02/Table_02.xob"
+   LODFactors {
+    5 2 1.5 1 1 1
+   }
+  }
+  RigidBody "{65A29C2B4807C390}" {
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{65A29C2B4807C559}" {
+   Enabled 0
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 800
+   m_fForceToDamageScale 350
+   m_bPassDamageToChildren 1
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{65A29C2B4807C2CA}" {
+     m_ModelPrefabs {
+      "{496C121C5757D664}Assets/Props/Furniture/Table_02/Dst/Table_02_dst_02.xob" "{3E667A94A3F53914}Assets/Props/Furniture/Table_02/Dst/Table_02_dst_03.xob"
+     }
+     m_fMass 5
+     m_fLifetimeMin 8
+     m_fMaxDamageToSpeedMultiplier 8
+     m_fRandomVelocityLinear 0.1
+     m_fRandomVelocityAngular 60
+     m_eMaterialSoundType WOOD_PLANK_LARGE
+    }
+    SCR_DebrisSpawnable "{65A29C2B4807C28C}" {
+     m_ModelPrefabs {
+      "{D072AB854AB0E7F4}Assets/Props/Furniture/Table_02/Dst/Table_02_dst_01.xob" "{A778C30DBE120884}Assets/Props/Furniture/Table_02/Dst/Table_02_dst_00.xob"
+     }
+     m_fMass 5
+     m_fLifetimeMin 8
+     m_fDamageToImpulse 0.01
+     m_fMaxDamageToSpeedMultiplier 8
+     m_fRandomVelocityLinear 0.05
+     m_fRandomVelocityAngular 60
+     m_eMaterialSoundType METAL_POLE
+    }
+    SCR_ParticleSpawnable "{65A29C2B4807C281}" {
+     m_Particle "{63D673751320F318}Particles/Props/Dest_Prop_Wood_Medium.ptc"
+    }
+   }
+   m_eMaterialSoundType BREAK_METAL
+  }
+  RplComponent "{65A29C2B4807C534}" {
+   Enabled 1
+  }
+  Hierarchy "{65A29C3C7A803627}" {
+  }
+ }
+ Flags 1027
+ {
+  $grp GenericEntity {
+   {
+    ID "65A29C2B457C36E8"
+    components {
+     MeshObject "{65A29C2AC67BA6FD}" {
+      Object "{F9C4DAC5C538C4F7}Assets/Weapons/Attachments/Mounts/Dovetail_PKM/Dovetail_PKM.xob"
+     }
+     Hierarchy "{65A29C3C69C96AF0}" {
+     }
+    }
+    coords 0.241 0.891 0.329
+    angleZ 96.347
+   }
+   {
+    ID "65A29C2B457C4409"
+    components {
+     MeshObject "{65A29C2AC07A9C70}" {
+      Object "{C0983D124B096BFC}Assets/Weapons/Attachments/Handguards/Handguard_M16/M16A2_carbine_handguard.xob"
+     }
+     Hierarchy "{65A29C3C6FD546E4}" {
+     }
+    }
+    coords 0.318 0.927 0.072
+    angleY 42.86
+   }
+   {
+    ID "65A29C2B457C7634"
+    components {
+     MeshObject "{65A29C2AD6A0B37D}" {
+      Object "{95AD45219900B549}Assets/Weapons/Attachments/Optics/1P29/Optic_1P29_eyecup.xob"
+     }
+     Hierarchy "{65A29C3C61E83F93}" {
+     }
+    }
+    coords 0.309 0.821 0.259
+    angleY 40.23
+   }
+  }
+  GenericEntity : "{37E1D83754A9B58D}Prefabs/Props/Garbage/Cardboard/Cardboard_03.et" {
+   ID "65A29C2B457C36EA"
+   coords 0.003 0.907 -0.331
+  }
+  GenericEntity Watch_Vostok_Map_65A29C2AE495EA4B : "{4FAD128BE9F66C6F}Prefabs/Items/Equipment/Watches/Watch_Vostok_Map.et" {
+   ID "65A29C2B457CFE21"
+   components {
+    InventoryItemComponent "{5222EB4D0C73006B}" {
+     Enabled 0
+    }
+   }
+   coords 0.03 0.907 0.266
+   angleY -35.924
+  }
+  GenericEntity : "{B68D3829D4442F80}Prefabs/Props/Civilian/RadioSmall_01_Base.et" {
+   ID "65A29C2B457C7633"
+   components {
+    MeshObject "{5872F0EB7FA40561}" {
+     Object "{DBE3AEFE90AC25D0}Assets/Props/Military/Radios/RadioStation_R123M_01.xob"
+    }
+    Hierarchy "{65A29C3C7179CA0B}" {
+    }
+   }
+   coords 0.29 0.907 -0.269
+   angleY -28.425
+  }
+  GenericEntity Map_Paper_01_unfolded_table_65A29C2A0B8861BB : "{D60220233693B077}Prefabs/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_unfolded_table.et" {
+   ID "65A29C2B457CFE23"
+   coords -0.209 0.907 0.149
+   angleY -3.618
+  }
+  GenericEntity : "{E546356D4797342F}Prefabs/Props/Garbage/Medical/GarbageMedicalUS_01.et" {
+   ID "65A29C2B457C7637"
+   components {
+    Hierarchy "{65A29C3C768B034B}" {
+    }
+   }
+   coords -0.29 0.92 -0.3
+  }
+ }
+}

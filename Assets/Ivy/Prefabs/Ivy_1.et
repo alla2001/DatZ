@@ -1,0 +1,8 @@
+GenericEntity : "{F226B9C94B40BED8}Assets/Bodies/Animal/Dog/Prefabs/Dead_Dog_6.et" {
+ ID "60FEE96B3A334FCE"
+ components {
+  RigidBody "{60FEE96B3A334F5C}" {
+   ModelGeometry 0
+  }
+ }
+}

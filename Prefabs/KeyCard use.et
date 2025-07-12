@@ -1,0 +1,56 @@
+GenericEntity {
+ ID "6558E01590AF5DF2"
+ components {
+  MeshObject "{6558E015991CC73D}" {
+   Object "{FF35BE9795BA3797}system/wbdata/Gizmo3D/sphere.xob"
+   Materials {
+    MaterialAssignClass "{655937E5F42E7CCA}" {
+     SourceMaterial "system/wbdata/gizmo3D/gizmo3D"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6558E015991CC70D}" {
+   SimState None
+   ResponseIndex "Normal"
+   ModelGeometry 0
+   Geometries {
+    PhysicsSphereGeometry sp {
+     Radius 0.3
+    }
+   }
+  }
+  ActionsManagerComponent "{6558E015991CC7A4}" {
+   ActionContexts {
+    UserActionContext "{6558E015991CC7F9}" {
+     ContextName "default"
+     Position PointInfo "{6558E015991CC7FA}" {
+      Offset 0 -0.0558 -0.019
+     }
+     Radius 0.5
+     Height 0.2
+    }
+   }
+   additionalActions {
+    SCR_UseKeyUserAction "{6558E015991CC7D6}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6558E015991CC7D8}" {
+      Name "Use Card"
+      Description "Use Card"
+     }
+     ActionTitle "Use Card"
+     Duration 1
+    }
+   }
+  }
+  RplComponent "{6558E015991CC7B2}" {
+   "Rpl State Override" None
+   "Parent Node From Parent Entity" 0
+  }
+ }
+ Flags 4194307
+ coords 5407.275 30.429 9245.784
+}

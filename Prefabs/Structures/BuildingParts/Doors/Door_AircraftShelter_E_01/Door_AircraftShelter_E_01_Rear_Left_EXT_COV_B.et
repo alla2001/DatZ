@@ -1,0 +1,15 @@
+GenericEntity : "{F1793FE006FDF888}Structures/BuildingParts/Doors/Door_Base.et" {
+ ID "0000000000000001"
+ components {
+  SoundComponent "{6558E0189FCF4FC7}" {
+   Filenames {
+    "{4D8EF6E5A0F5E52A}Sounds/Structures/Millitary/Sirens/Structures_Siren_Datz.acp"
+   }
+  }
+  KeyDoorComponent "{6558E0188406D631}" {
+   Code 123
+   sirenOffset 0.324 2.698 -0.959
+   OpenTime 5
+  }
+ }
+}

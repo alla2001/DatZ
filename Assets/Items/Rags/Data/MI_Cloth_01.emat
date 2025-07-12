@@ -1,0 +1,5 @@
+MatPBRBasic {
+ RoughnessScale 1.071
+ BCRMap "{581E5D1D6E05218E}Assets/Items/Rags/Data/Textures/T_Cloth_01_D.edds"
+ NMOMap "{284B52D7ABB1F897}Assets/Items/Rags/Data/Textures/T_Cloth_01_NRM.edds"
+}

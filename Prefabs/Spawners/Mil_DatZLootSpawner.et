@@ -1,0 +1,10 @@
+DatZLootSpawner {
+ ID "651F5E2922DC50A5"
+ components {
+  Hierarchy "{65330A94871A1AF1}" {
+  }
+ }
+ coords 0.011 -0.376 -19.465
+ spawnRadius 100
+ lootTable "{1F91D1C58E06D296}Configs/MilitaryLootTable.conf"
+}

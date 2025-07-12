@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F316BD951AFF6EC1}Prefabs/Structures/BuildingParts/Doors/Door_AircraftShelter_E_01/Door_AircraftShelter_E_01_Rear_Right_EXT_COV_B.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

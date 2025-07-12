@@ -1,0 +1,12 @@
+MatPBRBasic {
+ Emissive 0.024 0.013 0.003 0
+ EmissiveLV 12.359
+ EmissiveAbsoluteLV 0
+ ApplyAlbedoToEmissive 1
+ ZBias 4
+ SortBias 7
+ AlphaMul 0.175
+ BlendMode AlphaBlend
+ BCRMap "{95ADB72CF52EAB35}Assets/Props/Civilian/Fireplace_01/Data/FirePlace_EMdecal_01_BCR.edds"
+ OpacityMap "{113E283440F71996}Assets/Props/Civilian/Fireplace_01/Data/FirePlace_EMdecal_01_A.edds"
+}

@@ -1,0 +1,5 @@
+Grass : "{D8417D5E4978916B}Assets/Clutter/Procedural/cp_MountainGrass_01_ForHeather.emat" {
+ SpecularMul 0.4
+ AOScale 0.7
+ Height 0.5
+}

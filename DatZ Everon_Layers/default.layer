@@ -1,0 +1,46 @@
+SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
+ coords 7276.893 122.972 5197.742
+}
+SCR_GameModeCampaign GameMode_Campaign1 : "{3B230AAC5252108F}Prefabs/MP/Modes/Conflict/GameMode_Campaign.et" {
+ components {
+  SCR_PlayerSpawnPointManagerComponent "{5CDABA98894199D0}" {
+   m_bEnablePlayerSpawnPoints 1
+   m_eDeployableSpawnPointBudgetType NONE
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_AutoSpawnLogic "{5CEAA65B714D5CFF}" {
+    m_sForcedFaction "FIA"
+   }
+  }
+  SCR_RespawnTimerComponent "{5B2A94A0E605AAFF}" {
+   m_fRespawnTime 0
+  }
+  SCR_SpawnProtectionComponent "{5D167A246026C95B}" {
+   m_bAllowPlayerSpawnpoints 1
+  }
+  SCR_TimedSpawnPointComponent "{5D0A73EB7076C758}" {
+   m_fRespawnTime 0
+  }
+ }
+ coords 7278.559 123.05 5189.387
+}
+SCR_CampaignFactionManager CampaignFactionManager1 : "{F1AC26310BAE3788}Prefabs/MP/Campaign/CampaignFactionManager.et" {
+ coords 7287.167 123.129 5192.911
+}
+SCR_LoadoutManager {
+ coords 7321.492 122.32 5221.735
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{651C96EC387EA83F}" {
+   m_sLoadoutResource "{8D89B17BCFBFAE44}Prefabs/Characters/Campaign/Final/Campaign_US_Player.et"
+   m_sAffiliatedFaction "FIA"
+  }
+ }
+}
+SCR_SpawnPoint {
+ coords 7271.173 122.969 5202.74
+ m_fSpawnRadius 2
+ m_sFaction "FIA"
+}
+GenericEntity : "{12FC4638FF6FADCE}HeliMission.et" {
+ coords 7252.833 124.124 5286.104
+}

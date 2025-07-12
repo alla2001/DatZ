@@ -1,0 +1,153 @@
+GenericEntity {
+ ID "6551104B4132FF38"
+ components {
+  EPF_PersistenceComponent "{6551104B4132FF35}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6551104B4132FF01}" {
+    m_aComponents {
+     EPF_BaseInventoryStorageComponentSaveDataClass "{6551104B4132FF18}" {
+     }
+     EPF_CookableManagerComponentSaveDataClass "{6551104B4132FF15}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{6551104B4132FFED}" {
+   Attributes SCR_ItemAttributeCollection "{6551104B4132FFE9}" {
+    ItemDisplayName SCR_InventoryUIInfo "{6551104B4132FFE5}" {
+     Name "Crackers"
+     Description "Crackers you can eat"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{6551104B4132FFFF}" {
+       Name "Eating this will regenerate some of your food and lose some hydration"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6551104B4132FFF1}" {
+     Weight 0.02
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 180
+     DimensionScaler 0.35
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{6551104B4132FFCA}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{6551104B4132FFC6}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{6551104B4132FFD8}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     PreviewRenderAttributes "{6551104B4132FFD3}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.4
+      FOV 30
+      AspectRatio 1
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{6551104B4132FFBF}" {
+   Object "{A47ED22E6647430A}Assets/Items/Food/ArmyCrackers_Soviet_01.xob"
+  }
+  RigidBody "{6551104B4132FFB6}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{6551104B4132FFB2}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableFood "{6551104B4132FF8E}" {
+    m_bDeleteOnUse 0
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+    regenFoodValue 20
+    regenWaterValue -8
+   }
+  }
+  SCR_SoundDataComponent "{6551104B4132FF8A}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6551104B4132FF89}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6551104B4132FF82}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6551104B4132FF80}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{6551104B4132FF9B}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{6551104B4132FF95}" {
+   ActionContexts {
+    UserActionContext "{6551104B4132FF91}" {
+     ContextName "default"
+     Position PointInfo "{6551104B4132FE6D}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6551104B4132FE74}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6551104B4132FE73}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{6551104B4132FE4A}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{6551104B4132FE46}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{6551104B4132FE45}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{6551104B4132FE41}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6551104B4132FE5D}" {
+  }
+ }
+ coords 14.272 0 0
+}

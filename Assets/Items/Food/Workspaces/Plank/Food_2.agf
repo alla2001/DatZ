@@ -1,0 +1,488 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet Main {
+   Nodes {
+    AnimSrcNodeGroupSelect BandageIdlePneG {
+     EditorPos -32.7 14.2
+     Child "fingerAnimationB 42054"
+     Group "SalineBag"
+     Column "Pne"
+    }
+    AnimSrcNodeGroupSelect ErcG {
+     EditorPos -24.5 14.3
+     Child "SalineBag_Src"
+     Group "SalineBag"
+     Column "Erc"
+    }
+    AnimSrcNodeSource SalineBag_Src {
+     EditorPos -21.6 17.1
+     Source "SalineBag.SalineBag"
+     Looptype Loop
+    }
+    AnimSrcNodeGroupSelect BandageIdleCroG {
+     EditorPos -35.1 14.2
+     Child "fingerAnimationB 42054"
+     Group "SalineBag"
+     Column "Cro"
+    }
+    AnimSrcNodeGroupSelect CroG {
+     EditorPos -21.6 14.4
+     Child "SalineBag_Src"
+     Group "SalineBag"
+     Column "Cro"
+    }
+    AnimSrcNodePose Idle_Src {
+     EditorPos -34.9 20.3
+     Source "SalineBag.Idle"
+    }
+    AnimSrcNodeStateMachine Idle_STM {
+     EditorPos -35 10.6
+     states {
+      AnimSrcNodeState Erc {
+       EditorPos -37.5 12.9
+       Child "BandageIdleErcG"
+       StartCondition "Stance == 0"
+      }
+      AnimSrcNodeState Cro {
+       EditorPos -35 11.8
+       Child "BandageIdleCroG"
+       StartCondition "Stance == 1"
+      }
+      AnimSrcNodeState Pne {
+       EditorPos -32.6 12.9
+       Child "BandageIdlePneG"
+       StartCondition "Stance == 2"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{55EA742EC5FA3283}" {
+       FromState "Erc"
+       ToState "Cro"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 0, 1)"
+      }
+      AnimSrcNodeTransition "{55EA742EC5FA328E}" {
+       FromState "Cro"
+       ToState "Erc"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 1, 0)"
+      }
+      AnimSrcNodeTransition "{55EA742EC5FA32BB}" {
+       FromState "Cro"
+       ToState "Pne"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 1, 2)"
+      }
+      AnimSrcNodeTransition "{55EA742EC5FA32A4}" {
+       FromState "Pne"
+       ToState "Cro"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 2, 1)"
+      }
+      AnimSrcNodeTransition "{55EA742EC5FA32D1}" {
+       FromState "Erc"
+       ToState "Pne"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 0, 2)"
+      }
+      AnimSrcNodeTransition "{55EA742EC5FA32DD}" {
+       FromState "Pne"
+       ToState "Erc"
+       Duration "0.4"
+       Condition "HasVariableChanged(Stance, 2, 0)"
+      }
+     }
+    }
+    AnimSrcNodeStateMachine HealingSelf_STM {
+     Tags {
+      "TagLItemAction"
+     }
+     EditorPos -21.6 11.9
+     states {
+      AnimSrcNodeState Erc {
+       EditorPos -24.6 12.9
+       Child "ErcG"
+       StartCondition "Stance == 0"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Cro {
+       EditorPos -21.7 12.9
+       Child "CroG"
+       StartCondition "Stance == 1"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Pne {
+       EditorPos -18.5 12.9
+       Child "PneG"
+       StartCondition "Stance == 2"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5AAAEAAF58ED2A4B}" {
+       FromState "Erc"
+       ToState "Cro"
+       Duration "0.3"
+       StartTime "GetLowerTime()"
+       Condition "HasVariableChangedTo(Stance, 1)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{5AAAEAAF58ED2A7B}" {
+       FromState "Cro"
+       ToState "Erc"
+       Duration "0.3"
+       StartTime "GetLowerTime()"
+       Condition "HasVariableChangedTo(Stance, 0)"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect BandageIdleErcG {
+     EditorPos -37.5 14.2
+     Child "fingerAnimationB 42054"
+     Group "SalineBag"
+     Column "Erc"
+    }
+    AnimSrcNodeGroupSelect PneG {
+     EditorPos -18.4 14.5
+     Child "SalineBag_Src"
+     Group "SalineBag"
+     Column "Pne"
+    }
+    AnimSrcNodeStateMachine VehicleHealing_STM {
+     Tags {
+      "TagLItemAction"
+     }
+     EditorPos -20.1 24
+     states {
+      AnimSrcNodeState Driver {
+       EditorPos -22 24.8
+       Child "Group Select 1"
+       StartCondition "SeatPositionType == 0"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Passanger {
+       EditorPos -18.7 24.7
+       Child "Group Select 1_1"
+       StartCondition "SeatPositionType > 0"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect "Group Select 1_1" {
+     EditorPos -18.5 26
+     Child "SalineBag_Vehicle_Scr"
+     Group "VehicleHealing"
+     Column "Passanger"
+    }
+    AnimSrcNodeGroupSelect "Group Select 1" {
+     EditorPos -21.9 25.9
+     Child "SalineBag_Vehicle_Scr"
+     Group "VehicleHealing"
+     Column "Driver"
+    }
+    AnimSrcNodeSource SalineBag_Vehicle_Scr {
+     EditorPos -20.1 27.2
+     Source "VehicleHealing.SalineBagVehicle"
+    }
+    AnimSrcNodeSource "In 33662" {
+     EditorPos -0.4 17.8
+     Source "HealingOthers.HealingOthersProne"
+    }
+    AnimSrcNodeGroupSelect "CroG 11661" {
+     EditorPos -4.6 21
+     Child "In 31670"
+     Group "HealingOthers"
+     Column "Cro"
+    }
+    AnimSrcNodeGroupSelect "ErcG 25428" {
+     EditorPos -6.8 16.9
+     Child "In"
+     Group "HealingOthers"
+     Column "Erc"
+    }
+    AnimSrcNodeGroupSelect "CroG 27943" {
+     EditorPos -11.5 16.9
+     Child "In"
+     Group "HealingOthers"
+     Column "Pne"
+    }
+    AnimSrcNodeStateMachine HealingOther_STM {
+     Tags {
+      "TagLItemAction"
+     }
+     EditorPos -6.2 11.5
+     states {
+      AnimSrcNodeState Erc {
+       EditorPos -9.3 12.4
+       Child "Erected"
+       StartCondition "Stance == 0"
+       IsExit 1
+      }
+      AnimSrcNodeState Cro {
+       EditorPos -4.6 12.4
+       Child "Crouched"
+       StartCondition "Stance == 1"
+       IsExit 1
+      }
+      AnimSrcNodeState Pne {
+       EditorPos -0.4 12.4
+       Child "Proned"
+       StartCondition "Stance == 2"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect "CroG 29279" {
+     EditorPos -7.1 20.9
+     Child "In 31670"
+     Group "HealingOthers"
+     Column "Pne"
+    }
+    AnimSrcNodeGroupSelect "ErcG 10216" {
+     EditorPos -2 21
+     Child "In 31670"
+     Group "HealingOthers"
+     Column "Erc"
+    }
+    AnimSrcNodeGroupSelect "ErcG 29856" {
+     EditorPos 2.1 16.2
+     Child "In 33662"
+     Group "HealingOthers"
+     Column "Erc"
+    }
+    AnimSrcNodeSource "In 31670" {
+     EditorPos -4.6 22.6
+     Source "HealingOthers.HealingOthersCro"
+    }
+    AnimSrcNodeGroupSelect "CroG 25043" {
+     EditorPos -0.4 16.2
+     Child "In 33662"
+     Group "HealingOthers"
+     Column "Cro"
+    }
+    AnimSrcNodeBlendN Crouched {
+     EditorPos -4.6 19.2
+     BlendWeight "AimY"
+     Thresholds {
+      -40 0 40
+     }
+     Children {
+      "CroG 29279" "CroG 11661" "ErcG 10216"
+     }
+    }
+    AnimSrcNodeGroupSelect "CroG 28589" {
+     EditorPos -2.7 16.2
+     Child "In 33662"
+     Group "HealingOthers"
+     Column "Pne"
+    }
+    AnimSrcNodeGroupSelect "CroG 23415" {
+     EditorPos -9.2 16.9
+     Child "In"
+     Group "HealingOthers"
+     Column "Cro"
+    }
+    AnimSrcNodeBlendN Erected {
+     EditorPos -9.4 14
+     BlendWeight "AimY"
+     Thresholds {
+      -80 -40 0
+     }
+     Children {
+      "CroG 27943" "CroG 23415" "ErcG 25428"
+     }
+    }
+    AnimSrcNodeBlendN Proned {
+     EditorPos -0.4 14.1
+     BlendWeight "AimY"
+     Thresholds {
+      0 40 80
+     }
+     Children {
+      "CroG 28589" "CroG 25043" "ErcG 29856"
+     }
+    }
+    AnimSrcNodeSource In {
+     EditorPos -9.2 18.5
+     Source "HealingOthers.HealingOthersErc"
+    }
+    AnimSrcNodeSource "Source 31593" {
+     Tags {
+      "TagLItemAction"
+     }
+     EditorPos -13.7 4.6
+     Source "SalineBag.Cro.Revive"
+    }
+    AnimSrcNodeStateMachine Vehicle {
+     Tags {
+      "TagLItemAction"
+     }
+     EditorPos -17.2 20
+     states {
+      AnimSrcNodeState HealSelf {
+       EditorPos -19.5 20.8
+       Child "VehicleHealing_STM"
+       StartCondition "IsCommand(CMD_HealSelf)"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState HealOther {
+       EditorPos -13.9 20.8
+       Child "HealingOthersAmbulance_STM"
+       StartCondition "IsCommand(CMD_HealOther) || IsCommand(CMD_Revive) "
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect LPatient {
+     EditorPos -15 26.4
+     Child "SalineBag_healOther_Src"
+     Group "VehicleHealingOthers"
+     Column "LeftPatient"
+    }
+    AnimSrcNodeGroupSelect RPatient {
+     EditorPos -11.1 26.4
+     Child "SalineBag_healOther_Src"
+     Group "VehicleHealingOthers"
+     Column "RightPatient"
+    }
+    AnimSrcNodeStateMachine HealingOthersAmbulance_STM {
+     EditorPos -13.2 24.1
+     states {
+      AnimSrcNodeState LeftPatient {
+       EditorPos -15.2 24.9
+       Child "LPatient"
+       StartCondition "(GetCommandI(CMD_HealOther) == 1 || GetCommandI(CMD_Revive) == 1)  && LookX <= -0.1 "
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState RightPatient {
+       EditorPos -11.2 24.9
+       Child "RPatient"
+       StartCondition "(GetCommandI(CMD_HealOther) == 1 || GetCommandI(CMD_Revive) == 1)  && LookX >= 0.1"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeSource SalineBag_healOther_Src {
+     EditorPos -13.4 27.8
+     Source "VehicleHealingOthers.SalineBagOthersVehicle"
+    }
+    AnimSrcNodeStateMachine MasterControl {
+     EditorPos -15.3 0.3
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos -15.4 1.6
+       Child "Blend T 36820"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Vehicle {
+       EditorPos -17 2.8
+       Child "Vehicle"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState SelfHeal {
+       EditorPos -18.8 1.6
+       Child "HealingSelf_STM"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Revive {
+       EditorPos -13.9 2.7
+       Child "Source 31593"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState HealingOther {
+       EditorPos -11.6 1.7
+       Child "HealingOther_STM"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5D849CFA82490F25}" {
+       FromState "Idle"
+       ToState "SelfHeal"
+       Duration "0.3"
+       Condition "IsCommand(CMD_HealSelf) && !IsAttachment(\"Vehicle\")"
+      }
+      AnimSrcNodeTransition "{5D849CFA82490F57}" {
+       FromState "Idle"
+       ToState "Vehicle"
+       Duration "0.7"
+       Condition "IsAttachment(\"Vehicle\") && (GetCommandI(CMD_HealSelf) == 1 || GetCommandI(CMD_HealOther) == 1 || GetCommandI(CMD_Revive) == 1)"
+       BlendFn S
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{5D849CFA82490F74}" {
+       FromState "Idle"
+       ToState "HealingOther"
+       Duration "0.3"
+       Condition "IsCommand(CMD_HealOther) && !IsAttachment(\"Vehicle\")"
+      }
+      AnimSrcNodeTransition "{5D849CFA82490F6A}" {
+       FromState "Idle"
+       ToState "Revive"
+       Duration "0.3"
+       Condition "GetCommandI(CMD_Revive) == 1 && !IsAttachment(\"Vehicle\")"
+      }
+      AnimSrcNodeTransition "{5D849CFA82490E9D}" {
+       FromState ""
+       ToState "Idle"
+       Duration "1.5"
+       Condition "GetCommandI(CMD_Revive) == -2 || GetCommandI(CMD_HealOther) == -2 || GetCommandI(CMD_HealSelf) == -2 || RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeBlendT "Blend T 36820" {
+     EditorPos -28.561 5.639
+     Condition "IsAttachment(\"Vehicle\")"
+     Child0 "Idle_STM"
+     Child1 "fingerAnimationB 15280"
+     Optimization "Skip blended out"
+    }
+    AnimSrcNodePose "Pose 11767" {
+     EditorPos -26.5 9.5
+     Source "VehicleHealing.Idle"
+    }
+    AnimSrcNodeBlend "fingerAnimationB 15280" {
+     EditorPos -27 7.4
+     BlendWeight "1"
+     Child0 "Pose 11767"
+     Child1 "fingerAnimationSRC 18061"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeSource "fingerAnimationSRC 18061" {
+     EditorPos -23.4 8.3
+     Source "SalineBag.Erc.FingerAnim"
+     Looptype Loop
+    }
+    AnimSrcNodeBlend "fingerAnimationB 42054" {
+     EditorPos -35 16.3
+     BlendWeight "1"
+     Child0 "Idle_Src"
+     Child1 "fingerAnimationSRC 41830"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeSource "fingerAnimationSRC 41830" {
+     EditorPos -32.6 18
+     Source "SalineBag.Erc.FingerAnim"
+     Looptype Loop
+    }
+   }
+  }
+ }
+}

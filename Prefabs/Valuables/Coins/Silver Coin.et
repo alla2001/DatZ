@@ -1,0 +1,139 @@
+GenericEntity {
+ ID "655CEE87FB295453"
+ components {
+  EPF_PersistenceComponent "{655CEE87FB29542D}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{655CEE87FB295438}" {
+    m_aComponents {
+     EPF_CookableManagerComponentSaveDataClass "{655CEE87FB295435}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{655CEE87FB29540F}" {
+   Attributes SCR_ItemAttributeCollection "{655CEE87FB295408}" {
+    ItemDisplayName SCR_InventoryUIInfo "{655CEE87FB295404}" {
+     Name "Silver Coin"
+     Description "Silver Coin, very valuable"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{655CEE87FB295400}" {
+     Weight 0.08
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 35
+     DimensionScaler 0.01
+     RestingUP Up
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{655CEE87FB29541D}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{655CEE87FB295417}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{655CEE87FB2954E8}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     PreviewRenderAttributes "{655CEE87FB2954E2}" {
+      CameraPreset Top
+      CameraOrbitAngles 30 0 0
+      CameraDistanceToItem 0.2
+      ItemRenderRotation 0 0 0
+      FOV 26
+      AspectRatio 1
+      LodModel 0
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+   }
+  }
+  MeshObject "{655CEE87FB2954FC}" {
+   Object "{6DD71128359B6F9C}Assets/Valuable Items/Silver Coin/Silver Coin.xob"
+  }
+  RigidBody "{655CEE87FB2954FB}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_GadgetComponent "{655CEE87FB2954C6}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+  }
+  SCR_SoundDataComponent "{655CEE87FB2954C2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{655CEE87FB2954DE}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{655CEE87FB2954DB}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{655CEE87FB2954D9}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{655CEE87FB2954D5}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{655CEE87FB2954AE}" {
+   ActionContexts {
+    UserActionContext "{655CEE87FB2954AD}" {
+     ContextName "default"
+     Position PointInfo "{655CEE87FB2954A8}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{655CEE87FB2954A2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{655CEE87FB2954A0}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{655CEE87FB29548F}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{655CEE87FB29548A}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{655CEE87FB295485}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{655CEE87FB295481}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{655CEE87FB29549D}" {
+  }
+ }
+ coords 1327.401 39 2123.121
+}

@@ -1,0 +1,185 @@
+SCR_DestructibleBuildingEntity : "{338A06EE7C7E32BA}Prefabs/Buildings/Civilian/Apartments/Apartment_12-Storey/Apartment_12-Storey_base.et" {
+ ID "5E8CF0A6F39156AD"
+ components {
+  MeshObject "{5E8CF0B8A8E34B8F}" {
+   Object "{835D5ED0F8BD7585}Assets/Buildings/Civilian/Apartments/Storey_12/Apartment_12_Floor_v1.xob"
+   LODFactors {
+    15 10 3.5 1
+   }
+   ClutterOccluder 1
+  }
+ }
+ Flags 525315
+ {
+  EnvironmentProbeEntity {
+   ID "5E8CF0A6F391576E"
+   VisibleDistance 200
+  }
+  GenericEntity : "{03FD9233EA4705A7}Prefabs/Buildingparts/Civilian/Apartments/Entrys/Stairs_01.et" {
+   ID "655313193403673E"
+   components {
+    Hierarchy "{5E355C1C6EA145E6}" {
+     PivotID "Socket_Stairs_Entry_01"
+    }
+   }
+   coords 0 0 0
+  }
+  GenericEntity : "{0F1AC1EBF454F5ED}Prefabs/Buildingparts/Civilian/Apartments/Roof/Roof_Pipe.et" {
+   ID "6553131934036729"
+   components {
+    Hierarchy "{5E8CF0BC70917AD0}" {
+     PivotID "Socket_pipe"
+    }
+   }
+   coords 0 0 0
+  }
+  GenericEntity : "{1A541AA6EBDB389C}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/12-Storey_Entry/Furniture_12-Storey_Entry_v1.et" {
+   ID "655313193403672B"
+   coords 0 0 0
+  }
+  GenericEntity : "{3ECC4A7E14785ABD}Prefabs/Props/Roof/Roof_PipeVent_03.et" {
+   ID "6553131934036085"
+   coords -3.066 34.369 -5.425
+  }
+  $grp GenericEntity : "{541C121FC375A3AF}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Wall/SatelliteSet_v3.et" {
+   {
+    ID "6553131934036087"
+    components {
+     Hierarchy "{60495CA98CF4564A}" {
+      PivotID "Socket_extendable_03"
+     }
+    }
+    coords 0 0 0
+   }
+   {
+    ID "655313193403608B"
+    components {
+     Hierarchy "{60495CA98CF4564A}" {
+      PivotID "Socket_extendable_01"
+     }
+    }
+    coords 0 0 0
+    angleY 180
+   }
+  }
+  GenericEntity : "{69283727B6192A98}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Wall/SatelliteSet_v4.et" {
+   ID "655313193403608C"
+   coords 0 0 0
+  }
+  $grp GenericEntity : "{75E1E0DFA2C9B5F6}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Storey/Furniture_5-12_v1.et" {
+   {
+    ID "655313193403608E"
+    components {
+     Hierarchy "{5E8CF09B16A2C075}" {
+      PivotID "Socket_extendable_03"
+     }
+    }
+    coords 0 0 0
+    {
+     GenericEntity {
+      ID "5F19366C1DB9B982"
+      {
+       GenericEntity {
+        ID "5E36D9994ED5FBAE"
+        coords 0 0 0
+       }
+      }
+     }
+    }
+   }
+   {
+    ID "6553131934036281"
+    coords 0 0 0
+    {
+     GenericEntity {
+      ID "5F19366C1DB9B981"
+      {
+       GenericEntity {
+        ID "5E36D9994ED5B264"
+        coords 0.594 0 0
+       }
+       GenericEntity {
+        ID "5E36D9994ED5FBAE"
+        coords -0.346 0 0
+       }
+      }
+     }
+     GenericEntity {
+      ID "5F19366C1DB9B982"
+      {
+       GenericEntity {
+        ID "5E36D9994ED5B264"
+        coords 0.631 0 0
+       }
+       GenericEntity {
+        ID "5E36D9994ED5FBAE"
+        coords -0.617 0 0
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity : "{76AEE200E89710D6}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Interior Misc/Interior_Misc_12_Storey.et" {
+   ID "6553131934037D50"
+   coords 0 0 0
+  }
+  GenericEntity : "{8CB47BDEBAFCBDF3}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Wall/SatelliteSet_v5.et" {
+   ID "6553131934037D57"
+   components {
+    Hierarchy "{60495CA98CF4564A}" {
+     PivotID "Socket_extendable_03"
+    }
+   }
+   coords 0 0 0
+   angleY 180
+  }
+  $grp GenericEntity : "{B7043267A45942F8}Prefabs/Props/Roof/Roof_PipeVent_01.et" {
+   {
+    ID "6553131934037D5B"
+    coords 5.465 34.369 -5.211
+   }
+   {
+    ID "655313193403F6D2"
+    coords -1.687 34.369 4.738
+   }
+  }
+  $grp GenericEntity : "{C1AA8A5E05A2BB79}Prefabs/Buildingparts/Civilian/Apartments/Pipe/Pipe_12_Floor.et" {
+   {
+    ID "655313193403F6C9"
+    coords 0 0.18 0
+   }
+   {
+    ID "655313193403F6D4"
+    components {
+     Hierarchy "{5E753E575E77D039}" {
+      PivotID "Socket_Pipe_02"
+     }
+    }
+    coords 0 0.18 0
+   }
+  }
+  GenericEntity : "{DB500687189DCDD6}Prefabs/Props/Roof/Roof_PipeVent_02.et" {
+   ID "655313193403F6C0"
+   coords 5.126 34.369 4.958
+   angleY 114.658
+  }
+  GenericEntity : "{DCA666EF5EC75EC8}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Stairs/Stairs_12_Storey.et" {
+   ID "655313193403F6C2"
+   coords 0 0 0
+  }
+  GenericEntity : "{DDD46A067354BBEA}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Wall/SatelliteSet_v1.et" {
+   ID "655313193403F6C5"
+   coords 0 0 0
+  }
+  GenericEntity : "{FAF01D33904B57E2}Prefabs/Buildings/Civilian/Apartments/Furniture/Z_Furniture/Wall/SatelliteSet_v2.et" {
+   ID "655313193403F6F8"
+   components {
+    Hierarchy "{60495CA98CF4564A}" {
+     PivotID "Socket_extendable_02"
+    }
+   }
+   coords 0 0 0
+  }
+ }
+}

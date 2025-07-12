@@ -1,0 +1,17 @@
+GenericEntity : "{DE0F233CBC3C2F77}Prefabs/Tebt.et" {
+ ID "6528B29B73F9F288"
+ components {
+  MeshObject "{6528B2949672F600}" {
+   Materials {
+    MaterialAssignClass "{6528E4EBAAB17B91}" {
+     SourceMaterial "TentSmallFIA_01_MLOD"
+     AssignedMaterial "{8094563DFDE04CED}Assets/Structures/Military/Camps/TentSmallFIA_01/Data/TentSmallFIA_01_MLOD_V2.emat"
+    }
+    MaterialAssignClass "{6528E4EBAAB17BEF}" {
+     SourceMaterial "TentSmallFIA_01_US"
+     AssignedMaterial "{5E0E94580DEF6492}Assets/Structures/Military/Camps/TentSmallFIA_01/Data/TentSmallFIA_01_V2.emat"
+    }
+   }
+  }
+ }
+}

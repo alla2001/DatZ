@@ -1,0 +1,8 @@
+LightEntity {
+ ID "553869DAB190363F"
+ components {
+  RandomDestroyComponent "{65468539FB7908A4}" {
+   chance 0.6
+  }
+ }
+}

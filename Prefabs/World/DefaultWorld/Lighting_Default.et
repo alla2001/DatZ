@@ -1,0 +1,19 @@
+GenericWorldLightEntity {
+ ID "658EDD9CBDCA720E"
+ angleX -45
+ angleY -155
+ SpecularMul 0
+ DirectLightLV 15
+ DirectLightColor 1 1 1 0
+ IndirectLightLV 14
+ IndirectLightColor 1 1 1 0
+ ProbeReflectionEV -5
+ ProbeReflectionColor 0 0 0 0
+ ProbeReflectionDesaturation 0.395
+ ShadowFactor 1
+ PenumbraMultiplier 50
+ TargetEV 1.7
+ TargetEVLimitBright 1
+ TargetEVLimitDark 0
+ ManualHDRBrightnessLV 13
+}

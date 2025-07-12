@@ -1,0 +1,6 @@
+AnimSetInstanceSource "{6520AC90BE302CAB}" {
+ Template "{CD0E6C3490BF0847}anims/workspaces/player/player_main.ast"
+ ParentTemplates {
+  "{32965FEFBB738E5A}anims/workspaces/player/player_main.asi"
+ }
+}

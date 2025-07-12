@@ -1,0 +1,8 @@
+MatPBRBasic : "{EE7411A50054EC6A}Assets/Ivy/Assets/Data/Nature_Kit_Ivy_Leaf.emat" {
+ Color 0.125 0.185 0.114 1
+ Sort near
+ SortBias 7
+ AlphaMul 0.961
+ RoughnessScale 2.576
+ MetalnessScale 0.764
+}

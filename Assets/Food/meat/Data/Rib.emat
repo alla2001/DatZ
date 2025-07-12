@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.474 0.373 0.373 1
+ RoughnessScale 1.299
+ MetalnessScale 0.469
+ BCRMap "{98C9FF7534A1F4B2}Assets/Food/meat/Data/Rib_BaseColor.edds"
+ NormalPower 1.092
+ NMOMap "{EE4FFD24CBF0DAB2}Assets/Food/meat/Data/Rib_Normal.edds"
+}

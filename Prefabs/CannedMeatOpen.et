@@ -1,0 +1,27 @@
+GenericEntity : "{7BBDC24E577F3A87}Prefabs/CannedSardeenOpen.et" {
+ ID "653AD7760A9A59C7"
+ components {
+  InventoryItemComponent "{653AD77622316748}" {
+   Attributes SCR_ItemAttributeCollection "{653AD7762231674A}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{653AD776223164AC}" {
+     SizeSetupStrategy Volume
+     ItemVolume 300
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{653AD7762231648F}" {
+     HandAdditiveRotation 90 0 0
+    }
+   }
+  }
+  MeshObject "{653AD7762231675C}" {
+   Object "{AB3E186B9FA55D00}Assets/Food/Canned/Meat/CannedmeatOpened.xob"
+  }
+  SCR_ConsumableItemComponent "{653AD77622316737}" {
+   m_ConsumableEffect SCR_ConsumableFood "{653AD77622316739}" {
+    regenFoodValue 19
+   }
+  }
+  RplComponent "{653AD7762231666A}" {
+   "Rpl State Override" Runtime
+  }
+ }
+}

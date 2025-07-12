@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5E07E121D9688C2F}Prefabs/Characters/Vests/Vest_TV110/Variants/Vest_TV110_preset_base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

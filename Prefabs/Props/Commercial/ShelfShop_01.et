@@ -1,0 +1,9 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  DatZLootSpawner : "{089B1185A949B872}Prefabs/Spawners/Farm_DatZLootSpawner.et" {
+   ID "6551637DD5A5C19A"
+   coords -0.219 0.824 0.302
+  }
+ }
+}

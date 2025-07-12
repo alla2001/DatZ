@@ -1,0 +1,7 @@
+MatPBRBasic {
+ SpecularMul 1.59
+ RoughnessScale 0.71
+ MetalnessScale 0.852
+ BCRMap "{306062651D042757}Assets/Valuable Items/SSD/Data/SSD_2.5in_baseColor.edds"
+ NMOMap "{47DC74D799F14973}Assets/Valuable Items/SSD/Data/SSD_2.5in_normal.edds"
+}
