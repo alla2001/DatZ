@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{55476D9B2E3F4C63}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_CocaineBrick.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

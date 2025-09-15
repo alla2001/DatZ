@@ -1,0 +1,18 @@
+GenericEntity {
+ ID "5DC80CC50787243E"
+ components {
+  InventoryItemComponent "{5DC80CC507872456}" {
+   Attributes SCR_ItemAttributeCollection "{5DC80CC507872455}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{5DC80CC50787245E}" {
+     Weight 4
+     ItemVolume 1000
+    }
+   }
+  }
+  EPF_PersistenceComponent "{6656A3BDC41FE744}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6656A3BDAAB1013C}" {
+   }
+  }
+ }
+}

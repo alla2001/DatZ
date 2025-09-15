@@ -1,0 +1,13 @@
+DatZLootSpawner {
+ ID "6652AE5F20654E15"
+ components {
+  Hierarchy "{6652AE5F20654E02}" {
+  }
+ }
+ coords 1.082 0.115 -0.534
+ spawnRadius 100
+ despawnDelay 300
+ lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ ignoreOverrides 1
+ ignoreSystemDespawnDelay 1
+}

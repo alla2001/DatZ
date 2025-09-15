@@ -236,6 +236,7 @@ SCR_GameModeEditor GameMode_GameMaster_Full2 : "{DA3986AF1B5032B7}Prefabs/MP/Mod
  }
  coords 12485.911 0 10538.719
  m_eTestGameFlags SpawnAI
+ needFlagToBuild 1
  {
   SCR_FactionManager "65328B12E73877CE" {
    ID "56E685E92F1B7E7A"
@@ -30362,8 +30363,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30375,14 +30375,13 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     "faction affiliation" "CIV"
    }
   }
-  coords 4509.49 7.096 9345
+  coords 4516.254 7.096 9347.092
   angleY 91.313
  }
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30394,14 +30393,13 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     "faction affiliation" "CIV"
    }
   }
-  coords 4544.353 16.378 10722.855
+  coords 4549.282 16.378 10724.572
   angleY 70.254
  }
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30413,14 +30411,13 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     "faction affiliation" "CIV"
    }
   }
-  coords 5339.476 16.254 10088.482
+  coords 5339.476 18.021 10088.482
   angleY 153.468
  }
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30432,14 +30429,13 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     "faction affiliation" "CIV"
    }
   }
-  coords 4785.854 161.927 7124.866
+  coords 4785.854 162.846 7124.866
   angleY -121.276
  }
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30457,8 +30453,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30470,14 +30465,13 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     "faction affiliation" "CIV"
    }
   }
-  coords 5093.291 13.649 3988.447
+  coords 5093.291 15.688 3988.447
   angleY -173.287
  }
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30495,8 +30489,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30514,8 +30507,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30533,8 +30525,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3591
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30552,8 +30543,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30571,8 +30561,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30590,7 +30579,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30608,8 +30597,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30627,8 +30615,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30646,8 +30633,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30665,8 +30651,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 3600
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30684,7 +30669,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30702,7 +30687,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30720,7 +30705,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30738,7 +30723,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30756,7 +30741,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30774,7 +30759,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30792,7 +30777,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30810,7 +30795,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -30828,7 +30813,7 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
  {
   components {
    SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_bStopDespawnOnInteraction 1
+    m_iRespawnPeriod 700
     m_aIncludedEditableEntityLabels {
      36 37
     }
@@ -59541,6 +59526,9 @@ $grp GenericEntity : "{530705FBB61026D2}Prefabs/Props/Garbage/Cardboard/Cardboar
   coords 4783.631 24.942 10815.59
  }
 }
+GenericEntity FlagPlans_664926F1F0C46328 : "{535141D3EBC36D1E}Prefabs/BaseBuilding/Flag/FlagPlans.et" {
+ coords 4798.952 27.19 10639.765
+}
 GenericEntity : "{5444982FED78FECE}Prefabs/Props/Furniture/BasketLaundry_01.et" {
  coords 9801.296 9.083 1574.874
  angleX 2.391
@@ -61439,6 +61427,9 @@ StaticModelEntity : "{6FFD54071AD89DAC}Prefabs/Props/Military/Furniture/TableMil
 }
 GenericEntity : "{7030822F7A54F479}Prefabs/Props/Crates/CrateWooden_01_base.et" {
  coords 9854.476 9.605 1581.171
+}
+GenericEntity NewBasePlans_664926F0F36BF3A2 : "{703F2DB693C60ABF}Prefabs/Props/Civilian/NewBasePlans.et" {
+ coords 4798.29 27.165 10640.026
 }
 $grp StaticModelEntity : "{7155445537D403E7}Prefabs/Structures/Military/Camps/TentUS_01/Parts/TentUS_01_Floor02.et" {
  {

@@ -1,0 +1,13 @@
+DatZLootSpawner {
+ ID "6652AE7B0F8EAEDF"
+ components {
+  Hierarchy "{6652AE7B0F8EAED6}" {
+  }
+ }
+ coords 1.082 0.115 -0.534
+ spawnRadius 100
+ despawnDelay 300000
+ lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ ignoreOverrides 1
+ ignoreSystemDespawnDelay 1
+}

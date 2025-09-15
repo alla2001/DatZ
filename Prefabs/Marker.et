@@ -1,0 +1,25 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Components/Area.et" {
+ ID "59E8CDC4819B4FE1"
+ coords 11643.85 0.929 2251.881
+ {
+  GenericEntity Layer2 : "{5F9FFF4BF027B3A3}Prefabs/Systems/ScenarioFramework/Components/Layer.et" {
+   ID "66572785F8D79686"
+   coords 0 0 0
+   {
+    GenericEntity SlotMarker1 : "{E537867C6E760514}Prefabs/Systems/ScenarioFramework/Components/SlotMarker.et" {
+     ID "66572785F8D79687"
+     components {
+      SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+       m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+        m_sMapMarkerText "Air Drop"
+        m_eMapMarkerIcon WAYPOINT
+        m_eMapMarkerColor RED
+       }
+      }
+     }
+     coords 0 0 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+DatZLootSpawner {
+ ID "6652F9E38540F41E"
+ components {
+  Hierarchy "{6652F9E38540F418}" {
+  }
+ }
+ coords 1.082 0.115 -0.534
+ spawnRadius 1500
+ lootTable "{9547060D1887C5D1}Configs/BoatLootTable.conf"
+ ignoreOverrides 1
+ dontSnapToGround 1
+}

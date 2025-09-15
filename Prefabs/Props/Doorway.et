@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "6450141C5F5201F1"
+ components {
+  BLD_RaidingManagerComponent "{645805A6F0A535E4}" {
+   "Additional hit zones" {
+    SCR_HitZone fbi {
+     MaxHealth 500
+    }
+    SCR_HitZone fbo {
+     MaxHealth 500
+    }
+   }
+  }
+ }
+}

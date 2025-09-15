@@ -1,0 +1,101 @@
+GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_Soviet.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  AirDropFallComponent "{66571CF757203D4B}" {
+   m_fFallSpeed 20
+   m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{66572787CC527A34}" {
+    m_sMapMarkerText "Air Drop"
+    m_eMapMarkerIcon OBJECTIVE_MARKER
+    m_eMapMarkerColor GREEN
+   }
+   initItems {
+    InitItem "{66571CF7E0663168}" {
+     item "{E3055CB3AB4817AD}Prefabs/MRE.et"
+     amount 5
+    }
+    InitItem "{665B17D1F1C29F58}" {
+     item "{3EF500E391A7A70F}Prefabs/Valuables/Golden Pitcher/Golden Pitcher.et"
+     amount 5
+    }
+    InitItem "{66571CF7E707D2D3}" {
+     item "{55476D9B2E3F4C63}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_CocaineBrick.et"
+     amount 3
+    }
+    InitItem "{66571CF7FE4469A9}" {
+     item "{AAB632A193BF6B69}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_WeedBrick.et"
+     amount 3
+    }
+    InitItem "{66571CF7DD590725}" {
+     item "{CCFD8AA837B9611A}Prefabs/Items/CarKey/CarKey.et"
+     amount 2
+    }
+    InitItem "{66571CF7D3F6E4D2}" {
+     item "{5346AC72D935D5C6}Prefabs/Items/LockPick/Pick.et"
+     amount 2
+    }
+    InitItem "{66571CF00905E622}" {
+     item "{877128FBE22FF2C9}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_suppressor_AP2K_OliveGreen_Sand_Stripes.et"
+    }
+    InitItem "{66571CF0E23667F7}" {
+     item "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et"
+    }
+    InitItem "{66571CF0FAC931FA}" {
+     item "{4FCBBDF274FD2157}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_Ball.et"
+     amount 3
+    }
+    InitItem "{66571CF0F404521C}" {
+     item "{FB5EB0F6D447E858}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M193_Ball.et"
+     amount 7
+    }
+    InitItem "{66571CF7F5EC2F2A}" {
+     item "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et"
+    }
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   LODFactors {
+    792.79303
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{627631B46FBAA133}" {
+   Attributes SCR_ItemAttributeCollection "{627631B4517F9F86}" {
+    ItemDisplayName UIInfo "{627631B451844C98}" {
+     Name "Air Drop"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{66571CF16A87AB1F}" {
+      CameraOrbitAngles 0 26.7 0
+      CameraDistanceToItem 2.5
+     }
+    }
+    m_bDraggable 0
+   }
+   StoragePurpose 7
+   MaxCumulativeVolume 100000000
+   MaxItemSize 1000000 1000000 1000000
+   SaveInLoadout 0
+   m_fMaxWeight 10000000
+  }
+  TW_LootableInventoryComponent "{627631B4655AFA87}" {
+   Enabled 0
+  }
+  NwkMovementComponent "{665B17D2DE33FADF}" {
+  }
+ }
+ coords 127.23 32.03 148.801
+ {
+  ParticleEffectEntity {
+   ID "665B0D81FED3EFCA"
+   components {
+    Hierarchy "{665B17D2C5A3F098}" {
+    }
+   }
+   coords 0 1.063 0
+   EffectPath "{0A2541D4D0CAE68B}Particles/Weapon/Smoke_AirDrop_Red.ptc"
+  }
+  GenericEntity : "{A01592070907F081}Prefabs/Props/Military/Camps/CamoNet_PalletAmmo_Soviet.et" {
+   ID "66571CF75CD120D6"
+   coords 0 0 0
+  }
+ }
+}

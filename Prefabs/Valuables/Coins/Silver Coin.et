@@ -17,10 +17,10 @@ GenericEntity {
      Description "Silver Coin, very valuable"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{655CEE87FB295400}" {
-     Weight 0.08
+     Weight 0.01
      SizeSetupStrategy Volume
      ItemDimensions 5 5 5
-     ItemVolume 35
+     ItemVolume 0.1
      DimensionScaler 0.01
      RestingUP Up
     }

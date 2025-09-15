@@ -17,10 +17,10 @@ GenericEntity {
      Description "Gold Coin, very valuable"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{655CEE8193216280}" {
-     Weight 0.1
+     Weight 0.001
      SizeSetupStrategy Volume
      ItemDimensions 5 5 5
-     ItemVolume 50
+     ItemVolume 0.1
      DimensionScaler 0.01
      RestingUP Up
     }

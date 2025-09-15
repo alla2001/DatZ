@@ -4,7 +4,7 @@ class LootItem
 	[Attribute(uiwidget: UIWidgets.ResourcePickerThumbnail, params: "et")]
     ResourceName prefabPath;
 	[Attribute()]
-	ref LootTable relatedLootItems;
+	ref DatZLootTable relatedLootItems;
 	[Attribute()]
     float spawnChance;
 
@@ -12,7 +12,7 @@ class LootItem
 }
 
 [BaseContainerProps(configRoot: true)]
-class LootTable : ScriptAndConfig
+class DatZLootTable : ScriptAndConfig
 {
 	
 		[Attribute("0.0", UIWidgets.Slider, "Chance to drop nothing", "0 2000 0.01")]

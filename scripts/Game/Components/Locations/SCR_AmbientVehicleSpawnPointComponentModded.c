@@ -79,7 +79,7 @@ override Vehicle SpawnVehicle()
 		SCR_VehicleDamageManagerComponent damageManager = SCR_VehicleDamageManagerComponent.Cast(m_Vehicle.FindComponent(SCR_VehicleDamageManagerComponent));
 
 
-if (damageManager)
+/*if (damageManager)
 {
     // Define damage values for specific hit zones
     float engineDamage =Math.RandomFloat(0.3,1); // 50% damage
@@ -126,7 +126,7 @@ if (damageManager)
         ctx.struckHitZone = fuelTankHitZone;
         damageManager.HandleDamage(ctx);
     }
-}
+}*/
 		// Activate handbrake so the vehicles don't go downhill on their own when spawned
 		if (carController)
 			carController.SetPersistentHandBrake(true);

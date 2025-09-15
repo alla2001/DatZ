@@ -975,9 +975,6 @@ GameEntity Suppressor_9mm_m17_656884CF572ADA6A : "{291396770F73A84C}Prefabs/Weap
 GenericEntity : "{2A87032C8B248CFE}PrefabsEditable/Auto/Props/Industrial/E_BenchDrill_01_table.et" {
  coords 1329.093 39 2126.393
 }
-Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Base.et" {
- coords 1746.588 41.239 2883.977
-}
 GameEntity : "{2CBB04F9D8839D1D}Prefabs/Fishing_Rod_Tier_1.et" {
  coords 3213.457 0.802 3012.991
 }
@@ -997,7 +994,7 @@ $grp GenericEntity : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et
   coords 1328.196 39 2121.986
  }
 }
-Projectile : "{2FBCA0A7CEDDE7B0}Prefabs/Weapons/Ammo/SmallArms/Ammo_762x39_Ball_57N231.et" {
+Projectile : "{2FBCA0A7CEDDE7B0}Prefabs/Weapons/Ammo/Ammo_762x39_Ball_57N231.et" {
  coords 1318.772 39 2122.135
 }
 $grp SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
@@ -1488,15 +1485,6 @@ $grp SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character
     WeaponSlotType "secondary"
     WeaponSlotIndex 2
     HolsteredHidden 1
-   }
-   RHS_ThermalSlotManagerComponent "{60D6F4C7C990A7BB}" {
-    Slots {
-     EntitySlotInfo Body {
-      Prefab "{88BA5F3224A6C834}Prefabs/Characters/Thermal/CharacterBasebody_Thermal.et"
-      DisablePhysicsInteraction 1
-      InheritParentSkeleton 1
-     }
-    }
    }
    SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
     Identity Identity "{5584CBC6363C648B}" {
@@ -3797,6 +3785,15 @@ StaticModelEntity : "{F6439F1E758377A9}Prefabs/Compositions/Misc/SubCompositions
 GenericEntity "ESP Board_655D0CCAFB1F29EF" : "{FA3627ED185A8505}Prefabs/Valuables/ESP Board/ESP Board.et" {
  coords 1328.806 40.003 2126.594
  angleY -39.664
+}
+GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
+ coords 3110.067 166.699 2698.199
+ {
+  GenericEntity {
+   ID "66571CF75CD120D6"
+   coords -179.547 0 3.701
+  }
+ }
 }
 GameEntity : "{FCAE754AF76F15C5}Prefabs/Weapons/Attachments/Flashlight_TLR2s.et" {
  coords 647.525 39.516 2681.954

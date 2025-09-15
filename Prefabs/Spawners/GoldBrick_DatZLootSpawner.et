@@ -1,0 +1,11 @@
+DatZLootSpawner {
+ ID "6652AE7B1286B139"
+ components {
+  Hierarchy "{6652AE7B1286B132}" {
+  }
+ }
+ coords 1.082 0.115 -0.534
+ spawnRadius 100
+ lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ ignoreOverrides 1
+}

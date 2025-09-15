@@ -1,0 +1,6 @@
+GenericEntity FlagPlans_664926FA1A179565 : "{535141D3EBC36D1E}Prefabs/BaseBuilding/Flag/FlagPlans.et" {
+ coords 1805.745 6.172 2216.94
+}
+GenericEntity SafeBook_664926FA06D75666 : "{D125E11C31A965AA}Prefabs/BaseBuilding/Storage/Safe/SafeBook.et" {
+ coords 1804.996 6.172 2216.985
+}

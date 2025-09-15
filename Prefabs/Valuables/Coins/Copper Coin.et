@@ -17,10 +17,10 @@ GenericEntity {
      Description "Copper Coin, valuable"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{655CEE87F5BD9C4E}" {
-     Weight 0.07
+     Weight 0.001
      SizeSetupStrategy Volume
      ItemDimensions 5 5 5
-     ItemVolume 25
+     ItemVolume 0.1
      DimensionScaler 0.01
      RestingUP Up
     }

@@ -1,3 +1,9 @@
+GameEntity "Optic_EXPS3-2_658CA4ACD69D888A" {
+ coords 141.435 1 169.46
+}
+GenericEntity Vest_Bagari_mp117_658C6DE3BF55C970 {
+ coords 126.843 1 153.129
+}
 GenericEntity Backpack_ALICE_Medium_6596E1DFAC9E876F : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
  coords 174.063 1 166.348
 }
@@ -386,9 +392,6 @@ GenericEntity WaterCanteenUS_6596E1DFC04A5C0C : "{4000304122B0C624}Prefabs/Water
   }
  }
  coords 173.094 1 163.632
-}
-GenericEntity Vest_Bagari_mp117_658C6DE3BF55C970 : "{402406B5207B5B3C}Prefabs/Characters/Vests/Vest_Bagari/Variants/Vest_Bagari_mp117.et" {
- coords 126.843 1 153.129
 }
 GenericEntity : "{4168CE8C08BC74B1}Prefabs/Structures/BuildingParts/Heating/StoveColumn_01_Base.et" {
  coords 127.862 1 155.761
@@ -1554,6 +1557,12 @@ GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Pr
  }
  coords 128.795 1 158.38
 }
+GenericEntity "Gold Coin_6656DDA315CD285D" : "{C53F5A5C87A34A46}Prefabs/Valuables/Coins/Gold Coin.et" {
+ coords 194.753 12.886 136.402
+}
+GenericEntity MG_M249_6656DDA4E28E37F6 : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" {
+ coords 130.322 11.345 143.931
+}
 GenericEntity CannedSardeen_6596E1DFD093C834 : "{D34757B015ABD8B3}Prefabs/CannedSardeen.et" {
  coords 172.371 1 167.226
 }
@@ -1566,7 +1575,7 @@ GenericEntity Tebt_6598A52C12255011 : "{DE0F233CBC3C2F77}Prefabs/Tebt.et" {
 GenericEntity MRE_6596E1DFDBD94631 : "{E3055CB3AB4817AD}Prefabs/MRE.et" {
  coords 170.332 1 162.953
 }
-$grp SCR_DestructibleBuildingEntity : "{EC63F328F15AD3AF}Prefabs/Structures/Agriculture/Hayloft/Hayloft_E_01/Hayloft_E_01_metal.et" {
+$grp SCR_DestructibleBuildingEntity : "{EC63F328F15AD3AF}Prefabs/Structures/Agriculture/Hayloft/Hayloft_E_01_metal.et" {
  {
   coords 131.274 0 140.639
  }
@@ -1614,11 +1623,11 @@ $grp GenericEntity : "{EF362B7442A2D5B1}Prefabs/Banane.et" {
   coords 173.52 1 157.667
  }
 }
-GameEntity "Optic_EXPS3-2_658CA4ACD69D888A" : "{F016B4DEF5F4DD5D}Prefabs/Weapons/Attachments/Optics/exps/Optic_EXPS3-2.et" {
- coords 141.435 1 169.46
-}
 GameEntity BC_Optic_Unertl_658C93716DB03B85 : "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et" {
  coords 129.329 1 158.584
+}
+GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
+ coords 134.74 20.582 147.538
 }
 GenericEntity Backpack_M70_Swiss_6596E1DFAFB3EAC1 : "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et" {
  coords 174.838 1 165.461

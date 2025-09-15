@@ -5,6 +5,9 @@
 modded class SCR_UniversalInventoryStorageComponent : UniversalInventoryStorageComponent
 {
 	
+	
+	
+	
 	//------------------------------------------------------------------------------------------------
 	protected override void OnAddedToSlot(IEntity item, int slotID)
 	{

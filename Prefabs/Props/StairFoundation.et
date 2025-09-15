@@ -1,0 +1,8 @@
+GenericEntity {
+ ID "6450141A99679E61"
+ components {
+  BLD_RaidingManagerComponent "{645805A6EBD4C921}" {
+   EnableDamage 0
+  }
+ }
+}

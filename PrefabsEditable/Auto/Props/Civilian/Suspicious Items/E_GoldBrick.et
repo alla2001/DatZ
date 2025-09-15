@@ -1,0 +1,18 @@
+GenericEntity {
+ ID "5DCAC0218DD39CB1"
+ components {
+  InventoryItemComponent "{5DCAC0218DD39CBF}" {
+   Attributes SCR_ItemAttributeCollection "{5DCAC0218DD39CA3}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{5DCAC0218DD39CA7}" {
+     Weight 5
+     ItemVolume 1000
+    }
+   }
+  }
+  EPF_PersistenceComponent "{6656A3BDC6286DE2}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{6656A3BDD63B7BA9}" {
+   }
+  }
+ }
+}

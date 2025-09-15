@@ -11,12 +11,12 @@ class DatZLootSpawner : GenericEntity
 
     [Attribute()]
     float spawnRadius;
-
+ [Attribute()]
     float despawnDelay;
 	[Attribute("", UIWidgets.ResourceNamePicker, desc: "", params: "conf")]
     ResourceName lootTable;
     ref array<IEntity> currentLoot = new array<IEntity>();
-	ref LootTable m_lootTable;
+	ref DatZLootTable m_lootTable;
 	
 	float lastPlayerTime = 0;
 	float lastSpawnTime= 0;
@@ -24,6 +24,12 @@ class DatZLootSpawner : GenericEntity
 	
 	[Attribute("false")]
 	bool ignoreOverrides;
+	
+	[Attribute("false")]
+	bool ignoreSystemDespawnDelay;
+	
+	[Attribute("false")]
+	bool dontSnapToGround;
 	override void EOnInit(IEntity owner){
 	
 
@@ -34,7 +40,7 @@ class DatZLootSpawner : GenericEntity
 	void InitLootTable(){
 	
 		
-		m_lootTable = new LootTable();
+		m_lootTable = new DatZLootTable();
 	   if (lootTable.IsEmpty())
 			return ;
 
@@ -42,11 +48,12 @@ class DatZLootSpawner : GenericEntity
 		if (!resource.IsValid())
 			return ;
 
-		m_lootTable =  LootTable.Cast(BaseContainerTools.CreateInstanceFromContainer(resource.GetResource().ToBaseContainer()));
+		m_lootTable =  DatZLootTable.Cast(BaseContainerTools.CreateInstanceFromContainer(resource.GetResource().ToBaseContainer()));
 		
 	}
 	void SetDespawnDelay(float delay){
 	
+		if(!ignoreSystemDespawnDelay)
     	despawnDelay = delay;
 	
 	}
@@ -106,6 +113,7 @@ class DatZLootSpawner : GenericEntity
 					IEntity ent = GetGame().SpawnEntityPrefab(resource, GetGame().GetWorld(), param);
 					if(ent ==null) continue;
 					currentLoot.Insert(ent);
+					if(!dontSnapToGround)
 					SCR_EntityHelper.SnapToGround(ent,startOffset: "0 0.4 0",maxLength:30);
 					vector pos = ent.GetOrigin();
 					InventoryItemComponent invItem = InventoryItemComponent.Cast( ent.FindComponent(InventoryItemComponent));

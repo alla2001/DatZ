@@ -1,57 +1,75 @@
 SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_BaseLoadout.et" {
  ID "520EC961A090B1EE"
  components {
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault ROOKIE
+    }
+   }
+  }
   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
    WeaponTemplate ""
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate ""
+   WeaponTemplate "{B9C7CB54E7105F14}Prefabs/BaconScorpion/SMG_Scorpion_FDE.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
    }
-   WeaponTemplate "{880A80C1FD1AE546}Prefabs/Weapons/Handguns/APS/Handgun_APS.et"
+   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
    HolsteredHidden 0
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
-     Prefab "{F6F24096665C6279}Prefabs/Characters/HeadGear/Hat_FlatCap_01/Hat_FlatCap_01_darkgrey_Dirty.et"
+     Prefab "{AE74155267C3D5BB}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_cover_base.et"
     }
     LoadoutSlotInfo Jacket {
      Prefab "{8641D9A55FF7D049}Prefabs/New_Equipment/Jackets/armst_jacket_army_sviter.et"
     }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{07B1F856943B7075}Prefabs/Characters/Vests/Vest_M69/Vest_M69_base.et"
+    }
     LoadoutSlotInfo Pants {
-     Prefab "{E1EA4FAEDD70A1C1}Prefabs/New_Equipment/Pants/armst_pants_jeans.et"
+     Prefab "{E1EA4FAEDD70A1C1}Prefabs/New_Equipment/Pants/jeans/armst_pants_jeans.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{3DE0155EC9767B98}Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
     }
    }
   }
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{5D7CC173FAA7C00E}" {
-     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     TargetStorage "Pants/armst_pants_jeans.et"
      PrefabsToSpawn {
       "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_USSR.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
      }
     }
     ItemsInitConfigurationItem "{5D7CC173FAA7C00C}" {
-     TargetStorage ""
+     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     TargetPurpose 1
      PrefabsToSpawn {
+      "{1641CA45B15C83E8}Prefabs/Apple.et"
      }
     }
     ItemsInitConfigurationItem "{557090130BCD36B7}" {
-     TargetStorage "Pants/armst_pants_jeans.et"
+     TargetStorage "Vest/Vest_Type56.et"
      PrefabsToSpawn {
-      "{DFC0532A49E17C39}Prefabs/Weapons/Magazines/aps_magazine/Magazine_9x18_APS_20rnd_Ball.et"
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{3A489A359EA3E01D}Prefabs/BaconScorpion/BaconScorpion_50rnd_9mm_ball.et" "{3A489A359EA3E01D}Prefabs/BaconScorpion/BaconScorpion_50rnd_9mm_ball.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et"
      }
     }
     ItemsInitConfigurationItem "{6064820F8177C8C0}" {
-     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     TargetStorage "Back/Backpack_Veshmeshok.et"
      PrefabsToSpawn {
-      "{1641CA45B15C83E8}Prefabs/Apple.et"
+      "{1641CA45B15C83E8}Prefabs/Apple.et" "{EF362B7442A2D5B1}Prefabs/Banane.et" "{4000304122B0C624}Prefabs/WaterCanteenUS.et" "{0927D05A2A9E9E4E}Prefabs/Torch.et" "{0892B183E7F9DF08}Prefabs/Rags.et" "{FA3627ED185A8505}Prefabs/Valuables/ESP Board/ESP Board.et" "{C3B3FE07EA1504C9}Prefabs/Valuables/GameBoy/Game Boy.et"
      }
     }
    }
