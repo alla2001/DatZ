@@ -2,7 +2,16 @@ GenericEntity : "{DD346352F0F30A7C}Prefabs/Systems/AmbientVehicles/AmbientVehicl
  ID "5D5E85F95F31C6F0"
  components {
   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-   m_iRespawnPeriod 3600
+   m_iRespawnPeriod 700
+   m_aIncludedEditableEntityLabels {
+    50 53 54
+   }
+   m_aExcludedEditableEntityLabels {
+    51 52 27 30 24 23 280
+   }
+  }
+  SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+   "faction affiliation" "US"
   }
  }
 }

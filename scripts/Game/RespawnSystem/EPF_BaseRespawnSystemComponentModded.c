@@ -46,11 +46,10 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 			return;
 		}
 	}
-
-	override protected void CreateMYCharacter(int playerId, string characterPersistenceId,int nut,string lc)	{
+	override	protected void CreateMYCharacter(int playerId, string characterPersistenceId,int nut,string lc)	{
 		ResourceName prefab = GetCreationPrefab(playerId, characterPersistenceId);
 		vector position, yawPitchRoll;
-		SCR_SpawnPoint point = SCR_SpawnPoint.GetRandomSpawnPointDeathmatch();
+	SCR_SpawnPoint point = SCR_SpawnPoint.GetRandomSpawnPointDeathmatch();
 		if (!point)
 		{
 			GetCreationPosition(playerId, characterPersistenceId, position, yawPitchRoll);
@@ -70,7 +69,8 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 		if (persistenceComponent)	{
 			BLD_BedSpawnComponent job = BLD_BedSpawnComponent.Cast(character.FindComponent(BLD_BedSpawnComponent));
 			if (job) {
-				job.ServerSetCD(nut);			
+				job.ServerSetCD(nut);
+				job.lastCode = lc;			
 			}	
 			persistenceComponent.SetPersistentId(characterPersistenceId);
 			OnCharacterCreated(playerId, characterPersistenceId, character);
@@ -82,7 +82,7 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 			return;
 		}
 	}
-
+	
 	//------------------------------------------------------------------------------------------------
 	//! Prefab for a newly created chracter
 	override  protected ResourceName GetCreationPrefab(int playerId, string characterPersistenceId)

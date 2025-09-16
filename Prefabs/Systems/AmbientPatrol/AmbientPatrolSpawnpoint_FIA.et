@@ -2,7 +2,11 @@ GenericEntity : "{1E4C8AD00BBB16AA}Prefabs/Systems/AmbientPatrol/AmbientPatrolSp
  ID "5CCEC603A58CB072"
  components {
   SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
-   m_iRespawnPeriod 300
+   m_eGroupType FIRETEAM
+   m_iRespawnPeriod 1500
+  }
+  SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+   "faction affiliation" "FIA"
   }
  }
 }
