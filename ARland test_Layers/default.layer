@@ -246,6 +246,26 @@ $grp GenericEntity {
   coords 2495.87 147.765 2280.018
  }
 }
+$grp SCR_SpawnMissionPoint {
+ {
+  coords 706.346 39 2723.77
+  angleX -0.622
+  angleY 35.758
+  angleZ 2.029
+  missions {
+   "{12FC4638FF6FADCE}HeliMission.et"
+  }
+ }
+ {
+  coords 826.966 39.011 2786.319
+  angleX -0.622
+  angleY 35.758
+  angleZ 2.029
+  missions {
+   "{12FC4638FF6FADCE}HeliMission.et"
+  }
+ }
+}
 Vehicle MH47G_Block1 : "{03300A0463827C4B}Prefabs/Vehicles/Helicopters/H47/MH47G_Block2.et" {
  coords 624.366 39 2669.672
 }

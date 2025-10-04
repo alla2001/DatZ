@@ -11,8 +11,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Components/
      components {
       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
-        m_sMapMarkerText "Air Drop"
-        m_eMapMarkerIcon WAYPOINT
+        m_sMapMarkerText "Heli Crash"
+        m_eMapMarkerIcon AMBUSH
         m_eMapMarkerColor RED
        }
       }

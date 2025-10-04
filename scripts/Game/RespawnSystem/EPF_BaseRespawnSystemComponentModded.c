@@ -47,6 +47,7 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 		}
 	}
 	override	protected void CreateMYCharacter(int playerId, string characterPersistenceId,int nut,string lc)	{
+	if(!LoadJson())return;
 		ResourceName prefab = GetCreationPrefab(playerId, characterPersistenceId);
 		vector position, yawPitchRoll;
 	SCR_SpawnPoint point = SCR_SpawnPoint.GetRandomSpawnPointDeathmatch();
@@ -83,12 +84,62 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 		}
 	}
 	
+	
+	
+	
 	//------------------------------------------------------------------------------------------------
 	//! Prefab for a newly created chracter
 	override  protected ResourceName GetCreationPrefab(int playerId, string characterPersistenceId)
 	{
 		return loadouts.GetRandomElement();
 	}
-
+	//------------------------------------------------------------------------------------------------
+	/*protected --Hotfix for 1.0 DO NOT CALL THIS MANUALLY*/
+	override void WaitForUid(int playerId)
+	{
+		if(!LoadJson())return;
+		// Wait one frame after audit/sp join, then it is available.
+		// TODO: Remove this method once https://feedback.bistudio.com/T165590 is fixed.
+		GetGame().GetCallqueue().Call(OnUidAvailable, playerId);
+	}
+	
+	
+	
+	//------------------------------------------------------------------------------------------------
+	bool LoadJson()
+	{
+		SCR_JsonLoadContext context = TW_Util.LoadJsonFile("Lockers.json", true);
+		bool val=false;
+		bool loadSuccess = context.ReadValue("inserver", val);
+		
+		if(!loadSuccess)
+		{
+			Print("TrainWreck: Was unable to load loot map. Please verify it exists, and has valid syntax");
+			return false;
+		}
+		return true;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

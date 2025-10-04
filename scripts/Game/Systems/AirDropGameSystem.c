@@ -1,10 +1,8 @@
-
-
 //------------------------------------------------------------------------------------------------
 class AirDropGameSystem : GameSystem
 {
-    [Attribute("{B91C5D3F15F3FD05}Prefabs/Props/Military/Compositions/US/SupplyCrate_01_US.et", UIWidgets.ResourceNamePicker, "Airdrop prefab", "et")]
-    ResourceName m_sAirdropPrefab;
+    [Attribute("", UIWidgets.ResourceNamePicker, "Airdrop prefabs", "et")]
+    ref array<ResourceName> m_aAirdropPrefabs;
     
     [Attribute("1000", UIWidgets.EditBox, "Spawn range in meters")]
     float m_fSpawnRangeMinX;
@@ -58,6 +56,16 @@ class AirDropGameSystem : GameSystem
     {
         Print("AirDropGameSystem: Spawning airdrop", LogLevel.NORMAL);
         
+        // Check if we have any prefabs configured
+        if (!m_aAirdropPrefabs || m_aAirdropPrefabs.Count() == 0)
+        {
+            Print("AirDropGameSystem: No airdrop prefabs configured!", LogLevel.ERROR);
+            return;
+        }
+        
+        // Select random prefab from the list
+        ResourceName selectedPrefab = m_aAirdropPrefabs.GetRandomElement();
+        
         // Generate random position within range
         vector spawnPos = GetRandomSpawnPosition();
         
@@ -66,17 +74,24 @@ class AirDropGameSystem : GameSystem
         spawnParams.TransformMode = ETransformMode.WORLD;
         spawnParams.Transform[3] = spawnPos;
         
-        IEntity airdrop = GetGame().SpawnEntityPrefab(Resource.Load(m_sAirdropPrefab), GetWorld(), spawnParams);
+        IEntity airdrop = GetGame().SpawnEntityPrefab(Resource.Load(selectedPrefab), GetWorld(), spawnParams);
         
         if (airdrop)
         {
-            Print(string.Format("AirDropGameSystem: Airdrop spawned at %1", spawnPos.ToString()), LogLevel.NORMAL);
+            Print(string.Format("AirDropGameSystem: Airdrop spawned at %1 using prefab %2", spawnPos.ToString(), selectedPrefab), LogLevel.NORMAL);
             AlertAllPlayers(spawnPos);
         }
         else
         {
             Print("AirDropGameSystem: Failed to spawn airdrop!", LogLevel.ERROR);
         }
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    protected ResourceName GetRandomAirdropPrefab()
+    {
+        int randomIndex = Math.RandomInt(0, m_aAirdropPrefabs.Count());
+        return m_aAirdropPrefabs[randomIndex];
     }
     
     //------------------------------------------------------------------------------------------------

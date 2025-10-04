@@ -1,0 +1,6 @@
+GenericEntity FlagPlans_667ADD9412410C04 : "{535141D3EBC36D1E}Prefabs/BaseBuilding/Flag/FlagPlans.et" {
+ coords 1378.982 39 2777.796
+}
+GenericEntity NewBasePlans_667ADD94EBFF6BFF : "{703F2DB693C60ABF}Prefabs/Props/Civilian/NewBasePlans.et" {
+ coords 1377.739 39 2778.657
+}

@@ -1,13 +1,178 @@
 GenericEntity {
  ID "6450141C5F5201F1"
  components {
+  BLD_OwnershipComponent "{64535D2E33029800}" {
+   MaxHealth 3000
+  }
   BLD_RaidingManagerComponent "{645805A6F0A535E4}" {
    "Additional hit zones" {
-    SCR_HitZone fbi {
-     MaxHealth 500
+    SCR_HitZone asd {
+     ColliderNames +{
+     }
+     HZDefault 1
+     MaxHealth 1000
+     "Collision multiplier" 0
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0
+     "Fragmentation multiplier" 0
+     "Incendiary multiplier" 0
+     "Fire multiplier" 0
+     m_fFireMultiplier 0
     }
-    SCR_HitZone fbo {
-     MaxHealth 500
+    SCR_HitZone dsa {
+     ColliderNames {
+      "UTM_wall_doorway" "UTM_wall_doorway"
+     }
+     ParentHZs {
+      ParentHitZone "{666F0AF77616756A}" {
+       Overkill 1
+      }
+     }
+    }
+   }
+  }
+  EPF_PersistenceComponent "{64535D2E3D90EAB9}" {
+   m_pSaveData BLD_KodiiSaveDataClass "{64535D2E3F5B9DC0}" {
+    m_aComponents {
+     BLD_OwnershipComponentSaveDataClass "{64535D2E3839DDBC}" {
+     }
+    }
+   }
+  }
+  MeshObject "{6450141C561E41E6}" {
+   Object "{65D98E79D8801372}Props/Doorway/doorwayh.xob"
+   Materials {
+    MaterialAssignClass "{6468E9D57BBEC6A4}" {
+     SourceMaterial "frames"
+     AssignedMaterial "{641FEFEC429FC1A2}Props/Wood.emat"
+    }
+    MaterialAssignClass "{6468E9D57BBEC6B2}" {
+     SourceMaterial "logs"
+     AssignedMaterial "{641FEFEC429FC1A2}Props/Wood.emat"
+    }
+   }
+   PixelSizeScale 3
+   BoundingBox AABBBoundingVolume "{6455578BAF1416E8}" {
+    Mins -1.508 -0.003 -0.106
+    Maxs 1.508 3.003 0.082
+   }
+  }
+  RigidBody "{6450141C5243CC88}" {
+   Layers 131073
+   Geometries {
+    PhysicsModelGeometry "{6676E5C3638ED203}" {
+     SurfaceProperties "{EA270CE454C419FD}Common/Materials/Game/wood.gamemat"
+     Collider "UTM_wall_doorway"
+    }
+   }
+   Static 1
+  }
+  SCR_EditableEntityComponent "{65312B242152C3E2}" {
+   Enabled 0
+   m_UIInfo SCR_EditableEntityUIInfo "{65312B2423BBF8D4}" {
+    Name "Building Part"
+    m_aAutoLabels +{
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_bStatic 1
+   m_fMaxDrawDistance 20
+  }
+  ActionsManagerComponent "{64563565379BB82E}" {
+   ActionContexts {
+    UserActionContext "{64563565309BE7B9}" {
+     ContextName "Top"
+     Position PointInfo "{645635653E3F304F}" {
+      Offset 0 2.8 0
+     }
+     Radius 0.6
+    }
+   }
+   additionalActions {
+    BLD_PartUniversalUserAction "{65DD5587F70618F5}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Ceiling"
+     Duration 2
+     Part "{B70CAD8D53F7267C}Prefabs/Props/Ceiling.et"
+     BuildPricePartName "Ceiling"
+     localOffset 0 3 1.5
+    }
+    BLD_PartUniversalUserAction "{65DD5587F3375E61}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Wall"
+     Duration 2
+     Part "{134F263C895CE56B}Prefabs/Props/Wall.et"
+     BuildPricePartName "Wall"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587FE289A12}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Door"
+     Duration 2
+     Part "{417ADB670039E3D8}Prefabs/Props/Doorway.et"
+     BuildPricePartName "Doorway"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587F963FED6}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Window"
+     Duration 2
+     Part "{BFEBBF26A643FBA6}Prefabs/Props/Window.et"
+     BuildPricePartName "Window"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587FBE69017}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "SmallWall"
+     Duration 2
+     Part "{F2CAA88E556DF686}Prefabs/Props/WallSmall.et"
+     BuildPricePartName "SmallWall"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_DeleteUserAction "{645704F47D26D293}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{645704F456DEBA86}" {
+      Name "Delete"
+     }
+     Duration 5
+     "Sort Priority" 12
+    }
+    BLD_WallFlipUserAction "{646170EB38FAF3D4}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{646170EB22C1B0BB}" {
+      Name "Rotate"
+     }
+     Duration 3
+     "Sort Priority" 20
+    }
+    BLD_RepairUserAction "{657D637DAC2DEFEA}" {
+     ParentContextList +{
+     }
+     UIInfo UIInfo "{657D637D55BDB69A}" {
+     }
+     Duration 30
+     "Sort Priority" 88
     }
    }
   }

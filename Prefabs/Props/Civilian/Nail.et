@@ -1,0 +1,8 @@
+GenericEntity {
+ ID "65F74BD2237056F1"
+ components {
+  EPF_PersistenceComponent "{65F74BD2FC2643D4}" {
+   m_bStorageRoot 0
+  }
+ }
+}

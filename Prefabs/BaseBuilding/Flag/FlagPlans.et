@@ -1,0 +1,8 @@
+GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
+ ID "5256876839A05289"
+ components {
+  EPF_PersistenceComponent "{646719D7C0BB5A93}" {
+   m_bStorageRoot 0
+  }
+ }
+}

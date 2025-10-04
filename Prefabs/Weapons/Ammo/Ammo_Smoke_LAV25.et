@@ -1,0 +1,8 @@
+Projectile : "{D93DAC8D6AE1572D}Prefabs/Weapons/Core/Armament_Ammo_Smoke.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  EPF_PersistenceComponent "{5D74D249CCC332DA}" {
+   m_bStorageRoot 0
+  }
+ }
+}

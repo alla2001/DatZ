@@ -1,5 +1,216 @@
 SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
  ID "56B2B479C6B96951"
+ components {
+  SCR_CampaignBuildingManagerComponent "{5D7CEE59B8954EBB}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{5DF6FBB5913F3245}" {
+   }
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+   m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
+  }
+  SCR_EditorRespawnBriefingComponent "{570245454BF91285}" {
+   m_Info SCR_FormatUIInfo "{57024551E01725D4}" {
+    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
+    IconSetName "Logo_Editor"
+    m_aDescriptionBlocks {
+     SCR_SubBlockUIName "{57024551DA8DA4E7}" {
+      Name "#AR-EditorRespawnBriefing_Description_1"
+     }
+     SCR_SubBlockUIName "{570245502546615D}" {
+      Name "<br/>"
+     }
+     SCR_SubBlockUIName "{57024551D989EDAF}" {
+      Name "#AR-EditorRespawnBriefing_Description_2"
+     }
+     SCR_SubBlockUIName "{589EE51D327B1C2E}" {
+      Name "<br/>"
+     }
+     SCR_ActionBlockUIName "{57024551BA969346}" {
+      Name "#AR-EditorRespawnBriefing_Description_4"
+      m_iDevice "Mouse & Keyboard"
+      m_sActionName "ShowScoreboard"
+     }
+     SCR_ActionBlockUIName "{5868C2E91D4E5713}" {
+      Name "#AR-EditorRespawnBriefing_Description_5"
+      m_iDevice Gamepad
+      m_sActionName "MenuOpen"
+     }
+    }
+   }
+   m_SimpleBriefingBackground "{3C50D67D082BA322}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_2_UI.edds"
+   m_InfoGameMaster SCR_FormatUIInfo "{59188E6A004A529C}" {
+    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
+    IconSetName "Logo_Editor"
+    m_aDescriptionBlocks {
+     SCR_SubBlockUIName "{59188E6BCF638E93}" {
+      Name "#AR-EditorRespawnBriefing_Description_GameMaster_1"
+     }
+     SCR_SubBlockUIName "{59188E6BF7C70F61}" {
+     }
+     SCR_SubBlockUIName "{59188E6BFCFADAEC}" {
+      Name "#AR-EditorRespawnBriefing_Description_GameMaster_2"
+     }
+    }
+   }
+   m_InfoHost SCR_FormatUIInfo "{57027889747C45E0}" {
+    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
+    IconSetName "Logo_Editor"
+    m_aDescriptionBlocks {
+     SCR_SubBlockUIName "{57027889747C4414}" {
+      Name "#AR-EditorRespawnBriefing_Description_1"
+     }
+     SCR_SubBlockUIName "{5916F8D9F21BC382}" {
+     }
+     SCR_SubBlockUIName "{589E84D2B18F57ED}" {
+      Name "#AR-EditorRespawnBriefing_Description_3"
+     }
+    }
+   }
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_bPermitUnconsciousVON 1
+  }
+  SCR_HintManagerComponent "{5702B54C6CBC9D7F}" {
+   m_aConditionLists {
+    SCR_HintConditionList "{5702B60460CC2467}" {
+    }
+   }
+  }
+  SCR_IdentityManagerComponent "{5AEEA80681EA61AF}" {
+   Enabled 0
+   m_bEnableIdentityItemSlot 0
+  }
+  SCR_InitWeatherComponent "{58DCAB6D83A0CB17}" {
+   m_sInitialStartingWeatherId "Cloudy"
+   m_iSetWeatherConstant 1
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NightModeGameModeComponent "{5D50E84688D5A408}" {
+   m_bAllowGlobalNightMode 1
+  }
+  SCR_PerceivedFactionManagerComponent "{61AA7E6E0C6A76F9}" {
+   m_eCharacterPerceivedFactionOutfitType HIGHEST_VALUE
+  }
+  SCR_PlayerSpawnPointManagerComponent "{56C2DDA69EF94C6D}" {
+   m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
+   m_bEnablePlayerSpawnPoints 0
+  }
+  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+   m_bEnableReconnect 0
+  }
+  EPF_BaseRespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_AutoSpawnLogic "{5D28B7ADCD4F95B9}" {
+    m_sForcedFaction "USSR"
+   }
+   loadouts {
+    "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
+   }
+  }
+  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
+   Enabled 0
+   m_DebugHeaderResourceName "{2BBBE828037C6F4B}Missions/22_GM_Arland.conf"
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   Enabled 0
+   m_aVotingTemplates {
+    SCR_VotingEditorIn "{58D06C7270F3CE2C}" {
+    }
+    SCR_VotingEditorOut "{58D06C7271BA2FDE}" {
+    }
+    SCR_VotingEditorWithdraw "{5A8A8738B1A4AC19}" {
+    }
+   }
+  }
+  SCR_WelcomeScreenComponent "{5D7290AC8A3E657E}" {
+   m_sHeaderTitle "#AR-Editor_DeployMenu_Screen_Title"
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{5D7290AC92D25160}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF7423AA2}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{5D7290ABCBFE3176}" {
+       m_sContentImage "{352FDBC685A7FCD8}UI/Textures/DeployMenu/DeployImages/GMDeploy_Player.edds"
+       m_sContentTitleText "#AR-Editor_DeployMenu_Player_Title"
+       m_sContentDescriptionText "#AR-Editor_DeployMenu_Player_Description"
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF8B7756B}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{5D729EC0A67A9D46}" {
+       m_sContentImage "{2A9663A5D9B16758}UI/Textures/DeployMenu/DeployImages/GMDeploy_Gamemaster.edds"
+       m_sContentTitleText "#AR-Editor_DeployMenu_Scenario_Title"
+       m_sContentDescriptionText "#AR-Editor_DeployMenu_Scenario_Description"
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABFF9DBADC}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{5D729EC0BC408CC1}" {
+       m_sContentImage "{5DFB6BDBD880CB49}UI/Textures/DeployMenu/DeployImages/GMDeploy_BecomeGM.edds"
+       m_sContentTitleText "#AR-Editor_DeployMenu_GM_Rule_Title"
+       m_sContentDescriptionText "#AR-Editor_DeployMenu_GM_Rule_Description"
+      }
+     }
+    }
+   }
+  }
+  EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
+   m_fAutosaveInterval 60
+   m_iAutosaveIterations 10
+   m_fUpdateRate 1.13
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{65336C9DEAB791DF}" {
+    m_sDatabaseName "database"
+   }
+  }
+  LAG_SCR_ServerRestartAlarmComponent "{6598B076D803746D}" {
+  }
+  SCR_EditorCameraDefaultsComponent "{530EB67957FF1565}" {
+   m_aPositions {
+    SCR_CameraCoordinates "{530EB67B0FD7776F}" {
+     m_vCameraPosition 3091.22 105.48 1532.69
+     m_vCameraAngles -2.4 303.88 0
+    }
+    SCR_CameraCoordinates "{530EB67BCC8CA498}" {
+     m_vCameraPosition 2853.84 97.94 2969.39
+     m_vCameraAngles -12.02 479.26 0
+    }
+    SCR_CameraCoordinates "{530EB67BB8FC1FEC}" {
+     m_vCameraPosition 1893.28 58.29 2899.16
+     m_vCameraAngles -5.12 615.16 0
+    }
+    SCR_CameraCoordinates "{530ECD979F9A89CD}" {
+     m_vCameraPosition 1337.48 39.182 1363.03
+     m_vCameraAngles -2.4 134.683 0
+    }
+    SCR_CameraCoordinates "{530ECD967B114EDF}" {
+     m_vCameraPosition 2587 177.148 2193.25
+     m_vCameraAngles -13.5 -48.317 0
+    }
+    SCR_CameraCoordinates "{530ECD96618A88C5}" {
+     m_vCameraPosition 2567.42 51.28 950.664
+     m_vCameraAngles -19.8 87.282 0
+    }
+    SCR_CameraCoordinates "{530ECD9641E9FF5E}" {
+     m_vCameraPosition 2497.76 139.155 1632.75
+     m_vCameraAngles -17.7 -157.517 0
+    }
+    SCR_CameraCoordinates "{530ECD962E3DC5CF}" {
+     m_vCameraPosition 3673.41 74.144 2643.3
+     m_vCameraAngles -6.3 -99.017 0
+    }
+   }
+  }
+  SCR_TimeAndWeatherHandlerComponent "{6598B2493ED80CDC}" {
+   m_iDuskDawnTimescale 4
+   m_iDayTimescale 6
+   m_iNightTimescale 11
+  }
+ }
+ m_eTestGameFlags SpawnAI
+ needFlagToBuild 1
  {
   ScriptedChatEntity {
    ID "56E685E9EF952A67"

@@ -1,0 +1,76 @@
+SCR_ChimeraCharacter : "{84B40583F4D1B7A3}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et" {
+ ID "520EC961A090B1EE"
+ components {
+  ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault ROOKIE
+    }
+   }
+  }
+  CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
+   WeaponTemplate ""
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{0D8AAF3B3F051B5A}Prefabs/Weapons/Rifles/SVD/Rifle_SVU_base.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+   }
+   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+   HolsteredHidden 0
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{A7E6D7ECD5F684D7}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{F1E29085C62F0D55}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZS.et"
+    }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{ADE19B33DCBB9005}Prefabs/Characters/Vests/Vest_6B2/Vest_6B2.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{E1EA4FAEDD70A1C0}Prefabs/New_Equipment/Pants/armst_pants_flora.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{3DE0155EC9767B98}Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{ED5574EA7F63B457}Prefabs/Characters/Vests/Vest_Type56/Vest_Type56.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00E}" {
+     TargetStorage "Pants/armst_pants_jeans.et"
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00C}" {
+     TargetStorage "Jacket/armst_jacket_army_sviter.et"
+     TargetPurpose 1
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{557090130BCD36B7}" {
+     TargetStorage "Vest/Vest_Type56.et"
+     PrefabsToSpawn {
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{6DA9E264FE3C2701}Prefabs/Weapons/Magazines/Magazine_762x54_SVU_20rnd_Tracer.et" "{6DA9E264FE3C2701}Prefabs/Weapons/Magazines/Magazine_762x54_SVU_20rnd_Tracer.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{6DA9E264FE3C2701}Prefabs/Weapons/Magazines/Magazine_762x54_SVU_20rnd_Tracer.et" "{6DA9E264FE3C2701}Prefabs/Weapons/Magazines/Magazine_762x54_SVU_20rnd_Tracer.et" "{6DA9E264FE3C2701}Prefabs/Weapons/Magazines/Magazine_762x54_SVU_20rnd_Tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6064820F8177C8C0}" {
+     TargetStorage "Back/Backpack_Veshmeshok.et"
+     PrefabsToSpawn {
+      "{1641CA45B15C83E8}Prefabs/Apple.et" "{EF362B7442A2D5B1}Prefabs/Banane.et" "{4000304122B0C624}Prefabs/WaterCanteenUS.et" "{0927D05A2A9E9E4E}Prefabs/Torch.et" "{0892B183E7F9DF08}Prefabs/Rags.et" "{C7276A7BB327BDCB}Prefabs/Valuables/SSD/SSD.et" "{C3B3FE07EA1504C9}Prefabs/Valuables/GameBoy/Game Boy.et"
+     }
+    }
+   }
+  }
+ }
+}

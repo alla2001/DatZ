@@ -1,0 +1,49 @@
+GenericEntity {
+ ID "650F048D1AC4F668"
+ components {
+  DatZMission "{666D106280384DFD}" {
+   m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{666D10628604D5FA}" {
+    m_sMapMarkerText "Heli Crash"
+    m_eMapMarkerIcon OBJECTIVE_MARKER
+    m_eMapMarkerColor RED
+   }
+  }
+ }
+ {
+  GenericEntity : "{D468BFCBFECF9436}Prefabs/Marker.et" {
+   ID "666C92E2EFCA2405"
+   coords 0.101 2.895 -2.269
+   {
+    GenericEntity {
+     ID "66572785F8D79686"
+     {
+      GenericEntity {
+       ID "66572785F8D79687"
+       components {
+        SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+         m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+          m_eMapMarkerIcon OBJECTIVE_MARKER
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity : "{DE31BAA70E260BE9}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/Dst/CrateStack_01_Dst_3_decal_01.et" {
+   ID "667AC3964FE5CBD2"
+   coords 0.167 -0.182 -4.322
+   angleX 0.278
+   angleY -80.17
+   angleZ -1.501
+  }
+  GenericEntity : "{EF070B8345288C8B}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/Dst/CrateStack_01_Dst_2_base.et" {
+   ID "667AC3964FE5CBCF"
+   coords 0.889 0.238 -2.869
+   angleX -2.932
+   angleY -8.768
+   angleZ -85.852
+  }
+ }
+}

@@ -177,6 +177,9 @@ GameEntity Torch_6596E1DFC440B9A2 : "{0927D05A2A9E9E4E}Prefabs/Torch.et" {
 GenericEntity MilitaryTentUnDeployedNonTan_6596E1DFDB64EDB3 : "{093CB5994CC797B4}Prefabs/MilitaryTentUnDeployedNonTan.et" {
  coords 168.994 1 160.642
 }
+GenericEntity Admin_M9_6664DEDD2B0D1958 : "{09B40A189DAFBF1A}Prefabs/Weapons/Handguns/M9/Admin_M9.et" {
+ coords 126.235 2.08 174.025
+}
 GenericEntity MilitaryKeyCard_6596E1DFDC7FD015 : "{0CC42C67DA16F637}Prefabs/MilitaryKeyCard.et" {
  coords 170.43 1 161.396
 }
@@ -193,6 +196,9 @@ GenericEntity MorphineInjection_01_65257C1823FCB39C : "{0D9A5DCF89AE7AA9}Prefabs
 }
 GenericEntity TentTan_6598A52C11651D7A : "{0EF189100B0AE183}Prefabs/TentTan.et" {
  coords 168.007 1 157.138
+}
+GenericEntity Wall_6664DEDD7444C2F3 : "{134F263C895CE56B}Prefabs/Props/Wall.et" {
+ coords 123.605 2.694 183.412
 }
 GenericEntity : "{1423D8B69C86DBC5}Prefabs/Base Building/SurvivorTable.et" {
  coords 126.304 1 168.258
@@ -365,6 +371,35 @@ $grp Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Ba
 GenericEntity "Cooking Pot Clean Med_658CB24E243319EF" : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et" {
  coords 129.535 1 156.32
 }
+Projectile Ammo_Rocket_PG7VM_668282A3E1BF7137 : "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et" {
+ coords 131.667 1 168.112
+}
+$grp GenericEntity : "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.et" {
+ DemoBlock_M112_668282A1DAE10963 {
+  coords 128.112 1 168.472
+ }
+ DemoBlock_M112_668282A1DAE2 {
+  coords 127.999 1 168.155
+ }
+ DemoBlock_M112_668282A1DAE3 {
+  coords 127.783 1 168.49
+ }
+ DemoBlock_M112_668282A1DAE4 {
+  coords 127.731 1 168.732
+ }
+ DemoBlock_M112_668282A1DAE5 {
+  coords 128.036 1 168.953
+ }
+ DemoBlock_M112_668282A1DAE6 {
+  coords 128.429 1 168.135
+ }
+ DemoBlock_M112_668282A1DAE7 {
+  coords 128.276 1 168.523
+ }
+ DemoBlock_M112_668282A1DAE8 {
+  coords 128.396 1 168.907
+ }
+}
 SCR_ChimeraCharacter Character_Base_659B15BE3A4DC361 : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
  coords 168.876 1 164.934
 }
@@ -397,8 +432,14 @@ GenericEntity : "{4168CE8C08BC74B1}Prefabs/Structures/BuildingParts/Heating/Stov
  coords 127.862 1 155.761
  angleY 30.091
 }
+GenericEntity Doorway_668282A07F78246B : "{417ADB670039E3D8}Prefabs/Props/Doorway.et" {
+ coords 133.986 1 176.609
+}
 GenericEntity Backpack_Kolobok_6596E1DFAC284A98 : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
  coords 173.015 1 168.53
+}
+Vehicle BRDM2_FIA1 : "{442939C9617DF228}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2_FIA.et" {
+ coords 135.816 1 169.154
 }
 GenericEntity Backpack_Medical_M5_6596E1DFADCC2FB2 : "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et" {
  coords 173.818 1 165.008
@@ -1396,6 +1437,62 @@ $grp GenericEntity : "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" {
 GenericEntity RawSteak_6596E1DFD838F293 : "{73BE06A6EFD87247}Prefabs/RawSteak.et" {
  coords 169.631 1 166.767
 }
+GenericEntity StairFoundation_6664DEDD71751277 : "{7420EF868C491C49}Prefabs/Props/StairFoundation.et" {
+ components {
+  BLD_RaidingManagerComponent "{645805A6EBD4C921}" {
+   EnableDamage 1
+  }
+ }
+ coords 133.583 2.643 183.463
+ angleY 0
+}
+GenericEntity Foundation_6664DEDD70C76501 : "{745A6C8FA5BE01BB}Prefabs/Props/Foundation.et" {
+ coords 138.988 1 182.268
+}
+GenericEntity Stairs_6664DEDD7306E673 : "{74D184088BFF6CEC}Prefabs/Props/Stairs.et" {
+ coords 128.409 1.984 183.973
+}
+$grp GenericEntity : "{7A82FE978603F137}Prefabs/Weapons/Launchers/RPG7/Launcher_RPG7.et" {
+ Launcher_RPG7_6664DEDE7CC52FC1 {
+  coords 132.548 1.491 167.366
+ }
+ Launcher_RPG7_6664DEDE7CC52FC2 {
+  coords 132.205 1 167.365
+ }
+ Launcher_RPG7_6664DEDE7CC52FC3 {
+  coords 131.894 1 166.422
+ }
+ Launcher_RPG7_6664DEDE7CC52FC4 {
+  coords 132.69 1 165.838
+ }
+ Launcher_RPG7_6664DEDE7CC52FC5 {
+  coords 132.091 1 167.157
+ }
+ Launcher_RPG7_6664DEDE7CC52FC6 {
+  coords 131.061 1 166.187
+ }
+ Launcher_RPG7_6664DEDE7CC52FC7 {
+  coords 132.407 1 164.737
+ }
+ Launcher_RPG7_6664DEDE7CC52FC8 {
+  coords 131.518 1 165.963
+ }
+ Launcher_RPG7_6664DEDE7CC52FC9 {
+  coords 131.424 1 166.438
+ }
+ Launcher_RPG7_6664DEDE7CC52FC10 {
+  coords 131.394 1 167.15
+ }
+ Launcher_RPG7_6664DEDE7CC52FC11 {
+  coords 131.338 1 167.463
+ }
+ Launcher_RPG7_6664DEDE7CC52FC12 {
+  coords 131.241 1 167.338
+ }
+ Launcher_RPG7_6664DEDE7CC52FC13 {
+  coords 129.93 1 165.794
+ }
+}
 GenericEntity Backpack_Medical_Soviet_6596E1DFAD70EBE2 : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
  coords 172.683 1 165.067
 }
@@ -1522,6 +1619,21 @@ SCR_ChimeraCharacter Character_CIV_Businessman_2_658EE734E7986CD8 : "{A517C72CEF
  }
  coords 141.304 1 170.557
 }
+GenericEntity Ceiling_6664DEDD7CB3E1F1 : "{B70CAD8D53F7267C}Prefabs/Props/Ceiling.et" {
+ components {
+  BLD_RaidingManagerComponent "{645805A6885BDF6B}" {
+   "Additional hit zones" {
+    SCR_HitZone hit {
+     "Kinetic multiplier" 0.01
+     "Explosive multiplier" 0
+     "Incendiary multiplier" 0
+    }
+   }
+   EnableDamage 1
+  }
+ }
+ coords 129.369 1.913 177.759
+}
 GenericEntity SurvivalDeskSpawner_65A29C322E43122D : "{B794F23E6A75C195}Prefabs/SurvivalDeskSpawner.et" {
  components {
   PlaceablePrefabGadget "{65A29C3241D7605F}" {
@@ -1544,6 +1656,10 @@ GenericEntity CannedMeat_6596E1DFD12B2FD3 : "{BFDBFE2BED29C04A}Prefabs/CannedMea
  }
  coords 171.457 1 163.761
 }
+GenericEntity Window_6664DEDD48C34F8B : "{BFEBBF26A643FBA6}Prefabs/Props/Window.et" {
+ coords 138.417 1 193.344
+ angleY 0
+}
 GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_B32.et" {
  components {
   MeshObject "{CFBAA4B701F95D69}" {
@@ -1559,6 +1675,9 @@ GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Pr
 }
 GenericEntity "Gold Coin_6656DDA315CD285D" : "{C53F5A5C87A34A46}Prefabs/Valuables/Coins/Gold Coin.et" {
  coords 194.753 12.886 136.402
+}
+GenericEntity BlastingMachine_M34_668282A1CE23FE0E : "{CE0AF733722B3978}Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34.et" {
+ coords 128.345 1.108 168.466
 }
 GenericEntity MG_M249_6656DDA4E28E37F6 : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" {
  coords 130.322 11.345 143.931
@@ -1622,6 +1741,18 @@ $grp GenericEntity : "{EF362B7442A2D5B1}Prefabs/Banane.et" {
  Banane_6596E1DFD327097C {
   coords 173.52 1 157.667
  }
+}
+$grp GenericEntity : "{F0EAEF8FBBC96038}Prefabs/Weapons/Magazines/Magazine_9x19_M9_Admin.et" {
+ Magazine_9x19_M9_Admin_6664DEDD2D81552A {
+  coords 127.047 1 173.96
+ }
+ Magazine_9x19_M9_Admin_6664DEDD2D033BC2 {
+  coords 126.44 1 173.715
+ }
+}
+GenericEntity WallSmall_6664DEDD761BEF86 : "{F2CAA88E556DF686}Prefabs/Props/WallSmall.et" {
+ coords 132.128 1 196.064
+ angleY 0
 }
 GameEntity BC_Optic_Unertl_658C93716DB03B85 : "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et" {
  coords 129.329 1 158.584
