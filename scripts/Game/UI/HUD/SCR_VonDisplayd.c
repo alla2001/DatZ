@@ -7,7 +7,7 @@ modded class SCR_VonDisplay
 	
 	//------------------------------------------------------------------------------------------------
 	//! Override OnReceive to process audio but hide UI elements
-	override event void OnReceive(int playerId, BaseTransceiver receiver, int frequency, float quality)
+	/*override event void OnReceive(int playerId, BaseTransceiver receiver, int frequency, float quality)
 	{
 		if (!m_wRoot || m_bIsVONUIDisabled)
 			return;
@@ -22,7 +22,7 @@ modded class SCR_VonDisplay
 		
 		// Otherwise, use original behavior
 		super.OnReceive(playerId, receiver, frequency, quality);
-	}
+	}*/
 
 	//------------------------------------------------------------------------------------------------
 	//! Alternative approach: Create transmission data but immediately hide the widgets
@@ -62,11 +62,9 @@ modded class SCR_VonDisplay
 	}
 	*/
 
-	//------------------------------------------------------------------------------------------------
-	//! Override DisplayUpdate to skip incoming transmission UI updates
-	override void DisplayUpdate(IEntity owner, float timeSlice)
+		override void DisplayUpdate(IEntity owner, float timeSlice)
 	{
-		// Check if the SlotUIComponent is still valid
+		//Check if the SlotUIComponent is still valid otherwise change to the new one
 		if (m_HUDSlotComponent != m_SlotHandler.GetSlotUIComponent())
 		{
 			if (m_HUDSlotComponent)
@@ -79,7 +77,7 @@ modded class SCR_VonDisplay
 			m_HUDSlotComponent.GetOnResize().Insert(OnSlotUIResize);
 		}
 		
-		// Always update outgoing transmission (your own)
+		// update visibility timer
 		if (m_OutTransmission.m_bIsActive)
 		{
 			m_OutTransmission.m_fActiveTimeout += timeSlice;
@@ -91,27 +89,15 @@ modded class SCR_VonDisplay
 			}
 		}
 
+		// update fade
 		if (m_OutTransmission.m_bIsAnimating)
 			OpacityFade(m_OutTransmission, timeSlice);
 
-		// If mod is enabled, skip all incoming transmission UI processing
-		if (m_bHideOthersUIEnabled)
+		// update incoming transmissions
+		if (m_aTransmissions.IsEmpty())
 		{
-			// Clear any existing transmission data to prevent memory leaks
-			m_aTransmissions.Clear();
-			m_aTransmissionMap.Clear();
-			m_aAdditionalSpeakers.Clear();
-			
-			// Hide additional speakers widget
-			if (m_wAdditionalSpeakersWidget && m_wAdditionalSpeakersWidget.IsVisible())
-				m_wAdditionalSpeakersWidget.SetVisible(false);
-				
 			return;
 		}
-
-		// Original incoming transmission processing (when mod is disabled)
-		if (m_aTransmissions.IsEmpty())
-			return;
 
 		TransmissionData pTransmission;
 		int count = m_aTransmissions.Count() - 1;
@@ -120,13 +106,15 @@ modded class SCR_VonDisplay
 		{
 			if (i > m_aTransmissions.Count() - 1)
 			{
-				count--;
+				count -1;
 				continue;
 			}
 
 			pTransmission = m_aTransmissions[i];
+
 			bool isAdditional = m_aAdditionalSpeakers.Contains(pTransmission);
 
+			// update visibility timer
 			if (pTransmission.m_bIsActive)
 			{
 				pTransmission.m_fActiveTimeout += timeSlice;
@@ -138,9 +126,11 @@ modded class SCR_VonDisplay
 				}
 			}
 
+			// update fade
 			if (pTransmission.m_bIsAnimating)
 				OpacityFade(pTransmission, timeSlice, isAdditional);
 
+			// remove faded transmissions
 			if (!pTransmission.m_bVisible)
 			{
 				if (pTransmission.m_iPlayerID)
@@ -163,7 +153,7 @@ modded class SCR_VonDisplay
 					m_aTransmissionMap.Remove(m_aAdditionalSpeakers[0].m_iPlayerID);
 					m_aTransmissions.Remove(m_aTransmissions.Find(m_aAdditionalSpeakers[0]));
 
-					OnReceive(m_aAdditionalSpeakers[0].m_iPlayerID, m_aAdditionalSpeakers[0].m_RadioTransceiver, m_aAdditionalSpeakers[0].m_fFrequency, m_aAdditionalSpeakers[0].m_fQuality);
+					OnReceive(m_aAdditionalSpeakers[0].m_iPlayerID, m_aAdditionalSpeakers[0].m_bIsSenderEditor, m_aAdditionalSpeakers[0].m_RadioTransceiver, m_aAdditionalSpeakers[0].m_fFrequency, m_aAdditionalSpeakers[0].m_fQuality);
 
 					m_aAdditionalSpeakers.Remove(0);
 					m_wAdditionalSpeakersText.SetText("+" + m_aAdditionalSpeakers.Count().ToString());
@@ -172,29 +162,46 @@ modded class SCR_VonDisplay
 						m_wAdditionalSpeakersWidget.SetVisible(false);
 				}
 
-				count--;
+				count - 1;
 			}
 		}
 	}
 
 	//------------------------------------------------------------------------------------------------
-	//! Override initialization to optionally hide incoming UI elements
+	//! Initialize
 	override protected void InitDisplay()
 	{
-		// Call parent initialization first
-		super.InitDisplay();
+		m_bIsVONUIDisabled = GetGame().IsVONUIDisabledByServer();
+		m_bIsVONDirectDisabled = GetGame().IsVONDirectSpeechUIDisabledByServer();
+
+		m_PlayerController.m_OnDestroyed.Insert(OnDestroyed);
+
+		m_VONController = SCR_VONController.Cast(m_PlayerController.FindComponent(SCR_VONController));
+		m_VONController.GetOnVONActiveToggledInvoker().Insert(OnVONActiveToggled);
+		m_VONController.SetDisplay(this);	// we set this from here instead of the other way around to avoid load order issues
+
+		m_OutTransmission = new TransmissionData(m_wRoot.FindAnyWidget(WIDGET_TRANSMIT), 0);
+
+		m_wVerticalLayout = m_wRoot.FindAnyWidget(WIDGET_INCOMING);
+		m_wAdditionalSpeakersWidget = m_wRoot.FindAnyWidget(WIDGET_OVERFLOW);
+		m_wAdditionalSpeakersText = RichTextWidget.Cast(m_wRoot.FindAnyWidget(WIDGET_OVERFLOW_TEXT));
+
+		m_wSelectedHint = m_wRoot.FindAnyWidget(WIDGET_SELECTED_ROOT);
+		m_wSelectedHintIcon = ImageWidget.Cast(m_wSelectedHint.FindAnyWidget(WIDGET_SELECTED_ICON));
+		m_wSelectedHintIconGlow = ImageWidget.Cast(m_wSelectedHint.FindAnyWidget(WIDGET_SELECTED_ICONGLOW));
+		m_wSelectedVON = TextWidget.Cast(m_wRoot.FindAnyWidget(WIDGET_SELECTED_VON));
+		m_wSelectedText = TextWidget.Cast(m_wRoot.FindAnyWidget(WIDGET_SELECTED_TEXT));
+
+		m_SlotHandler = SCR_InfoDisplaySlotHandler.Cast(GetHandler(SCR_InfoDisplaySlotHandler));
+		if (!m_SlotHandler)
+			return;
 		
-		// If mod is enabled, hide incoming transmission UI elements
-		if (m_bHideOthersUIEnabled)
-		{
-			// Hide the incoming transmissions layout
-			if (m_wVerticalLayout)
-				m_wVerticalLayout.SetVisible(false);
-				
-			// Hide additional speakers widget  
-			if (m_wAdditionalSpeakersWidget)
-				m_wAdditionalSpeakersWidget.SetVisible(false);
-		}
+		m_HUDSlotComponent = m_SlotHandler.GetSlotUIComponent();
+		if (!m_HUDSlotComponent)
+			return;
+		
+		m_HUDSlotComponent.GetOnResize().Insert(OnSlotUIResize);
 	}
+
 }
 

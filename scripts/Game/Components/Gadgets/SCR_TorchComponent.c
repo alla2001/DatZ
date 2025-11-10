@@ -50,16 +50,16 @@ class SCR_TorchComponent : SCR_GadgetComponent
 		if (state && fuel.m_fCurrentAmount <= 0.0) return;
 			
 		m_bActivated = state;
-
+		/*
 		// Play sound
-		SCR_SoundManagerEntity soundManagerEntity = GetGame().GetSoundManagerEntity();
+		SCR_SoundManagerModule soundManagerEntity = GetGame().gets();
 		if (soundManagerEntity)
 		{
 			if (m_bActivated)
 				soundManagerEntity.CreateAndPlayAudioSource(GetOwner(), SCR_SoundEvent.SOUND_FLASHLIGHT_ON);
 			else
 				soundManagerEntity.CreateAndPlayAudioSource(GetOwner(), SCR_SoundEvent.SOUND_FLASHLIGHT_OFF);
-		}
+		}*/
 
 		UpdateLightState();
 	}

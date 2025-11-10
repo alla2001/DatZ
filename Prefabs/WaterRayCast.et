@@ -1,0 +1,13 @@
+GenericEntity {
+ ID "66D2DEA9C54FCB0C"
+ components {
+  WaterChecker "{654883A20F696018}" {
+   m_sParticleEffect "{F2242A6B1195B711}WaterCheck.et"
+   forwardOffset 1
+  }
+  RplComponent "{654883A207563E0C}" {
+  }
+  Hierarchy "{654883A34E5B0F15}" {
+  }
+ }
+}

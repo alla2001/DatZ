@@ -1,5 +1,5 @@
 
-modded class EPF_BasicRespawnSystemComponent : EPF_BaseRespawnSystemComponent
+/*modded class EPF_BasicRespawnSystemComponent : EPF_BaseRespawnSystemComponent
 {
 
 
@@ -18,4 +18,4 @@ modded class EPF_BasicRespawnSystemComponent : EPF_BaseRespawnSystemComponent
 
 	//------------------------------------------------------------------------------------------------
 	
-}
+}*/

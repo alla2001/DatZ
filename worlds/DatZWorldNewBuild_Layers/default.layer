@@ -19,210 +19,7 @@ PerceptionManager PerceptionManager2 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 12612.58 36.103 14569.193
 }
 SCR_GameModeEditor GameMode_GameMaster_Full2 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
- components {
-  EPF_BaseRespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_AutoSpawnLogic "{5D28B7ADCD4F95B9}" {
-    m_sForcedFaction "USSR"
-   }
-   loadouts {
-    "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et" "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
-   }
-  }
-  EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
-   m_fAutosaveInterval 5
-   m_iAutosaveIterations 50
-   m_fUpdateRate 7.35
-   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{65336C9DEAB791DF}" {
-    m_sDatabaseName "database"
-   }
-  }
-  SCR_CampaignBuildingManagerComponent "{5D7CEE59B8954EBB}" {
-   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
-   m_BudgetType CAMPAIGN
-   m_iCompositionRefundPercentage 100
-   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{5DF6FBB5913F3245}" : "{96A8B496A076F1C0}scripts/Game/Building/CampaignBuildingCompositionOutline.conf" {
-   }
-   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
-   m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
-  }
-  SCR_EditorCameraDefaultsComponent "{530EB67957FF1565}" {
-   m_aPositions {
-    SCR_CameraCoordinates "{530EB67B0FD7776F}" {
-     m_vCameraPosition 3091.22 105.48 1532.69
-     m_vCameraAngles -2.4 303.88 0
-    }
-    SCR_CameraCoordinates "{530EB67BCC8CA498}" {
-     m_vCameraPosition 2853.84 97.94 2969.39
-     m_vCameraAngles -12.02 479.26 0
-    }
-    SCR_CameraCoordinates "{530EB67BB8FC1FEC}" {
-     m_vCameraPosition 1893.28 58.29 2899.16
-     m_vCameraAngles -5.12 615.16 0
-    }
-    SCR_CameraCoordinates "{530ECD979F9A89CD}" {
-     m_vCameraPosition 1337.48 39.182 1363.03
-     m_vCameraAngles -2.4 134.683 0
-    }
-    SCR_CameraCoordinates "{530ECD967B114EDF}" {
-     m_vCameraPosition 2587 177.148 2193.25
-     m_vCameraAngles -13.5 -48.317 0
-    }
-    SCR_CameraCoordinates "{530ECD96618A88C5}" {
-     m_vCameraPosition 2567.42 51.28 950.664
-     m_vCameraAngles -19.8 87.282 0
-    }
-    SCR_CameraCoordinates "{530ECD9641E9FF5E}" {
-     m_vCameraPosition 2497.76 139.155 1632.75
-     m_vCameraAngles -17.7 -157.517 0
-    }
-    SCR_CameraCoordinates "{530ECD962E3DC5CF}" {
-     m_vCameraPosition 3673.41 74.144 2643.3
-     m_vCameraAngles -6.3 -99.017 0
-    }
-   }
-  }
-  SCR_EditorRespawnBriefingComponent "{570245454BF91285}" {
-   m_Info SCR_FormatUIInfo "{57024551E01725D4}" {
-    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
-    IconSetName "Logo_Editor"
-    m_aDescriptionBlocks {
-     SCR_SubBlockUIName "{57024551DA8DA4E7}" {
-      Name "#AR-EditorRespawnBriefing_Description_1"
-     }
-     SCR_SubBlockUIName "{570245502546615D}" {
-      Name "<br/>"
-     }
-     SCR_SubBlockUIName "{57024551D989EDAF}" {
-      Name "#AR-EditorRespawnBriefing_Description_2"
-     }
-     SCR_SubBlockUIName "{589EE51D327B1C2E}" {
-      Name "<br/>"
-     }
-     SCR_ActionBlockUIName "{57024551BA969346}" {
-      Name "#AR-EditorRespawnBriefing_Description_4"
-      m_iDevice "Mouse & Keyboard"
-      m_sActionName "ShowScoreboard"
-     }
-     SCR_ActionBlockUIName "{5868C2E91D4E5713}" {
-      Name "#AR-EditorRespawnBriefing_Description_5"
-      m_iDevice Gamepad
-      m_sActionName "MenuOpen"
-     }
-    }
-   }
-   m_SimpleBriefingBackground "{3C50D67D082BA322}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_2_UI.edds"
-   m_InfoGameMaster SCR_FormatUIInfo "{59188E6A004A529C}" {
-    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
-    IconSetName "Logo_Editor"
-    m_aDescriptionBlocks {
-     SCR_SubBlockUIName "{59188E6BCF638E93}" {
-      Name "#AR-EditorRespawnBriefing_Description_GameMaster_1"
-     }
-     SCR_SubBlockUIName "{59188E6BF7C70F61}" : "{D7B219D54165E4B4}Configs/Hints/Blocks/LineBreak.conf" {
-     }
-     SCR_SubBlockUIName "{59188E6BFCFADAEC}" {
-      Name "#AR-EditorRespawnBriefing_Description_GameMaster_2"
-     }
-    }
-   }
-   m_InfoHost SCR_FormatUIInfo "{57027889747C45E0}" {
-    Icon "{1CD65C97061661F6}UI/Textures/Editor/Logos/Editor-Logo.imageset"
-    IconSetName "Logo_Editor"
-    m_aDescriptionBlocks {
-     SCR_SubBlockUIName "{57027889747C4414}" {
-      Name "#AR-EditorRespawnBriefing_Description_1"
-     }
-     SCR_SubBlockUIName "{5916F8D9F21BC382}" : "{D7B219D54165E4B4}Configs/Hints/Blocks/LineBreak.conf" {
-     }
-     SCR_SubBlockUIName "{589E84D2B18F57ED}" {
-      Name "#AR-EditorRespawnBriefing_Description_3"
-     }
-    }
-   }
-  }
-  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
-   m_bPermitUnconsciousVON 1
-  }
-  SCR_HintManagerComponent "{5702B54C6CBC9D7F}" {
-   m_aConditionLists {
-    SCR_HintConditionList "{5702B60460CC2467}" : "{AABAFA01D7DCE9D0}Configs/Hints/GameMode_Editor.conf" {
-    }
-   }
-  }
-  SCR_IdentityManagerComponent "{5AEEA80681EA61AF}" {
-   Enabled 0
-   m_bEnableIdentityItemSlot 0
-  }
-  SCR_InitWeatherComponent "{58DCAB6D83A0CB17}" {
-   m_sInitialStartingWeatherId "Cloudy"
-   m_iSetWeatherConstant 1
-  }
-  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
-   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
-  }
-  SCR_NightModeGameModeComponent "{5D50E84688D5A408}" {
-   m_bAllowGlobalNightMode 1
-  }
-  SCR_PerceivedFactionManagerComponent "{61AA7E6E0C6A76F9}" {
-   m_eCharacterPerceivedFactionOutfitType HIGHEST_VALUE
-  }
-  SCR_PlayerSpawnPointManagerComponent "{56C2DDA69EF94C6D}" {
-   m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
-   m_bEnablePlayerSpawnPoints 0
-  }
-  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
-   m_bEnableReconnect 0
-  }
-  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
-   Enabled 0
-   m_DebugHeaderResourceName "{2BBBE828037C6F4B}Missions/22_GM_Arland.conf"
-  }
-  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
-   Enabled 0
-   m_aVotingTemplates {
-    SCR_VotingEditorIn "{58D06C7270F3CE2C}" : "{9DE543906BEAB993}Configs/Voting/EditorIn.conf" {
-    }
-    SCR_VotingEditorOut "{58D06C7271BA2FDE}" : "{FF27A5C582C16A88}Configs/Voting/EditorOut.conf" {
-    }
-    SCR_VotingEditorWithdraw "{5A8A8738B1A4AC19}" : "{D20DE4A96BAFE376}Configs/Voting/EditorWithdraw.conf" {
-    }
-   }
-  }
-  SCR_WelcomeScreenComponent "{5D7290AC8A3E657E}" {
-   m_sHeaderTitle "#AR-Editor_DeployMenu_Screen_Title"
-   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{5D7290AC92D25160}" {
-    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF7423AA2}" {
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{5D7290ABCBFE3176}" {
-       m_sContentImage "{352FDBC685A7FCD8}UI/Textures/DeployMenu/DeployImages/GMDeploy_Player.edds"
-       m_sContentTitleText "#AR-Editor_DeployMenu_Player_Title"
-       m_sContentDescriptionText "#AR-Editor_DeployMenu_Player_Description"
-      }
-     }
-    }
-    m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF8B7756B}" {
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{5D729EC0A67A9D46}" {
-       m_sContentImage "{2A9663A5D9B16758}UI/Textures/DeployMenu/DeployImages/GMDeploy_Gamemaster.edds"
-       m_sContentTitleText "#AR-Editor_DeployMenu_Scenario_Title"
-       m_sContentDescriptionText "#AR-Editor_DeployMenu_Scenario_Description"
-      }
-     }
-    }
-    m_RightColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABFF9DBADC}" {
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{5D729EC0BC408CC1}" {
-       m_sContentImage "{5DFB6BDBD880CB49}UI/Textures/DeployMenu/DeployImages/GMDeploy_BecomeGM.edds"
-       m_sContentTitleText "#AR-Editor_DeployMenu_GM_Rule_Title"
-       m_sContentDescriptionText "#AR-Editor_DeployMenu_GM_Rule_Description"
-      }
-     }
-    }
-   }
-  }
- }
  coords 12485.911 0 10538.719
- m_eTestGameFlags SpawnAI
  {
   SCR_FactionManager "65328B12E73877CE" {
    ID "56E685E92F1B7E7A"
@@ -29963,53 +29760,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 4919.469 35.555 9121.48
-  angleY 81.872
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 4509.49 7.096 9345
   angleY 91.313
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 4442.928 14.492 9581.188
-  angleY 121.788
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 4544.353 16.378 10722.855
-  angleY 70.254
  }
  {
   components {
@@ -30053,38 +29805,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 4778.527 161.927 7123.657
-  angleY -121.276
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 5240.579 78.285 6375.525
   angleY 94.932
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 5309.622 61.727 5371.134
-  angleY -117.422
  }
  {
   components {
@@ -30128,21 +29850,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 3278.408 114.153 5144.834
-  angleY -6.878
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 3105.677 118.192 5216.487
   angleY 81.872
  }
@@ -30160,21 +29867,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
   }
   coords 2560.102 104.759 5519.152
   angleY -113.977
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 1275.911 37.26 5920.967
-  angleY 125.795
  }
  {
   components {
@@ -30218,38 +29910,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 6108.229 83.874 5797.109
-  angleY -0.544
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 6644.115 109.024 5862.921
   angleY 21.757
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 7022.042 117.226 6001.588
-  angleY -144.407
  }
  {
   components {
@@ -30293,21 +29955,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 7639.628 125.259 5018.369
-  angleY 113.018
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 7389.122 135.618 4711.009
   angleY -11.872
  }
@@ -30338,21 +29985,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 6689.136 9.124 3218.582
-  angleY 4.274
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 7169.932 137.882 2434.375
   angleY 168.506
  }
@@ -30370,21 +30002,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
   }
   coords 7241.865 136.271 2198.511
   angleY -83.538
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 8190.971 220.48 2234.065
-  angleY 16.854
  }
  {
   components {
@@ -30443,38 +30060,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 8996.408 82.601 2200.866
-  angleY 40.271
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 9181.666 64.484 2131.263
+  coords 9181.665 64.484 2131.263
   angleY 7.73
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 5698.55 218.633 7079.636
-  angleY 110.285
  }
  {
   components {
@@ -30503,38 +30090,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 6543.688 152.948 7116.874
-  angleY 111.42
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 6780.548 90.697 5681.614
   angleY -101.274
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 7361.639 119.501 5222.826
-  angleY 108.515
  }
  {
   components {
@@ -30578,21 +30135,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 9924.887 3.15 1621.167
-  angleY -172.84
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 9823.979 7.208 1574.593
   angleY -45.792
  }
@@ -30623,21 +30165,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 9646.424 13.277 1519.661
-  angleY 133.099
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
   coords 9613.643 22.863 1667.138
   angleY 11.584
  }
@@ -30653,23 +30180,8 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
     }
    }
   }
-  coords 6345.885 5.127 9639.119
+  coords 6345.885 5.127 9639.118
   angleY -51.167
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 5566.385 22.133 10057.066
-  angleY -164.425
  }
  {
   components {
@@ -30700,21 +30212,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
   }
   coords 6252.924 177.961 7499.056
   angleY 69.399
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 5220.046 77.512 5044.293
-  angleY 83.157
  }
  {
   components {
@@ -30760,21 +30257,6 @@ $grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientV
   }
   coords 4324.476 80.668 4391.742
   angleY -171.548
- }
- {
-  components {
-   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
-    m_iRespawnPeriod 600
-    m_aIncludedEditableEntityLabels {
-     36 37
-    }
-    m_aExcludedEditableEntityLabels {
-     51 52
-    }
-   }
-  }
-  coords 7784.31 157.22 4592.309
-  angleY 44.361
  }
 }
 StaticModelEntity : "{0E8C1D00E6FA76CE}Prefabs/Compositions/Misc/SubCompositions/DirtPile_Cluttered_US_01.et" {
@@ -88632,7 +88114,7 @@ $grp GenericEntity : "{B50533A7926D56DD}Assets/Garbage/Prefabs/Garbage_Pizza_Box
   angleY -73.154
  }
 }
-SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/Managers/Loadouts/LoadoutManager_Editor.et" {
  coords 7685.88 1.824 3851.853
 }
 GenericEntity : "{B6307C189CCCA0B9}Prefabs/Props/Military/Sandbags/Sandbag_01_round_high_plastic.et" {
@@ -105530,25 +105012,13 @@ GenericEntity : "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTa
 }
 $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Medium.et" {
  {
-  coords 7159.64 119.62 4777.629
- }
- {
   coords 6717.139 90.573 5698.073
- }
- {
-  coords 6606.648 109.03 5898.882
  }
  {
   coords 6971.44 114.68 5956.664
  }
  {
-  coords 7028.014 117.181 5997.025
- }
- {
   coords 7075.375 118.698 6049.647
- }
- {
-  coords 6572.095 151.144 7105.87
  }
  {
   coords 5717.888 218.513 7071.414
@@ -105560,16 +105030,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5756.388 212.385 7013.718
  }
  {
-  coords 5120.705 175.438 7035.271
- }
- {
   coords 5183.183 172.786 7085.029
  }
  {
   coords 5230.373 175.284 7041.464
- }
- {
-  coords 4807.636 169.125 6972.573
  }
  {
   coords 4787.724 165.799 7056.114
@@ -105587,16 +105051,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5052.146 27.118 10843.693
  }
  {
-  coords 5019.806 14.998 3969.524
- }
- {
   coords 5092.456 13.822 3952.323
  }
  {
   coords 5164.539 14.253 3983.179
- }
- {
-  coords 5132.251 13.952 4025.032
  }
  {
   coords 4926.337 13.868 3982.49
@@ -105605,22 +105063,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4954.89 1.613 3876.451
  }
  {
-  coords 1355.854 43.812 5868.03
- }
- {
   coords 1257.543 35.339 6058.396
  }
  {
   coords 1173.049 30.597 6182.549
  }
  {
-  coords 1056.573 2.21 6174.736
- }
- {
   coords 1030.717 2.144 6026.432
- }
- {
-  coords 965.612 2.251 6039.547
  }
  {
   coords 1107.894 30.34 6402.447
@@ -105632,13 +105081,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 1712.627 76.057 5761.793
  }
  {
-  coords 2543.156 106.614 5545.93
- }
- {
   coords 2561.454 100.072 5453.283
- }
- {
-  coords 2609.786 103.076 5396.432
  }
  {
   coords 2575.46 89.113 5360.692
@@ -105647,19 +105090,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 3093.999 117.916 5215.372
  }
  {
-  coords 3061.328 116.205 5186.983
- }
- {
   coords 3022.717 122.129 5523.374
  }
  {
   coords 3318.818 118.179 5103.435
- }
- {
-  coords 3275.172 114.461 5137.332
- }
- {
-  coords 3748.538 114.219 4976.99
  }
  {
   coords 3655.804 108.407 4838.668
@@ -105674,9 +105108,6 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4700.813 79.603 4497.174
  }
  {
-  coords 5225.266 79.966 5025.417
- }
- {
   coords 5327.92 61.971 5412.407
  }
  {
@@ -105686,19 +105117,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5240.255 65.617 5281.133
  }
  {
-  coords 5128.576 58.169 5386.041
- }
- {
-  coords 4999.644 53.028 5471.912
- }
- {
   coords 4862.142 51.978 5663.51
  }
  {
   coords 4924.458 53.342 5841.28
- }
- {
-  coords 5632.556 89.636 5329.282
  }
  {
   coords 5698.806 91.985 5886.385
@@ -105708,9 +105130,6 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
  }
  {
   coords 5561.585 88.874 5916.524
- }
- {
-  coords 5503.395 94.991 6078.692
  }
  {
   coords 5537.208 94.805 6057.983
@@ -105725,16 +105144,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5615.545 128.872 6565.692
  }
  {
-  coords 5336.889 159.243 6845.866
- }
- {
   coords 8786.135 195.993 3888.191
  }
  {
   coords 8735.994 126.672 3236.155
- }
- {
-  coords 8789.518 96.927 2797.254
  }
  {
   coords 8823.033 94.333 2715.751
@@ -105743,13 +105156,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 9720.682 10.86 1478.841
  }
  {
-  coords 9691.387 12.069 1547.023
- }
- {
   coords 9832.703 6.986 1592.531
- }
- {
-  coords 9880.137 1.89 1518.759
  }
  {
   coords 10005.098 1.491 1522.333
@@ -105758,16 +105165,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 9642.145 17.46 1595.794
  }
  {
-  coords 9808.176 4.586 1401.131
- }
- {
   coords 9601.979 23.263 1485.765
  }
  {
   coords 8805.05 138.195 3310.874
- }
- {
-  coords 8906.354 95.07 2756.844
  }
  {
   coords 9110.16 79.32 2324.355
@@ -105776,28 +105177,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 9311.542 60.88 2070.646
  }
  {
-  coords 9677.884 21.177 1620.771
- }
- {
-  coords 10092.618 2.531 1553.769
- }
- {
   coords 9729.11 24.142 1334.793
- }
- {
-  coords 9353.288 204.358 1165.695
  }
  {
   coords 7377.242 135.593 4747.599
  }
  {
-  coords 7438.047 136.871 4738.231
- }
- {
   coords 7515.938 141.152 4686.713
- }
- {
-  coords 7567.92 140.65 4705.092
  }
  {
   coords 7572.547 82.627 5513.405
@@ -105806,25 +105192,16 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 7607.677 81.607 5559.34
  }
  {
-  coords 6780.466 90.063 5666.414
- }
- {
   coords 2669.126 92.668 5353.514
  }
  {
   coords 2836.979 85.043 6397.442
  }
  {
-  coords 4874.666 170.918 7028.228
- }
- {
   coords 4778.549 162.461 7217.255
  }
  {
   coords 6584.775 158.889 7493.646
- }
- {
-  coords 6341.736 152.592 7888.167
  }
  {
   coords 5812.012 122.363 7986.055
@@ -105836,13 +105213,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5128.719 47.045 8876.232
  }
  {
-  coords 4551.618 17.383 11074.791
- }
- {
   coords 5172.635 40.961 10487.589
- }
- {
-  coords 6773.405 69.117 4873.62
  }
  {
   coords 6547.712 81.503 5484.504
@@ -105854,16 +105225,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5885.207 79.64 5667.718
  }
  {
-  coords 5593.037 95.822 5570.553
- }
- {
   coords 5571.427 94.855 5250.927
  }
  {
   coords 5288.911 61.808 5381.119
- }
- {
-  coords 5219.938 63.899 5335.052
  }
  {
   coords 4859.168 52.732 5705.384
@@ -105875,13 +105240,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4751.88 166.859 7005.393
  }
  {
-  coords 4710.42 161.842 7060.208
- }
- {
   coords 4835.48 178.513 7026.348
- }
- {
-  coords 4831.385 168.177 6921.827
  }
  {
   coords 4765.984 167.125 6913.395
@@ -105893,16 +105252,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5065.521 98.612 8491.025
  }
  {
-  coords 4659.288 112.391 8238.391
- }
- {
   coords 4844.532 112.658 8085.188
  }
  {
   coords 4882.925 111.809 8066.325
- }
- {
-  coords 4589.32 85.168 8589.492
  }
  {
   coords 4625.946 81.648 8671.461
@@ -105911,34 +105264,19 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4954.155 36.69 9099.196
  }
  {
-  coords 4486.588 12.289 9432.413
- }
- {
   coords 4483.616 16.107 9566.458
  }
  {
   coords 4559.568 16.354 9515.997
  }
  {
-  coords 4561.186 18.687 9574.205
- }
- {
   coords 5320.708 21.282 9840.943
- }
- {
-  coords 5609.617 26.838 9871.06
  }
  {
   coords 5774.865 7.259 9758.372
  }
  {
-  coords 5831.42 6.323 9684.502
- }
- {
   coords 6317 15.563 9679.533
- }
- {
-  coords 6378.896 0.589 9647.755
  }
  {
   coords 5748.92 29.093 10184.774
@@ -105947,16 +105285,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5373.347 16.932 10049.089
  }
  {
-  coords 4589.624 15.144 10431.18
- }
- {
-  coords 4572.092 16.718 10551.83
- }
- {
   coords 4643.906 24.316 10573.206
- }
- {
-  coords 4556.651 16.214 10839.451
  }
  {
   coords 4525.947 13.562 10945.204
@@ -105965,19 +105294,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4407.434 6.201 10965.636
  }
  {
-  coords 4511.326 13.785 10783.791
- }
- {
   coords 4424.982 12.036 10690.698
  }
  {
-  coords 4467.542 16.981 10630.883
- }
- {
   coords 4587.503 18.488 10696.139
- }
- {
-  coords 4660.309 20.305 10803.259
  }
  {
   coords 4662.106 21.114 10690.669
@@ -105986,16 +105306,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4526.35 11.266 11019.892
  }
  {
-  coords 4618.461 26.064 11162.515
- }
- {
   coords 4662.125 27.539 11131.812
  }
  {
   coords 4848.399 27.844 11078.001
- }
- {
-  coords 5000.28 34.694 11058.474
  }
  {
   coords 4765.898 27.309 11021.208
@@ -106007,22 +105321,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4955.818 31.363 11380.515
  }
  {
-  coords 4996.481 28.663 11654.015
- }
- {
   coords 5023.341 49.384 11726.99
  }
  {
   coords 5031.994 26.203 11987.548
  }
  {
-  coords 4933.795 26.045 12081.871
- }
- {
   coords 4764.336 22.134 12134.533
- }
- {
-  coords 4726.555 24.804 11997.648
  }
  {
   coords 4731.542 25.715 11879.181
@@ -106031,22 +105336,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4719.013 23.13 11636.604
  }
  {
-  coords 5279.852 46.008 10511.214
- }
- {
   coords 5444.329 45.485 10475.819
- }
- {
-  coords 4985.977 25.182 10134.754
  }
  {
   coords 5043.277 26.626 10141.032
  }
  {
   coords 4697.771 16.301 10510.402
- }
- {
-  coords 4862.715 30.24 10612.643
  }
  {
   coords 4185.858 15.761 10576.129
@@ -106058,13 +105354,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5650.476 17.314 10701.032
  }
  {
-  coords 5406.423 37.913 10761.843
- }
- {
   coords 5306.41 23.747 10191.153
- }
- {
-  coords 5726.585 10.998 9595.182
  }
  {
   coords 5423.962 20.506 9640.591
@@ -106076,22 +105366,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5710.652 21.515 9252.094
  }
  {
-  coords 5349.367 25.595 9204.891
- }
- {
   coords 5050.851 37.5 9117.672
  }
  {
   coords 4800.808 30.116 9242.716
  }
  {
-  coords 4408.395 11.203 9215.981
- }
- {
   coords 4491.777 71.763 8733.551
- }
- {
-  coords 4654.789 73.223 8764.904
  }
  {
   coords 5561.591 17.318 8903.51
@@ -106100,22 +105381,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5433.467 17.706 9028.836
  }
  {
-  coords 5301.27 18.951 9055.191
- }
- {
   coords 4447.31 100.832 8033.438
  }
  {
   coords 4628.427 125.531 7744.858
  }
  {
-  coords 5395.553 162.371 7426.792
- }
- {
   coords 5481.795 179.275 6986.502
- }
- {
-  coords 5329.128 121.555 6666.322
  }
  {
   coords 4578.135 93.568 6438.308
@@ -106124,16 +105396,10 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 3971.504 108.177 6062.174
  }
  {
-  coords 3416.13 94.826 6585.333
- }
- {
   coords 4979.975 54.33 5260.441
  }
  {
   coords 5332.255 62.271 5553.073
- }
- {
-  coords 5405.045 75.237 5565.85
  }
  {
   coords 5972.1 103.189 5924.21
@@ -106148,25 +105414,13 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 6914.095 107.816 5543.65
  }
  {
-  coords 7010.809 102.796 5707.948
- }
- {
   coords 7298.382 87.078 5925.776
- }
- {
-  coords 6900.939 79.943 4727.312
  }
  {
   coords 6559.33 50.331 4712.56
  }
  {
-  coords 6359.977 48.508 4656.375
- }
- {
   coords 6059.584 38.024 4445.227
- }
- {
-  coords 5690.57 57.796 4428.423
  }
  {
   coords 5667.525 15.736 3753.479
@@ -106178,16 +105432,7 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 7846.076 257 4000.988
  }
  {
-  coords 4985.281 28.96 10851.347
- }
- {
   coords 4957.156 28.86 10639.79
- }
- {
-  coords 4783.072 25.342 10836.154
- }
- {
-  coords 5095.958 39.148 10662.437
  }
  {
   coords 4639.315 117.543 8181.422
@@ -106196,21 +105441,12 @@ $grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4590.233 85.089 8439.551
  }
  {
-  coords 6607.431 71.473 4969.603
- }
- {
   coords 6581.437 91.229 4964.898
  }
 }
 $grp GenericEntity : "{E06C54D194E36C18}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Medium.et" {
  {
-  coords 4639.428 27.241 11170.609
- }
- {
   coords 4849.894 27.994 11027.063
- }
- {
-  coords 4780.49 27.811 11567.598
  }
  {
   coords 4881.726 27.999 11831.9
@@ -106219,22 +105455,13 @@ $grp GenericEntity : "{E06C54D194E36C18}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4907.247 27.996 11723.721
  }
  {
-  coords 4948.95 27.71 11974.789
- }
- {
   coords 4944.967 27.785 11897.217
- }
- {
-  coords 6332.038 4.849 9647.023
  }
  {
   coords 6390.417 0.276 9582.402
  }
  {
   coords 4633.674 27.766 11136.658
- }
- {
-  coords 4775.206 27.844 11153.801
  }
  {
   coords 4847.819 27.845 11206.725
@@ -106246,22 +105473,13 @@ $grp GenericEntity : "{E06C54D194E36C18}622120A5448725E3/Prefabs/Systems/Ambient
   coords 4945.017 31.314 11295.526
  }
  {
-  coords 4921.585 27.497 11518.361
- }
- {
   coords 4783.983 28.023 11335.511
- }
- {
-  coords 4954.691 28.594 11760.518
  }
  {
   coords 4937.369 36.981 11826.549
  }
  {
   coords 4908.247 28.591 11885.679
- }
- {
-  coords 4861.008 28.594 11752.864
  }
 }
 GenericEntity : "{E17324998DE1BB87}Prefabs/Props/Military/MilitaryCrates/ShellContainerstack_01/ShellContainerstack_01_pile_big.et" {
@@ -106306,68 +105524,55 @@ GenericEntity : "{E840D82CE1F92BBD}Prefabs/Props/Military/Sandbags/Sandbag_01_en
 GenericEntity : "{E8BF834D206A54B5}Missions.et" {
  coords -6.716 -0.601 -4.209
  {
-  SCR_SpawnMissionPoint {
-   ID "65176D06E35834B0"
-   coords 9810.645 8.922 1574.723
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E35834B3"
-   coords 10408.34 77.752 1889.856
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E35846E3"
-   coords 10370.683 142.189 2070.352
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E35872EF"
-   coords 10142.449 257.997 2145.107
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E358C373"
-   coords 9274.898 268.859 3597.394
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E358C6F2"
-   coords 9911.425 294.873 2580.824
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E358C6F3"
-   coords 9511.247 208.038 2968.549
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E3591FE3"
-   coords 7195.971 138.66 2220.251
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E3591FE4"
-   coords 7593.345 166.568 4247.665
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E3596190"
-   coords 10035.894 3.004 1573.713
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E3596191"
-   coords 9358.873 49.572 1941.352
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E359B5E6"
-   coords 9728.516 11.881 1487.718
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E359BA94"
-   coords 9601.62 22.877 1585.05
-  }
-  SCR_SpawnMissionPoint {
-   ID "65176D06E35A94A7"
-   coords 7468.054 164.974 4318.367
+  $grp SCR_SpawnMissionPoint {
+   {
+    coords 9810.645 8.922 1574.723
+   }
+   {
+    coords 10408.34 77.752 1889.856
+   }
+   {
+    coords 10370.683 142.189 2070.352
+   }
+   {
+    coords 10142.449 257.997 2145.107
+   }
+   {
+    coords 9274.898 268.859 3597.394
+   }
+   {
+    coords 9911.425 294.873 2580.824
+   }
+   {
+    coords 9511.247 208.038 2968.549
+   }
+   {
+    coords 7195.971 138.66 2220.251
+   }
+   {
+    coords 7593.345 166.568 4247.665
+   }
+   {
+    coords 10035.894 3.004 1573.713
+   }
+   {
+    coords 9358.873 49.572 1941.352
+   }
+   {
+    coords 9728.516 11.881 1487.718
+   }
+   {
+    coords 9601.62 22.877 1585.05
+   }
+   {
+    coords 7468.054 164.974 4318.367
+   }
   }
   SCR_SpawnMissionPoint {
    ID "65176D06E3601655"
    coords 6604.045 159.512 6444.4
   }
   SCR_SpawnMissionPoint {
-   ID "65176D06E3609F3E"
    coords 10892.788 154.822 2268.292
   }
   SCR_SpawnMissionPoint {
@@ -106395,7 +105600,6 @@ GenericEntity : "{E8BF834D206A54B5}Missions.et" {
    coords 5072.593 37.226 11246.688
   }
   SCR_SpawnMissionPoint {
-   ID "65176D06E36147B3"
    coords 9896.651 134.436 658.044
   }
   SCR_SpawnMissionPoint {
@@ -106403,7 +105607,6 @@ GenericEntity : "{E8BF834D206A54B5}Missions.et" {
    coords 6349.928 40.452 4633.167
   }
   SCR_SpawnMissionPoint {
-   ID "65176D06E361D241"
    coords 8512.113 225.767 4525.572
   }
   SCR_SpawnMissionPoint {

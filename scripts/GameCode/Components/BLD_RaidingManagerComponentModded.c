@@ -1,4 +1,4 @@
-modded class BLD_RaidingManagerComponent : DamageManagerComponent
+/*modded class BLD_RaidingManagerComponent : DamageManagerComponent
 {
 	
 	override bool HijackDamageHandling(notnull BaseDamageContext damageContext)	{	
@@ -19,4 +19,4 @@ modded class BLD_RaidingManagerComponent : DamageManagerComponent
 		return false;
 	}
 	
-}
+}*/

@@ -48,7 +48,7 @@ modded class SCR_AIThreatSystem
 					if (m_Config.PerformDangerReaction(m_Utility, dangerEvent, eventAggregationCount))
 					{
 #ifdef WORKBENCH
-						string message = typename.EnumToString(SCR_EAIDangerEventType, dangerEvent.GetDangerType());
+						string message = typename.EnumToString(EAIDangerEventType, dangerEvent.GetDangerType());
 						SCR_AIDebugVisualization.VisualizeMessage(m_Utility.m_OwnerEntity, message, EAIDebugCategory.DANGER, 2);	// Show message above AI's head
 #endif
 					}

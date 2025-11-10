@@ -41,17 +41,15 @@ modded class SCR_2DPIPSightsComponent : SCR_2DSightsComponent
 	float viewDistance;
 	//------------------------------------------------------------------------------------------------
 	override void SetPIPEnabled(bool enabled)
-	{
-		// disabled->enabled
+	{// disabled->enabled
 		// Create neccessary items
 		if (enabled && !m_bPIPIsEnabled)
 		{
-			ImageWidget brokenImage;
 			// Try to create UI for PIP,
 			// output params are either set to valid ones,
 			// or root itself is set to null and destroyed
 			if (!m_wPIPRoot || !m_wRenderTargetTextureWidget || !m_wRenderTargetWidget)
-				m_wPIPRoot = CreateUIMod(m_sPIPLayoutResource, m_sRTTextureWidgetName, m_sRTargetWidgetName, m_wRenderTargetTextureWidget, m_wRenderTargetWidget,brokenImage);
+				m_wPIPRoot = CreateUI(m_sPIPLayoutResource, m_sRTTextureWidgetName, m_sRTargetWidgetName, m_wRenderTargetTextureWidget, m_wRenderTargetWidget);
 
 			if (!m_wPIPRoot)
 			{
@@ -60,24 +58,16 @@ modded class SCR_2DPIPSightsComponent : SCR_2DSightsComponent
 			}
 
 			IEntity owner = GetOwner();
-			if(brokenImage){
-				
-			
-				brokenImage.SetVisible(Broken);
-			}
+
 			// Create PIP camera
 			if (!m_PIPCamera)
 			{
 				// TODO: restart camera when view distance changes
-				viewDistance = GetGame().GetViewDistance();
-				/*PlayerCamera camera = GetGame().GetPlayerController().GetPlayerCamera();
-				camera.SetFarPlane(GetGame().GetMinimumViewDistance()+200);*/
-				
+				float viewDistance = GetGame().GetViewDistance();
 				if (m_fFarPlane > 0)
 					viewDistance = Math.Min(viewDistance, m_fFarPlane);
 
 				m_PIPCamera = SCR_PIPCamera.Cast(CreateCamera(owner, GetSightsFrontPosition(true) + m_vCameraOffset, m_vCameraAngles, m_iCameraIndex, GetFOV(), m_fNearPlane, viewDistance));
-					
 			}
 
 			if (!m_PIPCamera)
@@ -85,6 +75,9 @@ modded class SCR_2DPIPSightsComponent : SCR_2DSightsComponent
 				Print("Could not create PIP camera!", LogLevel.ERROR);
 				return;
 			}
+
+			// Now that everything is ready, we can start observing possible changes of the game settings, so we can react to them
+			SCR_MenuHelper.GetOnMenuClose().Insert(OnSettingsMenuClosed);
 
 			// Set camera index of render target widget
 			BaseWorld baseWorld = owner.GetWorld();
@@ -94,7 +87,7 @@ modded class SCR_2DPIPSightsComponent : SCR_2DSightsComponent
 			m_wRenderTargetWidget.SetResolutionScale(m_fResolutionScale, m_fResolutionScale);
 
 			if (!owner.IsDeleted())
-				m_wRenderTargetTextureWidget.SetGUIWidget(owner, m_iGuiIndex);
+				m_wRenderTargetTextureWidget.SetRenderTarget(owner);
 
 			if (m_pMaterial)
 				GetGame().GetWorld().SetCameraPostProcessEffect(m_iCameraIndex, 10, PostProcessEffectType.HDR, m_rScopeHDRMatrial);
@@ -113,13 +106,11 @@ modded class SCR_2DPIPSightsComponent : SCR_2DSightsComponent
 		// enabled -> disabled
 		if (!enabled && m_bPIPIsEnabled)
 		{
-			/*PlayerCamera camera = GetGame().GetPlayerController().GetPlayerCamera();
-				camera.SetFarPlane(viewDistance);*/
-		
 			Destroy();
 			s_bIsPIPActive = false;
 			m_bPIPIsEnabled = false;
 			return;
 		}
+	
 	}
 }

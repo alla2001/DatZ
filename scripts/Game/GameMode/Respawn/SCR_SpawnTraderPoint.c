@@ -140,7 +140,7 @@ class SCR_SpawnTraderPoint : SCR_Position
 		
 			DoorComponent dr = DoorComponent.Cast( door);
 			
-			dr.SetControlValue(0);
+			dr.SetControlValue(0,RplId.Invalid());
 		}
 		
 
@@ -153,7 +153,7 @@ class SCR_SpawnTraderPoint : SCR_Position
 		
 			DoorComponent dr = DoorComponent.Cast( door);
 			
-			dr.SetControlValue(0);
+			dr.SetControlValue(0,RplId.Invalid());
 		}
 		
 

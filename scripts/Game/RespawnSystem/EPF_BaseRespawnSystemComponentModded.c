@@ -1,6 +1,6 @@
 
 
-modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
+/*modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 {
 	[Attribute("", params: "et", category: "Prefabs")]
 	protected ref array <ResourceName> loadouts;
@@ -94,7 +94,7 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 		return loadouts.GetRandomElement();
 	}
 	//------------------------------------------------------------------------------------------------
-	/*protected --Hotfix for 1.0 DO NOT CALL THIS MANUALLY*/
+
 	override void WaitForUid(int playerId)
 	{
 		if(!LoadJson())return;
@@ -143,3 +143,4 @@ modded class EPF_BaseRespawnSystemComponent : SCR_RespawnSystemComponent
 	
 
 }
+*/

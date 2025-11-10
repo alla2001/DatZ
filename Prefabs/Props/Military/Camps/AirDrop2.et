@@ -6,9 +6,6 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
     InitItem "{66571CF7E0663168}" {
      item "{BFDBFE2BED29C04A}Prefabs/CannedMeat.et"
     }
-    InitItem "{666C92E4EC3AE043}" {
-     item "{7B7F47BFB532CAFA}Prefabs/Beaf.et"
-    }
     InitItem "{66571CF7E707D2D3}" {
      item "{7B605E8E4B952837}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_GoldBrick.et"
      amount 10
@@ -25,6 +22,9 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
     InitItem "{66571CF0F404521C}" {
      item "{BBB50A815A2F916B}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Ball.et"
     }
+    InitItem "{666C92E4EC3AE043}" {
+     item "{7B7F47BFB532CAFA}Prefabs/Beaf.et"
+    }
     InitItem "{666C92E422E7E92E}" {
      item "{262F0D09C4130826}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_VOG25.et"
      amount 5
@@ -32,4 +32,6 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
    }
   }
  }
+ coords -1.286 -0.133 -3.646
+ angles 0 0 -27.994
 }

@@ -49,7 +49,7 @@ class KeyDoorComponent : ScriptComponent
         if (!door || isOpen)
             return;
 		
-        door.SetControlValue(1);
+        door.SetControlValue(1,RplId.Invalid());
 		isOpen=true;
         PlaySiren();
 		GetGame().GetCallqueue().CallLater(CloseDoor,delay:OpenTime*1000*60);
@@ -60,7 +60,7 @@ class KeyDoorComponent : ScriptComponent
         if (!door || !isOpen)
             return;
 
-        door.SetControlValue(0);
+        door.SetControlValue(0,RplId.Invalid());
 		isOpen=false;
         StopSiren();
 		Replication.BumpMe();

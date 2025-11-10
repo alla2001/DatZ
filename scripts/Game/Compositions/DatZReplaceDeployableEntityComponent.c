@@ -77,14 +77,14 @@ class DatZReplaceDeployableEntityComponent : ScriptComponent
 			return;
 		}
 
-		SCR_SoundManagerEntity soundMan = GetGame().GetSoundManagerEntity();
+		/*SCR_SoundManagerEntity soundMan = GetGame().GetSoundManagerEntity();
 		if (!soundMan)
 			return;
 
 		if (deploy)
 			soundMan.CreateAndPlayAudioSource(GetOwner(), SCR_SoundEvent.SOUND_DEPLOY);
 		else
-			soundMan.CreateAndPlayAudioSource(GetOwner(), SCR_SoundEvent.SOUND_UNDEPLOY);
+			soundMan.CreateAndPlayAudioSource(GetOwner(), SCR_SoundEvent.SOUND_UNDEPLOY);*/
 	}
 
 	//------------------------------------------------------------------------------------------------

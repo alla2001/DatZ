@@ -8,7 +8,7 @@ modded class SCR_DoorUserAction : DoorUserAction
 	override bool CanBePerformedScript(IEntity user)
 	{
 		
-		DoorComponent doorComponent = GetDoorComponent();
+		DoorComponent doorComponent =DoorComponent.Cast( GetDoorComponent());
 		
 		DoorLockComponent lock = DoorLockComponent.Cast( GetOwner().FindComponent(DoorLockComponent));
 		
