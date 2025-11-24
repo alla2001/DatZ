@@ -3,6 +3,8 @@ GenericEntity : "{0692BB439764BB1E}Prefabs/Props/Civilian/Notebook_01_base.et" {
  components {
   EPF_PersistenceComponent "{64652BB5FCFDBA39}" {
    m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{66F0B304114B02AE}" {
+   }
   }
  }
 }

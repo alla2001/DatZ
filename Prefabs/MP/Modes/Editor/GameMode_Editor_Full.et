@@ -1,14 +1,6 @@
 SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
  ID "56B2B479C6B96951"
  components {
-  EPF_BaseRespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_AutoSpawnLogic "{5D28B7ADCD4F95B9}" {
-    m_sForcedFaction "USSR"
-   }
-   loadouts {
-    "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et" "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
-   }
-  }
   EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
    m_fAutosaveInterval 5
    m_iAutosaveIterations 50
@@ -156,12 +148,13 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
    m_SpawnPointPrefab "{456EFDDA59DD6EB2}Prefabs/MP/PlayerRadioSpawnPoint.et"
    m_bEnablePlayerSpawnPoints 0
   }
-  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
-   m_bEnableReconnect 0
-  }
-  SCR_SaveLoadComponent "{58FA739CBE3E9FC5}" {
-   Enabled 0
-   m_DebugHeaderResourceName "{2BBBE828037C6F4B}Missions/22_GM_Arland.conf"
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_AutoSpawnLogic "{5D44B78DAD98E7F9}" {
+    m_sForcedFaction "USSR"
+    loadouts {
+     "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et" "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
+    }
+   }
   }
   SCR_TimeAndWeatherHandlerComponent "{6598B2493ED80CDC}" {
    m_iDuskDawnTimescale 4
@@ -210,6 +203,9 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
      }
     }
    }
+  }
+  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+   m_bEnableReconnect 0
   }
  }
  m_eTestGameFlags SpawnAI

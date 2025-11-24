@@ -1,0 +1,156 @@
+SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5AF8B9A1D80D8DFA}" : "{568C7122442FC9F2}Configs/Navmesh/Navmesh_CTI_Campaign_Eden_Soldier.conf" {
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{598EDE772036D79B}" : "{A3D6AEFB172D819C}Configs/Navmesh/Navmesh_CTI_Campaign_Eden_Vehicle.conf" {
+    }
+   }
+  }
+ }
+ coords 5626.864 421.356 6867.49
+}
+PerceptionManager PerceptionManager2 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 9258.43 378.794 16339.549
+}
+SCR_GameModeEditor GameMode_GameMaster_Full2 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+ coords 9131.762 342.691 12309.074
+ {
+  SCR_FactionManager "65328B12E73877CE" {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{56DEAC40D2DBC8B1}" {
+     m_bIsPlayable 1
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{D468BFCBFECF9436}Prefabs/Marker.et" {
+ Marker1 {
+  coords 5627.184 423.727 5701.348
+  angles 2.682 0.042 2.683
+  {
+   GenericEntity Layer1 {
+    ID "66572785F8D79686"
+   }
+  }
+ }
+ Marker3 {
+  coords 6639.528 25.497 3898.249
+  {
+   GenericEntity Layer3 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Trader"
+         m_eMapMarkerColor GREEN
+        }
+       }
+      }
+      coords 0.635 0 0.221
+     }
+    }
+   }
+  }
+ }
+ Marker4 {
+  coords 11762.272 23.351 2759.914
+  {
+   GenericEntity Layer4 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "DrugLord"
+         m_eMapMarkerColor RED
+        }
+       }
+      }
+      coords 0.635 0 0.221
+     }
+    }
+   }
+  }
+ }
+ Marker5 {
+  coords 9451.87 20.153 12533.103
+  {
+   GenericEntity Layer5 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "DrugDealer"
+         m_eMapMarkerColor RED
+        }
+       }
+      }
+      coords 0.635 0 0.221
+     }
+    }
+   }
+  }
+ }
+ Marker6 {
+  coords 1940.614 137.811 7428.64
+  {
+   GenericEntity Layer6 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "GoldDepo"
+         m_eMapMarkerIcon CIRCLE2
+         m_eMapMarkerColor ORANGE
+        }
+       }
+      }
+      coords 0.635 0 0.221
+     }
+    }
+   }
+  }
+ }
+ Marker7 {
+  coords 1419.116 0.13 7706.519
+  {
+   GenericEntity Layer7 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "CokeDepo"
+         m_eMapMarkerIcon CIRCLE2
+         m_eMapMarkerColor RED
+        }
+       }
+      }
+      coords 0.635 0 0.221
+     }
+    }
+   }
+  }
+ }
+}

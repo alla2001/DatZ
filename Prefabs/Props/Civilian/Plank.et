@@ -3,6 +3,8 @@ GenericEntity {
  components {
   EPF_PersistenceComponent "{6470E27EBED58984}" {
    m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{66F0B304D1978007}" {
+   }
   }
  }
 }

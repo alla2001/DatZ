@@ -3,6 +3,8 @@ GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
  components {
   EPF_PersistenceComponent "{646719D7C0BB5A93}" {
    m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{66F0B304BCCD4DE5}" {
+   }
   }
  }
 }

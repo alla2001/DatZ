@@ -4,10 +4,6 @@ GenericEntity {
   EPF_PersistenceComponent "{655D0CC45101B300}" {
    m_bStorageRoot 0
    m_pSaveData EPF_ItemSaveDataClass "{655D0CC45101B304}" {
-    m_aComponents {
-     EPF_CookableManagerComponentSaveDataClass "{655D0CC45101B30A}" {
-     }
-    }
    }
   }
   InventoryItemComponent "{655D0CC45101A10B}" {
@@ -136,5 +132,5 @@ GenericEntity {
   }
  }
  coords 1330.123 39.092 2126.727
- angleY 10.689
+ angles 0 10.689 0
 }

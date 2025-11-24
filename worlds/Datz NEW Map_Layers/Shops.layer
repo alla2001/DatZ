@@ -1,0 +1,353 @@
+GenericEntity : "{06FE4FE70907D486}Prefabs/Props/Military/Compositions/Dst/PersonnelService_Table_01/PersonnelService_Table_01_dst_01.et" {
+ coords 6643.236 25.617 3896.949
+ angles 0 -145.68 0
+}
+$grp GenericEntity : "{124DC29CA359557C}Prefabs/Props/Military/CargoContainers/CargoContainer_01_10ft_USSR_ammo.et" {
+ {
+  coords 6640.486 25.314 3893.1
+ }
+ {
+  coords 5640.464 423.087 5701.984
+  angles 6.204 0.487 4.494
+ }
+}
+GenericEntity : "{13A99500A14FA14C}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_20ft.et" {
+ coords 5620.892 424.155 5704.928
+ angles -0.512 70.787 3.964
+}
+GenericEntity : "{190CC54D175F52CB}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_01_10ft.et" {
+ coords 5631.976 423.978 5707.429
+ angles 5.354 0.084 0.899
+}
+GenericEntity : "{25A50558A5B65EDC}Prefabs/Props/Industrial/CrawlerCraneWreck_01/CrawlerCraneWreck_01_cabin_base.et" {
+ coords 5605.317 422.416 5699.069
+ angles 2.59 43.634 2.467
+}
+GenericEntity : "{28DEC0CA97C35511}Prefabs/Compositions/Misc/SubCompositions/CargoContainer_Ammo_Cluttered_US_01.et" {
+ coords 5627.344 423.98 5705.858
+ angles 1.841 -89.179 -3.549
+}
+GenericEntity : "{2B1D0128ED660BE9}Prefabs/Props/Crates/BoxWooden_01.et" {
+ coords 6641.36 25.542 3898.657
+}
+GenericEntity : "{369C9A110436BF83}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Food_USSR_01.et" {
+ coords 6638.513 25.554 3899.069
+ angles 0 -37.274 0
+ {
+  GenericEntity {
+   ID "5CB0D99620A1B1BE"
+   coords 0.159 0.899 0.175
+  }
+ }
+}
+GenericEntity : "{36E65E74067C13F1}Prefabs/Props/Industrial/Pallets/MarsBoxContainer_01_dst.et" {
+ coords 5631.499 423.795 5705.185
+ angles 4.459 0.251 1.804
+}
+$grp DatZLootSpawner : "{3794323F5723F527}Prefabs/Spawners/Drug_DatZLootSpawner.et" {
+ {
+  coords 1419.617 0.18 7705.339
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1417.993 0.126 7704.964
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1418.165 0.087 7706.455
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1419.449 0.144 7706.946
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1418.929 0.104 7707.783
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1420.941 0.248 7707.155
+  lootTable "{91E9075F7E7276BD}Configs/CokeLootTable.conf"
+ }
+ {
+  coords 1939.198 138.699 7428.884
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1939.469 138.699 7429.413
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1939.753 138.699 7429.79
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1940.126 138.699 7429.345
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1939.759 138.699 7428.832
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1939.914 138.314 7428.083
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1937.954 137.802 7429.906
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 1939.146 137.802 7431.966
+  lootTable "{5B74FB59597CA034}Configs/GoldBarLootTable.conf"
+ }
+ {
+  coords 4923.105 152.48 4061.72
+  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ }
+ {
+  coords 4924.21 152.479 4062.341
+  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ }
+ {
+  coords 4922.89 152.479 4063.033
+  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ }
+ {
+  coords 4924.289 152.479 4063.599
+  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ }
+ {
+  coords 4925.271 152.479 4062.885
+  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ }
+}
+GenericEntity : "{388B774519BD6294}Prefabs/Props/Wrecks/T62_wreck/T62_wreck.et" {
+ coords 5641.436 421.999 5690.169
+}
+$grp GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{9F9B99EA94C617E7}Configs/Shops/TraderShop.conf"
+   }
+   BaseLoadoutManagerComponent "{5D774D0B9B498936}" {
+    Slots {
+     LoadoutSlotInfo Jacket {
+      Prefab "{86BB79B9A2233780}Prefabs/Characters/Uniforms/Pants_US_M65.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{A080C1AEBF921DC4}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup_02.et"
+     }
+    }
+   }
+  }
+  coords 6640.94 25.469 3897.526
+  angles 2.812 12.177 -0.308
+  {
+   GenericEntity {
+    ID "6546A03D1CA73704"
+    coords 1.123 -0.026 1.304
+   }
+  }
+ }
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{C48CD5FAE0641945}Configs/Shops/DrugDealerIsland.conf"
+   }
+   BaseLoadoutManagerComponent "{5D774D0B9B498936}" {
+    Slots {
+     LoadoutSlotInfo Jacket {
+      Prefab "{86BB79B9A2233780}Prefabs/Characters/Uniforms/Pants_US_M65.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{A080C1AEBF921DC4}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup_02.et"
+     }
+    }
+   }
+  }
+  coords 11762.82 23.021 2760.548
+  angles 0 -154.424 0
+  {
+   ParticleEffectEntity {
+    ID "6546A03D2E56DD10"
+    coords 1.624 0.522 0.555
+   }
+  }
+ }
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{C24FA52F1F0E59AC}Configs/Shops/DrugDealer.conf"
+   }
+   BaseLoadoutManagerComponent "{5D774D0B9B498936}" {
+    Slots {
+     LoadoutSlotInfo Jacket {
+      Prefab "{86BB79B9A2233780}Prefabs/Characters/Uniforms/Pants_US_M65.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{A080C1AEBF921DC4}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup_02.et"
+     }
+    }
+   }
+  }
+  coords 9452.118 20.153 12532.326
+  angles 0 -53.845 0
+  {
+   ParticleEffectEntity {
+    ID "6546A03D2E56DD10"
+    coords 1.624 0.522 0.555
+   }
+  }
+ }
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{2902B706BA3B5B98}Configs/Shops/BlackMarketShop.conf"
+   }
+   BaseLoadoutManagerComponent "{5D774D0B9B498936}" {
+    Slots {
+     LoadoutSlotInfo Jacket {
+      Prefab "{86BB79B9A2233780}Prefabs/Characters/Uniforms/Pants_US_M65.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{A080C1AEBF921DC4}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup_02.et"
+     }
+    }
+   }
+  }
+  coords 5627.598 423.827 5703.425
+  angles -3.436 -177.093 -2.856
+  {
+   ParticleEffectEntity {
+    ID "6546A03D2E56DD10"
+    coords 1.624 0.522 0.555
+   }
+  }
+ }
+}
+GenericEntity : "{51D31AB07AE3C1C7}Prefabs/Props/Commercial/CashierShop_01.et" {
+ coords 6641.545 26.438 3898.113
+ angles 0 -125.147 0
+}
+GenericEntity : "{63CBCCD35D82066C}Prefabs/Props/Military/CargoContainers/CargoContainer_01_20ft_US_supplies.et" {
+ coords 6634.943 25.595 3902.553
+ angles 0 70.977 0
+}
+SCR_DestructibleEntity : "{6EF819618DC56698}Prefabs/Props/Industrial/CompressorTrailerWreck_01/CompressorTrailerWreck_01_base.et" {
+ coords 5643.599 421.715 5688.229
+ angles -4.491 171.175 -5.608
+}
+GenericEntity : "{70F32FEADB4D80F0}Prefabs/Props/Construction/ContainerMetal_01/ContainerMetal_01_low_base.et" {
+ coords 5610.331 424.165 5699.618
+ angles 2.453 11.437 1.408
+}
+GenericEntity : "{757FCCE8E756175C}Prefabs/Props/Furniture/MeetingTable_01.et" {
+ coords 6641.594 25.532 3898.277
+ angles 0 43.445 0
+}
+GenericEntity : "{7783AE4B44D3CF29}Prefabs/Props/Wrecks/M923A1_wreck/M923A1_wreck.et" {
+ coords 5644.437 421.236 5681.439
+ angles 3.545 0.333 5.366
+}
+GenericEntity : "{7F671B405CDBF0A2}Prefabs/Props/Airport/GeneratorAirfield_US_01/GeneratorAirfield_US_01.et" {
+ coords 6643.669 25.399 3894.863
+ angles 0 -43.786 0
+}
+GenericEntity : "{84386FF27DD1236D}Prefabs/Props/Military/CargoContainers/CargoContainer_01_20ft_military_base.et" {
+ coords 6636.304 25.439 3898.627
+ angles 0 23.094 0
+}
+GenericEntity : "{84B029EBE9BD61C8}Prefabs/Props/Industrial/Pallets/MarsBoxContainer_01.et" {
+ coords 5608.998 422.049 5672.017
+ angles 5.026 31.734 2.055
+}
+GenericEntity : "{87C07222450D841E}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/SupplyShippingContainers_USSR_01_20ft_Empty.et" {
+ coords 5614.53 424.241 5702.83
+ angles 0.42 48.838 3.197
+}
+GenericEntity : "{8FE6D62204173656}Prefabs/Props/Civilian/BeerBottle_01_group.et" {
+ coords 6643.497 26.502 3896.78
+}
+GenericEntity : "{97BC8B79BFE292BA}Prefabs/Props/Industrial/CompressorTrailerWreck_01/Dst/CompressorTrailerWreck_01_dst_01.et" {
+ coords 5643.362 422.082 5693.479
+ angles 4.428 0.416 5.372
+}
+ZEL_SafeZoneEntity : "{98AD581B92D08AF3}Prefabs/Zones/Safe/SafeZone.et" {
+ coords 6640.643 26.026 3901.208
+ SphereRadius 60.6
+ DrawShape 0
+}
+GenericEntity : "{A0B6FFA5FDC5B029}Prefabs/Props/Civilian/ArmillarySphere_01/ArmillarySphere_01.et" {
+ coords 6642.858 26.519 3897.318
+ angles 0 0 0
+}
+GenericEntity : "{A3775B4AB59A2FEB}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Desk_US_01.et" {
+ coords 6639.773 25.556 3899.446
+ angles 0 -155.25 0
+}
+StaticModelEntity : "{B6595A6C0DECAD8F}Prefabs/Props/Wrecks/ShipWreckMetal_03/ShipWreckMetal_03_Ruin_base.et" {
+ coords 5599.188 423.347 5687.702
+ angles 4.552 9.305 -0.159
+}
+SCR_DestructibleBuildingEntity : "{B770EA904C15D231}Prefabs/Props/Wrecks/ShipWreckMetal_03/ShipWreckMetal_03.et" {
+ coords 5647.122 420.402 5692.697
+ angles 10.445 0.99 5.446
+}
+GenericEntity : "{C3F5E89FC0A9D0C6}Prefabs/Props/Wrecks/CannonWreck_02/CannonWreck_02_Shield.et" {
+ coords 5642.633 421.684 5685.547
+ angles 7.124 -67.465 -0.899
+}
+GenericEntity : "{CAD13AC8DAFEB0E8}Prefabs/Props/Military/CargoContainers/CargoContainer_01_20ft_USSR_supplies.et" {
+ coords 5636.24 423.463 5704.718
+ angles 5.749 -42.709 -1.661
+}
+GenericEntity Marker2 : "{D468BFCBFECF9436}Prefabs/Marker.et" {
+ coords 4923.184 152.537 4063.18
+ {
+  GenericEntity Layer2 {
+   ID "66572785F8D79686"
+   {
+    GenericEntity {
+     ID "66572785F8D79687"
+     components {
+      SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+       m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+        m_sMapMarkerText "WeedDepo"
+        m_eMapMarkerIcon WAYPOINT
+        m_eMapMarkerColor GREEN
+       }
+      }
+     }
+     coords 0.635 0 0.221
+    }
+   }
+  }
+ }
+}
+GenericEntity : "{D82E143ECF70892F}Prefabs/Props/Cultural/CharacterBust_01/CharacterBust_01.et" {
+ coords 6641.102 26.438 3898.989
+}
+GameEntity : "{DA52DA6AD0028FF3}Prefabs/Props/Civilian/LightTable_01/LightTable_01_Interactive.et" {
+ coords 6642.102 26.438 3897.642
+ angles 0 0 0
+}
+SCR_DestructibleBuildingEntity : "{E8C49FFC3417C2F3}Prefabs/Props/Wrecks/ShipWreckMetal_02/ShipWreckMetal_02.et" {
+ coords 5640.799 419.042 5672.22
+ angles -0.585 35.977 8.365
+}
+GenericEntity : "{E98385D7F126474C}Prefabs/Props/Wrecks/UH1H_wreck/UH1H_wreck_02_static.et" {
+ coords 5598.715 420.894 5671.521
+ angles 2.118 -62.316 -5.94
+}
+$grp GenericEntity : "{EF490B50F7E11EBA}Prefabs/Props/Military/CargoContainers/CargoContainer_01_10ft_US_supplies.et" {
+ {
+  coords 6637.373 25.358 3894.46
+  angles 0 121.702 0
+ }
+ {
+  coords 5642.297 422.644 5699.11
+  angles 6.755 -25.894 1.669
+ }
+}
