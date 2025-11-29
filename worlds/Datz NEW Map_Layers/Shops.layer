@@ -2,6 +2,608 @@ GenericEntity : "{06FE4FE70907D486}Prefabs/Props/Military/Compositions/Dst/Perso
  coords 6643.236 25.617 3896.949
  angles 0 -145.68 0
 }
+$grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_CIV.et" {
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 4504.002 40.143 3453.165
+  angles -0.412 -117.416 -0.795
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 4305.193 40.686 3637.04
+  angles -5.619 -116.918 -5.131
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 3087.618 27 4921.5
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 2693.121 24.219 5547.024
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 1648.063 110.682 7389.662
+  angles -0.412 -117.416 -0.795
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 2737.534 110.89 7468.712
+  angles 1.589 -117.445 -0.825
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 3361.62 267.709 6864.984
+  angles 1.207 -117.414 0.382
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 5678.776 420.242 6933.258
+  angles 0.824 -117.399 1.589
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 6063.034 418.686 6163.344
+  angles 0.351 -117.442 -3.205
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 6885.77 437.403 6721.569
+  angles 1.555 -117.499 -2.825
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 7775.354 312.378 8132.203
+  angles 3.997 -117.426 -0.06
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 8556.321 96.027 9373.656
+  angles 0.795 -117.428 -0.412
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 9688.318 131.279 10026.083
+  angles 6.406 -117.118 2.721
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 10758.472 113.303 10395.503
+  angles 3.97 -116.454 13.719
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 11854.855 8.625 10645.082
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 12085.886 2.099 10453.886
+  angles 2.001 -117.423 -0.03
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 12048.353 2.156 10666.197
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 10531.33 22.406 9689.574
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 9833.919 56.873 9493.809
+  angles 0.382 -117.43 -1.207
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 9653.313 11.544 8671.566
+  angles -1.207 -117.414 -0.382
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 8753.96 9.192 7456.219
+  angles 1.176 -117.455 -1.619
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 8344.894 30.062 6514.074
+  angles 0 -117.422 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 8468.047 20.731 6552.596
+  angles 0.824 -117.399 1.589
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 7640.922 200.737 6923.372
+  angles 12.197 -117.722 -1.418
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 7623.958 27.589 5175.326
+  angles 4.907 -118.254 -9.63
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 7420.093 21.671 4894.986
+  angles 1.207 -117.414 0.382
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 6798.813 27.725 4104.16
+  angles 3.997 -117.426 -0.06
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 6744.19 24.021 3870.927
+  angles -0.06 -117.418 -3.997
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 6306.923 15.526 3474.74
+  angles -1.207 -117.414 -0.382
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_iRespawnPeriod 700
+    m_aIncludedEditableEntityLabels {
+     TRAIT_PASSENGERS_SMALL
+     TRAIT_PASSENGERS_LARGE
+    }
+    m_aExcludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+    }
+   }
+   SCR_FactionAffiliationComponent "{5D5E85F93E96E088}" {
+    "faction affiliation" "CIV"
+   }
+  }
+  coords 5962.47 9.294 3105.253
+  angles 0.382 -117.43 -1.207
+ }
+}
 $grp GenericEntity : "{124DC29CA359557C}Prefabs/Props/Military/CargoContainers/CargoContainer_01_10ft_USSR_ammo.et" {
  {
   coords 6640.486 25.314 3893.1

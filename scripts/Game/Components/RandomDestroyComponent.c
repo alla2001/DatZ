@@ -24,7 +24,7 @@ class RandomDestroyComponent : ScriptComponent
             return;
  		
 		if(Math.RandomFloat01()>=chance)return;
-        desc.SetHealthScaled(Math.RandomInt(0,0));
+        desc.SetHealthScaled(Math.RandomInt(0,2));
 		desc.SetHitZoneDamage(1000);
 
 		if(desc.GetNumDamagePhases()<1)return;

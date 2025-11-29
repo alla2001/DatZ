@@ -11,7 +11,7 @@ modded class SCR_DestructibleBuildingEntity : Building
 
 		if (SCR_Global.IsEditMode())
 			return;
-
+return;
 		if(!Replication.IsServer())return;
 		if(!ignoreLoot)
 		GetGame().GetCallqueue().CallLater(SpawnServerLoot,15000,false,owner);

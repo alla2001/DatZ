@@ -4,7 +4,7 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
   EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
    m_fAutosaveInterval 5
    m_iAutosaveIterations 50
-   m_fUpdateRate 7.35
+   m_fUpdateRate 3.02
    m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{65336C9DEAB791DF}" {
     m_sDatabaseName "database"
    }
