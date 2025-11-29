@@ -19,16 +19,6 @@ PerceptionManager PerceptionManager2 : "{028DAEAD63E056BE}Prefabs/World/Game/Per
  coords 9258.43 378.794 16339.549
 }
 SCR_GameModeEditor GameMode_GameMaster_Full2 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
- components {
-  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_DatZSpawnLogic "{5D44B78DAD98E7F9}" {
-    loadouts {
-     "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et"
-     "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
-    }
-   }
-  }
- }
  coords 9131.762 342.691 12309.074
  {
   SCR_FactionManager "65328B12E73877CE" {

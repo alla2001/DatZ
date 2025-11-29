@@ -149,10 +149,16 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
    m_bEnablePlayerSpawnPoints 0
   }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_AutoSpawnLogic "{5D44B78DAD98E7F9}" {
-    m_sForcedFaction "USSR"
+   components {
+    SCR_PossessSpawnHandlerComponent "{5CD2D12697D089D4}" {
+     m_bDestroyPreviousControlledEntity 1
+    }
+   }
+   m_SpawnLogic SCR_DatZSpawnLogic "{5D44B78DAD98E7F9}" {
+    m_eDisconnectPlayerControllerBehaviour NOTHING
+    m_eDisconnectCharacterBehaviour NOTHING
     loadouts {
-     "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et" "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
+     "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et" "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et"
     }
    }
   }
@@ -205,6 +211,7 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
    }
   }
   SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+   Enabled 0
    m_bEnableReconnect 0
   }
  }

@@ -25,14 +25,6 @@ GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_So
      item "{AAB632A193BF6B69}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_WeedBrick.et"
      amount 3
     }
-    InitItem "{66571CF7DD590725}" {
-     item "{CCFD8AA837B9611A}Prefabs/Items/CarKey/CarKey.et"
-     amount 2
-    }
-    InitItem "{66571CF7D3F6E4D2}" {
-     item "{5346AC72D935D5C6}Prefabs/Items/LockPick/Pick.et"
-     amount 2
-    }
     InitItem "{66571CF00905E622}" {
      item "{877128FBE22FF2C9}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_suppressor_AP2K_OliveGreen_Sand_Stripes.et"
     }
@@ -70,7 +62,7 @@ GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_So
     }
     m_bDraggable 0
    }
-   StoragePurpose 7
+   StoragePurpose 0x7 0
    MaxCumulativeVolume 100000000
    MaxItemSize 1000000 1000000 1000000
    SaveInLoadout 0
