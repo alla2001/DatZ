@@ -1,6 +1,9 @@
 SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
  ID "56B2B479C6B96951"
  components {
+  Persistence "{65B27918147B3DEC}" {
+   Enabled 0
+  }
   EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
    m_fAutosaveInterval 5
    m_iAutosaveIterations 50
@@ -211,11 +214,12 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
    }
   }
   SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
-   Enabled 0
-   m_bEnableReconnect 0
+   Enabled 1
+   m_bEnableReconnect 1
   }
  }
  m_eTestGameFlags SpawnAI
+ m_bAllowFactionChange 0
  needFlagToBuild 1
  {
   ScriptedChatEntity {

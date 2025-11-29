@@ -1,0 +1,46 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{60DA118CA8BFACBF}" {
+   Prefab "{60DA118CA8BFACBF}"
+   {
+    SizeLayoutWidgetClass "{60DA118CA8BFACBC}" {
+     Prefab "{60DA118CA8BFACBC}"
+     {
+      VerticalLayoutWidgetClass "{60DA118CA8BFACBD}" {
+       Prefab "{60DA118CA8BFACBD}"
+       {
+        SizeLayoutWidgetClass "{60DA118CA8BC7520}" {
+         Prefab "{60DA118CA8BC7520}"
+         {
+          OverlayWidgetClass "{60DA118CA8BC7521}" {
+           Prefab "{60DA118CA8BC7521}"
+           {
+            HorizontalLayoutWidgetClass "{60DA118CA8BC3883}" {
+             Prefab "{60DA118CA8BC3883}"
+             {
+              OverlayWidgetClass "{60DA118CA8BC3881}" {
+               Prefab "{60DA118CA8BC3881}"
+               {
+                HorizontalLayoutWidgetClass "{66FB138B8A40954E}" {
+                 Name "BarterItemContainer"
+                 Slot OverlayWidgetSlot "{66FB138B8A40955A}" {
+                  HorizontalAlign 0
+                  VerticalAlign 3
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

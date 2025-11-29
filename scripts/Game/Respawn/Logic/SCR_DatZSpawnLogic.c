@@ -88,7 +88,55 @@
 
 		HandlePlayerLoad(uidContext);
 	}
+override protected bool ResolveReconnection(int playerId)
+	{
+		#ifdef _ENABLE_RESPAWN_LOGS
+		PrintFormat("%1::ResolveReconnection(playerId: %2)", Type().ToString(), playerId);
+		#endif
 
+		SCR_ReconnectComponent reconnect = SCR_ReconnectComponent.GetInstance();
+		if (!reconnect || !reconnect.IsReconnectEnabled())
+			return false;
+
+		const SCR_EReconnectState state = reconnect.GetReconnectState(playerId);
+		if (state == SCR_EReconnectState.NOT_RECONNECT)
+		{
+			reconnect.Forget(playerId);
+			return false;
+		}
+
+		if (state == SCR_EReconnectState.ENTITY_DISCARDED)
+		{
+			// Discarded (killed and possibly already deleted) entity means we stop here and force respawn.
+			// No attempt to use persistence even if it has data!
+			reconnect.Forget(playerId);
+			DoInitialSpawn_S(playerId);
+			return true;
+		}
+
+		const IEntity assignedEntity = reconnect.ReturnControlledEntity(playerId);
+		if (assignedEntity)
+		{
+			const PlayerController pc = GetGame().GetPlayerManager().GetPlayerController(playerId);
+
+			const Faction faction = SCR_FactionManager.SGetFaction(assignedEntity);
+			if (faction)
+			{
+
+				SCR_PlayerFactionAffiliationComponent playerFactionComp = SCR_PlayerFactionAffiliationComponent.Cast(pc.FindComponent(SCR_PlayerFactionAffiliationComponent));
+				if (playerFactionComp)
+					playerFactionComp.SetFaction_S(faction);
+			}
+
+			m_RespawnSystem.EmitPlayerEntityChange_S(playerId, null, assignedEntity);
+
+			SCR_ReconnectSynchronizationComponent syncComp = SCR_ReconnectSynchronizationComponent.Cast(pc.FindComponent(SCR_ReconnectSynchronizationComponent));
+			if (syncComp)
+				syncComp.CreateReconnectDialog(state);
+		}
+
+		return assignedEntity != null;
+	}
 	//------------------------------------------------------------------------------------------------
 	/*protected --Hotfix for 1.0 DO NOT CALL THIS MANUALLY*/
 	void HandlePlayerLoad(Managed context)
