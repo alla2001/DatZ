@@ -1,0 +1,35 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GenericEntity : "{2545D1F2F7988D0B}Assets/Ivy/Prefabs/Ivy_10.et" {
+   ID "66FD1B5F00185097"
+   coords 27.183 11.449 -5.762
+   angles 0 -105.482 0
+  }
+  GenericEntity : "{33E87757A1F1C74C}Assets/Ivy/Prefabs/ivy_5.et" {
+   ID "66FD1B5F0018534E"
+   coords -27.125 4.776 -9.969
+   angles 0 90 0
+  }
+  GenericEntity : "{5D7257200B0918B3}Assets/Ivy/GM_Placeable/E_Ivy_03.et" {
+   ID "66FD1B5F00185345"
+   coords -14.764 11.26 0
+   angles 0 0 0
+  }
+  GenericEntity : "{85DA3EE1728006EF}Assets/Ivy/GM_Placeable/E_Ivy_05.et" {
+   ID "66FD1B5F001850AD"
+   coords 18.376 5.026 0.126
+   angles 0 0 0
+  }
+  GenericEntity : "{8785F24364C88139}Assets/Ivy/Prefabs/Ivy_18.et" {
+   ID "66FD1B5F00185365"
+   coords 9.663 10.298 -14.482
+   angles 0 0 0
+  }
+  GenericEntity : "{BA200F4E11D0DF09}Assets/Ivy/Prefabs/Ivy_7.et" {
+   ID "66FD1B5F0018537B"
+   coords -17.255 10.585 -14.081
+   angles 0 0 0
+  }
+ }
+}
