@@ -1,13 +1,16 @@
 GenericEntity {
  ID "6450141C5F5201F1"
  components {
+  Persistence "{66D359C456436B63}" {
+   Enabled 0
+  }
   BLD_OwnershipComponent "{64535D2E33029800}" {
    MaxHealth 3000
   }
   BLD_RaidingManagerComponent "{645805A6F0A535E4}" {
    "Additional hit zones" {
     SCR_HitZone asd {
-     ColliderNames +{
+     ColliderNames {
      }
      HZDefault 1
      MaxHealth 1000
@@ -32,11 +35,7 @@ GenericEntity {
    }
   }
   EPF_PersistenceComponent "{64535D2E3D90EAB9}" {
-   m_pSaveData BLD_KodiiSaveDataClass "{64535D2E3F5B9DC0}" {
-    m_aComponents {
-     BLD_OwnershipComponentSaveDataClass "{64535D2E3839DDBC}" {
-     }
-    }
+   m_pSaveData EPF_ItemSaveDataClass "{6708B556D21084CB}" {
    }
   }
   MeshObject "{6450141C561E41E6}" {
@@ -58,7 +57,7 @@ GenericEntity {
    }
   }
   RigidBody "{6450141C5243CC88}" {
-   Layers 131073
+   Layers 0x20001 0x2
    Geometries {
     PhysicsModelGeometry "{6676E5C3638ED203}" {
      SurfaceProperties "{EA270CE454C419FD}Common/Materials/Game/wood.gamemat"

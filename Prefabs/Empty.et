@@ -1,3 +1,12 @@
 GenericEntity {
  ID "6454E21E6D2B918A"
+ components {
+  Persistence "{66D359C2FC266138}" {
+   Enabled 0
+  }
+  EPF_PersistenceComponent "{6708B556C7893EC2}" {
+   m_pSaveData EPF_ItemSaveDataClass "{6708B556D80ED7CF}" {
+   }
+  }
+ }
 }

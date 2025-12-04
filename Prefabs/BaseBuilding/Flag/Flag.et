@@ -1,0 +1,12 @@
+GenericEntity : "{2CF1B53612BB8956}Prefabs/BaseBuilding/Flag/FlagGhost.et" {
+ ID "65BD18BF98A0AA41"
+ components {
+  Persistence "{66D359C39E9D0877}" {
+   Enabled 0
+  }
+  EPF_PersistenceComponent "{6708B557C6386B32}" {
+   m_pSaveData EPF_ItemSaveDataClass "{6708B557D9F3A63E}" {
+   }
+  }
+ }
+}

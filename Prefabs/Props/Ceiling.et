@@ -1,8 +1,15 @@
 GenericEntity {
  ID "6450141F68BA97F5"
  components {
+  Persistence "{66D359C46CBC9CF2}" {
+   Enabled 0
+  }
   BLD_RaidingManagerComponent "{645805A6885BDF6B}" {
    EnableDamage 0
+  }
+  EPF_PersistenceComponent "{6708B556A624547F}" {
+   m_pSaveData EPF_ItemSaveDataClass "{6708B556BA6EF1B6}" {
+   }
   }
  }
 }
