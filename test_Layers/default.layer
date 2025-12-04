@@ -265,6 +265,10 @@ $grp GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.e
 SCR_DestructibleBuildingEntity : "{18B2439FBF6CADFD}Prefabs/Structures/Houses/Farm/FarmHouse_E_1L01/FarmHouse_E_1L01_Wood.et" {
  coords 102.821 0 151.608
 }
+GenericEntity SleepingBag_6708EA4E8888A8C6 : "{1BD271718EA3645B}Prefabs/BaseBuilding/SleepingBag/SleepingBag.et" {
+ coords 132.18 1 172.961
+ angles 0 0 0
+}
 GenericEntity Cucumber_6596E1DFDE63D515 : "{1FDD5905F1218248}Prefabs/Cucumber.et" {
  coords 173.08 1 161.759
 }
@@ -375,6 +379,9 @@ $grp Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Ba
  {
   coords 128.487 1 166.315
  }
+}
+GenericEntity Base_Safe_6708EA4E4E1D0A59 : "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et" {
+ coords 129.901 1 171.761
 }
 GenericEntity "Cooking Pot Clean Med_658CB24E243319EF" : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et" {
  coords 129.535 1 156.32
@@ -1409,6 +1416,9 @@ $grp GenericEntity : "{5FA7CC77A33752A5}Prefabs/Stick.et" {
  Stick_65A13CD89592003E18 {
   coords 106.101 4.586 145.989
  }
+}
+GenericEntity Flag_6708EA4EBD7700FE : "{609ADC868AD38BDB}Prefabs/BaseBuilding/Flag/Flag.et" {
+ coords 130.88 1 172.709
 }
 GenericEntity Tomato_6596E1DFC5683496 : "{700F5B2B56A3467C}Prefabs/Tomato.et" {
  coords 169.522 1 164.355

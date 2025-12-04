@@ -9,6 +9,10 @@ GenericEntity {
   }
   EPF_PersistenceComponent "{6708B557EB2C2585}" {
    m_pSaveData EPF_ItemSaveDataClass "{6708B557EC496296}" {
+    m_aComponents {
+     EPF_OwnershipComponentSaveDataClass "{6708EA4F65661520}" {
+     }
+    }
    }
   }
  }
