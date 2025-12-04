@@ -254,6 +254,14 @@ $grp GenericEntity : "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" {
   coords 142.407 1 169.592
  }
 }
+$grp GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
+ StorageBoxPlans_6708DE66AEDB56F6 {
+  coords 129.641 1 172.691
+ }
+ StorageBoxPlans_6708DE66BED87738 {
+  coords 130.106 1 173.614
+ }
+}
 SCR_DestructibleBuildingEntity : "{18B2439FBF6CADFD}Prefabs/Structures/Houses/Farm/FarmHouse_E_1L01/FarmHouse_E_1L01_Wood.et" {
  coords 102.821 0 151.608
 }
@@ -430,7 +438,7 @@ GenericEntity WaterCanteenUS_6596E1DFC04A5C0C : "{4000304122B0C624}Prefabs/Water
 }
 GenericEntity : "{4168CE8C08BC74B1}Prefabs/Structures/BuildingParts/Heating/StoveColumn_01_Base.et" {
  coords 127.862 1 155.761
- angleY 30.091
+ angles 0 30.091 0
 }
 GenericEntity Doorway_668282A07F78246B : "{417ADB670039E3D8}Prefabs/Props/Doorway.et" {
  coords 133.986 1 176.609
@@ -449,6 +457,9 @@ GenericEntity Bucket_6596E1DFD2DF6016 : "{519A81A0F1F407E3}Prefabs/Bucket.et" {
 }
 GenericEntity Mushroom_6596E1DFDA67F12F : "{51AF8E30E304375E}Prefabs/Mushroom.et" {
  coords 169.281 1 164.866
+}
+GenericEntity FlagPlans_6708DE66C3EBC287 : "{535141D3EBC36D1E}Prefabs/BaseBuilding/Flag/FlagPlans.et" {
+ coords 126.617 1 172.867
 }
 $grp DatZLootSpawner : "{5A4EAFD33C45C170}Prefabs/Spawners/Mil_DatZLootSpawner.et" {
  {
@@ -1444,7 +1455,7 @@ GenericEntity StairFoundation_6664DEDD71751277 : "{7420EF868C491C49}Prefabs/Prop
   }
  }
  coords 133.583 2.643 183.463
- angleY 0
+ angles 0 0 0
 }
 GenericEntity Foundation_6664DEDD70C76501 : "{745A6C8FA5BE01BB}Prefabs/Props/Foundation.et" {
  coords 138.988 1 182.268
@@ -1658,7 +1669,7 @@ GenericEntity CannedMeat_6596E1DFD12B2FD3 : "{BFDBFE2BED29C04A}Prefabs/CannedMea
 }
 GenericEntity Window_6664DEDD48C34F8B : "{BFEBBF26A643FBA6}Prefabs/Props/Window.et" {
  coords 138.417 1 193.344
- angleY 0
+ angles 0 0 0
 }
 GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_B32.et" {
  components {
@@ -1678,6 +1689,9 @@ GenericEntity "Gold Coin_6656DDA315CD285D" : "{C53F5A5C87A34A46}Prefabs/Valuable
 }
 GenericEntity BlastingMachine_M34_668282A1CE23FE0E : "{CE0AF733722B3978}Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34.et" {
  coords 128.345 1.108 168.466
+}
+GenericEntity SafeBook_6708DE66F89EB3CC : "{D125E11C31A965AA}Prefabs/BaseBuilding/Storage/Safe/SafeBook.et" {
+ coords 126.043 1 172.812
 }
 GenericEntity MG_M249_6656DDA4E28E37F6 : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" {
  coords 130.322 11.345 143.931
@@ -1752,7 +1766,7 @@ $grp GenericEntity : "{F0EAEF8FBBC96038}Prefabs/Weapons/Magazines/Magazine_9x19_
 }
 GenericEntity WallSmall_6664DEDD761BEF86 : "{F2CAA88E556DF686}Prefabs/Props/WallSmall.et" {
  coords 132.128 1 196.064
- angleY 0
+ angles 0 0 0
 }
 GameEntity BC_Optic_Unertl_658C93716DB03B85 : "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et" {
  coords 129.329 1 158.584
