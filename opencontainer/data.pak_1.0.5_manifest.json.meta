@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3C28F9935B1AB1CB}opencontainer/data.pak_1.0.5_manifest.json"
+ Configurations {
+  JSONResourceClass PC {
+  }
+  JSONResourceClass XBOX_ONE : PC {
+  }
+  JSONResourceClass XBOX_SERIES : PC {
+  }
+  JSONResourceClass PS4 : PC {
+  }
+  JSONResourceClass PS5 : PC {
+  }
+  JSONResourceClass HEADLESS : PC {
+  }
+ }
+}

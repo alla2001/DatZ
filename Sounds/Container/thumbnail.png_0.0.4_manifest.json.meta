@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{614CCB9A464D7E01}Sounds/Container/thumbnail.png_0.0.4_manifest.json"
+ Configurations {
+  JSONResourceClass PC {
+  }
+  JSONResourceClass XBOX_ONE : PC {
+  }
+  JSONResourceClass XBOX_SERIES : PC {
+  }
+  JSONResourceClass PS4 : PC {
+  }
+  JSONResourceClass PS5 : PC {
+  }
+  JSONResourceClass HEADLESS : PC {
+  }
+ }
+}

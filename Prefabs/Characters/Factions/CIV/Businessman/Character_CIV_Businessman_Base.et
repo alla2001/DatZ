@@ -8,7 +8,7 @@ SCR_ChimeraCharacter : "{9B443DD4C1F6DCAD}Prefabs/Characters/Factions/CIV/Charac
    isZombi 0
   }
   SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
-   "faction affiliation" "USSR"
+   "faction affiliation" "FFA"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
@@ -26,8 +26,15 @@ SCR_ChimeraCharacter : "{9B443DD4C1F6DCAD}Prefabs/Characters/Factions/CIV/Charac
   SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
    InitialInventoryItems {
     ItemsInitConfigurationItem "{60DCBCECAC6C6E65}" {
-     PrefabsToSpawn + {
-      "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
+     TargetStorage "Pants/Pants_Trousers_01_DarkGrey_Dirty.et"
+     PrefabsToSpawn {
+      "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded.et" "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
+     }
+    }
+    ItemsInitConfigurationItem "{671F358D953E09F3}" {
+     TargetStorage "Jacket/Shirt_Turtleneck_01_grey_Dirty.et"
+     PrefabsToSpawn {
+      "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded.et" "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
      }
     }
    }

@@ -44,16 +44,17 @@ class AirDropFallComponent : ScriptComponent
     {
         super.EOnInit(owner);
         if(!Replication.IsServer())return;
+		  // Find ground level below spawn point
+        FindGroundLevel();
+        
+        // Start falling
+        StartFalling();
         Print("AirDropFallComponent: Component initialized", LogLevel.NORMAL);
         CreateMapMarker();
 
 		
 		
-        // Find ground level below spawn point
-        FindGroundLevel();
-        
-        // Start falling
-        StartFalling();
+      
 		
 	
 		
@@ -151,8 +152,19 @@ class AirDropFallComponent : ScriptComponent
     {
         // Start the falling update loop
         GetGame().GetCallqueue().CallLater(UpdateFall, 50, true); // Update every 50ms
+		#ifdef WORKBENCH
+		RpcDo_SendAlarm();
+		return;
+		#endif // WORKBENCH
+		Rpc(RpcDo_SendAlarm);
     }
-    
+    [RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
+	void RpcDo_SendAlarm()
+	{
+		Print("LAG::SCR_ServerRestartAlarmComponent::RpcDo_SendNotificationBroadcast: Send alarm message");
+		
+		SCR_PopUpNotification.GetInstance().PopupMsg(text: "AIR DROP INCOMING",duration: 15.0, text2: string.Format("The AirDrop is Landing !"), sound: SCR_SoundEvent.SOUND_BELL_B);
+	}
     //------------------------------------------------------------------------------------------------
     protected void UpdateFall()
     {
@@ -186,6 +198,7 @@ class AirDropFallComponent : ScriptComponent
         vector newPos = Vector(currentPos[0], currentPos[1] - fallDistance, currentPos[2]);
         owner.SetOrigin(newPos);
 		owner.Update();
+		
     }
     
     //------------------------------------------------------------------------------------------------
@@ -200,8 +213,8 @@ class AirDropFallComponent : ScriptComponent
         
         if (m_bDestroyOnImpact)
         {
-            // Destroy after 5 minutes on ground
-            GetGame().GetCallqueue().CallLater(DestroyAirdrop, 1200000, false);
+            // Destroy after 20 minutes on ground
+            GetGame().GetCallqueue().CallLater(DestroyAirdrop, 1300000, false);
         }
 		GetGame().GetCallqueue().CallLater(SpawnInitialItems, 1000, false, GetOwner());
     }

@@ -2,17 +2,12 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
  ID "520EC961A090B1EE"
  components {
   ChimeraAIControlComponent "{520EA1D2DB109F34}" {
-   components {
-    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
-     m_eAISkillDefault NOOB
-    }
-   }
   }
   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
    WeaponTemplate ""
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{B9C7CB54E7105F14}Prefabs/BaconScorpion/SMG_Scorpion_FDE.et"
+   WeaponTemplate "{8D6553BEAF8640D1}Prefabs/Weapons/Rifles/M14/Rifle_M21_OliveGreen_Sand_Stripes_Wrapped.et"
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
    AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
@@ -26,7 +21,7 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
      Prefab "{AE74155267C3D5BB}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_cover_base.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{8641D9A55FF7D049}Prefabs/New_Equipment/Jackets/armst_jacket_army_sviter.et"
+     Prefab "{8641D9A55FF7D049}Prefabs/New_Equipment/Jackets/armst_jacket_army_sviter_old.et"
     }
     LoadoutSlotInfo ArmoredVest {
      Prefab "{07B1F856943B7075}Prefabs/Characters/Vests/Vest_M69/Vest_M69_base.et"
@@ -50,7 +45,7 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
     ItemsInitConfigurationItem "{5D7CC173FAA7C00E}" {
      TargetStorage "Pants/armst_pants_jeans.et"
      PrefabsToSpawn {
-      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_USSR.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
+      "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_USSR.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
      }
     }
     ItemsInitConfigurationItem "{5D7CC173FAA7C00C}" {
@@ -63,7 +58,7 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
     ItemsInitConfigurationItem "{557090130BCD36B7}" {
      TargetStorage "Vest/Vest_Type56.et"
      PrefabsToSpawn {
-      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{3A489A359EA3E01D}Prefabs/BaconScorpion/BaconScorpion_50rnd_9mm_ball.et" "{3A489A359EA3E01D}Prefabs/BaconScorpion/BaconScorpion_50rnd_9mm_ball.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et" "{DF2EE80EDABAEEAA}Prefabs/BaconScorpion/BaconScorpion_30rnd_9mm_ball.et"
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{C319540BC96AE9BB}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_M61_AP.et" "{C319540BC96AE9BB}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_M61_AP.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{77EAE5E07DC4678A}Prefabs/Weapons/Grenades/Smoke_RDG2.et" "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" "{C319540BC96AE9BB}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_M61_AP.et" "{C319540BC96AE9BB}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_M61_AP.et" "{C319540BC96AE9BB}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_M61_AP.et"
      }
     }
     ItemsInitConfigurationItem "{6064820F8177C8C0}" {

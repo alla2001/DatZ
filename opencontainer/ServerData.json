@@ -1,0 +1,6 @@
+﻿{
+    "id": "65EEF5DD763581EA",
+    "name": "Openable Cargo Containers",
+    "revision": {"version":"0.0.4","gameVersion":"1.4.0.48","changelog":"Fix - Replication \nFix - Door Sound\nThanks John","corrupted":false,"dependencies":[],"scenarios":[],"env":7
+    }
+}

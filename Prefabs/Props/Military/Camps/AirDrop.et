@@ -2,7 +2,7 @@ GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_So
  ID "F0DBA538AC2A0552"
  components {
   AirDropFallComponent "{66571CF757203D4B}" {
-   m_fFallSpeed 20
+   m_fFallSpeed 10
    m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{66572787CC527A34}" {
     m_sMapMarkerText "Air Drop"
     m_eMapMarkerIcon OBJECTIVE_MARKER
@@ -71,7 +71,7 @@ GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_So
   TW_LootableInventoryComponent "{627631B4655AFA87}" {
    Enabled 0
   }
-  NwkMovementComponent "{665B17D2DE33FADF}" {
+  NwkSimpleMovementComponent "{672112E6B014CED7}" {
   }
  }
  coords 127.23 32.03 148.801

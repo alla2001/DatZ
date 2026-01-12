@@ -37,7 +37,7 @@ maxBound[0] = maxBound[0] - verticalMargin;
 minBound[2] = minBound[2] + verticalMargin;
 maxBound[2] = maxBound[2] - verticalMargin;
 // Calculate max allowed spawns based on building bounds
-		
+		if(minBound[0]>maxBound[0]||minBound[1]>maxBound[1]||minBound[2]>maxBound[2]) return;
 vector size = maxBound - minBound;
 float volume = size[0]  *size[2] + size[1];
 int maxSpawns = Math.Clamp(Math.Ceil(volume / 15.0), 1, 25); // Between 1 and 12

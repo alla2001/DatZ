@@ -8,7 +8,7 @@ SCR_ChimeraCharacter : "{B692B5F052AA3EF1}Prefabs/Characters/Factions/CIV/Dockwo
    isZombi 0
   }
   SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
-   "faction affiliation" "USSR"
+   "faction affiliation" "FFA"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
@@ -27,14 +27,14 @@ SCR_ChimeraCharacter : "{B692B5F052AA3EF1}Prefabs/Characters/Factions/CIV/Dockwo
    InitialInventoryItems {
     ItemsInitConfigurationItem "{60DCBCECAC6C6E65}" {
      TargetStorage "Jacket/Jacket_Tanker_USSR_01.et"
-     PrefabsToSpawn + {
-      "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et"
+     PrefabsToSpawn {
+      "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded.et"
      }
     }
     ItemsInitConfigurationItem "{652D5874922FEE5E}" {
      TargetStorage "Pants/Pants_Tanker_USSR_01.et"
      PrefabsToSpawn {
-      "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
+      "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded.et"
      }
     }
    }
