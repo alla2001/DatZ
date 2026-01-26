@@ -1,0 +1,875 @@
+$grp SplineShapeEntity {
+ {
+  coords 220.148 18.75 436.279
+  Points {
+   ShapePoint "{612F7A72E34B14AC}" {
+    Position -18.389 0 2.238
+   }
+   ShapePoint "{612F7A72FEFE86D3}" {
+    Position 15.441 0 1.909
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -18.389 0 2.238
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position 15.441 0 1.909
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.168 18.75 432.259
+  Points {
+   ShapePoint "{612F7A72E34B14AC}" {
+    Position -18.307 0 1.963
+   }
+   ShapePoint "{612F7A72FEFE86D3}" {
+    Position 14.181 0 2.367
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -18.307 0 1.963
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position 14.181 0 2.367
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 234.205 18.75 430.787
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.164 0 -0.058
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -6.9 0 -0.15
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.164 0 -0.058
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -6.9 0 -0.15
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 223.158 18.75 427.614
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 4.304 0 3.136
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -0.267 0 3.079
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 4.304 0 3.136
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -0.267 0 3.079
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 222.739 18.75 430.744
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -21.657 0 -0.701
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -21.657 0 -0.701
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 229.827 18.75 423.86
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 3.934 0 2.857
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -10.124 0 2.52
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 3.934 0 2.857
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -10.124 0 2.52
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 219.92 18.75 419.429
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 13.836 0 3.185
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position 1.539 0 3.05
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 13.836 0 3.185
+       }
+       ShapePoint "{551075D531647346}" {
+        Position 1.539 0 3.05
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.616 18.75 426.716
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -19.34 0 -0.536
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -19.34 0 -0.536
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 222.449 18.75 422.886
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -21.657 0 -0.701
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -21.657 0 -0.701
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.033 18.75 415.436
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 13.836 0 3.185
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -14.249 0 2.877
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 13.836 0 3.185
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -14.249 0 2.877
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 205.998 18.75 418.58
+  angleY -2.417
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.164 0 -0.058
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -4.862 0 0.08
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.164 0 -0.058
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -4.862 0 0.08
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 233.711 18.75 417.8
+  angleY 178.71
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 13.836 0 3.185
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -0.528 0 3.461
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 13.836 0 3.185
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -0.528 0 3.461
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.676 18.75 414.723
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -19.407 0 -0.533
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -19.407 0 -0.533
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.538 18.75 408.403
+  angleY -1.128
+  Points {
+   ShapePoint "{612F7A72E34B14AC}" {
+    Position -18.389 0 2.238
+   }
+   ShapePoint "{612F7A72FEFE86D3}" {
+    Position 15.441 0 1.909
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -18.389 0 2.238
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position 15.441 0 1.909
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 215.37 18.75 408.561
+  angleY 178.732
+  Points {
+   ShapePoint "{612F7A72E34B14AC}" {
+    Position -18.389 0 2.238
+   }
+   ShapePoint "{612F7A72FEFE86D3}" {
+    Position 15.441 0 1.909
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -18.389 0 2.238
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position 15.441 0 1.909
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 234.103 18.75 403.21
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.113 0 -0.619
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -9.456 0 -0.454
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.113 0 -0.619
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -9.456 0 -0.454
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 222.637 18.75 403.166
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -21.657 0 -0.701
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -21.657 0 -0.701
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 222.55 18.75 400.023
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 3.392 0 2.98
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -1.989 0 2.677
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 3.392 0 2.98
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -1.989 0 2.677
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 222.744 18.75 399.053
+  angleY 0.761
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -21.657 0 -0.701
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -21.657 0 -0.701
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 234.21 18.75 398.944
+  angleY 0.761
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -2.746 0 -0.372
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -6.9 0 -0.15
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -2.746 0 -0.372
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -6.9 0 -0.15
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 220.568 18.75 395.054
+  angleY 0.761
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -19.34 0 -0.536
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -19.34 0 -0.536
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 229.741 18.75 392.076
+  angleY 0.761
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 3.934 0 2.857
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -10.124 0 2.52
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 3.934 0 2.857
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -10.124 0 2.52
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 223.122 18.75 395.918
+  angleY 0.761
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 4.304 0 3.136
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -0.267 0 3.079
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 4.304 0 3.136
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -0.267 0 3.079
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 234.327 18.75 391.176
+  angleY 1.089
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -32.824 0 -1.085
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -32.824 0 -1.085
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 229.475 18.75 384.358
+  Points {
+   ShapePoint "{612F7A72D0252568}" {
+    Position 4.304 0 3.136
+   }
+   ShapePoint "{612F7A72D22112F5}" {
+    Position -0.267 0 3.079
+   }
+  }
+  {
+   RoadGeneratorEntity : "{921B36A98FB3AEC8}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_B.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "551075D50CBB1365"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{551075D5316474F0}" {
+        Position 4.304 0 3.136
+       }
+       ShapePoint "{551075D531647346}" {
+        Position -0.267 0 3.079
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 230.215 18.75 387.363
+  Points {
+   ShapePoint "{612F7A72DEDD39A0}" {
+    Position -0.638 0 -0.274
+   }
+   ShapePoint "{612F7A72D8C441EB}" {
+    Position -28.909 0 -0.337
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      coords 0 0 0
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -0.638 0 -0.274
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position -28.909 0 -0.337
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 215.101 18.75 385.349
+  angleY 179.143
+  Points {
+   ShapePoint "{612F7A72E34B14AC}" {
+    Position -18.389 0 2.238
+   }
+   ShapePoint "{612F7A72FEFE86D3}" {
+    Position 15.441 0 1.909
+   }
+  }
+  {
+   RoadGeneratorEntity : "{50C348FDFD91BE31}Prefabs/WEGenerators/Decals/ConcretePanels/RG_ConcretePanelRow_01_A.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "5502CE41AA4A5D23"
+      SplinePoints {
+       ShapePoint "{5502CE416AEF8906}" {
+        Position -18.389 0 2.238
+       }
+       ShapePoint "{5502CE416AEF8DAC}" {
+        Position 15.441 0 1.909
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+     }
+    }
+   }
+  }
+ }
+}

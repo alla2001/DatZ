@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F6A67FFC08B14DDE}622120A5448725E3/Assets/Character/BaseBody_DatzLOD.et"
+ Name "{F6A67FFC08B14DDE}Prefabs/BaseBody_DatzLOD.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

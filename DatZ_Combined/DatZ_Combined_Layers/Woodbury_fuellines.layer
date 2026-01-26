@@ -1,0 +1,426 @@
+$grp StaticModelEntity : "{69C0826D0263EB72}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_pump.et" {
+ {
+ coords 7048.011 18.848 2753.400
+  angleY 90
+ }
+ {
+ coords 7048.009 18.848 2731.527
+  angleY 90
+ }
+ {
+ coords 7048.008 18.848 2720.058
+  angleY 90
+ }
+ {
+ coords 7048.015 18.847 2645.930
+  angleY 90
+ }
+ {
+ coords 7048.018 18.847 2679.272
+  angleY 90
+ }
+ {
+ coords 7048.016 18.847 2657.399
+  angleY 90
+ }
+}
+$grp StaticModelEntity : "{783A0981DA761AA9}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_end.et" {
+ {
+ coords 7047.705 18.848 2736.547
+ }
+ {
+ coords 7047.701 18.848 2736.165
+ }
+ {
+ coords 7005.020 18.750 2800.349
+  angleY -179.169
+ }
+ {
+ coords 7005.029 18.750 2800.730
+  angleY -179.169
+ }
+ {
+ coords 7047.712 18.847 2662.419
+ }
+ {
+ coords 7047.708 18.847 2662.037
+ }
+ {
+ coords 6955.367 18.750 2800.391
+  angleY -0.885
+ }
+ {
+ coords 6955.370 18.750 2800.009
+  angleY -0.885
+ }
+ {
+ coords 6913.966 18.750 2800.000
+  angleY 179.021
+ }
+ {
+ coords 6913.962 18.750 2800.381
+  angleY 179.021
+ }
+ {
+ coords 8759.810 49.449 4328.222
+  angleY -179.048
+ }
+ {
+ coords 8728.105 49.449 4328.443
+  angleY -0.763
+ }
+ {
+ coords 8728.111 49.449 4328.062
+  angleY -0.763
+ }
+ {
+ coords 8759.821 49.449 4328.602
+  angleY -179.048
+ }
+}
+$grp StaticModelEntity : "{B38B5CEED13F6BFF}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_6m.et" {
+ {
+ coords 7048.003 18.848 2754.817
+  angleY -90
+ }
+ {
+ coords 7048.633 18.848 2754.820
+  angleY -90
+ }
+ {
+ coords 7048.004 18.848 2748.832
+  angleY -90
+ }
+ {
+ coords 7048.003 18.848 2742.850
+  angleY -90
+ }
+ {
+ coords 7047.997 18.848 2735.867
+  angleY -90
+ }
+ {
+ coords 7048.646 18.848 2742.877
+  angleY -90
+ }
+ {
+ coords 7048.647 18.848 2748.860
+  angleY -90
+ }
+ {
+ coords 7048.643 18.848 2730.917
+  angleY -90
+ }
+ {
+ coords 7048.644 18.848 2736.900
+  angleY -90
+ }
+ {
+ coords 7048.646 18.848 2724.933
+  angleY -90
+ }
+ {
+ coords 7047.996 18.848 2729.892
+  angleY -90
+ }
+ {
+ coords 7047.990 18.855 2724.955
+  angleY -90
+ }
+ {
+ coords 6993.080 18.750 2800.652
+  angleY -0.364
+ }
+ {
+ coords 7005.047 18.750 2800.728
+  angleY -0.364
+ }
+ {
+ coords 7005.029 18.750 2800.347
+  angleY -0.364
+ }
+ {
+ coords 6999.069 18.750 2800.295
+  angleY -0.364
+ }
+ {
+ coords 6999.062 18.750 2800.690
+  angleY -0.364
+ }
+ {
+ coords 6993.086 18.750 2800.258
+  angleY -0.364
+ }
+ {
+ coords 6987.093 18.750 2800.219
+  angleY -0.364
+ }
+ {
+ coords 6975.150 18.750 2800.130
+  angleY -0.364
+ }
+ {
+ coords 6975.130 18.750 2800.537
+  angleY -0.364
+ }
+ {
+ coords 6981.112 18.750 2800.576
+  angleY -0.364
+ }
+ {
+ coords 6981.133 18.750 2800.168
+  angleY -0.364
+ }
+ {
+ coords 6987.097 18.750 2800.613
+  angleY -0.364
+ }
+ {
+ coords 6969.145 18.750 2800.500
+  angleY -0.364
+ }
+ {
+ coords 6963.163 18.750 2800.461
+  angleY -0.364
+ }
+ {
+ coords 6963.183 18.750 2800.054
+  angleY -0.364
+ }
+ {
+ coords 6969.166 18.750 2800.092
+  angleY -0.364
+ }
+ {
+ coords 6961.354 18.743 2800.041
+  angleY -0.364
+ }
+ {
+ coords 6961.334 18.743 2800.448
+  angleY -0.364
+ }
+ {
+ coords 7048.640 18.847 2680.692
+  angleY -90
+ }
+ {
+ coords 7048.010 18.847 2680.690
+  angleY -90
+ }
+ {
+ coords 7048.654 18.847 2674.732
+  angleY -90
+ }
+ {
+ coords 7048.011 18.847 2674.704
+  angleY -90
+ }
+ {
+ coords 7048.010 18.847 2668.722
+  angleY -90
+ }
+ {
+ coords 7048.653 18.847 2668.749
+  angleY -90
+ }
+ {
+ coords 7048.651 18.847 2662.772
+  angleY -90
+ }
+ {
+ coords 7048.004 18.847 2661.739
+  angleY -90
+ }
+ {
+ coords 7048.650 18.847 2656.789
+  angleY -90
+ }
+ {
+ coords 7048.003 18.847 2655.764
+  angleY -90
+ }
+ {
+ coords 7048.653 18.847 2650.805
+  angleY -90
+ }
+ {
+ coords 7047.997 18.854 2650.827
+  angleY -90
+ }
+ {
+ coords 6914.003 18.750 2800.380
+  angleY -0.364
+ }
+ {
+ coords 6902.042 18.750 2799.910
+  angleY -0.364
+ }
+ {
+ coords 6902.370 18.750 2800.304
+  angleY -0.364
+ }
+ {
+ coords 6908.025 18.750 2799.947
+  angleY -0.364
+ }
+ {
+ coords 6908.018 18.750 2800.342
+  angleY -0.364
+ }
+ {
+ coords 6913.985 18.750 2799.999
+  angleY -0.364
+ }
+ {
+ coords 6896.058 18.750 2806.564
+  angleY -90.211
+ }
+ {
+ coords 6895.680 18.750 2806.178
+  angleY -90.511
+ }
+ {
+ coords 6895.632 18.760 2812.161
+  angleY -90.511
+ }
+ {
+ coords 6896.022 18.772 2812.539
+  angleY -90.511
+ }
+ {
+ coords 6895.187 18.767 2836.100
+  angleY -91.059
+ }
+ {
+ coords 6895.298 18.767 2830.117
+  angleY -91.059
+ }
+ {
+ coords 6895.410 18.767 2824.135
+  angleY -91.059
+ }
+ {
+ coords 6895.519 18.767 2818.152
+  angleY -91.059
+ }
+ {
+ coords 8734.073 49.442 4328.487
+  angleY -0.242
+ }
+ {
+ coords 8735.922 49.449 4328.089
+  angleY -0.242
+ }
+ {
+ coords 8734.091 49.442 4328.081
+  angleY -0.242
+ }
+ {
+ coords 8735.903 49.449 4328.498
+  angleY -0.242
+ }
+ {
+ coords 8741.903 49.449 4328.114
+  angleY -0.242
+ }
+ {
+ coords 8741.884 49.449 4328.523
+  angleY -0.242
+ }
+ {
+ coords 8753.874 49.449 4328.166
+  angleY -0.242
+ }
+ {
+ coords 8747.870 49.449 4328.547
+  angleY -0.242
+ }
+ {
+ coords 8747.889 49.449 4328.139
+  angleY -0.242
+ }
+ {
+ coords 8753.853 49.449 4328.572
+  angleY -0.242
+ }
+ {
+ coords 8759.836 49.449 4328.599
+  angleY -0.242
+ }
+ {
+ coords 8759.833 49.449 4328.204
+  angleY -0.242
+ }
+}
+$grp StaticModelEntity : "{C961CFEF127BA48C}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_90.et" {
+ {
+ coords 7048.322 18.848 2755.122
+ }
+ {
+ coords 7048.633 18.848 2754.807
+  angleY 90
+ }
+ {
+ coords 7047.685 18.848 2736.547
+  angleY -180
+ }
+ {
+ coords 7047.996 18.848 2735.844
+  angleY 90
+ }
+ {
+ coords 7048.313 18.848 2718.646
+  angleY 180
+ }
+ {
+ coords 7048.007 18.848 2718.965
+  angleY -90
+ }
+ {
+ coords 7048.329 18.847 2680.994
+ }
+ {
+ coords 7048.640 18.847 2680.679
+  angleY 90
+ }
+ {
+ coords 7047.692 18.847 2662.419
+  angleY -180
+ }
+ {
+ coords 7048.003 18.847 2661.716
+  angleY 90
+ }
+ {
+ coords 7048.320 18.847 2644.518
+  angleY 180
+ }
+ {
+ coords 7048.014 18.847 2644.837
+  angleY -90
+ }
+ {
+ coords 6895.734 18.750 2800.188
+  angleY -90.667
+ }
+ {
+ coords 6896.087 18.750 2800.575
+  angleY -90.667
+ }
+ {
+ coords 6896.346 18.750 2812.847
+ }
+ {
+ coords 6895.507 18.760 2836.413
+ }
+}
+$grp StaticModelEntity : "{DBAFF105C2969F61}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_shed.et" {
+ {
+ coords 6896.973 18.763 2836.413
+  angleY 90
+ }
+ {
+ coords 6897.815 18.745 2812.847
+  angleY 90
+ }
+}

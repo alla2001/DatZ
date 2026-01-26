@@ -1,0 +1,36 @@
+GenericEntity : "{E0188D338D779179}Prefabs/Props/BsBox/BsBoxPlans.et" {
+ ID "5256876839A05289"
+ components {
+  BLD_WorkbenchBookComponent "{646719D7C0BB5A44}" {
+  }
+  InventoryItemComponent "{646719D7C0BB5A60}" {
+   Attributes SCR_ItemAttributeCollection "{646719D7C0BB5A63}" {
+    ItemDisplayName UIInfo "{646719D7C0BB5A7D}" {
+     Name "Crafting WorkBench"
+    }
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{646719D7C0BB5A73}" {
+     SourceMaterial "Notebook_01"
+     AssignedMaterial "{FF12EFFE3CE3B723}Assets/Props/Civilian/Notebook_01/Data/Notebook_01_MarbleBlack_MLOD.emat"
+    }
+    MaterialAssignClass "{646719D7C0BB5A49}" {
+     SourceMaterial "Palette"
+     AssignedMaterial "{FF12EFFE3CE3B723}Assets/Props/Civilian/Notebook_01/Data/Notebook_01_MarbleBlack_MLOD.emat"
+    }
+   }
+  }
+  ActionsManagerComponent "{646719D7C0BB5A41}" {
+   additionalActions {
+    SCR_PickUpItemAction "{646719D7C0BB5A2C}" {
+     UIInfo UIInfo "{646719D7C0BB5A2E}" {
+      Name "Secure Safe"
+     }
+    }
+   }
+  }
+ }
+ coords -1.686 2.515 1.637
+}

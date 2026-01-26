@@ -1,0 +1,107 @@
+SCR_MapEntity MapEntity1 : "{731564B66F91B107}Prefabs/World/Game/MapEntity.et" {
+ coords 5915.698 200.002 6268.735
+ "Map Geometry Data" "{951E8FB6AB5D6AA7}Worlds/GM_Bergamo.topo"
+ "Satellite background image" "{363CE7D7D76C51A8}Art/SatelliteBackground.edds"
+}
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{68516BB20BDB60CE}" {
+     NavmeshFile "{2EE149932FC7A4AB}Worlds/Navmesh/GMBergamo_Soldiers.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{E0233D4DC67B7C76}Worlds/Navmesh/GM_Bergamo_BTRLike.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{4AFBFCBBCE937A58}Worlds/Navmesh/GM_Bergamo_Lowres.nmn"
+    }
+   }
+  }
+ }
+ coords 5856.82 199.999 6070.749
+}
+PerceptionManager PerceptionManager2 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6164.348 578.796 10047.428
+}
+SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ components {
+  Persistence "{65B27918147B3DEC}" {
+   Enabled 0
+  }
+  EPF_PersistenceManagerComponent "{670F26ADF2D05726}" {
+   components {
+    EPF_PersistentDoorStateManagerComponent "{670F26ADE858DCF5}" {
+     m_pFilter EPF_PersistentDoorStateFilter "{670F26ADEE3770B0}" {
+     }
+    }
+   }
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{670F26ADF00BB78B}" {
+    m_sDatabaseName "database"
+   }
+  }
+  LAG_SCR_ServerRestartAlarmComponent "{670F26AD13E31041}" {
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_DatZSpawnLogic "{5D36888CC966608A}" {
+    loadouts {
+     "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
+     "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et"
+    }
+   }
+  }
+ }
+ coords 3984.161 13.13 2392.467
+}
+SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 3976.699 13.13 2392.656
+ Factions {
+  SCR_FreeForAllFaction "{670F26A4A939990B}" {
+   FactionKey "FFA"
+   FactionColor 0.947 0.644 0.136 0
+   m_OutlineFactionColor 0.165 0.095 0.026 1
+   m_sFactionFlag "{CB7DFED27EC4949A}Common/Textures/default_BCR.edds"
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{67171AC2A5C36740}" {
+     m_eEntityCatalogType ITEM
+     m_aMultiLists {
+      SCR_EntityCatalogMultiListEntry "{67171AC2CDAD879A}" {
+       m_sIdentifier "Weapons"
+       m_aEntities {
+        SCR_EntityCatalogInventoryItem "{67171AC2E2ACC15E}" {
+         m_sEntityPrefab "{1BD271718EA3645B}Prefabs/BaseBuilding/SleepingBag/SleepingBag.et"
+         m_aEntityDataList {
+          SCR_ArsenalItem "{5C62F7D84AAB75D4}" {
+           m_eItemType PISTOL
+           m_eItemMode WEAPON
+           m_iSupplyCost 5
+           m_aArsenalDisplayData {
+            SCR_ArsenalItemDisplayData "{5CA0A78B9C20AD19}" {
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+   m_sGroupFlagsImageSet "{68D2847B0077E872}UI/Textures/DeployMenu/Loadout-BG/Loadout_BG_Custom.imageset"
+  }
+ }
+}
+ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 5983.749 200.002 6120.99
+}
+GenericEntity BedManager_67230610CD7FCE4B : "{D1EC02E5F307FCCB}Prefabs/BaseBuilding/SleepingBag/BedManager.et" {
+ coords 4999.631 391.782 1490.454
+}

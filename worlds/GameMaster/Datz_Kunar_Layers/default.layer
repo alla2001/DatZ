@@ -1,0 +1,1076 @@
+SCR_AIWorld SCR_AIWorld_Kunar : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{66AB6351F8DE57F6}" {
+     NavmeshFile "{D7F7994B2259BC99}NavMesh/Kunar_Soldiers.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{62C73AECEEA884E5}NavMesh/Kunar_BTR.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{935C52C1479660D1}NavMesh/Kunar_LowRes.nmn"
+    }
+   }
+  }
+ }
+ coords 1843.281 234.43 1497.201
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+SCR_BaseGameMode GameMode_Plain1 : "{404461C4ABB1E9EA}Prefabs/World Setup Prefabs/GameMode_Plain1.et" {
+ coords 1904.388 163.222 2683.835
+ {
+  SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+   coords -91.862 62.199 -843.441
+  }
+  RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
+   coords -118.751 100.778 -845.919
+  }
+  ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+   coords -410.829 116.713 -841.603
+  }
+  SCR_EditorSettingsEntity {
+   coords -91.862 62.199 -843.441
+   m_bIsUnlimitedEditorLegal 1
+  }
+  SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/Managers/Loadouts/LoadoutManager_Editor.et" {
+   coords -91.862 62.199 -843.441
+  }
+ }
+}
+PerceptionManager PerceptionManager1 : "{C1DEBE97FE853E7A}Prefabs/World Setup Prefabs/PerceptionManager2.et" {
+ coords 1826.487 190.914 2615.327
+}
+LAG_SCR_ServerRestartTriggerEntity {
+ components {
+  RplComponent "{686B29605C12A864}" {
+  }
+ }
+ coords 1061.091 495.503 783.287
+}
+$grp DatZLootSpawner : "{058F3AD5473C7E64}Prefabs/Spawners/Coke_DatZLootSpawner.et" {
+ {
+  coords 2883.231 32.536 3930.791
+ }
+ {
+  coords 2884.372 32.531 3930.554
+ }
+ {
+  coords 2885.573 32.555 3930.147
+ }
+ {
+  coords 2886.432 32.629 3930.035
+ }
+ {
+  coords 2886.944 32.662 3929.473
+ }
+ {
+  coords 2885.975 32.271 3927.394
+ }
+ {
+  coords 2885.525 32.179 3926.93
+ }
+ {
+  coords 2884.922 32.082 3926.928
+ }
+ {
+  coords 2884.341 32.008 3927.303
+ }
+ {
+  coords 2883.51 31.959 3927.81
+ }
+ {
+  coords 2882.748 31.976 3928.285
+ }
+ {
+  coords 2882.594 32.346 3930.148
+ }
+ {
+  coords 2884.442 32.324 3929.34
+ }
+ {
+  coords 2885.533 32.355 3928.688
+ }
+ {
+  coords 2886.49 32.461 3928.39
+ }
+}
+StaticModelEntity : "{086E85DB687EA38F}Prefabs/Props/Construction/GravelPile_01/GravelPile_01_medium.et" {
+ coords 1642.966 22.971 3738.534
+ angles -2.53 1.604 2.43
+}
+$grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_CIV.et" {
+ {
+  coords 3335.293 7.044 2680.838
+ }
+ {
+  coords 2047.755 18.811 3685.298
+ }
+ {
+  coords 1366.722 32.183 3440.239
+ }
+ {
+  coords 345.341 39.594 3185.934
+ }
+ {
+  coords 1851.626 199.601 389.707
+ }
+ {
+  coords 3321.052 311.043 430.461
+ }
+ {
+  coords 3709.451 280 415.337
+ }
+ {
+  coords 3778.816 230.028 938.28
+ }
+ {
+  coords 3863.643 130.428 1772.273
+ }
+ {
+  coords 3865.26 12.563 2667.887
+ }
+ {
+  coords 3813.175 28 3351.945
+ }
+ {
+  coords 3545.247 20 3751.214
+ }
+ {
+  coords 2868.299 42.858 3711.184
+ }
+ {
+  coords 2719.226 10 3144.774
+ }
+ {
+  coords 2095.702 21.653 3026.297
+ }
+}
+SCR_DestructibleBuildingEntity : "{1A4A64AD1C9A15BA}PrefabLibrary/DefaultLibrary/Structures/Airport/ControlTower_01.et" {
+ coords 2757.281 0 3197.647
+ angles 0 120.774 0
+}
+SCR_DestructibleEntity : "{261B2C977CEB1CEA}PrefabLibrary/DefaultLibrary/Walls/Wooden/WoodenFence_03_Pole.et" {
+ coords 1622.088 -1.425 3741.97
+ angles 0 -251.98 0
+}
+$grp DatZLootSpawner : "{3794323F5723F527}Prefabs/Spawners/Drug_DatZLootSpawner.et" {
+ {
+  coords 2898.037 15 2652.59
+ }
+ {
+  coords 2899.581 15 2649.803
+ }
+ {
+  coords 2898.65 15 2645.21
+ }
+ {
+  coords 2895.951 15 2642.975
+ }
+ {
+  coords 2897.962 15 2640.833
+ }
+ {
+  coords 2897.008 15 2634.345
+ }
+ {
+  coords 2900.215 14.983 2644.218
+ }
+ {
+  coords 2895.777 15 2624.196
+ }
+ {
+  coords 2898.564 15.161 2616.273
+ }
+ {
+  coords 2891.466 15.087 2612.256
+ }
+ {
+  coords 2897.644 15.429 2608.317
+ }
+ {
+  coords 2893.932 15.073 2601.171
+ }
+ {
+  coords 2894.49 15.358 2593.046
+ }
+ {
+  coords 2890.523 15 2606.946
+ }
+ {
+  coords 2898.604 15.565 2608.831
+ }
+}
+GenericEntity : "{3AE0A97C6595801F}Prefabs/Props/Military/WaterTanks/MobileWaterTank_USSR_01.et" {
+ coords 1645.046 22.663 3742.264
+ angles 4.992 -4.989 5.811
+}
+$grp DatZLootSpawner : "{3B119930B27EC0A5}Prefabs/Spawners/GoldBrick_DatZLootSpawner.et" {
+ {
+  coords 422.04 323.725 3916.652
+ }
+ {
+  coords 422.153 323.721 3915.579
+ }
+ {
+  coords 422.024 323.727 3914.074
+ }
+ {
+  coords 422.108 323.727 3914.613
+ }
+ {
+  coords 423.426 324.704 3915.411
+ }
+ {
+  coords 422.628 323.713 3916.695
+ }
+ {
+  coords 422.978 323.713 3917.328
+ }
+ {
+  coords 419.393 323.717 3914.231
+ }
+ {
+  coords 419.693 323.713 3913.191
+ }
+ {
+  coords 420.873 323.755 3913.533
+ }
+ {
+  coords 420.565 323.728 3914.431
+ }
+}
+GenericEntity : "{3F0D0593590519DA}Prefabs/Props/Garbage/Tires/TirePile_01_medium.et" {
+ coords 1654.955 22.558 3723.3
+}
+$grp GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{C24FA52F1F0E59AC}Configs/Shops/DrugDealer.conf"
+   }
+  }
+  coords 135.61 606.906 1043.177
+  angles 0 -69.406 0
+ }
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{9F9B99EA94C617E7}Configs/Shops/TraderShop.conf"
+   }
+  }
+  coords 2096.959 23.264 3921.012
+  angles 0 146.986 0
+ }
+ {
+  components {
+   ADM_ShopComponent "{5D775155BFB12BA4}" {
+    m_ShopConfig "{2902B706BA3B5B98}Configs/Shops/BlackMarketShop.conf"
+   }
+  }
+  coords 3761.066 280.37 435.853
+  angles 0 93.931 0
+ }
+}
+GenericEntity Antidote_686B65A015348C32 : "{44E5BD408C02E663}Prefabs/Antidote.et" {
+ coords 2788.422 465.427 43.245
+}
+$grp Tree : "{531BB93086610CA1}PrefabLibrary/DefaultLibrary/Vegetation/Trees/t_betula_pendula_0.et" {
+ {
+  coords 1656.987 0.07 3711.947
+  angles -0.657 163.053 0.364
+  scale 1.118
+ }
+ {
+  coords 1645.475 -0.262 3703.154
+  angles -0.575 206.319 -0.527
+  scale 1.072
+ }
+ {
+  coords 1643.26 -0.279 3704.819
+  angles -0.97 346.563 0.572
+  scale 1.181
+ }
+ {
+  coords 1643.857 -0.241 3702.868
+  angles 1 75.303 0.177
+  scale 1.129
+ }
+ {
+  coords 1638.694 -0.883 3707.819
+  angles 0.29 309.176 0.354
+  scale 0.783
+ }
+ {
+  coords 1636.679 -0.565 3728.905
+  angles -0.396 286.73 0.611
+  scale 1.187
+ }
+ {
+  coords 1644.54 0.178 3726.099
+  angles -0.036 33.773 0.772
+  scale 0.951
+ }
+ {
+  coords 1658.437 0.085 3710.003
+  angles 0.553 313.461 0.52
+  scale 0.984
+ }
+}
+$grp GenericEntity : "{55476D9B2E3F4C63}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_CocaineBrick.et" {
+ E_CocaineBrick_6864A4AF3510A4A5 {
+  coords 2884.242 33.308 3930.033
+ }
+ E_CocaineBrick_6864A4AF2BC7993E {
+  coords 2884.636 33.308 3929.844
+ }
+ E_CocaineBrick_6864A4AF2848FB56 {
+  coords 2885.104 33.305 3929.787
+ }
+ E_CocaineBrick_6864A4AF29354A89 {
+  coords 2885.273 33.307 3929.213
+ }
+ E_CocaineBrick_6864A4AF2FFDD5D8 {
+  coords 2884.663 33.306 3929.423
+ }
+ E_CocaineBrick_6864A4AF2C1B00B4 {
+  coords 2884.074 33.307 3929.66
+ }
+}
+GenericEntity : "{57237781CE749464}Prefabs/Props/Agriculture/Farm/Trough_01.et" {
+ coords 1654.739 22.322 3736.527
+ angles 0 6 0
+}
+$grp Tree : "{5D765B912A33A615}PrefabLibrary/DefaultLibrary/Vegetation/Trees/t_salix_fragilis_2s.et" {
+ {
+  coords 2080.839 0.844 3920.739
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2074.78 -0.733 3908.037
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2076.612 -0.445 3913.105
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2072.253 -0.546 3904.49
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2072.293 -1.424 3898.862
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2070.307 -1.619 3891.927
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2070.628 -1.244 3885.94
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+ {
+  coords 2071.609 -3.12 3867.621
+  angles -1.988 142.572 0.305
+  scale 1.192
+ }
+}
+GenericEntity : "{6929659CE9375CAF}Prefabs/Props/Garbage/Tires/TireTractor_01_single.et" {
+ coords 1655.597 22.411 3742.241
+}
+$grp Tree : "{70692C116A6B4177}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_1sw.et" {
+ {
+  coords 1658.358 0.007 3714.939
+  scale 0.803
+ }
+ {
+  coords 1654.079 0.075 3717.527
+  scale 1.026
+ }
+ {
+  coords 1654.756 -0.044 3707.811
+  scale 1.1
+ }
+}
+GenericEntity : "{757FCCE8E756175C}Prefabs/Props/Furniture/MeetingTable_01.et" {
+ coords 3761.85 280.365 435.971
+ angles 0 -89.432 0
+}
+GenericEntity : "{77787EE24EC156F0}PrefabLibrary/DefaultLibrary/Props/Civilian/TableOld_01/TableOld_01.et" {
+ coords 2884.795 32.408 3929.666
+ angles 0 23.823 0
+}
+GenericEntity : "{795552B887CD50E7}Prefabs/Props/Industrial/ConcretePanel_01_stack.et" {
+ coords 1653.43 21.972 3743.753
+ angles 0 -4 0
+}
+$grp GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+ {
+  coords 2940.807 10 2991.603
+ }
+ {
+  coords 2683.503 8.024 3083.24
+ }
+ {
+  coords 269.086 40 3161.762
+ }
+ {
+  coords 454.839 352 314.445
+ }
+ {
+  coords 2366.321 163.5 1866.496
+ }
+ {
+  coords 340.593 237.686 2773.724
+ }
+}
+ZEL_SafeZoneEntity : "{98AD581B92D08AF3}Prefabs/Zones/Safe/SafeZone.et" {
+ coords 2107.526 23.545 3897.328
+ SphereRadius 70
+ DrawShape 0
+}
+SCR_DestructibleBuildingEntity : "{9ACCDC76D1EBDA27}PrefabLibrary/DefaultLibrary/Structures/Houses/FarmHouse_E_1L01/FarmHouse_E_1L01_Wood.et" {
+ coords 2832.476 0.094 493.928
+ angles 0 -65.567 0
+}
+$grp Tree : "{A35E15EBC6033C07}PrefabLibrary/DefaultLibrary/Vegetation/Bushes/b_corylus_avellana_1.et" {
+ {
+  coords 1651.68 -0.036 3707.317
+  angles 0 2.373 0
+  scale 0.921
+ }
+ {
+  coords 1633.927 -0.393 3726.096
+  angles 0 3.648 0
+  scale 0.81
+ }
+ {
+  coords 1636.054 -1.056 3736.007
+  angles 0 322.448 0
+  scale 0.848
+ }
+ {
+  coords 1653.627 0.106 3714.965
+  angles 0 109.998 0
+  scale 0.83
+ }
+ {
+  coords 1656.67 -0.026 3716.78
+  angles 0 185.96 0
+  scale 0.815
+ }
+}
+$grp GenericEntity : "{A446CB3C732A360D}Prefabs/Props/Garbage/Generic/Junk_01/Junk_01_pile_long.et" {
+ {
+  coords 3024.7 7.392 2798.654
+  angles 0.084 41.911 -0.51
+ }
+ {
+  coords 2991.506 9.815 2830.197
+  angles -2.064 97.582 3.917
+ }
+}
+GenericEntity BedManager_68633E1BB55B3D89 : "{A6C3FB14FC0B7A82}Prefabs/World Setup Prefabs/BedManager.et" {
+ coords 1727.738 237.481 2575.978
+}
+$grp Tree : "{AC43B039B67361F6}PrefabLibrary/DefaultLibrary/Vegetation/Trees/t_betula_pendula_3s.et" {
+ {
+  coords 3078.303 -1.827 2947.017
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3064.977 -2.482 2948.451
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3067.327 -2.95 2957.698
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3067.327 -2.95 2957.698
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3053.841 -3.242 2953.111
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3050.139 -4.052 2963.731
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3041.398 -3.793 2953.466
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3037.145 -4.655 2964.551
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3032.889 -3.807 2947.801
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3047.208 -2.95 2943.76
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3096.275 -2.792 2945.998
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3107.174 -1.209 2951.442
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3105.28 -1.705 2963.697
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3107.864 -2.22 2973.869
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3124.743 -1.242 2969.63
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3127.977 -1.887 2982.359
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3115.744 -2.278 2980.258
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3139.402 -0.392 2965.948
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3136.431 0.2 2954.254
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3118.852 -0.819 2958.668
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3125.833 -0.206 2946.904
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3085.348 -4.062 2988.256
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3090.802 -3.209 2978.154
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3068.673 -4.559 2984.805
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3131.58 -2.605 2996.538
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3118.172 -3.382 2999.905
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3114.064 -4.216 3010.631
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3103.506 -4.636 3010.156
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3096.781 -5.507 3019.689
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3086.981 -5.646 3015.166
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3071.563 -5.135 2996.182
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3080.482 -3.79 2980.457
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3052.501 -4.523 2973.028
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3085.138 -6.317 3024.807
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3142.344 -1.377 2984.001
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 3119.058 -2.681 2989.101
+  angles 2.81 -165.745 3.221
+  scale 1.034
+ }
+ {
+  coords 2081.302 -2.017 3850.011
+  angles 0 19.369 0
+  scale 1.03
+ }
+ {
+  coords 2081.539 -4.177 3853.681
+  angles 0 19.369 0
+  scale 1.03
+ }
+}
+$grp Tree : "{AD7EFA7B1214DD21}PrefabLibrary/DefaultLibrary/Vegetation/Bushes/b_corylus_avellana_0l.et" {
+ {
+  coords 1649.82 0.223 3709.292
+  angles 0 290.026 0
+  scale 0.865
+ }
+ {
+  coords 1637.666 -0.723 3714.982
+  angles 0 254.143 0
+  scale 0.877
+ }
+ {
+  coords 1635.652 -0.679 3716.679
+  angles 0 71.413 0
+  scale 1.104
+ }
+ {
+  coords 1638.745 -1.08 3736.252
+  angles 0 239.07 0
+  scale 0.918
+ }
+}
+$grp Tree : "{B48B7DD4E1C5FE40}PrefabLibrary/DefaultLibrary/Vegetation/Bushes/b_corylus_avellana_0.et" {
+ {
+  coords 1647.23 -0.327 3703.008
+  angles 0 260.889 0
+  scale 1.068
+ }
+ {
+  coords 1636.055 -0.818 3715.498
+  angles 0 174.424 0
+  scale 1.101
+ }
+ {
+  coords 1637.113 -0.2 3719.956
+  angles 0 134.081 0
+  scale 0.998
+ }
+ {
+  coords 1639.138 -0.373 3728.32
+  angles 0 187.246 0
+  scale 0.897
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{BC75DD14FA38D773}Prefabs/Structures/Bulding/Military/Toilet.et" {
+ {
+  coords 1646.634 -0.556 3735.518
+  angles 0 -13 0
+ }
+ {
+  coords 1648.151 -0.54 3735.657
+  angles 0 13 0
+ }
+ {
+  coords 1649.6 -0.45 3735.396
+  angles 0 -13 0
+ }
+}
+GenericEntity : "{CB033C658E372CED}Prefabs/Props/Construction/PlankPile/PlankPile_01_Large.et" {
+ coords 1654.036 22.25 3740.194
+ angles -4.217 -5.008 3.055
+}
+SCR_DestructibleBuildingEntity : "{CDEC6290D9424C36}PrefabLibrary/DefaultLibrary/Structures/Industrial/RampVehicle_01_metal.et" {
+ coords 2106.286 0 3903.766
+ angles 0 17.378 0
+}
+$grp GenericEntity : "{D468BFCBFECF9436}Prefabs/Marker.et" {
+ Marker1 {
+  coords 2896.569 16.183 2631.651
+  {
+   GenericEntity Layer1 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Weed Farm"
+         m_eMapMarkerColor DARK_PINK
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Marker2 {
+  coords 135.295 606.904 1042.626
+  {
+   GenericEntity Layer2 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Drug Dealer"
+         m_eMapMarkerColor MAGENTA
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Marker3 {
+  coords 2095.348 23.264 3920.726
+  {
+   GenericEntity Layer3 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Trader (Safe Zone)"
+         m_eMapMarkerColor GREEN
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Marker4 {
+  coords 3766.109 280.37 438.487
+  {
+   GenericEntity Layer4 {
+    ID "66572785F8D79686"
+   }
+  }
+ }
+ Marker5 {
+  coords 2884.378 32.254 3928.99
+  {
+   GenericEntity Layer5 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Coke Camp"
+         m_eMapMarkerColor DARK_PINK
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Marker6 {
+  coords 421.278 323.723 3914.767
+  {
+   GenericEntity Layer6 {
+    ID "66572785F8D79686"
+    {
+     GenericEntity {
+      ID "66572785F8D79687"
+      components {
+       SCR_ScenarioFrameworkSlotMarker "{5EA2BD9901E5E82E}" {
+        m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{6652AE5882B91EB9}" {
+         m_sMapMarkerText "Gold Depot"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{D7E0BAFDFA07C757}PrefabLibrary/DefaultLibrary/Structures/Military/Barracks_01/Barracks_01_yellow.et" {
+ {
+  coords 3079.51 0.221 2967.198
+  angles 0 -59.711 0
+ }
+ {
+  coords 3097.285 0.221 2997.631
+  angles 0 -59.711 0
+ }
+}
+$grp Tree : "{DA7492F3E6B63251}PrefabLibrary/DefaultLibrary/Vegetation/Bushes/b_corylus_avellana_1l.et" {
+ {
+  coords 1639.174 -0.732 3703.235
+  angles 0 118.019 0
+  scale 0.827
+ }
+ {
+  coords 1648.858 -0.183 3705.605
+  angles 0 130.236 0
+  scale 1.153
+ }
+ {
+  coords 1641.523 -0.415 3703.457
+  angles 0 215.745 0
+  scale 0.873
+ }
+ {
+  coords 1651.508 0.205 3717.201
+  angles 0 170.876 0
+  scale 0.852
+ }
+}
+$grp GenericEntity : "{DBBF0B94C4C86B85}PrefabLibrary/DefaultLibrary/Props/Military/BarrelFuel_01_closed/BarrelFuel_01_closed_old.et" {
+ {
+  coords 2886.948 32.478 3927.127
+  angles 11.486 72.813 -1.716
+ }
+ {
+  coords 2885.098 32.073 3926.593
+  angles -11.609 -84.608 -8.823
+ }
+ {
+  coords 2881.679 31.969 3928.596
+  angles -7.391 130.379 9.946
+ }
+}
+GenericEntity : "{DEB57429CD49782D}Prefabs/Props/Construction/GravelPile_01/SandPile_01.et" {
+ coords 1649.366 22.548 3740.014
+ angles 5.03 -104.581 5.13
+}
+$grp SCR_DestructibleBuildingEntity : "{DFE759EE77F61ACD}PrefabLibrary/DefaultLibrary/Structures/Agriculture/Greenhouse_01.et" {
+ {
+  coords 2894.853 0.215 2616.815
+  angles 0 98.082 0
+ }
+ {
+  coords 2897.334 0.053 2638.885
+  angles 0 98.861 0
+ }
+ {
+  coords 2897.106 -0.131 2632.561
+  angles 0 -80.49 0
+ }
+ {
+  coords 2895.272 -0.214 2627.353
+  angles 0 98.735 0
+ }
+}
+Tree : "{F1DB9A8115310093}PrefabLibrary/DefaultLibrary/Vegetation/Trees/t_betula_pendula_1f.et" {
+ coords 1647.055 0.43 3724.91
+ angles 0.669 281.5 0.521
+ scale 0.728
+}
+GenericEntity : "{F287B6C31BFC28AA}Prefabs/Structures/Military/CamoNets/FIA/CamoNet_Tent_FIA_01_V1.et" {
+ coords 2884.639 32.264 3928.835
+ angles -11.905 -159.031 3.907
+}
+$grp SCR_PlayerSpawnPoint : "{F6CAD21EDD2D1964}Prefabs/MP/Spawning/PlayerSpawnPoint.et" {
+ {
+  coords 1379.254 69.531 3211.581
+  m_sFaction "USSR"
+ }
+ {
+  coords 604.797 42.177 3210.444
+ }
+ {
+  coords 325.94 155.041 2211.353
+ }
+ {
+  coords 2145.452 139.707 1450.03
+ }
+ {
+  coords 3823.989 12.398 2669.492
+ }
+ {
+  coords 2136.567 14.076 3568.114
+ }
+ {
+  coords 1990.034 17.294 3802.813
+ }
+ {
+  coords 1486.376 38.909 3388.088
+ }
+ {
+  coords 274.131 89.868 3629.799
+ }
+ {
+  coords 1707.87 20.791 3808.902
+ }
+ {
+  coords 2060.692 19.145 3684.521
+ }
+ {
+  coords 2187.894 16.949 3602.652
+ }
+ {
+  coords 2127.141 21.146 3067.252
+ }
+ {
+  coords 3303.715 7.311 2687.427
+ }
+ {
+  coords 3166.904 11.143 2635.408
+ }
+}
+$grp GenericEntity : "{FBE3EE3ACA3DB9D6}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Small.et" {
+ {
+  coords 1023.689 290 1827.232
+ }
+ {
+  coords 610.433 43.419 3203.878
+ }
+ {
+  coords 1783.055 16.404 3892.918
+ }
+ {
+  coords 2089.197 21.022 3617.504
+ }
+ {
+  coords 2615.408 9.221 3022.943
+ }
+ {
+  coords 3111.023 9.828 2749.714
+ }
+ {
+  coords 3835.079 3.501 2537.966
+ }
+ {
+  coords 3845.906 12.594 2683.645
+ }
+ {
+  coords 3833.645 33.008 3382.371
+ }
+ {
+  coords 3550.13 200 1539.094
+ }
+ {
+  coords 3594.372 280.013 400.824
+ }
+ {
+  coords 3801.945 129.946 1808.527
+ }
+ {
+  coords 3302.717 9.5 2584.6
+ }
+ {
+  coords 2121.071 20.595 3033.164
+ }
+ {
+  coords 1920.454 23.978 3710.54
+ }
+ {
+  coords 1375.598 69.5 3225.608
+ }
+ {
+  coords 1199.43 55.031 3281.821
+ }
+ {
+  coords 1111.781 235.983 911.683
+ }
+ {
+  coords 1962.575 200 321.067
+ }
+ {
+  coords 3357.987 313.529 353.311
+ }
+ {
+  coords 3779.861 230.119 941.236
+ }
+ {
+  coords 3839.912 230.486 1162.81
+ }
+ {
+  coords 2790.032 169.999 1454.646
+ }
+ {
+  coords 2903.932 21.312 2409.101
+ }
+ {
+  coords 2900.019 14.695 2666.54
+ }
+}

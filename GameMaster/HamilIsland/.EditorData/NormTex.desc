@@ -1,0 +1,7 @@
+NormGenDescClass {
+ Interpolation texels
+ MinDegAngle 30
+ MaxDegAngle 45
+ Intensity 1
+ TexSize 2048
+}

@@ -1,0 +1,35 @@
+$grp Building : "{4C285D15DB396C48}Prefabs/African Huts/Square_Hut_1.et" {
+ {
+  coords 987.632 200 5199.182
+  angles 0 -178.549 0
+ }
+ {
+  coords 969.659 200 5224.955
+  angles 0 -87.197 0
+ }
+ {
+  coords 1004.788 200 5221.397
+  angles 0 95.763 0
+ }
+}
+GenericEntity : "{AD44CDD873247078}Prefabs/Systems/Sound/heart-beat.et" {
+ coords 5888.484 200 6171.417
+}
+Building : "{DBE450D48BD03829}Prefabs/African Huts/Circle_Hut_3.et" {
+ coords 4131.085 200 4835.908
+ angles 0 -4.618 0
+}
+$grp Building : "{DECDC76DD22ED317}Prefabs/Homes/Home_1.et" {
+ {
+  coords 4835.877 199.349 5944.138
+  angles 0 124.101 0
+ }
+ {
+  coords 1170.669 199.542 3520.628
+  angles 0 -173.939 0
+ }
+ {
+  coords 6113.149 28.784 2232.496
+  angles 0 -137.88 0
+ }
+}

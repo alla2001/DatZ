@@ -17,7 +17,7 @@ MetaFileClass {
    CompressTreshold 49
    MaxSize "1024"
   }
-  PNGResourceClass PS5 : "{5CEA2418C9F889F8}configs/ResourceTypes/PS5/TextureTerrainNormal.conf" {
+  PNGResourceClass PS5 : "{5CEA2418C9F889F8}Configs/System/ResourceTypes/PS5/TextureTerrainNormal.conf" {
    CompressTreshold 49
    MaxSize "1024"
   }

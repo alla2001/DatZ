@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{4D51D5F8515207C1}GameMaster/.Shore/shoreMaskAtlas.edds"
+ Configurations {
+  DDSResourceClass PC {
+   Conversion RedHQCompression
+   OriginalPixelBitDepth 1
+   GenerateMips 0
+  }
+  DDSResourceClass XBOX_ONE : PC {
+  }
+  DDSResourceClass XBOX_SERIES : PC {
+  }
+  DDSResourceClass PS4 : PC {
+  }
+  DDSResourceClass PS5 : PC {
+  }
+  DDSResourceClass HEADLESS : PC {
+  }
+ }
+}

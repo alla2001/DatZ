@@ -1,0 +1,311 @@
+$grp GenericEntity {
+ {
+  components {
+   MeshObject "{61320A71192DA258}" {
+    Object "{D02709B013BBFDBA}Assets/Props/Industrial/Pallets/dst/Pallet_01_Pile_DST_02.xob"
+   }
+   RigidBody "{61CB26884F52FF27}" {
+    ModelGeometry 1
+   }
+  }
+  coords 447.479 108.469 1737.541
+  angles 0 24.468 0
+ }
+ {
+  components {
+   MeshObject "{61320A7136EEEE63}" {
+    Object "{77A7F4F384EF02B5}Assets/Props/Industrial/Pallets/Pallet_01_Pile.xob"
+   }
+   RigidBody "{61CB2688654AEA9B}" {
+    ModelGeometry 1
+   }
+  }
+  coords 446.854 108.469 1736.371
+  angles 0 120.16 0
+ }
+ {
+  components {
+   MeshObject "{61320A7136EEEE63}" {
+    Object "{77A7F4F384EF02B5}Assets/Props/Industrial/Pallets/Pallet_01_Pile.xob"
+   }
+   RigidBody "{61CB26886DE82B48}" {
+    ModelGeometry 1
+   }
+  }
+  coords 447.544 108.469 1734.562
+  angles 0 -58.107 0
+ }
+ {
+  components {
+   MeshObject "{61320A7136EEEE63}" {
+    Object "{77A7F4F384EF02B5}Assets/Props/Industrial/Pallets/Pallet_01_Pile.xob"
+   }
+   RigidBody "{61CB26886DE82B48}" {
+    ModelGeometry 1
+   }
+  }
+  coords 448.862 108.469 1734.543
+  angles 0 9.724 0
+ }
+}
+GenericEntity : "{20902DC3C035E9F2}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V3_covered.et" {
+ components {
+  SCR_SlotCompositionComponent "{570283C394947C38}" {
+   Enabled 0
+  }
+ }
+ coords 447.202 108.614 1741.965
+ angles 0 22.917 0
+ {
+  GenericEntity {
+   ID "56B6871AF8C5AFC2"
+   coords 0 0 0
+  }
+ }
+}
+$grp GenericEntity : "{3D5594CC62AAFB88}Prefabs/Props/Military/AmmoBoxes/AmmoBox_81mm_mortar_3rnd.et" {
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 448.227 108.469 1738.308
+  angles 0 30.398 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 448.438 108.556 1738.803
+  angles 82.151 40.53 89.018
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.367 108.613 1742.945
+  angles 0 -66.586 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.511 108.613 1742.88
+  angles 0 -64.796 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.555 108.618 1743.146
+  angles 0 -154.482 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.62 108.618 1743.296
+  angles 0 -154.482 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.715 108.614 1742.677
+  angles 0 25.708 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.967 108.609 1743.025
+  angles 0 113.604 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.825 108.609 1743.093
+  angles 0 115.395 0
+ }
+ {
+  components {
+   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{5476B36C403D4CC0}" {
+    Enabled 0
+   }
+  }
+  coords 447.781 108.614 1742.827
+  angles 0 25.708 0
+ }
+}
+$grp GenericEntity : "{7389C3874BF54AC2}Prefabs/Props/Military/AmmoBoxes/US/EquipmentBoxWooden_Launcher_01_US.et" {
+ {
+  coords 451.036 108.602 1737.764
+  angles 0 -36.92 0
+ }
+ {
+  coords 450.822 108.606 1738.06
+  angles 0 142.945 0
+ }
+ {
+  coords 450.816 108.803 1738.045
+  angles 0 -36.158 0
+ }
+ {
+  coords 451.026 108.803 1737.736
+  angles 0 144.012 0
+ }
+}
+$grp GenericEntity : "{7D17217711AAD0FB}Prefabs/Props/Military/Camps/DispenserBeverage_W_01/DispenserBeverage_W_01.et" {
+ {
+  coords 444.039 108.469 1745.067
+  angles 0 -62.905 0
+ }
+ {
+  coords 443.835 108.469 1744.741
+  angles 0 -64.026 0
+ }
+}
+GenericEntity : "{7E3F6F5A6BAEC717}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_20ft_olive.et" {
+ coords 444.13 108.45 1742.062
+ angles 0.099 27.992 0.842
+}
+GenericEntity : "{892D59073561FCA6}Prefabs/Props/Military/CargoContainers/CargoContainer_01_10ft_US_ammo.et" {
+ coords 446.422 108.437 1739.349
+ angles 0 30.902 0
+}
+$grp GenericEntity : "{A3EF3195AD211CDB}PrefabsEditable/Auto/Props/Industrial/Pallets/E_Pallet_01.et" {
+ {
+  coords 447.979 108.851 1739.223
+  angles 1.417 28.124 69.526
+ }
+ {
+  coords 447.874 109.027 1738.865
+  angles -69.39 125.683 -6.585
+ }
+ {
+  coords 448.375 108.472 1741.265
+  angles 0 27.79 0
+ }
+ {
+  coords 447.688 108.481 1742.974
+  angles 0 -66.868 0
+ }
+ {
+  coords 450.939 108.469 1737.894
+  angles 0 -126.942 0
+ }
+ {
+  coords 447.231 108.496 1741.946
+  angles 0 -64.935 0
+ }
+}
+GenericEntity MedicalKit_01_US_6870AA70828BAA43 : "{AE578EEA4244D41F}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_US.et" {
+ components {
+  SCR_ArsenalComponent "{5E3CC268A92CDE62}" {
+   Enabled 0
+  }
+  SCR_FactionAffiliationComponent "{5E3CBEE8057882D8}" {
+   Enabled 0
+  }
+  SCR_HealSupportStationComponent "{5E68A54C698EFD84}" {
+   Enabled 0
+  }
+  SCR_ResourceComponent "{5E4A957708B43723}" {
+   Enabled 0
+  }
+  SCR_ResupplyMedicalGadgetSupportStationComponent "{5E3CC26A2C28361C}" {
+   Enabled 0
+  }
+  SCR_SupportStationGadgetComponent "{5DF4D9A1113FBAD9}" {
+   Enabled 0
+  }
+  SCR_UniversalInventoryStorageComponent "{5E4E8A7876A50FDC}" {
+   Enabled 0
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{5E3CC268AFE7341C}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   Enabled 0
+  }
+  RplComponent "{508AB59531D748C9}" {
+   Enabled 0
+  }
+ }
+ coords 453.233 109.962 1740.34
+ angles 0 28.917 0
+}
+$grp GenericEntity : "{B8BA01645C9D3476}Prefabs/Props/Military/AmmoBoxes/US/EquipmentBoxWooden_Explosives_01_US.et" {
+ {
+  coords 448.294 108.933 1741.129
+  angles 0 -63.43 0
+ }
+ {
+  coords 448.211 108.587 1740.959
+  angles 0 118.319 0
+ }
+ {
+  coords 448.573 108.58 1741.594
+  angles 0 115.931 0
+ }
+ {
+  coords 448.389 108.583 1741.264
+  angles 0 -63.43 0
+ }
+ {
+  coords 448.46 108.935 1741.459
+  angles 0 117.463 0
+ }
+}
+GenericEntity : "{DFF391458A7AC773}Prefabs/Props/Military/WaterTanks/MobileWaterTank_US_01.et" {
+ coords 441.698 108.469 1744.852
+ angles 0 -140.855 0
+}

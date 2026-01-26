@@ -10,6 +10,7 @@ class RandomDestroyComponent : ScriptComponent
 	float chance;
     override void OnPostInit(IEntity owner)
     {
+		return;
         super.OnPostInit(owner);
 	if(!Replication.IsServer())return;
        

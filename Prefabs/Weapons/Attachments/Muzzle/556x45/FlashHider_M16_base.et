@@ -1,0 +1,7 @@
+GenericEntity : "{329686647EC73684}Prefabs/Weapons/Core/WCS_FlashHider_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  RplComponent "{686079099E0837AE}" {
+  }
+ }
+}

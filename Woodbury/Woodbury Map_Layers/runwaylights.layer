@@ -1,0 +1,1609 @@
+$grp StaticModelEntity : "{18363B6460F6A0CE}PrefabLibrary/Props/Airport/LightRunway_02.et" {
+ {
+  coords 367.466 18.75 389.804
+  angleX 6
+  angleY -179.775
+ }
+ {
+  coords 370.325 18.75 389.904
+  angleX 4
+  angleY -179.775
+ }
+ {
+  coords 373.638 18.75 389.869
+  angleX 2
+  angleY -179.775
+ }
+ {
+  coords 376.706 18.75 389.961
+  angleY -179.775
+ }
+ {
+  coords 301.47 18.75 1097.104
+  angleX 6
+  angleY 1.608
+ }
+ {
+  coords 292.228 18.75 1097.172
+  angleY 1.608
+ }
+ {
+  coords 295.297 18.75 1097.19
+  angleX 2
+  angleY 1.608
+ }
+ {
+  coords 298.608 18.75 1097.075
+  angleX 4
+  angleY 1.608
+ }
+}
+$grp StaticModelEntity : "{30C976AD76E89073}PrefabLibrary/Props/Airport/LightRunway_01/LightRunway_01_green_red.et" {
+ {
+  coords 351.377 18.749 245.698
+ }
+ {
+  coords 318.587 18.754 245.659
+ }
+ {
+  coords 334.824 18.745 245.644
+ }
+ {
+  coords 321.494 18.743 245.667
+ }
+ {
+  coords 324.311 18.744 245.698
+ }
+ {
+  coords 326.983 18.741 245.652
+ }
+ {
+  coords 329.715 18.751 245.648
+ }
+ {
+  coords 332.268 18.755 245.661
+ }
+ {
+  coords 337.414 18.741 245.71
+ }
+ {
+  coords 340.075 18.745 245.632
+ }
+ {
+  coords 342.777 18.759 245.686
+ }
+ {
+  coords 345.568 18.745 245.689
+ }
+ {
+  coords 348.545 18.74 245.715
+ }
+ {
+  coords 334.636 18.75 1241.013
+  angleY 179.743
+ }
+ {
+  coords 318.083 18.754 1240.885
+  angleY 179.743
+ }
+ {
+  coords 320.915 18.745 1240.881
+  angleY 179.743
+ }
+ {
+  coords 323.892 18.749 1240.919
+  angleY 179.743
+ }
+ {
+  coords 326.683 18.763 1240.935
+  angleY 179.743
+ }
+ {
+  coords 329.385 18.75 1241.003
+  angleY 179.743
+ }
+ {
+  coords 332.046 18.746 1240.936
+  angleY 179.743
+ }
+ {
+  coords 350.873 18.759 1241.071
+  angleY 179.743
+ }
+ {
+  coords 347.967 18.747 1241.051
+  angleY 179.743
+ }
+ {
+  coords 345.15 18.749 1241.008
+  angleY 179.743
+ }
+ {
+  coords 342.478 18.746 1241.04
+  angleY 179.743
+ }
+ {
+  coords 339.744 18.755 1241.034
+  angleY 179.743
+ }
+ {
+  coords 337.191 18.76 1241.007
+  angleY 179.743
+ }
+}
+$grp StaticModelEntity : "{4731F2F9B156A1BB}PrefabLibrary/Props/Airport/LightRunway_01/LightRunway_01_blue.et" {
+ {
+  coords 305.079 18.748 249.153
+ }
+ {
+  coords 286.776 18.75 249.083
+ }
+ {
+  coords 295.867 18.757 249.165
+ }
+ {
+  coords 304.975 18.755 274.449
+ }
+ {
+  coords 295.884 18.748 274.367
+ }
+ {
+  coords 286.672 18.757 274.379
+ }
+ {
+  coords 264.848 18.75 280.408
+ }
+ {
+  coords 278.729 18.748 274.685
+ }
+ {
+  coords 270.627 18.741 275.05
+ }
+ {
+  coords 261.342 18.75 295.438
+  angleY 40.071
+ }
+ {
+  coords 262.315 18.741 287.617
+  angleY 40.071
+ }
+ {
+  coords 277.988 18.75 248.95
+  placement slopelandcontact
+ }
+ {
+  coords 238.991 18.745 268.006
+  angleY 40.071
+ }
+ {
+  coords 242.147 18.736 262.933
+  angleY 40.071
+ }
+ {
+  coords 245.962 18.745 257.651
+ }
+ {
+  coords 251.441 18.736 253.863
+ }
+ {
+  coords 257.759 18.743 250.898
+ }
+ {
+  coords 264.287 18.752 249.385
+ }
+ {
+  coords 271.494 18.743 249.036
+ }
+ {
+  coords 236.019 18.759 273.467
+ }
+ {
+  coords 234.516 18.743 280.236
+ }
+ {
+  coords 233.816 18.747 295.379
+ }
+ {
+  coords 233.633 18.745 287.356
+ }
+ {
+  coords 234.808 18.75 353.875
+  angleY -89.137
+ }
+ {
+  coords 234.363 18.738 311.201
+  angleY -89.137
+ }
+ {
+  coords 233.907 18.747 303.999
+  angleY -89.137
+ }
+ {
+  coords 234.548 18.745 317.693
+  angleY -89.137
+  placement slopelandcontact
+ }
+ {
+  coords 234.547 18.745 326.481
+  angleY -89.137
+ }
+ {
+  coords 234.602 18.752 335.573
+  angleY -89.137
+ }
+ {
+  coords 234.752 18.743 344.783
+  angleY -89.137
+ }
+ {
+  coords 261.457 18.75 352.132
+  angleY -89.888
+ }
+ {
+  coords 261.293 18.738 309.538
+  angleY -89.888
+ }
+ {
+  coords 261.222 18.747 302.295
+  angleY -89.888
+ }
+ {
+  coords 261.392 18.745 316.032
+  angleY -89.888
+  placement slopelandcontact
+ }
+ {
+  coords 261.277 18.745 324.821
+  angleY -89.888
+ }
+ {
+  coords 261.212 18.752 333.912
+  angleY -89.888
+ }
+ {
+  coords 261.242 18.743 343.123
+  angleY -89.888
+ }
+ {
+  coords 261.183 18.75 407.402
+  angleY -91.194
+ }
+ {
+  coords 261.469 18.738 364.839
+  angleY -91.194
+ }
+ {
+  coords 261.47 18.747 357.629
+  angleY -91.194
+ }
+ {
+  coords 261.478 18.745 371.359
+  angleY -91.194
+  placement slopelandcontact
+ }
+ {
+  coords 261.304 18.745 380.119
+  angleY -91.194
+ }
+ {
+  coords 261.229 18.752 389.203
+  angleY -91.194
+ }
+ {
+  coords 261.281 18.743 398.433
+  angleY -91.194
+ }
+ {
+  coords 261.111 18.75 413.854
+  angleY 40.071
+ }
+ {
+  coords 261.002 18.745 489.826
+  angleY -91.194
+  placement slopelandcontact
+ }
+ {
+  coords 261.059 18.713 470.621
+  angleY -89.888
+ }
+ {
+  coords 261.16 18.747 476.056
+  angleY -91.194
+ }
+ {
+  coords 261.025 18.745 498.477
+  angleY -91.194
+ }
+ {
+  coords 261.052 18.738 483.331
+  angleY -91.194
+ }
+ {
+  coords 260.869 18.752 507.492
+  angleY -91.194
+ }
+ {
+  coords 260.986 18.743 516.789
+  angleY -91.194
+ }
+ {
+  coords 260.908 18.745 443.324
+  angleY -89.888
+ }
+ {
+  coords 261.009 18.745 434.474
+  angleY -89.888
+  placement slopelandcontact
+ }
+ {
+  coords 260.955 18.738 428.022
+  angleY -89.888
+ }
+ {
+  coords 260.902 18.747 420.789
+  angleY -89.888
+ }
+ {
+  coords 235.085 18.75 362.475
+  angleY -89.137
+ }
+ {
+  coords 234.918 18.75 370.87
+  angleY -89.137
+ }
+ {
+  coords 233.88 18.75 379.951
+  angleY -89.137
+  {
+   GenericEntity {
+    ID "5A046B03610CC35C"
+    coords -4.995 0.402 -3.441
+   }
+  }
+ }
+ {
+  coords 261.35 18.75 525.878
+  angleY -91.194
+ }
+ {
+  coords 261.239 18.753 575.458
+  angleY -91.194
+ }
+ {
+  coords 261.175 18.746 566.611
+  angleY -91.194
+ }
+ {
+  coords 261.058 18.755 557.314
+  angleY -91.194
+ }
+ {
+  coords 261.215 18.748 548.299
+  angleY -91.194
+ }
+ {
+  coords 261.192 18.748 539.648
+  angleY -91.194
+  placement slopelandcontact
+ }
+ {
+  coords 261.242 18.741 533.153
+  angleY -91.194
+ }
+ {
+  coords 262.067 18.746 583.297
+ }
+ {
+  coords 266.953 18.749 587.578
+ }
+ {
+  coords 274.19 18.746 588.275
+ }
+ {
+  coords 274.332 18.753 613.016
+ }
+ {
+  coords 264.973 18.753 612.953
+  angleY -1.965
+ }
+ {
+  coords 256.127 18.746 612.898
+  angleY -1.965
+ }
+ {
+  coords 246.829 18.755 612.89
+  angleY -1.965
+ }
+ {
+  coords 237.817 18.748 612.612
+  angleY -1.965
+ }
+ {
+  coords 305.54 18.785 613.06
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 296.59 18.778 613.156
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 287.939 18.778 613.156
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 281.444 18.771 613.089
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 305.291 18.782 587.909
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 296.341 18.775 588.005
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 287.69 18.775 588.005
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 281.195 18.768 587.938
+  angleY -1.344
+  placement slopelandcontact
+ }
+ {
+  coords 261.23 18.75 462.863
+  angleY -91.194
+ }
+ {
+  coords 261.129 18.716 457.428
+  angleY -89.888
+ }
+ {
+  coords 261.384 18.75 450.255
+  angleY -89.888
+ }
+}
+$grp StaticModelEntity : "{7272EA9452C8FFC8}PrefabLibrary/Props/Airport/LightRunway_01/LightRunway_01_white.et" {
+ {
+  coords 354.889 18.742 398.401
+ }
+ {
+  coords 354.841 18.758 408.319
+ }
+ {
+  coords 354.86 18.755 418.389
+ }
+ {
+  coords 354.797 18.759 428.353
+ }
+ {
+  coords 354.785 18.75 438.359
+ }
+ {
+  coords 354.833 18.75 448.312
+ }
+ {
+  coords 354.948 18.75 458.41
+ }
+ {
+  coords 354.926 18.75 468.447
+ }
+ {
+  coords 354.901 18.75 478.416
+ }
+ {
+  coords 355.011 18.75 488.321
+ }
+ {
+  coords 354.829 18.75 498.444
+ }
+ {
+  coords 354.758 18.75 508.301
+ }
+ {
+  coords 354.923 18.75 518.285
+ }
+ {
+  coords 354.874 18.75 528.398
+ }
+ {
+  coords 354.938 18.75 538.301
+ }
+ {
+  coords 354.799 18.75 548.445
+ }
+ {
+  coords 354.88 18.75 558.349
+ }
+ {
+  coords 354.884 18.75 568.321
+ }
+ {
+  coords 354.927 18.75 578.359
+ }
+ {
+  coords 354.93 18.75 588.348
+ }
+ {
+  coords 354.887 18.75 598.363
+ }
+ {
+  coords 354.829 18.75 608.331
+ }
+ {
+  coords 354.842 18.75 618.332
+ }
+ {
+  coords 354.906 18.75 628.307
+ }
+ {
+  coords 354.822 18.75 638.329
+ }
+ {
+  coords 354.822 18.75 648.316
+ }
+ {
+  coords 354.982 18.75 658.314
+ }
+ {
+  coords 354.828 18.75 668.262
+ }
+ {
+  coords 354.821 18.75 678.27
+ }
+ {
+  coords 354.745 18.75 688.21
+ }
+ {
+  coords 354.789 18.75 698.353
+ }
+ {
+  coords 354.829 18.75 708.417
+ }
+ {
+  coords 354.766 18.75 718.341
+ }
+ {
+  coords 354.839 18.75 728.371
+ }
+ {
+  coords 354.817 18.75 738.385
+ }
+ {
+  coords 354.756 18.75 748.361
+ }
+ {
+  coords 354.764 18.75 758.341
+ }
+ {
+  coords 354.845 18.75 768.319
+ }
+ {
+  coords 354.721 18.75 778.331
+ }
+ {
+  coords 354.627 18.75 788.364
+ }
+ {
+  coords 354.663 18.75 798.46
+ }
+ {
+  coords 354.626 18.75 808.376
+ }
+ {
+  coords 354.543 18.75 818.355
+ }
+ {
+  coords 354.528 18.75 828.412
+ }
+ {
+  coords 354.62 18.75 838.396
+ }
+ {
+  coords 354.659 18.75 848.322
+ }
+ {
+  coords 354.66 18.75 858.324
+ }
+ {
+  coords 354.682 18.75 868.337
+ }
+ {
+  coords 354.546 18.75 878.373
+ }
+ {
+  coords 354.654 18.75 888.283
+ }
+ {
+  coords 354.538 18.75 898.173
+ }
+ {
+  coords 354.743 18.75 938.364
+ }
+ {
+  coords 354.71 18.75 948.362
+ }
+ {
+  coords 354.763 18.75 958.44
+ }
+ {
+  coords 354.704 18.75 968.43
+ }
+ {
+  coords 354.62 18.75 978.364
+ }
+ {
+  coords 354.727 18.75 988.413
+ }
+ {
+  coords 354.767 18.75 998.419
+ }
+ {
+  coords 354.778 18.75 1008.415
+ }
+ {
+  coords 354.694 18.75 1018.386
+ }
+ {
+  coords 354.74 18.75 1028.361
+ }
+ {
+  coords 354.525 18.75 1038.428
+ }
+ {
+  coords 354.657 18.75 1048.405
+ }
+ {
+  coords 354.563 18.75 1058.494
+ }
+ {
+  coords 354.536 18.75 1068.366
+ }
+ {
+  coords 354.683 18.75 1078.376
+ }
+ {
+  coords 354.676 18.75 1088.351
+ }
+ {
+  coords 354.629 18.75 1098.351
+ }
+ {
+  coords 314.553 18.75 1098.279
+ }
+ {
+  coords 314.6 18.75 1088.275
+ }
+ {
+  coords 314.694 18.75 1078.356
+ }
+ {
+  coords 314.649 18.75 1068.343
+ }
+ {
+  coords 314.587 18.75 1058.396
+ }
+ {
+  coords 314.62 18.75 1048.328
+ }
+ {
+  coords 314.699 18.75 1038.367
+ }
+ {
+  coords 314.596 18.75 1028.35
+ }
+ {
+  coords 314.657 18.75 1018.323
+ }
+ {
+  coords 314.763 18.75 1008.34
+ }
+ {
+  coords 314.704 18.75 998.348
+ }
+ {
+  coords 314.786 18.75 988.263
+ }
+ {
+  coords 314.708 18.75 978.313
+ }
+ {
+  coords 314.68 18.75 968.334
+ }
+ {
+  coords 314.628 18.75 958.336
+ }
+ {
+  coords 314.747 18.75 948.312
+ }
+ {
+  coords 314.692 18.75 938.355
+ }
+ {
+  coords 314.703 18.75 928.345
+ }
+ {
+  coords 314.763 18.75 918.398
+ }
+ {
+  coords 314.717 18.75 908.426
+ }
+ {
+  coords 314.806 18.75 898.401
+ }
+ {
+  coords 314.799 18.75 888.403
+ }
+ {
+  coords 314.668 18.75 878.444
+ }
+ {
+  coords 314.765 18.75 868.421
+ }
+ {
+  coords 314.816 18.75 858.508
+ }
+ {
+  coords 314.669 18.75 848.57
+ }
+ {
+  coords 314.725 18.75 838.456
+ }
+ {
+  coords 314.707 18.75 828.262
+ }
+ {
+  coords 314.716 18.75 818.421
+ }
+ {
+  coords 314.714 18.75 808.46
+ }
+ {
+  coords 314.734 18.75 798.307
+ }
+ {
+  coords 314.727 18.75 788.275
+ }
+ {
+  coords 314.566 18.75 778.455
+ }
+ {
+  coords 314.725 18.75 768.394
+ }
+ {
+  coords 314.759 18.75 758.208
+ }
+ {
+  coords 314.738 18.75 748.277
+ }
+ {
+  coords 314.71 18.75 738.362
+ }
+ {
+  coords 314.556 18.75 728.403
+ }
+ {
+  coords 314.684 18.75 718.382
+ }
+ {
+  coords 314.752 18.75 708.334
+ }
+ {
+  coords 314.635 18.75 698.366
+ }
+ {
+  coords 314.789 18.75 688.354
+ }
+ {
+  coords 314.713 18.75 678.391
+ }
+ {
+  coords 314.709 18.75 668.375
+ }
+ {
+  coords 314.797 18.75 658.365
+ }
+ {
+  coords 314.783 18.75 648.398
+ }
+ {
+  coords 314.712 18.75 638.407
+ }
+ {
+  coords 314.691 18.75 628.372
+ }
+ {
+  coords 314.703 18.75 618.376
+ }
+ {
+  coords 314.304 18.75 588.351
+ }
+ {
+  coords 314.658 18.75 578.32
+ }
+ {
+  coords 314.788 18.75 568.344
+ }
+ {
+  coords 314.713 18.75 558.335
+ }
+ {
+  coords 314.858 18.75 548.421
+ }
+ {
+  coords 314.739 18.75 538.433
+ }
+ {
+  coords 314.768 18.75 528.386
+ }
+ {
+  coords 314.794 18.75 518.205
+ }
+ {
+  coords 314.726 18.75 508.405
+ }
+ {
+  coords 314.897 18.75 498.293
+ }
+ {
+  coords 314.624 18.75 488.32
+ }
+ {
+  coords 314.603 18.75 478.522
+ }
+ {
+  coords 314.711 18.75 468.521
+ }
+ {
+  coords 314.667 18.75 458.433
+ }
+ {
+  coords 314.536 18.75 448.318
+ }
+ {
+  coords 314.769 18.75 438.389
+ }
+ {
+  coords 314.801 18.75 428.418
+ }
+ {
+  coords 314.732 18.75 418.357
+ }
+ {
+  coords 314.737 18.75 408.403
+ }
+ {
+  coords 314.662 18.75 398.449
+ }
+ {
+  coords 314.704 18.75 388.403
+ }
+}
+$grp StaticModelEntity : "{8E0BFDF0C942E0DD}PrefabLibrary/Props/Airport/LightRunway_03_pole.et" {
+ {
+  coords 334.834 8.5 218.878
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.818 9 207.445
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.79 9.5 197.775
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.782 10 189.109
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.832 10.5 178.362
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 327.509 10.5 178.316
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 342.028 10.5 178.34
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.863 11 167.866
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.853 11.5 157.058
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.814 12 147.66
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.867 12.5 137.651
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.823 13 127.201
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.864 13.5 116.823
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.86 14 106.083
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.869 14.5 95.221
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.87 15 85.469
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.828 15.5 73.609
+  angleY 179.178
+  scale 1.5
+ }
+ {
+  coords 334.729 18.784 1424.813
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.676 11.784 1279.545
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.696 12.284 1290.976
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.727 12.784 1300.647
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.739 13.284 1309.312
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 342.015 13.784 1320.103
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.692 13.784 1320.06
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 327.497 13.784 1320.083
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.663 14.284 1330.555
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.678 14.784 1341.364
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.72 15.284 1350.761
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.671 15.784 1360.771
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.717 16.284 1371.221
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.68 16.784 1381.598
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.687 17.284 1392.34
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.681 17.784 1403.201
+  angleY -0.804
+  scale 1.5
+ }
+ {
+  coords 334.685 18.284 1412.953
+  angleY -0.804
+  scale 1.5
+ }
+}
+$grp StaticModelEntity : "{C1BC9D802080EF43}Prefabs/Structures/Airport/LightRunway_03/LightRunway_03_light.et" {
+ {
+  coords 712.273 96.233 1783.383
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 708.856 96.24 1783.409
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 704.839 96.149 1783.375
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 700.994 96.23 1783.388
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.03
+   }
+  }
+ }
+ {
+  coords 696.987 96.303 1783.359
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 693.09 96.251 1783.362
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 689.136 96.168 1783.323
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 685.197 96.122 1783.322
+  angleX -4.212
+  angleY -2.529
+  angleZ -1.27
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 1963.574 3.42 2883.847
+  angleX 25.598
+  angleY 145.322
+  angleZ 5.089
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords -0.041 0.287 0.043
+   }
+  }
+ }
+ {
+  coords 371.744 2.507 2711.557
+  angleX 25.17
+  angleY 53.472
+  angleZ 4.889
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 804.911 24.987 2961.002
+  angleX -4.168
+  angleY 140.68
+  angleZ 1.127
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0.001 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 804.894 24.991 2961.053
+  angleX -5.225
+  angleY 16.97
+  angleZ -2.638
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0.001 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 804.865 24.984 2961.012
+  angleX -8.835
+  angleY -102.025
+  angleZ 1.642
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0.001 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 648.67 1.849 2780.681
+  angleX 25.598
+  angleY -57.661
+  angleZ 5.089
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 229.891 2.267 1587.75
+  angleX 28.967
+  angleY 157.083
+  angleZ 5.246
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords -0.001 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 258.785 2.69 1602.76
+  angleX 28.967
+  angleY 127.152
+  angleZ 5.246
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+ {
+  coords 679.924 94.973 1602.806
+  angleX 30.457
+  angleY -178.645
+  angleZ 0.573
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords -0.049 0.283 0.03
+    angleX -12.979
+    angleY 23.22
+    angleZ -31.979
+   }
+  }
+ }
+ {
+  coords 606.908 95.412 1340.834
+  angleX 28.967
+  angleY 13.643
+  angleZ 5.246
+  {
+   GenericEntity {
+    ID "5A02CEDB802F0770"
+    coords 0 0.297 0.031
+   }
+  }
+ }
+}
+$grp StaticModelEntity : "{CE68FADDFE814055}PrefabLibrary/Props/Airport/LightRunway_03_box.et" {
+ {
+  coords 334.145 18.727 218.89
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.396 18.751 207.459
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.362 18.75 197.692
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.365 18.75 189.066
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 325.727 18.734 178.34
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.349 18.75 167.915
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.349 18.75 157.073
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.288 18.75 147.657
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.346 18.75 137.769
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.182 18.75 127.218
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.344 18.75 116.866
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.262 18.75 106.102
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.318 18.75 95.273
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.321 18.75 85.527
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.16 18.75 73.664
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.146 18.751 1279.51
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.074 18.75 1290.952
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.161 18.75 1300.651
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.226 18.75 1309.261
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 326.044 18.74 1320.116
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.029 18.781 1330.573
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.066 18.781 1341.386
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.108 18.813 1350.784
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.046 18.844 1360.837
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.095 18.877 1371.23
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.147 18.94 1381.606
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.065 19.001 1392.346
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.063 19.063 1403.216
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 334.069 19.111 1412.977
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 333.97 19.187 1424.831
+  angleX -0.69
+  angleY -89.527
+  angleZ -1.221
+ }
+ {
+  coords 378.149 18.75 391.054
+  angleX -0.69
+  angleY -4.187
+  angleZ -1.221
+ }
+ {
+  coords 291.403 18.75 1096.22
+  angleX -0.69
+  angleY 175.931
+  angleZ -1.221
+ }
+ {
+  coords 2154.908 38.69 2754.108
+  angleX 1.951
+  angleY 90.936
+  angleZ 0.383
+ }
+ {
+  coords 2148.985 38.69 2754.362
+  angleX 1.951
+  angleY 90.936
+  angleZ 0.383
+ }
+}
+$grp StaticModelEntity : "{ECA847D743B79543}PrefabLibrary/Props/Airport/LightRunway_01/LightRunway_01_orange.et" {
+ {
+  coords 315.052 18.759 249.2
+ }
+ {
+  coords 354.997 18.756 249.449
+ }
+ {
+  coords 314.756 18.759 282.046
+ }
+ {
+  coords 354.959 18.756 281.511
+ }
+ {
+  coords 354.978 18.744 297.304
+ }
+ {
+  coords 355.144 18.752 265.402
+ }
+ {
+  coords 354.907 18.75 361.065
+ }
+ {
+  coords 354.926 18.762 313.21
+ }
+ {
+  coords 355.073 18.758 329.163
+ }
+ {
+  coords 354.888 18.762 345.272
+ }
+ {
+  coords 354.991 18.793 377
+ }
+ {
+  coords 314.559 18.756 297.053
+ }
+ {
+  coords 314.706 18.752 313.006
+ }
+ {
+  coords 314.521 18.756 329.115
+ }
+ {
+  coords 314.54 18.744 344.908
+ }
+ {
+  coords 314.488 18.762 360.814
+ }
+ {
+  coords 314.635 18.758 376.767
+ }
+ {
+  coords 314.404 18.929 1111.521
+  angleY -179.348
+ }
+ {
+  coords 315.565 18.892 1239.119
+  angleY -179.348
+ }
+ {
+  coords 353.292 18.895 1239.196
+  angleY -179.348
+ }
+ {
+  coords 354.876 18.895 1206.048
+  angleY -179.348
+ }
+ {
+  coords 314.218 18.888 1223.264
+  angleY -179.348
+ }
+ {
+  coords 314.3 18.892 1207.087
+  angleY -179.348
+ }
+ {
+  coords 314.365 18.88 1191.263
+  angleY -179.348
+ }
+ {
+  coords 314.449 18.898 1175.341
+  angleY -179.348
+ }
+ {
+  coords 354.905 18.892 1191.032
+  angleY -179.348
+ }
+ {
+  coords 354.819 18.888 1175.082
+  angleY -179.348
+ }
+ {
+  coords 314.583 18.894 1159.411
+  angleY -179.348
+ }
+ {
+  coords 354.783 18.892 1158.966
+  angleY -179.348
+ }
+ {
+  coords 314.584 18.898 1143.301
+  angleY -179.348
+ }
+ {
+  coords 354.728 18.88 1143.253
+  angleY -179.348
+ }
+ {
+  coords 354.805 18.898 1127.299
+  angleY -179.348
+ }
+ {
+  coords 314.487 18.886 1127.512
+  angleY -179.348
+ }
+ {
+  coords 354.866 18.894 1111.344
+  angleY -179.348
+ }
+}

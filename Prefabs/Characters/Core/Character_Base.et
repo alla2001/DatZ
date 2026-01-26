@@ -49,6 +49,8 @@ SCR_ChimeraCharacter {
     }
    }
   }
+  DZ_PlayerNotificationComponent "{6860DD28391CA990}" {
+  }
   DatZMetabolsimHandler "{654739DB958B6A27}" {
    maxFood 100
    maxWater 100
@@ -80,8 +82,7 @@ SCR_ChimeraCharacter {
    StaminaDrainRun -0.0055
    StaminaDrainSprint -0.01
   }
-  RHS_ThermalSlotManagerComponent "{60D6F4C7C990A7BB}" {
-   Enabled 0
+  WorkbenchCraftingComponent "{685D2927B2DF572C}" {
   }
   ZombieOptimizationComponent "{65873BAD03DF367F}" {
    m_fMinOptimizationDistance 100
@@ -97,7 +98,7 @@ SCR_ChimeraCharacter {
    ID "654883A20853442D"
    components {
     WaterChecker "{654883A20F696018}" {
-     m_sParticleEffect "{F2242A6B1195B711}WaterCheck.et"
+     m_sParticleEffect "{F2242A6B1195B711}Prefabs/WaterActions.et"
      forwardOffset 1
     }
     RplComponent "{654883A207563E0C}" {

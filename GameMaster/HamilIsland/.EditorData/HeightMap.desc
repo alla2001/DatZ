@@ -1,0 +1,7 @@
+HeightMapImportDescClass {
+ FileName "C:/Users/rober/OneDrive/Documenten/GitHub/DatzBergamo/HeightMap.png"
+ Flags 1
+ MinHeight -1000000
+ ResampleMinHeight 0
+ ResampleMaxHeight 1
+}

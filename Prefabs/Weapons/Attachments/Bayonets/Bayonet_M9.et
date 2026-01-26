@@ -1,0 +1,7 @@
+GameEntity : "{9CB58C6DD96AF131}Prefabs/Weapons/Attachments/Bayonets/Bayonet_Base.et" {
+ ID "50989DC991E68512"
+ components {
+  RplComponent "{68607909DB5E53DB}" {
+  }
+ }
+}

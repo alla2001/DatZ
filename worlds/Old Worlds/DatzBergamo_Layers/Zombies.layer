@@ -1,0 +1,153 @@
+$grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_CIV.et" {
+ {
+  coords 2304.802 200.023 4898.946
+ }
+ {
+  coords 2803.244 40.705 5274.351
+ }
+ {
+  coords 3047.213 28.219 3860.182
+ }
+ {
+  coords 2747.539 17.188 3671.057
+ }
+ {
+  coords 2756.682 17.043 3675.954
+ }
+ {
+  coords 2907.31 12.531 2231.3
+ }
+ {
+  coords 2900.443 12.531 2232.181
+ }
+ {
+  coords 3529.57 7.844 2248.714
+ }
+ {
+  coords 3669.292 7.844 2441.603
+ }
+ {
+  coords 1401.356 24.312 923.878
+ }
+ {
+  coords 643.311 17.844 2424.163
+ }
+ {
+  coords 4591.812 200 6767.054
+ }
+ {
+  coords 4934.989 200.25 6840.36
+ }
+ {
+  coords 5835.128 200 6251.598
+ }
+ {
+  coords 1365.773 119.375 4457.74
+ }
+ {
+  coords 1656.846 17.844 2530.643
+ }
+ {
+  coords 932.612 3.844 1864.307
+ }
+ {
+  coords 620.881 200.25 6755.438
+ }
+ {
+  coords 638.986 200.25 6771.121
+ }
+ {
+  coords 4324.539 11.625 2721.218
+ }
+ {
+  coords 4293.333 11.625 2700.825
+ }
+ {
+  coords 4232.719 11.625 2758.396
+ }
+ {
+  coords 3930.488 7.844 2657.656
+ }
+ {
+  coords 3921.572 7.916 2686.602
+ }
+ {
+  coords 3829.393 7.844 2534.81
+ }
+ {
+  coords 3662.63 7.844 2420.596
+ }
+ {
+  coords 930.866 17.844 2660.25
+ }
+ {
+  coords 909.944 17.843 2681.834
+ }
+ {
+  coords 936.822 17.843 2713.231
+ }
+}
+GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+ coords 5832.192 200.001 6221.339
+}
+$grp GenericEntity : "{D7CBF3DD3D61F086}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Small.et" {
+ {
+  coords 892.987 3.844 1792.707
+ }
+ {
+  coords 480.462 200 4278.847
+  {
+   GenericEntity : "{D7CBF3DD3D61F086}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Small.et" {
+    coords -1635.434 -103.119 -508.437
+   }
+  }
+ }
+}
+$grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Medium.et" {
+ {
+  coords 5794.049 199.998 6204.669
+  {
+   GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+    coords -2009.542 -11.529 -2277.638
+   }
+  }
+ }
+ {
+  coords 5866.915 200 6194.031
+ }
+ {
+  coords 5089.686 3.405 1814.781
+ }
+ {
+  coords 5239.224 3.408 1804.66
+ }
+ {
+  coords 3703.628 9.585 2312.733
+ }
+ {
+  coords 3548.458 12.906 2054.182
+  {
+   GenericEntity : "{D7CBF3DD3D61F086}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Small.et" {
+    coords 3210.305 8.469 1544.636
+   }
+  }
+ }
+ {
+  coords 3362.692 3.615 1821.509
+ }
+ {
+  coords 1543.308 17.843 2520.873
+ }
+ {
+  coords 1042.677 17.843 2616.29
+ }
+ {
+  coords 957.139 19.171 2306.916
+ }
+ {
+  coords 654.288 24.513 2384.386
+ }
+ {
+  coords 2323.205 200.027 4748.905
+ }
+}

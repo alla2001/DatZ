@@ -1,0 +1,3862 @@
+$grp StaticModelEntity : "{30DBCFABAB0FF92C}PrefabLibrary/Vegetation/Plants/CurbsideWeeds_01_8m.et" {
+ {
+  coords 346.152 0.013 258.452
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.603 0.013 258.383
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 326.867 0.177 258.432
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 316.464 0 258.409
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 316.68 0.013 268.352
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 346.368 0.026 268.395
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.819 0.026 268.326
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 327.083 0.19 268.375
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 316.556 0 278.391
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 346.244 0.013 278.434
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.695 0.013 278.365
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 326.959 0.177 278.414
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 317.101 0 288.44
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 346.789 0.013 288.483
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 338.24 0.013 288.414
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 327.504 0.177 288.463
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 316.639 0 298.311
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 346.327 0.013 298.354
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.778 0.013 298.285
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 327.042 0.177 298.334
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 204.725 0 430.185
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 228.691 0.013 426.421
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 225.864 0.013 430.159
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 215.128 0.177 430.208
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 204.662 0 426.083
+  angleY 0.076
+  scale 1.946
+ }
+ {
+  coords 225.801 0 426.114
+  angleY 0.076
+  scale 1.946
+ }
+ {
+  coords 215.065 0 426.134
+  angleY 0.076
+  scale 1.946
+ }
+ {
+  coords 205.38 0 421.808
+  angleY -0.437
+  scale 1.946
+ }
+ {
+  coords 228.863 0.013 422.489
+  angleY -0.437
+  scale 1.946
+ }
+ {
+  coords 220.315 0.013 422.32
+  angleY -0.437
+  scale 1.946
+ }
+ {
+  coords 209.579 0.177 422.244
+  angleY -0.437
+  scale 1.946
+ }
+ {
+  coords 204.358 0 417.813
+  angleY -1.336
+  scale 1.946
+ }
+ {
+  coords 225.49 0.013 418.365
+  angleY -1.335
+  scale 1.946
+ }
+ {
+  coords 214.755 0.177 418.12
+  angleY -1.336
+  scale 1.946
+ }
+ {
+  coords 205.229 0 414.369
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 226.369 0.013 414.343
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 215.632 0.177 414.392
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 205.221 0 409.866
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 229.152 0.013 410.168
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 220.603 0.013 410.099
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 209.867 0.177 410.148
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 236.194 0 410.216
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 214.365 0 405.965
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 215.057 0 409.947
+  angleY 179.434
+  scale 1.946
+ }
+ {
+  coords 225.792 0 410.047
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 236.312 0 406.297
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 212.733 0 401.879
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 215.175 0 406.027
+  angleY 179.434
+  scale 1.946
+ }
+ {
+  coords 225.91 0 406.127
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 212.07 0 402.081
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 220.618 0 402.27
+  angleY 179.434
+  scale 1.946
+ }
+ {
+  coords 231.353 0 402.37
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 236.07 0 398.543
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 212.485 0 398.218
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 214.933 0 398.274
+  angleY 179.434
+  scale 1.946
+ }
+ {
+  coords 225.668 0 398.374
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 235.843 0 394.52
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 212.755 0 394.377
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 214.706 0 394.251
+  angleY 179.434
+  scale 1.946
+ }
+ {
+  coords 225.441 0 394.351
+  angleY 179.433
+  scale 1.946
+ }
+ {
+  coords 348.234 0 287.533
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 348.332 0 257.845
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 348.247 0 266.394
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 348.277 0 277.129
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.484 0 301.891
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.582 0 272.203
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.497 0 280.752
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 341.527 0 291.487
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 335.045 0.018 258.994
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 334.96 0.018 267.543
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 334.99 0.018 278.278
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 328.079 0 299.734
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 328.177 0 270.046
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 328.092 0 278.595
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 328.122 0 289.33
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.517 0 255.915
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.432 0 264.464
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 321.462 0 275.199
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.507 0 320.438
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.492 0 290.752
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.52 0 299.299
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 321.55 0 310.034
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 334.841 0 285.606
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 334.69 0 315.294
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 334.79 0 306.745
+  angleY -89.974
+  scale 1.946
+ }
+ {
+  coords 334.779 0 296.01
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 341.462 0 335.326
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.56 0 305.638
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.475 0 314.187
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 347.973 0 298.06
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 348.084 0 319.199
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 347.991 0 308.464
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 321.272 0.011 1220.5
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 347.847 0 1219.261
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 347.755 0 1208.526
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 347.737 0 1198.122
+  angleY -89.536
+  scale 1.946
+ }
+ {
+  coords 341.238 0 1214.249
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 341.324 0 1205.7
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 334.553 0 1206.807
+  angleY -89.974
+  scale 1.946
+ }
+ {
+  coords 334.544 0 1196.072
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 321.314 0 1210.096
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 316.403 0 1198.373
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 321.284 0 1199.361
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 326.807 0 1198.396
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 334.453 0 1215.356
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 316.864 0 1188.502
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 327.886 0 1189.392
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 327.267 0.036 1188.525
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 321.183 0 1185.666
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 316.32 0 1178.453
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 326.724 0.036 1178.477
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 316.445 0 1168.414
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 334.712 0 1188.744
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 321.196 0 1164.526
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 316.229 0 1158.472
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 326.631 0 1158.494
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 321.281 0 1155.978
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 327.941 0 1170.108
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 337.367 0 1158.446
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 341.347 0 1172.265
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 345.916 0 1158.514
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 348.01 0 1166.457
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 334.605 0 1185.668
+  angleY -89.975
+  scale 1.946
+ }
+ {
+  coords 346.132 0.011 1168.458
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.583 0 1168.388
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 346.009 0.011 1178.496
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 347.997 0 1187.595
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 337.459 0 1178.427
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 341.26 0 1180.814
+  angleY 90.127
+  scale 1.946
+ }
+ {
+  coords 326.847 0.036 1168.437
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 341.29 0 1191.549
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 338.005 0 1188.477
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 337.542 0 1198.347
+  angleY 0.231
+  scale 1.946
+ }
+ {
+  coords 341.247 0 1201.953
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 341.227 0 1235.388
+  angleY 90.126
+  scale 1.946
+ }
+ {
+  coords 347.918 0 1106.254
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 321.315 0 1099.1
+  angleY 90.647
+  scale 1.946
+ }
+ {
+  coords 321.247 0 1118.083
+  angleY 90.647
+  scale 1.946
+ }
+ {
+  coords 321.279 0 1128.773
+  angleY 90.647
+  scale 1.946
+ }
+ {
+  coords 327.81 0 1121.271
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 334.631 0 1120.637
+  angleY 90.209
+  scale 1.946
+ }
+ {
+  coords 352.535 0 1128.442
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 342.132 0.177 1128.451
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 341.091 0 1127.055
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 352.105 0 1138.314
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 347.831 0 1136.236
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 341.08 0 1137.46
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 341.702 0.177 1138.324
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 347.796 0 1141.165
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 352.681 0 1148.361
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 347.786 0 1151.569
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 341.145 0 1148.194
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 342.278 0.177 1148.371
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 352.59 0.013 1158.4
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 347.85 0 1162.304
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 352.838 0 1168.343
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 342.435 0.177 1168.353
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 347.793 0 1170.853
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 341.088 0 1156.744
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 331.699 0.013 1168.436
+  angleY -179.585
+  scale 1.946
+ }
+ {
+  coords 323.149 0.013 1168.396
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 334.589 -0.043 1141.204
+  angleY 90.209
+  scale 1.946
+ }
+ {
+  coords 322.902 0.026 1158.452
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 331.452 0.026 1158.495
+  angleY -179.585
+  scale 1.946
+ }
+ {
+  coords 322.994 0.013 1148.413
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 320.974 0 1139.32
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 331.543 0.013 1148.455
+  angleY -179.585
+  scale 1.946
+ }
+ {
+  coords 327.733 0 1146.08
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 342.187 0.19 1158.411
+  angleY -179.586
+  scale 1.946
+ }
+ {
+  coords 327.892 0 1135.257
+  angleY -89.69
+  scale 1.946
+ }
+ {
+  coords 330.966 0.013 1138.407
+  angleY -179.585
+  scale 1.946
+ }
+ {
+  coords 331.397 0.013 1128.536
+  angleY -179.585
+  scale 1.946
+ }
+ {
+  coords 347.782 0.011 1166.432
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 321.245 0.011 1159.101
+  angleY 90.419
+  scale 1.946
+ }
+ {
+  coords 321.289 0.011 1178.386
+  angleY 90.419
+  scale 1.946
+ }
+ {
+  coords 321.299 0.011 1188.789
+  angleY 90.419
+  scale 1.946
+ }
+ {
+  coords 327.81 0.011 1172.667
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 334.488 0.011 1180.115
+  angleY 89.98
+  scale 1.946
+ }
+ {
+  coords 334.491 0.011 1190.85
+  angleY 89.98
+  scale 1.946
+ }
+ {
+  coords 347.731 0.011 1176.836
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 352.633 0.011 1188.563
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 347.752 0.011 1187.571
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 342.23 0.188 1188.533
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 341.194 0.011 1187.132
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 334.595 0.011 1171.567
+  angleY 89.98
+  scale 1.946
+ }
+ {
+  coords 352.163 0.011 1198.434
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 341.143 0.011 1197.535
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 341.76 0.188 1198.402
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 347.843 0.011 1201.268
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 352.7 0.011 1208.483
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 347.792 0.011 1211.672
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 341.164 0.011 1208.27
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 342.297 0.188 1208.452
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 352.568 0.024 1218.523
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 334.317 0.029 1198.178
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 347.813 0.011 1222.406
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 352.776 0.011 1228.464
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 334.195 0.029 1227.865
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 342.373 0.188 1228.434
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 347.721 0.011 1230.955
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 341.072 0.011 1216.819
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 334.287 0.029 1219.317
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 331.637 0.024 1228.475
+  angleY -179.814
+  scale 1.946
+ }
+ {
+  coords 327.669 0.011 1214.651
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 323.089 0.024 1228.399
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 320.908 0.011 1229.003
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 321 0.011 1220.455
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 334.421 0.011 1201.253
+  angleY 89.98
+  scale 1.946
+ }
+ {
+  coords 322.88 0.037 1218.454
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 331.429 0.037 1218.53
+  angleY -179.814
+  scale 1.946
+ }
+ {
+  coords 323.012 0.024 1208.416
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 321.029 0.011 1199.316
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 331.561 0.024 1208.492
+  angleY -179.814
+  scale 1.946
+ }
+ {
+  coords 327.76 0.011 1206.103
+  angleY -89.918
+  scale 1.946
+ }
+ {
+  coords 342.165 0.201 1218.491
+  angleY -179.815
+  scale 1.946
+ }
+ {
+  coords 327.739 0.011 1195.367
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 331.024 0.024 1198.444
+  angleY -179.814
+  scale 1.946
+ }
+ {
+  coords 331.494 0.024 1188.572
+  angleY -179.814
+  scale 1.946
+ }
+ {
+  coords 327.79 0.011 1184.963
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 327.839 0.011 1151.529
+  angleY -89.919
+  scale 1.946
+ }
+ {
+  coords 348.087 0 1066.159
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.329 0 1058.833
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.321 0 1067.429
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.373 0 1078.287
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.227 -0.013 1088.557
+  angleY 89.755
+  scale 1.946
+ }
+ {
+  coords 327.898 0.04 1080.912
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 348.049 0.024 1076.563
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.968 0 1088.283
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.086 0.024 1087.298
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.565 0.024 1088.267
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.527 0 1086.866
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.512 0 1098.155
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.006 0.024 1095.847
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.49 0 1097.27
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.108 0.024 1098.138
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.196 0 1100.993
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.062 0 1108.203
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.857 0 1111.485
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.221 0 1108.024
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.66 0 1108.188
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.945 0 1118.242
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 353.167 0 1128.184
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.763 0 1128.168
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.866 0 1130.768
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.447 0 1116.555
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 332.028 0 1128.224
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.479 0 1128.16
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.299 0 1128.768
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.257 0 1118.219
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.806 0 1118.282
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.375 0 1108.178
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.227 0 1099.097
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.924 0 1108.242
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.91 0 1105.81
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.541 0 1118.225
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 327.882 0 1095.288
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.306 0 1098.328
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.828 0 1088.322
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.946 0 1051.159
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 347.893 0 986.277
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.345 0 978.983
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.316 0 987.531
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.327 0 998.301
+  angleY 90.276
+  scale 1.946
+ }
+ {
+  coords 321.31 0 1008.735
+  angleY 89.629
+  scale 1.946
+ }
+ {
+  coords 327.928 0 992.541
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.618 0 999.977
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.635 0 1010.712
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 347.855 0.024 996.681
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.774 0 1008.4
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.892 0.024 1007.416
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.371 0.024 1008.385
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.333 0 1006.984
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.713 0 991.427
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.318 0 1018.273
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.296 0 1017.387
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.914 0.024 1018.256
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.002 0 1021.111
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.868 0 1028.321
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.965 0 1031.516
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.333 0 1028.122
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.466 0 1028.306
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.751 0 1038.359
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.001 0 1042.251
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.973 0 1048.302
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.569 0 1048.287
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.921 0 1050.799
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.253 0 1036.673
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.472 0.013 1039.182
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.834 0 1048.342
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.285 0 1048.278
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.185 0 1040.337
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.58 0.013 1021.117
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 323.063 0 1038.337
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.612 0 1038.399
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 321.251 0 1029.705
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.181 0 1028.297
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.185 0 1019.197
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.73 0 1028.359
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.926 0 1025.975
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.347 0 1038.343
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 327.89 0 1015.242
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.179 0 1018.311
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.634 0 1008.44
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.926 0 1004.837
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 327.928 0 971.4
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.901 0 384.119
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 341.909 0.04 375.572
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 316.925 0 368.466
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 327.327 0.024 368.394
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 317.299 0 358.589
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 321.491 0.024 360.401
+  angleY 91.101
+  scale 1.946
+ }
+ {
+  coords 328.329 0 359.384
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 327.703 0.024 358.52
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 316.667 0 348.547
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 321.542 0 345.311
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 328.203 0 348.65
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 327.068 0 348.475
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 316.7 0 338.506
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 321.541 0 334.662
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 316.396 0 328.567
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 326.799 0 328.498
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 321.551 0 326.026
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 328.212 0 340.099
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 334.972 0.013 337.534
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 337.534 0 328.352
+  angleY 0.739
+  scale 1.946
+ }
+ {
+  coords 346.084 0 328.346
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 348.257 0 327.72
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 348.249 0 336.269
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 346.387 0 338.284
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 337.838 0 338.293
+  angleY 0.739
+  scale 1.946
+ }
+ {
+  coords 348.373 0 347.003
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 346.352 0 348.326
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 348.424 0 357.408
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 337.804 0 348.333
+  angleY 0.739
+  scale 1.946
+ }
+ {
+  coords 341.626 0 350.687
+  angleY 90.635
+  scale 1.946
+ }
+ {
+  coords 327.104 0 338.438
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 341.751 0 361.419
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 338.437 0 358.377
+  angleY 0.739
+  scale 1.946
+ }
+ {
+  coords 338.064 0 368.251
+  angleY 0.739
+  scale 1.946
+ }
+ {
+  coords 341.801 0 371.823
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 342.076 0 405.258
+  angleY 90.634
+  scale 1.946
+ }
+ {
+  coords 348.071 0 376.281
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.523 0 368.987
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.495 0 377.535
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.594 0 388.272
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.618 0 398.675
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 328.106 0 382.545
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.027 0.04 391.092
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.797 0 389.981
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.813 0 400.716
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 348.033 0.024 386.685
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.952 0 398.405
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.07 0.024 397.42
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.549 0.024 398.389
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.511 0 396.988
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.891 0 381.431
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.497 0 408.277
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.474 0 407.392
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.092 0.024 408.26
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.18 0 411.115
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.046 0 418.325
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.143 0 421.52
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.511 0 418.126
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.644 0 418.31
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.93 0 428.364
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 334.65 0.013 408.045
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 348.179 0 432.255
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.151 0 438.306
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.747 0 438.29
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.099 0 440.804
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.431 0 426.677
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.65 0.013 429.185
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 332.012 0 438.346
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.464 0 438.282
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.449 0 429.997
+  angleY -89.136
+  scale 1.946
+ }
+ {
+  coords 334.758 0.013 411.121
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 323.241 0 428.341
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.79 0 428.404
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 321.499 0 419.425
+  angleY -90.527
+  scale 1.946
+ }
+ {
+  coords 323.359 0 418.3
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.363 0 409.201
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.908 0 418.364
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.104 0 415.979
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.525 0 428.347
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 328.068 0 405.246
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.357 0 408.315
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.812 0 398.444
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.104 0 394.841
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.106 0 361.405
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 348.077 0 446.251
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.535 0 448.326
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.485 0 457.974
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.486 0 468.675
+  angleY 89.776
+  scale 1.946
+ }
+ {
+  coords 328.112 0 452.515
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.033 0.04 461.062
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.802 0 459.951
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.819 0 470.686
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 348.039 0.024 456.655
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.958 0 468.375
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.076 0.024 467.39
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.555 0.024 468.359
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.517 0 466.958
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.897 0 451.401
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.502 0 478.247
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.996 0.024 475.939
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.48 0 477.362
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.098 0.024 478.23
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.186 0 481.085
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.052 0 488.295
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.149 0 491.49
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.517 0 488.096
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.65 0 488.28
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.935 0 498.334
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 334.656 0.013 478.015
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 348.185 0 502.225
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.157 0 508.276
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.753 0 508.26
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.105 0 510.774
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.437 0 496.647
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.656 0.013 499.155
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 332.018 0 508.316
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.469 0 508.252
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.378 0 500.188
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.247 0 498.311
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.796 0 498.373
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.365 0 488.27
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.369 0 479.171
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.914 0 488.334
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.11 0 485.949
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.531 0 498.317
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 328.074 0 475.216
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.363 0 478.285
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.818 0 468.414
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.11 0 464.811
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.112 0 431.375
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 348.031 0 567.861
+  angleY -89.514
+  scale 1.946
+ }
+ {
+  coords 348.062 0 559.313
+  angleY -89.514
+  scale 1.946
+ }
+ {
+  coords 347.964 0 548.576
+  angleY -89.514
+  scale 1.946
+ }
+ {
+  coords 347.942 0 538.173
+  angleY -89.514
+  scale 1.946
+ }
+ {
+  coords 341.451 0 554.301
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 341.532 0.04 545.754
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 334.762 0 546.863
+  angleY -89.952
+  scale 1.946
+ }
+ {
+  coords 334.748 0 536.128
+  angleY -89.953
+  scale 1.946
+ }
+ {
+  coords 321.441 0.024 548.372
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 316.607 0 538.436
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 321.49 0.024 539.422
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 327.01 0.024 538.454
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 328.049 0 539.856
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 334.665 0 555.414
+  angleY -89.953
+  scale 1.946
+ }
+ {
+  coords 317.066 0 528.564
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 328.088 0 529.451
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 327.47 0.024 528.583
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 321.469 0 527.024
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 316.518 0 518.515
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 321.456 0 515.386
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 328.053 0 518.717
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 326.92 0 518.533
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 316.637 0 508.476
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 316.418 0 498.534
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 326.822 0 498.553
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 321.508 0 496.475
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 328.135 0 510.167
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 334.917 0.013 507.659
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 337.557 0 498.5
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 346.106 0 498.565
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 348.287 0 497.958
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 348.203 0 506.507
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 334.805 0.013 525.724
+  angleY -89.953
+  scale 1.946
+ }
+ {
+  coords 346.326 0 508.506
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 337.777 0 508.442
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 348.237 0 517.241
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 346.206 0 518.547
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 348.2 0 527.647
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 337.656 0 518.481
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 341.459 0 520.867
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 327.041 0 508.496
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 341.493 0 531.6
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 338.205 0 528.53
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 337.748 0 538.402
+  angleY 0.253
+  scale 1.946
+ }
+ {
+  coords 341.455 0 542.005
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 341.446 0 575.441
+  angleY 90.149
+  scale 1.946
+ }
+ {
+  coords 348.001 0 556.147
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.484 0 557.401
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.524 0 568.138
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.548 0 578.541
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 328.036 0 562.411
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 327.957 0.04 570.958
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.726 0 569.847
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.743 0 580.582
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 347.963 0.024 566.551
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.882 0 578.271
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348 0.024 577.286
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.479 0.024 578.255
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.441 0 576.854
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.821 0 561.297
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.426 0 588.143
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.92 0.024 585.835
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.404 0 587.258
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.022 0.024 588.126
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.11 0 590.981
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.976 0 598.191
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.073 0 601.386
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.441 0 597.992
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.574 0 598.176
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.859 0 608.23
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.109 0 612.121
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.081 0 618.172
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.677 0 618.156
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.029 0 620.67
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.361 0 606.543
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.726 0.013 609.095
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.942 0 618.212
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.393 0 618.148
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 334.688 0.013 590.987
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 323.171 0 608.207
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.72 0 608.27
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 321.347 0 599.469
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.289 0 598.166
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.293 0 589.067
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.838 0 598.23
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.034 0 595.845
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.455 0 608.213
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 327.998 0 585.112
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.287 0 588.181
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.742 0 578.31
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.034 0 574.707
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.036 0 541.271
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 347.795 0 687.937
+  angleY -89.771
+  scale 1.946
+ }
+ {
+  coords 347.864 0 679.389
+  angleY -89.771
+  scale 1.946
+ }
+ {
+  coords 347.814 0 668.653
+  angleY -89.771
+  scale 1.946
+ }
+ {
+  coords 347.84 0 658.248
+  angleY -89.771
+  scale 1.946
+ }
+ {
+  coords 341.275 0 674.348
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 341.395 0.04 665.803
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 334.621 0 666.881
+  angleY -90.209
+  scale 1.946
+ }
+ {
+  coords 334.655 0 656.147
+  angleY -90.21
+  scale 1.946
+ }
+ {
+  coords 321.368 0.024 670.115
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 316.505 0 658.372
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 321.382 0.024 659.38
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 326.908 0.024 658.438
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 327.939 0 659.843
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 334.485 0 675.43
+  angleY -90.21
+  scale 1.946
+ }
+ {
+  coords 317.007 0 648.502
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 321.502 0.024 650.832
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 328.025 0 649.441
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 327.411 0.024 648.569
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 316.505 0 638.452
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 321.422 0 635.281
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 328.039 0 638.706
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 326.905 0 638.516
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 316.669 0 628.414
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 321.437 0 624.546
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 316.492 0 618.471
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 326.897 0 618.535
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 321.393 0 615.73
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 328.158 0 630.155
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 334.951 0.013 627.678
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 337.632 0 618.53
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 346.181 0 618.635
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 334.758 0.013 645.742
+  angleY -90.21
+  scale 1.946
+ }
+ {
+  coords 346.357 0 628.576
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 337.808 0 628.474
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 348.228 0 637.321
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 346.191 0 638.617
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 348.145 0 647.725
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 337.641 0 638.513
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 341.435 0 640.916
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 327.072 0 628.48
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 341.421 0 651.648
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 338.147 0 648.564
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 337.646 0 658.433
+  angleY -0.004
+  scale 1.946
+ }
+ {
+  coords 341.336 0 662.054
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 341.177 0 695.489
+  angleY 89.892
+  scale 1.946
+ }
+ {
+  coords 347.937 0 686.2
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.389 0 678.906
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.36 0 687.454
+  angleY 90.499
+  scale 1.946
+ }
+ {
+  coords 321.46 0 698.191
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.484 0 708.594
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 327.972 0 692.464
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.662 0 699.9
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.679 0 710.635
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 347.899 0.024 696.604
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.818 0 708.324
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.936 0.024 707.339
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.415 0.024 708.308
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.377 0 706.907
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.757 0 691.35
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.362 0 718.196
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.856 0.024 715.888
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.34 0 717.311
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.958 0.024 718.179
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.046 0 721.034
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.912 0 728.244
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.009 0 731.439
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.377 0 728.045
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.51 0 728.229
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.795 0 738.283
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.045 0 742.174
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.017 0 748.225
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.613 0 748.209
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.965 0 750.723
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.297 0 736.596
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.878 0 748.265
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.329 0 748.201
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.283 0 748.948
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.336 0 740.249
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.624 0.013 721.04
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 323.107 0 738.26
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.656 0 738.323
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 321.193 0 729.525
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.225 0 728.219
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.229 0 719.12
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.774 0 728.283
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.97 0 725.898
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.391 0 738.266
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 327.934 0 715.165
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.223 0 718.234
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.678 0 708.363
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 327.97 0 704.76
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 327.972 0 671.324
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 347.979 0 746.345
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 321.431 0 739.051
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 321.526 0 768.739
+  angleY 90.498
+  scale 1.946
+ }
+ {
+  coords 328.014 0 752.609
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 327.935 0.04 761.156
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.704 0 760.045
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 334.721 0 770.78
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 347.941 0.024 756.749
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.86 0 768.469
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.978 0.024 767.484
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.457 0.024 768.453
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 341.419 0 767.052
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.799 0 751.495
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 352.404 0 778.341
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 347.898 0.024 776.033
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.382 0 777.456
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342 0.024 778.324
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.089 0 781.179
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 352.954 0 788.389
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.051 0 791.584
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.419 0 788.19
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.552 0 788.374
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 352.837 0 798.428
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.087 0 802.319
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 353.059 0 808.37
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 342.655 0 808.354
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 348.007 0 810.868
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 341.339 0 796.741
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.559 0.013 799.249
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.92 0 808.41
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 323.371 0 808.346
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.272 0 800.405
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 334.667 0.013 781.185
+  angleY 90.06
+  scale 1.946
+ }
+ {
+  coords 323.149 0 798.405
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 331.699 0 798.468
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 321.235 0 789.67
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 323.268 0 788.364
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 321.272 0 779.265
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.816 0 788.428
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.012 0 786.043
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 342.433 0 798.411
+  angleY -179.735
+  scale 1.946
+ }
+ {
+  coords 327.976 0 775.31
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 331.266 0 778.379
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 331.72 0 768.508
+  angleY -179.734
+  scale 1.946
+ }
+ {
+  coords 328.012 0 764.905
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 328.014 0 731.469
+  angleY -89.839
+  scale 1.946
+ }
+ {
+  coords 347.893 0 877.82
+  angleY -89.54
+  scale 1.946
+ }
+ {
+  coords 347.819 0 848.132
+  angleY -89.54
+  scale 1.946
+ }
+ {
+  coords 341.32 0 864.257
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 341.405 0.04 855.711
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 334.635 0 856.817
+  angleY -89.979
+  scale 1.946
+ }
+ {
+  coords 334.625 0 846.082
+  angleY -89.979
+  scale 1.946
+ }
+ {
+  coords 321.395 0.024 860.104
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 316.485 0 848.381
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 321.366 0.024 849.37
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 326.888 0.024 848.403
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 327.925 0 849.805
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 334.535 0 865.368
+  angleY -89.979
+  scale 1.946
+ }
+ {
+  coords 316.946 0 838.509
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 327.969 0 839.401
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 321.264 0 835.674
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 316.404 0 828.461
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 321.309 0 825.27
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 327.939 0 828.668
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 326.805 0 828.482
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 316.528 0 818.421
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 334.793 0.013 838.753
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 321.281 0 814.535
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 316.312 0 808.479
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 326.716 0 808.503
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 328.025 0 820.116
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 334.807 0.013 817.613
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 337.451 0 808.455
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 346.001 0 808.525
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 334.687 0.013 835.677
+  angleY -89.979
+  scale 1.946
+ }
+ {
+  coords 346.215 0 818.466
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 337.666 0 818.397
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 348.124 0 827.202
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 346.091 0 828.506
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 348.08 0 837.607
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 337.542 0 828.436
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 341.345 0 830.823
+  angleY 90.123
+  scale 1.946
+ }
+ {
+  coords 326.932 0 818.446
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 341.373 0 841.556
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 338.086 0 838.486
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 337.625 0 848.356
+  angleY 0.227
+  scale 1.946
+ }
+ {
+  coords 341.33 0 851.961
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 341.305 0 885.398
+  angleY 90.122
+  scale 1.946
+ }
+ {
+  coords 347.801 0 866.192
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 321.228 0 867.522
+  angleY 90.661
+  scale 1.946
+ }
+ {
+  coords 321.358 0 878.258
+  angleY 90.661
+  scale 1.946
+ }
+ {
+  coords 321.412 0 888.661
+  angleY 90.661
+  scale 1.946
+ }
+ {
+  coords 327.854 0 872.513
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.565 0 879.93
+  angleY 90.223
+  scale 1.946
+ }
+ {
+  coords 334.613 0 890.665
+  angleY 90.222
+  scale 1.946
+ }
+ {
+  coords 352.745 0 888.302
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 347.86 0.024 887.331
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 342.342 0.024 888.316
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 341.301 0 886.918
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.636 0 871.38
+  angleY 90.222
+  scale 1.946
+ }
+ {
+  coords 352.318 0 898.176
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 341.293 0 897.322
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 341.913 0.024 898.188
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 348.009 0 901.026
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 352.895 0 908.222
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 348.001 0 911.431
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 341.361 0 908.056
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 342.493 0 908.237
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 352.807 0 918.261
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 348.068 0 922.166
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 353.057 0 928.203
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 342.653 0 928.216
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 348.012 0 930.715
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 341.305 0 916.607
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.53 0.013 919.134
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 331.919 0 928.303
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 323.369 0 928.263
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 321.247 0 920.328
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.587 0.013 901.07
+  angleY 90.222
+  scale 1.946
+ }
+ {
+  coords 323.12 0 918.323
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 331.668 0 918.361
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 323.208 0 908.281
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 321.187 0 899.188
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 331.759 0 908.321
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 327.947 0 905.947
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 342.403 0 918.274
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 327.88 0 895.214
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 331.178 0 898.274
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 331.606 0 888.401
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 327.887 0 884.809
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 327.794 0 851.373
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 347.838 0 950.847
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 352.883 0 948.335
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 342.479 0 948.348
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 331.745 0 948.435
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 321.017 0 949.009
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 321.073 0 940.46
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.356 0.013 939.266
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 347.894 0 942.298
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 347.881 0 970.737
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 352.925 0 968.225
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 342.521 0 968.238
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 331.788 0 968.325
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 321.116 0 960.35
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 334.398 0.013 959.156
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 347.936 0 962.188
+  angleY -89.676
+  scale 1.946
+ }
+ {
+  coords 348.042 0 948.379
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 344.733 0 958.243
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 330.691 0 958.281
+  angleY -179.572
+  scale 1.946
+ }
+ {
+  coords 316.681 0 477.079
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 321.535 -0.423 477.516
+  angleY 89.94
+  scale 1.946
+ }
+ {
+  coords 316.049 0 467.037
+  angleY 0.738
+  scale 1.946
+ }
+ {
+  coords 316.082 0 456.996
+  angleY 0.738
+  scale 1.946
+ }
+}

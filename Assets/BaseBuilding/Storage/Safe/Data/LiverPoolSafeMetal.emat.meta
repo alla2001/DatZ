@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A8ED31E37D2C966F}Assets/BaseBuilding/Storage/Safe/Data/LiverPoolSafeMetal.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

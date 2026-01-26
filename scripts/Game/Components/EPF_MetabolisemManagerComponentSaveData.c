@@ -24,15 +24,15 @@ class EPF_MetabolisemManagerComponentSaveData : EPF_ComponentSaveData
 			EPF_PersistentMetabolisemNode persistentMetaNode();
 			persistentMetaNode.food = meta.food;
 			persistentMetaNode.water = meta.water;
-
+			persistentMetaNode.isInfected = meta.m_bIsInfected;
+			persistentMetaNode.infectionStartTime = meta.m_fInfectionStartTime;
 
 			if (attributes.m_bTrimDefaults)
 			{
-				if (persistentMetaNode.water >= 100&&persistentMetaNode.food >= 100)
+				if (persistentMetaNode.water >= 100 && persistentMetaNode.food >= 100 && !persistentMetaNode.isInfected)
 					return EPF_EReadResult.DEFAULT;
-
 			}
-			m_aMetaNode=persistentMetaNode;
+			m_aMetaNode = persistentMetaNode;
 
 
 		return EPF_EReadResult.OK;
@@ -53,7 +53,9 @@ class EPF_MetabolisemManagerComponentSaveData : EPF_ComponentSaveData
 			}
 		meta.food = m_aMetaNode.food;
 		meta.water = m_aMetaNode.water;
-		
+		meta.m_bIsInfected = m_aMetaNode.isInfected;
+		meta.m_fInfectionStartTime = m_aMetaNode.infectionStartTime;
+
 		return EPF_EApplyResult.OK;
 	}
 
@@ -71,14 +73,15 @@ class EPF_MetabolisemManagerComponentSaveData : EPF_ComponentSaveData
 
 class EPF_PersistentMetabolisemNode
 {
-	 float food = 100.0;
-    float water = 100.0;
-
+	float food = 100.0;
+	float water = 100.0;
+	bool isInfected = false;
+	float infectionStartTime = 0;
 
 	//------------------------------------------------------------------------------------------------
 	bool Equals(notnull EPF_PersistentMetabolisemNode other)
 	{
-		return food == other.food && float.AlmostEqual(water, other.water);
+		return food == other.food && float.AlmostEqual(water, other.water) && isInfected == other.isInfected;
 	}
 }
 

@@ -1,0 +1,174 @@
+GenericEntity {
+ ID "685D7BD8A8C0A89D"
+ components {
+  BLD_OwnershipComponent "{6860DD124F6D135D}" {
+   NoBlock 1
+   MaxHealth 1000
+  }
+  EPF_PersistenceComponent "{685EFCC3DBCE9620}" {
+   m_pSaveData BLD_KodiiSaveDataClass "{685EFCC3D95EE80E}" {
+    m_aComponents {
+     BLD_OwnershipComponentSaveDataClass "{6860DD12560CD347}" {
+     }
+    }
+   }
+  }
+  MeshObject "{685D7BD8BDFAA648}" {
+   Object "{583D24495FE15DD2}Assets/Props/Industrial/Workbench_01/Workbench_01.xob"
+   LODFactors {
+    5 2 1.5 1 1 1
+   }
+  }
+  RigidBody "{685D7BD8BDFAA611}" {
+   ResponseIndex "HugeDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{685D7BD8BDFAA69B}" {
+   Enabled 0
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 2000
+   m_fForceToDamageScale 350
+   m_bDeleteAfterFinalPhase 0
+   m_aDamagePhases {
+    SCR_DamagePhaseData "{685D7BD8BDFAA6D5}" {
+     m_fPhaseHealth 2500
+     m_PhaseModel "{8E98F6B5847DFE3C}Assets/Props/Industrial/Workbench_01/dst/Workbench_01_dst.xob"
+    }
+   }
+  }
+  ActionsManagerComponent "{685D7BD8BDFAA713}" {
+   ActionContexts {
+    UserActionContext "{685D7BD8BDFAA70C}" {
+     ContextName "default"
+     Position PointInfo "{685D7BD8BDFAA709}" {
+      Offset -0.0497 0.9582 0.4792
+     }
+     Radius 0.8
+    }
+   }
+   additionalActions {
+    BLD_DeleteUserAction "{6863618DEA06F3C8}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6863618DEE2E2E59}" {
+      Name "Delete"
+     }
+     ActionTitle "Delete"
+     Duration 6
+    }
+    WorkbenchCraftUserAction "{6863755974064522}" {
+     ParentContextList {
+      "default"
+     }
+     ActionTitle "Open Crafting Menu"
+     Duration 1
+    }
+   }
+  }
+  RplComponent "{685D7BD8BDFAA736}" {
+   Enabled 1
+  }
+  Hierarchy "{685D7BD8BDFAA7CE}" {
+   Enabled 1
+  }
+ }
+ Flags 0x403 0
+ coords 3.631 0.529 1.691
+ {
+  GenericEntity : "{0133284E3BDEAEC4}Prefabs/Props/Civilian/Ashtray_01_Full_yellow.et" {
+   ID "685D7BD8A8C0BB8B"
+   components {
+    Hierarchy "{685D05EB1D3EC027}" {
+     Enabled 1
+    }
+   }
+   coords 0.251 1.02 -0.229
+   angles 0 107.134 0
+  }
+  GenericEntity : "{03DE957D8161212B}Prefabs/Props/Civilian/Notebook_01_Open.et" {
+   ID "685D7BD8A8C0BB89"
+   components {
+    Hierarchy "{685D05EB1D3EC016}" {
+     Enabled 1
+    }
+   }
+   coords -0.242 1.02 0.297
+   angles 0 -176.825 0
+  }
+  GenericEntity : "{2B0BD0720F8FB3A7}Prefabs/Props/Industrial/Workbench_Vice_01.et" {
+   ID "685D7BD8A8C0BB8E"
+   components {
+    Hierarchy "{685D05EB1D3EC00A}" {
+     Enabled 1
+    }
+   }
+   coords -0.899 1.027 0.479
+   angles 0 0 0
+  }
+  GenericEntity : "{2F2BBFDA3A2C73D4}Prefabs/Props/Civilian/RadioSmall_01_black.et" {
+   ID "685D7BD8A8C0BB8F"
+   components {
+    Hierarchy "{685D05EB1D3EC0F3}" {
+     Enabled 1
+    }
+   }
+   coords -0.306 1.014 -0.255
+   angles 0 9.959 0
+  }
+  GenericEntity : "{342E852E9A1847EA}Prefabs/Props/Industrial/Repair/VehicleGarbage_01_pile_medium.et" {
+   ID "685D7BD8A8C0BB8C"
+   components {
+    Hierarchy "{685D05EB1D3EC0F8}" {
+     Enabled 1
+    }
+   }
+   coords 0.931 1.006 0.078
+   angles 0 -141.982 0
+   scale 0.4
+  }
+  GenericEntity : "{3800AA04761AE0EC}Prefabs/Props/Civilian/Notebook_01_Single_Blue.et" {
+   ID "685D7BD8A8C0F4B4"
+   components {
+    Hierarchy "{685D05EB1D3EC0E7}" {
+     Enabled 1
+    }
+   }
+   coords 0.14 1.014 0.263
+   angles 0 152.742 0
+  }
+  GameEntity : "{50E6A3845C9F20FD}Prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+   ID "685D7BD8A8C0F48A"
+   components {
+    Hierarchy "{685D05EB1D3EC0D0}" {
+    }
+   }
+   coords 0.485 1.017 -0.272
+   angles 0 -60.807 0
+  }
+  GenericEntity : "{88FAE04EF7115814}Prefabs/Props/Civilian/BeerBottle_01_green.et" {
+   ID "685D7BD8A8C0F48B"
+   components {
+    Hierarchy "{685D05EB1D3EC0D8}" {
+     Enabled 1
+    }
+   }
+   coords -0.954 1.037 -0.117
+   angles 0 85.906 0
+  }
+  GenericEntity : "{B44BBBE082275ACD}Prefabs/Compositions/Misc/SubCompositions/WoodenBoxCluttered_04.et" {
+   ID "685D7BD8A8C0F48E"
+   coords -0.791 1.023 -0.116
+   angles 0 27.73 0
+  }
+ }
+}

@@ -1,0 +1,20 @@
+GenericEntity {
+ ID "5ED04472DDE5A7AB"
+ components {
+  DZ_SkinnableComponent "{6860DD2EF6320221}" {
+  }
+  ActionsManagerComponent "{5ED048027B750BEE}" {
+   additionalActions {
+    DZ_ApplySkinAction "{6860DD2EED4802B0}" {
+     ParentContextList {
+      "s_door"
+     }
+     UIInfo UIInfo "{6860DD2EED48031A}" {
+      Name "#AR-Inventory_PickUp"
+     }
+     Duration 1
+    }
+   }
+  }
+ }
+}

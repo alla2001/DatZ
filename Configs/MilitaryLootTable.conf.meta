@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{1F91D1C58E06D296}CIVLootTable.conf"
+ Name "{1F91D1C58E06D296}Configs/MilitaryLootTable.conf"
  Configurations {
   CONFResourceClass PC {
   }

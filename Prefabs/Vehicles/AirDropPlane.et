@@ -1,0 +1,21 @@
+GenericEntity {
+ ID "000000000000000A"
+ components {
+  SignalsManagerComponent "{686D5BCE338EF8BD}" {
+  }
+  SoundComponent "{AIRDROPPLANE005}" {
+   Filenames {
+    "{05F21FDA1C869C54}Sounds/Vehicles/Airplanes/C130J/Samples/Vehicles_Airplanes_Engine_C130J_External_Loop.wav"
+   }
+  }
+  AirDropPlaneComponent "{AIRDROPPLANE002}" {
+   m_fFlightSpeed 80
+   m_AirdropPrefab "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et"
+  }
+  MeshObject "{AIRDROPPLANE003}" {
+   Object "{6DC49596A01513C9}Assets/AirDrop/AirDropPlane.xob"
+  }
+  RplComponent "{AIRDROPPLANE004}" {
+  }
+ }
+}

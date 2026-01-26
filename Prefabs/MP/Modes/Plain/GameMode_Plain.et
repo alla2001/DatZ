@@ -1,0 +1,41 @@
+SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  DZ_ChatCommandHandler "{6860DD2933826C1E}" {
+  }
+  DZ_SkinManagerComponent "{6860DD2EA2B4DF34}" {
+   m_aSkins {
+    DZ_SkinDefinition "{6860DD2EA397A2E2}" {
+     m_sSkinId "BloodSafe"
+     m_sSkinName "Blood Safe"
+     m_sDescription "Blood Safe"
+     m_Material "{7FC72932CB569BD2}Assets/BaseBuilding/Storage/Safe/Data/BloodSafeMetal.emat"
+     m_aCompatiblePrefabs {
+      "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et"
+     }
+     m_bDefaultUnlocked 1
+    }
+    DZ_SkinDefinition "{6860DD2B8A60119A}" {
+     m_sSkinId "LiverPoolSafe"
+     m_sSkinName "LiverPool Safe"
+     m_sDescription "LiverPool Safe"
+     m_Material "{A8ED31E37D2C966F}Assets/BaseBuilding/Storage/Safe/Data/LiverPoolSafeMetal.emat"
+     m_aCompatiblePrefabs {
+      "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et"
+     }
+     m_bDefaultUnlocked 1
+    }
+    DZ_SkinDefinition "{6860DD13F7EBDE13}" {
+     m_sSkinId "NukeSafe"
+     m_sSkinName "Nuke Safe"
+     m_sDescription "Nuke Safe"
+     m_Material "{1B032406453D314A}Assets/BaseBuilding/Storage/Safe/Data/NukeSafeMetal.emat"
+     m_aCompatiblePrefabs {
+      "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et"
+     }
+     m_bDefaultUnlocked 1
+    }
+   }
+  }
+ }
+}

@@ -228,6 +228,21 @@ float m_fAttackCooldown = 2;
 	}
 	context.damageEffect = new SCR_MeleeDamageEffect();
 	damageManager.HandleDamage(context);
+
+	// ========== ZOMBIE INFECTION CHECK ==========
+	// Check if attacker is a zombie and target is a player
+	DatZMetabolsimHandler attackerMeta = DatZMetabolsimHandler.Cast(GetOwner().FindComponent(DatZMetabolsimHandler));
+	DatZMetabolsimHandler targetMeta = DatZMetabolsimHandler.Cast(m_MeleeHitData.m_Entity.FindComponent(DatZMetabolsimHandler));
+
+	if (attackerMeta && targetMeta)
+	{
+		// If attacker is zombie and target is not zombie
+		if (attackerMeta.IsZombie() && !targetMeta.IsZombie())
+		{
+			// Trigger zombie hit effect and try infection
+			targetMeta.OnZombieHit();
+		}
+	}
 }
-	
+
 }

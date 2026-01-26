@@ -11,10 +11,26 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
     }
     InitItem "{66571CF0FAC931FA}" {
      item "{32E12D322E107F1C}Prefabs/Weapons/Ammo/Ammo_Rocket_PG7VM.et"
-     amount 2
+     amount 4
     }
     InitItem "{66571CF0F404521C}" {
      item "{19600CCA33279D20}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_7BZ3API.et"
+     amount 6
+    }
+    InitItem "{66571CF0A1B2C3D5}" {
+     item "{7B605E8E4B952837}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_GoldBrick.et"
+     amount 8
+    }
+    InitItem "{66571CF0A1B2C3D6}" {
+     item "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et"
+    }
+    InitItem "{66571CF0A1B2C3D7}" {
+     item "{E3055CB3AB4817AD}Prefabs/MRE.et"
+     amount 3
+    }
+    InitItem "{66571CF0A1B2C3D8}" {
+     item "{5DBF2634506AF6B6}Prefabs/WaterBottelUS.et"
+     amount 2
     }
    }
   }

@@ -3,10 +3,11 @@ GenericEntity : "{47A2F2F3C8FAACD5}Prefabs/Props/Military/Camps/PalletAmmo_01_So
  components {
   AirDropFallComponent "{66571CF757203D4B}" {
    m_fFallSpeed 10
+   m_bDestroyOnImpact 0
    m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{66572787CC527A34}" {
     m_sMapMarkerText "Air Drop"
     m_eMapMarkerIcon OBJECTIVE_MARKER
-    m_eMapMarkerColor GREEN
+    m_eMapMarkerColor BLUE
    }
    initItems {
     InitItem "{66571CF7E0663168}" {

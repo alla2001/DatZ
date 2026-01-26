@@ -1,0 +1,10 @@
+GameEntity : "{43FDAF3FA0FF2299}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203_long.et" {
+ ID "50D6D3D8D7C645EE"
+ components {
+  EPF_PersistenceComponent "{5A28749FA22EC9AC}" {
+   m_bStorageRoot 0
+  }
+  RplComponent "{686079093B220B9E}" {
+  }
+ }
+}

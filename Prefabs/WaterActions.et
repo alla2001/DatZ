@@ -2,11 +2,15 @@ GenericEntity {
  ID "65235EE17F8D9656"
  components {
   MeshObject "{652355E213453E39}" {
-   Object "{FF35BE9795BA3797}system/wbdata/Gizmo3D/sphere.xob"
+   Object "{377157C5D0D22100}Assets/Props/Civilian/Billiard_01/Billiard_01_ball.xob"
    Materials {
-    MaterialAssignClass "{652B599096A38ED7}" {
-     SourceMaterial "system/wbdata/gizmo3D/gizmo3D"
-     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    MaterialAssignClass "{685EA575321C7DA6}" {
+     SourceMaterial "Color_palette"
+     AssignedMaterial "{45ECF6B1797D3CDA}system/wbdata/PreviewWindow/TransparentMat.emat"
+    }
+    MaterialAssignClass "{685EA575321C7A41}" {
+     SourceMaterial "Common/Materials/Default"
+     AssignedMaterial "{45ECF6B1797D3CDA}system/wbdata/PreviewWindow/TransparentMat.emat"
     }
    }
    InheritVisibility 1
@@ -50,7 +54,7 @@ GenericEntity {
     }
    }
   }
-  NwkMovementComponent "{652B3B0E588E4FA9}" {
+  NwkSimpleMovementComponent "{68640ACCB3EC0254}" {
   }
   RplComponent "{652355E213453F87}" {
    "Rpl State Override" Runtime
@@ -59,5 +63,5 @@ GenericEntity {
   Hierarchy "{652355E213453FFA}" {
   }
  }
- Flags 4194307
+ Flags 0x400003 0
 }

@@ -1,0 +1,151 @@
+GenericEntity {
+ ID "68640ACCE3C6A728"
+ components {
+  EPF_PersistenceComponent "{68640ACCE3C6A73C}" {
+   m_bStorageRoot 0
+   m_pSaveData EPF_ItemSaveDataClass "{68640ACCE3C6A7AB}" {
+    m_aComponents {
+     EPF_CookableManagerComponentSaveDataClass "{68640ACCE3C6A7A0}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{68640ACCE3C6A7A6}" {
+   Attributes SCR_ItemAttributeCollection "{68640ACCE3C6A7BA}" {
+    ItemDisplayName SCR_InventoryUIInfo "{68640ACCE3C6A7B0}" {
+     Name "Antidote"
+     Description "Antidote for infection, ONLY USE IF INFECTED !"
+     m_aItemHints {
+      SCR_InventoryItemHintUIInfo "{68640ACCE3C6A7B5}" {
+       Name "Eating this will regenerate some of your food"
+       Icon "{B9199157B90D6216}UI/Textures/InventoryIcons/Medical/Medical-icons.imageset"
+       IconSetName "Medical-Arrow_UI kopie"
+       m_cColor 1 1 1 1
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{68640ACCE3C6A44A}" {
+     Weight 0.35
+     SizeSetupStrategy Volume
+     ItemDimensions 5 5 5
+     ItemVolume 100
+     DimensionScaler 0.35
+     RestingUP Left
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{68640ACCE3C6A440}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{68640ACCE3C6A443}" {
+       AnimGraph "{881A39F3EF385802}Assets/Items/Food/Workspaces/Eating/Food.agr"
+       AnimInstance "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{68640ACCE3C6A446}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+     PreviewRenderAttributes "{68640ACCE3C6A459}" {
+      CameraPreset Top
+      CameraDistanceToItem 0.4
+      ItemRenderRotation 45 90 0
+      FOV 18
+      AspectRatio 1
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+  }
+  MeshObject "{68640ACCE3C6A45E}" {
+   Object "{F1A50CD6AC96F047}Assets/Models/Oxy-Pills.xob"
+  }
+  RigidBody "{68640ACCE3C6A40D}" {
+   Mass 5
+   ModelGeometry 1
+  }
+  SCR_ConsumableItemComponent "{68640ACCE3C6A400}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+   m_ConsumableEffect SCR_ConsumableAntidote "{68640ACCE3C6A403}" {
+    m_bDeleteOnUse 0
+    m_fApplyToSelfDuration 3
+    m_fApplyToOtherDuration 3
+   }
+  }
+  SCR_SoundDataComponent "{68640ACCE3C6A406}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{68640ACCE3C6A418}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{68640ACCE3C6A41A}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{68640ACCE3C6A41C}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{68640ACCE3C6A41D}" {
+     m_sSoundProject "{8EB62452345C2EB0}Sounds/Items/_SharedData/PickUp/Food_Eating.acp"
+     m_sSoundEventName "SOUND_EAT"
+    }
+   }
+  }
+  ActionsManagerComponent "{68640ACCE3C6A412}" {
+   ActionContexts {
+    UserActionContext "{68640ACCE3C6A415}" {
+     ContextName "default"
+     Position PointInfo "{68640ACCE3C6A428}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{68640ACCE3C6A42C}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68640ACCE3C6A43C}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{68640ACCE3C6A43F}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{68640ACCE3C6A434}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+     TriggerEffectCurve {
+      0 0 0.556 0 0.667 0.125 0.778 0
+     }
+    }
+    GamepadTriggerEffect "{68640ACCE3C6A4CA}" {
+     Name "Charged"
+     Priority 30
+     TriggerEffectCurve {
+      0.556 0 0.667 0.125 0.778 0
+     }
+    }
+   }
+  }
+  RplComponent "{68640ACCE3C6A4CD}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{68640ACCE3C6A4C1}" {
+  }
+ }
+ coords -0.032 0.032 0.108
+}

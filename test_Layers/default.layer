@@ -1,23 +1,72 @@
-GameEntity "Optic_EXPS3-2_658CA4ACD69D888A" {
- coords 141.435 1 169.46
+$grp GameEntity {
+ "Optic_EXPS3-2_658CA4ACD69D888A" {
+  coords 141.435 1 169.46
+ }
+ BC_Optic_Unertl_658C93716DB03B85 {
+  coords 129.329 1 158.584
+ }
 }
-GenericEntity Vest_Bagari_mp117_658C6DE3BF55C970 {
- coords 126.843 1 153.129
+$grp GenericEntity {
+ Vest_Bagari_mp117_658C6DE3BF55C970 {
+  coords 126.843 1 153.129
+ }
+ BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 {
+  components {
+   MeshObject "{CFBAA4B701F95D69}" {
+    Materials {
+     MaterialAssignClass "{658B51A60461E300}" {
+      SourceMaterial "Mosin9130Mat"
+      AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
+     }
+    }
+   }
+  }
+  coords 128.795 1 158.38
+ }
+ WorkbenchPlacer_685D7BDA6317BDB4 {
+  coords 115.204 1 131.992
+ }
+ "WorkbenchBook.et_685E091E4AA54FBE" {
+  coords 110.9 1 128.82
+ }
 }
 GenericEntity Backpack_ALICE_Medium_6596E1DFAC9E876F : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
  coords 174.063 1 166.348
 }
-GameEntity Rags_6596E1DFD96F6ECC : "{0892B183E7F9DF08}Prefabs/Rags.et" {
- components {
-  InventoryItemComponent "{6528FADC6B3006E9}" {
-   Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
-    ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
-     ItemVolume 150
+$grp GameEntity : "{0892B183E7F9DF08}Prefabs/Rags.et" {
+ Rags_6596E1DFD96F6ECC {
+  components {
+   InventoryItemComponent "{6528FADC6B3006E9}" {
+    Attributes SCR_ItemAttributeCollection "{6528FADC6B3006CD}" {
+     ItemPhysAttributes ItemPhysicalAttributes "{6528FADC6B30067C}" {
+      ItemVolume 150
+     }
     }
    }
   }
+  coords 169.814 1 165.773
  }
- coords 169.814 1 165.773
+ Rags_685D292716AC3610 {
+  coords 115.696 1 130.258
+ }
+ Rags_685D292716AC2 {
+  coords 115.717 1 129.792
+ }
+ Rags_685D292716AC3 {
+  coords 114.885 1 130.085
+ }
+ Rags_685D292716AC4 {
+  coords 114.993 1 129.749
+ }
+ Rags_685D292716AC5 {
+  coords 114.344 1 130.22
+ }
+ Rags_685D292716AC6 {
+  coords 114.946 1 130.453
+ }
+ Rags_685D292716AC7 {
+  coords 114.391 1 130.669
+ }
 }
 $grp DatZLootSpawner : "{089B1185A949B872}Prefabs/Spawners/Farm_DatZLootSpawner.et" {
  {
@@ -203,11 +252,10 @@ GenericEntity Wall_6664DEDD7444C2F3 : "{134F263C895CE56B}Prefabs/Props/Wall.et" 
 GenericEntity : "{1423D8B69C86DBC5}Prefabs/Base Building/SurvivorTable.et" {
  coords 126.304 1 168.258
  {
+  GenericEntity Watch_Vostok_Map_65A29C329F1767B1 {
+  }
   GenericEntity Map_Paper_01_unfolded_table_65A29C329F177953 {
    ID "65A29C2B457CFE23"
-  }
-  GenericEntity Watch_Vostok_Map_65A29C329F1767B1 {
-   ID "65A29C2B457CFE21"
   }
  }
 }
@@ -380,8 +428,8 @@ $grp Building : "{2B188379767C8461}Prefabs/Structures/Core/DestructibleWindow_Ba
   coords 128.487 1 166.315
  }
 }
-GenericEntity Base_Safe_6708EA4E4E1D0A59 : "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et" {
- coords 129.901 1 171.761
+GenericEntity Base_Safe_6860DD1312A09BF8 : "{2BF070D6B6BD7558}Prefabs/BaseBuilding/Storage/Safe/Base_Safe.et" {
+ coords 179.079 1 181.496
 }
 GenericEntity "Cooking Pot Clean Med_658CB24E243319EF" : "{2CD19983CF01E1F7}Prefabs/Cooking/Cooking Pot Clean Med.et" {
  coords 129.535 1 156.32
@@ -415,6 +463,9 @@ $grp GenericEntity : "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M11
   coords 128.396 1 168.907
  }
 }
+GenericEntity "WorkBench Book_685E091F9816C7CB" : "{344E1C83953A0F05}Prefabs/BaseBuilding/Storage/Safe/WorkBench Book.et" {
+ coords 110.257 1 129.111
+}
 SCR_ChimeraCharacter Character_Base_659B15BE3A4DC361 : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
  coords 168.876 1 164.934
 }
@@ -443,6 +494,14 @@ GenericEntity WaterCanteenUS_6596E1DFC04A5C0C : "{4000304122B0C624}Prefabs/Water
  }
  coords 173.094 1 163.632
 }
+GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
+ components {
+  ADM_ShopComponent "{5D775155BFB12BA4}" {
+   m_ShopConfig "{9F9B99EA94C617E7}Configs/Shops/TraderShop.conf"
+  }
+ }
+ coords 107.776 1 128.294
+}
 GenericEntity : "{4168CE8C08BC74B1}Prefabs/Structures/BuildingParts/Heating/StoveColumn_01_Base.et" {
  coords 127.862 1 155.761
  angles 0 30.091 0
@@ -467,6 +526,23 @@ GenericEntity Mushroom_6596E1DFDA67F12F : "{51AF8E30E304375E}Prefabs/Mushroom.et
 }
 GenericEntity FlagPlans_6708DE66C3EBC287 : "{535141D3EBC36D1E}Prefabs/BaseBuilding/Flag/FlagPlans.et" {
  coords 126.617 1 172.867
+}
+$grp GameEntity : "{558117556F3880A8}Prefabs/Weapons/Attachments/Bayonets/Bayonet_M9.et" {
+ {
+  coords 110.607 1 134.077
+ }
+ {
+  coords 116.196 1 130.116
+ }
+ {
+  coords 113.04 1 131.606
+ }
+ {
+  coords 110.983 1 138.172
+ }
+}
+GenericEntity Rail_Picatinny_5_685F7582B5EACCB5 : "{55CD2FF1CB08646E}Prefabs/Weapons/Attachments/Rails/Rail_Picatinny_5.et" {
+ coords 118.9 1 128.226
 }
 $grp DatZLootSpawner : "{5A4EAFD33C45C170}Prefabs/Spawners/Mil_DatZLootSpawner.et" {
  {
@@ -1623,6 +1699,40 @@ GenericEntity MilitaryTentUnDeployed1_6596E1DFDCF6CE3C : "{81579EF12ABD1CA3}Pref
 SCR_DestructibleBuildingEntity : "{9064E65F34097C8F}Prefabs/Structures/Commercial/Shops/ShopHouse_E_2l01/ShopHouse_E_2I01t_Base.et" {
  coords 95.715 0 176.933
 }
+$grp GenericEntity : "{95D947E744336F78}Prefabs/Props/Industrial/Workbench_01.et" {
+ {
+  coords 159.148 1 180.282
+ }
+ {
+  coords 162.277 1 180.282
+ }
+ {
+  coords 165.547 1 180.282
+ }
+ {
+  coords 168.653 1 180.282
+ }
+}
+$grp GenericEntity : "{98772037608AC4D7}Prefabs/Props/Civilian/Nail.et" {
+ Nail_685D2926723B161E {
+  coords 114.131 1 130.674
+ }
+ Nail_685D2926723B161E2 {
+  coords 113.847 1 130.774
+ }
+ Nail_685D2926723B161E3 {
+  coords 113.834 1 130.517
+ }
+ Nail_685D2926723B161E4 {
+  coords 114.079 1 130.918
+ }
+ Nail_685D2926723B161E5 {
+  coords 113.836 1 130.969
+ }
+}
+GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayonet_6Kh4.et" {
+ coords 108.269 1 138.233
+}
 SCR_ChimeraCharacter Character_CIV_Businessman_2_658EE734E7986CD8 : "{A517C72CEF150898}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_2.et" {
  components {
   ChimeraAIControlComponent "{520EA1D2DB109F34}" {
@@ -1639,6 +1749,9 @@ SCR_ChimeraCharacter Character_CIV_Businessman_2_658EE734E7986CD8 : "{A517C72CEF
   }
  }
  coords 141.304 1 170.557
+}
+Vehicle Mi8_base1 : "{AFF6067A5CE8A852}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8_base.et" {
+ coords 132.491 1 121.623
 }
 GenericEntity Ceiling_6664DEDD7CB3E1F1 : "{B70CAD8D53F7267C}Prefabs/Props/Ceiling.et" {
  components {
@@ -1681,24 +1794,14 @@ GenericEntity Window_6664DEDD48C34F8B : "{BFEBBF26A643FBA6}Prefabs/Props/Window.
  coords 138.417 1 193.344
  angles 0 0 0
 }
-GenericEntity BC_Rifle_Mosin_Nagant_B32_658B51A454FF1174 : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_B32.et" {
- components {
-  MeshObject "{CFBAA4B701F95D69}" {
-   Materials {
-    MaterialAssignClass "{658B51A60461E300}" {
-     SourceMaterial "Mosin9130Mat"
-     AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
-    }
-   }
-  }
- }
- coords 128.795 1 158.38
-}
 GenericEntity "Gold Coin_6656DDA315CD285D" : "{C53F5A5C87A34A46}Prefabs/Valuables/Coins/Gold Coin.et" {
  coords 194.753 12.886 136.402
 }
 GenericEntity BlastingMachine_M34_668282A1CE23FE0E : "{CE0AF733722B3978}Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34.et" {
  coords 128.345 1.108 168.466
+}
+GenericEntity : "{D09785FD7DBEBB2B}Prefabs/Weapons/Attachments/Muzzle/556x45/FlashHider_M16_base.et" {
+ coords 112.557 1 133.508
 }
 GenericEntity SafeBook_6708DE66F89EB3CC : "{D125E11C31A965AA}Prefabs/BaseBuilding/Storage/Safe/SafeBook.et" {
  coords 126.043 1 172.812
@@ -1708,6 +1811,15 @@ GenericEntity MG_M249_6656DDA4E28E37F6 : "{D2B48DEBEF38D7D7}Prefabs/Weapons/Mach
 }
 GenericEntity CannedSardeen_6596E1DFD093C834 : "{D34757B015ABD8B3}Prefabs/CannedSardeen.et" {
  coords 172.371 1 167.226
+}
+GenericEntity Workbench_Crafting_685F7582804BF2B9 : "{D8A06388C98F5ACF}Prefabs/Workbench_Crafting.et" {
+ coords 113.085 1 128.464
+ {
+  GenericEntity {
+   ID "685D7BD8A8C0BB87"
+   coords -0.098 1.017 0.538
+  }
+ }
 }
 GameEntity Fireplace_01_658C76A08312B367 : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
  coords 124.689 1 151.743
@@ -1731,6 +1843,9 @@ $grp SCR_DestructibleBuildingEntity : "{EC63F328F15AD3AF}Prefabs/Structures/Agri
  {
   coords 192.506 2.231 132.582
  }
+}
+GenericEntity Scabbard_Bayonet_M9_68607909AE8F92A5 : "{EE7FBAD35CA9D0F2}Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_M9/Scabbard_Bayonet_M9.et" {
+ coords 109.556 1 135.778
 }
 $grp GenericEntity : "{EF362B7442A2D5B1}Prefabs/Banane.et" {
  Banane_6526C37F101C6AF2 {
@@ -1778,11 +1893,13 @@ GenericEntity WallSmall_6664DEDD761BEF86 : "{F2CAA88E556DF686}Prefabs/Props/Wall
  coords 132.128 1 196.064
  angles 0 0 0
 }
-GameEntity BC_Optic_Unertl_658C93716DB03B85 : "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et" {
- coords 129.329 1 158.584
-}
-GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
- coords 134.74 20.582 147.538
+$grp GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
+ {
+  coords 134.74 20.582 147.538
+ }
+ {
+  coords 177.454 1 181.114
+ }
 }
 GenericEntity Backpack_M70_Swiss_6596E1DFAFB3EAC1 : "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et" {
  coords 174.838 1 165.461

@@ -10,6 +10,9 @@ SCR_ChimeraCharacter : "{1E5D9B21280870AA}Prefabs/Characters/Factions/CIV/Constr
   SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
    "faction affiliation" "USSR"
   }
+  TagComponent "{5864D980062191CA}" {
+   "Tag categories" 0x40 0x1
+  }
   ZombieOptimizationComponent "{65873BAD03DF367F}" {
    isZombi 0
   }
@@ -17,7 +20,7 @@ SCR_ChimeraCharacter : "{1E5D9B21280870AA}Prefabs/Characters/Factions/CIV/Constr
    InitialInventoryItems {
     ItemsInitConfigurationItem "{60DCBCECAC6C6E65}" {
      PrefabsToSpawn {
-      "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_USSR.et" "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{1641CA45B15C83E8}Prefabs/Apple.et"
+      "{F849217AB3BA88BE}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_USSR.et" "{733503CDB70D5EAC}Prefabs/WaterCanteen.et" "{16C089C70B9DFD86}Prefabs/Weapons/Knife.et" "{1641CA45B15C83E8}Prefabs/Apple.et"
      }
     }
    }

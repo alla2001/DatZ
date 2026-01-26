@@ -1,0 +1,11 @@
+ForestGeneratorEntity : "{902AD461F55475F0}Prefabs/WEGenerators/Forest/FG_Forest_base.et" {
+ ID "147AA750B7C4D2A8"
+ m_aLevels {
+  ForestGeneratorOutline Outline_big {
+   m_fDensity 500
+  }
+  ForestGeneratorTopLevel TopLevel {
+   m_fDensity 200
+  }
+ }
+}

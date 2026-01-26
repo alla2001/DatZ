@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{4CBB61E2E6B1006C}Prefabs/WaterChecker.et"
+ Name "{4CBB61E2E6B1006C}Prefabs/WaterRayCast.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

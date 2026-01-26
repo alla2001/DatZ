@@ -122,8 +122,11 @@ if(!Replication.IsServer())return;
         params.Transform = handlePos;
 		params.Parent = GetOwner();
         m_LockEntity = GetGame().SpawnEntityPrefab(lockPrefab, GetGame().GetWorld(), params);
+
+		if (!m_LockEntity)
+			return;
+
 		m_LockEntity.SetLocalTransform(handlePos);
-		m_LockEntity.Update();
 	
       
     }
@@ -138,11 +141,16 @@ if(!Replication.IsServer())return;
         vector origin = owner.GetOrigin();
      
         vector up = vector.Up;
-        ActionsManagerComponent actions =ActionsManagerComponent.Cast(owner.FindComponent(ActionsManagerComponent));
-		if(!actions)return;
+        ActionsManagerComponent actions = ActionsManagerComponent.Cast(owner.FindComponent(ActionsManagerComponent));
+		if (!actions)
+			return;
+
 		array<UserActionContext> outContexts();
-			actions.GetContextList(outContexts);
-		
+		actions.GetContextList(outContexts);
+
+		if (outContexts.IsEmpty())
+			return;
+
 		outContexts[0].GetTransformationModel(mat);
    
     }

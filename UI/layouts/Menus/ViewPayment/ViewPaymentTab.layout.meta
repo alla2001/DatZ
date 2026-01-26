@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{C6298BF303763C2E}UI/Layouts/Menus/ViewPayment/ViewPaymentTab.layout"
+ Name "{C6298BF303763C2E}UI/layouts/Menus/ViewPayment/ViewPaymentTab.layout"
  Configurations {
   LayoutResourceClass PC {
   }

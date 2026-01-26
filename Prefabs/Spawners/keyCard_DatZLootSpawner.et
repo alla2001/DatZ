@@ -7,5 +7,6 @@ DatZLootSpawner {
  coords 1.024 0.059 -1.023
  spawnRadius 100
  lootTable "{BEF291E3D0C06B02}Configs/keyCardLootTable.conf"
+ useTWLootConfig 0
  ignoreOverrides 1
 }

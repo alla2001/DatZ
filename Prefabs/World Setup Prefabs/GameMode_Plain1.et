@@ -1,0 +1,29 @@
+SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ ID "56B2B479C6B96951"
+ components {
+  Persistence "{65B27918147B3DEC}" {
+   Enabled 0
+  }
+  EPF_PersistenceManagerComponent "{670F26ADF2D05726}" {
+   components {
+    EPF_PersistentDoorStateManagerComponent "{670F26ADE858DCF5}" {
+     m_pFilter EPF_PersistentDoorStateFilter "{670F26ADEE3770B0}" {
+     }
+    }
+   }
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{670F26ADF00BB78B}" {
+    m_sDatabaseName "database"
+   }
+  }
+  LAG_SCR_ServerRestartAlarmComponent "{670F26AD13E31041}" {
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_DatZSpawnLogic "{5D36888CC966608A}" {
+    loadouts {
+     "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et" "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et"
+    }
+   }
+  }
+ }
+ coords 9064.469 0 12363.69
+}
