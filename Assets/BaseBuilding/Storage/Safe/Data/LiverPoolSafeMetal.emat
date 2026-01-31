@@ -1,0 +1,7 @@
+MatPBRBasic {
+ SpecularIBL 0.629 0.27 0.27 1
+ Diffuse 0.638 0.638 0.638 1
+ Specular 0.198 0.198 0.198 1
+ BCRMap "{89E5B9F6B380A3F9}Assets/BaseBuilding/Storage/Safe/Data/Gemini_Generated_Image_6frh3i6frh3i6frh.edds"
+ NMOMap "{049E80381C683E53}Assets/BaseBuilding/Storage/Safe/Data/SafeMetal_NMO.edds"
+}

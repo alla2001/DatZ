@@ -1,0 +1,165 @@
+SizeLayoutWidgetClass {
+ Name "RecipeEntry"
+ Slot LayoutSlot "{67B1C2D3E4F5A601}" {
+  Padding 0 0 0 6
+ }
+ AllowHeightOverride 1
+ HeightOverride 90
+ {
+  PanelWidgetClass "{67B1C2D3E4F5A602}" {
+   Name "EntryBackground"
+   Slot AlignableSlot "{67B1C2D3E4F5A603}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   Color 0.035 0.045 0.06 0.9
+   {
+    PanelWidgetClass "{67B1C2D3E4F5A6F0}" {
+     Name "LeftAccent"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A6F1}" {
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 4
+      OffsetRight -4
+      SizeY 90
+      OffsetBottom -90
+     }
+     Color 0.76 0.55 0.2 0.8
+    }
+    PanelWidgetClass "{67B1C2D3E4F5A6F2}" {
+     Name "ImageBackground"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A6F3}" {
+      PositionX 12
+      OffsetLeft 12
+      PositionY 10
+      OffsetTop 10
+      SizeX 70
+      OffsetRight -82
+      SizeY 70
+      OffsetBottom -80
+     }
+     Color 0.02 0.025 0.035 1
+     {
+      ItemPreviewWidgetClass "{67B1C2D3E4F5A6F4}" {
+       Name "ItemPreview"
+       Slot FrameWidgetSlot "{67B1C2D3E4F5A6F5}" {
+        Anchor 0 0 1 1
+        PositionX 0
+        OffsetLeft 5
+        PositionY 0
+        OffsetTop 5
+        SizeX 0
+        OffsetRight 5
+        SizeY 0
+        OffsetBottom 5
+       }
+      }
+     }
+    }
+    TextWidgetClass "{67B1C2D3E4F5A604}" {
+     Name "RecipeName"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A605}" {
+      PositionX 95
+      OffsetLeft 95
+      PositionY 12
+      OffsetTop 12
+      SizeX 320
+      OffsetRight -415
+      SizeY 26
+      OffsetBottom -38
+     }
+     Color 0.95 0.9 0.8 1
+     Text "Recipe Name"
+     "Font Size" 18
+     "Min Font Size" 14
+     "Vertical Alignment" Center
+    }
+    TextWidgetClass "{67B1C2D3E4F5A606}" {
+     Name "Requirements"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A607}" {
+      PositionX 95
+      OffsetLeft 95
+      PositionY 38
+      OffsetTop 38
+      SizeX 320
+      OffsetRight -415
+      SizeY 22
+      OffsetBottom -60
+     }
+     Color 0.55 0.55 0.5 1
+     Text "Requires: Item1, Item2"
+     "Font Size" 13
+     "Min Font Size" 11
+     "Vertical Alignment" Center
+    }
+    TextWidgetClass "{67B1C2D3E4F5A608}" {
+     Name "MissingItems"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A609}" {
+      PositionX 95
+      OffsetLeft 95
+      PositionY 60
+      OffsetTop 60
+      SizeX 320
+      OffsetRight -415
+      SizeY 22
+      OffsetBottom -82
+     }
+     Color 0.9 0.35 0.25 1
+     Text "Missing: Item1"
+     "Font Size" 13
+     "Min Font Size" 11
+     "Vertical Alignment" Center
+    }
+    ButtonWidgetClass "{67B1C2D3E4F5A60A}" {
+     Name "CraftButton"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A60B}" {
+      PositionX 440
+      OffsetLeft 440
+      PositionY 25
+      OffsetTop 25
+      SizeX 110
+      OffsetRight -550
+      SizeY 40
+      OffsetBottom -65
+     }
+     Color 0.2 0.55 0.3 0.95
+     components {
+      SCR_ButtonTextComponent "{67B1C2D3E4F5A60C}" {
+       m_sText "CraftButton"
+      }
+     }
+     {
+      RichTextWidgetClass "{67B1C2D3E4F5A60D}" {
+       Name "ButtonText"
+       Slot ButtonWidgetSlot "{67B1C2D3E4F5A60E}" {
+       }
+       Color 1 1 1 1
+       Text "CRAFT"
+       "Font Size" 15
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+      }
+     }
+    }
+    PanelWidgetClass "{67B1C2D3E4F5A6E0}" {
+     Name "DisabledOverlay"
+     Slot FrameWidgetSlot "{67B1C2D3E4F5A6E1}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     "Is Visible" 0
+     Color 0 0 0 0.5
+    }
+   }
+  }
+ }
+}

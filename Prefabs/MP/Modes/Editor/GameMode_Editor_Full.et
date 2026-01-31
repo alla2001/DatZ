@@ -4,6 +4,20 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
   Persistence "{65B27918147B3DEC}" {
    Enabled 0
   }
+  DZ_ChatCommandHandler "{687CF2C1698F0588}" {
+  }
+  DZ_SkinManagerComponent "{687CF2C29B5884FF}" {
+  }
+  DatZFootstepListener "{687CF2C14D858DFD}" {
+  }
+  DatZSoundManager "{687CF2C1488CAD5A}" {
+  }
+  DatZUndeadCoordinator "{687AD80820C8665F}" {
+  }
+  DatZVehicleSoundListener "{687CF2C170F6C3A9}" {
+  }
+  DatZWeaponFireListener "{687CF2C17A1464FD}" {
+  }
   EPF_PersistenceManagerComponent "{65336C9D14BEA593}" {
    m_fAutosaveInterval 5
    m_iAutosaveIterations 50
@@ -158,28 +172,15 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
     }
    }
    m_SpawnLogic SCR_DatZSpawnLogic "{5D44B78DAD98E7F9}" {
-    m_eDisconnectPlayerControllerBehaviour NOTHING
-    m_eDisconnectCharacterBehaviour NOTHING
     loadouts {
      "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et" "{76EC8248377D0989}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Base.et"
     }
    }
   }
   SCR_TimeAndWeatherHandlerComponent "{6598B2493ED80CDC}" {
-   m_iDuskDawnTimescale 4
-   m_iDayTimescale 6
-   m_iNightTimescale 11
   }
   SCR_VotingManagerComponent "{5650BB6B6089393A}" {
    Enabled 0
-   m_aVotingTemplates {
-    SCR_VotingEditorIn "{58D06C7270F3CE2C}" {
-    }
-    SCR_VotingEditorOut "{58D06C7271BA2FDE}" {
-    }
-    SCR_VotingEditorWithdraw "{5A8A8738B1A4AC19}" {
-    }
-   }
   }
   SCR_WelcomeScreenComponent "{5D7290AC8A3E657E}" {
    m_sHeaderTitle "#AR-Editor_DeployMenu_Screen_Title"
@@ -222,6 +223,13 @@ SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.
  m_bAllowFactionChange 0
  needFlagToBuild 1
  {
+  SCR_FactionManager {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{687D4567AC719B56}" : "{ABCC989E11D49B4A}Configs/UNDEAD_Faction.conf" {
+    }
+   }
+  }
   ScriptedChatEntity {
    ID "56E685E9EF952A67"
    Channels {

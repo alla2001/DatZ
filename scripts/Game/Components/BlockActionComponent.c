@@ -16,18 +16,8 @@ class MeleeBlocking : ScriptComponent
     //------------------------------------------------------------------------------------------------
     override void OnPostInit(IEntity owner)
     {
-        super.OnPostInit(owner);
-        
-        // Enable frame events
-        SetEventMask(owner, EntityEvent.FRAME);
-
-		
-		anim = SCR_CharacterAnimationComponent.Cast( owner.FindComponent(SCR_CharacterAnimationComponent));
-		if(!anim) return;
-		blockBool = anim.BindVariableBool("Blocking");
-		wpn = BaseWeaponManagerComponent.Cast( owner.FindComponent(BaseWeaponManagerComponent));
-		wpn.m_OnWeaponChangeStartedInvoker.Insert(OnWeaponChanged);
-		GetGame().GetCallqueue().CallLater(DelayedInit,delay:2000)
+        // Blocking disabled
+        return;
     }
     
 	void DelayedInit(){

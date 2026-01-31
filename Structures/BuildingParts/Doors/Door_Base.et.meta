@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F1793FE006FDF888}Prefabs/Structures/BuildingParts/Doors/Door_Base.et"
+ Name "{F1793FE006FDF888}Structures/BuildingParts/Doors/Door_Base.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

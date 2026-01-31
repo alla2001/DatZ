@@ -4,10 +4,6 @@
 //! \see CharacterInventoryStorageComponent for example of custom storage inheritance from current class
 modded class SCR_UniversalInventoryStorageComponent : UniversalInventoryStorageComponent
 {
-	
-	
-	
-	
 	//------------------------------------------------------------------------------------------------
 	protected override void OnAddedToSlot(IEntity item, int slotID)
 	{

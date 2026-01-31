@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "65861310CAE9A1D9"
+ components {
+  MeshObject "{65861310AD8E334A}" {
+   Object "{583D24495FE15DD2}Assets/Props/Industrial/Workbench_01/Workbench_01.xob"
+   Materials {
+    MaterialAssignClass "{65861310E49F73A4}" {
+     SourceMaterial "Workbench_01"
+     AssignedMaterial "{3886792729F13152}Assets/Props/Civilian/Ashtray_01/Data/Ashtray_01_glass_green.emat"
+    }
+   }
+  }
+ }
+ coords 0 0 0
+}

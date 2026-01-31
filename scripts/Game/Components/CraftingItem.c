@@ -18,9 +18,9 @@ class CraftingItem : ScriptComponent
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
-		SetEventMask(owner, EntityEvent.INIT);
+		//SetEventMask(owner, EntityEvent.INIT);
 		
-		GetGame().GetCallqueue().CallLater(DelayInit,delay:1000);
+		//GetGame().GetCallqueue().CallLater(DelayInit,delay:1000);
 	
 	}
 	void DelayInit(){

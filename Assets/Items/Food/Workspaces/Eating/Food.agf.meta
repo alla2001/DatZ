@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{A7142749719B3132}Assets/Items/Medicine/Workspaces/Food.agf"
+ Name "{A7142749719B3132}Assets/Items/Food/Workspaces/Eating/Food.agf"
  Configurations {
   AnimGraphFileResourceClass PC {
   }

@@ -1,0 +1,28 @@
+SCR_DestructibleBuildingEntity {
+ ID "6531166393E2980D"
+ {
+  GenericEntity {
+   ID "6531166393ECC3BC"
+   coords -2.692 6.501 2.512
+   angles 0 -135.047 0
+  }
+  GenericEntity {
+   ID "6531166393EDE57E"
+   coords -0.146 6.714 3.442
+   angles 88.951 -82 0
+  }
+  GenericEntity {
+   ID "6531166393F220BD"
+   components {
+    MeshObject "{5872F0EB7FA40561}" {
+     Enabled 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "6531166393F3FA80"
+   coords -2.65 6.892 0.296
+   angles 85.185 91.527 0
+  }
+ }
+}

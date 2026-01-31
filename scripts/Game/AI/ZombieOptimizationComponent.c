@@ -11,29 +11,33 @@ class ZombieOptimizationComponent : ScriptComponent
 {
 	[Attribute("200", UIWidgets.SpinBox, "Minimum distance from players to enable optimization")]
 	protected float m_fMinOptimizationDistance;
-	
+
 	[Attribute("2.0", UIWidgets.SpinBox, "Check interval in seconds")]
 	protected float m_fCheckInterval;
-	
+
 	[Attribute("0.5", UIWidgets.SpinBox, "Fast check interval when recently visible")]
 	protected float m_fFastCheckInterval;
-	
+
 	[Attribute("2.0", UIWidgets.SpinBox, "Movement speed multiplier for teleport distance calculation")]
 	protected float m_fMovementSpeedMultiplier;
-	
+
 	[Attribute("50", UIWidgets.SpinBox, "Maximum teleport distance")]
 	protected float m_fMaxTeleportDistance;
-	
+
 	[Attribute("10", UIWidgets.SpinBox, "Minimum teleport distance")]
 	protected float m_fMinTeleportDistance;
-	
+
 	[Attribute("400", UIWidgets.SpinBox, "Maximum distance for FOV checks")]
 	protected float m_fMaxFOVDistance;
-	
+
 	[Attribute("true")]
-	protected bool isZombi ;
-	
-	
+	protected bool isZombi;
+
+	// Pre-calculated squared distances (avoid sqrt)
+	protected float m_fMinOptimizationDistanceSq;
+	protected float m_fMaxFOVDistanceSq;
+	protected float m_fMaxTeleportDistanceSq;
+
 	protected bool m_bIsOptimized = false;
 	protected bool m_bWasInView = true;
 	protected float m_fLastViewTime;
@@ -46,29 +50,62 @@ class ZombieOptimizationComponent : ScriptComponent
 	protected AIControlComponent m_AIControlComponent;
 	protected CharacterControllerComponent m_CharacterController;
 	protected NavmeshWorldComponent m_NavmeshWorldComponent;
+
+	// Cached trace params to avoid allocations
+	protected ref TraceParam m_CachedTrace;
+	protected ref TraceParam m_CachedGroundTrace;
+
+	// Cached player data to avoid repeated lookups
+	protected ref array<vector> m_aCachedPlayerPositions = new array<vector>();
+	protected ref array<vector> m_aCachedPlayerDirections = new array<vector>();
+	protected float m_fLastPlayerCacheTime;
+
+	// Current interval for dynamic adjustment
+	protected float m_fCurrentInterval;
 	
 	//------------------------------------------------------------------------------------------------
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
-		if(!isZombi)return;
-		if(!Replication.IsServer())return;
+		if (!isZombi)
+			return;
+		if (!Replication.IsServer())
+			return;
+
+		// Pre-calculate squared distances (avoid sqrt in hot path)
+		m_fMinOptimizationDistanceSq = m_fMinOptimizationDistance * m_fMinOptimizationDistance;
+		m_fMaxFOVDistanceSq = m_fMaxFOVDistance * m_fMaxFOVDistance;
+		m_fMaxTeleportDistanceSq = m_fMaxTeleportDistance * m_fMaxTeleportDistance;
+
+		// Pre-allocate trace params to avoid runtime allocations
+		m_CachedTrace = new TraceParam();
+		m_CachedTrace.Flags = TraceFlags.WORLD;
+		m_CachedGroundTrace = new TraceParam();
+		m_CachedGroundTrace.Flags = TraceFlags.WORLD;
+
 		// Get required components
 		m_AnimationComponent = CharacterAnimationComponent.Cast(owner.FindComponent(CharacterAnimationComponent));
 		m_AIControlComponent = AIControlComponent.Cast(owner.FindComponent(AIControlComponent));
 		m_CharacterController = CharacterControllerComponent.Cast(owner.FindComponent(CharacterControllerComponent));
-		if(GetGame().GetWorld()==null)return;
+
+		if (!GetGame().GetWorld())
+			return;
+
 		// Get navigation component from AIWorld
 		IEntity aiWorldEntity = GetGame().GetWorld().FindEntityByName("SCR_AIWorld");
 		if (aiWorldEntity)
 			m_NavmeshWorldComponent = NavmeshWorldComponent.Cast(aiWorldEntity.FindComponent(NavmeshWorldComponent));
-		
-		m_fLastViewTime = GetGame().GetWorld().GetWorldTime();
-		m_fLastDistanceCheck = m_fLastViewTime;
+
+		float worldTime = GetGame().GetWorld().GetWorldTime();
+		m_fLastViewTime = worldTime;
+		m_fLastDistanceCheck = worldTime;
+		m_fLastPlayerCacheTime = 0;
 		m_vLastPosition = owner.GetOrigin();
-		
-		// Start the optimization check
-		GetGame().GetCallqueue().CallLater(CheckOptimization, m_fCheckInterval * 1000, true);
+		m_fCurrentInterval = m_fCheckInterval;
+
+		// Start the optimization check with staggered delay to distribute load
+		int staggerDelay = Math.RandomInt(0, 500);
+		GetGame().GetCallqueue().CallLater(CheckOptimization, (m_fCheckInterval * 1000) + staggerDelay, false);
 	}
 	
 	//------------------------------------------------------------------------------------------------
@@ -86,20 +123,20 @@ class ZombieOptimizationComponent : ScriptComponent
 		IEntity owner = GetOwner();
 		if (!owner)
 			return;
-			
+
 		vector zombiePos = owner.GetOrigin();
 		float currentTime = GetGame().GetWorld().GetWorldTime();
 		bool isCurrentlyInView = false;
-		float closestPlayerDistance = float.MAX;
-		
-		// Performance optimization: Only check distance every few seconds
-		bool shouldUpdateDistance = (currentTime - m_fLastDistanceCheck) > 3.0;
-		if (shouldUpdateDistance)
+		float closestPlayerDistanceSq = float.MAX;
+
+		// Cache player positions (shared across all checks this frame)
+		bool shouldUpdateCache = (currentTime - m_fLastPlayerCacheTime) > 200; // 200ms cache
+		if (shouldUpdateCache)
 		{
-			m_fLastDistanceCheck = currentTime;
-			UpdatePlayerProximity(zombiePos);
+			m_fLastPlayerCacheTime = currentTime;
+			CachePlayerData();
 		}
-		
+
 		// Skip expensive FOV checks for distant zombies
 		if (!m_bNearAnyPlayer && m_bIsOptimized)
 		{
@@ -107,92 +144,85 @@ class ZombieOptimizationComponent : ScriptComponent
 			// Only check every 4th time for optimized distant zombies
 			if (m_iChecksSinceVisible < 4)
 			{
-				AdjustCheckFrequency(false, float.MAX);
+				ScheduleNextCheck(false, float.MAX);
 				return;
 			}
 			m_iChecksSinceVisible = 0;
 		}
-		
-		// Get all players
-		array<IEntity> players = {};
-		array<int> playerIDs = {};
-		GetGame().GetPlayerManager().GetAllPlayers(playerIDs);
-		foreach( int id : playerIDs)
+
+		// Performance optimization: Only do proximity update every few seconds
+		bool shouldUpdateProximity = (currentTime - m_fLastDistanceCheck) > 3000; // 3 seconds in ms
+		if (shouldUpdateProximity)
 		{
-			IEntity ent = GetGame().GetPlayerManager().GetPlayerControlledEntity(id);
-			if(ent)
-				players.Insert(ent);
+			m_fLastDistanceCheck = currentTime;
+			m_bNearAnyPlayer = false;
 		}
-		
-		foreach (IEntity player : players)
+
+		int playerCount = m_aCachedPlayerPositions.Count();
+		for (int i = 0; i < playerCount; i++)
 		{
-			if (!player)
-				continue;
-			if (player == GetOwner())
+			vector playerPos = m_aCachedPlayerPositions[i];
+
+			// Use squared distance (avoids sqrt)
+			float distanceSq = vector.DistanceSq(zombiePos, playerPos);
+
+			if (distanceSq < closestPlayerDistanceSq)
+				closestPlayerDistanceSq = distanceSq;
+
+			// Update proximity flag during proximity check
+			if (shouldUpdateProximity && distanceSq < m_fMaxFOVDistanceSq)
+				m_bNearAnyPlayer = true;
+
+			// Only do FOV checks if zombie is close enough AND we haven't already found visibility
+			if (!isCurrentlyInView && distanceSq < m_fMaxFOVDistanceSq)
 			{
-				isCurrentlyInView = true;
-				continue;
-			}
-			
-			float distance = vector.Distance(zombiePos, player.GetOrigin());
-			if (distance < closestPlayerDistance)
-				closestPlayerDistance = distance;
-			
-			// Only do expensive FOV checks if zombie is close enough AND we haven't already found visibility
-			if (!isCurrentlyInView && distance < m_fMaxFOVDistance)
-			{
-				if (IsInPlayerFieldOfView(player, zombiePos))
+				if (IsInPlayerFieldOfViewFast(i, zombiePos, distanceSq))
 				{
 					isCurrentlyInView = true;
-					// Don't break here - we still need to find closest distance
+					// Don't break - still need to find closest distance
 				}
 			}
 		}
-		
-		// Only optimize if far enough from players
-		bool canOptimize = closestPlayerDistance > m_fMinOptimizationDistance;
-		
-		HandleOptimizationState(isCurrentlyInView, canOptimize);
-		AdjustCheckFrequency(isCurrentlyInView, closestPlayerDistance);
+
+		// Only optimize if far enough from players (compare squared distances)
+		bool canOptimize = closestPlayerDistanceSq > m_fMinOptimizationDistanceSq;
+
+		HandleOptimizationState(isCurrentlyInView, canOptimize, currentTime);
+		ScheduleNextCheck(isCurrentlyInView, closestPlayerDistanceSq);
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	//! Update whether zombie is near any player (for performance culling)
-	protected void UpdatePlayerProximity(vector zombiePos)
+	//! Cache player positions and directions to avoid repeated lookups
+	protected void CachePlayerData()
 	{
-		array<IEntity> players = {};
+		m_aCachedPlayerPositions.Clear();
+		m_aCachedPlayerDirections.Clear();
+
 		array<int> playerIDs = {};
 		GetGame().GetPlayerManager().GetAllPlayers(playerIDs);
-		foreach( int id : playerIDs)
+
+		IEntity owner = GetOwner();
+		foreach (int id : playerIDs)
 		{
-			IEntity ent = GetGame().GetPlayerManager().GetPlayerControlledEntity(id);
-			if(ent)
-				players.Insert(ent);
-		}
-		
-		m_bNearAnyPlayer = false;
-		foreach (IEntity player : players)
-		{
-			if (!player || player == GetOwner())
+			IEntity player = GetGame().GetPlayerManager().GetPlayerControlledEntity(id);
+			if (!player || player == owner)
 				continue;
-				
-			float distance = vector.Distance(zombiePos, player.GetOrigin());
-			if (distance < m_fMaxFOVDistance)
-			{
-				m_bNearAnyPlayer = true;
-				break;
-			}
+
+			vector playerPos = player.GetOrigin();
+			m_aCachedPlayerPositions.Insert(playerPos);
+
+			// Cache look direction for FOV checks
+			vector angles = player.GetYawPitchRoll();
+			m_aCachedPlayerDirections.Insert(angles.AnglesToVector());
 		}
 	}
-	
+
 	//------------------------------------------------------------------------------------------------
-	//! Dynamically adjust check frequency based on visibility and distance
-	protected void AdjustCheckFrequency(bool isVisible, float closestDistance)
+	//! Schedule next check with dynamic interval (avoids repeated CallLater remove/add)
+	protected void ScheduleNextCheck(bool isVisible, float closestDistanceSq)
 	{
-		GetGame().GetCallqueue().Remove(CheckOptimization);
-		
 		float newInterval;
-		if (isVisible || closestDistance < m_fMinOptimizationDistance)
+		if (isVisible || closestDistanceSq < m_fMinOptimizationDistanceSq)
 		{
 			// Fast checks when visible or very close
 			newInterval = m_fFastCheckInterval;
@@ -208,28 +238,29 @@ class ZombieOptimizationComponent : ScriptComponent
 			// Normal interval
 			newInterval = m_fCheckInterval;
 		}
-		
-		GetGame().GetCallqueue().CallLater(CheckOptimization, newInterval * 1000, true);
+
+		// Only reschedule if interval changed significantly (avoid CallLater churn)
+		float intervalMs = newInterval * 1000;
+		GetGame().GetCallqueue().CallLater(CheckOptimization, intervalMs, false);
+		m_fCurrentInterval = newInterval;
 	}
 	
 	//------------------------------------------------------------------------------------------------
 	//! Handle the optimization state changes
-	protected void HandleOptimizationState(bool isInView, bool canOptimize)
+	protected void HandleOptimizationState(bool isInView, bool canOptimize, float currentTime)
 	{
-		float currentTime = GetGame().GetWorld().GetWorldTime();
-		
 		// If zombie comes into view and was optimized
 		if (isInView && m_bIsOptimized)
 		{
-			// Calculate time out of view
-			float timeOutOfView = currentTime - m_fLastViewTime;
-			
+			// Calculate time out of view (convert from ms to seconds)
+			float timeOutOfView = (currentTime - m_fLastViewTime) * 0.001;
+
 			// Move zombie to reasonable position based on time
 			if (canOptimize && timeOutOfView > 2.0) // Only teleport if out of view for more than 2 seconds
 			{
 				TeleportToReasonablePosition(timeOutOfView);
 			}
-			
+
 			// Restore zombie functionality
 			EnableZombie();
 			m_bIsOptimized = false;
@@ -254,43 +285,39 @@ class ZombieOptimizationComponent : ScriptComponent
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	//! Check if zombie is in player's field of view
-	protected bool IsInPlayerFieldOfView(IEntity player, vector zombiePos)
+	//! Fast FOV check using cached player data (no entity lookups)
+	protected bool IsInPlayerFieldOfViewFast(int playerIndex, vector zombiePos, float distanceSq)
 	{
-		if (!player)
+		if (playerIndex >= m_aCachedPlayerPositions.Count())
 			return false;
-			
-		// Get player camera/head position and direction
-		vector playerPos = player.GetOrigin();
+
+		vector playerPos = m_aCachedPlayerPositions[playerIndex];
+		vector lookDirection = m_aCachedPlayerDirections[playerIndex];
+
+		// Approximate eye position
 		vector playerEyePos = playerPos;
-		playerEyePos[1] = playerEyePos[1] + 1.7; // Approximate eye height
-		
-		// Get player's look direction
-		vector playerDirection = player.GetYawPitchRoll();
-		vector lookDirection = playerDirection.AnglesToVector();
-		
-		// Calculate direction to zombie
+		playerEyePos[1] = playerEyePos[1] + 1.7;
+
+		// Calculate direction to zombie (avoid normalize by using squared magnitude)
 		vector toZombie = zombiePos - playerEyePos;
-		float distance = toZombie.Length();
-		toZombie.Normalize();
-		
-		// Check if zombie is within field of view (approximate 90 degree cone)
-		float dotProduct = vector.Dot(lookDirection, toZombie);
-		bool inFOV = dotProduct > 0.7; // Adjust this value to change FOV sensitivity
-		
-		if (!inFOV)
+
+		// Fast dot product check without full normalization
+		// We can compare dot product against a threshold scaled by distance
+		float dot = vector.Dot(lookDirection, toZombie);
+
+		// If dot is negative, zombie is behind player
+		if (dot < 0)
 			return false;
-		return true;
-		// Perform raycast to check for obstacles
-		autoptr TraceParam trace = new TraceParam();
-		trace.Start = playerEyePos;
-		trace.End = zombiePos;
-		trace.Flags = TraceFlags.WORLD | TraceFlags.ENTS;
-		
-		float traceDist = GetGame().GetWorld().TraceMove(trace, null);
-		
-		// If trace reached close to zombie position, it's visible
-		return traceDist > 0.9; // 90% of the way means mostly visible
+
+		// Approximate FOV check: dot / |toZombie| > 0.7 means in ~90 degree cone
+		// Rearranged: dot^2 > 0.49 * |toZombie|^2 (avoids sqrt)
+		float toZombieLenSq = toZombie.LengthSq();
+		if (toZombieLenSq < 0.01)
+			return true; // Very close, consider visible
+
+		// Check if in ~90 degree FOV cone (dot > 0.7 * length)
+		// dot^2 > 0.49 * lengthSq
+		return (dot * dot) > (0.49 * toZombieLenSq);
 	}
 	
 	
@@ -368,55 +395,45 @@ class ZombieOptimizationComponent : ScriptComponent
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	//! Check if position is reachable via navigation
+	//! Check if position is reachable via navigation (uses cached trace params)
 	protected bool IsPositionReachable(vector fromPos, vector toPos)
 	{
-		// Simple distance check as primary validation
-		float distance = vector.Distance(fromPos, toPos);
-		if (distance > m_fMaxTeleportDistance)
+		// Simple squared distance check as primary validation (avoids sqrt)
+		float distanceSq = vector.DistanceSq(fromPos, toPos);
+		if (distanceSq > m_fMaxTeleportDistanceSq)
 			return false;
-		
-		// Basic line-of-sight check for major obstacles
-		autoptr TraceParam trace = new TraceParam();
-		trace.Start = Vector(fromPos[0], fromPos[1] + 0.5, fromPos[2]);
-		trace.End = Vector(toPos[0], toPos[1] + 0.5, toPos[2]);
-		trace.Flags = TraceFlags.WORLD;
-		
-		float traceDist = GetGame().GetWorld().TraceMove(trace, null);
-		
+
+		// Basic line-of-sight check for major obstacles using cached trace
+		m_CachedTrace.Start = Vector(fromPos[0], fromPos[1] + 0.5, fromPos[2]);
+		m_CachedTrace.End = Vector(toPos[0], toPos[1] + 0.5, toPos[2]);
+
+		float traceDist = GetGame().GetWorld().TraceMove(m_CachedTrace, null);
+
 		// If we can't reach 80% of the way, consider it blocked
 		if (traceDist < 0.8)
 			return false;
-		
+
 		// Additional ground check - ensure target position has ground
-		autoptr TraceParam groundTrace = new TraceParam();
-		groundTrace.Start = Vector(toPos[0], toPos[1] + 2, toPos[2]);
-		groundTrace.End = Vector(toPos[0], toPos[1] - 2, toPos[2]);
-		trace.Flags = TraceFlags.WORLD;
-		
-		float groundTraceDist = GetGame().GetWorld().TraceMove(groundTrace, null);
+		m_CachedGroundTrace.Start = Vector(toPos[0], toPos[1] + 2, toPos[2]);
+		m_CachedGroundTrace.End = Vector(toPos[0], toPos[1] - 2, toPos[2]);
+
+		float groundTraceDist = GetGame().GetWorld().TraceMove(m_CachedGroundTrace, null);
 		return groundTraceDist > 0.1; // Has ground within reasonable distance
 	}
-	
+
 	//------------------------------------------------------------------------------------------------
-	//! Snap position to ground
+	//! Snap position to ground (uses cached trace params)
 	protected vector SnapToGround(vector position)
 	{
-		autoptr TraceParam trace = new TraceParam();
-		trace.Start = Vector(position[0], position[1] + 5, position[2]);
-		trace.End = Vector(position[0], position[1] - 5, position[2]);
-		trace.Flags = TraceFlags.WORLD;
-		
-		vector hitPos;
-		vector hitNormal;
-		
-		float traceDist = GetGame().GetWorld().TraceMove(trace, null);
+		m_CachedGroundTrace.Start = Vector(position[0], position[1] + 5, position[2]);
+		m_CachedGroundTrace.End = Vector(position[0], position[1] - 5, position[2]);
+
+		float traceDist = GetGame().GetWorld().TraceMove(m_CachedGroundTrace, null);
 		if (traceDist > 0)
 		{
-			hitPos = trace.Start + (trace.End - trace.Start) * traceDist;
-			return hitPos;
+			return m_CachedGroundTrace.Start + (m_CachedGroundTrace.End - m_CachedGroundTrace.Start) * traceDist;
 		}
-		
+
 		return position; // Return original if no ground found
 	}
 }

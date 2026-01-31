@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{9F9B99EA94C617E7}Configs/Shops/WanderingTraderShop.conf"
+ Name "{9F9B99EA94C617E7}Configs/Shops/TraderShop.conf"
  Configurations {
   CONFResourceClass PC {
   }

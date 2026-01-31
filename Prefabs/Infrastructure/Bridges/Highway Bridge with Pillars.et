@@ -1,0 +1,4 @@
+SCR_DestructibleBuildingEntity {
+ ID "62E304CE222EC310"
+ ignoreLoot 1
+}

@@ -1,0 +1,115 @@
+AMMO UNPACK/REPACK SYSTEM PLAN
+================================
+
+Feature: Allow players to extract bullets from magazines and load them into other magazines of the same caliber.
+
+USER REQUIREMENTS:
+- Unpacking leaves magazine empty (not destroyed)
+- Bullets should stack (1 item = X rounds)
+- No UI - transfer all bullets automatically
+- Allow mixing different ammo types of same caliber
+
+IMPLEMENTATION APPROACH:
+------------------------
+
+1. AMMO STACK COMPONENT
+   - Similar to ADM_CurrencyComponent
+   - Tracks quantity of rounds in a single inventory item
+   - Properties: m_iCount (number of rounds)
+   - Methods: GetCount(), SetCount(), AddCount(), RemoveCount()
+
+2. BULLET PREFABS (one per ammo type):
+   5.56x45mm:
+   - Ammo_556x45_Ball.et
+   - Ammo_556x45_Tracer.et
+   - Ammo_556x45_AP.et
+
+   7.62x39mm:
+   - Ammo_762x39_Ball.et
+   - Ammo_762x39_Tracer.et
+   - Ammo_762x39_AP.et
+
+   7.62x51mm:
+   - Ammo_762x51_Ball.et
+   - Ammo_762x51_Tracer.et
+   - Ammo_762x51_AP.et
+
+   9x19mm:
+   - Ammo_9x19_Ball.et
+   - Ammo_9x19_AP.et
+
+   .45 ACP:
+   - Ammo_45ACP_Ball.et
+
+3. MAGAZINE AMMO TRACKER COMPONENT
+   - Attached to magazines to track mixed ammo composition
+   - Stores: map<ResourceName, int> - ammo prefab to count
+   - Example: {"Ammo_556_Ball": 20, "Ammo_556_Tracer": 10}
+   - Used when unpacking to return exact mix
+
+4. CALIBER COMPATIBILITY CONFIG
+   - Maps magazine prefabs to compatible ammo prefabs
+   - Example:
+     STANAG 30rd -> [Ammo_556x45_Ball, Ammo_556x45_Tracer, Ammo_556x45_AP]
+     AK-74 30rd -> [Ammo_545x39_Ball, Ammo_545x39_Tracer]
+
+5. UNPACK ACTION (SCR_UserAction on magazines)
+   - Condition: Magazine has ammo (GetAmmoCount() > 0)
+   - Action:
+     a. Get ammo count from magazine
+     b. Determine ammo type(s) from tracker component (or default type if no tracker)
+     c. For each ammo type in tracker:
+        - Find existing stack in inventory OR spawn new stack
+        - Add count to stack
+     d. Set magazine ammo count to 0
+     e. Clear tracker component
+
+6. LOAD ACTION (SCR_UserAction on magazines)
+   - Condition: Magazine not full AND player has compatible ammo
+   - Action:
+     a. Get magazine's caliber from config
+     b. Find all compatible ammo stacks in player inventory
+     c. Calculate space available in magazine (max - current)
+     d. For each compatible ammo stack (in order found):
+        - Take rounds from stack (up to space available)
+        - Add to magazine ammo count
+        - Record in tracker component what type was added
+        - Delete stack if empty
+        - Reduce space available
+        - Continue until magazine full or no more ammo
+     e. Update tracker component with final composition
+
+MIXED AMMO HANDLING:
+--------------------
+- Loading: Any compatible caliber type can be loaded, composition tracked
+- Firing: Uses majority type OR last loaded type (game limitation)
+- Unpacking: Returns exact composition as separate stacks
+
+EXAMPLE FLOW:
+-------------
+1. Player has empty STANAG magazine
+2. Player has "5.56 Ball x20" and "5.56 Tracer x10" stacks
+3. Player uses Load action on magazine
+4. System loads all 30 rounds, tracks: {Ball: 20, Tracer: 10}
+5. Magazine fires as Ball (majority type)
+6. Later, player unpacks magazine
+7. Player receives back "5.56 Ball x20" and "5.56 Tracer x10"
+
+FILES TO CREATE:
+----------------
+Scripts:
+- scripts/Game/Components/Ammo/AmmoStackComponent.c
+- scripts/Game/Components/Ammo/MagazineAmmoTrackerComponent.c
+- scripts/Game/UserActions/UnpackMagazineAction.c
+- scripts/Game/UserActions/LoadMagazineAction.c
+- scripts/Game/Configs/CaliberCompatibilityConfig.c
+
+Prefabs:
+- Prefabs/Ammo/556x45/Ammo_556x45_Ball.et
+- Prefabs/Ammo/556x45/Ammo_556x45_Tracer.et
+- (etc for each caliber/type)
+
+Configs:
+- Configs/AmmoSystem/CaliberCompatibility.conf
+
+STATUS: PLANNED - Not yet implemented

@@ -32,7 +32,7 @@ SCR_ChimeraCharacter : "{84B40583F4D1B7A3}Prefabs/Characters/Factions/INDFOR/FIA
      Prefab "{ADE19B33DCBB9005}Prefabs/Characters/Vests/Vest_6B2/Vest_6B2.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{E1EA4FAEDD70A1C0}Prefabs/New_Equipment/Pants/armst_pants_flora.et"
+     Prefab "{5A8C9A020BD7ABA6}Prefabs/Characters/Uniforms/Pants_Trousers_01/Pants_Trousers_01_DarkGrey.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"

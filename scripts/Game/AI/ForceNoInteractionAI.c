@@ -9,15 +9,8 @@ class ForceNoInteractionAI: ScriptComponent {
 	
 	ResourceName material = "{621C7F2EC2763297}Terrains/Common/Sky/Atmosphere/Atmosphere.emat";
 	override void OnPostInit(IEntity owner){
-		
-		 
-		
-		
-		SetEventMask(owner,EntityEvent.INIT);
-
-		SetEventMask(owner,EntityEvent.FRAME);
-
-		
+		SetEventMask(owner, EntityEvent.INIT);
+		// REMOVED: EntityEvent.FRAME - EOnFrame was empty, pure overhead
 	}
 	override void EOnInit(IEntity owner)
 	{

@@ -1,5 +1,4 @@
 ColorsEffect {
- Brightness 0.935
- Contrast 1.115
- Saturation 0.425
+ OverlayFactor 0.08
+ Saturation 0.775
 }

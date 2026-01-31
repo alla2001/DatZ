@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{BD34F6DED909CD52}Assets/Items/Medicine/Workspaces/Food_player.asi"
+ Name "{BD34F6DED909CD52}Assets/Items/Food/Workspaces/Eating/Food_player.asi"
  Configurations {
   AnimSetInstanceResourceClass PC {
   }

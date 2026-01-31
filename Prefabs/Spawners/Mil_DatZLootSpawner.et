@@ -7,4 +7,5 @@ DatZLootSpawner {
  coords 0.011 -0.376 -19.465
  spawnRadius 100
  lootTable "{1F91D1C58E06D296}Configs/MilitaryLootTable.conf"
+ useTWLootConfig 0
 }

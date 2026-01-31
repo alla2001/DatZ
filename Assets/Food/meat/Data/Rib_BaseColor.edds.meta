@@ -17,7 +17,7 @@ MetaFileClass {
    CompressTreshold 52
    MaxSize "1024"
   }
-  PNGResourceClass PS5 : "{6248F71B9D7C1E93}configs/ResourceTypes/PS5/TextureUnspecified.conf" {
+  PNGResourceClass PS5 : "{6248F71B9D7C1E93}Configs/System/ResourceTypes/PS5/TextureUnspecified.conf" {
    CompressTreshold 52
    MaxSize "1024"
   }

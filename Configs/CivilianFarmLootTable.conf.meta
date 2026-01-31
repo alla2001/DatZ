@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{416671DC683FEF01}Configs/CivilianLootTable.conf"
+ Name "{416671DC683FEF01}Configs/CivilianFarmLootTable.conf"
  Configurations {
   CONFResourceClass PC {
   }

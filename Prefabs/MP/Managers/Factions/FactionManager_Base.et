@@ -1,0 +1,7 @@
+SCR_FactionManager : "{6EC611117B3C8BFD}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_Faction "{687AD808784D3086}" : "{ABCC989E11D49B4A}622120A5448725E3/Configs/UNDEAD_Faction.conf" {
+  }
+ }
+}

@@ -1,160 +1,234 @@
 //------------------------------------------------------------------------------------------------
 class AirDropGameSystem : GameSystem
 {
-    [Attribute("", UIWidgets.ResourceNamePicker, "Airdrop prefabs", "et")]
-    ref array<ResourceName> m_aAirdropPrefabs;
-    
-    [Attribute("1000", UIWidgets.EditBox, "Spawn range in meters")]
-    float m_fSpawnRangeMinX;
-	
-	   [Attribute("1000", UIWidgets.EditBox, "Spawn range in meters")]
-    float m_fSpawnRangeMaxX;
-	   [Attribute("1000", UIWidgets.EditBox, "Spawn range in meters")]
-    float m_fSpawnRangeMinY;
-	   [Attribute("1000", UIWidgets.EditBox, "Spawn range in meters")]
-    float m_fSpawnRangeMaxY;
-	
-	
-    
-    [Attribute("500", UIWidgets.EditBox, "Spawn height (Y position)")]
-    float m_fSpawnHeight;
-    
-    [Attribute("7200000", UIWidgets.EditBox, "Spawn interval in milliseconds (2 hours = 7200000)")]
-    int m_iSpawnInterval;
-    
-    protected int m_iTimerID = -1;
-    
-    //------------------------------------------------------------------------------------------------
-    override void OnInit()
-    {
-        super.OnInit();
-        
-        Print("AirDropGameSystem: Starting airdrop system", LogLevel.NORMAL);
-        if(Replication.IsServer())
-        // Start the timer for spawning airdrops
-        StartSpawnTimer();
-    }
-    
+	[Attribute("{D181F4FA8BFCAF58}Prefabs/Vehicles/AirDropPlane.et", UIWidgets.ResourceNamePicker, "Plane prefab", "et")]
+	ResourceName m_PlanePrefab;
 
-	
- 
-    
-    //------------------------------------------------------------------------------------------------
-    protected void StartSpawnTimer()
-    {
-		
-		GetGame().GetCallqueue().CallLater(SpawnAirdrop, 60000, false);
-		
-        // Schedule next airdrop
-        GetGame().GetCallqueue().CallLater(SpawnAirdrop, m_iSpawnInterval, true);
-        
-        Print(string.Format("AirDropGameSystem: Next airdrop in %1 minutes", m_iSpawnInterval / 60000), LogLevel.NORMAL);
-    }
-    
-    //------------------------------------------------------------------------------------------------
-    protected void SpawnAirdrop()
-    {
-        Print("AirDropGameSystem: Spawning airdrop", LogLevel.NORMAL);
-        
-        // Check if we have any prefabs configured
-        if (!m_aAirdropPrefabs || m_aAirdropPrefabs.Count() == 0)
-        {
-            Print("AirDropGameSystem: No airdrop prefabs configured!", LogLevel.ERROR);
-            return;
-        }
-        
-        // Select random prefab from the list
-        ResourceName selectedPrefab = m_aAirdropPrefabs.GetRandomElement();
-        
-        // Generate random position within range
-        vector spawnPos = GetRandomSpawnPosition();
-        
-        // Spawn the airdrop
-        EntitySpawnParams spawnParams = EntitySpawnParams();
-        spawnParams.TransformMode = ETransformMode.WORLD;
-        spawnParams.Transform[3] = spawnPos;
-        
-        IEntity airdrop = GetGame().SpawnEntityPrefab(Resource.Load(selectedPrefab), GetWorld(), spawnParams);
-        
-        if (airdrop)
-        {
-            Print(string.Format("AirDropGameSystem: Airdrop spawned at %1 using prefab %2", spawnPos.ToString(), selectedPrefab), LogLevel.NORMAL);
-            AlertAllPlayers(spawnPos);
-        }
-        else
-        {
-            Print("AirDropGameSystem: Failed to spawn airdrop!", LogLevel.ERROR);
-        }
-    }
-    
-    //------------------------------------------------------------------------------------------------
-    protected ResourceName GetRandomAirdropPrefab()
-    {
-        int randomIndex = Math.RandomInt(0, m_aAirdropPrefabs.Count());
-        return m_aAirdropPrefabs[randomIndex];
-    }
-    
-    //------------------------------------------------------------------------------------------------
-    protected vector GetRandomSpawnPosition()
-    {
-        // Generate random X and Z within range, use fixed Y height
-        float randomX = Math.RandomFloat(m_fSpawnRangeMinX, m_fSpawnRangeMaxX);
-        float randomZ = Math.RandomFloat(m_fSpawnRangeMinY, m_fSpawnRangeMaxY);
-        
-        return Vector(randomX, m_fSpawnHeight, randomZ);
-    }
-    
-       //------------------------------------------------------------------------------------------------
-    protected void AlertAllPlayers(vector dropPosition)
-    {
-        string alertMessage = string.Format("Supply drop incoming ");
-        
-        Print(string.Format("AirDropGameSystem: %1", alertMessage), LogLevel.NORMAL);
-        
-        // Simple approach - print message to all players via global print
-        // This will appear in server logs and can be seen by admins
-        PrintFormat("AIRDROP ALERT: %1", alertMessage);
-        
-		SCR_ChatComponent chatComponent = GetChatComponent();
+	[Attribute("", UIWidgets.ResourceNamePicker, "Airdrop crate prefabs (random selection)", "et")]
+	ref array<ResourceName> m_aAirdropPrefabs;
 
-		if (!chatComponent)
-			return;
-		chatComponent.SendMessage(alertMessage,0);
-		
-        // Alternative: Use RPC to send message to all clients
-        // You can extend this later with proper UI notifications
-        Rpc(RPC_AlertPlayers, alertMessage);
-    }
-    
-    //------------------------------------------------------------------------------------------------
-    [RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
-    protected void RPC_AlertPlayers(string message)
-    {
-        // This will run on all clients
-        PrintFormat("=== AIRDROP ALERT ===");
-        PrintFormat("%1", message);
-        PrintFormat("=====================");
-        
-		SCR_ChatComponent chatComponent = GetChatComponent();
+	[Attribute("150", UIWidgets.EditBox, "Margin from map edges in meters")]
+	float m_fMapEdgeMargin;
 
-		if (!chatComponent)
-			return;
-		chatComponent.SendMessage(message,0);
-        // Here you could add:
-        // - Custom UI popup
-        // - Sound effect
-        // - Screen flash
-        // - HUD message
-    }
-	
+	[Attribute("500", UIWidgets.EditBox, "Flight altitude above ground")]
+	float m_fFlightAltitude;
+
+	[Attribute("7200000", UIWidgets.EditBox, "Spawn interval in milliseconds (2 hours = 7200000)")]
+	int m_iSpawnInterval;
+
+	[Attribute("30", UIWidgets.EditBox, "Max attempts to find valid land position")]
+	int m_iMaxLandFindAttempts;
+
+	[Attribute("1000", UIWidgets.EditBox, "Distance beyond map edge for plane spawn/despawn")]
+	float m_fBeyondMapDistance;
+
+	// Auto-detected map bounds
+	protected vector m_vMapMin;
+	protected vector m_vMapMax;
+	protected bool m_bBoundsInitialized = false;
+
 	//------------------------------------------------------------------------------------------------
-	protected SCR_ChatComponent GetChatComponent()
+	override void OnInit()
 	{
-		PlayerController pc = GetGame().GetPlayerController();
+		super.OnInit();
 
-		if (!pc)
-			return null;
+		if (!Replication.IsServer())
+			return;
 
-		return SCR_ChatComponent.Cast(pc.FindComponent(SCR_ChatComponent));
+		Print("AirDropGameSystem: Starting", LogLevel.NORMAL);
+		InitializeMapBounds();
+		StartSpawnTimer();
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void InitializeMapBounds()
+	{
+		IEntity worldEntity = GetGame().GetWorldEntity();
+		if (!worldEntity)
+		{
+			Print("AirDropGameSystem: No world entity!", LogLevel.ERROR);
+			return;
+		}
+
+		vector mins, maxs;
+		worldEntity.GetWorldBounds(mins, maxs);
+
+		m_vMapMin = Vector(mins[0] + m_fMapEdgeMargin, 0, mins[2] + m_fMapEdgeMargin);
+		m_vMapMax = Vector(maxs[0] - m_fMapEdgeMargin, 0, maxs[2] - m_fMapEdgeMargin);
+		m_bBoundsInitialized = true;
+
+		Print(string.Format("AirDropGameSystem: Map bounds [%1, %2] to [%3, %4]",
+			Math.Round(m_vMapMin[0]), Math.Round(m_vMapMin[2]),
+			Math.Round(m_vMapMax[0]), Math.Round(m_vMapMax[2])), LogLevel.NORMAL);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void StartSpawnTimer()
+	{
+		// Initial spawn after 1 minute
+		GetGame().GetCallqueue().CallLater(SpawnAirdropPlane, 60000, false);
+
+		// Repeating airdrops
+		GetGame().GetCallqueue().CallLater(SpawnAirdropPlane, m_iSpawnInterval, true);
+
+		Print(string.Format("AirDropGameSystem: Interval %1 minutes", m_iSpawnInterval / 60000), LogLevel.NORMAL);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void SpawnAirdropPlane()
+	{
+		if (m_PlanePrefab.IsEmpty())
+		{
+			Print("AirDropGameSystem: No plane prefab configured!", LogLevel.ERROR);
+			return;
+		}
+
+		// Find valid land position for drop
+		vector dropPos;
+		if (!FindValidLandPosition(dropPos))
+		{
+			Print("AirDropGameSystem: Could not find valid drop position!", LogLevel.WARNING);
+			return;
+		}
+
+		// Calculate flight path (from one edge to opposite edge, passing over drop point)
+		vector startPos, endPos;
+		CalculateFlightPath(dropPos, startPos, endPos);
+
+		// Load plane prefab
+		Resource resource = Resource.Load(m_PlanePrefab);
+		if (!resource)
+		{
+			Print("AirDropGameSystem: Failed to load plane prefab!", LogLevel.ERROR);
+			return;
+		}
+
+		// Spawn plane at start position
+		EntitySpawnParams params = new EntitySpawnParams();
+		params.TransformMode = ETransformMode.WORLD;
+		params.Transform[3] = startPos;
+
+		IEntity plane = GetGame().SpawnEntityPrefab(resource, GetWorld(), params);
+		if (!plane)
+		{
+			Print("AirDropGameSystem: Failed to spawn plane!", LogLevel.ERROR);
+			return;
+		}
+
+		// Configure the plane component
+		AirDropPlaneComponent planeComp = AirDropPlaneComponent.Cast(plane.FindComponent(AirDropPlaneComponent));
+		if (planeComp)
+		{
+			// Set random airdrop prefab if available
+			if (m_aAirdropPrefabs && !m_aAirdropPrefabs.IsEmpty())
+			{
+				planeComp.m_AirdropPrefab = m_aAirdropPrefabs.GetRandomElement();
+			}
+
+			planeComp.SetFlightPath(startPos, dropPos, endPos);
+		}
+
+		Print(string.Format("AirDropGameSystem: Plane spawned, drop target [%1, %2]",
+			Math.Round(dropPos[0]), Math.Round(dropPos[2])), LogLevel.NORMAL);
+
+		// Alert players
+		AlertAllPlayers(dropPos);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void CalculateFlightPath(vector dropPos, out vector startPos, out vector endPos)
+	{
+		// Random approach direction (0-3 for 4 cardinal directions)
+		int direction = Math.RandomInt(0, 4);
+
+		float altitude = dropPos[1] + m_fFlightAltitude;
+		float beyondDist = m_fBeyondMapDistance;
+
+		switch (direction)
+		{
+			case 0: // West to East
+				startPos = Vector(m_vMapMin[0] - beyondDist, altitude, dropPos[2]);
+				endPos = Vector(m_vMapMax[0] + beyondDist, altitude, dropPos[2]);
+				break;
+			case 1: // East to West
+				startPos = Vector(m_vMapMax[0] + beyondDist, altitude, dropPos[2]);
+				endPos = Vector(m_vMapMin[0] - beyondDist, altitude, dropPos[2]);
+				break;
+			case 2: // South to North
+				startPos = Vector(dropPos[0], altitude, m_vMapMin[2] - beyondDist);
+				endPos = Vector(dropPos[0], altitude, m_vMapMax[2] + beyondDist);
+				break;
+			case 3: // North to South
+				startPos = Vector(dropPos[0], altitude, m_vMapMax[2] + beyondDist);
+				endPos = Vector(dropPos[0], altitude, m_vMapMin[2] - beyondDist);
+				break;
+		}
+
+		Print(string.Format("AirDropGameSystem: Flight path from [%1,%2] to [%3,%4]",
+			Math.Round(startPos[0]), Math.Round(startPos[2]),
+			Math.Round(endPos[0]), Math.Round(endPos[2])), LogLevel.NORMAL);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected bool FindValidLandPosition(out vector outPosition)
+	{
+		if (!m_bBoundsInitialized)
+			InitializeMapBounds();
+
+		BaseWorld world = GetWorld();
+		if (!world)
+			return false;
+
+		for (int attempt = 0; attempt < m_iMaxLandFindAttempts; attempt++)
+		{
+			float x = Math.RandomFloat(m_vMapMin[0], m_vMapMax[0]);
+			float z = Math.RandomFloat(m_vMapMin[2], m_vMapMax[2]);
+
+			if (IsPositionOnLand(x, z, world))
+			{
+				float terrainY = world.GetSurfaceY(x, z);
+				outPosition = Vector(x, terrainY, z);
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected bool IsPositionOnLand(float x, float z, BaseWorld world)
+	{
+		float terrainY = world.GetSurfaceY(x, z);
+
+		EWaterSurfaceType waterType;
+		float lakeArea;
+		vector checkPos = Vector(x, terrainY, z);
+		float waterY = SCR_WorldTools.GetWaterSurfaceY(world, checkPos, waterType, lakeArea);
+
+		if (waterType == EWaterSurfaceType.WST_OCEAN)
+			return false;
+
+		if (waterY > terrainY + 1.0)
+			return false;
+
+		if (terrainY < 0.5)
+			return false;
+
+		return true;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void AlertAllPlayers(vector dropPosition)
+	{
+		// Use quieter popup notification instead of loud PlaySoundFromPlayer
+		Rpc(RpcDo_AlertPlayers);
+	}
+
+	[RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
+	protected void RpcDo_AlertPlayers()
+	{
+		SCR_PopUpNotification popup = SCR_PopUpNotification.GetInstance();
+		if (popup)
+			popup.PopupMsg(text: "SUPPLY PLANE INCOMING", duration: 10.0, text2: "An airdrop is on its way!", sound: SCR_SoundEvent.SOUND_BELL_B);
 	}
 }

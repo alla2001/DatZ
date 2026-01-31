@@ -2,15 +2,15 @@ GenericEntity {
  ID "5D7751550EF5EE4E"
  components {
   ADM_ShopComponent "{5D775155BFB12BA4}" {
-   m_ShopConfig "{9F9B99EA94C617E8}Configs/Shops/WanderingTraderShop.conf"
+   m_ShopConfig "{2902B706BA3B5B98}Configs/Shops/BlackMarketShop.conf"
   }
   BaseLoadoutManagerComponent "{5D774D0B9B498936}" {
    Slots {
     LoadoutSlotInfo Jacket {
-     Prefab "{61C8AE257C7545A9}Prefabs/Characters/Uniforms/Parka_Night/Night_parka_navyblue.et"
+     Prefab "{F1E29085C62F0D55}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZS.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{A86E5BCD319975E8}Prefabs/Characters/Uniforms/Crye_Pants/crye_pants_mcblack.et"
+     Prefab "{D7CC1AF40F7A5A32}Prefabs/Characters/Uniforms/Pants_Pilot_USSR_01/Pants_Pilot_USSR_01_base.et"
     }
     LoadoutSlotInfo Head : Pants {
      Prefab "{40ED520CE1154848}Prefabs/Characters/HeadGear/Balaclavas/LShZ_Balaclava/Balaclava_LShZ_black.et"
@@ -35,7 +35,7 @@ GenericEntity {
     }
    }
    coords 1.123 -0.141 1.304
-   angleY 0
+   angles 0 0 0
    {
     LightEntity {
      ID "654674C1E022F80B"

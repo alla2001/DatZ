@@ -8,7 +8,10 @@ SCR_ChimeraCharacter : "{9B443DD4C1F6DCAD}Prefabs/Characters/Factions/CIV/Charac
    isZombi 0
   }
   SCR_CharacterFactionAffiliationComponent "{60DC952FF79A02F1}" {
-   "faction affiliation" "FFA"
+   "faction affiliation" "USSR"
+  }
+  TagComponent "{5864D980062191CA}" {
+   "Tag categories" 0x40 0x1
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {

@@ -1,6 +1,6 @@
-ColorsEffect : "{7C202A913EB8B1A9}UI/Materials/ScreenEffects_ColorPP.emat" {
+ColorsEffect {
  OverlayFactor 0.005
- OverlayColor 0.096 0.725 0.586 0
- Saturation 0.775
+ OverlayColor 0.376 0.725 0.664 0
+ Saturation 0.405
  DesaturationWeights 0.6 0.4 0.6 13.5
 }

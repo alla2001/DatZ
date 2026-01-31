@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F2242A6B1195B711}WaterCheck.et"
+ Name "{F2242A6B1195B711}Prefabs/WaterActions.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

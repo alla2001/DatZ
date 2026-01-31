@@ -46,20 +46,10 @@ if(!Replication.IsServer())return;
         }
 
         if (m_bIsLocked)
-           GetGame().GetCallqueue().CallLater(SpawnLock,delay:5000);
-		GetGame().GetCallqueue().CallLater(CheckLock,delay:7000);
+           GetGame().GetCallqueue().CallLater(SpawnLock, delay: 5000);
+
 		Replication.BumpMe();
     }
-	
-	void CheckLock(){
-		if(Replication.IsServer()&&m_LockEntity ==null&&m_bIsLocked){
-		
-			m_bIsLocked=false;
-			Replication.BumpMe();
-		}
-	GetGame().GetCallqueue().CallLater(CheckLock,delay:500);
-	
-	}
 
     // Lock the door
     void Lock()
@@ -91,13 +81,6 @@ if(!Replication.IsServer())return;
 
     bool IsLocked()
     {
-		
-			if(Replication.IsServer()&&m_LockEntity ==null&&m_bIsLocked){
-		
-			m_bIsLocked=false;
-			Replication.BumpMe();
-		}
-	
         return m_bIsLocked;
     }
 	
@@ -122,8 +105,11 @@ if(!Replication.IsServer())return;
         params.Transform = handlePos;
 		params.Parent = GetOwner();
         m_LockEntity = GetGame().SpawnEntityPrefab(lockPrefab, GetGame().GetWorld(), params);
+
+		if (!m_LockEntity)
+			return;
+
 		m_LockEntity.SetLocalTransform(handlePos);
-		m_LockEntity.Update();
 	
       
     }
@@ -138,11 +124,16 @@ if(!Replication.IsServer())return;
         vector origin = owner.GetOrigin();
      
         vector up = vector.Up;
-        ActionsManagerComponent actions =ActionsManagerComponent.Cast(owner.FindComponent(ActionsManagerComponent));
-		if(!actions)return;
+        ActionsManagerComponent actions = ActionsManagerComponent.Cast(owner.FindComponent(ActionsManagerComponent));
+		if (!actions)
+			return;
+
 		array<UserActionContext> outContexts();
-			actions.GetContextList(outContexts);
-		
+		actions.GetContextList(outContexts);
+
+		if (outContexts.IsEmpty())
+			return;
+
 		outContexts[0].GetTransformationModel(mat);
    
     }

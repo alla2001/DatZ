@@ -8,6 +8,7 @@ DatZLootSpawner {
  spawnRadius 100
  despawnDelay 300000
  lootTable "{861457BC841542EB}Configs/DrugLootTable.conf"
+ useTWLootConfig 0
  ignoreOverrides 1
  ignoreSystemDespawnDelay 1
 }

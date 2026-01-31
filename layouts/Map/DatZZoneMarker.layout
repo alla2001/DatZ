@@ -1,0 +1,86 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ Slot FrameWidgetSlot "{DA01000000000001}" {
+  OffsetLeft 0
+  OffsetTop 0
+  SizeX 200
+  OffsetRight -200
+  SizeY 200
+  OffsetBottom -200
+  Alignment 0.5 0.5
+ }
+ "Z Order" 50
+ Clipping False
+ "Ignore Cursor" 1
+ components {
+  DatZMapZoneCircleHandler "{DA02000000000001}" {
+  }
+ }
+ {
+  ImageWidgetClass "{DA03000000000001}" {
+   Name "CircleFill"
+   Slot FrameWidgetSlot "{DA04000000000001}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 100
+    OffsetRight -100
+    SizeY 100
+    OffsetBottom -100
+    Alignment 0.5 0.5
+   }
+   Opacity 0.25
+   Clipping False
+   Color 1 0 0 1
+   Texture "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+   Image "circle"
+   Size 100 100
+  }
+  ImageWidgetClass "{DA05000000000001}" {
+   Name "CircleOutline"
+   Slot FrameWidgetSlot "{DA06000000000001}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 100
+    OffsetRight -100
+    SizeY 100
+    OffsetBottom -100
+    Alignment 0.5 0.5
+   }
+   Opacity 0.6
+   Clipping False
+   Color 1 0 0 1
+   Texture "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+   Image "circle"
+   Size 100 100
+  }
+  TextWidgetClass "{DA07000000000001}" {
+   Name "ZoneText"
+   Slot FrameWidgetSlot "{DA08000000000001}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 300
+    OffsetRight -300
+    SizeY 30
+    OffsetBottom -30
+    Alignment 0.5 0.5
+   }
+   Clipping False
+   Color 1 1 1 1
+   Text ""
+   "Font Size" 14
+   "Min Font Size" 14
+   "Horizontal Alignment" Center
+   FontProperties FontProperties "{DA09000000000001}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+    Bold 1
+    ShadowSize 3
+    ShadowColor 0 0 0 1
+   }
+  }
+ }
+}

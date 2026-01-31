@@ -1,7 +1,7 @@
 class DZMetabolisemSystem : GameSystem
 {
-	[Attribute("1000")]
-	float processTime;
+	[Attribute("2000")]
+	float processTime;  // Process every 2 seconds instead of 1 (halves replication traffic)
 
 	
 

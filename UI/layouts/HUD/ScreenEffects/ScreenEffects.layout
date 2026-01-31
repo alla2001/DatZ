@@ -1,2 +1,39 @@
 FrameWidgetClass {
+ Name "ScreenEffectsRoot"
+ {
+  ImageWidgetClass "{ABCD1234EF567890}" {
+   Name "InfectionOverlay"
+   Slot FrameWidgetSlot "{ABCD1234EF567891}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   "Is Visible" 0
+   Color 0.1 0.4 0.1 0
+   Size 1920 1080
+  }
+  ImageWidgetClass "{ABCD1234EF567892}" {
+   Name "ZombieHitFlash"
+   Slot FrameWidgetSlot "{ABCD1234EF567893}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   "Is Visible" 0
+   Color 0.6 0.1 0.1 0
+   Size 1920 1080
+  }
+ }
 }

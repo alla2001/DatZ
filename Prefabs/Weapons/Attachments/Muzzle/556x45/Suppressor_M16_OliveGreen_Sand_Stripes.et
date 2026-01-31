@@ -1,0 +1,7 @@
+GenericEntity : "{97BE06ACE5860ABE}Prefabs/Weapons/Attachments/Muzzle/556x45/Suppressor_M16_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  RplComponent "{6860790935DA8CE8}" {
+  }
+ }
+}

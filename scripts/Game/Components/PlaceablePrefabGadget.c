@@ -39,34 +39,6 @@ class PlaceablePrefabGadget : SCR_ConsumableItemComponent
     };
     
     //------------------------------------------------------------------------------------------------
-    void OnActivate()
-    {
-        
-        StartPlacement();
-    }
-    
-    //------------------------------------------------------------------------------------------------
-    void OnDeactivate()
-    {
-       
-        StopPlacement();
-    }
-    override void OnModeChanged(EGadgetMode mode, IEntity charOwner)
-	{
-		// Clear last mode
-		ModeClear(m_iMode);
-		
-		// Update current mode
-		m_iMode = mode;
-		
-		// Set new mode
-		ModeSwitch(mode, charOwner);
-		if(mode==EGadgetMode.IN_HAND)
-			StartPlacement();
-		else
-		 StopPlacement();
-	}
-    //------------------------------------------------------------------------------------------------
     protected void StartPlacement()
     {
         if (m_sPrefabToPlace.IsEmpty())
@@ -78,21 +50,35 @@ class PlaceablePrefabGadget : SCR_ConsumableItemComponent
         m_bIsPlacing = true;
         CreatePreviewEntity();
         
-        // Start preview update loop
-        GetGame().GetCallqueue().CallLater(UpdatePreview, 0, true);
+        // Start preview update loop (50ms for smooth preview without per-frame overhead)
+        GetGame().GetCallqueue().CallLater(UpdatePreview, 50, true);
     }
 	
 
 	//------------------------------------------------------------------------------------------------
+	//! Override ModeSwitch following base class pattern from SCR_ConsumableItemComponent
 	override void ModeSwitch(EGadgetMode mode, IEntity charOwner)
 	{
 		super.ModeSwitch(mode, charOwner);
 
 		if (mode == EGadgetMode.IN_HAND)
 		{
-			m_CharController = SCR_CharacterControllerComponent.Cast(charOwner.FindComponent(SCR_CharacterControllerComponent));
-			m_CharController.m_OnItemUseFinishedInvoker.Insert(OnApplyToCharacter);
+			// Start placement preview when gadget is held in hand
+			StartPlacement();
 		}
+	}
+
+	//------------------------------------------------------------------------------------------------
+	//! Override ModeClear following base class pattern from SCR_ConsumableItemComponent
+	override void ModeClear(EGadgetMode mode)
+	{
+		if (mode == EGadgetMode.IN_HAND)
+		{
+			// Stop placement preview when gadget leaves hand
+			StopPlacement();
+		}
+
+		super.ModeClear(mode);
 	}
 
     

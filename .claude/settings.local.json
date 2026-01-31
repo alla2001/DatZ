@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(awk:*)",
+      "Bash(del \"C:\\\\Users\\\\rober\\\\OneDrive\\\\Documenten\\\\GitHub\\\\DatzBergamo\\\\Prefabs\\\\Systems\\\\DZHarvestManager.et\")",
+      "Bash(git add:*)"
+    ]
+  }
+}

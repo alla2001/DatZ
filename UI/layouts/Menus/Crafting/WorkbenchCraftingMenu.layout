@@ -1,0 +1,213 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  ImageWidgetClass "{67A1B2C3D4E5F600}" {
+   Name "DarkOverlay"
+   Slot FrameWidgetSlot "{67A1B2C3D4E5F6FF}" {
+    Anchor 0 0 1 1
+    PositionX -33.91
+    OffsetLeft -33.91
+    PositionY -9.689
+    OffsetTop -9.689
+    SizeX 100
+    OffsetRight -66.09
+    SizeY 30
+    OffsetBottom -20.311
+   }
+   Color 0 0 0 0.7362
+  }
+  SizeLayoutWidgetClass "{67A1B2C3D4E5F6FE}" {
+   Name "CenterContainer"
+   Slot FrameWidgetSlot "{67A1B2C3D4E5F6FD}" {
+    Anchor 0.5 0.5 0.5 0.5
+    Alignment 0.5 0.5
+    SizeToContent 1
+   }
+   AllowWidthOverride 1
+   WidthOverride 1200
+   AllowHeightOverride 1
+   HeightOverride 1000
+   {
+    OverlayWidgetClass "{67A1B2C3D4E5F601}" {
+     Name "MainPanel"
+     Slot AlignableSlot "{67A1B2C3D4E5F602}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      ImageWidgetClass "{67A1B2C3D4E5F6F0}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{67A1B2C3D4E5F6F1}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.01 0.015 0.022 0.95
+      }
+      VerticalLayoutWidgetClass "{67A1B2C3D4E5F6A0}" {
+       Name "MainLayout"
+       Slot OverlayWidgetSlot "{67A1B2C3D4E5F6A1}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        SizeLayoutWidgetClass "{67A1B2C3D4E5F6A2}" {
+         Name "HeaderSize"
+         Slot LayoutSlot "{67A1B2C3D4E5F6A3}" {
+         }
+         AllowHeightOverride 1
+         HeightOverride 60
+         {
+          OverlayWidgetClass "{67A1B2C3D4E5F6A4}" {
+           Name "HeaderOverlay"
+           Slot AlignableSlot "{67A1B2C3D4E5F6A5}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           {
+            ImageWidgetClass "{67A1B2C3D4E5F6A6}" {
+             Name "HeaderBg"
+             Slot OverlayWidgetSlot "{67A1B2C3D4E5F6A7}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             Color 0.02 0.03 0.045 1
+            }
+            HorizontalLayoutWidgetClass "{67A1B2C3D4E5F6A8}" {
+             Name "HeaderContent"
+             Slot OverlayWidgetSlot "{67A1B2C3D4E5F6A9}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 15 10 15 10
+             }
+             {
+              ImageWidgetClass "{67A1B2C3D4E5F6AA}" {
+               Name "HeaderIcon"
+               Slot LayoutSlot "{67A1B2C3D4E5F6AB}" {
+               }
+               Color 0.76 0.76 0.76 1
+               Texture "{2C4C8CAB6851A450}Assets/UI/generate-new-banner-iamge-the.edds"
+               Size 40 40
+              }
+              TextWidgetClass "{67A1B2C3D4E5F603}" {
+               Name "Title"
+               Slot LayoutSlot "{67A1B2C3D4E5F604}" {
+                Padding 10 0 0 0
+                SizeMode Fill
+               }
+               Color 0.9 0.85 0.75 1
+               Text "WORKBENCH CHAOTIC"
+               "Font Size" 26
+               "Min Font Size" 18
+               "Vertical Alignment" Center
+              }
+              ButtonWidgetClass "{67A1B2C3D4E5F605}" {
+               Name "ButtonClose"
+               Slot LayoutSlot "{67A1B2C3D4E5F606}" {
+               }
+               Color 0.5 0.15 0.12 0.9
+               components {
+                SCR_ButtonTextComponent "{67A1B2C3D4E5F607}" {
+                 m_sText "ButtonClose"
+                }
+               }
+               {
+                SizeLayoutWidgetClass "{67A1B2C3D4E5F608}" {
+                 Name "CloseBtnSize"
+                 Slot ButtonWidgetSlot "{67A1B2C3D4E5F609}" {
+                 }
+                 AllowWidthOverride 1
+                 WidthOverride 40
+                 AllowHeightOverride 1
+                 HeightOverride 40
+                 {
+                  RichTextWidgetClass "{67A1B2C3D4E5F60A}" {
+                   Name "CloseText"
+                   Slot AlignableSlot "{67A1B2C3D4E5F60B}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                   }
+                   Color 1 1 1 1
+                   Text "X"
+                   "Font Size" 20
+                   "Horizontal Alignment" Center
+                   "Vertical Alignment" Center
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        ImageWidgetClass "{67A1B2C3D4E5F60C}" {
+         Name "Separator"
+         Slot LayoutSlot "{67A1B2C3D4E5F60D}" {
+          Padding 15 0 15 0
+         }
+         Color 0.76 0.55 0.2 0.4
+         Size 1 2
+        }
+        TextWidgetClass "{67A1B2C3D4E5F6B0}" {
+         Name "SubTitle"
+         Slot LayoutSlot "{67A1B2C3D4E5F6B1}" {
+          Padding 20 8 20 8
+         }
+         Color 0.5 0.5 0.5 1
+         Text "Available Recipes"
+         "Font Size" 14
+         "Min Font Size" 12
+        }
+        SizeLayoutWidgetClass "{67A1B2C3D4E5F6C0}" {
+         Name "ScrollSize"
+         Slot LayoutSlot "{67A1B2C3D4E5F6C1}" {
+          Padding 10 0 10 10
+          SizeMode Fill
+         }
+         {
+          OverlayWidgetClass "{67A1B2C3D4E5F6C2}" {
+           Name "ScrollOverlay"
+           Slot AlignableSlot "{67A1B2C3D4E5F6C3}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           {
+            ImageWidgetClass "{67A1B2C3D4E5F6C4}" {
+             Name "ScrollBg"
+             Slot OverlayWidgetSlot "{67A1B2C3D4E5F6C5}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             Color 0.015 0.02 0.03 0.8
+            }
+            ScrollLayoutWidgetClass "{67A1B2C3D4E5F6C6}" {
+             Name "RecipeScroll"
+             Slot OverlayWidgetSlot "{67A1B2C3D4E5F6C7}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 5 5 5 5
+             }
+             {
+              VerticalLayoutWidgetClass "{67A1B2C3D4E5F60E}" {
+               Name "RecipeList"
+               Slot AlignableSlot "{67A1B2C3D4E5F60F}" {
+                HorizontalAlign 3
+                VerticalAlign 0
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

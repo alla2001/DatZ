@@ -7,5 +7,6 @@ DatZLootSpawner {
  coords 1.082 0.115 -0.534
  spawnRadius 100
  lootTable "{4E33B5A4ECC09F05}Configs/AppleLootTable.conf"
+ useTWLootConfig 0
  ignoreOverrides 1
 }

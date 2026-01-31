@@ -1,0 +1,119 @@
+SCR_AIGroup {
+ ID "687B576CB3B81A86"
+ components {
+  AIBehaviorTreeComponent "{687B576B73E39A4F}" {
+   BehaviorTree "{082D5B0D5D33DB1D}AI/BehaviorTrees/Chimera/Group/Group.bt"
+  }
+  AIFormationComponent "{687B576B73E39A2B}" {
+   DefaultFormation "Wedge"
+   "Min Distance to Raytrace an Offset" 1
+   "Projection distance" 10
+  }
+  AIPathfindingComponent "{687B576B73E39A37}" {
+   NavmeshProject "Soldiers"
+  }
+  SCR_AIConfigComponent "{687B576B73E39AB8}" {
+   m_EnableTakeCover 0
+   m_aDefaultReactions {
+    SCR_AIIdleReaction "{687B576B73E39AFB}" {
+    }
+   }
+   m_aGoalReactions {
+    SCR_AIGoalReaction_Attack "{687B576B73E39ACA}" {
+     m_eType ATTACK
+    }
+    SCR_AIGoalReaction_Defend "{687B576B73E39AD6}" {
+     m_eType DEFEND
+    }
+    SCR_AIGoalReaction_Move "{687B576B73E39ADC}" {
+     m_eType MOVE
+    }
+    SCR_AIGoalReaction_SeekAndDestroy "{687B576B73E39AA5}" {
+     m_eType SEEK_DESTROY
+    }
+    SCR_AIGoalReaction_PerformAction "{687B576B73E39AAE}" {
+     m_eType PERFORM_ACTION
+    }
+    SCR_AIGoalReaction_Cancel "{687B576B73E39AB3}" {
+     m_eType CANCEL
+    }
+    SCR_AIGoalReaction_Follow "{687B576B73E39ABA}" {
+     m_eType FOLLOW
+    }
+   }
+  }
+  SCR_AIGroupInfoComponent "{687B576B73E39A81}" {
+  }
+  SCR_AIGroupMovementComponent "{687B576B73E39A97}" {
+   "Min Speed" 7
+   "Using Railroad" 0
+   "Max Distance to Path" 5
+   DefaultFormation "Wedge"
+  }
+  SCR_AIGroupUtilityComponent "{687B576B73E39A9E}" {
+  }
+  SCR_CallsignGroupComponent "{687B576B73E39A9D}" {
+  }
+  SCR_EditableGroupComponent "{687B576B73E39C0A}" {
+   m_EntityType GROUP
+   m_UIInfo SCR_EditableGroupUIInfo "{687B576B73E39C69}" {
+    Name "Undead Group"
+    Icon "{3D6D9C152800796D}UI/Textures/Editor/ContentBrowser/ContentBrowser_GroupSize_Small.edds"
+    m_Image "{855625FE8D6A87A8}UI/Textures/DamageState/damageState-dead.edds"
+    m_sFaction "UNDEAD"
+    m_aAuthoredLabels {
+     ENTITYTYPE_GROUP UNDEAD CONTENT_MODDED
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{687B576B73E39B20}" {
+      m_BudgetType CAMPAIGN
+      m_Value 1
+     }
+     SCR_EntityBudgetValue "{687B576B73E39B2A}" {
+      m_BudgetType AI_SERVER
+      m_Value 2
+     }
+    }
+    m_EntityChildrenBudgetCost {
+     SCR_EntityBudgetValue "{687B576B73E39B32}" {
+      m_BudgetType AI
+      m_Value 3
+     }
+    }
+    m_bUseUIInfoName 1
+    m_MilitarySymbol SCR_MilitarySymbol "{687B576B73E39B01}" {
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_vIconPos 0 5 0
+   m_Flags 9541
+  }
+  SCR_GroupIdentityComponent "{687B576B73E39C1E}" {
+   m_MilitarySymbol SCR_MilitarySymbol "{687B576B73E39C18}" {
+   }
+  }
+  SCR_MailboxComponent "{687B576B73E39CE1}" {
+  }
+  SCR_PreviewEntityComponent "{687B576B73E04293}" {
+   m_bRuntime 0
+   m_aEntries {
+    SCR_BasePreviewEntry "{687B576B73E39CF5}" {
+     m_Flags HORIZONTAL
+     m_Shape ELLIPSE
+     m_vScale 4 4 4
+     m_vPosition 0 1 0
+    }
+   }
+  }
+  RplComponent "{687B576B73E0429B}" {
+   "Rpl State Override" Runtime
+   Streamable Disabled
+  }
+ }
+ coords 2376.375 81.565 800.931
+ DangerEventRange 200
+ m_faction "UNDEAD"
+ m_aUnitPrefabSlots {
+  "{CF671E40479116ED}Prefabs/Characters/Core/Character_Base_Undead.et" "{CF671E40479116ED}Prefabs/Characters/Core/Character_Base_Undead.et" "{CF671E40479116ED}Prefabs/Characters/Core/Character_Base_Undead.et"
+ }
+}

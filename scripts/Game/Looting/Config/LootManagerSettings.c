@@ -17,7 +17,7 @@ class LootRespawnSettings
 		IsLootRespawnable = true;
 		RespawnLootTimerInSeconds = 10;
 		RespawnAfterLastInteractionInMinutes = 60;
-		NumberOfItemsToSpawnPerContainer = 4;
+		NumberOfItemsToSpawnPerContainer = 1;
 		UnlootedTimeRatio = 0.5;
 		SearchedTimeRatio = 0.0;
 		GridSize = 100;

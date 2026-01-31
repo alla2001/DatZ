@@ -1,0 +1,13 @@
+DatZMapZoneMarker {
+ ID "68767E460D687EF4"
+ components {
+  RplComponent "{5A5C340A5E9AF68F}" {
+   SpatialRelevancy 0
+  }
+ }
+ coords 2408.429 11.087 1843.251
+ m_fRadius 500
+ m_sZoneLabel "Zone"
+ m_fTextScale 4
+ m_TextColor 0.262 0.262 0.262 1
+}

@@ -4,7 +4,8 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
   AirDropFallComponent "{66571CF757203D4B}" {
    initItems {
     InitItem "{66571CF7E0663168}" {
-     item "{BFDBFE2BED29C04A}Prefabs/CannedMeat.et"
+     item "{E3055CB3AB4817AD}Prefabs/MRE.et"
+     amount 4
     }
     InitItem "{66571CF7E707D2D3}" {
      item "{7B605E8E4B952837}PrefabsEditable/Auto/Props/Civilian/Suspicious Items/E_GoldBrick.et"
@@ -18,20 +19,35 @@ GenericEntity : "{FBB88198B995270C}Prefabs/Props/Military/Camps/AirDrop.et" {
     }
     InitItem "{66571CF0FAC931FA}" {
      item "{A6737DA00653A39C}Prefabs/Weapons/Magazines/Box_762x54_PK_100rnd_Ball.et"
+     amount 3
     }
     InitItem "{66571CF0F404521C}" {
      item "{BBB50A815A2F916B}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Ball.et"
+     amount 5
     }
     InitItem "{666C92E4EC3AE043}" {
-     item "{7B7F47BFB532CAFA}Prefabs/Beaf.et"
+     item "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et"
     }
     InitItem "{666C92E422E7E92E}" {
      item "{262F0D09C4130826}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_VOG25.et"
      amount 5
+    }
+    InitItem "{666C92E4A1B2C3D4}" {
+     item "{733503CDB70D5EAC}Prefabs/WaterCanteen.et"
+     amount 2
     }
    }
   }
  }
  coords -1.286 -0.133 -3.646
  angles 0 0 -27.994
+ {
+  ParticleEffectEntity {
+   ID "665B0D81FED3EFCA"
+   components {
+    RplComponent "{6860DD221B95DF70}" {
+    }
+   }
+  }
+ }
 }

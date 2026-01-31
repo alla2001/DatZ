@@ -13,7 +13,7 @@ MetaFileClass {
   PNGResourceClass PS4 : "{6F6E5A1432381FD2}Configs/System/ResourceTypes/PS4/TextureTerrainNormal.conf" {
    MaxSize "512"
   }
-  PNGResourceClass PS5 : "{5CEA2418C9F889F8}configs/ResourceTypes/PS5/TextureTerrainNormal.conf" {
+  PNGResourceClass PS5 : "{5CEA2418C9F889F8}Configs/System/ResourceTypes/PS5/TextureTerrainNormal.conf" {
    MaxSize "512"
   }
   PNGResourceClass HEADLESS : "{EAB38BDFD096C0A6}Configs/System/ResourceTypes/HEADLESS/TextureTerrainNormal.conf" {

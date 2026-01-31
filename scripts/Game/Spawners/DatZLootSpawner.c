@@ -1,224 +1,529 @@
 class DatZLootSpawnerClass : SCR_PositionClass
 {
-
-
 }
 
-
+// Optimized loot spawner with cached player position support
+// Global custom items are defined in DZLootSystem and added to TW loot table on generation
 class DatZLootSpawner : GenericEntity
 {
-	
+	[Attribute("50", desc: "Radius to detect players for spawning")]
+	float spawnRadius;
 
-    [Attribute()]
-    float spawnRadius;
- [Attribute()]
-    float despawnDelay;
-	[Attribute("", UIWidgets.ResourceNamePicker, desc: "", params: "conf")]
-    ResourceName lootTable;
-    ref array<IEntity> currentLoot = new array<IEntity>();
-	ref DatZLootTable m_lootTable;
-	
-	float lastPlayerTime = 0;
-	float lastSpawnTime= 0;
-	bool spawned;
-	
-	[Attribute("false")]
+	[Attribute("300", desc: "Delay in seconds before despawning loot")]
+	float despawnDelay;
+
+	[Attribute("", UIWidgets.ResourceNamePicker, desc: "Loot table configuration (ignored if using TW config)", params: "conf")]
+	ResourceName lootTable;
+
+	[Attribute("true", UIWidgets.CheckBox, desc: "Use TW loot_config.json instead of custom loot table")]
+	bool useTWLootConfig;
+
+	[Attribute("0", desc: "Item type filter when using TW config (0 = default coastal, -1 = all types, or use SCR_EArsenalItemType flags)")]
+	int twLootTypeFilter;
+
+	[Attribute("50", desc: "Chance of spawning nothing (0-100, higher = more empty spawners)")]
+	float emptyLootChance;
+
+	[Attribute("false", desc: "Ignore loot table overrides from zones")]
 	bool ignoreOverrides;
-	
-	[Attribute("false")]
+
+	[Attribute("false", desc: "Use system-wide despawn delay instead of local")]
 	bool ignoreSystemDespawnDelay;
-	
-	[Attribute("false")]
+
+	[Attribute("false", desc: "Don't snap spawned items to ground")]
 	bool dontSnapToGround;
-	override void EOnInit(IEntity owner){
-	
 
-		GetGame().GetCallqueue().CallLater(InitLootTable,delay:1000);
-		SCR_EntityHelper.SnapToGround(owner,startOffset: "0 0.5 0",maxLength:30);
+	// Current spawned loot entities
+	protected ref array<IEntity> m_aCurrentLoot = new array<IEntity>();
+
+	// Cached loot table (loaded once)
+	protected ref DatZLootTable m_LootTable;
+	protected bool m_bLootTableInitialized = false;
+
+	// Zone override tracking (closest override wins)
+	protected float m_fClosestOverrideDistSq = -1;
+
+	// Faction filter (DatZLootFaction flags, 0 = all factions)
+	protected int m_iFactionFilter = 0;
+
+	// Timing
+	protected float m_fLastPlayerTime = 0;
+	protected float m_fLastSpawnTime = 0;
+	protected bool m_bSpawned = false;
+
+	// Cached spawn radius squared for faster distance checks
+	protected float m_fSpawnRadiusSq;
+
+	//------------------------------------------------------------------------------------------------
+	override void EOnInit(IEntity owner)
+	{
+		// Pre-calculate squared radius for faster distance checks
+		m_fSpawnRadiusSq = spawnRadius * spawnRadius;
+
+		// Snap spawner to ground
+		SCR_EntityHelper.SnapToGround(owner, startOffset: "0 0.5 0", maxLength: 30);
+
+		// Delay loot table init slightly to avoid load spike
+		GetGame().GetCallqueue().CallLater(InitLootTable, delay: 1000);
 	}
-	
-	void InitLootTable(){
-	
-		
-		m_lootTable = new DatZLootTable();
-	   if (lootTable.IsEmpty())
-			return ;
 
-		Resource resource = Resource.Load(lootTable);
-		if (!resource.IsValid())
-			return ;
+	//------------------------------------------------------------------------------------------------
+	void InitLootTable()
+	{
+		if (m_bLootTableInitialized)
+			return;
 
-		m_lootTable =  DatZLootTable.Cast(BaseContainerTools.CreateInstanceFromContainer(resource.GetResource().ToBaseContainer()));
-		
-	}
-	void SetDespawnDelay(float delay){
-	
-		if(!ignoreSystemDespawnDelay)
-    	despawnDelay = delay;
-	
-	}
-    void Process()
-    {
-		
-        bool playerNearby = IsPlayerInRange();
-		if(playerNearby)
-		lastPlayerTime = GetGame().GetWorld().GetWorldTime();
-		 if (!spawned && playerNearby)
-                SpawnLoot();
-    	if (spawned&& !playerNearby && GetGame().GetWorld().GetWorldTime()>=lastPlayerTime+despawnDelay*1000.0)
-                DespawnLoot();
-		if (spawned&& GetGame().GetWorld().GetWorldTime()>=lastPlayerTime+despawnDelay*1000.0)
-                DespawnLoot();
-    }
+		m_LootTable = new DatZLootTable();
+		bool loaded = false;
 
-    bool IsPlayerInRange()
-    {
-		array<int> allPlayers = {};
-        GetGame().GetPlayerManager().GetAllPlayers(allPlayers);
-		//filter all current players and store them
-		foreach (int player : allPlayers)
+		// Try to use TW loot config if enabled
+		if (useTWLootConfig)
 		{
-			IEntity ce =  GetGame().GetPlayerManager().GetPlayerControlledEntity(player);
-			if(!ce)continue;
-			
-			if(vector.Distance(GetOrigin(),ce.GetOrigin())<spawnRadius)
-			return true;
-			
+			loaded = InitFromTWConfig();
 		}
-        return false;
-    }
 
-    void SpawnLoot()
-    {
-		InitLootTable();
-		LootItem loot =  m_lootTable.GetRandomLoot();
-		lastSpawnTime = GetGame().GetWorld().GetWorldTime();
-		while(loot!=null)
+		// Fall back to custom loot table config if TW config not used or failed
+		if (!loaded && !lootTable.IsEmpty())
 		{
-		
-        	string prefabPath = loot.prefabPath;
-        	if (prefabPath != string.Empty)
-        	{
-            	Resource resource = Resource.Load(prefabPath);
-				if(!resource.IsValid()){
-				
-					loot = null;
-					continue;
-				
-				}
-				EntitySpawnParams param =  new EntitySpawnParams();
-				GetWorldTransform(param.Transform);
-            	if (resource)
-				{
-					IEntity ent = GetGame().SpawnEntityPrefab(resource, GetGame().GetWorld(), param);
-					if(ent ==null) continue;
-					currentLoot.Insert(ent);
-					if(!dontSnapToGround)
-					SCR_EntityHelper.SnapToGround(ent,startOffset: "0 0.4 0",maxLength:30);
-					vector pos = ent.GetOrigin();
-					InventoryItemComponent invItem = InventoryItemComponent.Cast( ent.FindComponent(InventoryItemComponent));
-					
-					if(invItem)
-					{
-						invItem.m_OnParentSlotChangedInvoker.Insert(OnParentSlotChanged);
-						invItem.PlaceOnGround();
-					}
-						
-					ent.SetOrigin(pos + "0 0.05 0");
-					ent.Update();
-					SCR_2DPIPSightsComponent sight = SCR_2DPIPSightsComponent.Cast( ent.FindComponent(SCR_2DPIPSightsComponent));
-					if(sight){
-					
-						sight.SetBroken( Math.RandomInt(0,2) == 1);
-					}
-					
-					BaseMagazineComponent mag = BaseMagazineComponent.Cast( ent.FindComponent(BaseMagazineComponent));
-					BaseWeaponComponent wpn = BaseWeaponComponent.Cast( ent.FindComponent(BaseWeaponComponent));
-					if(wpn){
-						mag = wpn.GetCurrentMagazine();
-						if(mag)
-						{
-					
-							mag.SetAmmoCount(Math.RandomInt(5,mag.GetMaxAmmoCount()));
-						}
-						sight =SCR_2DPIPSightsComponent.Cast(  wpn.GetAttachedSights());
-						if(sight)
-						{
-					
-							sight.SetBroken( Math.RandomInt(0,2) == 1);
-						}
-					
-					}
-					
-					
-					
-					FluidContainerComponent fluid = FluidContainerComponent.Cast( ent.FindComponent(FluidContainerComponent));
-					if(fluid){
-					
-								fluid.m_fCurrentAmount = Math.RandomFloat(0,fluid.m_fMaxCapacity);
-					}
-					SCR_FuelManagerComponent fuel = SCR_FuelManagerComponent.Cast( ent.FindComponent(SCR_FuelManagerComponent));
-							
-					if(fuel)
-					{
-						array<SCR_FuelNode> outScriptedNodes();
-						fuel.GetScriptedFuelNodesList(outScriptedNodes);
-						outScriptedNodes[0].SetFuel(Math.RandomFloat(0,outScriptedNodes[0].GetMaxFuel()));
-					}
-						
-				}
-               
-        	}
-			
-			if(loot.relatedLootItems)
-			loot =  loot.relatedLootItems.GetRandomLoot();
-			else
-			loot = null;
-		}
-		spawned=true;
-    }
-	void OnParentSlotChanged(InventoryStorageSlot oldSlot, InventoryStorageSlot newSlot)
-    {
-		foreach(IEntity loot : currentLoot)
-		{
-		 	InventoryItemComponent invItem = InventoryItemComponent.Cast( loot.FindComponent(InventoryItemComponent));
-			if(invItem)
+			Resource resource = Resource.Load(lootTable);
+			if (resource.IsValid())
 			{
-				invItem.m_OnParentSlotChangedInvoker.Remove(OnParentSlotChanged);
-
+				m_LootTable = DatZLootTable.Cast(BaseContainerTools.CreateInstanceFromContainer(resource.GetResource().ToBaseContainer()));
+				loaded = true;
 			}
 		}
-			currentLoot.Clear();
-	
-    }
-    void DespawnLoot()
-    {
-		spawned=false;
-		foreach(IEntity loot : currentLoot)
-		{
-		 	RplComponent.DeleteRplEntity(loot, false);
-		}
-		currentLoot.Clear();
 
-    }
+		// Ensure items array exists
+		if (!m_LootTable.items)
+			m_LootTable.items = new array<ref LootItem>();
+
+		m_bLootTableInitialized = true;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Initialize from TW loot config (tries loot_config.json first, then lootmap.json)
+	protected bool InitFromTWConfig()
+	{
+		// Try loot_config.json first (Workbench plugin generated)
+		if (TW_LootTableLoader.HasConfig())
+		{
+			ref map<SCR_EArsenalItemType, ref array<ref TW_LootConfigItem>> twLootTable = new map<SCR_EArsenalItemType, ref array<ref TW_LootConfigItem>>();
+			ref set<string> globalItems = new set<string>();
+			ref map<string, SCR_EArsenalItemType> resourceTypeMap = new map<string, SCR_EArsenalItemType>();
+
+			if (TW_LootTableLoader.LoadFromConfig(twLootTable, globalItems, resourceTypeMap))
+			{
+				int itemCount = ConvertTWLootTable(twLootTable);
+				Print(string.Format("[DatZLootSpawner] Loaded %1 items from loot_config.json", itemCount), LogLevel.NORMAL);
+				return itemCount > 0;
+			}
+		}
+
+		// Fall back to lootmap.json (runtime generated by TW_LootManager)
+		return InitFromLootmapJson();
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Initialize from lootmap.json (TW_LootManager format)
+	protected bool InitFromLootmapJson()
+	{
+		SCR_JsonLoadContext loadContext = new SCR_JsonLoadContext();
+		if (!loadContext.LoadFromFile("$profile:lootmap.json"))
+		{
+			Print("[DatZLootSpawner] No lootmap.json found", LogLevel.WARNING);
+			return false;
+		}
+
+		ref LootManagerSettings settings;
+		if (!loadContext.ReadValue("", settings))
+		{
+			Print("[DatZLootSpawner] Failed to parse lootmap.json", LogLevel.ERROR);
+			return false;
+		}
+
+		if (!settings || !settings.LootTable)
+		{
+			Print("[DatZLootSpawner] lootmap.json has no LootTable", LogLevel.ERROR);
+			return false;
+		}
+
+		// Build type name map
+		array<SCR_EArsenalItemType> itemTypes = {};
+		SCR_Enum.GetEnumValues(SCR_EArsenalItemType, itemTypes);
+
+		ref map<string, SCR_EArsenalItemType> typeNameMap = new map<string, SCR_EArsenalItemType>();
+		foreach (SCR_EArsenalItemType iType : itemTypes)
+		{
+			string name = TW_Util.ArsenalTypeAsString(iType);
+			typeNameMap.Set(name, iType);
+		}
+
+		// Convert to internal loot table format
+		ref map<SCR_EArsenalItemType, ref array<ref TW_LootConfigItem>> twLootTable = new map<SCR_EArsenalItemType, ref array<ref TW_LootConfigItem>>();
+
+		foreach (string categoryName, ref array<ref TW_LootConfigItem> items : settings.LootTable)
+		{
+			if (!typeNameMap.Contains(categoryName))
+				continue;
+
+			SCR_EArsenalItemType itemType = typeNameMap.Get(categoryName);
+			twLootTable.Set(itemType, items);
+		}
+
+		int itemCount = ConvertTWLootTable(twLootTable);
+		return itemCount > 0;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Get effective type filter (resolves 0 to default coastal tier)
+	int GetEffectiveTypeFilter()
+	{
+		// -1 = all types (no filter)
+		if (twLootTypeFilter < 0)
+			return -1;
+
+		// 0 = default coastal tier
+		if (twLootTypeFilter == 0)
+			return DATZ_DEFAULT_TYPE_FILTER;
+
+		// Explicit filter set by zone override or attribute
+		return twLootTypeFilter;
+	}
+
+	// Default type filter: Coastal tier (clothing + equipment + food, NO WEAPONS)
+	static const int DATZ_DEFAULT_TYPE_FILTER =
+		SCR_EArsenalItemType.HEADWEAR |
+		SCR_EArsenalItemType.TORSO |
+		SCR_EArsenalItemType.LEGS |
+		SCR_EArsenalItemType.FOOTWEAR |
+		SCR_EArsenalItemType.HANDWEAR |
+		SCR_EArsenalItemType.EQUIPMENT |
+		SCR_EArsenalItemType.FOOD;
+
+	//------------------------------------------------------------------------------------------------
+	// Convert TW loot table format to DatZLootTable
+	protected int ConvertTWLootTable(map<SCR_EArsenalItemType, ref array<ref TW_LootConfigItem>> twLootTable)
+	{
+		m_LootTable = new DatZLootTable();
+		m_LootTable.items = new array<ref LootItem>();
+		m_LootTable.emptyLootChance = emptyLootChance;
+
+		int effectiveFilter = GetEffectiveTypeFilter();
+		int itemCount = 0;
+
+		foreach (SCR_EArsenalItemType itemType, ref array<ref TW_LootConfigItem> items : twLootTable)
+		{
+			// Apply type filter if set (-1 = no filter)
+			if (effectiveFilter > 0 && !SCR_Enum.HasFlag(effectiveFilter, itemType))
+				continue;
+
+			foreach (TW_LootConfigItem twItem : items)
+			{
+				if (!twItem.isEnabled || twItem.chanceToSpawn <= 0)
+					continue;
+
+				// Apply faction filter if set (0 = all factions)
+				if (m_iFactionFilter != 0 && twItem.factionFlags != 0)
+				{
+					if ((twItem.factionFlags & m_iFactionFilter) == 0)
+						continue; // Item's faction not in allowed set
+				}
+
+				ref LootItem lootItem = new LootItem();
+				lootItem.prefabPath = twItem.resourceName;
+				lootItem.spawnChance = twItem.chanceToSpawn;
+				lootItem.relatedLootItems = null;
+
+				m_LootTable.items.Insert(lootItem);
+				itemCount++;
+			}
+		}
+
+		return itemCount;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void SetDespawnDelay(float delay)
+	{
+		if (!ignoreSystemDespawnDelay)
+			despawnDelay = delay;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Set type filter and empty chance from zone override
+	// distSq: squared distance to zone center (closest zone wins)
+	// factionFilter: DatZLootFaction flags (0 = all factions)
+	void SetTypeFilter(int typeFilter, float emptyChance, float distSq = 0, int factionFilter = 0)
+	{
+		// Only apply if this zone is closer than the current override
+		if (m_fClosestOverrideDistSq >= 0 && distSq > m_fClosestOverrideDistSq)
+			return;
+
+		m_fClosestOverrideDistSq = distSq;
+		twLootTypeFilter = typeFilter;
+		emptyLootChance = emptyChance;
+		m_iFactionFilter = factionFilter;
+		useTWLootConfig = true;
+
+		// Force reinitialize loot table with new filter
+		m_bLootTableInitialized = false;
+		InitLootTable();
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Check if this spawner has active loot
+	bool HasSpawnedLoot()
+	{
+		return m_bSpawned && m_aCurrentLoot.Count() > 0;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Legacy Process method (for backwards compatibility)
+	void Process()
+	{
+		bool playerNearby = IsPlayerInRange();
+		ProcessInternal(playerNearby);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Optimized process using cached player positions from system
+	void ProcessWithCachedPlayers(array<vector> cachedPlayerPositions)
+	{
+		bool playerNearby = IsPlayerInRangeCached(cachedPlayerPositions);
+		ProcessInternal(playerNearby);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Internal processing logic
+	protected void ProcessInternal(bool playerNearby)
+	{
+		float currentTime = GetGame().GetWorld().GetWorldTime();
+
+		if (playerNearby)
+			m_fLastPlayerTime = currentTime;
+
+		// Spawn if player nearby and not already spawned
+		if (!m_bSpawned && playerNearby)
+		{
+			SpawnLoot();
+			return;
+		}
+
+		// Despawn if spawned and enough time passed since last player
+		if (m_bSpawned)
+		{
+			float timeSincePlayer = currentTime - m_fLastPlayerTime;
+			if (timeSincePlayer >= despawnDelay * 1000.0)
+			{
+				DespawnLoot();
+			}
+		}
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Original player range check (legacy, less efficient)
+	bool IsPlayerInRange()
+	{
+		array<int> allPlayers = {};
+		GetGame().GetPlayerManager().GetAllPlayers(allPlayers);
+
+		vector myPos = GetOrigin();
+
+		for (int i = 0; i < allPlayers.Count(); i++)
+		{
+			IEntity playerEntity = GetGame().GetPlayerManager().GetPlayerControlledEntity(allPlayers[i]);
+			if (!playerEntity)
+				continue;
+
+			// Use squared distance for performance
+			float distSq = vector.DistanceSq(myPos, playerEntity.GetOrigin());
+			if (distSq < m_fSpawnRadiusSq)
+				return true;
+		}
+
+		return false;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Optimized player range check using cached positions
+	bool IsPlayerInRangeCached(array<vector> cachedPlayerPositions)
+	{
+		vector myPos = GetOrigin();
+
+		for (int i = 0; i < cachedPlayerPositions.Count(); i++)
+		{
+			// Use squared distance for performance (avoids sqrt)
+			float distSq = vector.DistanceSq(myPos, cachedPlayerPositions[i]);
+			if (distSq < m_fSpawnRadiusSq)
+				return true;
+		}
+
+		return false;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void SpawnLoot()
+	{
+		// Ensure loot table is initialized (don't reload every spawn)
+		if (!m_bLootTableInitialized)
+			InitLootTable();
+
+		if (!m_LootTable)
+			return;
+
+		LootItem loot = m_LootTable.GetRandomLoot();
+		m_fLastSpawnTime = GetGame().GetWorld().GetWorldTime();
+
+		// Reuse spawn params
+		EntitySpawnParams param = new EntitySpawnParams();
+		GetWorldTransform(param.Transform);
+
+		while (loot)
+		{
+			string prefabPath = loot.prefabPath;
+
+			if (prefabPath == string.Empty)
+			{
+				loot = null;
+				continue;
+			}
+
+			Resource resource = Resource.Load(prefabPath);
+			if (!resource.IsValid())
+			{
+				loot = null;
+				continue;
+			}
+
+			IEntity ent = GetGame().SpawnEntityPrefab(resource, GetGame().GetWorld(), param);
+			if (!ent)
+			{
+				// Get next related loot item
+				if (loot.relatedLootItems)
+					loot = loot.relatedLootItems.GetRandomLoot();
+				else
+					loot = null;
+				continue;
+			}
+
+			m_aCurrentLoot.Insert(ent);
+
+			// Snap to ground if enabled
+			if (!dontSnapToGround)
+				SCR_EntityHelper.SnapToGround(ent, startOffset: "0 0.4 0", maxLength: 30);
+
+			vector pos = ent.GetOrigin();
+
+			// Setup inventory item
+			InventoryItemComponent invItem = InventoryItemComponent.Cast(ent.FindComponent(InventoryItemComponent));
+			if (invItem)
+			{
+				invItem.m_OnParentSlotChangedInvoker.Insert(OnParentSlotChanged);
+				invItem.PlaceOnGround();
+			}
+
+			ent.SetOrigin(pos + "0 0.05 0");
+			ent.Update();
+
+			// Randomize weapon/item state
+			RandomizeItemState(ent);
+
+			// Get next related loot item
+			if (loot.relatedLootItems)
+				loot = loot.relatedLootItems.GetRandomLoot();
+			else
+				loot = null;
+		}
+
+		m_bSpawned = true;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	// Separated item state randomization for cleaner code
+	protected void RandomizeItemState(IEntity ent)
+	{
+		// Randomize sight condition
+		SCR_2DPIPSightsComponent sight = SCR_2DPIPSightsComponent.Cast(ent.FindComponent(SCR_2DPIPSightsComponent));
+		if (sight)
+			sight.SetBroken(Math.RandomInt(0, 2) == 1);
+
+		// Handle weapons
+		BaseWeaponComponent wpn = BaseWeaponComponent.Cast(ent.FindComponent(BaseWeaponComponent));
+		if (wpn)
+		{
+			BaseMagazineComponent mag = wpn.GetCurrentMagazine();
+			if (mag)
+				mag.SetAmmoCount(Math.RandomInt(5, mag.GetMaxAmmoCount()));
+
+			SCR_2DPIPSightsComponent wpnSight = SCR_2DPIPSightsComponent.Cast(wpn.GetAttachedSights());
+			if (wpnSight)
+				wpnSight.SetBroken(Math.RandomInt(0, 2) == 1);
+		}
+
+		// Randomize fluid containers
+		FluidContainerComponent fluid = FluidContainerComponent.Cast(ent.FindComponent(FluidContainerComponent));
+		if (fluid)
+			fluid.m_fCurrentAmount = Math.RandomFloat(0, fluid.m_fMaxCapacity);
+
+		// Randomize fuel
+		SCR_FuelManagerComponent fuel = SCR_FuelManagerComponent.Cast(ent.FindComponent(SCR_FuelManagerComponent));
+		if (fuel)
+		{
+			array<SCR_FuelNode> outScriptedNodes = {};
+			fuel.GetScriptedFuelNodesList(outScriptedNodes);
+			if (outScriptedNodes.Count() > 0)
+				outScriptedNodes[0].SetFuel(Math.RandomFloat(0, outScriptedNodes[0].GetMaxFuel()));
+		}
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnParentSlotChanged(InventoryStorageSlot oldSlot, InventoryStorageSlot newSlot)
+	{
+		// Player picked up item - clear tracking
+		for (int i = 0; i < m_aCurrentLoot.Count(); i++)
+		{
+			IEntity loot = m_aCurrentLoot[i];
+			if (!loot)
+				continue;
+
+			InventoryItemComponent invItem = InventoryItemComponent.Cast(loot.FindComponent(InventoryItemComponent));
+			if (invItem)
+				invItem.m_OnParentSlotChangedInvoker.Remove(OnParentSlotChanged);
+		}
+
+		m_aCurrentLoot.Clear();
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void DespawnLoot()
+	{
+		m_bSpawned = false;
+
+		for (int i = 0; i < m_aCurrentLoot.Count(); i++)
+		{
+			IEntity loot = m_aCurrentLoot[i];
+			if (loot)
+				RplComponent.DeleteRplEntity(loot, false);
+		}
+
+		m_aCurrentLoot.Clear();
+	}
 
 	//------------------------------------------------------------------------------------------------
 	void DatZLootSpawner(IEntitySource src, IEntity parent)
 	{
-		SetEventMask(EntityEvent.FIXEDFRAME);
-			SetEventMask(EntityEvent.INIT);
-		if(DZLootSystem.GetInstance())
-		DZLootSystem.GetInstance().Register(this);
+		SetEventMask(EntityEvent.INIT);
+
+		DZLootSystem system = DZLootSystem.GetInstance();
+		if (system)
+			system.Register(this);
 	}
 
 	//------------------------------------------------------------------------------------------------
 	void ~DatZLootSpawner()
 	{
-			if(DZLootSystem.GetInstance())
-		DZLootSystem.GetInstance().UnRegister(this);
-
-		
+		DZLootSystem system = DZLootSystem.GetInstance();
+		if (system)
+			system.Unregister(this);
 	}
-	
-
 }

@@ -2,6 +2,11 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
  ID "520EC961A090B1EE"
  components {
   ChimeraAIControlComponent "{520EA1D2DB109F34}" {
+   components {
+    SCR_AICombatComponent "{55A2C9BE343B2EA1}" {
+     m_eAISkillDefault CYLON
+    }
+   }
   }
   CharacterGrenadeSlotComponent "{520EA1D2F659CE6E}" {
    WeaponTemplate ""
@@ -21,13 +26,13 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
      Prefab "{AE74155267C3D5BB}Prefabs/Characters/HeadGear/Helmet_SSh68_01/Helmet_SSh68_01_cover_base.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{8641D9A55FF7D049}Prefabs/New_Equipment/Jackets/armst_jacket_army_sviter_old.et"
+     Prefab "{F1E29085C62F0D55}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZS.et"
     }
     LoadoutSlotInfo ArmoredVest {
      Prefab "{07B1F856943B7075}Prefabs/Characters/Vests/Vest_M69/Vest_M69_base.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{E1EA4FAEDD70A1C1}Prefabs/New_Equipment/Pants/jeans/armst_pants_jeans.et"
+     Prefab "{5E17C1AE66A6FF00}Prefabs/Characters/Uniforms/Pants_KZS/Pants_KZS.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"

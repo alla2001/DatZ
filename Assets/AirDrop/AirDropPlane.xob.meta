@@ -1,0 +1,80 @@
+MetaFileClass {
+ Name "{6DC49596A01513C9}Assets/AirDrop/AirDropPlane.xob"
+ Configurations {
+  FBXResourceClass PC {
+   Rotate 0 180 0
+   MaterialAssigns {
+    MaterialAssignClass "{686B296953937EDD}" {
+     SourceMaterial "13d8d968_dds"
+     AssignedMaterial "{6977F81A50B8E941}Assets/AirDrop/Data/13d8d968_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937E84}" {
+     SourceMaterial "63925f45_dds"
+     AssignedMaterial "{12F6C68D910E1388}Assets/AirDrop/Data/63925f45_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937E98}" {
+     SourceMaterial "7b09350f_dds"
+     AssignedMaterial "{38D6975E551F55B3}Assets/AirDrop/Data/7b09350f_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937E9C}" {
+     SourceMaterial "01a80b43_dds"
+     AssignedMaterial "{6F001242C09540B4}Assets/AirDrop/Data/01a80b43_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937E91}" {
+     SourceMaterial "18122060_dds"
+     AssignedMaterial "{BE9175D9A8209C44}Assets/AirDrop/Data/18122060_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937EA2}" {
+     SourceMaterial "5023f97f_dds"
+     AssignedMaterial "{8F450003F3A43150}Assets/AirDrop/Data/5023f97f_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937EA7}" {
+     SourceMaterial "5e3f9f77_dds"
+     AssignedMaterial "{4D8338B5F22E6E03}Assets/AirDrop/Data/5e3f9f77_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937EBB}" {
+     SourceMaterial "6333f1b3_dds"
+     AssignedMaterial "{DA153C6AF2AFD61E}Assets/AirDrop/Data/6333f1b3_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937EBF}" {
+     SourceMaterial "b8c84495_dds"
+     AssignedMaterial "{4CCD2ADF5BC77944}Assets/AirDrop/Data/b8c84495_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937EB2}" {
+     SourceMaterial "6309e771_dds"
+     AssignedMaterial "{7C9AB42A23CB7206}Assets/AirDrop/Data/6309e771_dds.emat"
+    }
+    MaterialAssignClass "{686B296953937F4B}" {
+     SourceMaterial "e00c40ae_dds"
+     AssignedMaterial "{445E8177F79052CE}Assets/AirDrop/Data/e00c40ae_dds.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Object_7 {
+    }
+   }
+   Common TXOCommonClass "{686B296953B6085B}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{686B296953B672D3}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{686B296953B65CA4}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{686B296953B65B63}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{686B296953B7AD32}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{686B296953B7AB10}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}
